@@ -27,13 +27,18 @@
       "map": "MAP_ROUTE102",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_ROUTE100",
+      "offset": 0,
+      "direction": "right"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
-      "x": 16,
-      "y": 11,
+      "x": 10,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,

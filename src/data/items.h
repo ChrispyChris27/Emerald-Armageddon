@@ -12626,4 +12626,19 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
+
+    [ITEM_CANDINATOR] =
+    {
+        .name = _("Candinator"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A device with an\n"
+            "infinite supply of\n"
+            "rare candies."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Candinator,
+        .effect = gItemEffect_RareCandy,
+    },
 };
