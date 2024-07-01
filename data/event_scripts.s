@@ -1084,3 +1084,5 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/RocketHideout4/scripts.inc"
 
 	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/PetalburgSanctuary/scripts.inc"

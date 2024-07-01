@@ -1711,6 +1711,14 @@
       "y": 11,
       "width": 1,
       "height": 1
+    },
+    {
+      "map_section": "MAPSEC_PETALBURG_SANCTUARY",
+      "name": "PETALBURG SANCTUARY",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }

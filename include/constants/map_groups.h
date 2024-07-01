@@ -406,6 +406,7 @@
 #define MAP_ROCKET_HIDEOUT3                          (110 | (24 << 8))
 #define MAP_ROCKET_HIDEOUT4                          (111 | (24 << 8))
 #define MAP_NEW_MAP1                                 (112 | (24 << 8))
+#define MAP_PETALBURG_SANCTUARY                      (113 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
