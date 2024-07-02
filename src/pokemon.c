@@ -954,6 +954,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
          && (gSpeciesInfo[species].isLegendary
           || gSpeciesInfo[species].isMythical
           || gSpeciesInfo[species].isUltraBeast
+          || gSpeciesInfo[species].isStarter
           || gSpeciesInfo[species].isTotem))
         {
             iv = MAX_PER_STAT_IVS;

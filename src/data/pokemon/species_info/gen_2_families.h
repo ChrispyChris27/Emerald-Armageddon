@@ -224,6 +224,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .iconSprite = gMonIcon_Cyndaquil,
         .iconPalIndex = 3,
         FOOTPRINT(Cyndaquil)
+        .isStarter = TRUE,
         .levelUpLearnset = sCyndaquilLevelUpLearnset,
         .teachableLearnset = sCyndaquilTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 14, SPECIES_QUILAVA}),
@@ -280,8 +281,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         FOOTPRINT(Quilava)
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION_HISUIAN},
+                                {EVO_NONE, 0, SPECIES_TYPHLOSION}),
     },
 
 #if P_UPDATED_EXP_YIELDS >= GEN_8

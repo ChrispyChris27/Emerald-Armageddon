@@ -428,6 +428,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .iconSprite = gMonIcon_Oshawott,
         .iconPalIndex = 0,
         FOOTPRINT(Oshawott)
+        .isStarter = TRUE,
         .levelUpLearnset = sOshawottLevelUpLearnset,
         .teachableLearnset = sOshawottTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 17, SPECIES_DEWOTT}),
@@ -483,8 +484,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         FOOTPRINT(Dewott)
         .levelUpLearnset = sDewottLevelUpLearnset,
         .teachableLearnset = sDewottTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT},
-                                {EVO_NONE, 0, SPECIES_SAMUROTT_HISUIAN}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT_HISUIAN},
+                                {EVO_NONE, 0, SPECIES_SAMUROTT}),
     },
 
     [SPECIES_SAMUROTT] =
