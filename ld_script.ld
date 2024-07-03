@@ -1001,8 +1001,8 @@ SECTIONS {
         sound/songs/midi/se_pike_curtain_close.o(.rodata);
         sound/songs/midi/se_pike_curtain_open.o(.rodata);
         sound/songs/midi/se_sudowoodo_shake.o(.rodata);
-        sound/songs/midi/mus_littleroot_test.o(.rodata);
-        sound/songs/midi/mus_gsc_route38.o(.rodata);
+        sound/songs/midi/mus_cynthia.o(.rodata);
+        sound/songs/midi/mus_ncastle.o(.rodata);
         sound/songs/midi/mus_caught.o(.rodata);
         sound/songs/midi/mus_victory_wild.o(.rodata);
         sound/songs/midi/mus_victory_gym_leader.o(.rodata);
