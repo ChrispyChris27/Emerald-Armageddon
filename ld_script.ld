@@ -1007,7 +1007,7 @@ SECTIONS {
         sound/songs/midi/mus_victory_wild.o(.rodata);
         sound/songs/midi/mus_victory_gym_leader.o(.rodata);
         sound/songs/midi/mus_victory_league.o(.rodata);
-        sound/songs/midi/mus_c_comm_center.o(.rodata);
+        sound/songs/midi/mus_cynthia_encounter.o(.rodata);
         sound/songs/midi/mus_gsc_pewter.o(.rodata);
         sound/songs/midi/mus_c_vs_legend_beast.o(.rodata);
         sound/songs/midi/mus_route101.o(.rodata);

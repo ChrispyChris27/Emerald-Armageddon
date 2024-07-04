@@ -286,7 +286,7 @@
 #define MUS_VICTORY_WILD            353 // MUS_KACHI2
 #define MUS_VICTORY_GYM_LEADER      354 // MUS_KACHI3           // Also used in Frontier Brain victories.
 #define MUS_VICTORY_LEAGUE          355 // MUS_KACHI5
-#define MUS_C_COMM_CENTER           356 // MUS_PCC              // Unused, likely a test track.
+#define MUS_CYNTHIA_ENCOUNTER       356 // MUS_PCC              // Unused, likely a test track.
 #define MUS_GSC_PEWTER              357 // MUS_NIBI             // Used in unused Contest Halls.
 #define MUS_C_VS_LEGEND_BEAST       358 // MUS_SUIKUN           // Unused, likely a test track.
 #define MUS_ROUTE101                359 // MUS_DOORO1           // Also used in Routes 102 and 103.

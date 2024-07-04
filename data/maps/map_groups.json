@@ -436,7 +436,9 @@
     "RocketHideout3",
     "RocketHideout4",
     "NewMap1",
-    "PetalburgSanctuary"
+    "PetalburgSanctuary",
+    "MeteorCastle",
+    "MeteorCastle2"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

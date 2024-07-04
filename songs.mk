@@ -318,8 +318,8 @@ $(MID_SUBDIR)/mus_abnormal_weather.s: %.s: %.mid
 $(MID_SUBDIR)/mus_school.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G081 -V100
 
-$(MID_SUBDIR)/mus_c_comm_center.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -V080
+$(MID_SUBDIR)/mus_cynthia_encounter.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G005 -V100
 
 $(MID_SUBDIR)/mus_poke_center.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G046 -V092

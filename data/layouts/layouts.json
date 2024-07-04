@@ -4480,6 +4480,26 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/PetalburgSanctuary/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgSanctuary/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE",
+      "name": "MeteorCastle_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE2",
+      "name": "MeteorCastle2_Layout",
+      "width": 51,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle2/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle2/map.bin"
     }
   ]
 }

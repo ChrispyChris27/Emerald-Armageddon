@@ -1086,3 +1086,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/NewMap1/scripts.inc"
 
 	.include "data/maps/PetalburgSanctuary/scripts.inc"
+
+	.include "data/maps/MeteorCastle/scripts.inc"
+
+	.include "data/maps/MeteorCastle2/scripts.inc"
