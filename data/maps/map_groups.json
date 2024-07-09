@@ -93,7 +93,8 @@
     "Underwater_Route129",
     "Underwater_Route105",
     "Underwater_Route125",
-    "Route100"
+    "Route100",
+    "MeteorCastle2F1"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -438,7 +439,15 @@
     "NewMap1",
     "PetalburgSanctuary",
     "MeteorCastle",
-    "MeteorCastle2"
+    "MeteorCastle2",
+    "MeteorCastle1F1",
+    "MeteorCastle2F2",
+    "DragonsDen",
+    "MeteorCastle3F1",
+    "MeteorCastle3F2",
+    "MeteorCastle4F1",
+    "MeteorCastleTopFloor",
+    "MeteorCastleThroneRoom"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

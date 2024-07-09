@@ -4500,6 +4500,96 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/MeteorCastle2/border.bin",
       "blockdata_filepath": "data/layouts/MeteorCastle2/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE1F1",
+      "name": "MeteorCastle1F1_Layout",
+      "width": 41,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle1F1/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle1F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE2F1",
+      "name": "MeteorCastle2F1_Layout",
+      "width": 41,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle2F1/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle2F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE2F2",
+      "name": "MeteorCastle2F2_Layout",
+      "width": 27,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle2F2/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle2F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAGONS_DEN",
+      "name": "DragonsDen_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DragonsDen/border.bin",
+      "blockdata_filepath": "data/layouts/DragonsDen/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE3F1",
+      "name": "MeteorCastle3F1_Layout",
+      "width": 21,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle3F1/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle3F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE3F2",
+      "name": "MeteorCastle3F2_Layout",
+      "width": 41,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle3F2/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle3F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE4F1",
+      "name": "MeteorCastle4F1_Layout",
+      "width": 41,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle4F1/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle4F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE_TOP_FLOOR",
+      "name": "MeteorCastleTopFloor_Layout",
+      "width": 41,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastleTopFloor/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastleTopFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE_THRONE_ROOM",
+      "name": "MeteorCastleThroneRoom_Layout",
+      "width": 31,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastleThroneRoom/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastleThroneRoom/map.bin"
     }
   ]
 }

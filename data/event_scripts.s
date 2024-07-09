@@ -1090,3 +1090,21 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MeteorCastle/scripts.inc"
 
 	.include "data/maps/MeteorCastle2/scripts.inc"
+
+	.include "data/maps/MeteorCastle1F1/scripts.inc"
+
+	.include "data/maps/MeteorCastle2F1/scripts.inc"
+
+	.include "data/maps/MeteorCastle2F2/scripts.inc"
+
+	.include "data/maps/DragonsDen/scripts.inc"
+
+	.include "data/maps/MeteorCastle3F1/scripts.inc"
+
+	.include "data/maps/MeteorCastle3F2/scripts.inc"
+
+	.include "data/maps/MeteorCastle4F1/scripts.inc"
+
+	.include "data/maps/MeteorCastleTopFloor/scripts.inc"
+
+	.include "data/maps/MeteorCastleThroneRoom/scripts.inc"
