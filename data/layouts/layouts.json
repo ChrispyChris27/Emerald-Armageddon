@@ -4590,6 +4590,16 @@
       "secondary_tileset": "gTileset_MeteorFalls",
       "border_filepath": "data/layouts/MeteorCastleThroneRoom/border.bin",
       "blockdata_filepath": "data/layouts/MeteorCastleThroneRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRANSISTOR_TUNNEL",
+      "name": "TransistorTunnel_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TransistorTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/TransistorTunnel/map.bin"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
-  "id": "MAP_DRAGONS_DEN",
-  "name": "DragonsDen",
-  "layout": "LAYOUT_DRAGONS_DEN",
+  "id": "MAP_TRANSISTOR_TUNNEL",
+  "name": "TransistorTunnel",
+  "layout": "LAYOUT_TRANSISTOR_TUNNEL",
   "music": "MUS_SEALED_CHAMBER",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_SEALED_CHAMBER",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",

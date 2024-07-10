@@ -447,7 +447,8 @@
     "MeteorCastle3F2",
     "MeteorCastle4F1",
     "MeteorCastleTopFloor",
-    "MeteorCastleThroneRoom"
+    "MeteorCastleThroneRoom",
+    "TransistorTunnel"
   ],
   "gMapGroup_IndoorDynamic": [
     "SecretBase_RedCave1",

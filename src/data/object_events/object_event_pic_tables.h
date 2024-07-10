@@ -1260,3 +1260,15 @@ static const struct SpriteFrameImage sPicTable_RubySapphireBrendan[] = {
 static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireMayNormal, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_Regidrago[] = {
+    obj_frame_tiles(gObjectEventPic_Regidrago),
+    obj_frame_tiles(gObjectEventPic_Regidrago),
+    obj_frame_tiles(gObjectEventPic_Regidrago),
+    obj_frame_tiles(gObjectEventPic_Regidrago),
+    obj_frame_tiles(gObjectEventPic_Regidrago),
+    obj_frame_tiles(gObjectEventPic_Regidrago),
+    obj_frame_tiles(gObjectEventPic_Regidrago),
+    obj_frame_tiles(gObjectEventPic_Regidrago),
+    obj_frame_tiles(gObjectEventPic_Regidrago),
+};
