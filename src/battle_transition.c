@@ -129,6 +129,7 @@ static void Task_FrontierSquaresScroll(u8);
 static void Task_FrontierSquaresSpiral(u8);
 static void Task_Rocket(u8);
 static void Task_Cyrus(u8);
+static void Task_Cynthia(u8);
 static void VBlankCB_BattleTransition(void);
 static void VBlankCB_Swirl(void);
 static void HBlankCB_Swirl(void);
@@ -164,6 +165,8 @@ static bool8 Rocket_Init(struct Task *);
 static bool8 Rocket_SetGfx(struct Task *);
 static bool8 Cyrus_Init(struct Task *);
 static bool8 Cyrus_SetGfx(struct Task *);
+static bool8 Cynthia_Init(struct Task *);
+static bool8 Cynthia_SetGfx(struct Task *);
 static bool8 FramesCountdown(struct Task *);
 static bool8 Regi_Init(struct Task *);
 static bool8 Regice_SetGfx(struct Task *);
@@ -344,6 +347,9 @@ static const u32 sRocket_Tilemap[] = INCBIN_U32("graphics/battle_transitions/roc
 static const u16 sCyrus_Palette[] = INCBIN_U16("graphics/battle_transitions/cyrus.gbapal");
 static const u32 sCyrus_Tileset[] = INCBIN_U32("graphics/battle_transitions/cyrus.4bpp.lz");
 static const u32 sCyrus_Tilemap[] = INCBIN_U32("graphics/battle_transitions/cyrus.bin.lz");
+static const u16 sCynthia_Palette[] = INCBIN_U16("graphics/battle_transitions/cynthia.gbapal");
+static const u32 sCynthia_Tileset[] = INCBIN_U32("graphics/battle_transitions/cynthia.4bpp.lz");
+static const u32 sCynthia_Tilemap[] = INCBIN_U32("graphics/battle_transitions/cynthia.bin.lz");
 
 // All battle transitions use the same intro
 static const TaskFunc sTasks_Intro[B_TRANSITION_COUNT] =
@@ -395,6 +401,7 @@ static const TaskFunc sTasks_Main[B_TRANSITION_COUNT] =
     [B_TRANSITION_FRONTIER_CIRCLES_SYMMETRIC_SPIRAL_IN_SEQ] = Task_FrontierCirclesSymmetricSpiralInSeq,
     [B_TRANSITION_ROCKET] = Task_Rocket,
     [B_TRANSITION_CYRUS] = Task_Cyrus,
+    [B_TRANSITION_CYNTHIA] = Task_Cynthia,
 };
 
 static const TransitionStateFunc sTaskHandlers[] =
@@ -461,6 +468,17 @@ static const TransitionStateFunc sCyrus_Funcs[] =
 {
     Cyrus_Init,
     Cyrus_SetGfx,
+    PatternWeave_Blend1,
+    PatternWeave_Blend2,
+    PatternWeave_FinishAppear,
+    FramesCountdown,
+    PatternWeave_CircularMask
+};
+
+static const TransitionStateFunc sCynthia_Funcs[] =
+{
+    Cynthia_Init,
+    Cynthia_SetGfx,
     PatternWeave_Blend1,
     PatternWeave_Blend2,
     PatternWeave_FinishAppear,
@@ -1366,6 +1384,11 @@ static void Task_Cyrus(u8 taskId)
     while (sCyrus_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
 }
 
+static void Task_Cynthia(u8 taskId)
+{
+    while (sCynthia_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
+}
+
 static void Task_Regice(u8 taskId)
 {
     while (sRegice_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
@@ -1450,6 +1473,21 @@ static bool8 Cyrus_Init(struct Task *task)
     CpuFill16(0, tilemap, BG_SCREEN_SIZE);
     LZ77UnCompVram(sCyrus_Tileset, tileset);
     LoadPalette(sCyrus_Palette, BG_PLTT_ID(15), sizeof(sCyrus_Palette));
+
+    task->tState++;
+    return FALSE;
+}
+
+static bool8 Cynthia_Init(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    task->tEndDelay = 60;
+    InitPatternWeaveTransition(task);
+    GetBg0TilesDst(&tilemap, &tileset);
+    CpuFill16(0, tilemap, BG_SCREEN_SIZE);
+    LZ77UnCompVram(sCynthia_Tileset, tileset);
+    LoadPalette(sCynthia_Palette, BG_PLTT_ID(15), sizeof(sCynthia_Palette));
 
     task->tState++;
     return FALSE;
@@ -1560,6 +1598,18 @@ static bool8 Cyrus_SetGfx(struct Task *task)
 
     GetBg0TilesDst(&tilemap, &tileset);
     LZ77UnCompVram(sCyrus_Tilemap, tilemap);
+    SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
+
+    task->tState++;
+    return FALSE;
+}
+
+static bool8 Cynthia_SetGfx(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    GetBg0TilesDst(&tilemap, &tileset);
+    LZ77UnCompVram(sCynthia_Tilemap, tilemap);
     SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
 
     task->tState++;
