@@ -10398,7 +10398,7 @@ static void Cmd_various(void)
     }
     case VARIOUS_TRY_TO_CLEAR_PRIMAL_WEATHER:
     {
-        bool8 shouldNotClear = FALSE;
+        bool8 shouldNotClear = TRUE;
 
         for (i = 0; i < gBattlersCount; i++)
         {
