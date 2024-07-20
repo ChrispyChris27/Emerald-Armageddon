@@ -459,6 +459,12 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_REGIDRAGO               0x1124
+#define OBJ_EVENT_PAL_TAG_REGIELEKI               0x1125
+#define OBJ_EVENT_PAL_TAG_GIOVANNI                0x1126
+#define OBJ_EVENT_PAL_TAG_CYRUS                   0x1127
+#define OBJ_EVENT_PAL_TAG_CYNTHIA                 0x1128
+#define OBJ_EVENT_PAL_TAG_GRUNT_M                 0x1129
+#define OBJ_EVENT_PAL_TAG_GRUNT_F                 0x112A
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -506,6 +512,12 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
     {gObjectEventPal_Regidrago,             OBJ_EVENT_PAL_TAG_REGIDRAGO},
+    {gObjectEventPal_Regieleki,             OBJ_EVENT_PAL_TAG_REGIELEKI},
+    {gObjectEventPal_Giovanni,              OBJ_EVENT_PAL_TAG_GIOVANNI},
+    {gObjectEventPal_Cyrus,                 OBJ_EVENT_PAL_TAG_CYRUS},
+    {gObjectEventPal_Cynthia,               OBJ_EVENT_PAL_TAG_CYNTHIA},
+    {gObjectEventPal_Grunt_M,               OBJ_EVENT_PAL_TAG_GRUNT_M},
+    {gObjectEventPal_Grunt_F,               OBJ_EVENT_PAL_TAG_GRUNT_F},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else
