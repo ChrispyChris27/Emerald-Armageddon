@@ -29,17 +29,15 @@
 #define ABILITYEFFECT_IMMUNITY                   6
 #define ABILITYEFFECT_SYNCHRONIZE                7
 #define ABILITYEFFECT_ATK_SYNCHRONIZE            8
-#define ABILITYEFFECT_TRACE1                     9
-#define ABILITYEFFECT_TRACE2                     10
-#define ABILITYEFFECT_MOVE_END_OTHER             11
-#define ABILITYEFFECT_NEUTRALIZINGGAS            12
-#define ABILITYEFFECT_FIELD_SPORT                13 // Only used if B_SPORT_TURNS >= GEN_6
-#define ABILITYEFFECT_ON_WEATHER                 14
-#define ABILITYEFFECT_ON_TERRAIN                 15
-#define ABILITYEFFECT_SWITCH_IN_TERRAIN          16
-#define ABILITYEFFECT_SWITCH_IN_WEATHER          17
-#define ABILITYEFFECT_OPPORTUNIST                18
-#define ABILITYEFFECT_SWITCH_IN_STATUSES         19
+#define ABILITYEFFECT_MOVE_END_OTHER             9
+#define ABILITYEFFECT_NEUTRALIZINGGAS            10
+#define ABILITYEFFECT_FIELD_SPORT                11 // Only used if B_SPORT_TURNS >= GEN_6
+#define ABILITYEFFECT_ON_WEATHER                 12
+#define ABILITYEFFECT_ON_TERRAIN                 13
+#define ABILITYEFFECT_SWITCH_IN_TERRAIN          14
+#define ABILITYEFFECT_SWITCH_IN_WEATHER          15
+#define ABILITYEFFECT_OPPORTUNIST                16
+#define ABILITYEFFECT_SWITCH_IN_STATUSES         17
 // Special cases
 #define ABILITYEFFECT_MUD_SPORT                  252 // Only used if B_SPORT_TURNS >= GEN_6
 #define ABILITYEFFECT_WATER_SPORT                253 // Only used if B_SPORT_TURNS >= GEN_6
@@ -235,10 +233,10 @@ bool32 MoveHasAdditionalEffectSelf(u32 move, u32 moveEffect);
 bool32 MoveHasAdditionalEffectSelfArg(u32 move, u32 moveEffect, u32 argument);
 bool32 MoveHasChargeTurnAdditionalEffect(u32 move);
 
-bool32 CanSleep(u32 battler);
-bool32 CanBePoisoned(u32 battlerAttacker, u32 battlerTarget);
-bool32 CanBeBurned(u32 battler);
-bool32 CanBeParalyzed(u32 battler);
+bool32 CanBeSlept(u32 battler, u32 ability);
+bool32 CanBePoisoned(u32 battlerAtk, u32 battlerDef, u32 defAbility);
+bool32 CanBeBurned(u32 battler, u32 ability);
+bool32 CanBeParalyzed(u32 battler, u32 ability);
 bool32 CanBeFrozen(u32 battler);
 bool32 CanGetFrostbite(u32 battler);
 bool32 CanBeConfused(u32 battler);
