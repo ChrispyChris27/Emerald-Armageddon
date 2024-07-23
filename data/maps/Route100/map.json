@@ -2,7 +2,7 @@
   "id": "MAP_ROUTE100",
   "name": "Route100",
   "layout": "LAYOUT_ROUTE100",
-  "music": "MUS_ROUTE101",
+  "music": "MUS_CYNTHIA_ENCOUNTER",
   "region_map_section": "MAPSEC_ROUTE_100",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
