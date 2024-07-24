@@ -24,6 +24,7 @@
 #include "constants/moves.h"
 #include "constants/items.h"
 #include "constants/trainers.h"
+#include "roamer.h"
 
 #define AI_ACTION_DONE          (1 << 0)
 #define AI_ACTION_FLEE          (1 << 1)
@@ -158,7 +159,7 @@ static u32 GetAiFlags(u16 trainerId)
             flags = GetAiScriptsInRecordedBattle();
         else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
             flags = AI_FLAG_SAFARI;
-        else if (gBattleTypeFlags & BATTLE_TYPE_ROAMER)
+        else if (gBattleTypeFlags & BATTLE_TYPE_ROAMER && DoesRoamerFlee())
             flags = AI_FLAG_ROAMING;
         else if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
             flags = AI_FLAG_FIRST_BATTLE;
