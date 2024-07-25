@@ -14,55 +14,12 @@ SootopolisCity_Gym_1F_OnResume:
 	end
 
 SootopolisCity_Gym_1F_OnLoad:
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
 	special SetSootopolisGymCrackedIceMetatiles
 	end
 
-SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles::
-	goto_if_lt VAR_ICE_STEP_COUNT, 8, SootopolisCity_Gym_1F_EventScript_StopCheckingStairs  @ All stairs ice
-	goto_if_lt VAR_ICE_STEP_COUNT, 28, SootopolisCity_Gym_1F_EventScript_OpenFirstStairs
-	goto_if_lt VAR_ICE_STEP_COUNT, 67, SootopolisCity_Gym_1F_EventScript_OpenFirstAndSecondStairs
-	setmetatile 8, 4, METATILE_SootopolisGym_Stairs, FALSE
-	setmetatile 8, 5, METATILE_SootopolisGym_Stairs, FALSE
-SootopolisCity_Gym_1F_EventScript_OpenFirstAndSecondStairs::
-	setmetatile 8, 10, METATILE_SootopolisGym_Stairs, FALSE
-	setmetatile 8, 11, METATILE_SootopolisGym_Stairs, FALSE
-SootopolisCity_Gym_1F_EventScript_OpenFirstStairs::
-	setmetatile 8, 15, METATILE_SootopolisGym_Stairs, FALSE
-	setmetatile 8, 16, METATILE_SootopolisGym_Stairs, FALSE
-SootopolisCity_Gym_1F_EventScript_StopCheckingStairs::
-	return
-
 SootopolisCity_Gym_1F_OnFrame:
-	map_script_2 VAR_ICE_STEP_COUNT, 8, SootopolisCity_Gym_1F_EventScript_UnlockFirstStairs
-	map_script_2 VAR_ICE_STEP_COUNT, 28, SootopolisCity_Gym_1F_EventScript_UnlockSecondStairs
-	map_script_2 VAR_ICE_STEP_COUNT, 67, SootopolisCity_Gym_1F_EventScript_UnlockThirdStairs
 	map_script_2 VAR_ICE_STEP_COUNT, 0, SootopolisCity_Gym_1F_EventScript_FallThroughIce
 	.2byte 0
-
-SootopolisCity_Gym_1F_EventScript_UnlockFirstStairs::
-	addvar VAR_ICE_STEP_COUNT, 1
-	delay 40
-	playse SE_ICE_STAIRS
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
-	special DrawWholeMapView
-	end
-
-SootopolisCity_Gym_1F_EventScript_UnlockSecondStairs::
-	addvar VAR_ICE_STEP_COUNT, 1
-	delay 40
-	playse SE_ICE_STAIRS
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
-	special DrawWholeMapView
-	end
-
-SootopolisCity_Gym_1F_EventScript_UnlockThirdStairs::
-	addvar VAR_ICE_STEP_COUNT, 1
-	delay 40
-	playse SE_ICE_STAIRS
-	call SootopolisCity_Gym_1F_EventScript_CheckSetStairMetatiles
-	special DrawWholeMapView
-	end
 
 SootopolisCity_Gym_1F_EventScript_FallThroughIce::
 	lockall
@@ -317,3 +274,76 @@ SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "I wish that you would return with\n"
 	.string "two, perhaps more, POKéMON, please.$"
 
+SootopolisCity_Gym_1F_EventScript_Connie::
+	trainerbattle_single TRAINER_CONNIE, SootopolisCity_Gym_1F_Text_ConnieIntro, SootopolisCity_Gym_1F_Text_ConnieDefeat
+	msgbox SootopolisCity_Gym_1F_Text_ConniePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+SootopolisCity_Gym_1F_Text_ConnieIntro:
+	.string "I should teach you how harsh battles\n"
+	.string "can be.$"
+
+SootopolisCity_Gym_1F_Text_ConnieDefeat:
+	.string "Oh.\n"
+	.string "You're strong.$"
+
+SootopolisCity_Gym_1F_Text_ConniePostBattle:
+	.string "I'll tell you something good.\p"
+	.string "If you want to reach JUAN, you\n"
+	.string "need to walk on each floor tile once.$"
+
+SootopolisCity_Gym_1F_EventScript_Bridget::
+	trainerbattle_single TRAINER_BRIDGET, SootopolisCity_Gym_1F_Text_BridgetIntro, SootopolisCity_Gym_1F_Text_BridgetDefeat
+	msgbox SootopolisCity_Gym_1F_Text_BridgetPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+SootopolisCity_Gym_1F_EventScript_Olivia::
+	trainerbattle_single TRAINER_OLIVIA, SootopolisCity_Gym_1F_Text_OliviaIntro, SootopolisCity_Gym_1F_Text_OliviaDefeat
+	msgbox SootopolisCity_Gym_1F_Text_OliviaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+SootopolisCity_Gym_1F_Text_BridgetIntro:
+	.string "The POKéMON GYM of the highest level\n"
+	.string "in the HOENN region…\p"
+	.string "That's the SOOTOPOLIS GYM.$"
+
+SootopolisCity_Gym_1F_Text_BridgetDefeat:
+	.string "What a high level you are!$"
+
+SootopolisCity_Gym_1F_Text_BridgetPostBattle:
+	.string "Rather than being satisfied by being\n"
+	.string "in a strong GYM, I imagine training in\l"
+	.string "other places will make you stronger.\l"
+	.string "But above all, it looks more fun.$"
+
+SootopolisCity_Gym_1F_Text_OliviaIntro:
+	.string "I train my POKéMON together with\n"
+	.string "JUAN.\p"
+	.string "Don't think I'm a pushover.$"
+
+SootopolisCity_Gym_1F_Text_OliviaDefeat:
+	.string "I was beaten…$"
+
+SootopolisCity_Gym_1F_Text_OliviaPostBattle:
+	.string "I think you have potential.\n"
+	.string "Why don't you stay and train with us?$"
+
+SootopolisCity_Gym_1F_EventScript_Annika::
+	trainerbattle_single TRAINER_ANNIKA, SootopolisCity_Gym_1F_Text_AnnikaIntro, SootopolisCity_Gym_1F_Text_AnnikaDefeat
+	msgbox SootopolisCity_Gym_1F_Text_AnnikaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+SootopolisCity_Gym_1F_Text_AnnikaIntro:
+	.string "I can battle with really rare POKéMON\n"
+	.string "if you'd like.$"
+
+SootopolisCity_Gym_1F_Text_AnnikaDefeat:
+	.string "Oh, there now! Did you have a good look\n"
+	.string "at my POKéMON?$"
+
+SootopolisCity_Gym_1F_Text_AnnikaPostBattle:
+	.string "I came to this GYM because JUAN\n"
+	.string "praised me for my darling POKéMON.\p"
+	.string "Oh, if only I'd met JUAN years ago\n"
+	.string "when I was younger…$"
+	
