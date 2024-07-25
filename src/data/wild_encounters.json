@@ -12351,6 +12351,75 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_METEOR_CASTLE_THRONE_ROOM",
+          "base_label": "gMeteorCastleThroneRoom0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BUZZWOLE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_PHEROMOSA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_XURKITREE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_CELESTEELA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_KARTANA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BLACEPHALON"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NAGANADEL"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              }
+            ]
+          }
         }
       ]
     },
