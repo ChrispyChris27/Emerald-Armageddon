@@ -770,27 +770,27 @@
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_NINJASK"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_BOMBIRDIER"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_CRAMORANT"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_CRAMORANT"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_PELIPPER"
+                "species": "SPECIES_CRAMORANT"
               }
             ]
           },
@@ -800,52 +800,52 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_PINCURCHIN"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_PYUKUMUKU"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_QWILFISH"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_CORSOLA_GALARIAN"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_CORSOLA"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_BASCULEGION_FEMALE"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_BASCULEGION_MALE"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_OVERQWIL"
               },
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_LAPRAS"
               },
               {
                 "min_level": 40,
                 "max_level": 45,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_LAPRAS"
               }
             ]
           }
@@ -1112,52 +1112,52 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_BRAMBLIN"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_POLTCHAGEIST"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_SLUGMA"
+                "species": "SPECIES_SINISTEA"
               },
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_ABSOL"
               },
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_YANMA"
               },
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_SLUGMA"
+                "species": "SPECIES_LICKITUNG"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_CHATOT"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SLUGMA"
+                "species": "SPECIES_WOOBAT"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SPINDA"
+                "species": "SPECIES_SEVIPER"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SKARMORY"
+                "species": "SPECIES_ZANGOOSE"
               },
               {
                 "min_level": 16,
@@ -1181,62 +1181,62 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOTAD"
+                "species": "SPECIES_KANGASKHAN"
               },
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_PINSIR"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_BOUFFALANT"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_LOTAD"
+                "species": "SPECIES_CARBINK"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_KLEFKI"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_ORANGURU"
               },
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_LOMBRE"
+                "species": "SPECIES_PASSIMIAN"
               },
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_KOMALA"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_HAWLUCHA"
               },
               {
                 "min_level": 17,
                 "max_level": 17,
-                "species": "SPECIES_SEVIPER"
+                "species": "SPECIES_TAUROS"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NUZLEAF"
+                "species": "SPECIES_PACHIRISU"
               }
             ]
           },
@@ -2107,62 +2107,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_BANETTE"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DUSCLOPS"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_MISDREAVUS"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_LAMPENT"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_HAUNTER"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DRIFBLIM"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DOUBLADE"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_HOUNDSTONE"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_MIMIKYU"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_COFAGRIGUS"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_SPIRITOMB"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_SABLEYE"
               }
             ]
           }
@@ -2435,63 +2435,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 10,
-                "max_level": 10,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_VULPIX_ALOLAN"
               },
               {
-                "min_level": 11,
-                "max_level": 11,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_SANDSHREW_ALOLAN"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_SNORUNT"
               },
               {
-                "min_level": 11,
-                "max_level": 11,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_VANILLITE"
               },
               {
-                "min_level": 12,
-                "max_level": 12,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_BERGMITE"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_CETODDLE"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_SNOM"
               },
               {
-                "min_level": 11,
-                "max_level": 11,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_CUBCHOO"
               },
               {
-                "min_level": 12,
-                "max_level": 12,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_DARUMAKA_GALARIAN"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_SNEASEL"
               },
               {
-                "min_level": 12,
-                "max_level": 12,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_CRYOGONAL"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_EISCUE"
               }
             ]
@@ -2536,62 +2536,62 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_NUMEL"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_KOFFING"
-              },
-              {
-                "min_level": 16,
-                "max_level": 16,
-                "species": "SPECIES_NUMEL"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_MACHOP"
-              },
-              {
-                "min_level": 15,
-                "max_level": 15,
                 "species": "SPECIES_TORKOAL"
               },
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_SLUGMA"
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_KOFFING"
+                "species": "SPECIES_MAGMAR"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_MAGCARGO"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_SCOVILLAIN"
+              },
+              {
+                "min_level": 15,
+                "max_level": 15,
+                "species": "SPECIES_HOUNDOOM"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_MACHOP"
-              },
-              {
-                "min_level": 14,
-                "max_level": 14,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_DARMANITAN"
               },
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_CAMERUPT"
               },
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_GRIMER"
+                "species": "SPECIES_TAUROS_PALDEAN_BLAZE_BREED"
+              },
+              {
+                "min_level": 16,
+                "max_level": 16,
+                "species": "SPECIES_ORICORIO_BAILE"
               },
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_GRIMER"
+                "species": "SPECIES_ARCANINE_HISUIAN"
+              },
+              {
+                "min_level": 14,
+                "max_level": 14,
+                "species": "SPECIES_ARCANINE"
               }
             ]
           }
@@ -2759,62 +2759,62 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_SAWK"
               },
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_THROH"
               },
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_MACHOP"
+                "species": "SPECIES_DURANT"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SPOINK"
+                "species": "SPECIES_STONJOURNER"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_MACHOP"
+                "species": "SPECIES_STANTLER"
               },
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_SPOINK"
+                "species": "SPECIES_HAKAMO_O"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_MACHOP"
+                "species": "SPECIES_KLEAVOR"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_HERACROSS"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SPOINK"
+                "species": "SPECIES_LYCANROC_MIDNIGHT"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_NUMEL"
+                "species": "SPECIES_LYCANROC_MIDDAY"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SPOINK"
+                "species": "SPECIES_LYCANROC_DUSK"
               }
             ]
           }
@@ -3184,62 +3184,62 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_KANGASKHAN"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_PINSIR"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SWABLU"
+                "species": "SPECIES_HERACROSS"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_ABSOL"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_TAILLOW"
+                "species": "SPECIES_AUDINO"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SWELLOW"
+                "species": "SPECIES_LOPUNNY"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_JIGGLYPUFF"
+                "species": "SPECIES_ALTARIA"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_JIGGLYPUFF"
+                "species": "SPECIES_BEEDRILL"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_AERODACTYL"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_SCIZOR"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_AGGRON"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_MAWILE"
               }
             ]
           },
@@ -3393,7 +3393,7 @@
               {
                 "min_level": 50,
                 "max_level": 50,
-                "species": "SPECIES_PINCURCHIN"
+                "species": "SPECIES_PORYGON_Z"
               }
             ]
           }
@@ -3958,62 +3958,62 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_POOCHYENA"
+                "species": "SPECIES_ALAKAZAM"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_GENGAR"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_MIGHTYENA"
+                "species": "SPECIES_AERODACTYL"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_MEDICHAM"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_MIGHTYENA"
+                "species": "SPECIES_GARCHOMP"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_ODDISH"
+                "species": "SPECIES_BANETTE"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_ODDISH"
+                "species": "SPECIES_STEELIX"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GLOOM"
+                "species": "SPECIES_KUBFU"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_SNORLAX"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_GALLADE"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_GARDEVOIR"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_KECLEON"
+                "species": "SPECIES_BLISSEY"
               }
             ]
           },
@@ -4112,62 +4112,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_BANETTE"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DUSCLOPS"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_MISDREAVUS"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_LAMPENT"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_HAUNTER"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DRIFBLIM"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DOUBLADE"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_HOUNDSTONE"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_MIMIKYU"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_COFAGRIGUS"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_SPIRITOMB"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_SABLEYE"
               }
             ]
           }
@@ -4181,62 +4181,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_KADABRA"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_CHIMECHO"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_KIRLIA"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_SIGILYPH"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_HYPNO"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_GOTHORITA"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DUOSION"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_BEHEEYEM"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_INDEEDEE_FEMALE"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ESPEON"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_WOBBUFFET"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_INDEEDEE_MALE"
               }
             ]
           }
@@ -4250,62 +4250,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_HATTREM"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_MR_MIME"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ORICORIO_PAU"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_SIGILYPH"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_CLAYDOL"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_BRONZONG"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ORANGURU"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SHUPPET"
-              },
-              {
-                "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_DUSKULL"
-              },
-              {
-                "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_DUSKULL"
-              },
-              {
-                "min_level": 25,
-                "max_level": 25,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_RABSCA"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_MEOWSTIC_MALE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 24,
+                "species": "SPECIES_SOLROCK"
+              },
+              {
+                "min_level": 29,
+                "max_level": 29,
+                "species": "SPECIES_LUNATONE"
+              },
+              {
+                "min_level": 24,
+                "max_level": 24,
+                "species": "SPECIES_MEOWSTIC_FEMALE"
               }
             ]
           }
@@ -4319,62 +4319,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ABSOL"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_MORGREM"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_WEAVILE"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_LOKIX"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_SPIRITOMB"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DRAPION"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_CACTURNE"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_MALAMAR"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_ZOROARK"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_ZOROARK_HISUIAN"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_UMBREON"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_MORPEKO"
               }
             ]
           }
@@ -4388,62 +4388,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ROTOM"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ROTOM_FAN"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ROTOM_FROST"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ROTOM_HEAT"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ROTOM_MOW"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ROTOM_WASH"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_METANG"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_ZWEILOUS"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_DOUBLADE"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_UNOWN"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_SLOWBRO_GALARIAN"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_DUSKULL"
+                "species": "SPECIES_SLOWKING_GALARIAN"
               }
             ]
           }
@@ -4457,62 +4457,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_SINISTEA"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DRAKLOAK"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_SINISTCHA"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_TREVENANT"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_GOURGEIST"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_DOUBLADE"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_DRIFBLIM"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_VULPIX"
+                "species": "SPECIES_HOUNDSTONE"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_CURSOLA"
               },
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_ORICORIO_SENSU"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_ZOROARK"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_ZOROARK_HISUIAN"
               }
             ]
           }
@@ -4526,7 +4526,7 @@
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SHUPPET"
+                "species": "SPECIES_DRAKLOAK"
               },
               {
                 "min_level": 29,
@@ -4593,64 +4593,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 7,
-                "max_level": 7,
-                "species": "SPECIES_ZUBAT"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_CHINGLING"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
-                "species": "SPECIES_MAKUHITA"
-              },
-              {
-                "min_level": 7,
-                "max_level": 7,
-                "species": "SPECIES_MAKUHITA"
-              },
-              {
-                "min_level": 8,
-                "max_level": 8,
-                "species": "SPECIES_ZUBAT"
-              },
-              {
-                "min_level": 9,
-                "max_level": 9,
-                "species": "SPECIES_MAKUHITA"
-              },
-              {
-                "min_level": 8,
-                "max_level": 8,
+                "min_level": 20,
+                "max_level": 20,
                 "species": "SPECIES_ABRA"
               },
               {
-                "min_level": 10,
-                "max_level": 10,
-                "species": "SPECIES_MAKUHITA"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_RALTS"
               },
               {
-                "min_level": 6,
-                "max_level": 6,
-                "species": "SPECIES_MAKUHITA"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_ELEKID"
               },
               {
-                "min_level": 7,
-                "max_level": 7,
-                "species": "SPECIES_ARON"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MAGBY"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
-                "species": "SPECIES_ARON"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SMOOCHUM"
               },
               {
-                "min_level": 7,
-                "max_level": 7,
-                "species": "SPECIES_ARON"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_PORYGON"
               },
               {
-                "min_level": 8,
-                "max_level": 8,
-                "species": "SPECIES_ARON"
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_MIME_JR"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_RIOLU"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_TYROGUE"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SNEASEL"
+              },
+              {
+                "min_level": 20,
+                "max_level": 20,
+                "species": "SPECIES_SNEASEL_HISUIAN"
               }
             ]
           }
@@ -5708,62 +5708,62 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_GOODRA"
               },
               {
                 "min_level": 31,
                 "max_level": 31,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_GOODRA_HISUIAN"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_ACCELGOR"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_DEWGONG"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_LAPRAS"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_PELIPPER"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_SHIINOTIC"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_HELIOLISK"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_BLASTOISE"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_TOXICROAK"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_JYNX"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_PARASECT"
               }
             ]
           }
@@ -5777,62 +5777,62 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_LUDICOLO"
               },
               {
                 "min_level": 31,
                 "max_level": 31,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_GOLDUCK"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_FLOATZEL"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_SEISMITOAD"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_DREDNAW"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_BEARTIC"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_OVERQWIL"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_MANTINE"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_PRIMARINA"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_EMPOLEON"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_SWAMPERT"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_FERALIGATR"
               }
             ]
           }
@@ -5846,62 +5846,62 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_POLIWRATH"
               },
               {
                 "min_level": 31,
                 "max_level": 31,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_POLITOED"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_SIMIPOUR"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_CLAWITZER"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_PALAFIN"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_TOXAPEX"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_GOLISOPOD"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_ARAQUANID"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_QUAQUAVAL"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_INTELEON"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_SAMUROTT"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_GRENINJA"
               }
             ]
           }
@@ -5915,62 +5915,62 @@
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_SLOWBRO_GALARIAN"
               },
               {
                 "min_level": 31,
                 "max_level": 31,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_SLOWKING_GALARIAN"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_CROBAT"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_QUAGSIRE"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_CLODSIRE"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_DRAPION"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_SNEASLER"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_SCOLIPEDE"
               },
               {
                 "min_level": 34,
                 "max_level": 34,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_WEEZING"
               },
               {
                 "min_level": 35,
                 "max_level": 35,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_WEEZING_GALARIAN"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_MUK_ALOLAN"
               },
               {
                 "min_level": 36,
                 "max_level": 36,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_MUK"
               }
             ]
           }
@@ -6604,62 +6604,62 @@
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_ORICORIO_POM_POM"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_RAICHU"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_HELIOLISK"
               },
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_ELECTIVIRE"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_AMPHAROS"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_MANECTRIC"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_LUXRAY"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_TOGEDEMARU"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_EMOLGA"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_DEDENNE"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_VOLTORB"
+                "species": "SPECIES_STUNFISK"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_MAGNEMITE"
+                "species": "SPECIES_JOLTEON"
               }
             ]
           }
@@ -8028,52 +8028,52 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_WALREIN"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_BEARTIC"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_CRABOMINABLE"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_DEWGONG"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_CLOYSTER"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_ARCTOVISH"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_ARCTOZOLT"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_LAPRAS"
               },
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_LAPRAS"
               },
               {
                 "min_level": 40,
                 "max_level": 45,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_LAPRAS"
               }
             ]
           }
@@ -8182,52 +8182,52 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_WALREIN"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_BEARTIC"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_CRABOMINABLE"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_DEWGONG"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_CLOYSTER"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_ARCTOVISH"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_ARCTOZOLT"
               },
               {
                 "min_level": 20,
                 "max_level": 25,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_LAPRAS"
               },
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_LAPRAS"
               },
               {
                 "min_level": 40,
                 "max_level": 45,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_LAPRAS"
               }
             ]
           }
@@ -9158,62 +9158,62 @@
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_CRYOGONAL"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SPHEAL"
+                "species": "SPECIES_CETITAN"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_MR_RIME"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SPHEAL"
+                "species": "SPECIES_MAMOSWINE"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_BAXCALIBUR"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_SPHEAL"
+                "species": "SPECIES_SNORUNT"
               },
               {
                 "min_level": 26,
                 "max_level": 26,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_FROSMOTH"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_SPHEAL"
+                "species": "SPECIES_WEAVILE"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_AVALUGG_HISUIAN"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_GLACEON"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_GOLBAT"
+                "species": "SPECIES_AVALUGG"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_SNORUNT"
+                "species": "SPECIES_EISCUE"
               }
             ]
           }
@@ -9290,33 +9290,98 @@
         {
           "map": "MAP_SOOTOPOLIS_CITY",
           "base_label": "gSootopolisCity",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGONITE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HAXORUS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_KOMMO_O"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SALAMENCE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GARCHOMP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGAPULT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HYDREIGON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BAXCALIBUR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ARCHALUDON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EXEGGUTOR_ALOLAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOODRA_HISUIAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GOODRA"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 1,
             "mons": [
               {
                 "min_level": 5,
                 "max_level": 35,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_PALAFIN"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_ALTARIA"
               },
               {
                 "min_level": 15,
                 "max_level": 25,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_NOIVERN"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_NOIVERN"
               },
               {
                 "min_level": 25,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_NOIVERN"
               }
             ]
           },
@@ -9326,52 +9391,52 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_GYARADOS"
               },
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_MILOTIC"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_TATSUGIRI"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_DRACOZOLT"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_DRACOVISH"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_KINGDRA"
               },
               {
                 "min_level": 30,
                 "max_level": 35,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_DRAGALGE"
               },
               {
                 "min_level": 35,
                 "max_level": 40,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_DONDOZO"
               },
               {
                 "min_level": 35,
                 "max_level": 45,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_PALAFIN"
               },
               {
                 "min_level": 5,
                 "max_level": 45,
-                "species": "SPECIES_GYARADOS"
+                "species": "SPECIES_PALAFIN"
               }
             ]
           }
@@ -9776,62 +9841,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_JUMPLUFF"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_LURANTIS"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_TSAREENA"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_HELIOLISK"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_TROPIUS"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_CHERRIM"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_SUNFLORA"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_HOUNDOOM"
               },
               {
                 "min_level": 31,
                 "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_MEGANIUM"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_LEAFEON"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_CHARIZARD"
               }
             ]
           }
@@ -9845,62 +9910,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_VILEPLUME"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_VICTREEBEL"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_BELLOSSOM"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_SHIFTRY"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_LEAVANNY"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MARACTUS"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_SCOVILLAIN"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_SAWSBUCK"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_TYPHLOSION"
               },
               {
                 "min_level": 31,
                 "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_LILLIGANT_HISUIAN"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_LILLIGANT"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_VENUSAUR"
               }
             ]
           }
@@ -9914,17 +9979,17 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_NINETALES"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_RAPIDASH"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MAGMORTAR"
               },
               {
                 "min_level": 30,
@@ -9934,42 +9999,42 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_SIMISEAR"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_HEATMOR"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MAGCARGO"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_PYROAR"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_DELPHOX"
               },
               {
                 "min_level": 31,
                 "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_EMBOAR"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_INFERNAPE"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_BLAZIKEN"
               }
             ]
           }
@@ -9983,62 +10048,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_MAROWAK_ALOLAN"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_ORICORIO_BAILE"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_CAMERUPT"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_TALONFLAME"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_DARMANITAN"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_TURTONATOR"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_CENTISKORCH"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_SALAZZLE"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_SKELEDIRGE"
               },
               {
                 "min_level": 31,
                 "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_CINDERACE"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_ARCANINE_HISUIAN"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_ARCANINE"
               }
             ]
           }
@@ -10052,62 +10117,62 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_COALOSSAL"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_GARGANACL"
               },
               {
                 "min_level": 28,
                 "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_TYRANITAR"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "species": "SPECIES_GLIMMORA"
               },
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_RHYPERIOR"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_AGGRON"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_CRUSTLE"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_PROBOPASS"
               },
               {
                 "min_level": 30,
                 "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_SUDOWOODO"
               },
               {
                 "min_level": 31,
                 "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_AERODACTYL"
               },
               {
                 "min_level": 32,
                 "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_GOLEM"
               },
               {
                 "min_level": 33,
                 "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "species": "SPECIES_GOLEM_ALOLAN"
               }
             ]
           }
@@ -10176,7 +10241,7 @@
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_VOLCARONA"
+                "species": "SPECIES_INCINEROAR"
               }
             ]
           }
@@ -10188,64 +10253,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_GREAT_TUSK"
               },
               {
-                "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_ROARING_MOON"
               },
               {
-                "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_SANDY_SHOCKS"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_SLITHER_WING"
               },
               {
-                "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_FLUTTER_MANE"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_BRUTE_BONNET"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_SCREAM_TAIL"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_MAROWAK_ALOLAN"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_ARMAROUGE"
               },
               {
-                "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_CERULEDGE"
               },
               {
-                "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_VOLCARONA"
               },
               {
-                "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_ROTOM_HEAT"
               }
             ]
           }
@@ -10257,64 +10322,64 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 27,
-                "max_level": 27,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_GREAT_TUSK"
               },
               {
-                "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_TORKOAL"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_ROARING_MOON"
               },
               {
-                "min_level": 28,
-                "max_level": 28,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_SANDY_SHOCKS"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_TORKOAL"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_SLITHER_WING"
               },
               {
-                "min_level": 29,
-                "max_level": 29,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_FLUTTER_MANE"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_BRUTE_BONNET"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GEODUDE"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_SCREAM_TAIL"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_MAROWAK_ALOLAN"
               },
               {
-                "min_level": 30,
-                "max_level": 30,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_ARMAROUGE"
               },
               {
-                "min_level": 31,
-                "max_level": 31,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_CERULEDGE"
               },
               {
-                "min_level": 32,
-                "max_level": 32,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_VOLCARONA"
               },
               {
-                "min_level": 33,
-                "max_level": 33,
-                "species": "SPECIES_GRAVELER"
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_VOLCARONA"
               }
             ]
           }
@@ -10328,62 +10393,62 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_SIGILYPH"
               },
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_SWOOBAT"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GOLBAT"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_BEHEEYEM"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_VIBRAVA"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_EXCADRILL"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GABITE"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_SHELGON"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_LARVESTA"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_MARACTUS"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_YAMASK_GALARIAN"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_YAMASK"
               }
             ]
           }
@@ -10397,62 +10462,62 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_SIGILYPH"
               },
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_SWOOBAT"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_CLAYDOL"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_VIBRAVA"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_EXCADRILL"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GABITE"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_SHELGON"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_LARVESTA"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_ORTHWORM"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_YAMASK_GALARIAN"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_YAMASK"
               }
             ]
           }
@@ -10466,62 +10531,62 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_SIGILYPH"
               },
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_SWOOBAT"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_STEELIX"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_CRUSTLE"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_VIBRAVA"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_EXCADRILL"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GABITE"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_SHELGON"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_LARVESTA"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_STUNFISK_GALARIAN"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_YAMASK_GALARIAN"
               },
               {
                 "min_level": 24,
                 "max_level": 24,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_YAMASK"
               }
             ]
           }
@@ -10535,62 +10600,62 @@
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_SIGILYPH"
               },
               {
                 "min_level": 21,
                 "max_level": 21,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_SWOOBAT"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_DARUMAKA"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_KROKOROK"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_VIBRAVA"
               },
               {
                 "min_level": 20,
                 "max_level": 20,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_EXCADRILL"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_SANDSHREW"
+                "species": "SPECIES_GABITE"
               },
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_TRAPINCH"
+                "species": "SPECIES_SHELGON"
               },
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_SANDSHREW"
-              },
-              {
-                "min_level": 23,
-                "max_level": 23,
-                "species": "SPECIES_TRAPINCH"
-              },
-              {
-                "min_level": 24,
-                "max_level": 24,
-                "species": "SPECIES_SANDSHREW"
-              },
-              {
-                "min_level": 24,
-                "max_level": 24,
                 "species": "SPECIES_LARVESTA"
+              },
+              {
+                "min_level": 23,
+                "max_level": 23,
+                "species": "SPECIES_STUNFISK"
+              },
+              {
+                "min_level": 24,
+                "max_level": 24,
+                "species": "SPECIES_YAMASK_GALARIAN"
+              },
+              {
+                "min_level": 24,
+                "max_level": 24,
+                "species": "SPECIES_YAMASK"
               }
             ]
           }
@@ -11892,7 +11957,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CUTIEFLY"
+                "species": "SPECIES_COMFEY"
               },
               {
                 "min_level": 5,
@@ -12222,7 +12287,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_COMBEE"
+                "species": "SPECIES_CUTIEFLY"
               },
               {
                 "min_level": 5,
@@ -12247,7 +12312,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_SURSKIT"
+                "species": "SPECIES_COMBEE"
               },
               {
                 "min_level": 5,
@@ -12506,6 +12571,367 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_DONDOZO"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_MT_CHIMNEY",
+          "base_label": "gMtChimney0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAMPA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_APPLIN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DURALUDON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NOIBAT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRUDDIGON"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MURKROW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BOMBIRDIER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DUNSPARCE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_RIOLU"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BRAVIARY_HISUIAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BRAVIARY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_AXEW"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_FORTREE_CITY",
+          "base_label": "gFortreeCity0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ALTARIA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DODRIO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SCYTHER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_AERODACTYL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SWELLOW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CROBAT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_VESPIQUEN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HAWLUCHA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BRAVIARY_HISUIAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_BRAVIARY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SKARMORY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FARFETCHD"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SEALED_CHAMBER_INNER_ROOM",
+          "base_label": "gSealedChamber_InnerRoom0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_URSHIFU_RAPID_STRIKE_STYLE"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_URSHIFU_SINGLE_STRIKE_STYLE"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_TYPE_NULL"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_TYPE_NULL"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_VOLCARONA"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_VOLCARONA"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_ROARING_MOON"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_ROARING_MOON"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_UXIE"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_AZELF"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_MESPRIT"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_CRESSELIA"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SEALED_CHAMBER_OUTER_ROOM",
+          "base_label": "gSealedChamber_OuterRoom0",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_URSHIFU_RAPID_STRIKE_STYLE"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_URSHIFU_SINGLE_STRIKE_STYLE"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_TYPE_NULL"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_TYPE_NULL"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_VOLCARONA"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_VOLCARONA"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_IRON_VALIANT"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_IRON_VALIANT"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_TAPU_BULU"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_TAPU_FINI"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_TAPU_KOKO"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_TAPU_LELE"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_PHIONE"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_MANAPHY"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_MANAPHY"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 80,
+                "max_level": 80,
+                "species": "SPECIES_WAILORD"
               }
             ]
           }
