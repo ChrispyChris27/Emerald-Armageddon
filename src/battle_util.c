@@ -236,8 +236,8 @@ void HandleAction_UseMove(void)
                 && GetBattlerTurnOrderNum(battler) < var
                 && gMovesInfo[gCurrentMove].effect != EFFECT_SNIPE_SHOT
                 && gMovesInfo[gCurrentMove].effect != EFFECT_PLEDGE
-                && (GetBattlerAbility(gBattlerAttacker) != ABILITY_PROPELLER_TAIL
-                 || GetBattlerAbility(gBattlerAttacker) != ABILITY_STALWART))
+                && GetBattlerAbility(gBattlerAttacker) != ABILITY_PROPELLER_TAIL
+                && GetBattlerAbility(gBattlerAttacker) != ABILITY_STALWART)
             {
                 var = GetBattlerTurnOrderNum(battler);
             }
@@ -7812,6 +7812,7 @@ u8 ItemBattleEffects(u8 caseID, u32 battler, bool32 moveTurn)
             if (IsBattlerAlive(gBattlerAttacker)
                 && !(TestIfSheerForceAffected(gBattlerAttacker, gCurrentMove))
                 && GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
+                && !gProtectStructs[gBattlerAttacker].confusionSelfDmg
                 && !gSpecialStatuses[gBattlerAttacker].preventLifeOrbDamage
                 && gSpecialStatuses[gBattlerAttacker].damagedMons)
             {
@@ -8552,12 +8553,12 @@ u32 GetMoveTargetCount(u32 move, u32 battlerAtk, u32 battlerDef)
     switch (GetBattlerMoveTargetType(gBattlerAttacker, move))
     {
     case MOVE_TARGET_BOTH:
-        return IsBattlerAlive(battlerDef)
-             + IsBattlerAlive(BATTLE_PARTNER(battlerDef));
+        return !(gAbsentBattlerFlags & gBitTable[battlerDef])
+             + !(gAbsentBattlerFlags & gBitTable[BATTLE_PARTNER(battlerDef)]);
     case MOVE_TARGET_FOES_AND_ALLY:
-        return IsBattlerAlive(battlerDef)
-             + IsBattlerAlive(BATTLE_PARTNER(battlerDef))
-             + IsBattlerAlive(BATTLE_PARTNER(battlerAtk));
+        return !(gAbsentBattlerFlags & gBitTable[battlerDef])
+             + !(gAbsentBattlerFlags & gBitTable[BATTLE_PARTNER(battlerDef)])
+             + !(gAbsentBattlerFlags & gBitTable[BATTLE_PARTNER(battlerAtk)]);
     case MOVE_TARGET_OPPONENTS_FIELD:
         return 1;
     case MOVE_TARGET_DEPENDS:
@@ -9674,7 +9675,7 @@ static inline s32 CalculateBaseDamage(u32 power, u32 userFinalAttack, u32 level,
 
 static inline uq4_12_t GetTargetDamageModifier(u32 move, u32 battlerAtk, u32 battlerDef)
 {
-    if (GetMoveTargetCount(move, battlerAtk, battlerDef) >= 2)
+    if (IsDoubleBattle() && GetMoveTargetCount(move, battlerAtk, battlerDef) >= 2)
         return B_MULTIPLE_TARGETS_DMG >= GEN_4 ? UQ_4_12(0.75) : UQ_4_12(0.5);
     return UQ_4_12(1.0);
 }
@@ -10849,6 +10850,7 @@ bool32 ShouldGetStatBadgeBoost(u16 badgeFlag, u32 battler)
 
 u8 GetBattleMoveCategory(u32 moveId)
 {
+    u8 moveType;
     if (gBattleStruct != NULL && gBattleStruct->zmove.active && !IS_MOVE_STATUS(moveId))
         return gBattleStruct->zmove.activeCategory;
     if (gBattleStruct != NULL && IsMaxMove(moveId)) // TODO: Might be buggy depending on when this is called.
@@ -10860,10 +10862,11 @@ u8 GetBattleMoveCategory(u32 moveId)
 
     if (IS_MOVE_STATUS(moveId))
         return DAMAGE_CATEGORY_STATUS;
-    else if (gMovesInfo[moveId].type < TYPE_MYSTERY)
-        return DAMAGE_CATEGORY_PHYSICAL;
+    else if (gMain.inBattle)
+        GET_MOVE_TYPE(moveId, moveType);
     else
-        return DAMAGE_CATEGORY_SPECIAL;
+        moveType = gMovesInfo[moveId].type;
+    return moveType < TYPE_MYSTERY ? DAMAGE_CATEGORY_PHYSICAL : DAMAGE_CATEGORY_SPECIAL;
 }
 
 static bool32 TryRemoveScreens(u32 battler)
