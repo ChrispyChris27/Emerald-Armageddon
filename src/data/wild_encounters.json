@@ -10221,7 +10221,7 @@
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_MAROWAK_ALOLAN"
+                "species": "SPECIES_CYCLIZAR"
               },
               {
                 "min_level": 60,
@@ -10290,7 +10290,7 @@
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_MAROWAK_ALOLAN"
+                "species": "SPECIES_CYCLIZAR"
               },
               {
                 "min_level": 60,
@@ -10359,7 +10359,7 @@
               {
                 "min_level": 60,
                 "max_level": 60,
-                "species": "SPECIES_MAROWAK_ALOLAN"
+                "species": "SPECIES_CYCLIZAR"
               },
               {
                 "min_level": 60,
@@ -12599,7 +12599,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_NOIBAT"
+                "species": "SPECIES_CYCLIZAR"
               },
               {
                 "min_level": 5,
