@@ -1837,6 +1837,7 @@ static bool32 Fishing_ShowDots(struct Task *task)
             }
         }
         return FALSE;
+        }
 }
 
 static bool32 Fishing_CheckForBite(struct Task *task)

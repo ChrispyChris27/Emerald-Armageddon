@@ -1357,27 +1357,27 @@ static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
 };
 
 static const struct SpriteFrameImage sPicTable_Regidrago[] = {
-    obj_frame_tiles(gObjectEventPic_Regidrago),
-    obj_frame_tiles(gObjectEventPic_Regidrago),
-    obj_frame_tiles(gObjectEventPic_Regidrago),
-    obj_frame_tiles(gObjectEventPic_Regidrago),
-    obj_frame_tiles(gObjectEventPic_Regidrago),
-    obj_frame_tiles(gObjectEventPic_Regidrago),
-    obj_frame_tiles(gObjectEventPic_Regidrago),
-    obj_frame_tiles(gObjectEventPic_Regidrago),
-    obj_frame_tiles(gObjectEventPic_Regidrago),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
 };
 
 static const struct SpriteFrameImage sPicTable_Regieleki[] = {
-    obj_frame_tiles(gObjectEventPic_Regieleki),
-    obj_frame_tiles(gObjectEventPic_Regieleki),
-    obj_frame_tiles(gObjectEventPic_Regieleki),
-    obj_frame_tiles(gObjectEventPic_Regieleki),
-    obj_frame_tiles(gObjectEventPic_Regieleki),
-    obj_frame_tiles(gObjectEventPic_Regieleki),
-    obj_frame_tiles(gObjectEventPic_Regieleki),
-    obj_frame_tiles(gObjectEventPic_Regieleki),
-    obj_frame_tiles(gObjectEventPic_Regieleki),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
 };
 
 static const struct SpriteFrameImage sPicTable_Cyrus[] = {

@@ -378,10 +378,10 @@ const u32 gObjectEventPic_SudowoodoTree[] = INCBIN_U32("graphics/object_events/p
 const u32 gObjectEventPic_RayquazaCutscene[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/rayquaza_cutscene.4bpp");
 
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
-const u32 gObjectEventPic_Regidrago[] = INCBIN_U32("graphics/object_events/pics/pokemon/regidrago.4bpp");
-const u16 gObjectEventPal_Regidrago[] = INCBIN_U16("graphics/object_events/palettes/regidrago.gbapal");
-const u32 gObjectEventPic_Regieleki[] = INCBIN_U32("graphics/object_events/pics/pokemon/regieleki.4bpp");
-const u16 gObjectEventPal_Regieleki[] = INCBIN_U16("graphics/object_events/palettes/regieleki.gbapal");
+const u32 gObjectEventPic_RegidragoOW[] = INCBIN_U32("graphics/object_events/pics/pokemon/regidrago.4bpp");
+const u16 gObjectEventPal_RegidragoOW[] = INCBIN_U16("graphics/object_events/palettes/regidrago.gbapal");
+const u32 gObjectEventPic_RegielekiOW[] = INCBIN_U32("graphics/object_events/pics/pokemon/regieleki.4bpp");
+const u16 gObjectEventPal_RegielekiOW[] = INCBIN_U16("graphics/object_events/palettes/regieleki.gbapal");
 const u32 gObjectEventPic_Cyrus[] = INCBIN_U32("graphics/object_events/pics/people/cyrus.4bpp");
 const u16 gObjectEventPal_Cyrus[] = INCBIN_U16("graphics/object_events/palettes/cyrus.gbapal");
 const u32 gObjectEventPic_Cynthia[] = INCBIN_U32("graphics/object_events/pics/people/cynthia.4bpp");
