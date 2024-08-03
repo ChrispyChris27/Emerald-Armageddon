@@ -1129,7 +1129,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 if (CountUsablePartyMons(battlerDef) != 0)
                     ADJUST_SCORE(-10);
                 else
-                    ADJUST_SCORE(-1);
+                    ADJUST_SCORE(+5);
             }
             break;
     // stat raising effects
@@ -3300,6 +3300,10 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
         {
             if (aiData->hpPercents[battlerAtk] < 50 && AI_RandLessThan(128))
                 ADJUST_SCORE(DECENT_EFFECT);
+            else if (aiData->hpPercents[battlerAtk] < 30 && AI_RandLessThan(192))
+                ADJUST_SCORE(+10);
+            else if (aiData->hpPercents[battlerAtk] < 10 && AI_RandLessThan(230))
+                ADJUST_SCORE(+10);
         }
         break;
     case EFFECT_FINAL_GAMBIT:
