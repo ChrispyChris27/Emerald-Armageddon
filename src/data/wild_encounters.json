@@ -248,13 +248,13 @@
             "mons": [
               {
                 "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_MAGIKARP"
+                "max_level": 5,
+                "species": "SPECIES_GOLDEEN"
               },
               {
                 "min_level": 5,
-                "max_level": 10,
-                "species": "SPECIES_GOLDEEN"
+                "max_level": 5,
+                "species": "SPECIES_FINNEON"
               },
               {
                 "min_level": 10,
@@ -378,7 +378,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WINGULL"
+                "species": "SPECIES_TOEDSCOOL"
               },
               {
                 "min_level": 15,
@@ -413,7 +413,7 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_MAGIKARP"
+                "species": "SPECIES_TENTACOOL"
               },
               {
                 "min_level": 10,
