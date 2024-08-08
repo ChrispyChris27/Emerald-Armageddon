@@ -19418,8 +19418,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .name = COMPOUND_STRING("Ice Spinner"),
         .description = COMPOUND_STRING(
             "Ice-covered feet hit a foe\n"
-            "and destroy the terrain."),
-        .effect = EFFECT_HIT_SET_REMOVE_TERRAIN,
+            "and escape any traps."),
+        .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_ICE,
         .accuracy = 100,
@@ -19428,7 +19428,11 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
-        .argument = ARG_TRY_REMOVE_TERRAIN_HIT, // Remove the active field terrain if there is one.
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = MOVE_EFFECT_RAPID_SPIN,
+            .self = TRUE,
+        }
+        )
         .skyBattleBanned = B_EXTRAPOLATED_MOVE_FLAGS,
         .battleAnimScript = Move_ICE_SPINNER,
     },
