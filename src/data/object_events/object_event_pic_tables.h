@@ -1356,7 +1356,7 @@ static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireMayNormal, 2, 4),
 };
 
-static const struct SpriteFrameImage sPicTable_Regidrago[] = {
+static const struct SpriteFrameImage sPicTable_RegidragoOW[] = {
     obj_frame_tiles(gObjectEventPic_RegidragoOW),
     obj_frame_tiles(gObjectEventPic_RegidragoOW),
     obj_frame_tiles(gObjectEventPic_RegidragoOW),
@@ -1368,7 +1368,7 @@ static const struct SpriteFrameImage sPicTable_Regidrago[] = {
     obj_frame_tiles(gObjectEventPic_RegidragoOW),
 };
 
-static const struct SpriteFrameImage sPicTable_Regieleki[] = {
+static const struct SpriteFrameImage sPicTable_RegielekiOW[] = {
     obj_frame_tiles(gObjectEventPic_RegielekiOW),
     obj_frame_tiles(gObjectEventPic_RegielekiOW),
     obj_frame_tiles(gObjectEventPic_RegielekiOW),
