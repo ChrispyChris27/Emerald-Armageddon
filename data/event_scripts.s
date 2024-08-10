@@ -1074,3 +1074,41 @@ EventScript_VsSeekerChargingDone::
 	.include "data/text/frontier_brain.inc"
 	.include "data/text/save.inc"
 	.include "data/text/birch_speech.inc"
+
+	.include "data/maps/Route100/scripts.inc"
+
+	.include "data/maps/RocketHideout1/scripts.inc"
+
+	.include "data/maps/RocketHideout2/scripts.inc"
+
+	.include "data/maps/RocketHideout3/scripts.inc"
+
+	.include "data/maps/RocketHideout4/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/PetalburgSanctuary/scripts.inc"
+
+	.include "data/maps/MeteorCastle/scripts.inc"
+
+	.include "data/maps/MeteorCastle2/scripts.inc"
+
+	.include "data/maps/MeteorCastle1F1/scripts.inc"
+
+	.include "data/maps/MeteorCastle2F1/scripts.inc"
+
+	.include "data/maps/MeteorCastle2F2/scripts.inc"
+
+	.include "data/maps/DragonsDen/scripts.inc"
+
+	.include "data/maps/MeteorCastle3F1/scripts.inc"
+
+	.include "data/maps/MeteorCastle3F2/scripts.inc"
+
+	.include "data/maps/MeteorCastle4F1/scripts.inc"
+
+	.include "data/maps/MeteorCastleTopFloor/scripts.inc"
+
+	.include "data/maps/MeteorCastleThroneRoom/scripts.inc"
+
+	.include "data/maps/TransistorTunnel/scripts.inc"

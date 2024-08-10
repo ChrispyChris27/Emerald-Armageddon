@@ -107,9 +107,18 @@
       "elevation": 0,
       "dest_map": "MAP_PACIFIDLOG_TOWN_HOUSE5",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_ROCKET_HIDEOUT1",
+      "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",

@@ -1,0 +1,41 @@
+{
+  "id": "MAP_METEOR_CASTLE3F1",
+  "name": "MeteorCastle3F1",
+  "layout": "LAYOUT_METEOR_CASTLE3F1",
+  "music": "MUS_NCASTLE",
+  "region_map_section": "MAPSEC_METEOR_CASTLE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 10,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_METEOR_CASTLE2F2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 10,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_METEOR_CASTLE2",
+      "dest_warp_id": "7"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}

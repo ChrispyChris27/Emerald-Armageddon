@@ -706,14 +706,16 @@
 #define STRINGID_BIZARREARENACREATED                  704
 #define STRINGID_BIZARREAREACREATED                   705
 #define STRINGID_TIDYINGUPCOMPLETE                    706
-#define STRINGID_PKMNTERASTALLIZEDINTO                707
-#define STRINGID_BOOSTERENERGYACTIVATES               708
-#define STRINGID_FOGCREPTUP                           709
-#define STRINGID_FOGISDEEP                            710
-#define STRINGID_FOGLIFTED                            711
-#define STRINGID_PKMNMADESHELLGLEAM                   712
+#define STRINGID_STRONGWINDCONTINUES                  707
+#define STRINGID_STRONGWINDSTARTS                     708
+#define STRINGID_PKMNTERASTALLIZEDINTO                709
+#define STRINGID_BOOSTERENERGYACTIVATES               710
+#define STRINGID_FOGCREPTUP                           711
+#define STRINGID_FOGISDEEP                            712
+#define STRINGID_FOGLIFTED                            713
+#define STRINGID_PKMNMADESHELLGLEAM                   714
 
-#define BATTLESTRINGS_COUNT                           713
+#define BATTLESTRINGS_COUNT                           715
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -786,6 +788,7 @@
 #define B_MSG_SANDSTORM  0
 #define B_MSG_HAIL       1
 #define B_MSG_SNOW       2
+#define B_MSG_WINDS      3
 
 // gReflectLightScreenSafeguardStringIds
 #define B_MSG_SIDE_STATUS_FAILED     0
@@ -997,7 +1000,8 @@
 #define B_MSG_SET_WONDER_ROOM       6
 #define B_MSG_SET_TAILWIND_PLAYER   7
 #define B_MSG_SET_TAILWIND_OPPONENT 8
-#define B_MSG_STARTING_STATUS_COUNT 9
+#define B_MSG_DELTA_STREAM          9
+#define B_MSG_STARTING_STATUS_COUNT 10
 
 
 // gWrappedStringIds

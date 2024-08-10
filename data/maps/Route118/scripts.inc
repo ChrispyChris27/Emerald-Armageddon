@@ -14,6 +14,7 @@ Route118_OnTransition:
 	end
 
 Route118_OnLoad:
+	call_if_unset FLAG_REGI_DOORS_OPENED, Route118_CloseRegiEntrance
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_118_EAST, AbnormalWeather_EventScript_PlaceTilesRoute118East
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_118_WEST, AbnormalWeather_EventScript_PlaceTilesRoute118West
 	end
@@ -21,6 +22,11 @@ Route118_OnLoad:
 Route118_OnFrame:
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
 	.2byte 0
+
+Route118_CloseRegiEntrance::
+	setmetatile 72, 5, METATILE_General_RockWall_RockBase, TRUE
+	setmetatile 72, 6, METATILE_General_RockWall_GrassBase, TRUE
+	return
 
 Route118_EventScript_GoodRodFisherman::
 	lock

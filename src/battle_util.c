@@ -1652,6 +1652,7 @@ enum
     ENDTURN_TAILWIND,
     ENDTURN_WISH,
     ENDTURN_RAIN,
+    ENDTURN_DELTA_STREAM,
     ENDTURN_SANDSTORM,
     ENDTURN_SUN,
     ENDTURN_HAIL,
@@ -1959,6 +1960,17 @@ u8 DoFieldEndTurnEffects(void)
                 }
 
                 BattleScriptExecute(BattleScript_RainContinuesOrEnds);
+                effect++;
+            }
+            gBattleStruct->turnCountersTracker++;
+            break;
+        case ENDTURN_DELTA_STREAM:
+            if (gBattleWeather & B_WEATHER_STRONG_WINDS)
+            {
+                gBattlescriptCurrInstr = BattleScript_DamagingWeatherContinues;
+                gBattleScripting.animArg1 = B_ANIM_STRONG_WINDS;
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WINDS;
+                BattleScriptExecute(gBattlescriptCurrInstr);
                 effect++;
             }
             gBattleStruct->turnCountersTracker++;
@@ -4209,6 +4221,15 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     else
                         gSideTimers[B_SIDE_OPPONENT].tailwindTimer = 5;
                     effect = 1;
+                }
+                break;
+             case STARTING_STATUS_DELTA_STREAM:
+                if (!(gBattleWeather & B_WEATHER_STRONG_WINDS))
+                {
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DELTA_STREAM;
+                    gBattleWeather = B_WEATHER_STRONG_WINDS;
+                    gBattleScripting.animArg1 = B_ANIM_STRONG_WINDS;
+                effect++;
                 }
                 break;
             }

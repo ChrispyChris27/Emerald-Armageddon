@@ -1239,6 +1239,7 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
          && (gSpeciesInfo[species].isLegendary
           || gSpeciesInfo[species].isMythical
           || gSpeciesInfo[species].isUltraBeast
+          || gSpeciesInfo[species].isStarter
           || gSpeciesInfo[species].isTotem))
         {
             iv = MAX_PER_STAT_IVS;
@@ -5725,7 +5726,11 @@ u16 GetBattleBGM(void)
         {
         case TRAINER_CLASS_AQUA_LEADER:
         case TRAINER_CLASS_MAGMA_LEADER:
+        case TRAINER_CLASS_ROCKET_LEADER:
             return MUS_VS_AQUA_MAGMA_LEADER;
+        case TRAINER_CLASS_ROCKET_ADMIN:
+        case TRAINER_CLASS_TEAM_ROCKET:
+            return MUS_RG_VS_TRAINER;
         case TRAINER_CLASS_TEAM_AQUA:
         case TRAINER_CLASS_TEAM_MAGMA:
         case TRAINER_CLASS_AQUA_ADMIN:
@@ -5733,6 +5738,10 @@ u16 GetBattleBGM(void)
             return MUS_VS_AQUA_MAGMA;
         case TRAINER_CLASS_LEADER:
             return MUS_VS_GYM_LEADER;
+        case TRAINER_CLASS_TEAM_GALACTIC:
+            return MUS_RG_VS_DEOXYS;
+        case TRAINER_CLASS_SINNOH_CHAMP:
+            return MUS_RG_VS_CHAMPION;
         case TRAINER_CLASS_CHAMPION:
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL:

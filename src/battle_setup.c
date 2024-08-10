@@ -911,6 +911,17 @@ u8 GetTrainerBattleTransition(void)
         || trainerClass == TRAINER_CLASS_AQUA_LEADER
         || trainerClass == TRAINER_CLASS_AQUA_ADMIN)
         return B_TRANSITION_AQUA;
+    
+    if (trainerClass == TRAINER_CLASS_TEAM_ROCKET
+        || trainerClass == TRAINER_CLASS_ROCKET_LEADER
+        || trainerClass == TRAINER_CLASS_ROCKET_ADMIN)
+        return B_TRANSITION_ROCKET;
+    
+    if (trainerClass == TRAINER_CLASS_TEAM_GALACTIC)
+        return B_TRANSITION_CYRUS;
+    
+    if (trainerClass == TRAINER_CLASS_SINNOH_CHAMP)
+        return B_TRANSITION_CYNTHIA;
 
     if (IsTrainerDoubleBattle(trainerId))
         minPartyCount = 2; // double battles always at least have 2 Pokémon.
@@ -1608,6 +1619,15 @@ void PlayTrainerEncounterMusic(void)
             break;
         case TRAINER_ENCOUNTER_MUSIC_RICH:
             music = MUS_ENCOUNTER_RICH;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_ROCKET:
+            music = MUS_RG_ENCOUNTER_ROCKET;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_CYNTHIA:
+            music = MUS_CYNTHIA_ENCOUNTER;
+            break;
+        case TRAINER_ENCOUNTER_MUSIC_CYRUS:
+            music = MUS_CYNTHIA;
             break;
         default:
             music = MUS_ENCOUNTER_SUSPICIOUS;

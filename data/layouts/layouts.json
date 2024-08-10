@@ -1097,7 +1097,7 @@
       "width": 17,
       "height": 26,
       "primary_tileset": "gTileset_Building",
-      "secondary_tileset": "gTileset_SootopolisGym",
+      "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/SootopolisCity_Gym_B1F/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_Gym_B1F/map.bin"
     },
@@ -4410,6 +4410,196 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE100",
+      "name": "Route100_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route100/border.bin",
+      "blockdata_filepath": "data/layouts/Route100/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT1",
+      "name": "RocketHideout1_Layout",
+      "width": 21,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/RocketHideout1/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideout1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT2",
+      "name": "RocketHideout2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/RocketHideout2/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideout2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT3",
+      "name": "RocketHideout3_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/RocketHideout3/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideout3/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROCKET_HIDEOUT4",
+      "name": "RocketHideout4_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Facility",
+      "border_filepath": "data/layouts/RocketHideout4/border.bin",
+      "blockdata_filepath": "data/layouts/RocketHideout4/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 50,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mossdeep",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_SANCTUARY",
+      "name": "PetalburgSanctuary_Layout",
+      "width": 30,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/PetalburgSanctuary/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgSanctuary/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE",
+      "name": "MeteorCastle_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE2",
+      "name": "MeteorCastle2_Layout",
+      "width": 51,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle2/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle2/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE1F1",
+      "name": "MeteorCastle1F1_Layout",
+      "width": 41,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle1F1/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle1F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE2F1",
+      "name": "MeteorCastle2F1_Layout",
+      "width": 41,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle2F1/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle2F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE2F2",
+      "name": "MeteorCastle2F2_Layout",
+      "width": 27,
+      "height": 35,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle2F2/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle2F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRAGONS_DEN",
+      "name": "DragonsDen_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DragonsDen/border.bin",
+      "blockdata_filepath": "data/layouts/DragonsDen/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE3F1",
+      "name": "MeteorCastle3F1_Layout",
+      "width": 21,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle3F1/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle3F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE3F2",
+      "name": "MeteorCastle3F2_Layout",
+      "width": 41,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle3F2/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle3F2/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE4F1",
+      "name": "MeteorCastle4F1_Layout",
+      "width": 41,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastle4F1/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastle4F1/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE_TOP_FLOOR",
+      "name": "MeteorCastleTopFloor_Layout",
+      "width": 41,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastleTopFloor/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastleTopFloor/map.bin"
+    },
+    {
+      "id": "LAYOUT_METEOR_CASTLE_THRONE_ROOM",
+      "name": "MeteorCastleThroneRoom_Layout",
+      "width": 31,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MeteorFalls",
+      "border_filepath": "data/layouts/MeteorCastleThroneRoom/border.bin",
+      "blockdata_filepath": "data/layouts/MeteorCastleThroneRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRANSISTOR_TUNNEL",
+      "name": "TransistorTunnel_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/TransistorTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/TransistorTunnel/map.bin"
     }
   ]
 }

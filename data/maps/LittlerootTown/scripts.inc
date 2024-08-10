@@ -254,6 +254,10 @@ LittlerootTown_EventScript_Boy::
 	msgbox LittlerootTown_Text_BirchSpendsDaysInLab, MSGBOX_NPC
 	end
 
+LittlerootTown_EventScript_Boy2::
+	msgbox LittlerootTown_Text_Garden, MSGBOX_NPC
+	end
+
 LittlerootTown_EventScript_Twin::
 	lock
 	faceplayer
@@ -977,6 +981,10 @@ LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
 	.string "It's dangerous if you don't have\n"
 	.string "your own POKéMON.$"
+
+LittlerootTown_Text_Garden:
+	.string "Sorry! You can't go into this garden\n"
+	.string "until you have a POKéMON of your own!$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
 	.string "Um, hi!\p"

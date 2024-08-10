@@ -156,8 +156,8 @@ $(MID_SUBDIR)/mus_obtain_item.s: %.s: %.mid
 $(MID_SUBDIR)/mus_evolved.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G012 -V090 -P5
 
-$(MID_SUBDIR)/mus_gsc_route38.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -V080
+$(MID_SUBDIR)/mus_ncastle.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G005 -V100
 
 $(MID_SUBDIR)/mus_slateport.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G079 -V070
@@ -318,8 +318,8 @@ $(MID_SUBDIR)/mus_abnormal_weather.s: %.s: %.mid
 $(MID_SUBDIR)/mus_school.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G081 -V100
 
-$(MID_SUBDIR)/mus_c_comm_center.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -V080
+$(MID_SUBDIR)/mus_cynthia_encounter.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G005 -V100
 
 $(MID_SUBDIR)/mus_poke_center.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G046 -V092
@@ -603,8 +603,8 @@ $(MID_SUBDIR)/mus_link_contest_p3.s: %.s: %.mid
 $(MID_SUBDIR)/mus_link_contest_p4.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G042 -V090
 
-$(MID_SUBDIR)/mus_littleroot_test.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G034 -V099
+$(MID_SUBDIR)/mus_cynthia.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G005 -V099
 
 $(MID_SUBDIR)/mus_credits.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G101 -V100

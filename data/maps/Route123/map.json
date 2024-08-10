@@ -248,19 +248,6 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 101,
-      "y": 13,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_11"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
       "x": 129,
       "y": 14,
       "elevation": 3,
@@ -271,19 +258,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "EventScript_CutTree",
       "flag": "FLAG_TEMP_12"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_CUTTABLE_TREE",
-      "x": 92,
-      "y": 9,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "EventScript_CutTree",
-      "flag": "FLAG_TEMP_13"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
@@ -300,8 +274,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
-      "x": 108,
-      "y": 13,
+      "x": 28,
+      "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP_AND_LEFT",
       "movement_range_x": 0,
@@ -313,8 +287,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 109,
-      "y": 13,
+      "x": 14,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -326,8 +300,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 110,
-      "y": 13,
+      "x": 15,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -339,8 +313,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 111,
-      "y": 13,
+      "x": 16,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -352,7 +326,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_WOMAN_2",
-      "x": 18,
+      "x": 19,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_ROTATE_COUNTERCLOCKWISE",
@@ -604,8 +578,8 @@
     },
     {
       "type": "weather",
-      "x": 92,
-      "y": 9,
+      "x": 91,
+      "y": 15,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"
     },
@@ -674,36 +648,36 @@
     },
     {
       "type": "weather",
-      "x": 108,
-      "y": 14,
+      "x": 109,
+      "y": 8,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
       "x": 109,
-      "y": 15,
+      "y": 7,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 110,
-      "y": 16,
+      "x": 108,
+      "y": 6,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 111,
-      "y": 17,
+      "x": 108,
+      "y": 8,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 112,
-      "y": 18,
+      "x": 108,
+      "y": 7,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
@@ -744,8 +718,8 @@
     },
     {
       "type": "weather",
-      "x": 94,
-      "y": 10,
+      "x": 92,
+      "y": 11,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"
     }

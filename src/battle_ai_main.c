@@ -26,6 +26,7 @@
 #include "constants/moves.h"
 #include "constants/items.h"
 #include "constants/trainers.h"
+#include "roamer.h"
 
 #define AI_ACTION_DONE          (1 << 0)
 #define AI_ACTION_FLEE          (1 << 1)
@@ -162,7 +163,7 @@ static u32 GetAiFlags(u16 trainerId)
             flags = GetAiScriptsInRecordedBattle();
         else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
             flags = AI_FLAG_SAFARI;
-        else if (gBattleTypeFlags & BATTLE_TYPE_ROAMER)
+        else if (gBattleTypeFlags & BATTLE_TYPE_ROAMER && DoesRoamerFlee())
             flags = AI_FLAG_ROAMING;
         else if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
             flags = AI_FLAG_FIRST_BATTLE;
@@ -1128,7 +1129,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 if (CountUsablePartyMons(battlerDef) != 0)
                     ADJUST_SCORE(-10);
                 else
-                    ADJUST_SCORE(-1);
+                    ADJUST_SCORE(+5);
             }
             break;
     // stat raising effects
@@ -3298,7 +3299,11 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
         if (AI_THINKING_STRUCT->aiFlags[battlerAtk] & AI_FLAG_WILL_SUICIDE && gBattleMons[battlerDef].statStages[STAT_EVASION] < 7)
         {
             if (aiData->hpPercents[battlerAtk] < 50 && AI_RandLessThan(128))
-                ADJUST_SCORE(DECENT_EFFECT);
+                ADJUST_SCORE(+10);
+            else if (aiData->hpPercents[battlerAtk] < 30 && AI_RandLessThan(192))
+                ADJUST_SCORE(+10);
+            else if (aiData->hpPercents[battlerAtk] < 10 && AI_RandLessThan(230))
+                ADJUST_SCORE(+10);
         }
         break;
     case EFFECT_FINAL_GAMBIT:

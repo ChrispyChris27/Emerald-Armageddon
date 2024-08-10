@@ -1539,6 +1539,11 @@ static bool32 AccuracyCalcHelper(u16 move)
             JumpIfMoveFailed(7, move);
             return TRUE;
         }
+        else if ((gBattleWeather & (B_WEATHER_STRONG_WINDS)) && gMovesInfo[move].effect == EFFECT_THUNDER && gMovesInfo[move].windMove)
+        {
+            JumpIfMoveFailed(7, move);
+            return TRUE;
+        }
         else if ((gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)) && gMovesInfo[move].effect == EFFECT_BLIZZARD)
         {
             // Blizzard ignores acc checks in Hail in Gen4+
@@ -10438,7 +10443,7 @@ static void Cmd_various(void)
     }
     case VARIOUS_TRY_TO_CLEAR_PRIMAL_WEATHER:
     {
-        bool8 shouldNotClear = FALSE;
+        bool8 shouldNotClear = TRUE;
 
         for (i = 0; i < gBattlersCount; i++)
         {

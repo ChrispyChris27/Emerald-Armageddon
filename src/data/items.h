@@ -14070,4 +14070,21 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
+
+    [ITEM_CANDINATOR] =
+    {
+        .name = _("Candinator"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A device with an\n"
+            "infinite supply of\n"
+            "rare candies."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_Candinator,
+        .effect = gItemEffect_RareCandy,
+        .iconPic = gItemIcon_RareCandy,
+        .iconPalette = gItemIconPalette_RareCandy,
+    },
 };

@@ -357,6 +357,8 @@ static const u8 sText_StartedToRain[] = _("It started to rain!");
 static const u8 sText_DownpourStarted[] = _("A downpour started!"); // corresponds to DownpourText in pokegold and pokecrystal and is used by Rain Dance in GSC
 static const u8 sText_RainContinues[] = _("Rain continues to fall.");
 static const u8 sText_DownpourContinues[] = _("The downpour continues."); // unused
+static const u8 sText_Strong_Wind_Continues[] = _("The mysterious strong winds\ncontinue to blow!");
+static const u8 sText_Strong_Wind_Starts[] = _("A mysterious strong wind\nhas started to blow!");
 static const u8 sText_RainStopped[] = _("The rain stopped.");
 static const u8 sText_SandstormBrewed[] = _("A sandstorm brewed!");
 static const u8 sText_SandstormRages[] = _("The sandstorm rages.");
@@ -1223,6 +1225,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_RAINCONTINUES - BATTLESTRINGS_TABLE_START] = sText_RainContinues,
     [STRINGID_DOWNPOURCONTINUES - BATTLESTRINGS_TABLE_START] = sText_DownpourContinues,
     [STRINGID_RAINSTOPPED - BATTLESTRINGS_TABLE_START] = sText_RainStopped,
+    [STRINGID_STRONGWINDCONTINUES - BATTLESTRINGS_TABLE_START] = sText_Strong_Wind_Continues,
+    [STRINGID_STRONGWINDSTARTS - BATTLESTRINGS_TABLE_START] = sText_Strong_Wind_Starts,
     [STRINGID_SANDSTORMBREWED - BATTLESTRINGS_TABLE_START] = sText_SandstormBrewed,
     [STRINGID_SANDSTORMRAGES - BATTLESTRINGS_TABLE_START] = sText_SandstormRages,
     [STRINGID_SANDSTORMSUBSIDED - BATTLESTRINGS_TABLE_START] = sText_SandstormSubsided,
@@ -1591,6 +1595,7 @@ const u16 gStartingStatusStringIds[B_MSG_STARTING_STATUS_COUNT] =
     [B_MSG_SET_MAGIC_ROOM]          = STRINGID_BIZARREARENACREATED,
     [B_MSG_SET_WONDER_ROOM]         = STRINGID_BIZARREAREACREATED,
     [B_MSG_SET_TAILWIND_PLAYER]     = STRINGID_TAILWINDBLEW,
+    [B_MSG_DELTA_STREAM]            = STRINGID_STRONGWINDSTARTS,
     [B_MSG_SET_TAILWIND_OPPONENT]   = STRINGID_TAILWINDBLEW,
 };
 
@@ -1700,6 +1705,7 @@ const u16 gSandStormHailSnowContinuesStringIds[] =
     [B_MSG_SANDSTORM] = STRINGID_SANDSTORMRAGES,
     [B_MSG_HAIL]      = STRINGID_HAILCONTINUES,
     [B_MSG_SNOW]      = STRINGID_SNOWCONTINUES,
+    [B_MSG_WINDS]     = STRINGID_STRONGWINDCONTINUES,
 };
 
 const u16 gSandStormHailDmgStringIds[] =

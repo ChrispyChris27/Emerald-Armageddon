@@ -852,6 +852,12 @@ void ItemUseOutOfBattle_RareCandy(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
+void ItemUseOutOfBattle_Candinator(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_Candinator;
+    SetUpItemUseCallback(taskId);
+}
+
 void ItemUseOutOfBattle_DynamaxCandy(u8 taskId)
 {
     gItemUseCB = ItemUseCB_DynamaxCandy;

@@ -383,7 +383,11 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, u
     }
 
     // ability
-    if (abilityNum == NUM_ABILITY_PERSONALITY)
+     if (gSpeciesInfo[species].isStarter)
+    {
+        abilityNum = 2;
+    }
+    else if (abilityNum == NUM_ABILITY_PERSONALITY)
     {
         abilityNum = GetMonData(&mon, MON_DATA_PERSONALITY) & 1;
     }
@@ -402,6 +406,10 @@ static u32 ScriptGiveMonParameterized(u8 side, u8 slot, u16 species, u8 level, u
 
     // held item
     SetMonData(&mon, MON_DATA_HELD_ITEM, &item);
+
+    u8 location = METLOC_FATEFUL_ENCOUNTER;
+
+    SetMonData(&mon, MON_DATA_MET_LOCATION, &location);
 
     // In case a mon with a form changing item is given. Eg: SPECIES_ARCEUS_NORMAL with ITEM_SPLASH_PLATE will transform into SPECIES_ARCEUS_WATER upon gifted.
     targetSpecies = GetFormChangeTargetSpecies(&mon, FORM_CHANGE_ITEM_HOLD, 0);

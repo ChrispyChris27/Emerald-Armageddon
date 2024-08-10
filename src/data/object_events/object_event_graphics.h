@@ -378,6 +378,20 @@ const u32 gObjectEventPic_SudowoodoTree[] = INCBIN_U32("graphics/object_events/p
 const u32 gObjectEventPic_RayquazaCutscene[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/rayquaza_cutscene.4bpp");
 
 const u16 gObjectEventPal_HoOh[] = INCBIN_U16("graphics/object_events/palettes/ho_oh.gbapal");
+const u32 gObjectEventPic_RegidragoOW[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/regidrago.4bpp");
+const u16 gObjectEventPal_RegidragoOW[] = INCBIN_U16("graphics/object_events/palettes/regidrago.gbapal");
+const u32 gObjectEventPic_RegielekiOW[] = INCBIN_U32("graphics/object_events/pics/pokemon_old/regieleki.4bpp");
+const u16 gObjectEventPal_RegielekiOW[] = INCBIN_U16("graphics/object_events/palettes/regieleki.gbapal");
+const u32 gObjectEventPic_Cyrus[] = INCBIN_U32("graphics/object_events/pics/people/cyrus.4bpp");
+const u16 gObjectEventPal_Cyrus[] = INCBIN_U16("graphics/object_events/palettes/cyrus.gbapal");
+const u32 gObjectEventPic_Cynthia[] = INCBIN_U32("graphics/object_events/pics/people/cynthia.4bpp");
+const u16 gObjectEventPal_Cynthia[] = INCBIN_U16("graphics/object_events/palettes/cynthia.gbapal");
+const u32 gObjectEventPic_Giovanni[] = INCBIN_U32("graphics/object_events/pics/people/giovanni.4bpp");
+const u16 gObjectEventPal_Giovanni[] = INCBIN_U16("graphics/object_events/palettes/giovanni.gbapal");
+const u32 gObjectEventPic_Grunt_F[] = INCBIN_U32("graphics/object_events/pics/people/gruntf.4bpp");
+const u16 gObjectEventPal_Grunt_F[] = INCBIN_U16("graphics/object_events/palettes/gruntf.gbapal");
+const u32 gObjectEventPic_Grunt_M[] = INCBIN_U32("graphics/object_events/pics/people/gruntm.4bpp");
+const u16 gObjectEventPal_Grunt_M[] = INCBIN_U16("graphics/object_events/palettes/gruntm.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 
 const u16 gObjectEventPal_Substitute[] = INCBIN_U16("graphics/pokemon/question_mark/overworld.gbapal");

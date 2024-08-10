@@ -16,20 +16,9 @@ SootopolisCity_Gym_B1F_EventScript_Brianna::
 	msgbox SootopolisCity_Gym_B1F_Text_BriannaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-SootopolisCity_Gym_B1F_EventScript_Connie::
-	trainerbattle_single TRAINER_CONNIE, SootopolisCity_Gym_B1F_Text_ConnieIntro, SootopolisCity_Gym_B1F_Text_ConnieDefeat
-	msgbox SootopolisCity_Gym_B1F_Text_ConniePostBattle, MSGBOX_AUTOCLOSE
-	end
 
-SootopolisCity_Gym_B1F_EventScript_Bridget::
-	trainerbattle_single TRAINER_BRIDGET, SootopolisCity_Gym_B1F_Text_BridgetIntro, SootopolisCity_Gym_B1F_Text_BridgetDefeat
-	msgbox SootopolisCity_Gym_B1F_Text_BridgetPostBattle, MSGBOX_AUTOCLOSE
-	end
 
-SootopolisCity_Gym_B1F_EventScript_Olivia::
-	trainerbattle_single TRAINER_OLIVIA, SootopolisCity_Gym_B1F_Text_OliviaIntro, SootopolisCity_Gym_B1F_Text_OliviaDefeat
-	msgbox SootopolisCity_Gym_B1F_Text_OliviaPostBattle, MSGBOX_AUTOCLOSE
-	end
+
 
 SootopolisCity_Gym_B1F_EventScript_Tiffany::
 	trainerbattle_single TRAINER_TIFFANY, SootopolisCity_Gym_B1F_Text_TiffanyIntro, SootopolisCity_Gym_B1F_Text_TiffanyDefeat
@@ -41,10 +30,7 @@ SootopolisCity_Gym_B1F_EventScript_Bethany::
 	msgbox SootopolisCity_Gym_B1F_Text_BethanyPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-SootopolisCity_Gym_B1F_EventScript_Annika::
-	trainerbattle_single TRAINER_ANNIKA, SootopolisCity_Gym_B1F_Text_AnnikaIntro, SootopolisCity_Gym_B1F_Text_AnnikaDefeat
-	msgbox SootopolisCity_Gym_B1F_Text_AnnikaPostBattle, MSGBOX_AUTOCLOSE
-	end
+
 
 SootopolisCity_Gym_B1F_EventScript_Daphne::
 	trainerbattle_single TRAINER_DAPHNE, SootopolisCity_Gym_B1F_Text_DaphneIntro, SootopolisCity_Gym_B1F_Text_DaphneDefeat
@@ -91,18 +77,7 @@ SootopolisCity_Gym_B1F_Text_DaphnePostBattle:
 	.string "Oh… I'm so fortunate to have found\n"
 	.string "POKéMON.$"
 
-SootopolisCity_Gym_B1F_Text_ConnieIntro:
-	.string "I should teach you how harsh battles\n"
-	.string "can be.$"
 
-SootopolisCity_Gym_B1F_Text_ConnieDefeat:
-	.string "Oh.\n"
-	.string "You're strong.$"
-
-SootopolisCity_Gym_B1F_Text_ConniePostBattle:
-	.string "I'll tell you something good.\p"
-	.string "If you want to reach JUAN, you\n"
-	.string "need to walk on each floor tile once.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
 	.string "The POKéMON GYM of the highest level\n"
@@ -155,19 +130,7 @@ SootopolisCity_Gym_B1F_Text_BethanyPostBattle:
 	.string "I wish I could forget about lost causes\n"
 	.string "before I can manage an “Oops!”$"
 
-SootopolisCity_Gym_B1F_Text_AnnikaIntro:
-	.string "I can battle with really rare POKéMON\n"
-	.string "if you'd like.$"
 
-SootopolisCity_Gym_B1F_Text_AnnikaDefeat:
-	.string "Oh, there now! Did you have a good look\n"
-	.string "at my POKéMON?$"
-
-SootopolisCity_Gym_B1F_Text_AnnikaPostBattle:
-	.string "I came to this GYM because JUAN\n"
-	.string "praised me for my darling POKéMON.\p"
-	.string "Oh, if only I'd met JUAN years ago\n"
-	.string "when I was younger…$"
 
 SootopolisCity_Gym_B1F_Text_BriannaIntro:
 	.string "Giggle…\n"

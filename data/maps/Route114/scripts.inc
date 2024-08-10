@@ -11,6 +11,7 @@ Route114_OnTransition:
 	end
 
 Route114_OnLoad:
+	call_if_unset FLAG_REGI_DOORS_OPENED, Route114_CloseRegiEntrance
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_114_NORTH, AbnormalWeather_EventScript_PlaceTilesRoute114North
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_114_SOUTH, AbnormalWeather_EventScript_PlaceTilesRoute114South
 	end
@@ -18,6 +19,11 @@ Route114_OnLoad:
 Route114_OnFrame:
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
 	.2byte 0
+
+Route114_CloseRegiEntrance::
+	setmetatile 24, 4, METATILE_Fallarbor_RedRockWall, TRUE
+	setmetatile 24, 5, METATILE_Fallarbor_RedRockWall, TRUE
+	return
 
 Route114_EventScript_Man::
 	lock

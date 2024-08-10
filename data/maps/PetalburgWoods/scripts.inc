@@ -11,7 +11,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
 	closemessage
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
 	waitmovement 0
 	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
@@ -30,6 +30,7 @@ PetalburgWoods_EventScript_DevonResearcherLeft::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
+	setflag FLAG_WOODS_GRUNT
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaBackOff
 	waitmovement 0
 	call PetalburgWoods_EventScript_DevonResearcherPostBattle
@@ -48,7 +49,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_HaveYouSeenShroomish, MSGBOX_DEFAULT
 	closemessage
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaEntrance
 	waitmovement 0
 	msgbox PetalburgWoods_Text_IWasGoingToAmbushYou, MSGBOX_DEFAULT
@@ -66,6 +67,7 @@ PetalburgWoods_EventScript_DevonResearcherRight::
 	waitmovement 0
 	msgbox PetalburgWoods_Text_NoOneCrossesTeamAqua, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, PetalburgWoods_Text_YoureKiddingMe
+	setflag FLAG_WOODS_GRUNT
 	applymovement LOCALID_GRUNT, PetalburgWoods_Movement_AquaBackOff
 	waitmovement 0
 	call PetalburgWoods_EventScript_DevonResearcherPostBattle
@@ -345,7 +347,7 @@ PetalburgWoods_Text_YouHaveToHelpMe:
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
 	.string "Hunh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
-	.string "No one who crosses TEAM AQUA\n"
+	.string "No one who crosses TEAM MAGMA\n"
 	.string "gets any mercy, not even a kid!\p"
 	.string "Come on and battle me!$"
 
@@ -354,11 +356,11 @@ PetalburgWoods_Text_YoureKiddingMe:
 
 PetalburgWoods_Text_YouveGotSomeNerve:
 	.string "Grrr… You've got some nerve\n"
-	.string "meddling with TEAM AQUA!\l"
+	.string "meddling with TEAM MAGMA!\l"
 	.string "Come on and battle me again!\p"
 	.string "I wish I could say that, but I'm out of\n"
 	.string "POKéMON…\p"
-	.string "And, hey, we of TEAM AQUA are also\n"
+	.string "And, hey, we of TEAM MAGMA are also\n"
 	.string "after something in RUSTBORO.\p"
 	.string "I'll let you go today!$"
 
@@ -371,7 +373,7 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "my thanks!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
-	.string "Didn't that TEAM AQUA thug say\n"
+	.string "Didn't that TEAM MAGMA thug say\n"
 	.string "they were after something in\l"
 	.string "RUSTBORO, too?$"
 

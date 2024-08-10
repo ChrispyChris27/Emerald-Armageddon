@@ -377,6 +377,11 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     TRAINER_CLASS(PIKE_QUEEN, "PIKE QUEEN"),
     TRAINER_CLASS(PYRAMID_KING, "PYRAMID KING"),
     TRAINER_CLASS(RS_PROTAG, "{PKMN} TRAINER"),
+    TRAINER_CLASS(TEAM_ROCKET, "TEAM ROCKET"),
+    TRAINER_CLASS(ROCKET_ADMIN, "ROCKET ADMIN", 10),
+    TRAINER_CLASS(ROCKET_LEADER, "ROCKET BOSS", 20, ITEM_MASTER_BALL),
+    TRAINER_CLASS(TEAM_GALACTIC, "GALACTIC", 20, ITEM_MASTER_BALL),
+    TRAINER_CLASS(SINNOH_CHAMP, "SINNOH CHAMP", 20, ITEM_ULTRA_BALL),
 };
 
 static void (* const sTurnActionsFuncsTable[])(void) =
@@ -5397,6 +5402,9 @@ static void HandleEndTurn_BattleWon(void)
         case TRAINER_CLASS_AQUA_LEADER:
         case TRAINER_CLASS_MAGMA_ADMIN:
         case TRAINER_CLASS_MAGMA_LEADER:
+        case TRAINER_CLASS_ROCKET_ADMIN:
+        case TRAINER_CLASS_ROCKET_LEADER:
+        case TRAINER_CLASS_TEAM_ROCKET:
             PlayBGM(MUS_VICTORY_AQUA_MAGMA);
             break;
         case TRAINER_CLASS_LEADER:
@@ -5691,14 +5699,12 @@ static void ReturnFromBattleToOverworld(void)
 
     if (gBattleTypeFlags & BATTLE_TYPE_ROAMER)
     {
-        UpdateRoamerHPStatus(&gEnemyParty[0]);
+        if (gBattleOutcome == B_OUTCOME_CAUGHT || ((gBattleOutcome & B_OUTCOME_WON) && !CanRoamerRespawn(gEncounteredRoamerIndex)))
+            StopRoamer(gEncounteredRoamerIndex);
+	    else if (gBattleOutcome & B_OUTCOME_WON) // and roamer can respawn
+            HandleRoamerRespawnTimer();
 
-#ifndef BUGFIX
-        if ((gBattleOutcome & B_OUTCOME_WON) || gBattleOutcome == B_OUTCOME_CAUGHT)
-#else
-        if ((gBattleOutcome == B_OUTCOME_WON) || gBattleOutcome == B_OUTCOME_CAUGHT) // Bug: When Roar is used by roamer, gBattleOutcome is B_OUTCOME_PLAYER_TELEPORTED (5).
-#endif                                                                               // & with B_OUTCOME_WON (1) will return TRUE and deactivates the roamer.
-            SetRoamerInactive(gEncounteredRoamerIndex);
+        UpdateRoamerHPStatus(&gEnemyParty[0]);
     }
 
     m4aSongNumStop(SE_LOW_HEALTH);

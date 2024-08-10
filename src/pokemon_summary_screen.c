@@ -1651,14 +1651,8 @@ else if (gMain.newKeys & R_BUTTON)
         BufferIvOrEvStats(0);
     }
 }
+
 else if (gMain.newKeys & L_BUTTON)
-{
-    if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
-    {
-        BufferIvOrEvStats(1);
-    }
-}
-else if (gMain.newKeys & START_BUTTON)
 {
     if (sMonSummaryScreen->currPageIndex == PSS_PAGE_SKILLS)
     {
@@ -3524,11 +3518,11 @@ static void BufferStat(u8 *dst, u8 statIndex, u32 stat, u32 strId, u32 n)
     ConvertIntToDecimalStringN(txtPtr, stat, STR_CONV_MODE_RIGHT_ALIGN, n);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(strId, dst);
 }
+
 static void BufferIvOrEvStats(u8 mode)
 {
     u16 hp, hp2, atk, def, spA, spD, spe;
     u8 *currHPString = Alloc(20);
-    const s8 *natureMod = gNatureStatTable[sMonSummaryScreen->summary.nature];
 
     switch (mode)
     {
@@ -3586,14 +3580,14 @@ static void BufferIvOrEvStats(u8 mode)
     default:
         BufferStat(currHPString, 0, hp, 0, 3);
         BufferStat(gStringVar1, 0, hp2, 1, 3);
-        BufferStat(gStringVar2, natureMod[STAT_ATK - 1], atk, 2, 7);
-        BufferStat(gStringVar3, natureMod[STAT_DEF - 1], def, 3, 7);
+        BufferStat(gStringVar2, STAT_ATK, atk, 2, 7);
+        BufferStat(gStringVar3, STAT_DEF, def, 3, 7);
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsLeftColumnLayout);
         PrintLeftColumnStats();
 
-        BufferStat(gStringVar1, natureMod[STAT_SPATK - 1], spA, 0, 3);
-        BufferStat(gStringVar2, natureMod[STAT_SPDEF - 1], spD, 1, 3);
-        BufferStat(gStringVar3, natureMod[STAT_SPEED - 1], spe, 2, 3);
+        BufferStat(gStringVar1, STAT_SPATK, spA, 0, 3);
+        BufferStat(gStringVar2, STAT_SPDEF, spD, 1, 3);
+        BufferStat(gStringVar3, STAT_SPEED, spe, 2, 3);
         DynamicPlaceholderTextUtil_ExpandPlaceholders(gStringVar4, sStatsRightColumnLayout);
         PrintRightColumnStats();
         break;

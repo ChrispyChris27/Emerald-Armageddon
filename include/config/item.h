@@ -11,8 +11,8 @@
 #define I_VITAMIN_EV_CAP                GEN_LATEST  // In Gen8+, the Vitamins no longer have a cap of 100 EV per stat.
 #define I_BERRY_EV_JUMP                 GEN_LATEST  // In Gen4 only, EV-lowering Berries lower a stat's EV to 100 if it is above 100.
 #define I_GRISEOUS_ORB_FORM_CHANGE      GEN_LATEST  // In Gen9+, the Griseous Orb no longer changes Giratina's form when held.
-#define I_GEM_BOOST_POWER               GEN_LATEST  // In Gen6+, the Gem boost power was reduced from 50% to 30%.
-#define I_USE_EVO_HELD_ITEMS_FROM_BAG   FALSE       // If TRUE, items such as Razor Claw or Electirizer will be usable from the bag to evolve a Pokémon just like in LA.
+#define I_GEM_BOOST_POWER               GEN_5  // In Gen6+, the Gem boost power was reduced from 50% to 30%.
+#define I_USE_EVO_HELD_ITEMS_FROM_BAG   TRUE       // If TRUE, items such as Razor Claw or Electirizer will be usable from the bag to evolve a Pokémon just like in LA.
 #define I_TYPE_BOOST_POWER              GEN_LATEST  // In Gen4+, all regular type boosting held items had their power increased from 10% to 20%. eg. Charcoal
 #define I_SELL_VALUE_FRACTION           GEN_LATEST  // In Gen9+, items sell for 1/4 of their value instead of 1/2.
 #define I_PRICE                         GEN_LATEST  // Some items have varied in value across generations.
@@ -39,7 +39,7 @@
 
 //Fishing
 #define I_FISHING_CHAIN             FALSE // Introduced in XY, hooking the same Pokémon repeatedly will increase the odds of that mon being shiny. NOTE: This implementation is an approximation of the actual feature, as XY have not been throughoutly documented or datamined.
-#define I_FISHING_MINIGAME          GEN_3 // Each generation uses a variation of reeling in Pokémon once they have been hooked.
+#define I_FISHING_MINIGAME          GEN_2 // Each generation uses a variation of reeling in Pokémon once they have been hooked.
 #define I_FISHING_PROXIMITY         FALSE // Introduced in XY, fishing away from other people in enclosed areas will increase the chances of a Pokémon being hooked. NOTE: This implementation is an approximation of the actual feature, as XY have not been throughoutly documented or datamined.
 
 #endif // GUARD_CONFIG_ITEM_H

@@ -1355,3 +1355,87 @@ static const struct SpriteFrameImage sPicTable_KirliaOld[] = {
 static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
     overworld_ascending_frames(gObjectEventPic_RubySapphireMayNormal, 2, 4),
 };
+
+static const struct SpriteFrameImage sPicTable_RegidragoOW[] = {
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+    obj_frame_tiles(gObjectEventPic_RegidragoOW),
+};
+
+static const struct SpriteFrameImage sPicTable_RegielekiOW[] = {
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+    obj_frame_tiles(gObjectEventPic_RegielekiOW),
+};
+
+static const struct SpriteFrameImage sPicTable_Cyrus[] = {
+    overworld_frame(gObjectEventPic_Cyrus, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Cyrus, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Cyrus, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Cyrus, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Cyrus, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Cyrus, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Cyrus, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Cyrus, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Cyrus, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Cynthia[] = {
+    overworld_frame(gObjectEventPic_Cynthia, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Cynthia, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Cynthia, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Cynthia, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Cynthia, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Cynthia, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Cynthia, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Cynthia, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Cynthia, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Giovanni[] = {
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Giovanni, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Grunt_F[] = {
+    overworld_frame(gObjectEventPic_Grunt_F, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Grunt_F, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Grunt_F, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Grunt_F, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Grunt_F, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Grunt_F, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Grunt_F, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Grunt_F, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Grunt_F, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_Grunt_M[] = {
+    overworld_frame(gObjectEventPic_Grunt_M, 2, 4, 0),
+    overworld_frame(gObjectEventPic_Grunt_M, 2, 4, 1),
+    overworld_frame(gObjectEventPic_Grunt_M, 2, 4, 2),
+    overworld_frame(gObjectEventPic_Grunt_M, 2, 4, 3),
+    overworld_frame(gObjectEventPic_Grunt_M, 2, 4, 4),
+    overworld_frame(gObjectEventPic_Grunt_M, 2, 4, 5),
+    overworld_frame(gObjectEventPic_Grunt_M, 2, 4, 6),
+    overworld_frame(gObjectEventPic_Grunt_M, 2, 4, 7),
+    overworld_frame(gObjectEventPic_Grunt_M, 2, 4, 8),
+};

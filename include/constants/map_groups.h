@@ -63,6 +63,8 @@
 #define MAP_UNDERWATER_ROUTE129 (54 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE105 (55 | (0 << 8))
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
+#define MAP_ROUTE100            (57 | (0 << 8))
+#define MAP_METEOR_CASTLE2F1    (58 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -400,6 +402,23 @@
 #define MAP_TERRA_CAVE_END                           (105 | (24 << 8))
 #define MAP_ALTERING_CAVE                            (106 | (24 << 8))
 #define MAP_METEOR_FALLS_STEVENS_CAVE                (107 | (24 << 8))
+#define MAP_ROCKET_HIDEOUT1                          (108 | (24 << 8))
+#define MAP_ROCKET_HIDEOUT2                          (109 | (24 << 8))
+#define MAP_ROCKET_HIDEOUT3                          (110 | (24 << 8))
+#define MAP_ROCKET_HIDEOUT4                          (111 | (24 << 8))
+#define MAP_NEW_MAP1                                 (112 | (24 << 8))
+#define MAP_PETALBURG_SANCTUARY                      (113 | (24 << 8))
+#define MAP_METEOR_CASTLE                            (114 | (24 << 8))
+#define MAP_METEOR_CASTLE2                           (115 | (24 << 8))
+#define MAP_METEOR_CASTLE1F1                         (116 | (24 << 8))
+#define MAP_METEOR_CASTLE2F2                         (117 | (24 << 8))
+#define MAP_DRAGONS_DEN                              (118 | (24 << 8))
+#define MAP_METEOR_CASTLE3F1                         (119 | (24 << 8))
+#define MAP_METEOR_CASTLE3F2                         (120 | (24 << 8))
+#define MAP_METEOR_CASTLE4F1                         (121 | (24 << 8))
+#define MAP_METEOR_CASTLE_TOP_FLOOR                  (122 | (24 << 8))
+#define MAP_METEOR_CASTLE_THRONE_ROOM                (123 | (24 << 8))
+#define MAP_TRANSISTOR_TUNNEL                        (124 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))
