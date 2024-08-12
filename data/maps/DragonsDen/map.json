@@ -3,7 +3,7 @@
   "name": "DragonsDen",
   "layout": "LAYOUT_DRAGONS_DEN",
   "music": "MUS_SEALED_CHAMBER",
-  "region_map_section": "MAPSEC_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_DRAGONS_DEN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERGROUND",
@@ -25,7 +25,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_DEFEATED_REGIDRAGO"
     }
   ],
   "warp_events": [
