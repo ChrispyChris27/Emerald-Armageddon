@@ -291,7 +291,7 @@ RustboroCity_EventScript_StolenGoodsTrigger4::
 RustboroCity_EventScript_StolenGoodsScene::
 	msgbox RustboroCity_Text_OutOfTheWay, MSGBOX_DEFAULT
 	closemessage
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_RG_ENCOUNTER_ROCKET, FALSE
 	addobject LOCALID_GRUNT
 	addobject LOCALID_DEVON_EMPLOYEE
 	applymovement LOCALID_GRUNT, RustboroCity_Movement_GruntEscape
@@ -1021,6 +1021,10 @@ RustboroCity_EventScript_Boy1::
 	msgbox RustboroCity_Text_YouCanHave2On2Battle, MSGBOX_NPC
 	end
 
+RustoboroCity_EventScript_Gym_Hiker::
+	msgbox RustboroCity_Text_Gym_Hiker, MSGBOX_NPC
+	end
+
 RustboroCity_Text_WeShortenItToDevon:
 	.string "The DEVON CORPORATION…\n"
 	.string "We all just shorten it to DEVON.\p"
@@ -1108,7 +1112,7 @@ RustboroCity_Text_HelpMeIWasRobbed:
 	.string "Oh, it's you!\p"
 	.string "You're that fantastic TRAINER who\n"
 	.string "helped me in PETALBURG WOODS!\p"
-	.string "Help me! I was robbed by TEAM AQUA!\n"
+	.string "Help me! I was robbed by TEAM ROCKET!\n"
 	.string "I have to get the DEVON GOODS back!\p"
 	.string "If I don't…\n"
 	.string "I'm going to be in serious trouble.$"
@@ -1288,6 +1292,14 @@ RustboroCity_Text_IdBetterGetBackToWork:
 	.string "Okay, I'd better get back to work.\n"
 	.string "Please take care, {PLAYER}!$"
 
+RustboroCity_Text_Gym_Hiker:
+	.string "Here to challenge Roxanne?\n"
+	.string "Sorry! She went to METEOR FALLS\l"
+	.string "To study some of the rare rocks\l"
+	.string "there.\n"
+	.string "You'll have to come back later\l"
+	.string "If you want to challenge her.$"
+	
 RustboroCity_Text_YouCanHave2On2Battle:
 	.string "Did you know this?\p"
 	.string "You can have a 2-on-2 battle even\n"

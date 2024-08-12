@@ -9,6 +9,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	msgbox GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT
 	setvar VAR_0x8004, ITEM_LETTER
 	call Common_EventScript_PlayerHandedOverTheItem
+	setflag FLAG_MF_ROCKETS
 	setflag FLAG_DELIVERED_STEVEN_LETTER
 	setvar VAR_PETALBURG_GYM_STATE, 6
 	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
