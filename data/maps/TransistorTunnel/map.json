@@ -24,7 +24,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "TransistorTunnel_EventScript_Regieleki",
       "flag": "FLAG_DEFEATED_REGIELEKI"
     }
   ],
@@ -52,9 +52,40 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_REGIELEKI_STATUS",
+      "var_value": "0",
+      "script": "TransistorTunnel_Regieleki_Puzzle"
+    }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "TransistorTunnel_EventScript_CaveEntranceSide"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "TransistorTunnel_EventScript_CaveEntranceMiddle"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "TransistorTunnel_EventScript_CaveEntranceSide"
+    }
   ]
 }

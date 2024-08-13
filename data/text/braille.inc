@@ -109,6 +109,20 @@ IslandCave_Braille_RunLapAroundWall:
 	.braille "RUN AROUND\n"
 	.braille "ONE LAP.$"
 
+Transistor_Braille_Electric:
+	brailleformat 5, 0, 25, 19, 8, 3
+	.braille "LEAD WITH\n"
+	.braille "THUNDEROUS\n"
+	.braille "POWER IN THE\n"
+	.braille "SOUTHWEST.$"
+
+Dragons_Den_Braille:
+	brailleformat 5, 0, 25, 19, 8, 3
+	.braille "THE RAGE OF A\n"
+	.braille "DRAGON MUST\n"
+	.braille "END IN THE\n"
+	.braille "NORTHEAST.$" 
+
 AncientTomb_Braille_ShineInTheMiddle:
 	brailleformat 3, 0, 25, 19, 6, 3
 	.braille "THOSE WHO\n"

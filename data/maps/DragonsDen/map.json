@@ -24,8 +24,8 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_DEFEATED_REGIDRAGO"
+      "script": "DragonsDen_EventScript_Regidrago",
+      "flag": "FLAG_HIDE_REGIDRAGO"
     }
   ],
   "warp_events": [
@@ -52,9 +52,40 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_REGIDRAGO_STATUS",
+      "var_value": "0",
+      "script": "DragonsDen_Regidrago_Puzzle"
+    }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DragonsDen_EventScript_CaveEntranceSide"
+    },
+    {
+      "type": "sign",
+      "x": 9,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DragonsDen_EventScript_CaveEntranceSide"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 20,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "DragonsDen_EventScript_CaveEntranceMiddle"
+    }
   ]
 }

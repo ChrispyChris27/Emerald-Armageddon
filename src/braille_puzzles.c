@@ -12,6 +12,7 @@
 #include "fieldmap.h"
 #include "party_menu.h"
 #include "fldeff.h"
+#include "constants/moves.h"
 
 EWRAM_DATA static bool8 sIsRegisteelPuzzle = 0;
 
@@ -343,4 +344,53 @@ bool8 ShouldDoBrailleRegicePuzzle(void)
     }
 
     return FALSE;
+}
+
+bool8 Regieleki_Check(void)
+{
+    if (GetMonData(&gPlayerParty[0], MON_DATA_MOVE1) == MOVE_THUNDER || MOVE_THUNDERBOLT)
+        return TRUE;
+    else
+        return FALSE;
+
+}
+
+void DoBrailleRegielekiEffect(void)
+{
+    MapGridSetMetatileIdAt(7 + MAP_OFFSET, 19 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_TopLeft);
+    MapGridSetMetatileIdAt(8 + MAP_OFFSET, 19 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_TopMid);
+    MapGridSetMetatileIdAt(9 + MAP_OFFSET, 19 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_TopRight);
+    MapGridSetMetatileIdAt(7 + MAP_OFFSET, 20 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_BottomLeft | MAPGRID_COLLISION_MASK);
+    MapGridSetMetatileIdAt(8 + MAP_OFFSET, 20 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_BottomMid);
+    MapGridSetMetatileIdAt(9 + MAP_OFFSET, 20 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_BottomRight | MAPGRID_COLLISION_MASK);
+    DrawWholeMapView();
+    PlaySE(SE_BANG);
+    FlagSet(FLAG_REGIELEKI_PUZZLE);
+    UnlockPlayerFieldControls();
+    UnfreezeObjectEvents();
+}
+
+bool8 Regidrago_Check(void)
+{
+    CalculatePlayerPartyCount();
+        if (GetMonData(&gPlayerParty[gPlayerPartyCount - 1], MON_DATA_MOVE4, 0) == MOVE_DRAGON_RAGE)
+            return TRUE;
+        else
+            return FALSE;
+
+}
+
+void DoBrailleRegidragoEffect(void)
+{
+    MapGridSetMetatileIdAt(7 + MAP_OFFSET, 19 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_TopLeft);
+    MapGridSetMetatileIdAt(8 + MAP_OFFSET, 19 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_TopMid);
+    MapGridSetMetatileIdAt(9 + MAP_OFFSET, 19 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_TopRight);
+    MapGridSetMetatileIdAt(7 + MAP_OFFSET, 20 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_BottomLeft | MAPGRID_COLLISION_MASK);
+    MapGridSetMetatileIdAt(8 + MAP_OFFSET, 20 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_BottomMid);
+    MapGridSetMetatileIdAt(9 + MAP_OFFSET, 20 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_BottomRight | MAPGRID_COLLISION_MASK);
+    DrawWholeMapView();
+    PlaySE(SE_BANG);
+    FlagSet(FLAG_REGIDRAGO_PUZZLE);
+    UnlockPlayerFieldControls();
+    UnfreezeObjectEvents();
 }
