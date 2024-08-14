@@ -299,7 +299,7 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 11,
-            .nature = NATURE_DOCILE,
+            .nature = NATURE_LONELY,
             .ability = ABILITY_SIMPLE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .heldItem = ITEM_PASSHO_BERRY,
@@ -318,7 +318,7 @@ F_TRAINER_FEMALE |
             .nature = NATURE_NAIVE,
             .ability = ABILITY_UNBURDEN,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .heldItem = ITEM_SITRUS_BERRY,
+            .heldItem = ITEM_IAPAPA_BERRY,
             .moves = {
                 MOVE_ACROBATICS,
                 MOVE_HEX,

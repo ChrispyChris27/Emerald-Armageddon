@@ -250,7 +250,7 @@ RustboroCity_EventScript_Man2::
 
 RustboroCity_EventScript_StolenGoodsTrigger0::
 	lockall
-	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 0
 	goto RustboroCity_EventScript_StolenGoodsScene
@@ -258,7 +258,7 @@ RustboroCity_EventScript_StolenGoodsTrigger0::
 
 RustboroCity_EventScript_StolenGoodsTrigger1::
 	lockall
-	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 1
 	goto RustboroCity_EventScript_StolenGoodsScene
@@ -266,7 +266,7 @@ RustboroCity_EventScript_StolenGoodsTrigger1::
 
 RustboroCity_EventScript_StolenGoodsTrigger2::
 	lockall
-	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 2
 	goto RustboroCity_EventScript_StolenGoodsScene
@@ -274,7 +274,7 @@ RustboroCity_EventScript_StolenGoodsTrigger2::
 
 RustboroCity_EventScript_StolenGoodsTrigger3::
 	lockall
-	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 3
 	goto RustboroCity_EventScript_StolenGoodsScene
@@ -282,7 +282,7 @@ RustboroCity_EventScript_StolenGoodsTrigger3::
 
 RustboroCity_EventScript_StolenGoodsTrigger4::
 	lockall
-	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 4
 	goto RustboroCity_EventScript_StolenGoodsScene
@@ -383,6 +383,9 @@ RustboroCity_Movement_GruntEscapeExtended:
 	step_end
 
 RustboroCity_Movement_GruntEscape:
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
 	walk_faster_right
 	walk_faster_right
 	walk_fast_right
@@ -402,6 +405,10 @@ RustboroCity_Movement_GruntEscape:
 	step_end
 
 RustboroCity_Movement_EmployeeChaseGrunt1:
+	walk_down
+	walk_down
+	walk_down
+	walk_right
 	walk_right
 	walk_right
 	walk_right
@@ -1293,11 +1300,11 @@ RustboroCity_Text_IdBetterGetBackToWork:
 	.string "Please take care, {PLAYER}!$"
 
 RustboroCity_Text_Gym_Hiker:
-	.string "Here to challenge Roxanne?\n"
-	.string "Sorry! She went to METEOR FALLS\l"
+	.string "Here to challenge Roxanne?\p"
+	.string "Sorry! She went to METEOR FALLS\n"
 	.string "To study some of the rare rocks\l"
-	.string "there.\n"
-	.string "You'll have to come back later\l"
+	.string "there.\p"
+	.string "You'll have to come back later\n"
 	.string "If you want to challenge her.$"
 	
 RustboroCity_Text_YouCanHave2On2Battle:
