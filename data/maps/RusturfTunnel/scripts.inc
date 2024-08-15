@@ -305,7 +305,7 @@ RusturfTunnel_EventScript_Peeko::
 RusturfTunnel_EventScript_Grunt::
 	lock
 	faceplayer
-	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	playbgm MUS_RG_ENCOUNTER_ROCKET, FALSE
 	msgbox RusturfTunnel_Text_GruntIntro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_GRUNT_RUSTURF_TUNNEL, RusturfTunnel_Text_GruntDefeat
 	msgbox RusturfTunnel_Text_GruntTakePackage, MSGBOX_DEFAULT
@@ -467,10 +467,12 @@ RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
 	.string "I sincerely thank you!\p"
 	.string "Now, if there's anything that troubles\n"
 	.string "you, don't hesitate to tell me!\p"
-	.string "You can usually find me in my cottage\n"
-	.string "by the sea near PETALBURG WOODS.\p"
+	.string "I have a small cottage near PETALBURG\n"
+	.string "though I spend most of my time sailing\l"
+	.string "the seven seas!\p"
 	.string "Come, PEEKO, we should make our way\n"
-	.string "home.\p"
+	.string "home so we can get ready to sail to\l"
+	.string "SLATEPORT CITY!\p"
 	.string "PEEKO: Pihyoh!$"
 
 RusturfTunnel_Text_WhyCantTheyKeepDigging:

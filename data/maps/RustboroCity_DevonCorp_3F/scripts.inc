@@ -61,12 +61,9 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	closemessage
 	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare, MSGBOX_DEFAULT
-	setflag FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND
-	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND
-	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDA
-	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
-	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
-	setvar VAR_BRINEY_LOCATION, 1
+	setvar VAR_BRINEY_LOCATION, 3
+	setflag FLAG_HIDE_RUSTURF_TUNNEL_ROCK_1
+	setflag FLAG_HIDE_RUSTURF_TUNNEL_ROCK_2
 	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
 	setvar VAR_DEVON_CORP_3F_STATE, 1
 	setvar VAR_RUSTBORO_CITY_STATE, 6
@@ -207,7 +204,7 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "person like you.\p"
 	.string "I understand that you're delivering\n"
 	.string "a package to SLATEPORT's SHIPYARD.\p"
-	.string "Well, on the way, could you stop off in\n"
+	.string "Afterwards, could you stop off in\n"
 	.string "DEWFORD TOWN?\p"
 	.string "I was hoping that you'd deliver a\n"
 	.string "LETTER to STEVEN in DEWFORD.$"
@@ -232,8 +229,12 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "You can check the locations of\n"
 	.string "DEWFORD and SLATEPORT easily!\p"
 	.string "By the way, I've heard that sinister\n"
-	.string "criminals--MAGMA and AQUA, I believe--\l"
-	.string "have been making trouble far and wide.\p"
+	.string "criminals have been causing trouble.\p"
+	.string "You've encountered TEAM ROCKET and\n"
+	.string "TEAM MAGMA so far, but I've heard a\l"
+	.string "third team may also be on the loose.\p"
+	.string "I heard they are trying to acquire\n"
+	.string "that package so you best watch out.\p"
 	.string "I think it would be best if you rested\n"
 	.string "up before you go on your way.$"
 
@@ -257,7 +258,12 @@ RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "It will get EXP Points even if it didn't\n"
 	.string "actually battle.\p"
 	.string "I would say EXP. SHARE is quite useful\n"
-	.string "for raising weak POKéMON.$"
+	.string "for raising weak POKéMON.\p"
+	.string "What's that?\p"
+	.string "What do you mean you already have a\n"
+	.string "CANDINATOR?\p"
+	.string "Well I insist you take it anyways,\n"
+	.string "even if it is useless to you.$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "MR. STONE: Since my youth, I've immersed\n"

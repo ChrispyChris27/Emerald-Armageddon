@@ -10,8 +10,16 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	setvar VAR_0x8004, ITEM_LETTER
 	call Common_EventScript_PlayerHandedOverTheItem
 	setflag FLAG_MF_ROCKETS
+	setflag FLAG_115_ROXANNE
 	setflag FLAG_DELIVERED_STEVEN_LETTER
 	setvar VAR_PETALBURG_GYM_STATE, 6
+	setflag FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND
+	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDAS_BOYFRIEND
+	clearflag FLAG_HIDE_RUSTURF_TUNNEL_WANDA
+	clearflag FLAG_HIDE_RUSTURF_TUNNEL_ROCK_1
+	clearflag FLAG_HIDE_RUSTURF_TUNNEL_ROCK_2
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
+	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
 	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_STEEL_WING

@@ -91,6 +91,7 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	setvar VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE, 3
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT
 	setflag FLAG_DEFEATED_MAUVILLE_GYM
+	setflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY
 	setflag FLAG_BADGE03_GET
 	setvar VAR_0x8008, 3
 	call Common_EventScript_SetGymTrainers
