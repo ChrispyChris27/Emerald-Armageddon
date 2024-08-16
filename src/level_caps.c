@@ -11,7 +11,7 @@ u32 GetCurrentLevelCap(void)
     {
         {FLAG_WOODS_GRUNT, 12},
         {FLAG_RUSTURF_GRUNT, 19},
-        {FLAG_RIVAL_MAUVILLE, 26},
+        {FLAG_RIVAL_MAUVILLE, 24},
         {FLAG_SLATEPORT_GRUNTS, 29},
         {FLAG_BADGE05_GET, 32},
         {FLAG_RIVAL_110, 36},
