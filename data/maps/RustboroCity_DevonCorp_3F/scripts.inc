@@ -64,7 +64,6 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	setvar VAR_BRINEY_LOCATION, 3
 	setflag FLAG_HIDE_RUSTURF_TUNNEL_ROCK_1
 	setflag FLAG_HIDE_RUSTURF_TUNNEL_ROCK_2
-	clearflag FLAG_HIDE_RUSTBORO_CITY_RIVAL
 	setvar VAR_DEVON_CORP_3F_STATE, 1
 	setvar VAR_RUSTBORO_CITY_STATE, 6
 	releaseall

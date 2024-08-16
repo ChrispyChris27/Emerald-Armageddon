@@ -1,6 +1,7 @@
 .set LOCALID_WALLY, 6
 .set LOCALID_WALLYS_UNCLE, 7
 .set LOCALID_SCOTT, 11
+.set LOCALID_RIVAL, 12
 
 MauvilleCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MauvilleCity_OnTransition
@@ -8,6 +9,7 @@ MauvilleCity_MapScripts::
 
 MauvilleCity_OnTransition:
 	setflag FLAG_VISITED_MAUVILLE_CITY
+	call Common_EventScript_SetupRivalOnBikeGfxId
 	clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE
 	clearflag FLAG_HIDE_SLATEPORT_MUSEUM_POPULATION
 	setflag FLAG_SYS_TV_START
@@ -463,6 +465,178 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	releaseall
 	end
 
+MauvilleCity_Rival_Exit::
+	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement_Exit
+	waitmovement 0
+	removeobject LOCALID_RIVAL
+	call MauvilleCity_EventScript_RestoreBgm
+	releaseall
+	end
+
+MauvilleCity_EventScript_RestoreBgm::
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	return
+
+MauvilleCity_EventScript_PlayRivalMusic::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, MauvilleCity_EventScript_PlayMayMusic
+	goto_if_eq VAR_RESULT, FEMALE, MauvilleCity_EventScript_PlayBrendanMusic
+	return
+
+MauvilleCity_EventScript_PlayMayMusic::
+	playbgm MUS_ENCOUNTER_MAY, TRUE
+	return
+
+MauvilleCity_EventScript_PlayBrendanMusic::
+	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+	return
+
+MauvilleCityEventScript_Rival1::
+	lockall
+	call MauvilleCity_EventScript_PlayRivalMusic
+	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement1
+	waitmovement 0
+	goto MauvilleCity_Rival_Encounter
+	
+
+MauvilleCityEventScript_Rival2::
+	lockall
+	call MauvilleCity_EventScript_PlayRivalMusic
+	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement2
+	waitmovement 0
+	goto MauvilleCity_Rival_Encounter
+	
+
+MauvilleCityEventScript_Rival3::
+	lockall
+	call MauvilleCity_EventScript_PlayRivalMusic
+	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement3
+	waitmovement 0
+	goto MauvilleCity_Rival_Encounter
+	
+
+MauvilleCityEventScript_Rival4::
+	lockall
+	call MauvilleCity_EventScript_PlayRivalMusic
+	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement4
+	waitmovement 0
+	goto MauvilleCity_Rival_Encounter
+	
+
+MauvilleCity_Rival_Encounter::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, MauvilleCity_EventScript_MayEncounter
+	goto_if_eq VAR_RESULT, FEMALE, MauvilleCity_EventScript_BrendanEncounter
+	
+
+MauvilleCity_EventScript_BrendanEncounter::
+	setflag FLAG_MET_RIVAL_RUSTBORO
+	msgbox MauvilleCity_Text_BrendanHiLetsRegister, MSGBOX_DEFAULT
+	closemessage
+	delay 30
+	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox MauvilleCity_Text_RegisteredBrendan, MSGBOX_DEFAULT
+	waitfanfare
+	closemessage
+	delay 30
+	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
+	setvar VAR_RUSTBORO_CITY_STATE, 8
+	setvar VAR_ROUTE104_STATE, 2
+	setvar VAR_0x8008, 0
+	call MauvilleCity_EventScript_BattleBrendan
+	goto MauvilleCity_Rival_Exit
+	releaseall
+	end
+
+MauvilleCity_EventScript_BattleBrendan::
+	msgbox MauvilleCity_Rival_Text1, MSGBOX_DEFAULT
+	switch VAR_STARTER_MON
+	case 0, MauvilleCity_EventScript_BattleBrendanTreecko
+	case 1, MauvilleCity_EventScript_BattleBrendanTorchic
+	case 2, MauvilleCity_EventScript_BattleBrendanMudkip
+	return
+
+MauvilleCity_EventScript_BattleBrendanTreecko::
+	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TREECKO, MauvilleRivalDefeatedText
+	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag FLAG_RIVAL_MAUVILLE
+	setvar VAR_MAUVILLE_RIVAL, 1
+	msgbox MauvilleCity_Text_Rival2, MSGBOX_DEFAULT
+	closemessage
+	goto MauvilleCity_Rival_Exit
+
+MauvilleCity_EventScript_BattleBrendanTorchic::
+	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_TORCHIC, MauvilleRivalDefeatedText
+	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag FLAG_RIVAL_MAUVILLE
+	setvar VAR_MAUVILLE_RIVAL, 1
+	msgbox MauvilleCity_Text_Rival2, MSGBOX_DEFAULT
+	closemessage
+	goto MauvilleCity_Rival_Exit
+
+MauvilleCity_EventScript_BattleBrendanMudkip::
+	trainerbattle_no_intro TRAINER_BRENDAN_RUSTBORO_MUDKIP, MauvilleRivalDefeatedText
+	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag FLAG_RIVAL_MAUVILLE
+	setvar VAR_MAUVILLE_RIVAL, 1
+	msgbox MauvilleCity_Text_Rival2, MSGBOX_DEFAULT
+	closemessage
+	goto MauvilleCity_Rival_Exit
+
+MauvilleCity_EventScript_MayEncounter::
+	setflag FLAG_MET_RIVAL_RUSTBORO
+	msgbox MauvilleCity_Text_MayHiLetsRegister, MSGBOX_DEFAULT
+	closemessage
+	delay 30
+	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox MauvilleCity_Text_RegisteredMay, MSGBOX_DEFAULT
+	waitfanfare
+	closemessage
+	delay 30
+	setflag FLAG_ENABLE_RIVAL_MATCH_CALL
+	setvar VAR_RUSTBORO_CITY_STATE, 8
+	setvar VAR_ROUTE104_STATE, 2
+	setvar VAR_0x8008, 0
+	call MauvilleCity_EventScript_BattleMay
+	releaseall
+	end
+
+MauvilleCity_EventScript_BattleMay::
+	msgbox MauvilleCity_Rival_Text1, MSGBOX_DEFAULT
+	switch VAR_STARTER_MON
+	case 0, MauvilleCity_EventScript_BattleMayTreecko
+	case 1, MauvilleCity_EventScript_BattleMayTorchic
+	case 2, MauvilleCity_EventScript_BattleMayMudkip
+	return
+
+MauvilleCity_EventScript_BattleMayTreecko::
+	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TREECKO, MauvilleRivalDefeatedText
+	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag FLAG_RIVAL_MAUVILLE
+	setvar VAR_MAUVILLE_RIVAL, 1
+	msgbox MauvilleCity_Text_Rival2, MSGBOX_DEFAULT
+	closemessage
+	goto MauvilleCity_Rival_Exit
+
+MauvilleCity_EventScript_BattleMayTorchic::
+	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_TORCHIC, MauvilleRivalDefeatedText
+	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag FLAG_RIVAL_MAUVILLE
+	setvar VAR_MAUVILLE_RIVAL, 1
+	msgbox MauvilleCity_Text_Rival2, MSGBOX_DEFAULT
+	closemessage
+	goto MauvilleCity_Rival_Exit
+
+MauvilleCity_EventScript_BattleMayMudkip::
+	trainerbattle_no_intro TRAINER_MAY_RUSTBORO_MUDKIP, MauvilleRivalDefeatedText
+	setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+	setflag FLAG_RIVAL_MAUVILLE
+	setvar VAR_MAUVILLE_RIVAL, 1
+	msgbox MauvilleCity_Text_Rival2, MSGBOX_DEFAULT
+	closemessage
+	goto MauvilleCity_Rival_Exit
+
 MauvilleCity_Text_UncleHesTooPeppy:
 	.string "UNCLE: It's because of POKéMON that\n"
 	.string "this boy's got more pep, I suppose…\l"
@@ -663,6 +837,120 @@ MauvilleCity_Text_ExplainTV:
 	.string "I wish I would be on TV sometime.\p"
 	.string "That's why I think you should check\n"
 	.string "out TVs whenever you can.$"
+
+MauvilleCity_Rival_Text1:
+	.string "This bike? I got it at the BIKE SHOP\n"
+	.string "right here in MAUVILLE!\p"
+	.string "I bet you could snag one for\n"
+	.string "yourself too!\p"
+	.string "Before you do that though, let's\n"
+	.string "battle!\p"
+	.string "I've grown a lot stronger since we\n"
+	.string "battled on ROUTE 103!\p"
+	.string "Ready or not, here I come!$"
+
+MauvilleCity_Text_MayHiLetsRegister:
+	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "You had a MATCH CALL feature put\n"
+	.string "on your POKéNAV!\p"
+	.string "Let's register each other so we can\n"
+	.string "contact one another anytime!\p"
+	.string "… … … … … …$"
+
+MauvilleCity_Text_RegisteredMay:
+	.string "Registered MAY\n"
+	.string "in the POKéNAV.$"
+
+MauvilleCity_Text_BrendanHiLetsRegister:
+	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
+	.string "You had a MATCH CALL feature put\n"
+	.string "on your POKéNAV! Cool!\p"
+	.string "Let's register each other so we can\n"
+	.string "get in touch anytime!\p"
+	.string "… … … … … …$"
+
+MauvilleCity_Text_RegisteredBrendan:
+	.string "Registered BRENDAN\n"
+	.string "in the POKéNAV.$"
+
+MauvilleCity_Text_Rival2:
+	.string "Damn. You got me good there.\p"
+	.string "But I'm not gonna give up!\p"
+	.string "I'll train to become even stronger!\p"
+	.string "We're going to battle again {PLAYER}{KUN},\n"
+	.string "and next time I'm going to beat you!\p"
+	.string "See you around!$"
+
+MauvilleRivalDefeatedText:
+	.string "Great battle!\n"
+	.string "Guess I still have a lot to learn.$"
+
+MauvilleCity_Rival_Movement_Exit::
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+MauvilleCity_Rival_Movement1::
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_player
+	step_end
+
+MauvilleCity_Rival_Movement2::
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_player
+	step_end
+
+MauvilleCity_Rival_Movement3::
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_player
+	step_end
+
+MauvilleCity_Rival_Movement4::
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_player
+	step_end
 
 MauvilleCity_Text_BeenCheckingOutTV:
 	.string "Hi, have you been checking out TVs?$"
