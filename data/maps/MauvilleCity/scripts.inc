@@ -497,6 +497,8 @@ MauvilleCityEventScript_Rival1::
 	call MauvilleCity_EventScript_PlayRivalMusic
 	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement1
 	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Player_Face_Down
+	waitmovement 0
 	goto MauvilleCity_Rival_Encounter
 	
 
@@ -504,6 +506,8 @@ MauvilleCityEventScript_Rival2::
 	lockall
 	call MauvilleCity_EventScript_PlayRivalMusic
 	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement2
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Player_Face_Down
 	waitmovement 0
 	goto MauvilleCity_Rival_Encounter
 	
@@ -513,6 +517,8 @@ MauvilleCityEventScript_Rival3::
 	call MauvilleCity_EventScript_PlayRivalMusic
 	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement3
 	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Player_Face_Up
+	waitmovement 0
 	goto MauvilleCity_Rival_Encounter
 	
 
@@ -520,6 +526,8 @@ MauvilleCityEventScript_Rival4::
 	lockall
 	call MauvilleCity_EventScript_PlayRivalMusic
 	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement4
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Player_Face_Up
 	waitmovement 0
 	goto MauvilleCity_Rival_Encounter
 	
@@ -950,6 +958,14 @@ MauvilleCity_Rival_Movement4::
 	walk_left
 	walk_left
 	face_player
+	step_end
+
+MauvilleCity_Player_Face_Down::
+	face_down
+	step_end
+
+MauvilleCity_Player_Face_Up::
+	face_up
 	step_end
 
 MauvilleCity_Text_BeenCheckingOutTV:

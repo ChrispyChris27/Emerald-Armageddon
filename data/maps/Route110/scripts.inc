@@ -1,7 +1,7 @@
 .set LOCALID_CHALLENGE_BIKER, 21
-.set LOCALID_RIVAL, 28
-.set LOCALID_RIVAL_ON_BIKE, 29
-.set LOCALID_BIRCH, 36
+.set LOCALID_RIVAL, 23
+.set LOCALID_RIVAL_ON_BIKE, 24
+.set LOCALID_BIRCH, 31
 
 Route110_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route110_OnResume
@@ -575,6 +575,10 @@ Route110_Movement_RivalExit3:
 	walk_fast_up
 	step_end
 
+Route110_Player_Face_Up::
+	face_up
+	step_end
+
 Route110_EventScript_BirchScene1::
 	lockall
 	setvar VAR_0x8008, 1
@@ -598,6 +602,8 @@ Route110_EventScript_BirchScene4::
 Route110_EventScript_BirchScene::
 	addobject LOCALID_BIRCH
 	applymovement LOCALID_BIRCH, Route110_Movement_BirchEntrance
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Route110_Player_Face_Up
 	waitmovement 0
 	playse SE_PIN
 	applymovement LOCALID_BIRCH, Common_Movement_ExclamationMark

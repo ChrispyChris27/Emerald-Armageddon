@@ -916,6 +916,51 @@ SlateportCity_EventScript_ScottBattleTentScene::
 	releaseall
 	end
 
+SlateportCity_EventScript_AquaGruntA::
+	lock
+	faceplayer
+	msgbox SlateportCity_Text_WeCantTalkAboutAquaActivities, MSGBOX_DEFAULT
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+SlateportCity_EventScript_AquaGruntB::
+	lock
+	faceplayer
+	msgbox SlateportCity_Text_KickUpARuckus, MSGBOX_DEFAULT
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+SlateportCity_EventScript_AquaGruntC::
+	lock
+	faceplayer
+	msgbox SlateportCity_Text_MyFirstJobInAqua, MSGBOX_DEFAULT
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+SlateportCity_EventScript_AquaGruntD::
+	lock
+	faceplayer
+	msgbox SlateportCity_Text_AquaActionsBringSmiles, MSGBOX_DEFAULT
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
+SlateportCity_EventScript_AquaGruntE::
+	lock
+	faceplayer
+	msgbox SlateportCity_Text_StealParts, MSGBOX_DEFAULT
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
+
 SlateportCity_Movement_PushPlayerDown:
 	lock_facing_direction
 	walk_down
@@ -1372,6 +1417,28 @@ SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
 	.string "So, I'll be off to roam other towns\n"
 	.string "a bit more.\p"
 	.string "Be seeing you, {PLAYER}{KUN}!$"
+
+SlateportCity_Text_WeCantTalkAboutAquaActivities:
+	.string "TEAM AQUA's activities…\n"
+	.string "We can't talk about them yet.$"
+
+SlateportCity_Text_KickUpARuckus:
+	.string "I want to get out of SLATEPORT and\n"
+	.string "kick up a ruckus!$"
+
+SlateportCity_Text_MyFirstJobInAqua:
+	.string "This is my first job after joining\n"
+	.string "TEAM AQUA. It's a little scary.$"
+
+SlateportCity_Text_AquaActionsBringSmiles:
+	.string "TEAM AQUA's actions should bring\n"
+	.string "smiles to people's faces!$"
+
+SlateportCity_Text_StealParts:
+	.string "A ship carrying the DEVON PARTS\n"
+	.string "should be arriving soon.\p"
+	.string "We'll snatch the parts from the poor chap\n"
+	.string "on that ship who's carrying them!$"
 
 SlateportCity_Text_TakingBattleTentChallenge:
 	.string "SCOTT: Oh, hey!\n"
