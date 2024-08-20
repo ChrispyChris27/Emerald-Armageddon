@@ -73,12 +73,31 @@ MauvilleCity_EventScript_TVExplained::
 MauvilleCity_EventScript_WallysUncle::
 	lock
 	faceplayer
+	goto_if_unset FLAG_RIVAL_110, MauvilleCity_EventScript_WallUncleNotReady
 	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_UncleAskPlayerToBattleWally
 	msgbox MauvilleCity_Text_UncleHesTooPeppy, MSGBOX_DEFAULT
 	closemessage
 	applymovement LOCALID_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
+	end
+
+MauvilleCity_EventScript_WallyNotReady::
+	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox MauvilleCity_Text_WallyNotReady, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_WALLY, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	releaseall
+	end
+
+MauvilleCity_EventScript_WallUncleNotReady::
+	msgbox MauvilleCity_Text_WallyUncleNotReady, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	releaseall
 	end
 
 MauvilleCity_EventScript_UncleAskPlayerToBattleWally::
@@ -91,6 +110,7 @@ MauvilleCity_EventScript_UncleAskPlayerToBattleWally::
 
 MauvilleCity_EventScript_Wally::
 	lockall
+	goto_if_unset FLAG_RIVAL_110, MauvilleCity_EventScript_WallyNotReady
 	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_WallyRequestBattleAgain
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
@@ -892,6 +912,20 @@ MauvilleCity_Text_Rival2:
 MauvilleRivalDefeatedText:
 	.string "Great battle!\n"
 	.string "Guess I still have a lot to learn.$"
+
+MauvilleCity_Text_WallyNotReady:
+	.string "Oh hi {PLAYER}{KUN}.\p"
+	.string "I came here to challenge the\n"
+	.string "MAUVILLE GYM but the GYM LEADER\l"
+	.string "isn't here right now.\p"
+	.string "I'm going to be first in line\n"
+	.string "when he comes back!$"
+
+MauvilleCity_Text_WallyUncleNotReady:
+	.string "I'm a little relieved that the\n"
+	.string "GYM LEADER isn't here right now.\p"
+	.string "I'm not sure WALLY is ready to\n"
+	.string "fight a GYM LEADER yet.$"
 
 MauvilleCity_Rival_Movement_Exit::
 	walk_left
