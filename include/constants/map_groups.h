@@ -419,6 +419,8 @@
 #define MAP_METEOR_CASTLE_TOP_FLOOR                  (122 | (24 << 8))
 #define MAP_METEOR_CASTLE_THRONE_ROOM                (123 | (24 << 8))
 #define MAP_TRANSISTOR_TUNNEL                        (124 | (24 << 8))
+#define MAP_MYTHICAL_MOUNTAIN                        (125 | (24 << 8))
+#define MAP_MYTHICAL_MOUNTAIN2                       (126 | (24 << 8))
 
 // gMapGroup_IndoorDynamic
 #define MAP_SECRET_BASE_RED_CAVE1    (0 | (25 << 8))

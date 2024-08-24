@@ -1112,3 +1112,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/MeteorCastleThroneRoom/scripts.inc"
 
 	.include "data/maps/TransistorTunnel/scripts.inc"
+
+	.include "data/maps/MythicalMountain/scripts.inc"
+
+	.include "data/maps/MythicalMountain2/scripts.inc"

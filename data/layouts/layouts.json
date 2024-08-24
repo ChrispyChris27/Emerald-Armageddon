@@ -4600,6 +4600,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/TransistorTunnel/border.bin",
       "blockdata_filepath": "data/layouts/TransistorTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYTHICAL_MOUNTAIN",
+      "name": "MythicalMountain_Layout",
+      "width": 22,
+      "height": 24,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/MythicalMountain/border.bin",
+      "blockdata_filepath": "data/layouts/MythicalMountain/map.bin"
+    },
+    {
+      "id": "LAYOUT_MYTHICAL_MOUNTAIN2",
+      "name": "MythicalMountain2_Layout",
+      "width": 40,
+      "height": 50,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/MythicalMountain2/border.bin",
+      "blockdata_filepath": "data/layouts/MythicalMountain2/map.bin"
     }
   ]
 }
