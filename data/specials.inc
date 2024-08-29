@@ -558,3 +558,4 @@ gSpecials::
 	def_special Regidrago_Check
 	def_special DoBrailleRegielekiEffect
 	def_special DoBrailleRegidragoEffect
+	def_special ReleaseRoamers
