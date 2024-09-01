@@ -3,8 +3,6 @@ RustboroCity_Gym_MapScripts::
 
 RustboroCity_Gym_EventScript_Roxanne::
 	trainerbattle_single TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxanneIntro, RustboroCity_Gym_Text_RoxanneDefeat, RustboroCity_Gym_EventScript_RoxanneDefeated, NO_MUSIC
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, RustboroCity_Gym_EventScript_RoxanneRematch
 	goto_if_unset FLAG_RECEIVED_TM_ROCK_TOMB, RustboroCity_Gym_EventScript_GiveRockTomb
 	msgbox RustboroCity_Gym_Text_RoxannePostBattle, MSGBOX_DEFAULT
 	release
@@ -28,11 +26,6 @@ RustboroCity_Gym_EventScript_GiveRockTomb::
 	setflag FLAG_RECEIVED_TM_ROCK_TOMB
 	msgbox RustboroCity_Gym_Text_ExplainRockTomb, MSGBOX_DEFAULT
 	release
-	end
-
-RustboroCity_Gym_EventScript_RoxanneRematch::
-	trainerbattle_rematch_double TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxannePreRematch, RustboroCity_Gym_Text_RoxanneRematchDefeat, RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons
-	msgbox RustboroCity_Gym_Text_RoxannePostRematch, MSGBOX_AUTOCLOSE
 	end
 
 RustboroCity_Gym_EventScript_Josh::

@@ -38,8 +38,6 @@ SootopolisCity_Gym_1F_Movement_FallThroughIce:
 
 SootopolisCity_Gym_1F_EventScript_Juan::
 	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, SootopolisCity_Gym_1F_EventScript_JuanRematch
 	goto_if_unset FLAG_RECEIVED_TM_WATER_PULSE, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2
 	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
 	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
@@ -92,11 +90,6 @@ SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge::
 	release
 	end
 
-SootopolisCity_Gym_1F_EventScript_JuanRematch::
-	trainerbattle_rematch_double TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanPreRematch, SootopolisCity_Gym_1F_Text_JuanRematchDefeat, SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons
-	msgbox SootopolisCity_Gym_1F_Text_JuanPostRematch, MSGBOX_AUTOCLOSE
-	end
-
 SootopolisCity_Gym_1F_EventScript_GymGuide::
 	lock
 	faceplayer
@@ -136,17 +129,21 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
 	.string "SOOTOPOLIS's GYM LEADER JUAN is\n"
-	.string "a master of WATER-type POKéMON.\p"
+	.string "a master of ICE-type POKéMON.\p"
 	.string "And, to get to JUAN, an icy floor\n"
 	.string "will hamper your progress…\p"
-	.string "Listen, I'm sorry, but that's all the\n"
-	.string "advice that I have for you.\p"
+	.string "There may be other surprises in\n"
+	.string "store for you, but...\p"
+	.string "Well I wouldn't want to spoil the\n"
+	.string "surprise, now would I!\p"
+	.string "That's all the advice that I have\n"
+	.string "for you.\p"
 	.string "The rest of the way, you have to\n"
 	.string "go for it yourself!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! You've beaten even JUAN, who\n"
-	.string "was supposedly the best in all HOENN!\p"
+	.string "Yow! You've beaten both WALLACE and JUAN,\n"
+	.string "who were supposedly the best in all HOENN!\p"
 	.string "Okay! Check out your TRAINER CARD.\p"
 	.string "If you've gotten all the BADGES, you're\n"
 	.string "set for the POKéMON LEAGUE challenge!$"

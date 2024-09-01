@@ -74,9 +74,8 @@ MauvilleCity_Gym_EventScript_DeactivatePuzzle::
 	end
 
 MauvilleCity_Gym_EventScript_Wattson::
+	setvar VAR_UNUSED_0x40F7, 1
 	trainerbattle_single TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonIntro, MauvilleCity_Gym_Text_WattsonDefeat, MauvilleCity_Gym_EventScript_WattsonDefeated, NO_MUSIC
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_Gym_EventScript_WattsonRematch
 	goto_if_unset FLAG_RECEIVED_TM_SHOCK_WAVE, MauvilleCity_Gym_EventScript_GiveShockWave2
 	goto_if_eq VAR_NEW_MAUVILLE_STATE, 2, MauvilleCity_Gym_EventScript_CompletedNewMauville
 	msgbox MauvilleCity_Gym_Text_WattsonPostBattle, MSGBOX_DEFAULT
@@ -92,6 +91,7 @@ MauvilleCity_Gym_EventScript_WattsonDefeated::
 	clearflag FLAG_HIDE_VERDANTURF_TOWN_SCOTT
 	setflag FLAG_DEFEATED_MAUVILLE_GYM
 	setflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY
+	setvar VAR_UNUSED_0x40F7, 0
 	setflag FLAG_BADGE03_GET
 	setvar VAR_0x8008, 3
 	call Common_EventScript_SetGymTrainers
@@ -128,11 +128,6 @@ MauvilleCity_Gym_EventScript_GiveShockWave::
 MauvilleCity_Gym_EventScript_CompletedNewMauville::
 	msgbox MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor, MSGBOX_DEFAULT
 	release
-	end
-
-MauvilleCity_Gym_EventScript_WattsonRematch::
-	trainerbattle_rematch_double TRAINER_WATTSON_1, MauvilleCity_Gym_Text_WattsonPreRematch, MauvilleCity_Gym_Text_WattsonRematchDefeat, MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons
-	msgbox MauvilleCity_Gym_Text_WattsonPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 MauvilleCity_Gym_EventScript_Switch1::
