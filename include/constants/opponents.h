@@ -777,8 +777,8 @@
 #define TRAINER_GIOVANNI_2                  771
 #define TRAINER_FALLS_GRUNT_1               772
 #define TRAINER_FALLS_GRUNT_2               773
-#define TRAINER_ARCHER_1                    774
-#define TRAINER_ARIANNA_1                   775
+#define TRAINER_CYRUS                       774
+#define TRAINER_CYNTHIA                     775
 #define TRAINER_ARCHER_2                    776
 #define TRAINER_ARIANNA_2                   777
 #define TRAINER_FALLS_GRUNT_3               778
