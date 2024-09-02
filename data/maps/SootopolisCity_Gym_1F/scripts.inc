@@ -36,10 +36,36 @@ SootopolisCity_Gym_1F_Movement_FallThroughIce:
 	set_invisible
 	step_end
 
+SootopolisCity_Gym_1F_PlayerMovement1:
+	walk_right
+	walk_right
+	walk_up
+	face_left
+	step_end
+
+SootopolisCity_Gym_1F_GymBattle_EventScript::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, SootopolisCity_Gym_1F_PlayerMovement1
+	waitmovement 0
+	msgbox SootopolisCity_Gym_1f_Text_Wallace_PreBattle, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_WALLACE_1, SootopolisCity_Gym_1F_WallacePostBattle
+	call SootopolisCity_Gym_1F_EventScript_Juan
+	releaseall
+	end
+
 SootopolisCity_Gym_1F_EventScript_Juan::
+	msgbox SootopolisCity_Gym_1F_WallaceHealText, MSGBOX_DEFAULT
+	special HealPlayerParty
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
 	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
 	goto_if_unset FLAG_RECEIVED_TM_WATER_PULSE, SootopolisCity_Gym_1F_EventScript_GiveWaterPulse2
 	goto_if_unset FLAG_BADGE06_GET, SootopolisCity_Gym_1F_EventScript_GoGetFortreeBadge
+	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+SootopolisCity_Gym_1F_JuanScript::
 	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -54,6 +80,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_RESIDENTS
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
+	setvar VAR_SOOTOPOLIS_GYM_BATTLE, 1
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 6
 	clearflag FLAG_HIDE_SOOTOPOLIS_CITY_MAN_1
 	setvar VAR_0x8008, 8
@@ -67,7 +94,7 @@ SootopolisCity_Gym_1F_EventScript_JuanDefeated::
 	closemessage
 	delay 30
 	setflag FLAG_ENABLE_JUAN_MATCH_CALL
-	release
+	releaseall
 	end
 
 SootopolisCity_Gym_1F_EventScript_GiveWaterPulse::
@@ -103,6 +130,11 @@ SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory::
 	release
 	end
 
+SootopolisCity_Gym_1F_WallaceScript::
+	msgbox SootopolisCity_Gym_1F_Text_Wallace, MSGBOX_DEFAULT
+	release
+	end
+
 SootopolisCity_Gym_1F_EventScript_LeftGymStatue::
 	lockall
 	goto_if_set FLAG_BADGE08_GET, SootopolisCity_Gym_1F_EventScript_GymStatueCertified
@@ -134,8 +166,8 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "will hamper your progress…\p"
 	.string "There may be other surprises in\n"
 	.string "store for you, but...\p"
-	.string "Well I wouldn't want to spoil the\n"
-	.string "surprise, now would I!\p"
+	.string "Well I wouldn't want to spoil\n"
+	.string "anything, now would I!\p"
 	.string "That's all the advice that I have\n"
 	.string "for you.\p"
 	.string "The rest of the way, you have to\n"
@@ -149,22 +181,23 @@ SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
 	.string "set for the POKéMON LEAGUE challenge!$"
 
 SootopolisCity_Gym_1F_Text_JuanIntro:
-	.string "Let me ask you.\n"
-	.string "Did you know?\l"
-	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught WALLACE everything\n"
+	.string "So now it is my turn!\p"
+	.string "Were you aware? It was\n"
+	.string "I who taught WALLACE everything\l"
 	.string "there is to know about POKéMON.\p"
-	.string "Once, I had given up my position as\n"
-	.string "the GYM LEADER.\p"
+	.string "Once, I had given up my position\n"
+	.string "as the GYM LEADER.\p"
 	.string "In my place, I had entrusted WALLACE\n"
 	.string "with the GYM.\p"
-	.string "However, a compelling reason arose for\n"
-	.string "me to make a comeback.\p"
+	.string "However, a compelling reason arose\n"
+	.string "for me to make a comeback.\p"
+	.string "We decided we would run the\n" 
+	.string "gym together.\p"
 	.string "Ah, but enough chatter.\n"
 	.string "Let us begin our match, shall we?\p"
 	.string "Please, you shall bear witness to\n"
 	.string "our artistry.\p"
-	.string "A grand illusion of water sculpted\n"
+	.string "A grand illusion of ice sculpted\n"
 	.string "by POKéMON and myself!$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's about 50 bytes too long for
@@ -207,9 +240,41 @@ SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "the target with ultrasonic waves.\p"
 	.string "… … … … … …$"
 
+SootopolisCity_Gym_1f_Text_Wallace_PreBattle:
+	.string "{PLAYER}, we've been expecting you!\p"
+	.string "I must thank you for all the help\n"
+	.string "you've given us.\p"
+	.string "Thanks to you, TEAM AQUA, TEAM\n"
+	.string "MAGMA, and TEAM ROCKET have been\l" 
+	.string "stopped for good.\p"
+	.string "Now it is time for you to face\n"
+	.string "another difficult challenge.\p"
+	.string "Are you prepared to battle with the\n"
+	.string "two of us?\p"
+	.string "Ah you were expecting a double battle?\p"
+	.string "Well I'm sorry to disapoint, but our\n"
+	.string "battle stratgeies don't mesh very well.\p"
+	.string "While I prefer to battle in the rain,\n"
+	.string "other elements are beneficial to Juan.\p"
+	.string "We take on trainers one at a time,\n"
+	.string "and only after defeating both of us\l"
+	.string "will you earn the coveted RAIN BADGE!\p"
+	.string "Please allow me the pleasure of\n"
+	.string "being your first opponent!\p"
+	.string "Well now, shall we begin?$"
+
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
 	.string "Registered GYM LEADER JUAN\n"
 	.string "in the POKéNAV.$"
+
+SootopolisCity_Gym_1F_WallacePostBattle:
+	.string "What an elegant display!\n"
+	.string "A truly marvelous battle!$"
+
+SootopolisCity_Gym_1F_WallaceHealText:
+	.string "Please allow me to heal your\n"
+	.string "POKéMON before your next battle.\p"
+	.string "It won't be a fair fight otherwise.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
 	.string "The TRAINERS who have gathered all\n"
@@ -258,6 +323,11 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch:
 	.string "I imagine that to be so.\p"
 	.string "And that, my friend, is a certain sign\n"
 	.string "of nobility!$"
+
+SootopolisCity_Gym_1F_Text_Wallace:
+	.string "You battled with such elegance and\n"
+	.string "power at the same time.\p"
+	.string "Go forth and challenge the POKéMON LEAGUE!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "JUAN: Ah, this GYM had returned to its\n"
