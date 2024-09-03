@@ -5540,9 +5540,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
     {
         .baseHP        = 70,
         .baseAttack    = 140,
-        .baseDefense   = 70,
-        .baseSpeed     = 105,
-        .baseSpAttack  = 110,
+        .baseDefense   = 65,
+        .baseSpeed     = 125,
+        .baseSpAttack  = 95,
         .baseSpDefense = 65,
         .types = MON_TYPES(TYPE_WATER, TYPE_DARK),
         .catchRate = 60,
