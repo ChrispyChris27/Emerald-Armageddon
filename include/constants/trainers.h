@@ -117,7 +117,8 @@
 #define TRAINER_PIC_ROCKET_GRUNT_M        99
 #define TRAINER_PIC_CYNTHIA               100
 #define TRAINER_PIC_CYRUS                 101
-#define TRAINER_PIC_COUNT                 102
+#define TRAINER_PIC_COURTNEY              102
+#define TRAINER_PIC_COUNT                 103
 
 // The player back pics are assumed to alternate according to the gender values (MALE/FEMALE)
 #define TRAINER_BACK_PIC_BRENDAN                0

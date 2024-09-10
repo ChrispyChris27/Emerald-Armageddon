@@ -70,6 +70,9 @@ const u32 gTrainerPalette_Cyrus[] = INCBIN_U32("graphics/trainers/front_pics/cyr
 const u32 gTrainerFrontPic_Cynthia[] = INCBIN_U32("graphics/trainers/front_pics/cynthia.4bpp.lz");
 const u32 gTrainerPalette_Cynthia[] = INCBIN_U32("graphics/trainers/front_pics/cynthia.gbapal.lz");
 
+const u32 gTrainerFrontPic_Courtney[] = INCBIN_U32("graphics/trainers/front_pics/courtney.4bpp.lz");
+const u32 gTrainerPalette_Courtney[] = INCBIN_U32("graphics/trainers/front_pics/courtney.gbapal.lz");
+
 const u32 gTrainerFrontPic_HexManiac[] = INCBIN_U32("graphics/trainers/front_pics/hex_maniac.4bpp.lz");
 const u32 gTrainerPalette_HexManiac[] = INCBIN_U32("graphics/trainers/front_pics/hex_maniac.gbapal.lz");
 
@@ -343,6 +346,7 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(ROCKET_GRUNT_F, RocketGruntF),
     TRAINER_SPRITE(ROCKET_GRUNT_M, RocketGruntM),
     TRAINER_SPRITE(GIOVANNI, RocketLeaderGiovanni),
+    TRAINER_SPRITE(COURTNEY, Courtney),
     TRAINER_SPRITE(ARCHER, RocketAdminM),
     TRAINER_SPRITE(ARIANA, RocketAdminF),
     TRAINER_SPRITE(AQUA_GRUNT_M, AquaGruntM),

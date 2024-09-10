@@ -24899,7 +24899,7 @@ F_TRAINER_FEMALE |
     {
         .trainerName = _("COURTNEY"),
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
-        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
+        .trainerPic = TRAINER_PIC_COURTNEY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .doubleBattle = FALSE,
