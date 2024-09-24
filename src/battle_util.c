@@ -2333,6 +2333,7 @@ enum
     ENDTURN_DYNAMAX,
     ENDTURN_GMAX_MOVE_RESIDUAL_DAMAGE,
     ENDTURN_SEA_OF_FIRE_DAMAGE,
+    ENDTURN_ITEMS3,
     ENDTURN_BATTLER_COUNT
 };
 
@@ -2463,6 +2464,15 @@ u8 DoBattlerEndTurnEffects(void)
         case ENDTURN_ITEMS2:  // item effects again
             if (ItemBattleEffects(ITEMEFFECT_NORMAL, battler, TRUE))
                 effect++;
+            gBattleStruct->turnEffectsTracker++;
+            break;
+        case ENDTURN_ITEMS3:  // berry effects
+            if (gItemsInfo[gBattleMons[battler].item].pocket == POCKET_BERRIES
+             || GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_RESTORE_HP)  // Edge case for Berry Juice
+            {
+                if (ItemBattleEffects(ITEMEFFECT_NORMAL, battler, FALSE))
+                    effect++;
+            }
             gBattleStruct->turnEffectsTracker++;
             break;
         case ENDTURN_ORBS:
@@ -2896,9 +2906,11 @@ u8 DoBattlerEndTurnEffects(void)
         case ENDTURN_ELECTRIFY:
             gStatuses4[battler] &= ~STATUS4_ELECTRIFIED;
             gBattleStruct->turnEffectsTracker++;
+            break;
         case ENDTURN_POWDER:
             gBattleMons[battler].status2 &= ~STATUS2_POWDER;
             gBattleStruct->turnEffectsTracker++;
+            break;
         case ENDTURN_THROAT_CHOP:
             if (gDisableStructs[battler].throatChopTimer && --gDisableStructs[battler].throatChopTimer == 0)
             {
@@ -3558,11 +3570,20 @@ u8 AtkCanceller_UnableToUseMove(u32 moveType)
         case CANCELLER_POWDER_STATUS:
             if (gBattleMons[gBattlerAttacker].status2 & STATUS2_POWDER)
             {
-                if (moveType == TYPE_FIRE)
+                u32 partnerMove = gBattleMons[BATTLE_PARTNER(gBattlerAttacker)].moves[gBattleStruct->chosenMovePositions[BATTLE_PARTNER(gBattlerAttacker)]];
+                if ((moveType == TYPE_FIRE && !gBattleStruct->pledgeMove)
+                 || (gCurrentMove == MOVE_FIRE_PLEDGE && partnerMove == MOVE_GRASS_PLEDGE)
+                 || (gCurrentMove == MOVE_GRASS_PLEDGE && partnerMove == MOVE_FIRE_PLEDGE && gBattleStruct->pledgeMove))
                 {
                     gProtectStructs[gBattlerAttacker].powderSelfDmg = TRUE;
-                    gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerAttacker) / 4;
-                    gBattlescriptCurrInstr = BattleScript_MoveUsedPowder;
+                    if (GetBattlerAbility(gBattlerAttacker) != ABILITY_MAGIC_GUARD
+                    && (B_POWDER_RAIN < GEN_7 || !IsBattlerWeatherAffected(gBattlerAttacker, B_WEATHER_RAIN_PRIMAL)))
+                        gBattleMoveDamage = GetNonDynamaxMaxHP(gBattlerAttacker) / 4;
+
+                    if (GetActiveGimmick(gBattlerAttacker) != GIMMICK_Z_MOVE
+                     || gBattleStruct->obedienceResult != OBEYS
+                     || HasTrainerUsedGimmick(gBattlerAttacker, GIMMICK_Z_MOVE))
+                        gBattlescriptCurrInstr = BattleScript_MoveUsedPowder;
                     gHitMarker |= HITMARKER_UNABLE_TO_USE_MOVE;
                     effect = 1;
                 }
@@ -3592,7 +3613,15 @@ u8 AtkCanceller_UnableToUseMove(u32 moveType)
                 SetGimmickAsActivated(gBattlerAttacker, GIMMICK_Z_MOVE);
 
                 gBattleScripting.battler = gBattlerAttacker;
-                if (gMovesInfo[gCurrentMove].category == DAMAGE_CATEGORY_STATUS)
+                if (gProtectStructs[gBattlerAttacker].powderSelfDmg)
+                {
+                    if (!alreadyUsed)
+                    {
+                        BattleScriptPushCursor();
+                        gBattlescriptCurrInstr = BattleScript_ZMoveActivatePowder;
+                    }
+                }
+                else if (gMovesInfo[gCurrentMove].category == DAMAGE_CATEGORY_STATUS)
                 {
                     if (!alreadyUsed)
                     {
@@ -5317,6 +5346,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             if (caseID == ABILITYEFFECT_WOULD_ABSORB)
             {
+                gBattleStruct->pledgeMove = FALSE;
                 if (effect && gLastUsedAbility != 0xFFFF)
                     RecordAbilityBattle(battler, gLastUsedAbility);
 
@@ -5324,6 +5354,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             else if (effect == 1) // Drain Hp ability.
             {
+                gBattleStruct->pledgeMove = FALSE;
                 if (BATTLER_MAX_HP(battler) || (B_HEAL_BLOCKING >= GEN_5 && gStatuses3[battler] & STATUS3_HEAL_BLOCK))
                 {
                     if ((gProtectStructs[gBattlerAttacker].notFirstStrike))
@@ -5346,6 +5377,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             else if (effect == 2) // Boost Stat ability;
             {
+                gBattleStruct->pledgeMove = FALSE;
                 if (!CompareStat(battler, statId, MAX_STAT_STAGE, CMP_LESS_THAN))
                 {
                     if ((gProtectStructs[gBattlerAttacker].notFirstStrike))
@@ -5367,6 +5399,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             }
             else if (effect == 3)
             {
+                gBattleStruct->pledgeMove = FALSE;
                 if (!(gBattleResources->flags->flags[battler] & RESOURCE_FLAG_FLASH_FIRE))
                 {
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_FLASH_FIRE_BOOST;
@@ -6058,7 +6091,6 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             if (IsBattlerAlive(battler)
              && (gMovesInfo[gCurrentMove].danceMove)
              && !gSpecialStatuses[battler].dancerUsedMove
-             && (gHitMarker & HITMARKER_ATTACKSTRING_PRINTED)
              && gBattlerAttacker != battler)
             {
                 // Set bit and save Dancer mon's original target
@@ -6809,8 +6841,7 @@ static u8 TrySetMicleBerry(u32 battler, u32 itemId, bool32 end2)
 {
     if (HasEnoughHpToEatBerry(battler, 4, itemId))
     {
-        gProtectStructs[battler].usedMicleBerry = TRUE;  // battler's next attack has increased accuracy
-
+        gBattleStruct->usedMicleBerry |= 1u << battler;
         if (end2)
         {
             BattleScriptExecute(BattleScript_MicleBerryActivateEnd2);
@@ -9438,6 +9469,10 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
     case HOLD_EFFECT_PUNCHING_GLOVE:
         if (gMovesInfo[move].punchingMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.1));
+        break;
+    case HOLD_EFFECT_OGERPON_MASK:
+        if (GET_BASE_SPECIES_ID(gBattleMons[battlerAtk].species) == SPECIES_OGERPON)
+           modifier = uq4_12_multiply(modifier, UQ_4_12(1.2));
         break;
     }
 
