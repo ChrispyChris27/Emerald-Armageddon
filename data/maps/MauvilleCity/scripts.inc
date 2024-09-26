@@ -791,6 +791,9 @@ MauvilleCity_Text_WattsonNeedFavorTakeKey:
 	.string "switch off the GENERATOR.\p"
 	.string "The GENERATOR has been running a bit\n"
 	.string "haywire. It's getting unsafe.\p"
+	.string "I'm worried that TEAM MAGMA may have\n"
+	.string "succeeded in their plans to take\l"
+	.string "control of NEW MAUVILLE.\p"
 	.string "Here, this is the KEY to get into\n"
 	.string "NEW MAUVILLE.$"
 
@@ -799,6 +802,9 @@ MauvilleCity_Text_WattsonWontBeChallenge:
 	.string "It won't be a challenge to you.\p"
 	.string "The entrance to NEW MAUVILLE is just\n"
 	.string "a short SURF away from ROUTE 110.\p"
+	.string "Once you've evicted TEAM MAGMA and shut\n"
+	.string "off the generator, I promise to reward\l"
+	.string "you for your troubles!\p"
 	.string "That's it, then, you have my trust!\n"
 	.string "Wahahahaha!$"
 
@@ -806,6 +812,8 @@ MauvilleCity_Text_WattsonThanksTakeTM:
 	.string "WATTSON: Wahahahaha!\p"
 	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
 	.string "the right choice asking you!\p"
+	.string "The generator is disabled and TEAM\n"
+	.string "MAGMA has flown the coop!\p"
 	.string "This is my thanks--a TM containing\n"
 	.string "THUNDERBOLT!\p"
 	.string "Go on, you've earned it!$"

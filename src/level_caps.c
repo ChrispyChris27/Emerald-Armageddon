@@ -22,6 +22,7 @@ u32 GetCurrentLevelCap(void)
         {FLAG_GIOVANNI_FALLS, 52},
         {FLAG_BADGE01_GET, 54},
         {FLAG_BADGE02_GET, 57},
+        {FLAG_118_GRUNTS,59},
         {FLAG_SHELLY_WINSTITUTE, 61},
         {FLAG_RIVAL_BRIDGE, 62},
         {FLAG_BADGE06_GET, 64},
