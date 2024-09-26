@@ -1513,38 +1513,117 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_ROSE_2] =
+    [TRAINER_TABITHA_NM ] =
     {
-        .trainerName = _("ROSE"),
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerName = _("TABITHA"),
+        .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
+        .trainerPic = TRAINER_PIC_MAGMA_ADMIN,
         .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .partySize = 2,
+        .partySize = 6,
         .party = (const struct TrainerMon[])
         {
             {
-            .species = SPECIES_SHROOMISH,
+            .species = SPECIES_KORAIDON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-            .lvl = 26,
-            .nature = NATURE_HARDY,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 59,
+            .nature = NATURE_JOLLY,
+            .heldItem = ITEM_ROSELI_BERRY,
+            .ability = ABILITY_ORICHALCUM_PULSE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_COLLISION_COURSE,
+                MOVE_FLARE_BLITZ,
+                MOVE_DRAGON_RUSH,
+                MOVE_IRON_HEAD,
+            },
             },
             {
-            .species = SPECIES_ROSELIA,
+            .species = SPECIES_SHIFTRY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-            .lvl = 26,
-            .nature = NATURE_HARDY,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 59,
+            .nature = NATURE_LONELY,
+            .heldItem = ITEM_FOCUS_SASH,
+            .ability = ABILITY_CHLOROPHYLL,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_SOLAR_BLADE,
+                MOVE_DARK_PULSE,
+                MOVE_WEATHER_BALL,
+                MOVE_EXPLOSION,
+            },
+            },
+            {
+            .species = SPECIES_FLYGON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 59,
+            .nature = NATURE_JOLLY,
+            .heldItem = ITEM_LIFE_ORB,
+            .ability = ABILITY_LEVITATE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_EARTHQUAKE,
+                MOVE_DRAGON_RUSH,
+                MOVE_STONE_EDGE,
+                MOVE_DRAGON_DANCE,
+            },
+            },
+            {
+            .species = SPECIES_CHANDELURE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 59,
+            .nature = NATURE_MODEST,
+            .heldItem = ITEM_FOCUS_SASH,
+            .ability = ABILITY_SHADOW_TAG,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_FIRE_BLAST,
+                MOVE_SOLARBEAM,
+                MOVE_SHADOW_BALL,
+                MOVE_NASTY_PLOT,
+            },
+            },
+            {
+            .species = SPECIES_CINDERACE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 59,
+            .nature = NATURE_JOLLY,
+            .heldItem = ITEM_LIFE_ORB,
+            .ability = ABILITY_LIBERO,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_PYRO_BALL,
+                MOVE_SWORDS_DANCE,
+                MOVE_GUNK_SHOT,
+                MOVE_SOLAR_BLADE,
+            },
+            },
+            {
+            .species = SPECIES_SCEPTILE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 59,
+            .nature = NATURE_TIMID,
+            .heldItem = ITEM_SCEPTILITE,
+            .ability = ABILITY_OVERGROW,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_SOLARBEAM,
+                MOVE_DRAGON_PULSE,
+                MOVE_EARTH_POWER,
+                MOVE_WEATHER_BALL,
+            },
             },
         },
     },
-    [TRAINER_ROSE_3] =
+    [TRAINER_HIDEOUT_GRUNT_4] =
     {
         .trainerName = _("ROSE"),
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
@@ -1583,7 +1662,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_ROSE_4] =
+    [TRAINER_HIDEOUT_GRUNT_5] =
     {
         .trainerName = _("ROSE"),
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
@@ -1622,7 +1701,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_ROSE_5] =
+    [TRAINER_HIDEOUT_GRUNT_6] =
     {
         .trainerName = _("ROSE"),
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
