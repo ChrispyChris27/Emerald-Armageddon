@@ -151,8 +151,6 @@ Route123_EventScript_Davis::
 
 Route123_EventScript_Fernando::
 	trainerbattle_single TRAINER_FERNANDO_1, Route123_Text_FernandoIntro, Route123_Text_FernandoDefeat, Route123_EventScript_RegisterFernando
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route123_EventScript_RematchFernando
 	msgbox Route123_Text_FernandoPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -163,11 +161,6 @@ Route123_EventScript_RegisterFernando::
 	msgbox Route123_Text_FernandoRegister, MSGBOX_DEFAULT
 	register_matchcall TRAINER_FERNANDO_1
 	release
-	end
-
-Route123_EventScript_RematchFernando::
-	trainerbattle_rematch TRAINER_FERNANDO_1, Route123_Text_FernandoRematchIntro, Route123_Text_FernandoRematchDefeat
-	msgbox Route123_Text_FernandoPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route123_Text_LoveGrassMonsHaveAny:

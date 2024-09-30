@@ -153,8 +153,6 @@ Route121_EventScript_Marcel::
 
 Route121_EventScript_Cristin::
 	trainerbattle_single TRAINER_CRISTIN_1, Route121_Text_CristinIntro, Route121_Text_CristinDefeat, Route121_EventScript_RegisterCristin
-	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route121_EventScript_RematchCristin
 	msgbox Route121_Text_CristinPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -165,11 +163,6 @@ Route121_EventScript_RegisterCristin::
 	msgbox Route121_Text_CristinRegister, MSGBOX_DEFAULT
 	register_matchcall TRAINER_CRISTIN_1
 	release
-	end
-
-Route121_EventScript_RematchCristin::
-	trainerbattle_rematch TRAINER_CRISTIN_1, Route121_Text_CristinRematchIntro, Route121_Text_CristinRematchDefeat
-	msgbox Route121_Text_CristinPostRematch, MSGBOX_AUTOCLOSE
 	end
 
 Route121_Text_OkayMoveOutToMtPyre:

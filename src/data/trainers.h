@@ -274,7 +274,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -472,7 +472,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -19798,7 +19798,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -19908,7 +19908,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -20243,7 +20243,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -20354,7 +20354,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -26210,7 +26210,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -26321,7 +26321,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SMART_SWITCHING | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -29688,7 +29688,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_ANDRES_2] =
+    [TRAINER_HIDEOUT_GRUNT_7] =
     {
         .trainerName = _("ANDRES"),
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
@@ -29718,7 +29718,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_ANDRES_3] =
+    [TRAINER_HIDEOUT_GRUNT_8] =
     {
         .trainerName = _("ANDRES"),
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
@@ -29756,7 +29756,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_ANDRES_4] =
+    [TRAINER_HIDEOUT_GRUNT_9] =
     {
         .trainerName = _("ANDRES"),
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
@@ -29794,7 +29794,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_ANDRES_5] =
+    [TRAINER_HIDEOUT_GRUNT_10] =
     {
         .trainerName = _("ANDRES"),
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
@@ -29832,7 +29832,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_CORY_2] =
+    [TRAINER_HIDEOUT_GRUNT_11] =
     {
         .trainerName = _("CORY"),
         .trainerClass = TRAINER_CLASS_SAILOR,
@@ -29870,7 +29870,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_CORY_3] =
+    [TRAINER_HIDEOUT_GRUNT_12] =
     {
         .trainerName = _("CORY"),
         .trainerClass = TRAINER_CLASS_SAILOR,
@@ -29908,7 +29908,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_CORY_4] =
+    [TRAINER_HIDEOUT_GRUNT_13] =
     {
         .trainerName = _("CORY"),
         .trainerClass = TRAINER_CLASS_SAILOR,
@@ -29946,7 +29946,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_CORY_5] =
+    [TRAINER_HIDEOUT_GRUNT_14] =
     {
         .trainerName = _("CORY"),
         .trainerClass = TRAINER_CLASS_SAILOR,
@@ -29984,7 +29984,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_PABLO_2] =
+    [TRAINER_HIDEOUT_GRUNT_15 ] =
     {
         .trainerName = _("PABLO"),
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
@@ -30014,7 +30014,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_PABLO_3] =
+    [TRAINER_HIDEOUT_GRUNT_16] =
     {
         .trainerName = _("PABLO"),
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
@@ -30052,7 +30052,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_PABLO_4] =
+    [TRAINER_HIDEOUT_GRUNT_17] =
     {
         .trainerName = _("PABLO"),
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
@@ -30090,7 +30090,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_PABLO_5] =
+    [TRAINER_HIDEOUT_GRUNT_18] =
     {
         .trainerName = _("PABLO"),
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
@@ -30128,7 +30128,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_KOJI_2] =
+    [TRAINER_HIDEOUT_GRUNT_19] =
     {
         .trainerName = _("KOJI"),
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
@@ -30158,7 +30158,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_KOJI_3] =
+    [TRAINER_HIDEOUT_GRUNT_20] =
     {
         .trainerName = _("KOJI"),
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
@@ -30196,7 +30196,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_KOJI_4] =
+    [TRAINER_HIDEOUT_GRUNT_21] =
     {
         .trainerName = _("KOJI"),
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
@@ -30234,7 +30234,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_KOJI_5] =
+    [TRAINER_HIDEOUT_GRUNT_22] =
     {
         .trainerName = _("KOJI"),
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
@@ -30272,7 +30272,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_CRISTIN_2] =
+    [TRAINER_HIDEOUT_GRUNT_23] =
     {
         .trainerName = _("CRISTIN"),
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
@@ -30304,7 +30304,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_CRISTIN_3] =
+    [TRAINER_HIDEOUT_GRUNT_24] =
     {
         .trainerName = _("CRISTIN"),
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
@@ -30344,7 +30344,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_CRISTIN_4] =
+    [TRAINER_HIDEOUT_GRUNT_25] =
     {
         .trainerName = _("CRISTIN"),
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
@@ -30384,7 +30384,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_CRISTIN_5] =
+    [TRAINER_HIDEOUT_GRUNT_26] =
     {
         .trainerName = _("CRISTIN"),
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
@@ -30424,7 +30424,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_FERNANDO_2] =
+    [TRAINER_MAUVILLE_GRUNT_1 ] =
     {
         .trainerName = _("FERNANDO"),
         .trainerClass = TRAINER_CLASS_GUITARIST,
@@ -30462,7 +30462,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_FERNANDO_3] =
+    [TRAINER_MAUVILLE_GRUNT_2] =
     {
         .trainerName = _("FERNANDO"),
         .trainerClass = TRAINER_CLASS_GUITARIST,
@@ -30500,7 +30500,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_FERNANDO_4] =
+    [TRAINER_MAUVILLE_GRUNT_3] =
     {
         .trainerName = _("FERNANDO"),
         .trainerClass = TRAINER_CLASS_GUITARIST,
@@ -30538,7 +30538,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_FERNANDO_5] =
+    [TRAINER_MAUVILLE_GRUNT_4] =
     {
         .trainerName = _("FERNANDO"),
         .trainerClass = TRAINER_CLASS_GUITARIST,
@@ -30576,7 +30576,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_SAWYER_2] =
+    [TRAINER_MAUVILLE_GRUNT_5] =
     {
         .trainerName = _("SAWYER"),
         .trainerClass = TRAINER_CLASS_HIKER,
@@ -30606,7 +30606,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_SAWYER_3] =
+    [TRAINER_MAUVILLE_GRUNT_6] =
     {
         .trainerName = _("SAWYER"),
         .trainerClass = TRAINER_CLASS_HIKER,
@@ -30644,7 +30644,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_SAWYER_4] =
+    [TRAINER_MAUVILLE_GRUNT_7] =
     {
         .trainerName = _("SAWYER"),
         .trainerClass = TRAINER_CLASS_HIKER,
@@ -30682,7 +30682,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_SAWYER_5] =
+    [TRAINER_MAUVILLE_GRUNT_8] =
     {
         .trainerName = _("SAWYER"),
         .trainerClass = TRAINER_CLASS_HIKER,
@@ -30720,7 +30720,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_GABRIELLE_2] =
+    [TRAINER_MAUVILLE_GRUNT_9] =
     {
         .trainerName = _("GABRIELLE"),
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
@@ -30783,7 +30783,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_GABRIELLE_3] =
+    [TRAINER_MAUVILLE_GRUNT_10] =
     {
         .trainerName = _("GABRIELLE"),
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
@@ -30846,7 +30846,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_GABRIELLE_4] =
+    [TRAINER_MAUVILLE_GRUNT_11] =
     {
         .trainerName = _("GABRIELLE"),
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
@@ -30909,7 +30909,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_GABRIELLE_5] =
+    [TRAINER_MAUVILLE_GRUNT_12] =
     {
         .trainerName = _("GABRIELLE"),
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
@@ -30972,7 +30972,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_THALIA_2] =
+    [TRAINER_MAUVILLE_GRUNT_13] =
     {
         .trainerName = _("THALIA"),
         .trainerClass = TRAINER_CLASS_BEAUTY,
@@ -31003,7 +31003,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_THALIA_3] =
+    [TRAINER_MAUVILLE_GRUNT_14] =
     {
         .trainerName = _("THALIA"),
         .trainerClass = TRAINER_CLASS_BEAUTY,
@@ -31042,7 +31042,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_THALIA_4] =
+    [TRAINER_PLACEHOLDER_1] =
     {
         .trainerName = _("THALIA"),
         .trainerClass = TRAINER_CLASS_BEAUTY,
@@ -31081,7 +31081,7 @@ F_TRAINER_FEMALE |
             },
         },
     },
-    [TRAINER_THALIA_5] =
+    [TRAINER_PLACEHOLDER_2] =
     {
         .trainerName = _("THALIA"),
         .trainerClass = TRAINER_CLASS_BEAUTY,
