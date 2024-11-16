@@ -28903,7 +28903,7 @@ F_TRAINER_FEMALE |
             .moves = {
                 MOVE_LEAF_BLADE,
                 MOVE_SACRED_SWORD,
-                MOVE_PSYCHO_CUT,
+                MOVE_BEHEMOTH_BLADE,
                 MOVE_AQUA_CUTTER,
             },
             },
