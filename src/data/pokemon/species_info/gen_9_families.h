@@ -3289,7 +3289,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sRellorLevelUpLearnset,
         .teachableLearnset = sRellorTeachableLearnset,
         .eggMoveLearnset = sRellorEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DAWN_STONE, SPECIES_RABSCA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 33, SPECIES_RABSCA}),
     },
 
     [SPECIES_RABSCA] =
