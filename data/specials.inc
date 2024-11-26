@@ -558,3 +558,4 @@ gSpecials::
 	def_special DoBrailleRegielekiEffect
 	def_special DoBrailleRegidragoEffect
 	def_special ReleaseRoamers
+	def_special HealUnfainted

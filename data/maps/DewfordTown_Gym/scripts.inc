@@ -3,6 +3,7 @@ DewfordTown_Gym_MapScripts::
 	.byte 0
 
 DewfordTown_Gym_OnTransition:
+	special HealPlayerParty
 	call DewfordTown_Gym_EventScript_SetFlashLevel
 	end
 

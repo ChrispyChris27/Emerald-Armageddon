@@ -6,6 +6,7 @@ MossdeepCity_Gym_MapScripts::
 @ NOTE: Mossdeep Gym was redesigned between R/S and E. Leftover (and now functionally unused) scripts are commented below
 
 MossdeepCity_Gym_OnTransition:
+	special HealPlayerParty
 	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower since it can collide with moving statues
 	end
 

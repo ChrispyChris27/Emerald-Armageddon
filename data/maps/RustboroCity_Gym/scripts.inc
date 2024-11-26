@@ -1,5 +1,10 @@
 RustboroCity_Gym_MapScripts::
+map_script MAP_SCRIPT_ON_LOAD, RustboroCity_Gym_OnLoad
 	.byte 0
+
+RustboroCity_Gym_OnLoad::
+	special HealPlayerParty
+	end
 
 RustboroCity_Gym_EventScript_Roxanne::
 	trainerbattle_single TRAINER_ROXANNE_1, RustboroCity_Gym_Text_RoxanneIntro, RustboroCity_Gym_Text_RoxanneDefeat, RustboroCity_Gym_EventScript_RoxanneDefeated, NO_MUSIC

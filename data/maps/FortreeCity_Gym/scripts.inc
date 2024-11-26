@@ -4,6 +4,7 @@ FortreeCity_Gym_MapScripts::
 	.byte 0
 
 FortreeCity_Gym_OnTransition:
+	special HealPlayerParty
 	special RotatingGate_InitPuzzle
 	setflag FLAG_TEMP_HIDE_FOLLOWER @ Hide follower bc of rotating gates
 	end

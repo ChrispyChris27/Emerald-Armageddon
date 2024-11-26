@@ -6,6 +6,7 @@ SootopolisCity_Gym_1F_MapScripts::
 	.byte 0
 
 SootopolisCity_Gym_1F_OnTransition:
+	special HealPlayerParty
 	setvar VAR_ICE_STEP_COUNT, 1
 	end
 
@@ -55,7 +56,7 @@ SootopolisCity_Gym_1F_GymBattle_EventScript::
 
 SootopolisCity_Gym_1F_EventScript_Juan::
 	msgbox SootopolisCity_Gym_1F_WallaceHealText, MSGBOX_DEFAULT
-	special HealPlayerParty
+	special HealUnfainted
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 	waitmovement 0
 	trainerbattle_single TRAINER_JUAN_1, SootopolisCity_Gym_1F_Text_JuanIntro, SootopolisCity_Gym_1F_Text_JuanDefeat, SootopolisCity_Gym_1F_EventScript_JuanDefeated, NO_MUSIC
