@@ -1232,7 +1232,7 @@ PetalburgCity_Gym_Text_NormanGoToRustboro:
 	.string "when you become a lot stronger.\p"
 	.string "I'll battle you, {PLAYER}, when you\n"
 	.string "can show me your POKéMON have\l"
-	.string "grown to level 32, okay?$"
+	.string "grown to level 30, okay?$"
 
 PetalburgCity_Gym_Text_NormanGoToDewford:
 	.string "DAD: I see… So, you've beaten\n"
@@ -1251,7 +1251,7 @@ PetalburgCity_Gym_Text_YouHaveGottenStronger:
 
 PetalburgCity_Gym_Text_NormanIntro:
 	.string "DAD: Hm…\n"
-	.string "So, you did get four GYM BADGES.\p"
+	.string "So, you raised your POKéMON to level 30.\p"
 	.string "Fine, as I promised, we will have\n"
 	.string "a POKéMON battle.\p"
 	.string "{PLAYER}…\p"
