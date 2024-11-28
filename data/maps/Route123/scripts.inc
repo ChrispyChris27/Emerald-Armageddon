@@ -189,3 +189,43 @@ Route123_Text_RouteSignMtPyre:
 Route123_Text_BerryMastersHouse:
 	.string "BERRY MASTER'S HOUSE$"
 
+Route123_EventScript_MintMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_MINTS_9, Route123_GotMints
+	msgbox Route123_Text_Give_Mints, MSGBOX_DEFAULT
+	giveitem ITEM_JOLLY_MINT
+	giveitem ITEM_TIMID_MINT
+	setflag FLAG_MINTS_9
+	goto Route123_GotMints
+	release
+	end
+
+Route123_GotMints::
+	msgbox Route123_Received_Mints, MSGBOX_DEFAULT
+	release
+	end
+
+Route123_Text_Give_Mints:
+	.string "Hello again young traveler!\p"
+	.string "It's been awhile since we last met!\p"
+	.string "The BERRY MASTER allowed me to use\n"
+	.string "a plot of land here to grow some mints.\p"
+	.string "These two mints will raise the speed of\n"
+	.string "your POKéMON at the cost of one of their\l"
+	.string "attack stats.$"
+
+Route123_Received_Mints:
+	.string "I've travelled long and far across\n"
+	.string "the HOENN region to master the art\l"
+	.string "of growing mints.\p"
+	.string "At this point, I've grown a mint for\n"
+	.string "every nature a POKéMON could possibly\l"
+	.string "have.\p"
+	.string "Thank you for being a part of this\n"
+	.string "journey.\p"
+	.string "I imagine at this point, you will take\n"
+	.string "on the POKéMON LEAGUE.\p"
+	.string "I wish you the best of luck!$"
+	
+

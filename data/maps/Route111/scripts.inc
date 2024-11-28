@@ -727,3 +727,40 @@ Route111_Text_TrainerHillSign:
 	.string "“Scale the heights, you hot-blooded\n"
 	.string "TRAINERS!”$"
 
+Route111_EventScript_MintMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_MINTS_4, Route111_GotMints
+	msgbox Route111_Text_Give_Mints, MSGBOX_DEFAULT
+	giveitem ITEM_IMPISH_MINT
+	giveitem ITEM_BOLD_MINT
+	giveitem ITEM_CAREFUL_MINT
+	giveitem ITEM_CALM_MINT
+	setflag FLAG_MINTS_4
+	goto Route111_GotMints
+	release
+	end
+
+Route111_GotMints::
+	msgbox Route111_Received_Mints, MSGBOX_DEFAULT
+	release
+	end
+
+Route111_Text_Give_Mints:
+	.string "Hello again young traveler!\p"
+	.string "It's been awhile since we last met!\p"
+	.string "Despite the harsh climate in this\n"
+	.string "desert I've managed to grow a few new\l"
+	.string "mints for you to try out!$"
+
+Route111_Received_Mints:
+	.string "Those mints will allow you to raise\n"
+	.string "one of your POKéMON's defenses at the\l"
+	.string "expense of one of their attack stats.\p"
+	.string "Many POKéMON only use one of their\n"
+	.string "attack stats when in battle.\p"
+	.string "These mints could benefit POKéMON like\n"
+	.string "those a lot.\p"
+	.string "I look forward to sharing more mints\n"
+	.string "with you in the future!$"
+

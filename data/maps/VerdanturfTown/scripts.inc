@@ -63,6 +63,22 @@ VerdanturfTown_EventScript_RusturfTunnelSign::
 	msgbox VerdanturfTown_Text_RusturfTunnelSign, MSGBOX_SIGN
 	end
 
+VerdanturfTown_EventScript_MintMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_MINTS_1, VerdanturfTown_GotMints
+	msgbox VerdanturfTown_Text_GiveMints, MSGBOX_DEFAULT
+	giveitem ITEM_SERIOUS_MINT, 5
+	setflag FLAG_MINTS_1
+	goto VerdanturfTown_GotMints
+	release
+	end
+
+VerdanturfTown_GotMints::
+	msgbox VerdanturfTown_Text_ReceivedMints, MSGBOX_DEFAULT
+	release
+	end
+
 VerdanturfTown_Text_ManTryingToDigTunnel:
 	.string "My papa told me.\p"
 	.string "He says this tunnel is full of\n"
@@ -124,4 +140,23 @@ VerdanturfTown_Text_RusturfTunnelSign:
 	.string "“Linking RUSTBORO and VERDANTURF\p"
 	.string "“The tunnel project has been\n"
 	.string "canceled.”$"
+
+VerdanturfTown_Text_GiveMints:
+	.string "Well hello there young traveler!\p"
+	.string "Have you ever caught the perfect\n"
+	.string "POKéMON only to discover it has an\l"
+	.string "imperfect nature?\p"
+	.string "There used to be no hope for such a\n"
+	.string "specimen, but after many years I have\l"
+	.string "perfected the solution to this problem!\p"
+	.string "I'd like to give you some free samples!\p"
+	.string "All I ask is that you share the word with\n"
+	.string "others you see while on your adventure!$"
+
+VerdanturfTown_Text_ReceivedMints:
+	.string "Simply use a mint on your POKéMON and\n"
+	.string "it's nature will change to match that of\l"
+	.string "the mint!\p"
+	.string "I look forward to sharing more mints with\n"
+	.string "you throughout your journey!$"
 

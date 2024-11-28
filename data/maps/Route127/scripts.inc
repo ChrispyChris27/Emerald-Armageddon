@@ -69,4 +69,38 @@ Route127_EventScript_RegisterKoji::
 	release
 	end
 
+Route127_EventScript_MintMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_MINTS_8, Route127_GotMints
+	msgbox Route127_Text_Give_Mints, MSGBOX_DEFAULT
+	giveitem ITEM_MODEST_MINT
+	giveitem ITEM_ADAMANT_MINT
+	setflag FLAG_MINTS_8
+	goto Route127_GotMints
+	release
+	end
+
+Route127_GotMints::
+	msgbox Route127_Received_Mints, MSGBOX_DEFAULT
+	release
+	end
+
+Route127_Text_Give_Mints:
+	.string "Hello again young traveler!\p"
+	.string "It's been awhile since we last met!\p"
+	.string "The mangrove forests here provide shade\n"
+	.string "for some powerful mints to be grown.\p"
+	.string "Please use these responsibly.$"
+
+Route127_Received_Mints:
+	.string "Those mints will allow you to raise\n"
+	.string "one your POKéMON's attack stats while\l"
+	.string "lowering the other.\p"
+	.string "They are the perfect tool for any\n"
+	.string "POKéMON that focuses its strength in\l"
+	.string "one offensive discipline.\p"
+	.string "I look forward to sharing more mints\n"
+	.string "with you in the future!$"
+
 

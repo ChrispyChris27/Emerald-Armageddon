@@ -164,3 +164,36 @@ Route113_Text_GlassWorkshopSign:
 	.string "GLASS WORKSHOP\n"
 	.string "“Turning Volcanic Ash into Glass Items”$"
 
+Route113_EventScript_MintMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_MINTS_3, Route113_GotMints
+	msgbox Route113_Text_Give_Mints, MSGBOX_DEFAULT
+	giveitem ITEM_RELAXED_MINT
+	giveitem ITEM_SASSY_MINT
+	setflag FLAG_MINTS_3
+	goto Route110_GotMints
+	release
+	end
+
+Route113_GotMints::
+	msgbox Route113_Received_Mints, MSGBOX_DEFAULT
+	release
+	end
+
+Route113_Text_Give_Mints:
+	.string "Hello again young traveler!\p"
+	.string "It's been awhile since we last met!\p"
+	.string "The ashy climate here has proved to\n"
+	.string "be ideal for growing some new mints!\p"
+	.string "Please put these to good use!$"
+
+Route113_Received_Mints:
+	.string "Those mints will allow you to raise\n"
+	.string "one of your POKéMON's defenses at the\l"
+	.string "expense of their speed.\p"
+	.string "A slow tank would be the ideal use\n"
+	.string "for these mints.\p"
+	.string "I look forward to sharing more mints\n"
+	.string "with you in the future!$"
+

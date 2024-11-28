@@ -612,3 +612,38 @@ Route119_Text_TrainerTipsDecoration:
 	.string "Pick your favorite items and create\n"
 	.string "your very own SECRET BASE exactly the\l"
 	.string "way you want.$"
+
+	Route119_EventScript_MintMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_MINTS_6, Route119_GotMints
+	msgbox Route111_Text_Give_Mints, MSGBOX_DEFAULT
+	giveitem ITEM_LONELY_MINT
+	giveitem ITEM_NAUGHTY_MINT
+	giveitem ITEM_MILD_MINT
+	giveitem ITEM_RASH_MINT
+	setflag FLAG_MINTS_6
+	goto Route119_GotMints
+	release
+	end
+
+Route119_GotMints::
+	msgbox Route119_Received_Mints, MSGBOX_DEFAULT
+	release
+	end
+
+Route119_Text_Give_Mints:
+	.string "Hello again young traveler!\p"
+	.string "It's been awhile since we last met!\p"
+	.string "The thunderstorms on this route have\n"
+	.string "been a massive help in growing mints.\p"
+	.string "Please give these a try!$"
+
+Route119_Received_Mints:
+	.string "Those mints will allow you to raise\n"
+	.string "one of your POKéMON's attack stats\l"
+	.string "while lowering one of their defenses.\p"
+	.string "If your POKéMON hit hard enough, the\n"
+	.string "drop in defenses won't even matter.\p"
+	.string "I look forward to sharing more mints\n"
+	.string "with you in the future!$"

@@ -433,3 +433,39 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "People tell me the new LEADER once\n"
 	.string "mentored WALLACE.$"
 
+	Mossdeep_EventScript_MintMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_MINTS_7, Mossdeep_GotMints
+	msgbox Mossdeep_Text_Give_Mints, MSGBOX_DEFAULT
+	giveitem ITEM_HASTY_MINT
+	giveitem ITEM_NAIVE_MINT
+	setflag FLAG_MINTS_7
+	goto Mossdeep_GotMints
+	release
+	end
+
+Mossdeep_GotMints::
+	msgbox Mossdeep_Received_Mints, MSGBOX_DEFAULT
+	release
+	end
+
+Mossdeep_Text_Give_Mints:
+	.string "Hello again young traveler!\p"
+	.string "It's been awhile since we last met!\p"
+	.string "The shallow waters on the shores of\n"
+	.string "MOSSDEEP have speedily grown some new\l"
+	.string "mints that should benefit your quickest\l"
+	.string "POKéMON.\p"
+	.string "Make great haste in using these!$"
+
+Mossdeep_Received_Mints:
+	.string "Those mints will allow you to raise\n"
+	.string "one your POKéMON's speed at the expense\l"
+	.string "of one of their defenses.\p"
+	.string "If you strike first, your opponent\n"
+	.string "won't be able to take advantage of.\l"
+	.string "your lowered defenses.\p"
+	.string "I look forward to sharing more mints\n"
+	.string "with you in the future!$"
+

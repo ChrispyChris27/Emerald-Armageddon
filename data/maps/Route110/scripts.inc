@@ -998,3 +998,34 @@ Route110_Text_KeepAnEyeOutForRival:
 	.string "Well, I had better get going.\n"
 	.string "See you again, {PLAYER}{KUN}!$"
 
+Route110_EventScript_MintMan::
+	lock
+	faceplayer
+	goto_if_set FLAG_MINTS_2, Route110_GotMints
+	msgbox Route110_Text_Give_Mints, MSGBOX_DEFAULT
+	giveitem ITEM_LAX_MINT
+	giveitem ITEM_GENTLE_MINT
+	setflag FLAG_MINTS_2
+	goto Route110_GotMints
+	release
+	end
+
+Route110_GotMints::
+	msgbox Route110_Received_Mints, MSGBOX_DEFAULT
+	release
+	end
+
+Route110_Text_Give_Mints:
+	.string "Hello again young traveler!\p"
+	.string "It's been awhile since we last met!\p"
+	.string "I've developed some new mints, please\n"
+	.string "try these out!$"
+
+Route110_Received_Mints:
+	.string "Those mints will allow you to raise\n"
+	.string "one of your POKéMON's defenses at the\l"
+	.string "expense of the other.\p"
+	.string "I'm sure you can find a use for them.\p"
+	.string "I look forward to sharing more mints\n"
+	.string "with you in the future!$"
+
