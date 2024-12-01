@@ -99,6 +99,7 @@ Route104_Text_RegisteredDadInPokenav:
 	giveitem ITEM_QUIET_MINT
 	giveitem ITEM_BRAVE_MINT
 	setflag FLAG_MINTS_5
+	clearflag FLAG_MINTS_6
 	goto Route105_GotMints
 	release
 	end

@@ -172,6 +172,7 @@ Route113_EventScript_MintMan::
 	giveitem ITEM_RELAXED_MINT
 	giveitem ITEM_SASSY_MINT
 	setflag FLAG_MINTS_3
+	clearflag FLAG_MINTS_4
 	goto Route110_GotMints
 	release
 	end

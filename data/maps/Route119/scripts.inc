@@ -623,6 +623,7 @@ Route119_Text_TrainerTipsDecoration:
 	giveitem ITEM_MILD_MINT
 	giveitem ITEM_RASH_MINT
 	setflag FLAG_MINTS_6
+	clearflag FLAG_MINTS_7
 	goto Route119_GotMints
 	release
 	end

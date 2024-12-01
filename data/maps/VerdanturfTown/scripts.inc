@@ -70,6 +70,7 @@ VerdanturfTown_EventScript_MintMan::
 	msgbox VerdanturfTown_Text_GiveMints, MSGBOX_DEFAULT
 	giveitem ITEM_SERIOUS_MINT, 5
 	setflag FLAG_MINTS_1
+	clearflag FLAG_MINTS_2
 	goto VerdanturfTown_GotMints
 	release
 	end

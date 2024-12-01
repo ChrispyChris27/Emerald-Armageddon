@@ -1006,6 +1006,7 @@ Route110_EventScript_MintMan::
 	giveitem ITEM_LAX_MINT
 	giveitem ITEM_GENTLE_MINT
 	setflag FLAG_MINTS_2
+	clearflag FLAG_MINTS_3
 	goto Route110_GotMints
 	release
 	end

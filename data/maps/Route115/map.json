@@ -73,7 +73,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_115_KELPSY_1",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_115_GANLON",
       "script": "BerryTreeScript",
       "flag": "0"
     },
@@ -86,7 +86,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_115_KELPSY_2",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_115_CUSTAP",
       "script": "BerryTreeScript",
       "flag": "0"
     },
@@ -99,7 +99,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_115_KELPSY_3",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_115_APICOT",
       "script": "BerryTreeScript",
       "flag": "0"
     },
@@ -203,7 +203,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_115_BLUK_2",
+      "trainer_sight_or_berry_tree_id": "BERRY_TREE_ROUTE_115_KELPSY",
       "script": "BerryTreeScript",
       "flag": "0"
     },
@@ -348,7 +348,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_MF_ROCKETS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIOVANNI",
@@ -375,6 +375,32 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_115_ROXANNE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GRUNT_F",
+      "x": 26,
+      "y": 47,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_BADGE04_GET"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
+      "x": 27,
+      "y": 47,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_BADGE04_GET"
     }
   ],
   "warp_events": [

@@ -5429,6 +5429,7 @@ static const struct LevelUpMove sBonslyLevelUpLearnset[] = {
 static const struct LevelUpMove sSudowoodoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_WOOD_HAMMER),
     LEVEL_UP_MOVE( 0, MOVE_HAMMER_ARM),
+    LEVEL_UP_MOVE( 0, MOVE_ICE_HAMMER),
     LEVEL_UP_MOVE( 1, MOVE_SPIKES),
     LEVEL_UP_MOVE( 1, MOVE_FAKE_TEARS),
     LEVEL_UP_MOVE( 1, MOVE_TEARFUL_LOOK),

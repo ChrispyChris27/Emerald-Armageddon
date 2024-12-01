@@ -737,6 +737,7 @@ Route111_EventScript_MintMan::
 	giveitem ITEM_CAREFUL_MINT
 	giveitem ITEM_CALM_MINT
 	setflag FLAG_MINTS_4
+	clearflag FLAG_MINTS_5
 	goto Route111_GotMints
 	release
 	end

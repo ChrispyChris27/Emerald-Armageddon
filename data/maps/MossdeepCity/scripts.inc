@@ -441,6 +441,7 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	giveitem ITEM_HASTY_MINT
 	giveitem ITEM_NAIVE_MINT
 	setflag FLAG_MINTS_7
+	clearflag FLAG_MINTS_8
 	goto Mossdeep_GotMints
 	release
 	end

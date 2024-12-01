@@ -77,6 +77,7 @@ Route127_EventScript_MintMan::
 	giveitem ITEM_MODEST_MINT
 	giveitem ITEM_ADAMANT_MINT
 	setflag FLAG_MINTS_8
+	clearflag FLAG_MINTS_9
 	goto Route127_GotMints
 	release
 	end
