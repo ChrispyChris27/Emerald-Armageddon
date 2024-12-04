@@ -8396,15 +8396,15 @@ u8 GetAttackerObedienceForAction()
 
     obedienceLevel = 10;
 
-    if (FlagGet(FLAG_BADGE01_GET)) // Stone Badge
+    if (FlagGet(FLAG_BADGE05_GET)) // Stone Badge
         obedienceLevel = 20;
-    if (FlagGet(FLAG_BADGE02_GET)) // Knuckle Badge
+    if (FlagGet(FLAG_BADGE03_GET)) // Knuckle Badge
         obedienceLevel = 30;
-    if (FlagGet(FLAG_BADGE03_GET)) // Dynamo Badge
+    if (FlagGet(FLAG_BADGE04_GET)) // Dynamo Badge
         obedienceLevel = 40;
-    if (FlagGet(FLAG_BADGE04_GET)) // Heat Badge
+    if (FlagGet(FLAG_BADGE01_GET)) // Heat Badge
         obedienceLevel = 50;
-    if (FlagGet(FLAG_BADGE05_GET)) // Balance Badge
+    if (FlagGet(FLAG_BADGE02_GET)) // Balance Badge
         obedienceLevel = 60;
     if (FlagGet(FLAG_BADGE06_GET)) // Feather Badge
         obedienceLevel = 70;

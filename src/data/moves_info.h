@@ -10601,7 +10601,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_DYNAMAX] =
             "leave the foe frozen."),
         #endif
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 65,
         .type = TYPE_ICE,
         .accuracy = 100,
         .pp = 15,

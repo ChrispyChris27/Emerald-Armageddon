@@ -54,7 +54,7 @@ DewfordTown_EventScript_CancelSailSelect::
 
 DewfordTown_EventScript_ReturnToPetalburgPrompt::
 	msgbox DewfordTown_Text_SetSailBackToPetalburg, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailBackToPetalburg
+	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailToSlateport
 	msgbox DewfordTown_Text_GoDeliverIllBeWaiting, MSGBOX_DEFAULT
 	release
 	end
@@ -667,7 +667,7 @@ DewfordTown_Text_SetSailBackToPetalburg:
 	.string "MR. BRINEY: Have you delivered your\n"
 	.string "LETTER?\p"
 	.string "Or were you meaning to sail back to\n"
-	.string "PETALBURG?$"
+	.string "SLATEPORT?$"
 
 DewfordTown_Text_PetalburgWereSettingSail2:
 	.string "MR. BRINEY: PETALBURG it is, then!\p"
@@ -801,3 +801,16 @@ DewfordTown_Text_YeahDefinitionOfInRightNow:
 	.string "Yeah, absolutely right!\p"
 	.string "“{STR_VAR_1}” is the\n"
 	.string "definition of “in” right now.$"
+
+DewfordTown_Text_BrawlyGone:
+	.string "Sorry, BRAWLY is busy training right now.\p"
+	.string "You'll have to come back later if you\n"
+	.string "want to challenge him to a gym battle.$"
+
+DewfordTown_Event_Script_BrawlyGone::
+	lock
+	faceplayer
+	msgbox DewfordTown_Text_BrawlyGone, MSGBOX_DEFAULT
+	release
+	end
+

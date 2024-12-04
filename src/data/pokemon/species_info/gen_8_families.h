@@ -1223,7 +1223,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sDottlerLevelUpLearnset,
         .teachableLearnset = sDottlerTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_ORBEETLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_ORBEETLE}),
     },
 
     [SPECIES_ORBEETLE] =
@@ -1962,7 +1962,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sYamperLevelUpLearnset,
         .teachableLearnset = sYamperTeachableLearnset,
         .eggMoveLearnset = sYamperEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_BOLTUND}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_BOLTUND}),
     },
 
     [SPECIES_BOLTUND] =
@@ -4084,7 +4084,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sHatennaLevelUpLearnset,
         .teachableLearnset = sHatennaTeachableLearnset,
         .eggMoveLearnset = sHatennaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_HATTREM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_HATTREM}),
     },
 
     [SPECIES_HATTREM] =
@@ -4325,7 +4325,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sImpidimpLevelUpLearnset,
         .teachableLearnset = sImpidimpTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_MORGREM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_MORGREM}),
     },
 
     [SPECIES_MORGREM] =

@@ -124,6 +124,6 @@ Route105_Received_Mints:
 	.string "at the cost of their speed.\p"
 	.string "Slow offensive POKéMON or those trying\n"
 	.string "To utilize trick room would be prime\l"
-	.string "candidates for these mints\p"
+	.string "candidates for these mints.\p"
 	.string "I look forward to sharing more mints\n"
 	.string "with you in the future!$"

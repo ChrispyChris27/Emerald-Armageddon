@@ -400,7 +400,7 @@ DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "up to Level 30, even those you get in\l"
 	.string "trades, obey without question.\p"
 	.string "And, you'll be able to use the HM move\n"
-	.string "FLASH outside of battle.\p"
+	.string "ROCK SMASH outside of battle.\p"
 	.string "If you'd like, use this TECHNICAL\n"
 	.string "MACHINE, too.$"
 

@@ -935,7 +935,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sHerdierLevelUpLearnset,
         .teachableLearnset = sHerdierTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_STOUTLAND}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_STOUTLAND}),
     },
 
     [SPECIES_STOUTLAND] =
@@ -2018,7 +2018,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sRoggenrolaLevelUpLearnset,
         .teachableLearnset = sRoggenrolaTeachableLearnset,
         .eggMoveLearnset = sRoggenrolaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_BOLDORE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_BOLDORE}),
     },
 
     [SPECIES_BOLDORE] =
@@ -2788,7 +2788,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sTympoleLevelUpLearnset,
         .teachableLearnset = sTympoleTeachableLearnset,
         .eggMoveLearnset = sTympoleEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_PALPITOAD}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_PALPITOAD}),
     },
 
     [SPECIES_PALPITOAD] =
@@ -6174,7 +6174,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sGothitaLevelUpLearnset,
         .teachableLearnset = sGothitaTeachableLearnset,
         .eggMoveLearnset = sGothitaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_GOTHORITA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_GOTHORITA}),
     },
 
     [SPECIES_GOTHORITA] =
@@ -6369,7 +6369,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sSolosisLevelUpLearnset,
         .teachableLearnset = sSolosisTeachableLearnset,
         .eggMoveLearnset = sSolosisEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_DUOSION}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_DUOSION}),
     },
 
     [SPECIES_DUOSION] =
@@ -8155,7 +8155,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sKlinkLevelUpLearnset,
         .teachableLearnset = sKlinkTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 25, SPECIES_KLANG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_KLANG}),
     },
 
     [SPECIES_KLANG] =
@@ -10056,7 +10056,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sRuffletLevelUpLearnset,
         .teachableLearnset = sRuffletTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_BRAVIARY},
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_BRAVIARY},
                                 {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_BRAVIARY_HISUIAN}),
     },
 
@@ -10247,7 +10247,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sVullabyLevelUpLearnset,
         .teachableLearnset = sVullabyTeachableLearnset,
         .eggMoveLearnset = sVullabyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 35, SPECIES_MANDIBUZZ}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_MANDIBUZZ}),
     },
 
     [SPECIES_MANDIBUZZ] =
