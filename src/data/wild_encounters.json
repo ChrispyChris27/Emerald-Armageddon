@@ -3125,7 +3125,7 @@
               {
                 "min_level": 5,
                 "max_level": 10,
-                "species": "SPECIES_SKRELP"
+                "species": "SPECIES_MAGIKARP"
               },
               {
                 "min_level": 5,
@@ -8659,12 +8659,12 @@
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_TENTACOOL"
+                "species": "SPECIES_TENTACRUEL"
               },
               {
                 "min_level": 10,
                 "max_level": 30,
-                "species": "SPECIES_WAILMER"
+                "species": "SPECIES_DRAGALGE"
               },
               {
                 "min_level": 25,
