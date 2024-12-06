@@ -353,3 +353,13 @@ Route103_Text_RouteSign:
 	.string "ROUTE 103\n"
 	.string "{DOWN_ARROW} OLDALE TOWN$"
 
+Route103_EventScript_Fisher::
+	msgbox Route103_Text_Fisherman, MSGBOX_NPC
+	end
+	
+Route103_Text_Fisherman:
+	.string "I saw a whopper of a DONDOZO in\n"
+	.string "the water here!\p"
+	.string "I've gotta snag it before it\n"
+	.string "swims back to sea!$"
+
