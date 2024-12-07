@@ -2,7 +2,7 @@
 @ e.g. Route 104's sail to Dewford script references local IDs from Dewford's map
 @ All of these local IDs are labeled here
 .equ LOCALID_BRINEY_DEWFORD, 2
-.equ LOCALID_BOAT_DEWFORD, 4
+.equ LOCALID_BOAT_DEWFORD, 3
 
 .equ LOCALID_BOAT_R109, 1
 .equ LOCALID_BRINEY_R109, 2
@@ -54,7 +54,7 @@ DewfordTown_EventScript_CancelSailSelect::
 
 DewfordTown_EventScript_ReturnToPetalburgPrompt::
 	msgbox DewfordTown_Text_SetSailBackToPetalburg, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_SailToSlateport
+	goto_if_eq VAR_RESULT, YES, DewfordTown_EventScript_ChooseSlateport
 	msgbox DewfordTown_Text_GoDeliverIllBeWaiting, MSGBOX_DEFAULT
 	release
 	end

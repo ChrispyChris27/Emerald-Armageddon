@@ -103,7 +103,6 @@ Route104_MrBrineysHouse_Text_ItsYouLetsSailToDewford:
 	.string "You want to sail with me?\p"
 	.string "Hmhm…\p"
 	.string "You have a LETTER bound for DEWFORD\n"
-	.string "and a package for SLATEPORT, then?\p"
 	.string "Quite the busy life you must lead!\p"
 	.string "But, certainly, what you're asking is\n"
 	.string "no problem at all.\p"

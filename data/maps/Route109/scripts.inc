@@ -275,7 +275,7 @@ Route109_Movement_BrineyExitBoat:
 Route109_EventScript_MrBriney::
 	lock
 	faceplayer
-	goto_if_unset FLAG_DELIVERED_DEVON_GOODS, Route109_EventScript_HaveNotDeliveredDevonGood
+	call_if_unset FLAG_MR_BRINEY_SAILING_INTRO, Route109_Sailing_Intro
 	goto Route109_EventScript_DeliveredDevonGoods
 	end
 
@@ -284,6 +284,13 @@ Route109_EventScript_HaveNotDeliveredDevonGood::
 	msgbox Route109_Text_BrineySailToDewfordQuestion, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Route109_EventScript_StayHere
 	goto Route109_EventScript_SailToDewford
+	end
+
+Route109_Sailing_Intro::
+	setflag FLAG_MR_BRINEY_SAILING_INTRO
+	msgbox Route109_Text_Sailing_Intro, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, Route109_EventScript_SailToDewford
+	goto Route109_EventScript_ChoseNotToSail
 	end
 
 Route109_EventScript_DeliveredDevonGoods::
@@ -562,3 +569,17 @@ Route109_Text_TrainerTipsSign:
 	.string "always have identical stats.\p"
 	.string "POKéMON raised by TRAINERS are said\n"
 	.string "to grow stronger than wild POKéMON.$"
+
+Route109_Text_Sailing_Intro:
+	.string "Hm? You're {PLAYER}{KUN}!\n"
+	.string "You saved my darling PEEKO!\l"
+	.string "We owe so much to you!\p"
+	.string "What's that?\n"
+	.string "You want to sail with me?\p"
+	.string "Hmhm…\p"
+	.string "You have a LETTER bound for DEWFORD\n"
+	.string "Quite the busy life you must lead!\p"
+	.string "But, certainly, what you're asking is\n"
+	.string "no problem at all.\p"
+	.string "You've come to the right man!\n"
+	.string "Shall we set sail for DEWFORD?$"

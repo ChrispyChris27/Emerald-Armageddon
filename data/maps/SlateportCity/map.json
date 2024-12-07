@@ -639,6 +639,33 @@
       "var": "VAR_SLATEPORT_OUTSIDE_MUSEUM_STATE",
       "var_value": "2",
       "script": "SlateportCity_EventScript_ScottBattleTentScene"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 56,
+      "elevation": 0,
+      "var": "VAR_NORMAN_CALL",
+      "var_value": "1",
+      "script": "SlateportCity_Dad_Calls"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 56,
+      "elevation": 0,
+      "var": "VAR_NORMAN_CALL",
+      "var_value": "1",
+      "script": "SlateportCity_Dad_Calls"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 56,
+      "elevation": 0,
+      "var": "VAR_NORMAN_CALL",
+      "var_value": "1",
+      "script": "SlateportCity_Dad_Calls"
     }
   ],
   "bg_events": [

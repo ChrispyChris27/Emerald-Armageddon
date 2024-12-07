@@ -1452,3 +1452,16 @@ SlateportCity_Text_TakingBattleTentChallenge:
 	.string "After all, a tough TRAINER is\n"
 	.string "the perfect fit for the BATTLE TENT!\p"
 	.string "Give it your best effort!$"
+
+SlateportCity_Dad_Calls::
+	pokenavcall Route104_Text_DadPokenavCall
+	waitmessage
+	delay 30
+	playfanfare MUS_REGISTER_MATCH_CALL
+	msgbox Route104_Text_RegisteredDadInPokenav, MSGBOX_DEFAULT
+	waitfanfare
+	closemessage
+	delay 30
+	setflag FLAG_ENABLE_NORMAN_MATCH_CALL
+	setvar VAR_NORMAN_CALL, 0
+	end

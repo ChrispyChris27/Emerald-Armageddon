@@ -877,10 +877,10 @@ PetalburgCity_Gym_EventScript_Randall::
 	trainerbattle_single TRAINER_RANDALL, PetalburgCity_Gym_Text_RandallIntro, PetalburgCity_Gym_Text_RandallDefeat, PetalburgCity_Gym_EventScript_SlideOpenSpeedRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_RandallPostBadge
 	msgbox PetalburgCity_Gym_Text_RandallPostBattle, MSGBOX_AUTOCLOSE
-	setvar VAR_UNUSED_0x40F7, 0
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenSpeedRoomDoors::
+	setvar VAR_UNUSED_0x40F7, 0
 	setvar VAR_0x8005, 0
 	call PetalburgCity_Gym_EventScript_OpenSpeedRoomDoors
 	special DrawWholeMapView
@@ -947,11 +947,11 @@ PetalburgCity_Gym_EventScript_Mary::
 	trainerbattle_single TRAINER_MARY, PetalburgCity_Gym_Text_MaryIntro, PetalburgCity_Gym_Text_MaryDefeat, PetalburgCity_Gym_EventScript_SlideOpenAccuracyRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_MaryPostBadge
 	msgbox PetalburgCity_Gym_Text_MaryPostBattle, MSGBOX_AUTOCLOSE
-	setvar VAR_UNUSED_0x40F7, 0
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenAccuracyRoomDoors::
 	setvar VAR_0x8005, 0
+	setvar VAR_UNUSED_0x40F7, 0
 	call PetalburgCity_Gym_EventScript_OpenAccuracyRoomDoors
 	special DrawWholeMapView
 	release
@@ -1114,6 +1114,7 @@ PetalburgCity_Gym_EventScript_GymGuide::
 	lock
 	faceplayer
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_GymGuidePostVictory
+	goto_if_unset FLAG_GYM_INTRO, PetalburgCity_Gym_EventScript_GymIntro
 	msgbox PetalburgCity_Gym_Text_GymGuideAdvice, MSGBOX_DEFAULT
 	release
 	end
@@ -1123,6 +1124,12 @@ PetalburgCity_Gym_EventScript_GymGuidePostVictory::
 	release
 	end
 
+PetalburgCity_Gym_EventScript_GymIntro::
+	msgbox PetalburgCity_Gym_Text_Intro, MSGBOX_DEFAULT
+	setflag FLAG_GYM_INTRO
+	release
+	end
+	
 PetalburgCity_Gym_EventScript_LeftGymStatue::
 	lockall
 	goto_if_set FLAG_BADGE05_GET, PetalburgCity_Gym_EventScript_GymStatueCertified
@@ -1328,6 +1335,34 @@ PetalburgCity_Gym_Text_DadNoAmountOfTrainingIsEnough:
 	.string "training would ever be enough.$"
 
 PetalburgCity_Gym_Text_GymGuideAdvice:
+	.string "The doors in this GYM open when you\n"
+	.string "beat the awaiting TRAINERS.\p"
+	.string "Whoops! The doors in this room are\n"
+	.string "already open, so don't attack me!\p"
+	.string "The TRAINERS of PETALBURG GYM use\n"
+	.string "all kinds of strategies in battle.\p"
+	.string "By reading the sign on each door, you\n"
+	.string "can get a hint as to what specialty\l"
+	.string "the TRAINER on the other side of the\l"
+	.string "door uses.\p"
+	.string "Since this is your first GYM BATTLE,\n"
+	.string "you'll only have to defeat 3 of the \l"
+	.string "GYM TRAINERS before you can challenge\l"
+	.string "your father.\p"
+	.string "In the future though, you'll have to\n"
+	.string "defeat all of the GYM TRAINERS before\l"
+	.string "challenging the GYM LEADER!\p"
+	.string "There are two doors behind me.\p"
+	.string "The door at the left leads to\n"
+	.string "the SPEED ROOM.\p"
+	.string "The door at the right leads to\n"
+	.string "the TRICK ROOM.\p"
+	.string "The room's name will be on\n"
+	.string "the door, so choose carefully.\p"
+	.string "Once you've chosen the door…\n"
+	.string "Well, hey, go for it!$"
+
+PetalburgCity_Gym_Text_Intro:
 	.string "Hey, how's it going, {PLAYER}?\p"
 	.string "So this is your first gym battle?\p"
 	.string "That's exciting! Allow me to explain\n"
@@ -1341,46 +1376,21 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "By the way, your POKéMON will all be\n"
 	.string "healed to full health every time you\l"
 	.string "enter a GYM.\p"
-	.string "They won't be healed in between battles\n"
-	.string "with GYM TRAINERS though.\p"
-	.string "If you keep progressing through a GYM\n"
-	.string "without leaving, you can take advantage\l"
-	.string "of any damage that was inflicted on you\l"
-	.string "in the previous GYM BATTLE!\p"
-	.string "Of course that means you won't be able to\n"
-	.string "edit your team of six POKéMON.\p"
+	.string "They won't be healed in between\n"
+	.string "battles with GYM TRAINERS though.\p"
+	.string "If you keep progressing through\n"
+	.string "a GYM without leaving, you can take\l"
+	.string "advantage of any damage that was\l"
+	.string "inflicted on you in the previous\l"
+	.string "GYM BATTLE!\p"
+	.string "Of course that means you won't be \n"
+	.string "able to edit your team of six POKéMON.\p"
 	.string "Consider the pros and cons in advance.\p"
 	.string "Once you defeat the LEADER of the GYM,\n"
 	.string "you will earn a BADGE signifying your\l"
-	.string "victory!"
+	.string "victory!\p"
 	.string "If you collect all 8 GYM BADGES, you'll\n"
-	.string "be able to take on the POKéMON LEAGUE!\p"
-	.string "Now let me explain how the PETALBURG\n"
-	.string "GYM works!\p"
-	.string "The doors in this GYM open when you\n"
-	.string "beat the awaiting TRAINERS.\p"
-	.string "Whoops! The doors in this room are\n"
-	.string "already open, so don't attack me!\p"
-	.string "The TRAINERS of PETALBURG GYM use all\n"
-	.string "kinds of strategies in battle.\p"
-	.string "By reading the sign on each door, you\n"
-	.string "can get a hint as to what specialty the\l"
-	.string "TRAINER on the other side of the door uses.\p"
-	.string "Since this is your first GYM BATTLE, you'll\n"
-	.string "only have to defeat 3 of the GYM TRAINERS\l"
-	.string "before you can challenge your father.\p"
-	.string "In the future though, you'll have to defeat\n"
-	.string "all of the GYM TRAINERS before challenging\l"
-	.string "the GYM LEADER!\p"
-	.string "There are two doors behind me.\p"
-	.string "The door at the left leads to\n"
-	.string "the SPEED ROOM.\p"
-	.string "The door at the right leads to\n"
-	.string "the TRICK ROOM.\p"
-	.string "The room's name will be on\n"
-	.string "the door, so choose carefully.\p"
-	.string "Once you've chosen the door…\n"
-	.string "Well, hey, go for it!$"
+	.string "be able to take on the POKéMON LEAGUE!$"
 
 PetalburgCity_Gym_Text_GymGuidePostVictory:
 	.string "{PLAYER}! Whoa! You've overcome\n"
