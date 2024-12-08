@@ -274,7 +274,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -335,7 +335,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -472,7 +471,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -679,7 +678,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_AQUA,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -757,7 +756,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_AQUA,
         .doubleBattle = FALSE,
-       .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
+       .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 4,
         .party = (const struct TrainerMon[])
         {
@@ -1586,7 +1585,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -2706,12 +2704,12 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = 4,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
+        .partySize = 5,
         .party = (const struct TrainerMon[])
         {
             {
-            .species = SPECIES_STOUTLAND,
+            .species = SPECIES_STARAPTOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
@@ -2720,10 +2718,42 @@ F_TRAINER_FEMALE |
             .heldItem = ITEM_LEFTOVERS,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_HEADBUTT,
-                MOVE_PLAY_ROUGH,
-                MOVE_STOMPING_TANTRUM,
-                MOVE_SUBMISSION,
+                MOVE_CLOSE_COMBAT,
+                MOVE_DUAL_WINGBEAT,
+                MOVE_TAKE_DOWN,
+                MOVE_U_TURN,
+            },
+            },
+            {
+            .species = SPECIES_TOUCANNON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 28,
+            .nature = NATURE_JOLLY,
+            .ability = ABILITY_SKILL_LINK,
+            .heldItem = ITEM_LIFE_ORB,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_BOLT_BEAK,
+                MOVE_BULLET_SEED,
+                MOVE_DRILL_PECK,
+                MOVE_ROCK_BLAST,
+            },
+            },
+            {
+            .species = SPECIES_SPINDA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 28,
+            .nature = NATURE_JOLLY,
+            .ability = ABILITY_CONTRARY,
+            .heldItem = ITEM_ASSAULT_VEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_SUPERPOWER,
+                MOVE_RETURN,
+                MOVE_PSYCHO_CUT,
+                MOVE_ROCK_SLIDE,
             },
             },
             {
@@ -2732,46 +2762,30 @@ F_TRAINER_FEMALE |
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
             .nature = NATURE_JOLLY,
-            .ability = ABILITY_STAKEOUT,
-            .heldItem = ITEM_LIFE_ORB,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_HEADBUTT,
-                MOVE_ICE_FANG,
-                MOVE_FIRE_FANG,
-                MOVE_THUNDER_FANG,
-            },
-            },
-            {
-            .species = SPECIES_NOCTOWL,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 28,
-            .nature = NATURE_TIMID,
-            .ability = ABILITY_INSOMNIA,
+            .ability = ABILITY_STRONG_JAW,
             .heldItem = ITEM_EXPERT_BELT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_AIR_SLASH,
-                MOVE_EXTRASENSORY,
-                MOVE_HEAT_WAVE,
-                MOVE_MOONBLAST,
+                MOVE_HYPER_FANG,
+                MOVE_ICE_FANG,
+                MOVE_THUNDER_FANG,
+                MOVE_FIRE_FANG,
             },
             },
             {
-            .species = SPECIES_ORANGURU,
+            .species = SPECIES_STOUTLAND,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
-            .nature = NATURE_TIMID,
-            .ability = ABILITY_INNER_FOCUS,
-            .heldItem = ITEM_THROAT_SPRAY,
+            .nature = NATURE_JOLLY,
+            .ability = ABILITY_INTIMIDATE,
+            .heldItem = ITEM_MUSCLE_BAND,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_PSYCHIC_NOISE,
-                MOVE_HYPER_VOICE,
-                MOVE_SHADOW_BALL,
-                MOVE_ENERGY_BALL,
+                MOVE_BODY_SLAM,
+                MOVE_PLAY_ROUGH,
+                MOVE_CRUNCH,
+                MOVE_STOMPING_TANTRUM,
             },
             },
 
@@ -2785,7 +2799,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_PREFER_STATUS_MOVES,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -2861,9 +2875,9 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_TWIN_BEAM,
+                MOVE_THUNDERBOLT,
                 MOVE_CONFUSE_RAY,
-                MOVE_SHADOW_BALL,
-                MOVE_DAZZLING_GLEAM,
+                MOVE_EARTH_POWER,
             },
             },
         },
@@ -2875,9 +2889,8 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_PREFER_STATUS_MOVES,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -2971,7 +2984,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -3059,7 +3072,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -3144,7 +3156,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -3183,7 +3194,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -3214,7 +3224,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_SUPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -3253,7 +3262,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -3284,7 +3292,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -3315,7 +3322,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -3354,7 +3360,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -3401,7 +3406,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -3440,7 +3444,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -3479,7 +3482,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -3518,7 +3520,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -3557,7 +3558,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -3596,7 +3596,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -3629,72 +3628,88 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = 4,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
+        .partySize = 5,
         .party = (const struct TrainerMon[])
         {
            {
-            .species = SPECIES_PORYGON2,
+            .species = SPECIES_PORYGON_Z,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
-            .nature = NATURE_QUIET,
+            .nature = NATURE_MODEST,
             .ability = ABILITY_DOWNLOAD,
-            .heldItem = ITEM_ROOM_SERVICE,
+            .heldItem = ITEM_LIFE_ORB,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_TRI_ATTACK,
                 MOVE_ICE_BEAM,
-                MOVE_PSYCHIC,
+                MOVE_THUNDERBOLT,
                 MOVE_SHADOW_BALL,
             },
             },
             {
-            .species = SPECIES_KECLEON,
+            .species = SPECIES_PYROAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
-            .nature = NATURE_BRAVE,
-            .ability = ABILITY_PROTEAN,
-            .heldItem = ITEM_ASSAULT_VEST,
+            .nature = NATURE_TIMID,
+            .ability = ABILITY_UNNERVE,
+            .heldItem = ITEM_LEFTOVERS,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_POWER_UP_PUNCH,
-                MOVE_ROCK_SLIDE,
-                MOVE_SHADOW_CLAW,
-                MOVE_BRICK_BREAK,
+                MOVE_BURNING_JEALOUSY,
+                MOVE_HYPER_VOICE,
+                MOVE_DARK_PULSE,
+                MOVE_SCORCHING_SANDS,
             },
             },
             {
-            .species = SPECIES_MUNCHLAX,
+            .species = SPECIES_ARBOLIVA,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
-            .nature = NATURE_BRAVE,
-            .ability = ABILITY_THICK_FAT,
-            .heldItem = ITEM_EVIOLITE,
+            .nature = NATURE_MODEST,
+            .ability = ABILITY_HARVEST,
+            .heldItem = ITEM_SITRUS_BERRY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_HEADBUTT,
-                MOVE_ZEN_HEADBUTT,
-                MOVE_DRAIN_PUNCH,
-                MOVE_BELLY_DRUM,
+                MOVE_ENERGY_BALL,
+                MOVE_HYPER_VOICE,
+                MOVE_EARTH_POWER,
+                MOVE_DAZZLING_GLEAM,
             },
             },
             {
-            .species = SPECIES_WIGGLYTUFF,
+            .species = SPECIES_ORANGURU,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
-            .nature = NATURE_QUIET,
-            .ability = ABILITY_COMPETITIVE,
+            .nature = NATURE_MODEST,
+            .ability = ABILITY_INNER_FOCUS,
             .heldItem = ITEM_THROAT_SPRAY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
+                MOVE_PSYCHIC_NOISE,
                 MOVE_HYPER_VOICE,
-                MOVE_ALLURING_VOICE,
                 MOVE_SHADOW_BALL,
-                MOVE_FLAMETHROWER,
+                MOVE_ENERGY_BALL,
+            },
+            },
+            {
+            .species = SPECIES_HELIOLISK,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 28,
+            .nature = NATURE_TIMID,
+            .ability = ABILITY_DRY_SKIN,
+            .heldItem = ITEM_AIR_BALLOON,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_PARABOLIC_CHARGE,
+                MOVE_HYPER_VOICE,
+                MOVE_SURF,
+                MOVE_DARK_PULSE
             },
             },
         },
@@ -3708,7 +3723,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES| AI_FLAG_PREFER_STATUS_MOVES,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -3729,19 +3744,19 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_HELIOLISK,
+            .species = SPECIES_KECLEON,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
-            .nature = NATURE_TIMID,
-            .ability = ABILITY_SERENE_GRACE,
+            .nature = NATURE_ADAMANT,
+            .ability = ABILITY_PROTEAN,
             .heldItem = ITEM_LIFE_ORB,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_PARABOLIC_CHARGE,
+                MOVE_POWER_UP_PUNCH,
                 MOVE_THUNDER_WAVE,
-                MOVE_SIGNAL_BEAM,
-                MOVE_SURF,
+                MOVE_SUCKER_PUNCH,
+                MOVE_ROCK_SLIDE,
             },
             },
             {
@@ -3803,7 +3818,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
@@ -3897,7 +3912,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = 3,
@@ -3955,7 +3969,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = 2,
@@ -3987,7 +4000,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_SUPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -4027,7 +4039,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -4051,7 +4062,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -4075,7 +4085,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -4099,7 +4108,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -4139,7 +4147,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -4171,7 +4178,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -4211,7 +4217,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -4251,7 +4256,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -4291,7 +4295,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -4331,7 +4334,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -4642,7 +4644,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -4667,7 +4668,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -4751,7 +4751,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -4780,7 +4779,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -4805,7 +4803,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -4830,7 +4827,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -4855,7 +4851,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -4880,7 +4875,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -4905,7 +4899,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -5352,7 +5345,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_RICH,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -5407,7 +5399,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_RICH,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -5431,7 +5422,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_RICH,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -5455,7 +5445,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_RICH,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -5479,7 +5468,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_RICH,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -5503,7 +5491,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_RICH_BOY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_RICH,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 1,
@@ -8980,7 +8967,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_ELITE_FOUR_SIDNEY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
         .mugshotEnabled = TRUE,
@@ -9069,7 +9055,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .mugshotEnabled = TRUE,
@@ -9158,7 +9143,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .mugshotEnabled = TRUE,
@@ -9246,7 +9230,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_ELITE_FOUR_DRAKE,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .mugshotEnabled = TRUE,
@@ -9795,19 +9778,19 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_ARBOLIVA,
+            .species = SPECIES_SNORLAX,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 30,
-            .nature = NATURE_MODEST,
-            .ability = ABILITY_HARVEST,
-            .heldItem = ITEM_SITRUS_BERRY,
+            .nature = NATURE_ADAMANT,
+            .ability = ABILITY_GLUTTONY,
+            .heldItem = ITEM_LANSAT_BERRY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_GIGA_DRAIN,
-                MOVE_HYPER_VOICE,
-                MOVE_EARTH_POWER,
-                MOVE_DAZZLING_GLEAM,
+                MOVE_BODY_SLAM,
+                MOVE_CURSE,
+                MOVE_REST,
+                MOVE_SLEEP_TALK,
             },
             },
             {
@@ -9820,26 +9803,23 @@ F_TRAINER_FEMALE |
             .heldItem = ITEM_THROAT_SPRAY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_HYPER_VOICE,
-                MOVE_ALLURING_VOICE,
-                MOVE_FLAMETHROWER,
-                MOVE_ICE_BEAM,
+                MOVE_BOOMBURST,
             },
             },
             {
-            .species = SPECIES_SPINDA,
+            .species = SPECIES_ZOROARK_HISUIAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 30,
-            .nature = NATURE_JOLLY,
-            .ability = ABILITY_CONTRARY,
+            .nature = NATURE_NAIVE,
+            .ability = ABILITY_ILLUSION,
             .heldItem = ITEM_ASSAULT_VEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_SUPERPOWER,
-                MOVE_DOUBLE_EDGE,
-                MOVE_ROCK_SLIDE,
-                MOVE_PSYCHO_CUT,
+                MOVE_BITTER_MALICE,
+                MOVE_HYPER_VOICE,
+                MOVE_SKITTER_SMACK,
+                MOVE_NIGHT_DAZE,
             },
             },
             {
@@ -9855,7 +9835,7 @@ F_TRAINER_FEMALE |
                 MOVE_FACADE,
                 MOVE_SHADOW_CLAW,
                 MOVE_NIGHT_SLASH,
-                MOVE_BRICK_BREAK,
+                MOVE_DRAIN_PUNCH,
             },
             },
             {
@@ -11792,7 +11772,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -11836,7 +11815,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -14558,7 +14536,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .partySize = 2,
         .party = (const struct TrainerMon[])
@@ -17374,7 +17351,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -17515,7 +17491,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -17869,7 +17844,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -18989,7 +18963,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -19294,7 +19267,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -19317,7 +19289,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -19356,7 +19327,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -19379,7 +19349,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = 1,
@@ -19402,7 +19371,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -19425,7 +19393,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = 1,
@@ -19448,7 +19415,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -19480,7 +19446,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = 2,
@@ -19512,7 +19477,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = 3,
@@ -19552,7 +19516,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -19584,7 +19547,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = 2,
@@ -19616,7 +19578,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -19648,7 +19609,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = 2,
@@ -19680,7 +19640,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -19998,7 +19957,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -20772,7 +20730,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
         .partySize = 2,
@@ -22707,7 +22664,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -23025,7 +22981,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -23110,7 +23065,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -23195,7 +23149,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -23280,7 +23233,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_WALLY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -23751,7 +23703,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -23782,7 +23733,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -24610,7 +24560,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 2,
@@ -25653,7 +25602,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -25912,7 +25860,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -26417,7 +26364,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -26523,7 +26469,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 1,
@@ -26738,7 +26683,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -27209,7 +27153,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -27297,7 +27240,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -27508,7 +27450,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -27705,7 +27646,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -27778,7 +27718,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -27865,7 +27804,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -27952,7 +27890,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_WATTSON,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -28054,7 +27991,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -28129,7 +28065,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -28218,7 +28153,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -28321,7 +28255,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -28423,7 +28356,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -28496,7 +28428,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -28583,7 +28514,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -28670,7 +28600,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_NORMAN,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -28772,7 +28701,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .partySize = 5,
@@ -28860,7 +28788,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .partySize = 6,
@@ -28962,7 +28889,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .partySize = 6,
@@ -29064,7 +28990,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .partySize = 6,
@@ -29227,7 +29152,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -29329,7 +29253,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -29648,7 +29571,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -29735,7 +29657,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -29836,7 +29757,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -29999,7 +29919,6 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_STEVEN,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
-        .items = { ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -30841,7 +30760,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,
@@ -30873,7 +30791,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -30913,7 +30830,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,
@@ -30953,7 +30869,6 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
-        .items = { ITEM_HYPER_POTION },
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 3,

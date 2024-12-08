@@ -873,14 +873,12 @@ PetalburgCity_Gym_EventScript_RightGymLeadersRoomDoor::
 	end
 
 PetalburgCity_Gym_EventScript_Randall::
-	setvar VAR_UNUSED_0x40F7, 9
 	trainerbattle_single TRAINER_RANDALL, PetalburgCity_Gym_Text_RandallIntro, PetalburgCity_Gym_Text_RandallDefeat, PetalburgCity_Gym_EventScript_SlideOpenSpeedRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_RandallPostBadge
 	msgbox PetalburgCity_Gym_Text_RandallPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 PetalburgCity_Gym_EventScript_SlideOpenSpeedRoomDoors::
-	setvar VAR_UNUSED_0x40F7, 0
 	setvar VAR_0x8005, 0
 	call PetalburgCity_Gym_EventScript_OpenSpeedRoomDoors
 	special DrawWholeMapView
@@ -943,7 +941,6 @@ PetalburgCity_Gym_EventScript_BerkePostBadge::
 	end
 
 PetalburgCity_Gym_EventScript_Mary::
-	setvar VAR_UNUSED_0x40F7, 5
 	trainerbattle_single TRAINER_MARY, PetalburgCity_Gym_Text_MaryIntro, PetalburgCity_Gym_Text_MaryDefeat, PetalburgCity_Gym_EventScript_SlideOpenAccuracyRoomDoors
 	goto_if_set FLAG_DEFEATED_PETALBURG_GYM, PetalburgCity_Gym_EventScript_MaryPostBadge
 	msgbox PetalburgCity_Gym_Text_MaryPostBattle, MSGBOX_AUTOCLOSE
@@ -951,7 +948,6 @@ PetalburgCity_Gym_EventScript_Mary::
 
 PetalburgCity_Gym_EventScript_SlideOpenAccuracyRoomDoors::
 	setvar VAR_0x8005, 0
-	setvar VAR_UNUSED_0x40F7, 0
 	call PetalburgCity_Gym_EventScript_OpenAccuracyRoomDoors
 	special DrawWholeMapView
 	release
@@ -1354,9 +1350,9 @@ PetalburgCity_Gym_Text_GymGuideAdvice:
 	.string "challenging the GYM LEADER!\p"
 	.string "There are two doors behind me.\p"
 	.string "The door at the left leads to\n"
-	.string "the SPEED ROOM.\p"
+	.string "the PHYSICAL ROOM.\p"
 	.string "The door at the right leads to\n"
-	.string "the TRICK ROOM.\p"
+	.string "the SPECIAL ROOM.\p"
 	.string "The room's name will be on\n"
 	.string "the door, so choose carefully.\p"
 	.string "Once you've chosen the door…\n"
@@ -1376,7 +1372,8 @@ PetalburgCity_Gym_Text_Intro:
 	.string "By the way, your POKéMON will all be\n"
 	.string "healed to full health every time you\l"
 	.string "enter a GYM.\p"
-	.string "They won't be healed in between\n"
+	.string "Unless you enter a new room in the\n"
+	.string "GYM, they won't be healed in between\n"
 	.string "battles with GYM TRAINERS though.\p"
 	.string "If you keep progressing through\n"
 	.string "a GYM without leaving, you can take\l"
@@ -1399,11 +1396,9 @@ PetalburgCity_Gym_Text_GymGuidePostVictory:
 	.string "What a stunning turn of events!$"
 
 PetalburgCity_Gym_Text_RandallIntro:
-	.string "I had high power industrial fans\n"
-	.string "placed in this room directed towards\l"
-	.string "my POKéMON!\p"
-	.string "That need for SPEED puts me at a\n"
-	.string "great advantage, don't you agree?$"
+	.string "Welcome to the PHYSICAL ROOM!\p"
+	.string "I hope you are ready to get\n"
+	.string "PHYSICAL! PHYSICAL!$"
 
 PetalburgCity_Gym_Text_RandallDefeat:
 	.string "That was a magnificent battle!$"
@@ -1490,10 +1485,9 @@ PetalburgCity_Gym_Text_BerkePostBadge:
 
 PetalburgCity_Gym_Text_MaryIntro:
 	.string "Giggle…\n"
-	.string "This is the TRICK ROOM.\p"
-	.string "Some POKéMON are powerful, but held\n"
-	.string "back by being slow.\p"
-	.string "Not anymore!$"
+	.string "This is the SPECIAL ROOM.\p"
+	.string "The attacking power of some \n"
+	.string "POKéMON is truly special!$"
 
 PetalburgCity_Gym_Text_MaryDefeat:
 	.string "You were a cut above me…$"
@@ -1560,7 +1554,7 @@ PetalburgCity_Gym_Text_DoorAppearsLocked:
 	.string "right now…$"
 
 PetalburgCity_Gym_Text_EnterSpeedRoom:
-	.string "“SPEED ROOM,” the sign says.\p"
+	.string "“PHYSICAL ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 @ Unused
@@ -1569,7 +1563,7 @@ PetalburgCity_Gym_Text_DoorAppearsLocked2:
 	.string "right now…$"
 
 PetalburgCity_Gym_Text_EnterAccuracyRoom:
-	.string "“TRICK ROOM,” the sign says.\p"
+	.string "“SPECIAL ROOM,” the sign says.\p"
 	.string "Do you want to go through?$"
 
 PetalburgCity_Gym_Text_EnterConfusionRoom:

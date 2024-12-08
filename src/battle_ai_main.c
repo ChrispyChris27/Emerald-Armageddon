@@ -1127,7 +1127,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             else if (CountUsablePartyMons(battlerAtk) == 0)
             {
                 if (CountUsablePartyMons(battlerDef) != 0)
-                    ADJUST_SCORE(-10);
+                    ADJUST_SCORE(-20);
                 else
                     ADJUST_SCORE(+5);
             }
@@ -3279,7 +3279,7 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
 
     // check status move preference
     if (AI_THINKING_STRUCT->aiFlags[battlerAtk] & AI_FLAG_PREFER_STATUS_MOVES && IS_MOVE_STATUS(move) && effectiveness != AI_EFFECTIVENESS_x0)
-        ADJUST_SCORE(10);
+        ADJUST_SCORE(1);
 
     // check thawing moves
     if ((gBattleMons[battlerAtk].status1 & (STATUS1_FREEZE | STATUS1_FROSTBITE)) && gMovesInfo[move].thawsUser)
