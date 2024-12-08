@@ -559,3 +559,4 @@ gSpecials::
 	def_special DoBrailleRegidragoEffect
 	def_special ReleaseRoamers
 	def_special HealUnfainted
+	def_special UseBlankMessageToCancelPokemonPic
