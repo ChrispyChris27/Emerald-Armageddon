@@ -885,8 +885,8 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_ELECTRICCURRENTISRUNNING]             = COMPOUND_STRING("An electric current is running across the battlefield!"),
     [STRINGID_SEEMSWEIRD]                           = COMPOUND_STRING("The battlefield seems weird!"),
     [STRINGID_WAGGLINGAFINGER]                      = COMPOUND_STRING("Waggling a finger let it use {B_CURRENT_MOVE}!"),
-    [STRINGID_STRONGWINDCONTINUES]                  = COMPOUND_STRING("The mysterious strong winds continue to blow!");
-    [STRINGID_STRONGWINDSTARTS]                     = COMPOUND_STRING("A mysterious strong wind has started to blow!");
+    [STRINGID_STRONGWINDCONTINUES]                  = COMPOUND_STRING("The mysterious strong winds continue to blow!"),
+    [STRINGID_STRONGWINDSTARTS]                     = COMPOUND_STRING("A mysterious strong wind has started to blow!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =

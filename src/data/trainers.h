@@ -491,7 +491,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_ZORUA_HISUIAN,
+            .species = SPECIES_ZORUA_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 18,
@@ -777,7 +777,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_QWILFISH_HISUIAN,
+            .species = SPECIES_QWILFISH_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 25,
@@ -793,7 +793,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_CORSOLA_GALARIAN,
+            .species = SPECIES_CORSOLA_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 25,
@@ -3019,7 +3019,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_MAUSHOLD_FAMILY_OF_FOUR,
+            .species = SPECIES_MAUSHOLD_FOUR,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
@@ -3048,7 +3048,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_SLOWBRO_GALARIAN,
+            .species = SPECIES_SLOWBRO_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
@@ -3855,7 +3855,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_SQUAWKABILLY_GREEN_PLUMAGE,
+            .species = SPECIES_SQUAWKABILLY_GREEN,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 28,
@@ -3913,7 +3913,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -3970,7 +3970,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -8968,7 +8968,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_ELITE_FOUR,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .mugshotEnabled = TRUE,
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .partySize = 5,
@@ -9544,7 +9544,7 @@ F_TRAINER_FEMALE |
         .party = (const struct TrainerMon[])
         {
             {
-            .species = SPECIES_GOLEM_ALOLAN,
+            .species = SPECIES_GOLEM_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 38,
@@ -9684,7 +9684,7 @@ F_TRAINER_FEMALE |
             },
             },
              {
-            .species = SPECIES_ARCANINE_HISUIAN,
+            .species = SPECIES_ARCANINE_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 49,
@@ -9807,7 +9807,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_ZOROARK_HISUIAN,
+            .species = SPECIES_ZOROARK_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 30,
@@ -12175,7 +12175,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_ZACIAN_CROWNED_SWORD,
+            .species = SPECIES_ZACIAN_CROWNED,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 100,
@@ -12191,7 +12191,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_ZAMAZENTA_CROWNED_SHIELD,
+            .species = SPECIES_ZAMAZENTA_CROWNED,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 100,
@@ -18027,7 +18027,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19350,7 +19350,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19394,7 +19394,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -19447,7 +19447,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19478,7 +19478,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -19548,7 +19548,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -19610,7 +19610,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -20731,7 +20731,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_COOL,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -21003,7 +21003,7 @@ F_TRAINER_FEMALE |
             },
             },
              {
-            .species = SPECIES_LILLIGANT_HISUIAN,
+            .species = SPECIES_LILLIGANT_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 76,
@@ -24189,7 +24189,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
         .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_SETUP_FIRST_TURN,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -29486,7 +29486,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_URSHIFU_RAPID_STRIKE_STYLE,
+            .species = SPECIES_URSHIFU_RAPID_STRIKE,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 89,

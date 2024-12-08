@@ -336,7 +336,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION_HISUIAN},
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION_HISUI},
                                 {EVO_NONE, 0, SPECIES_TYPHLOSION}),
     },
 

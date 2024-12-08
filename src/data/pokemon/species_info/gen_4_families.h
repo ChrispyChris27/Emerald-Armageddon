@@ -1685,8 +1685,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sBurmyTeachableLearnset,
         .formSpeciesIdTable = sBurmyFormSpeciesIdTable,
         .formChangeTable = sBurmyFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 15, SPECIES_WORMADAM_PLANT_CLOAK},
-                                {EVO_LEVEL_MALE, 15, SPECIES_MOTHIM_PLANT_CLOAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 15, SPECIES_WORMADAM_PLANT},
+                                {EVO_LEVEL_MALE, 15, SPECIES_MOTHIM_PLANT}),
     },
 
     [SPECIES_BURMY_SANDY] =
@@ -1752,8 +1752,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sBurmyTeachableLearnset,
         .formSpeciesIdTable = sBurmyFormSpeciesIdTable,
         .formChangeTable = sBurmyFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 15, SPECIES_WORMADAM_SANDY_CLOAK},
-                                {EVO_LEVEL_MALE, 15, SPECIES_MOTHIM_SANDY_CLOAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 15, SPECIES_WORMADAM_SANDY},
+                                {EVO_LEVEL_MALE, 15, SPECIES_MOTHIM_SANDY}),
     },
 
     [SPECIES_BURMY_TRASH] =
@@ -1819,8 +1819,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .teachableLearnset = sBurmyTeachableLearnset,
         .formSpeciesIdTable = sBurmyFormSpeciesIdTable,
         .formChangeTable = sBurmyFormChangeTable,
-        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 15, SPECIES_WORMADAM_TRASH_CLOAK},
-                                {EVO_LEVEL_MALE, 15, SPECIES_MOTHIM_TRASH_CLOAK}),
+        .evolutions = EVOLUTION({EVO_LEVEL_FEMALE, 15, SPECIES_WORMADAM_TRASH},
+                                {EVO_LEVEL_MALE, 15, SPECIES_MOTHIM_TRASH}),
     },
 
     [SPECIES_WORMADAM_PLANT] =
@@ -1882,8 +1882,8 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
             gOverworldPalette_WormadamPlantCloak,
             gShinyOverworldPalette_WormadamPlantCloak
         )
-        .levelUpLearnset = sWormadamPlantCloakLevelUpLearnset,
-        .teachableLearnset = sWormadamPlantCloakTeachableLearnset,
+        .levelUpLearnset = sWormadamPlantLevelUpLearnset,
+        .teachableLearnset = sWormadamPlantTeachableLearnset,
         .formSpeciesIdTable = sWormadamFormSpeciesIdTable,
     },
 

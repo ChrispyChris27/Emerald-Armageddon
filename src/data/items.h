@@ -4040,7 +4040,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_GALARICA_CUFF] =
     {
-        .name = HANDLE_EXPANDED_ITEM_NAME("GalaricaCuff", "Galarica Cuff"),
+        .name = _("Galarica Cuff"),
         .price = (I_PRICE >= GEN_9) ? 1000 : 1000,
         .description = COMPOUND_STRING(
             "A cuff from Galar\n"
@@ -4057,8 +4057,8 @@ const struct Item gItemsInfo[] =
 
     [ITEM_GALARICA_WREATH] =
     {
-        .name = HANDLE_EXPANDED_ITEM_NAME("GalrcaWreath", "Galarica Wreath"),
-        .pluralName = HANDLE_EXPANDED_ITEM_NAME("GalrcaWreathes", "Galarica Wreathes"),
+        .name = _("Galarica Wreath"),
+        .pluralName = _("Galarica Wreathes"),
         .price = (I_PRICE >= GEN_9) ? 1000 : 1000,
         .description = COMPOUND_STRING(
             "A wreath made in\n"

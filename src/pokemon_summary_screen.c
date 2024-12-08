@@ -1708,7 +1708,6 @@ else if (gMain.newKeys & L_BUTTON)
         BufferIvOrEvStats(2);
     }
 }
-    #if DEBUG_POKEMON_SPRITE_VISUALIZER == TRUE
         else if (JOY_NEW(START_BUTTON)
                 && ShouldShowMoveRelearner()
                 && (sMonSummaryScreen->currPageIndex == PSS_PAGE_BATTLE_MOVES || sMonSummaryScreen->currPageIndex == PSS_PAGE_CONTEST_MOVES))

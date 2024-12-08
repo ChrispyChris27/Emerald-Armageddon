@@ -570,7 +570,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sDewottLevelUpLearnset,
         .teachableLearnset = sDewottTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT_HISUIAN},
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT_HISUI},
                                 {EVO_NONE, 0, SPECIES_SAMUROTT}),
     },
 
@@ -3709,7 +3709,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sPetililTeachableLearnset,
         .eggMoveLearnset = sPetililEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT},
-                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LILLIGANT_HISUIAN}),
+                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LILLIGANT_HISUI}),
     },
 
     [SPECIES_LILLIGANT] =
@@ -3909,8 +3909,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sBasculinTeachableLearnset,
         .eggMoveLearnset = sBasculinEggMoveLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM_MALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_MALE},
-                                {EVO_ITEM_FEMALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_FEMALE}),
+        .evolutions = EVOLUTION({EVO_ITEM_MALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_M},
+                                {EVO_ITEM_FEMALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_F}),
     },
 
     [SPECIES_BASCULIN_BLUE_STRIPED] =
@@ -3976,8 +3976,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sBasculinTeachableLearnset,
         .eggMoveLearnset = sBasculinEggMoveLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM_MALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_MALE},
-                                {EVO_ITEM_FEMALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_FEMALE}),
+        .evolutions = EVOLUTION({EVO_ITEM_MALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_M},
+                                {EVO_ITEM_FEMALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_F}),
     },
 
 #if P_HISUIAN_FORMS
@@ -4043,8 +4043,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sBasculinWhiteStripedLevelUpLearnset,
         .teachableLearnset = sBasculinWhiteStripedTeachableLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM_MALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_MALE},
-                                {EVO_ITEM_FEMALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_FEMALE}),
+        .evolutions = EVOLUTION({EVO_ITEM_MALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_M},
+                                {EVO_ITEM_FEMALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_F}),
     },
 
     [SPECIES_BASCULEGION_M] =
@@ -4433,7 +4433,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sDarumakaTeachableLearnset,
         .eggMoveLearnset = sDarumakaEggMoveLearnset,
         .formSpeciesIdTable = sDarumakaFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_DARMANITAN_STANDARD_MODE}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_DARMANITAN_STANDARD}),
     },
 
     [SPECIES_DARMANITAN_STANDARD] =
@@ -10246,7 +10246,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sRuffletLevelUpLearnset,
         .teachableLearnset = sRuffletTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_BRAVIARY},
-                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_BRAVIARY_HISUIAN}),
+                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_BRAVIARY_HISUI}),
     },
 
     [SPECIES_BRAVIARY] =
