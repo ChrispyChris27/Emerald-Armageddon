@@ -3803,7 +3803,7 @@ F_TRAINER_FEMALE |
             .moves = {
                 MOVE_HORN_LEECH,
                 MOVE_STUN_SPORE,
-                MOVE_STOMPING_TANTRUM,
+                MOVE_HIGH_HORSEPOWER,
                 MOVE_ZEN_HEADBUTT,
             },
             },
@@ -3834,7 +3834,7 @@ F_TRAINER_FEMALE |
             .moves = {
                 MOVE_OBSTRUCT,
                 MOVE_NIGHT_SLASH,
-                MOVE_HEADBUTT,
+                MOVE_FACADE,
                 MOVE_DRAIN_PUNCH,
             },
             },
