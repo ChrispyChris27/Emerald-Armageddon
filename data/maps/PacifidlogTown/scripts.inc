@@ -26,6 +26,9 @@ PacifidlogTown_EventScript_Fisherman::
 PacifidlogTown_EventScript_TownSign::
 	msgbox PacifidlogTown_Text_TownSign, MSGBOX_SIGN
 	end
+PacifidlogTown_EventScript_Rocket::
+	msgbox PacifidlogTown_Text_Rocket, MSGBOX_NPC
+	end
 
 PacifidlogTown_Text_FastRunningCurrent:
 	.string "The sea between PACIFIDLOG and\n"
@@ -51,4 +54,10 @@ PacifidlogTown_Text_TownSign:
 	.string "PACIFIDLOG TOWN\p"
 	.string "“Where the morning sun smiles upon\n"
 	.string "the waters.”$"
+
+PacifidlogTown_Text_Rocket:
+	.string "Hey! What are you doing here?\p"
+	.string "There's nothing suspicious going\n"
+	.string "on here at all!\p"
+	.string "Now get lost!$"
 

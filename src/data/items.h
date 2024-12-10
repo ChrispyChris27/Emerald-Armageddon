@@ -10723,9 +10723,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM21"),
         .price = 1000,
         .description = COMPOUND_STRING(
-            "The less the user\n"
-            "likes you, the more\n"
-            "powerful this move."),
+            "A powerful special\n"
+            "move learned by\n"
+            "almost all."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -10813,9 +10813,9 @@ const struct Item gItemsInfo[] =
         .name = _("TM27"),
         .price = 1000,
         .description = COMPOUND_STRING(
-            "The more the user\n"
-            "likes you, the more\n"
-            "powerful this move."),
+            "A powerful physical\n"
+            "move learned by\n "
+            "almost all."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
