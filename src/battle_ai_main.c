@@ -2953,6 +2953,10 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 }
                 break;
             case EFFECT_ENTRAINMENT:
+                if (atkPartnerAbility == ABILITY_WONDER_GUARD)
+                {
+                    RETURN_SCORE_PLUS(20);
+                }
                 if (partnerHasBadAbility && IsAbilityOfRating(aiData->abilities[battlerAtk], 0))
                 {
                     RETURN_SCORE_PLUS(WEAK_EFFECT);
