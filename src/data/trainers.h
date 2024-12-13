@@ -476,6 +476,22 @@ F_TRAINER_FEMALE |
         .party = (const struct TrainerMon[])
         {
             {
+            .species = SPECIES_VOLBEAT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 18,
+            .nature = NATURE_ADAMANT,
+            .ability = ABILITY_PRANKSTER,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .heldItem = ITEM_LEFTOVERS,
+            .moves = {
+                MOVE_MOONLIGHT,
+                MOVE_POUNCE,
+                MOVE_THUNDER_WAVE,
+                MOVE_CONFUSE_RAY,
+            },
+            },
+            {
             .species = SPECIES_SKITTY,
             .gender = TRAINER_MON_RANDOM_GENDER,
            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -488,22 +504,6 @@ F_TRAINER_FEMALE |
                 MOVE_FAKE_OUT,
                 MOVE_LAST_RESORT,
     
-            },
-            },
-            {
-            .species = SPECIES_ZORUA_HISUI,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 18,
-            .nature = NATURE_TIMID,
-            .ability = ABILITY_ILLUSION,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .heldItem = ITEM_FOCUS_SASH,
-            .moves = {
-                MOVE_SWIFT,
-                MOVE_HEX,
-                MOVE_NASTY_PLOT,
-                MOVE_SNARL,
             },
             },
             {
@@ -552,22 +552,6 @@ F_TRAINER_FEMALE |
                 MOVE_POISON_TAIL,
                 MOVE_BITE,
                 MOVE_FIRE_FANG,
-            },
-            },
-            {
-            .species = SPECIES_VOLBEAT,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 18,
-            .nature = NATURE_ADAMANT,
-            .ability = ABILITY_PRANKSTER,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .heldItem = ITEM_LEFTOVERS,
-            .moves = {
-                MOVE_MOONLIGHT,
-                MOVE_POUNCE,
-                MOVE_THUNDER_WAVE,
-                MOVE_CONFUSE_RAY,
             },
             },
         },
@@ -9786,7 +9770,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_PSYSHIELD_BASH,
-                MOVE_BODY_SLAM,
+                MOVE_FACADE,
                 MOVE_THUNDERBOLT,
                 MOVE_EARTH_POWER,
             },
@@ -9798,12 +9782,12 @@ F_TRAINER_FEMALE |
             .lvl = 30,
             .nature = NATURE_HASTY,
             .ability = ABILITY_ILLUSION,
-            .heldItem = ITEM_LEFTOVERS,
+            .heldItem = ITEM_ASSAULT_VEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_BITTER_MALICE,
                 MOVE_SKITTER_SMACK,
-                MOVE_BODY_SLAM,
+                MOVE_FACADE,
                 MOVE_FLAMETHROWER,
             },
             },
@@ -9814,13 +9798,13 @@ F_TRAINER_FEMALE |
             .lvl = 30,
             .nature = NATURE_ADAMANT,
             .ability = ABILITY_FLUFFY,
-            .heldItem = ITEM_ASSAULT_VEST,
+            .heldItem = ITEM_LEFTOVERS,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_DRAIN_PUNCH,
                 MOVE_SHADOW_CLAW,
                 MOVE_ROCK_SLIDE,
-                MOVE_BODY_SLAM,
+                MOVE_FACADE,
             },
             },
             {
