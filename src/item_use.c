@@ -32,6 +32,7 @@
 #include "party_menu.h"
 #include "pokeblock.h"
 #include "pokemon.h"
+#include "roamer.h"
 #include "script.h"
 #include "sound.h"
 #include "strings.h"
@@ -1564,4 +1565,17 @@ void ItemUseOutOfBattle_TownMap(u8 taskId)
     Task_FadeAndCloseBagMenu(taskId);
 }
 
+void ItemUseOutOfBattle_Locatinator(u8 taskid)
+{
+    u32 i;
+    for (i = 0; i < ROAMER_COUNT; i++)
+	{
+	    if (IsRoamerAt(i, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
+        {
+            break;
+            AddTextPrinterParameterized(0, FONT_NORMAL, gTextRoamerLocatinator, 0, 17, 0, NULL);
+        }
+    }
+        AddTextPrinterParameterized(0, FONT_NORMAL, gTextNormalLocatinator, 0, 17, 0, NULL);
+}
 #undef tUsingRegisteredKeyItem

@@ -14110,4 +14110,20 @@ const struct Item gItemsInfo[] =
         .iconPic = gItemIcon_RareCandy,
         .iconPalette = gItemIconPalette_RareCandy,
     },
+
+    [ITEM_LOCATINATOR] =
+    {
+        .name = _("Locatinator"),
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+            "A high tech device\n"
+            "that can sense\n"
+            "rare pokémon."),
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_Locatinator,
+        .iconPic = gItemIcon_PokeRadar,
+        .iconPalette = gItemIconPalette_PokeRadar,
+    },
 };
