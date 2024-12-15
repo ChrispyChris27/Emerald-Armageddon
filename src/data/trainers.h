@@ -9771,7 +9771,7 @@ F_TRAINER_FEMALE |
             .moves = {
                 MOVE_PSYSHIELD_BASH,
                 MOVE_FACADE,
-                MOVE_THUNDERBOLT,
+                MOVE_SHADOW_BALL,
                 MOVE_EARTH_POWER,
             },
             },
