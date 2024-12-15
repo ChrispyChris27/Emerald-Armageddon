@@ -9782,7 +9782,7 @@ F_TRAINER_FEMALE |
             .lvl = 30,
             .nature = NATURE_HASTY,
             .ability = ABILITY_ILLUSION,
-            .heldItem = ITEM_ASSAULT_VEST,
+            .heldItem = ITEM_SITRUS_BERRY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_BITTER_MALICE,
@@ -9797,8 +9797,8 @@ F_TRAINER_FEMALE |
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 30,
             .nature = NATURE_ADAMANT,
-            .ability = ABILITY_FLUFFY,
-            .heldItem = ITEM_LEFTOVERS,
+            .ability = ABILITY_UNNERVE,
+            .heldItem = ITEM_ASSAULT_VEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_DRAIN_PUNCH,
