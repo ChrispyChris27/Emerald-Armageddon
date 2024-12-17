@@ -73,7 +73,7 @@ MauvilleCity_EventScript_TVExplained::
 MauvilleCity_EventScript_WallysUncle::
 	lock
 	faceplayer
-	goto_if_unset FLAG_RIVAL_110, MauvilleCity_EventScript_WallUncleNotReady
+	goto_if_unset FLAG_BADGE05_GET, MauvilleCity_EventScript_WallUncleNotReady
 	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_UncleAskPlayerToBattleWally
 	msgbox MauvilleCity_Text_UncleHesTooPeppy, MSGBOX_DEFAULT
 	closemessage
@@ -110,7 +110,7 @@ MauvilleCity_EventScript_UncleAskPlayerToBattleWally::
 
 MauvilleCity_EventScript_Wally::
 	lockall
-	goto_if_unset FLAG_RIVAL_110, MauvilleCity_EventScript_WallyNotReady
+	goto_if_unset FLAG_BADGE05_GET, MauvilleCity_EventScript_WallyNotReady
 	goto_if_set FLAG_DECLINED_WALLY_BATTLE_MAUVILLE, MauvilleCity_EventScript_WallyRequestBattleAgain
 	applymovement LOCALID_WALLY, Common_Movement_WalkInPlaceFasterRight
 	waitmovement 0
@@ -685,7 +685,7 @@ MauvilleCity_Text_UncleYourePushingIt:
 
 MauvilleCity_Text_WallyWeCanBeatAnyone:
 	.string "WALLY: I'm not pushing it.\p"
-	.string "If I combine forces with RALTS,\n"
+	.string "If I combine forces with GALLADE,\n"
 	.string "we can beat anyone!$"
 
 MauvilleCity_Text_WallyWillYouBattleMe:

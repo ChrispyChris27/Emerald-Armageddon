@@ -1,3 +1,5 @@
+.set LOCALID_RIVAL, 18
+
 Route113_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route113_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, Route113_OnTransition
@@ -8,6 +10,8 @@ Route113_OnResume:
 	end
 
 Route113_OnTransition:
+	call Common_EventScript_SetupRivalGfxId
+	call Common_EventScript_SetupRivalOnBikeGfxId
 	clearflag FLAG_FORCE_MIRAGE_TOWER_VISIBLE
 	call Route113_EventScript_CheckSetAshWeather
 	end
@@ -173,7 +177,7 @@ Route113_EventScript_MintMan::
 	giveitem ITEM_SASSY_MINT
 	setflag FLAG_MINTS_3
 	clearflag FLAG_MINTS_4
-	goto Route110_GotMints
+	goto Route113_GotMints
 	release
 	end
 
@@ -198,3 +202,209 @@ Route113_Received_Mints:
 	.string "I look forward to sharing more mints\n"
 	.string "with you in the future!$"
 
+Route113_EventScript_RivalScene1::
+	lockall
+	checkplayergender
+	call_if_eq VAR_RESULT, MALE, Route113_EventScript_PlayMayMusic
+	call_if_eq VAR_RESULT, FEMALE, Route113_EventScript_PlayBrendanMusic
+	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, Route113_EventScript_MayBattle
+	goto_if_eq VAR_RESULT, FEMALE, Route113_EventScript_BrendanBattle
+	releaseall
+	end
+
+Route113_EventScript_RivalScene2::
+	lockall
+	checkplayergender
+	call_if_eq VAR_RESULT, MALE, Route113_EventScript_PlayMayMusic
+	call_if_eq VAR_RESULT, FEMALE, Route113_EventScript_PlayBrendanMusic
+	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_RIVAL, RivalMovementDown2
+	waitmovement 0
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, Route113_EventScript_MayBattle
+	goto_if_eq VAR_RESULT, FEMALE, Route113_EventScript_BrendanBattle
+	releaseall
+	end
+
+Route113_EventScript_RivalScene3::
+	lockall
+	checkplayergender
+	call_if_eq VAR_RESULT, MALE, Route113_EventScript_PlayMayMusic
+	call_if_eq VAR_RESULT, FEMALE, Route113_EventScript_PlayBrendanMusic
+	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	applymovement LOCALID_RIVAL, RivalMovementDown3
+	waitmovement 0
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, Route113_EventScript_MayBattle
+	goto_if_eq VAR_RESULT, FEMALE, Route113_EventScript_BrendanBattle
+	releaseall
+	end
+
+Route113_EventScript_PlayMayMusic::
+	playbgm MUS_ENCOUNTER_MAY, TRUE
+	return
+
+Route113_EventScript_PlayBrendanMusic::
+	playbgm MUS_ENCOUNTER_BRENDAN, TRUE
+	return
+
+Route113_EventScript_MayBattle::
+	msgbox Route113_Text_MayLetsBattle, MSGBOX_DEFAULT
+	switch VAR_STARTER_MON
+	case 0, Route113_EventScript_MayBattleTreecko
+	case 1, Route113_EventScript_MayBattleTorchic
+	case 2, Route113_EventScript_MayBattleMudkip
+	end
+
+Route113_EventScript_MayBattleTreecko::
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_TREECKO, Route113_Text_MayDefeated
+	goto Route113_EventScript_MayDefeated
+	end
+
+Route113_EventScript_MayBattleTorchic::
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_TORCHIC, Route113_Text_MayDefeated
+	goto Route113_EventScript_MayDefeated
+	end
+
+Route113_EventScript_MayBattleMudkip::
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_110_MUDKIP, Route113_Text_MayDefeated
+	goto Route113_EventScript_MayDefeated
+	end
+
+Route113_EventScript_MayDefeated::
+	msgbox Route113_Text_MayTakeThis, MSGBOX_DEFAULT
+	call Route113_EventScript_GiveItemfinder
+	msgbox Route113_Text_MayExplainItemfinder, MSGBOX_DEFAULT
+	goto Route113_EventScript_RivalExit
+	end
+
+Route113_EventScript_BrendanBattle::
+	msgbox Route113_Text_BrendanLetsBattle, MSGBOX_DEFAULT
+	switch VAR_STARTER_MON
+	case 0, Route113_EventScript_BrendanBattleTreecko
+	case 1, Route113_EventScript_BrendanBattleTorchic
+	case 2, Route113_EventScript_BrendanBattleMudkip
+	end
+
+Route113_EventScript_BrendanBattleTreecko::
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_TREECKO, Route113_Text_BrendanDefeated
+	goto Route113_EventScript_BrendanDefeated
+	end
+
+Route113_EventScript_BrendanBattleTorchic::
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_TORCHIC, Route113_Text_BrendanDefeated
+	goto Route113_EventScript_BrendanDefeated
+	end
+
+Route113_EventScript_BrendanBattleMudkip::
+	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_110_MUDKIP, Route113_Text_BrendanDefeated
+	goto Route113_EventScript_BrendanDefeated
+	end
+
+Route113_EventScript_BrendanDefeated::
+	msgbox Route113_Text_BrendanTakeThis, MSGBOX_DEFAULT
+	call Route113_EventScript_GiveItemfinder
+	msgbox Route113_Text_BrendanExplainItemfinder, MSGBOX_DEFAULT
+	goto Route113_EventScript_RivalExit
+	end
+
+Route113_EventScript_GiveItemfinder::
+	giveitem ITEM_DOWSING_MACHINE
+	return
+
+Route113_EventScript_RivalExit::
+	closemessage
+	applymovement LOCALID_RIVAL, RivalMovementExit
+	waitmovement 0
+	removeobject LOCALID_RIVAL
+	setflag FLAG_RIVAL_113
+	setvar VAR_ROUTE113_STATE, 1
+	savebgm MUS_DUMMY
+	fadedefaultbgm
+	releaseall
+	end
+
+Route113_Text_MayLetsBattle:
+	.string "MAY: Hi, {PLAYER}{KUN}, long time no see!\p"
+	.string "While I was searching for other\n"
+	.string "POKéMON, my POKéMON grew stronger.\p"
+	.string "So…\n"
+	.string "How about a little battle?$"
+
+Route113_Text_MayDefeated:
+	.string "Yikes!\n"
+	.string "You're better than I expected!$"
+
+Route113_Text_MayTakeThis:
+	.string "MAY: {PLAYER}{KUN}, you've been busy\n"
+	.string "training, too, haven't you?\p"
+	.string "I think you deserve a reward!\n"
+	.string "This is from me!$"
+
+Route113_Text_MayExplainItemfinder:
+	.string "MAY: That's an ITEMFINDER.\p"
+	.string "Try it out. If there is an item that's\n"
+	.string "not visible, it emits a sound.\p"
+	.string "Okay, {PLAYER}{KUN}, let's meet again!\p"
+	.string "I know it's a little silly coming from\n"
+	.string "me, but I think you should train a lot\l"
+	.string "harder for the next time.$"
+
+Route113_Text_BrendanLetsBattle:
+	.string "BRENDAN: Hey, {PLAYER}.\n"
+	.string "So this is where you were.\l"
+	.string "How's it going?\p"
+	.string "Have you been raising your POKéMON?\n"
+	.string "I'll check for you.$"
+
+Route113_Text_BrendanDefeated:
+	.string "Hmm…\n"
+	.string "You're pretty good.$"
+
+Route113_Text_BrendanTakeThis:
+	.string "BRENDAN: {PLAYER}, you've trained\n"
+	.string "without me noticing…\p"
+	.string "Good enough!\n"
+	.string "Here, take this.$"
+
+Route113_Text_BrendanExplainItemfinder:
+	.string "BRENDAN: That's an ITEMFINDER.\p"
+	.string "Use it to root around for items that\n"
+	.string "aren't visible.\p"
+	.string "If it senses something, it emits\n"
+	.string "a sound.\p"
+	.string "Anyway, I'm off to look for new\n"
+	.string "POKéMON.$"
+
+RivalMovementDown2:
+	walk_down
+	step_end
+
+RivalMovementDown3:
+	walk_down
+	walk_down
+	step_end
+
+RivalMovementExit:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+	

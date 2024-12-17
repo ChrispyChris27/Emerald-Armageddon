@@ -214,8 +214,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
-      "x": 7,
-      "y": 6,
+      "x": 18,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_DOWN_AND_UP",
       "movement_range_x": 1,
@@ -227,7 +227,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_5",
-      "x": 7,
+      "x": 72,
       "y": 13,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_WALK_UP_AND_DOWN",
@@ -240,8 +240,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GENTLEMAN",
-      "x": 91,
-      "y": 7,
+      "x": 30,
+      "y": 5,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
@@ -250,6 +250,19 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route113_EventScript_MintMan",
       "flag": "FLAG_MINTS_3"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_VAR_3",
+      "x": 91,
+      "y": 7,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "0x0",
+      "flag": "FLAG_RIVAL_113"
     }
   ],
   "warp_events": [
@@ -327,28 +340,28 @@
     },
     {
       "type": "weather",
-      "x": 14,
+      "x": 15,
       "y": 10,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 14,
+      "x": 15,
       "y": 11,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 14,
+      "x": 15,
       "y": 12,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 14,
+      "x": 15,
       "y": 13,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
@@ -408,6 +421,33 @@
       "y": 7,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "type": "trigger",
+      "x": 91,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_ROUTE113_STATE",
+      "var_value": "0",
+      "script": "Route113_EventScript_RivalScene1"
+    },
+    {
+      "type": "trigger",
+      "x": 91,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_ROUTE113_STATE",
+      "var_value": "0",
+      "script": "Route113_EventScript_RivalScene2"
+    },
+    {
+      "type": "trigger",
+      "x": 91,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_ROUTE113_STATE",
+      "var_value": "0",
+      "script": "Route113_EventScript_RivalScene3"
     }
   ],
   "bg_events": [

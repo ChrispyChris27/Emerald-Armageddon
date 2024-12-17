@@ -3221,7 +3221,9 @@ static u32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move)
     case EFFECT_MEMENTO:
         if (AI_THINKING_STRUCT->aiFlags[battlerAtk] & AI_FLAG_WILL_SUICIDE && gBattleMons[battlerDef].statStages[STAT_EVASION] < 7)
         {
-            if (aiData->hpPercents[battlerAtk] < 50 && AI_RandLessThan(128))
+            if (aiData->hpPercents[battlerAtk] > 75)
+                ADJUST_SCORE(-2);
+            else if(aiData->hpPercents[battlerAtk] < 50 && AI_RandLessThan(128))
                 ADJUST_SCORE(+10);
             else if (aiData->hpPercents[battlerAtk] < 30 && AI_RandLessThan(192))
                 ADJUST_SCORE(+10);

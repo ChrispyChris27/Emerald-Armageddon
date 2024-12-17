@@ -660,7 +660,7 @@
 #define FLAG_RUSTURF_GRUNT      0x265 // Unused Flag
 #define FLAG_SLATEPORT_GRUNTS   0x266 // Unused Flag
 #define FLAG_RIVAL_MAUVILLE     0x267 // Unused Flag
-#define FLAG_RIVAL_110          0x268 // Unused Flag
+#define FLAG_RIVAL_113          0x268 // Unused Flag
 #define FLAG_FALLARBOR_BOSS     0x269 // Unused Flag
 #define FLAG_CHIMNEY_MAXIE      0x26A // Unused Flag
 #define FLAG_GIOVANNI_FALLS     0x26B // Unused Flag
