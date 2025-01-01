@@ -20,9 +20,7 @@ MauvilleCity_Mart_Pokemart:
 	.2byte ITEM_ANTIDOTE
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 	.align 2
 MauvilleCity_Mart_Pokemart_Expanded:
@@ -39,7 +37,7 @@ MauvilleCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_ICE_STONE
 	.2byte ITEM_SUN_STONE
 	.2byte ITEM_MOON_STONE
-	.2byte ITEM_NONE
+	pokemartlistend
 
 MauvilleCity_Mart_EventScript_ExpertM::
 	msgbox MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats, MSGBOX_NPC

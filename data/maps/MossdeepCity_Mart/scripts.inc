@@ -22,9 +22,7 @@ MossdeepCity_Mart_Pokemart:
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_SCROLL_OF_DARKNESS
 	.2byte ITEM_SCROLL_OF_WATERS
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 MossdeepCity_Mart_EventScript_Woman::
 	msgbox MossdeepCity_Mart_Text_ReviveIsFantastic, MSGBOX_NPC

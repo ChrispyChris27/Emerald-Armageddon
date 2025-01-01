@@ -25,9 +25,7 @@ FortreeCity_Mart_Pokemart:
 	.2byte ITEM_PEAT_BLOCK
 	.2byte ITEM_METAL_ALLOY
 	.2byte ITEM_WOOD_MAIL
-	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 FortreeCity_Mart_EventScript_Woman::
 	msgbox FortreeCity_Mart_Text_SuperRepelBetter, MSGBOX_NPC

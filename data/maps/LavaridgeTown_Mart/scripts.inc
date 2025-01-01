@@ -24,8 +24,7 @@ LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_DRAGON_SCALE
 	.2byte ITEM_METAL_COAT
 	.2byte ITEM_NONE
-	release
-	end
+	pokemartlistend
 
 LavaridgeTown_Mart_EventScript_ExpertM::
 	msgbox LavaridgeTown_Mart_Text_XSpeedFirstStrike, MSGBOX_NPC
