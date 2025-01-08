@@ -182,7 +182,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_SHED_SHELL",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_113_HYPER_POTION"
     },
@@ -500,18 +500,18 @@
     },
     {
       "type": "hidden_item",
-      "x": 22,
-      "y": 5,
+      "x": 73,
+      "y": 3,
       "elevation": 3,
       "item": "ITEM_TM_DOUBLE_TEAM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_TM_DOUBLE_TEAM"
     },
     {
       "type": "hidden_item",
-      "x": 73,
-      "y": 3,
+      "x": 22,
+      "y": 5,
       "elevation": 3,
-      "item": "ITEM_NUGGET",
+      "item": "ITEM_COVERT_CLOAK",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_NUGGET"
     }
   ]

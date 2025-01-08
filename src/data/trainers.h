@@ -9924,7 +9924,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_PREFER_STRONGEST_MOVE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -9964,7 +9964,7 @@ F_TRAINER_FEMALE |
             .lvl = 46,
             .nature = NATURE_ADAMANT,
             .ability = ABILITY_ROCK_HEAD,
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_MUSCLE_BAND,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_FLARE_BLITZ,
@@ -10011,14 +10011,14 @@ F_TRAINER_FEMALE |
             .heldItem = ITEM_CHARIZARDITE_X,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 46,
-            .nature = NATURE_ADAMANT,
+            .nature = NATURE_JOLLY,
             .ability = ABILITY_BLAZE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_FLARE_BLITZ,
-                MOVE_DRAGON_RUSH,
+                MOVE_DRAGON_CLAW,
                 MOVE_THUNDERPUNCH,
-                MOVE_FLAME_CHARGE,
+                MOVE_DRAGON_DANCE,
             },
             },
         },
