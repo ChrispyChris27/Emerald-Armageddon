@@ -20,6 +20,7 @@ RustboroCity_Gym_EventScript_RoxanneDefeated::
 	msgbox RustboroCity_Gym_Text_StoneBadgeInfoTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_RUSTBORO_GYM
 	setflag FLAG_BADGE01_GET
+	setflag FLAG_RECEIVED_HM_STRENGTH
 	setvar VAR_0x8008, 1
 	call Common_EventScript_SetGymTrainers
 	goto RustboroCity_Gym_EventScript_GiveRockTomb

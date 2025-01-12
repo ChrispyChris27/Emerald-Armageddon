@@ -1736,6 +1736,71 @@
         {
           "map": "MAP_ROUTE124",
           "base_label": "gRoute124",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PRIMARINA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_KINGAMBIT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GRIMMSNARL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SAMUROTT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SERPERIOR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EMBOAR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DECIDUEYE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_INCINEROAR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROTOM_MOW"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROTOM_FAN"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_WEAVILE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SNEASLER"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [
@@ -2822,6 +2887,71 @@
         {
           "map": "MAP_ROUTE106",
           "base_label": "gRoute106",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_FALINKS"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_HERACROSS"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_HAWLUCHA"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_FLAMIGO"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_TORTERRA"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_MAMOSWINE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_EMPOLEON"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_WEAVILE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_SNEASLER"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_GALLADE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_GARDEVOIR"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [
@@ -2903,7 +3033,7 @@
               {
                 "min_level": 40,
                 "max_level": 45,
-                "species": "SPECIES_MANTINE"
+                "species": "SPECIES_URSHIFU_RAPID_STRIKE"
               }
             ]
           }
@@ -4836,6 +4966,71 @@
         {
           "map": "MAP_ROUTE127",
           "base_label": "gRoute127",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_ARAQUANID"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_GOLISOPOD"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_VIKAVOLT"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_TOXAPEX"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_MIMIKYU"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_DRAMPA"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_DHELMISE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_KOMMO_O"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_EXEGGUTOR_ALOLA"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_KOMALA"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_COMFEY"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_CRABOMINABLE"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [
@@ -5014,6 +5209,71 @@
         {
           "map": "MAP_ROUTE129",
           "base_label": "gRoute129",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_MEGANIUM"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_VENUSAUR"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_SCEPTILE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_CHESNAUGHT"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_RILLABOOM"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_MEOWSCARADA"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_LUDICOLO"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_ELECTRODE_HISUI"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_LILLIGANT_HISUI"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_SIMISEAR"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_SIMISAGE"
+              },
+              {
+                "min_level": 70,
+                "max_level": 70,
+                "species": "SPECIES_SIMIPOUR"
+              }
+            ]
+          },
           "water_mons": {
             "encounter_rate": 4,
             "mons": [

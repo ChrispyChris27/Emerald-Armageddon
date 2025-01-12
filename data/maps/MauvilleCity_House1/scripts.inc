@@ -4,10 +4,10 @@ MauvilleCity_House1_MapScripts::
 MauvilleCity_House1_EventScript_RockSmashDude::
 	lock
 	faceplayer
-	goto_if_set FLAG_RECEIVED_HM_ROCK_SMASH, MauvilleCity_House1_EventScript_ReceivedRockSmash
+	goto_if_set FLAG_RECEIVED_HM_FLY, MauvilleCity_House1_EventScript_ReceivedRockSmash
 	msgbox MauvilleCity_House1_Text_ImRockSmashDudeTakeThis, MSGBOX_DEFAULT
-	giveitem ITEM_HM_ROCK_SMASH
-	setflag FLAG_RECEIVED_HM_ROCK_SMASH
+	giveitem ITEM_HM02
+	setflag FLAG_RECEIVED_HM_FLY
 	setflag FLAG_HIDE_ROUTE_111_ROCK_SMASH_TIP_GUY
 	msgbox MauvilleCity_House1_Text_ExplainRockSmash, MSGBOX_DEFAULT
 	release
@@ -20,10 +20,10 @@ MauvilleCity_House1_EventScript_ReceivedRockSmash::
 
 MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 	.string "Woohoo!\p"
-	.string "I hear people call me the ROCK SMASH\n"
-	.string "GUY, but I find that sort of degrading.\p"
+	.string "I hear people call me a FLY GUY,\n"
+	.string "but I find that sort of degrading.\p"
 	.string "I think I deserve a bit more respect,\n"
-	.string "like maybe the ROCK SMASH DUDE.\p"
+	.string "like maybe a FLY DUDE.\p"
 	.string "Woohoo!\p"
 	.string "Anyways, your POKéMON look pretty\n"
 	.string "strong.\p"
@@ -31,16 +31,16 @@ MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 	.string "Here, take this HIDDEN MACHINE!$"
 
 MauvilleCity_House1_Text_ExplainRockSmash:
-	.string "That HM contains ROCK SMASH.\p"
-	.string "If you come across large boulders\n"
-	.string "that block your path…\p"
-	.string "Well, use that HM move and smash\n"
-	.string "them right out of your way!\p"
-	.string "Yes, sir! Smash rocks aside, I say!\n"
+	.string "That HM contains FLY.\p"
+	.string "If you want to go back from\n"
+	.string "where you came...\p"
+	.string "Well, use that HM move and you'll\n"
+	.string "be able to travel back in a flash!\p"
+	.string "Yes, sir! Fly away, I say!\n"
 	.string "Woohoo!$"
 
 MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
-	.string "Oh, yes, if you smash a rock, a POKéMON\n"
-	.string "could come flying out of hiding.\p"
+	.string "Oh, yes, you can only FLY to cities\n"
+	.string "and towns you have already visited.\p"
 	.string "Woohoo!$"
 

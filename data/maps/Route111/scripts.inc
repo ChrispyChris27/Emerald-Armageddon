@@ -268,6 +268,7 @@ Route111_EventScript_Victor::
 	lock
 	faceplayer
 	setflag FLAG_LANDMARK_WINSTRATE_FAMILY
+	goto_if_unset FLAG_BADGE01_GET, Route111_EventScript_CantBattleYet
 	msgbox Route111_Text_BattleOurFamily, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route111_EventScript_BattleWinstrates
 	msgbox Route111_Text_IsThatSo, MSGBOX_DEFAULT
@@ -765,3 +766,17 @@ Route111_Received_Mints:
 	.string "I look forward to sharing more mints\n"
 	.string "with you in the future!$"
 
+Route111_EventScript_CantBattleYet::
+	msgbox Route111CantFight, MSGBOX_DEFAULT
+	release
+	end
+
+Route111CantFight:
+.string "Well hello there traveler!\p"
+.string "The family that lives here are\n"
+.string "experts in battle!\p"
+.string "Hmmm, you appear to be too weak\n"
+.string "to be worth our time right now.\p"
+.string "If you wish to battle us, come\n"
+.string "back when you are stronger and\l"
+.string "can put up a fight!$"
