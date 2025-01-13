@@ -1970,7 +1970,7 @@
               {
                 "min_level": 14,
                 "max_level": 14,
-                "species": "SPECIES_ONIX"
+                "species": "SPECIES_SANDILE"
               },
               {
                 "min_level": 14,
@@ -12220,7 +12220,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_CHARCADET"
+                "species": "SPECIES_GROWLITHE_HISUI"
               },
               {
                 "min_level": 5,
@@ -12358,7 +12358,7 @@
               {
                 "min_level": 12,
                 "max_level": 12,
-                "species": "SPECIES_GROWLITHE_HISUI"
+                "species": "SPECIES_ONIX"
               },
               {
                 "min_level": 12,
