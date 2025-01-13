@@ -29063,7 +29063,7 @@ F_TRAINER_FEMALE |
             .ability = ABILITY_SHADOW_TAG,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_SLUDGE_WAVE,
+                MOVE_SLUDGE_BOMB,
                 MOVE_SHADOW_BALL,
                 MOVE_THUNDERBOLT,
                 MOVE_NASTY_PLOT,
