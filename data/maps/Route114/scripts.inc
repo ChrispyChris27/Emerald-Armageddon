@@ -206,3 +206,155 @@ Route114_Text_FossilManiacsHouseSign:
 Route114_Text_LanettesHouse:
 	.string "LANETTE'S HOUSE$"
 
+Route114_Text_Grunt1Intro:
+	.string "Who are you?\p"
+	.string "You dare meddle with TEAM ROCKET?$"
+
+Route114_Text_Grunt1Defeat:
+	.string "You meddlesome monkey!$"
+
+Route114_Text_Grunt1PostBattle:
+	.string "You won't stop the rest of us!$"
+
+Route114_EventScript_Grunt1::
+	trainerbattle_single TRAINER_FALLS_GRUNT_1, Route114_Text_Grunt1Intro, Route114_Text_Grunt1Defeat
+	msgbox Route114_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route114_Text_Grunt2Intro:
+	.string "We at TEAM ROCKET come from the\n"
+	.string "KANTO region!\p"
+	.string "What are we doing here?\p"
+	.string "It's a secret!$"
+
+Route114_Text_Grunt2Defeat:
+	.string "My lips are sealed!$"
+
+Route114_Text_Grunt2PostBattle:
+	.string "I won't be telling you anything!$"
+
+Route114_EventScript_Grunt2::
+	trainerbattle_single TRAINER_FALLS_GRUNT_2, Route114_Text_Grunt2Intro, Route114_Text_Grunt2Defeat
+	msgbox Route114_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route114_Text_Grunt3Intro:
+	.string "We're after something in METEOR FALLS.\p"
+	.string "I can't let you get in our way!$"
+
+Route114_Text_Grunt3Defeat:
+	.string "At least I stalled you for awhile.$"
+
+Route114_Text_Grunt3PostBattle:
+	.string "Whatever we're after, it must be\n"
+	.string "important to have come all the way here.$"
+
+Route114_EventScript_Grunt3::
+	trainerbattle_single TRAINER_FALLS_GRUNT_3, Route114_Text_Grunt3Intro, Route114_Text_Grunt3Defeat
+	msgbox Route114_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route114_Text_Grunt4Intro:
+	.string "The boss told us to look out for\n"
+	.string "anyone who might get in our way!$"
+
+Route114_Text_Grunt4Defeat:
+	.string "I hope the boss forgives me!$"
+
+Route114_Text_Grunt4PostBattle:
+	.string "I may have failed to stop you\n"
+	.string "but I did manage to stall you!$"
+
+Route114_EventScript_Grunt4::
+	trainerbattle_single TRAINER_FALLS_GRUNT_4, Route114_Text_Grunt4Intro, Route114_Text_Grunt4Defeat
+	msgbox Route114_Text_Grunt4PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route114_Text_Grunt5Intro:
+	.string "I was told we were going on\n"
+	.string "vacation but this isn't what\l"
+	.string "I had in mind.$"
+
+Route114_Text_Grunt5Defeat:
+	.string "I wanted to be at a beach!$"
+
+Route114_Text_Grunt5PostBattle:
+	.string "I heard HOENN had too much water.\p"
+	.string "Well where is it?!?!\p"
+	.string "I was hoping to relax at a beach.$"
+
+Route114_EventScript_Grunt5::
+	trainerbattle_single TRAINER_FALLS_GRUNT_5, Route114_Text_Grunt5Intro, Route114_Text_Grunt5Defeat
+	msgbox Route114_Text_Grunt5PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route114_Text_Grunt6Intro:
+	.string "We at TEAM ROCKET are always after\n"
+	.string "rare POKéMON.\p"
+	.string "We came to see what HOENN has to offer!$"
+
+Route114_Text_Grunt6Defeat:
+	.string "Apparently you're what HOENN has\n"
+	.string "to offer...$"
+
+Route114_Text_Grunt6PostBattle:
+	.string "I was hoping to catch a NINCADA\n"
+	.string "while I was here but they don't\l"
+	.string "to be living around here.$"
+
+Route114_EventScript_Grunt6::
+	trainerbattle_single TRAINER_FALLS_GRUNT_6, Route114_Text_Grunt6Intro, Route114_Text_Grunt6Defeat
+	msgbox Route114_Text_Grunt6PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route114_Text_Grunt7Intro:
+	.string "Do you think there are meteorites\n"
+	.string "in METEOR FALLS?\p"
+	.string "I think that's what the boss is after!$"
+
+Route114_Text_Grunt7Defeat:
+	.string "I feel like I've been struck by a\n"
+	.string "meteor$"
+
+Route114_Text_Grunt7PostBattle:
+	.string "Did you know there's a city in the\n"
+	.string "SINNOH region where meteorites can\l"
+	.string "be found?$"
+
+Route114_EventScript_Grunt7::
+	trainerbattle_single TRAINER_FALLS_GRUNT_7, Route114_Text_Grunt7Intro, Route114_Text_Grunt7Defeat
+	msgbox Route114_Text_Grunt7PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route114_Text_Grunt8Intro:
+	.string "I hear there are some fossil POKéMON\n"
+	.string "that can be found in METEOR FALLS!$"
+
+Route114_Text_Grunt8Defeat:
+	.string "Oops! All fainted!$"
+
+Route114_Text_Grunt8PostBattle:
+	.string "Fossil POKéMON are cool and all but\n"
+	.string "our boss is after something bigger.$"
+
+Route114_EventScript_Grunt8::
+	trainerbattle_single TRAINER_FALLS_GRUNT_8, Route114_Text_Grunt8Intro, Route114_Text_Grunt8Defeat
+	msgbox Route114_Text_Grunt8PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route114_Text_Grunt9Intro:
+	.string "Stop right there!\p"
+	.string "Nobody is allowed in METEOR FALLS!\n"
+	.string "until the boss finds what he's after!$"
+
+Route114_Text_Grunt9Defeat:
+	.string "I did what I could to slow you down.$"
+
+Route114_Text_Grunt9PostBattle:
+	.string "By now you're probably too late!\p"
+	.string "I'm sure we've found what we came for!$"
+
+Route114_EventScript_Grunt9::
+	trainerbattle_single TRAINER_FALLS_GRUNT_9, Route114_Text_Grunt9Intro, Route114_Text_Grunt9Defeat
+	msgbox Route114_Text_Grunt9PostBattle, MSGBOX_AUTOCLOSE
+	end

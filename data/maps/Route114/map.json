@@ -384,9 +384,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "NULL",
+      "script": "Route114_EventScript_Grunt1",
       "flag": "FLAG_MF_ROCKETS"
     },
     {
@@ -397,22 +397,22 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "NULL",
+      "script": "Route114_EventScript_Grunt2",
       "flag": "FLAG_MF_ROCKETS"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
-      "x": 18,
+      "x": 19,
       "y": 60,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "NULL",
+      "script": "Route114_EventScript_Grunt3",
       "flag": "FLAG_MF_ROCKETS"
     },
     {
@@ -423,9 +423,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "NULL",
+      "script": "Route114_EventScript_Grunt4",
       "flag": "FLAG_MF_ROCKETS"
     },
     {
@@ -436,9 +436,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "NULL",
+      "script": "Route114_EventScript_Grunt5",
       "flag": "FLAG_MF_ROCKETS"
     },
     {
@@ -449,9 +449,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "NULL",
+      "script": "Route114_EventScript_Grunt6",
       "flag": "FLAG_MF_ROCKETS"
     },
     {
@@ -462,9 +462,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "NULL",
+      "script": "Route114_EventScript_Grunt7",
       "flag": "FLAG_MF_ROCKETS"
     },
     {
@@ -475,9 +475,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
-      "script": "NULL",
+      "script": "Route114_EventScript_Grunt8",
       "flag": "FLAG_MF_ROCKETS"
     },
     {
@@ -488,9 +488,9 @@
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "4",
-      "script": "NULL",
+      "script": "Route114_EventScript_Grunt9",
       "flag": "FLAG_MF_ROCKETS"
     }
   ],

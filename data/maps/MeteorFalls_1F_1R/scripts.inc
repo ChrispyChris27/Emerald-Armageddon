@@ -313,3 +313,87 @@ MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
 	.string "PROF. COZMO: But that TEAM MAGMA…\p"
 	.string "What are they going to do with that\n"
 	.string "METEORITE at MT. CHIMNEY?$"
+
+MeteorFalls_Text_Grunt10Intro:
+	.string "Hey! You aren't supposed to be here!\p"
+	.string "Time for me to teach you a lesson!$"
+
+MeteorFalls_Text_Grunt10Defeat:
+	.string "You ended up teaching me a lesson.$"
+
+MeteorFalls_Text_Grunt10PostBattle:
+	.string "I'll let you in on a secret.\p"
+	.string "We're after fragments of the same\n"
+	.string "METEORITE TEAM MAGMA found.$"
+
+MeteorFalls_EventScript_Grunt10::
+	trainerbattle_single TRAINER_FALLS_GRUNT_10, MeteorFalls_Text_Grunt10Intro, MeteorFalls_Text_Grunt10Defeat
+	msgbox MeteorFalls_Text_Grunt10PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MeteorFalls_Text_Grunt11Intro:
+	.string "Our work here is almost done.\p"
+	.string "I can't let you catch up to the boss!$"
+
+MeteorFalls_Text_Grunt11Defeat:
+	.string "I did my duty to TEAM ROCKET.$"
+
+MeteorFalls_Text_Grunt11PostBattle:
+	.string "By now we should be wrapping up\n"
+	.string "our operations here.$"
+
+MeteorFalls_EventScript_Grunt11::
+	trainerbattle_single TRAINER_FALLS_GRUNT_11, MeteorFalls_Text_Grunt11Intro, MeteorFalls_Text_Grunt11Defeat
+	msgbox MeteorFalls_Text_Grunt11PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MeteorFalls_Text_Grunt12Intro:
+	.string "We've been hard at work for hours\n"
+	.string "but I'm not too tired for a fight!$"
+
+MeteorFalls_Text_Grunt12Defeat:
+	.string "I think I need a nap.$"
+
+MeteorFalls_Text_Grunt12PostBattle:
+	.string "I know I can't be sleeping on the\n"
+	.string "job, so I hope we're almost done.$"
+
+MeteorFalls_EventScript_Grunt12::
+	trainerbattle_single TRAINER_FALLS_GRUNT_12, MeteorFalls_Text_Grunt12Intro, MeteorFalls_Text_Grunt12Defeat
+	msgbox MeteorFalls_Text_Grunt12PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MeteorFalls_Text_Grunt13Intro:
+	.string "You wouldn't understand the goal\n"
+	.string "of our trip to METEOR FALLS!$"
+
+MeteorFalls_Text_Grunt13Defeat:
+	.string "I tripped up in that battle.$"
+
+MeteorFalls_Text_Grunt13PostBattle:
+	.string "What do we want with those pieces\n"
+	.string "of METEORITE?\p"
+	.string "Wouldn't you like to know!$"
+
+MeteorFalls_EventScript_Grunt13::
+	trainerbattle_single TRAINER_FALLS_GRUNT_13, MeteorFalls_Text_Grunt13Intro, MeteorFalls_Text_Grunt13Defeat
+	msgbox MeteorFalls_Text_Grunt13PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MeteorFalls_Text_Grunt14Intro:
+	.string "Just because we're finished doesn't\n"
+	.string "mean I'll let you reach the exit!$"
+
+MeteorFalls_Text_Grunt14Defeat:
+	.string "Of course it doesn't mean I won't\n"
+	.string "let you reach the exit either.$"
+
+MeteorFalls_Text_Grunt14PostBattle:
+	.string "Beyond here is the exit to ROUTE\n"
+	.string "115.\p"
+	.string "Go ahead. If you dare.$"
+
+MeteorFalls_EventScript_Grunt14::
+	trainerbattle_single TRAINER_FALLS_GRUNT_14, MeteorFalls_Text_Grunt14Intro, MeteorFalls_Text_Grunt14Defeat
+	msgbox MeteorFalls_Text_Grunt14PostBattle, MSGBOX_AUTOCLOSE
+	end

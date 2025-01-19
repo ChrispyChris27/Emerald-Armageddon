@@ -28336,16 +28336,16 @@ F_TRAINER_FEMALE |
             .species = SPECIES_MEWTWO,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 52,
+            .lvl = 50,
             .nature = NATURE_MODEST,
             .heldItem = ITEM_EXPERT_BELT,
             .ability = ABILITY_PRESSURE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_PSYCHIC,
+                MOVE_PSYSTRIKE,
                 MOVE_THUNDERBOLT,
                 MOVE_ICE_BEAM,
-                MOVE_FLAMETHROWER,
+                MOVE_SHADOW_BALL,
             },
             },
             {
@@ -28353,7 +28353,7 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_RANDOM_GENDER,
             .heldItem = ITEM_LIFE_ORB,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 52,
+            .lvl = 50,
             .nature = NATURE_TIMID,
             .ability = ABILITY_SHEER_FORCE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -28368,7 +28368,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_RHYPERIOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 52,
+            .lvl = 50,
             .nature = NATURE_ADAMANT,
             .ability = ABILITY_SOLID_ROCK,
             .heldItem = ITEM_ASSAULT_VEST,
@@ -28385,7 +28385,7 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_RANDOM_GENDER,
             .heldItem = ITEM_SCOPE_LENS,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 52,
+            .lvl = 50,
             .nature = NATURE_NAIVE,
             .ability = ABILITY_SUPER_LUCK,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -28400,22 +28400,23 @@ F_TRAINER_FEMALE |
             .species = SPECIES_LUNALA,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 52,
+            .lvl = 50,
             .nature = NATURE_MODEST,
-            .heldItem = ITEM_FOCUS_SASH,
+            .heldItem = ITEM_SALAC_BERRY,
+            .ability = ABILITY_SHADOW_SHIELD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_MOONGEIST_BEAM,
                 MOVE_PSYCHIC,
                 MOVE_MOONBLAST,
-                MOVE_HEAT_WAVE,
+                MOVE_CALM_MIND,
             },
             },
             {
             .species = SPECIES_KANGASKHAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 52,
+            .lvl = 50,
             .nature = NATURE_JOLLY,
             .ability = ABILITY_SCRAPPY,
             .heldItem = ITEM_KANGASKHANITE,
@@ -28540,100 +28541,103 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_1] =
     {
-        .trainerName = _("ROXANNE"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
-        .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 5,
         .party = (const struct TrainerMon[])
         {
             {
-            .species = SPECIES_OMASTAR,
+            .species = SPECIES_GLIMMORA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 42,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_PROTECT,
-                MOVE_ICE_BEAM,
-                MOVE_ROCK_SLIDE,
-                MOVE_SURF,
-            },
-            },
-            {
-            .species = SPECIES_GOLEM,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 42,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_PROTECT,
-                MOVE_ROLLOUT,
-                MOVE_EARTHQUAKE,
-                MOVE_EXPLOSION,
-            },
-            },
-            {
-            .species = SPECIES_CLAYDOL,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 50,
-            .nature = NATURE_TIMID,
-            .ability = ABILITY_LEVITATE,
-            .heldItem = ITEM_LEFTOVERS,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_STORED_POWER,
-                MOVE_COSMIC_POWER,
-                MOVE_RECOVER,
-                MOVE_BODY_PRESS,
-            },
-            },
-            {
-            .species = SPECIES_ONIX,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 45,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_IRON_TAIL,
-                MOVE_EXPLOSION,
-                MOVE_ROAR,
-                MOVE_ROCK_SLIDE,
-            },
-            },
-            {
-            .species = SPECIES_NOSEPASS,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .heldItem = ITEM_SITRUS_BERRY,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 47,
-            .nature = NATURE_HARDY,
+            .nature = NATURE_TIMID,
+            .ability = ABILITY_TOXIC_DEBRIS,
+            .heldItem = ITEM_AIR_BALLOON,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_DOUBLE_TEAM,
+                MOVE_POWER_GEM,
+                MOVE_EARTH_POWER,
+                MOVE_STEALTH_ROCK,
+                MOVE_SLUDGE_BOMB,
+            },
+            },
+            {
+            .species = SPECIES_BUTTERFREE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 47,
+            .nature = NATURE_TIMID,
+            .ability = ABILITY_COMPOUND_EYES,
+            .heldItem = ITEM_BRIGHTPOWDER,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_SLEEP_POWDER,
+                MOVE_BUG_BUZZ,
+                MOVE_HURRICANE,
+                MOVE_TAILWIND,
+            },
+            },
+            {
+            .species = SPECIES_PANGORO,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 47,
+            .nature = NATURE_JOLLY,
+            .ability = ABILITY_IRON_FIST,
+            .heldItem = ITEM_ASSAULT_VEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_POWER_UP_PUNCH,
+                MOVE_DRAIN_PUNCH,
+                MOVE_WICKED_BLOW,
+                MOVE_ICE_PUNCH,
+            },
+            },
+            {
+            .species = SPECIES_POLTEAGEIST,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 47,
+            .nature = NATURE_TIMID,
+            .ability = ABILITY_WEAK_ARMOR,
+            .heldItem = ITEM_FOCUS_SASH,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_SHADOW_BALL,
+                MOVE_STORED_POWER,
+                MOVE_SHELL_SMASH,
+                MOVE_SCALD,
+            },
+            },
+            {
+            .species = SPECIES_GARBODOR,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .heldItem = ITEM_LIECHI_BERRY,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 47,
+            .nature = NATURE_JOLLY,
+            .ability = ABILITY_WEAK_ARMOR,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_GUNK_SHOT,
                 MOVE_EXPLOSION,
-                MOVE_PROTECT,
-                MOVE_ROCK_SLIDE,
+                MOVE_SEED_BOMB,
+                MOVE_STOMPING_TANTRUM,
             },
             },
         },
     },
     [TRAINER_FALLS_GRUNT_2] =
     {
-        .trainerName = _("ROXANNE"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_ROXANNE,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -29073,11 +29077,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_3] =
     {
-        .trainerName = _("WATTSON"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-        .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -29145,11 +29148,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_4] =
     {
-        .trainerName = _("WATTSON"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-        .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -29231,11 +29233,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_5] =
     {
-        .trainerName = _("WATTSON"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-        .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -29317,11 +29318,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_6] =
     {
-        .trainerName = _("WATTSON"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_WATTSON,
-        .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -29417,12 +29417,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_11] =
     {
-        .trainerName = _("FLANNERY"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 4,
@@ -29491,12 +29489,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_12] =
     {
-        .trainerName = _("FLANNERY"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 5,
@@ -29579,12 +29575,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_13] =
     {
-        .trainerName = _("FLANNERY"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -29681,12 +29675,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_14] =
     {
-        .trainerName = _("FLANNERY"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_FLANNERY,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -30127,12 +30119,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_7] =
     {
-        .trainerName = _("WINONA"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_WINONA,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .partySize = 5,
@@ -30214,12 +30204,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_8] =
     {
-        .trainerName = _("WINONA"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_WINONA,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .partySize = 6,
@@ -30315,12 +30303,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_9] =
     {
-        .trainerName = _("WINONA"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_WINONA,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .partySize = 6,
@@ -30416,12 +30402,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_10] =
     {
-        .trainerName = _("WINONA"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_WINONA,
-        .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_RISKY,
         .partySize = 6,
@@ -30579,11 +30563,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_15] =
     {
-        .trainerName = _("TATE&LIZA"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-        .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,
@@ -30680,11 +30663,10 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_FALLS_GRUNT_16] =
     {
-        .trainerName = _("TATE&LIZA"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_TATE_AND_LIZA,
-        .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+        .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 6,

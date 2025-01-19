@@ -1,3 +1,8 @@
+.set LOCAL_ID_GRUNT_1, 24
+.set LOCAL_ID_GRUNT_2, 25 
+.set LOCAL_ID_GIOVANNI, 26
+.set LOCAL_ID_ROXANNE, 27
+
 Route115_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Route115_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, Route115_OnTransition
@@ -142,4 +147,171 @@ Route115_Text_RouteSignRustboro:
 Route115_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
 	.string "FALLARBOR TOWN THROUGH HERE$"
+
+Route115_Text_Grunt15Intro:
+	.string "Hey! You aren't a member of TEAM\n"
+	.string "ROCKET!\p"
+	.string "I can't let you get any closer\n"
+	.string "to the boss!$"
+
+Route115_Text_Grunt15Defeat:
+	.string "Maybe you should join TEAM ROCKET?$"
+
+Route115_Text_Grunt15PostBattle:
+	.string "If you won't join us, at least\n"
+	.string "stay out of our way!$"
+
+Route115_EventScript_Grunt15::
+	trainerbattle_single TRAINER_FALLS_GRUNT_15, Route115_Text_Grunt15Intro, Route115_Text_Grunt15Defeat
+	msgbox Route115_Text_Grunt15PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route115_Text_Grunt16Intro:
+	.string "I'm sure our boss could absolutely\n"
+	.string "crush you, but I'll beat you myself\l"
+	.string "so he doesn't waste his time!$"
+
+Route115_Text_Grunt16Defeat:
+	.string "I'll watch the boss wipe the floor\n"
+	.string "with you!$"
+
+Route115_Text_Grunt16PostBattle:
+	.string "The boss is going to crush you\n"
+	.string "like a REGIGIGAS crushes the earth!$"
+
+Route115_EventScript_Grunt16::
+	trainerbattle_single TRAINER_FALLS_GRUNT_16, Route115_Text_Grunt16Intro, Route115_Text_Grunt16Defeat
+	msgbox Route115_Text_Grunt16PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route115_Text_GiovanniPreBattle:
+	.string "You must be who I was warned about.\p"
+	.string "Allow me to introduce myself.\p"
+	.string "I am GIOVANNI! The LEADER of TEAM\n"
+	.string "ROCKET!\p"
+	.string "You may have beaten all of my grunts\n"
+	.string "but you're too late to stop our plans!\p"
+	.string "You see, a long time ago a powerful,\n"
+	.string "ancient POKéMON descended from outer\l"
+	.string "space into the HOENN region.\p"
+	.string "Legends say this POKéMON was able to\n"
+	.string "harness the power of METEORITES to\l"
+	.string "achieve incredible power!\p"
+	.string "I intend to find this POKéMON and\n"
+	.string "unlock this power!\p"
+	.string "Fwahahahaha!!!!\p"
+	.string "That useless TEAM MAGMA may have\n"
+	.string "beaten us to the largest METEORITE,\l"
+	.string "but it turns out that METEOR FALLS\l"
+	.string "itself is filled with particles and\l"
+	.string "dust that come from METEORITES.\p"
+	.string "Our research here is now complete,\n"
+	.string "and phase two of our plan can now\l"
+	.string "commence!\p"
+	.string "I've already captured the strongest\n"
+	.string "POKéMON in KANTO, and soon enough the\l"
+	.string "strongest POKéMON in HOENN will also\l"
+	.string "be mine!\p"
+	.string "Of course, now that you know this,\n"
+	.string "I'll have to stop you from meddling\l"
+	.string "with my plans anymore.\p"
+	.string "Allow me to introduce you do a world\n"
+	.string "of pain and suffering!$"
+
+Route115_Text_GiovanniDefeat:
+	.string "You do have impressive power.$"
+
+Route115_Text_GiovanniPostBattle:
+	.string "I see now how you were able to so\n"
+	.string "effortlessly defeat my grunts.\p"
+	.string "It doesn't matter though. We've\n"
+	.string "gotten what we came here for.\p"
+	.string "There is much to do, I don't have\n"
+	.string "have the time for any more chit chat!\p"
+	.string "We will be on our way now, and you\n"
+	.string "would do well to stay clear of us in\l"
+	.string "the future!$"
+
+Route115_Movement_Giovanni:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Route115_Movement_Player:
+	walk_down
+	walk_right
+	face_left
+	step_end
+
+Route115_Movement_Roxanne:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Route115_Text_Roxanne:
+	.string "Are they finally gone?\p"
+	.string "Thank you for your help in\n"
+	.string "clearing those TEAM ROCKET\l"
+	.string "fellows out of METEOR FALLS.\p"
+	.string "I was researching some rocks in\n"
+	.string "the deeper parts of the cave with\l"
+	.string "ROXANNE when those hooligans arrived.\p"
+	.string "We probably could have beaten them\n"
+	.string "in battle ourselves, but we decided\l"
+	.string "to wait it out and see what we could\l"
+	.string "learn about why they were here.\n"
+	.string "Oh, so you know as well?\p"
+	.string "That they are trying to use the\n"
+	.string "METEORITES to somehow awaken the\l"
+	.string "powers of a super ancient POKéMON.\p"
+	.string "I'm unsure what POKéMON they may be\n"
+	.string "looking for unfortunately.\p"
+	.string "Well, since we finished our research,\n"
+	.string "ROXANNE should have arrived back at\l"
+	.string "the RUSTBORO CITY GYM.\p"
+	.string "You should show her the power\n"
+	.string "that allowed you to defeat all those\l"
+	.string "TEAM ROCKET thugs.$"
+
+Route115_EventScript_Giovanni::
+	lockall
+	playbgm MUS_RG_ENCOUNTER_ROCKET, FALSE
+	applymovement LOCAL_ID_GIOVANNI, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox Route115_Text_GiovanniPreBattle, MSGBOX_DEFAULT
+	closemessage
+	trainerbattle_no_intro TRAINER_GIOVANNI_1, Route115_Text_GiovanniDefeat
+	msgbox Route115_Text_GiovanniPostBattle, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCAL_ID_GIOVANNI, Route115_Movement_Giovanni
+	waitmovement 0
+	removeobject LOCAL_ID_GIOVANNI
+	removeobject LOCAL_ID_GRUNT_1
+	removeobject LOCAL_ID_GRUNT_2
+	setflag FLAG_GIOVANNI_FALLS
+	clearflag FLAG_115_ROXANNE
+	addobject LOCAL_ID_ROXANNE
+	applymovement LOCAL_ID_ROXANNE, Route115_Movement_Giovanni
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	msgbox Route115_Text_Roxanne, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Route115_Movement_Player
+	waitmovement 0
+	applymovement LOCAL_ID_ROXANNE, Route115_Movement_Roxanne
+	waitmovement 0
+	removeobject LOCAL_ID_ROXANNE
+	releaseall
+	end
 
