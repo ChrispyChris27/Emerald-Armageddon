@@ -101,25 +101,20 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 
 RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going?\p"
-	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
-	.string "I'm no TRAINER, not me, but I can\n"
-	.string "sure give you winning advice.\p"
-	.string "That's settled, then! We'll aim for the\n"
-	.string "POKéMON CHAMPIONSHIP together!\p"
-	.string "It's your job as a TRAINER to collect\n"
-	.string "GYM BADGES, am I right?\p"
-	.string "But GYM LEADERS aren't pushovers!\p"
-	.string "And that's where I come in!\n"
-	.string "I'm here to provide expert advice!\p"
 	.string "ROXANNE, the GYM LEADER, is a user\n"
 	.string "of ROCK-type POKéMON.\p"
 	.string "The ROCK type is very durable, but\n"
 	.string "it can't stand WATER-type and\l"
 	.string "GRASS-type moves.\p"
-	.string "Come see me afterwards, if you beat\n"
-	.string "the GYM LEADER.\p"
-	.string "Well, go for it!$"
+	.string "You'll also have to deal with this\n"
+	.string "SANDSTORM while in this gym.\p"
+	.string "That will boost the SPECIAL DEFENSE\n"
+	.string "of ROXANNE'S POKéMON and damage any\l"
+	.string "POKéMON of yours that aren't ROCK,\l"
+	.string "STEEL, or GROUND types.\p"
+	.string "You'll have to brave those elements\n"
+	.string "if you wish to earn the STONE BADGE!\p"
+	.string "Good luck!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "Whoa! What a breathtaking victory!\n"
@@ -129,7 +124,7 @@ RustboroCity_Gym_Text_GymGuidePostVictory:
 	.string "The STONE BADGE you got should be\n"
 	.string "properly recorded on it.\p"
 	.string "In other words…\p"
-	.string "You've climbed the first step on\n"
+	.string "You've climbed another step on\n"
 	.string "the stairs to the CHAMPIONSHIP!\p"
 	.string "That's got to feel awesome!$"
 
@@ -186,9 +181,6 @@ RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "It seems that I still have much more\n"
 	.string "to learn…\p"
 	.string "I understand.\p"
-	.string "The POKéMON LEAGUE's rules state\n"
-	.string "that TRAINERS are to be given this\l"
-	.string "if they defeat a GYM LEADER.\p"
 	.string "Please accept the official POKéMON\n"
 	.string "LEAGUE STONE BADGE.$"
 
@@ -207,11 +199,7 @@ RustboroCity_Gym_Text_ExplainRockTomb:
 	.string "That TECHNICAL MACHINE, TM39,\n"
 	.string "contains ROCK TOMB.\p"
 	.string "It not only inflicts damage by dropping\n"
-	.string "rocks, it also lowers SPEED.\p"
-	.string "If you use a TM, it instantly teaches\n"
-	.string "the move to a POKéMON.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+	.string "rocks, it also lowers SPEED.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
 	.string "Since you are so strong, you should\n"
@@ -277,3 +265,82 @@ RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
 	.string "You only have one POKéMON with you?\p"
 	.string "Please return with at least one more\n"
 	.string "POKéMON.$"
+
+RustboroCity_Gym_EventScript_Sandy::
+	trainerbattle_single TRAINER_SANDY, RustboroCity_Gym_Text_SandyIntro, RustboroCity_Gym_Text_SandyDefeat
+	msgbox RustboroCity_Gym_Text_SandyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RustboroCity_Gym_EventScript_Rocky::
+	trainerbattle_single TRAINER_ROCKY, RustboroCity_Gym_Text_RockyIntro, RustboroCity_Gym_Text_RockyDefeat
+	msgbox RustboroCity_Gym_Text_RockyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RustboroCity_Gym_EventScript_Rusty::
+	trainerbattle_single TRAINER_RUSTY, RustboroCity_Gym_Text_RustyIntro, RustboroCity_Gym_Text_RustyDefeat
+	msgbox RustboroCity_Gym_Text_RustyPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RustboroCity_Gym_EventScript_Gloria::
+	trainerbattle_single TRAINER_GLORIA, RustboroCity_Gym_Text_GloriaIntro, RustboroCity_Gym_Text_GloriaDefeat
+	msgbox RustboroCity_Gym_Text_GloriaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+RustboroCity_Gym_Text_SandyIntro:
+	.string "I prefer the warmth of a SANDSTORM\n"
+	.string "to the cold of a snowstorm\p"
+	.string "Which do you prefer?$"
+
+RustboroCity_Gym_Text_SandyDefeat:
+	.string "At least I remain warm in defeat.$"
+
+RustboroCity_Gym_Text_SandyPostBattle:
+	.string "The RUSTBORO GYM didn't always have\n"
+	.string "A SANDSTORM inside you know.\p"
+	.string "Back then we were a TRAINER'S first\n"
+	.string "GYM CHALLENGE rather than their fourth.$"
+
+RustboroCity_Gym_Text_RockyIntro:
+	.string "My parents were geologists who\n"
+	.string "adored rocks of all kinds.\p"
+	.string "I guess that's where my name\n"
+	.string "comes from.$"
+
+RustboroCity_Gym_Text_RockyDefeat:
+	.string "I got rocked.$"
+
+RustboroCity_Gym_Text_RockyPostBattle:
+	.string "If you see my friend Bullwinkle\n"
+	.string "on your travels send him my regards.$"
+
+RustboroCity_Gym_Text_GloriaIntro:
+	.string "Most women prefer to get their tan\n"
+	.string "at the beach.\p"
+	.string "I prefer to get it in the desert\n"
+	.string "as the sand particles gently graze\l"
+	.string "my skin.$"
+
+RustboroCity_Gym_Text_GloriaDefeat:
+	.string "You are much rougher than the sand.$"
+
+RustboroCity_Gym_Text_GloriaPostBattle:
+	.string "Even though I tan in the desert, I\n"
+	.string "still end up with sand in places\l"
+	.string "I'd rather not have it.$"
+
+RustboroCity_Gym_Text_RustyIntro:
+	.string "Hey there, thanks again for your\n"
+	.string "help back at METEOR FALLS!\p"
+	.string "Now it's my job to make sure\n"
+	.string "you're ready to fight ROXANNE!\p"
+	.string "Unlike her, I'm more interested\n"
+	.string "in GROUND type POKéMON!\p"
+	.string "Let's have an earth shattering\n"
+	.string "battle!$"
+
+RustboroCity_Gym_Text_RustyDefeat:
+	.string "I'd say you're ready alright!$"
+
+RustboroCity_Gym_Text_RustyPostBattle:
+	.string "I'd say you've got what it takes\n"
+	.string "to make it all the way!$"

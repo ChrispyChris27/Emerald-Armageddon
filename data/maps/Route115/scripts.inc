@@ -269,7 +269,7 @@ Route115_Text_Roxanne:
 	.string "We probably could have beaten them\n"
 	.string "in battle ourselves, but we decided\l"
 	.string "to wait it out and see what we could\l"
-	.string "learn about why they were here.\n"
+	.string "learn about why they were here.\p"
 	.string "Oh, so you know as well?\p"
 	.string "That they are trying to use the\n"
 	.string "METEORITES to somehow awaken the\l"

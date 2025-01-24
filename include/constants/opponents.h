@@ -789,10 +789,10 @@
 #define TRAINER_FALLS_GRUNT_12              783
 #define TRAINER_FALLS_GRUNT_13              784
 #define TRAINER_FALLS_GRUNT_14              785
-#define TRAINER_NORMAN_2                    786
-#define TRAINER_NORMAN_3                    787
-#define TRAINER_NORMAN_4                    788
-#define TRAINER_NORMAN_5                    789
+#define TRAINER_SANDY                       786
+#define TRAINER_ROCKY                       787
+#define TRAINER_RUSTY                       788
+#define TRAINER_GLORIA                      789
 #define TRAINER_FALLS_GRUNT_7               790
 #define TRAINER_FALLS_GRUNT_8               791
 #define TRAINER_FALLS_GRUNT_9               792

@@ -14,6 +14,10 @@ RustboroCity_Gym_SetGymTrainers::
 	settrainerflag TRAINER_JOSH
 	settrainerflag TRAINER_TOMMY
 	settrainerflag TRAINER_MARC
+	settrainerflag TRAINER_RUSTY
+	settrainerflag TRAINER_GLORIA
+	settrainerflag TRAINER_SANDY
+	settrainerflag TRAINER_ROCKY
 	return
 
 DewfordTown_Gym_SetGymTrainers::
