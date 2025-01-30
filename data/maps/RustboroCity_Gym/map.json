@@ -16,7 +16,7 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_ROXANNE",
-      "x": 9,
+      "x": 18,
       "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -29,7 +29,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 7,
+      "x": 14,
       "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -42,7 +42,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 12,
+      "x": 21,
       "y": 21,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
@@ -55,7 +55,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_MAN_2",
-      "x": 6,
+      "x": 15,
       "y": 23,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -94,7 +94,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
-      "x": 15,
+      "x": 29,
       "y": 14,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -107,7 +107,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_EXPERT_M",
-      "x": 13,
+      "x": 29,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
@@ -120,7 +120,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_HIKER",
-      "x": 7,
+      "x": 16,
       "y": 8,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
@@ -133,7 +133,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 8,
+      "x": 17,
       "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -146,7 +146,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 11,
+      "x": 20,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -159,7 +159,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 9,
+      "x": 18,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -172,7 +172,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 8,
+      "x": 17,
       "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -185,7 +185,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 9,
+      "x": 18,
       "y": 19,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -198,7 +198,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 10,
+      "x": 19,
       "y": 18,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -263,7 +263,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 9,
+      "x": 18,
       "y": 7,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -276,7 +276,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 8,
+      "x": 17,
       "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -289,7 +289,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 9,
+      "x": 18,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -302,7 +302,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 7,
+      "x": 16,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -315,7 +315,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 10,
+      "x": 19,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -328,7 +328,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 10,
+      "x": 19,
       "y": 6,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -341,7 +341,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 8,
+      "x": 17,
       "y": 4,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -354,7 +354,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 11,
+      "x": 20,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -367,7 +367,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 16,
+      "x": 34,
       "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -380,7 +380,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 17,
+      "x": 35,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -393,7 +393,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 18,
+      "x": 36,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -406,7 +406,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 18,
+      "x": 36,
       "y": 12,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -419,7 +419,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 17,
+      "x": 35,
       "y": 11,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -432,7 +432,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 16,
+      "x": 34,
       "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -445,7 +445,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 15,
+      "x": 33,
       "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -458,7 +458,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 11,
+      "x": 20,
       "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -471,7 +471,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PUSHABLE_BOULDER",
-      "x": 10,
+      "x": 19,
       "y": 20,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
@@ -498,14 +498,14 @@
   ],
   "warp_events": [
     {
-      "x": 9,
+      "x": 18,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY",
       "dest_warp_id": "0"
     },
     {
-      "x": 10,
+      "x": 19,
       "y": 24,
       "elevation": 0,
       "dest_map": "MAP_RUSTBORO_CITY",
@@ -518,7 +518,7 @@
   "bg_events": [
     {
       "type": "sign",
-      "x": 7,
+      "x": 16,
       "y": 23,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
@@ -526,7 +526,7 @@
     },
     {
       "type": "sign",
-      "x": 12,
+      "x": 21,
       "y": 23,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_NORTH",
