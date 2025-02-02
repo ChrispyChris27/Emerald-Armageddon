@@ -268,7 +268,7 @@ Route111_EventScript_Victor::
 	lock
 	faceplayer
 	setflag FLAG_LANDMARK_WINSTRATE_FAMILY
-	goto_if_unset FLAG_BADGE01_GET, Route111_EventScript_CantBattleYet
+	goto_if_unset FLAG_BADGE02_GET, Route111_EventScript_CantBattleYet
 	msgbox Route111_Text_BattleOurFamily, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, Route111_EventScript_BattleWinstrates
 	msgbox Route111_Text_IsThatSo, MSGBOX_DEFAULT

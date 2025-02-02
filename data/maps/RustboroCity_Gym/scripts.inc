@@ -169,11 +169,17 @@ RustboroCity_Gym_Text_MarcPostBattle:
 RustboroCity_Gym_Text_RoxanneIntro:
 	.string "Hello, I am ROXANNE, the RUSTBORO\n"
 	.string "POKéMON GYM LEADER.\p"
-	.string "I became a GYM LEADER so that I might\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+	.string "I'd like to thank you for evicting\n"
+	.string "TEAM ROCKET from METEOR FALLS.\p"
+	.string "I wish I had more to tell you about\n"
+	.string "their plans but I trust RUSTY filled\l"
+	.string "you in on what we do know.\p"
+	.string "Enough about TEAM ROCKET though.\p"
+	.string "I assume you have come here in order\n"
+	.string "to battle me?\p"
+	.string "Very well.\p"
+	.string "Allow me to show you the true power\n"
+	.string "of ROCK type POKéMON!$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "So…\n"
