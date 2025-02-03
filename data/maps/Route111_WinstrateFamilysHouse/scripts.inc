@@ -74,7 +74,7 @@ Route111_WinstrateFamilysHouse_Text_LikeYouToHaveMachoBrace:
 	.string "want to travel throughout HOENN.\p"
 	.string "In order to do that, you will have\n"
 	.string "to travel the seven seas!\p"
-	.string "This should enable you to continue\l"
+	.string "This should enable you to continue\n"
 	.string "your training.$"
 
 Route111_WinstrateFamilysHouse_Text_PassionateAboutBattles:
