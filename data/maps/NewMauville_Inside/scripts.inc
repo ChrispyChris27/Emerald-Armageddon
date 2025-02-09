@@ -261,3 +261,200 @@ NewMauville_Inside_Text_SteppedOnSwitchGeneratorStopped:
 	.string "… … … … … … … …\p"
 	.string "The generator appears to have\n"
 	.string "stopped…$"
+
+NewMauville_Inside_Text_Grunt3Intro:
+	.string "Impossible!\p"
+	.string "How did you manage to get inside!?$"
+
+NewMauville_Inside_Text_Grunt3Defeat:
+	.string "Yikes!$"
+
+NewMauville_Inside_Text_Grunt3Post:
+	.string "How did you get your hands on a key?$"
+
+NewMauville_Inside_Text_Grunt4Intro:
+	.string "I thought we had the only copy of the\n"
+	.string "BASEMENT KEY?$"
+
+NewMauville_Inside_Text_Grunt4Defeat:
+	.string "It was you who had the key to victory.$"
+
+NewMauville_Inside_Text_Grunt4Post:
+	.string "If you had a key to get in, I wonder\n"
+	.string "who else might stumble into our plan.$"
+
+NewMauville_Inside_Text_Grunt5Intro:
+	.string "You'll have to figure out the secret\n"
+	.string "of these switches to stop us!$"
+
+NewMauville_Inside_Text_Grunt5Defeat:
+	.string "My lips are still sealed!$"
+
+NewMauville_Inside_Text_Grunt5Post:
+	.string "There are green switches and blue\n"
+	.string "switches.\p"
+	.string "That's all you're getting from me!$"
+
+NewMauville_Inside_Text_Grunt6Intro:
+	.string "The boss intends to awaken an\n"
+	.string "ancient POKéMON!\p"
+	.string "I must help the boss achieve his\n"
+	.string "dream!$"
+
+NewMauville_Inside_Text_Grunt6Defeat:
+	.string "I've failed you boss. Forgive me.$"
+
+NewMauville_Inside_Text_Grunt6Post:
+	.string "MAXIE is an amazing boss.\p"
+	.string "Us grunts are very well compensated.$"
+
+NewMauville_Inside_Text_Grunt7Intro:
+	.string "The NEW MAUVILLE generator supplies\n"
+	.string "power throughout all of HOENN!\p"
+	.string "We intend to take over that power!$"
+
+NewMauville_Inside_Text_Grunt7Defeat:
+	.string "I didn't have enough power.$"
+
+NewMauville_Inside_Text_Grunt7Post:
+	.string "I'm just one of many who stand in\n"
+	.string "your way!\p"
+	.string "The others are even more powerful!$"
+
+NewMauville_Inside_Text_Grunt8Intro:
+	.string "Well what have we here?\p"
+	.string "You must be lost kid!\p"
+	.string "Only TEAM MAGMA should be in here!$"
+
+NewMauville_Inside_Text_Grunt8Defeat:
+	.string "I lost to a kid!?!?$"
+
+NewMauville_Inside_Text_Grunt8Post:
+	.string "Get lost!\p"
+	.string "I have nothing to say to you!$"
+
+NewMauville_Inside_Text_Grunt9Intro:
+	.string "How'd you get all the way back here?$"
+
+NewMauville_Inside_Text_Grunt9Defeat:
+	.string "This isn't good!$"
+
+NewMauville_Inside_Text_Grunt9Post:
+	.string "You may have made it this far, but\n"
+	.string "you won't make it any further back!$"
+
+NewMauville_Inside_Text_Grunt10Intro:
+	.string "You must be strong to have made it\n"
+	.string "this far, but you won't be getting\l"
+	.string "any further!$"
+
+NewMauville_Inside_Text_Grunt10Defeat:
+	.string "You were stronger than I thought!$"
+
+NewMauville_Inside_Text_Grunt10Post:
+	.string "Your strength is impressive but not\n"
+	.string "enough to stop us all!$"
+
+NewMauville_Inside_Text_Grunt11Intro:
+	.string "We aren't done with the generator yet!$"
+
+NewMauville_Inside_Text_Grunt11Defeat:
+	.string "You've generated a lot of trouble!$"
+
+NewMauville_Inside_Text_Grunt11Post:
+	.string "The generator produces a lot of power.\p"
+	.string "Power which we intend to use!$"
+
+NewMauville_Inside_Text_Grunt12Intro:
+	.string "Even if we can't beat you, stalling\n"
+	.string "you might be good enough!$"
+
+NewMauville_Inside_Text_Grunt12Defeat:
+	.string "We lasted as long as we could.$"
+
+NewMauville_Inside_Text_Grunt12Post:
+	.string "By now our plans here should be nearly\n"
+	.string "complete!$"
+
+NewMauville_Inside_Text_Grunt13Intro:
+	.string "If you can't beat me, you'll never\n"
+	.string "get through to the generator!$"
+
+NewMauville_Inside_Text_Grunt13Defeat:
+	.string "My mission!\n"
+	.string "I messed it up!$"
+
+NewMauville_Inside_Text_Grunt13Post:
+	.string "I was supposed to stop anyone from\n"
+	.string "reaching the switches below me.\p"
+	.string "I failed in my mission!$"
+
+NewMauville_Inside_Text_Grunt14Intro:
+	.string "The ancient POKéMON we seek...\p"
+	.string "We need the generator's power to\n"
+	.string "awaken it...\p"
+	.string "Which means I can't let you turn it off!$"
+
+NewMauville_Inside_Text_Grunt14Defeat:
+	.string "At least there's still one more line\n"
+	.string "of defense...$"
+
+NewMauville_Inside_Text_Grunt14Post:
+	.string "If you want to put a stop to all of\n"
+	.string "this, you'll have to take out someone\l"
+	.string "with real authority here!$"
+
+NewMauville_Inside_Text_Tabitha1:
+	.string "Just a little bit more power and\n"
+	.string "we'll be good to go.$"
+
+NewMauville_Inside_Text_Tabitha2:
+	.string "What are you doing here?\p"
+	.string "You aren't part of TEAM MAGMA!\p"
+	.string "You must be the meddlesome child\n"
+	.string "MAXIE warned me about.\p"
+	.string "I suppose you are wondering what\n"
+	.string "exactly it is we are doing here.\p"
+	.string "We at TEAM MAGMA seek to awaken a\n"
+	.string "powerful ancient POKéMON.\p"
+	.string "After a long time searching, we have\n"
+	.string "finally discovered its location.\p"
+	.string "To reach the POKéMON we were in need\n"
+	.string "of an immense amount of power.\p"
+	.string "That level of power is not normally\n"
+	.string "available thanks to limits placed on\l"
+	.string "the generator for safety.\p"
+	.string "This is why it was necessary for us\n"
+	.string "to infiltrate NEW MAUVILLE.\p"
+	.string "By removing the safety limits set on\n"
+	.string "the generator by WATTSON, MAXIE and \l"
+	.string "COURTNEY will be able blow away the\l"
+	.string "last obstacles in our way!\p"
+	.string "Of course, removing these limits has\n"
+	.string "led the generator to go haywire.\p"
+	.string "An inconvenience, although more for\n"
+	.string "the rest of HOENN than for us.\p"
+	.string "Now, like COURTNEY and MAXIE, I too\n"
+	.string "must remove an obstacle in our way.\p"
+	.string "That obstacle being you!$"
+
+NewMauville_Inside_Text_Tabitha3:
+	.string "No wonder MAXIE warned me about you.$"
+
+NewMauville_Inside_Text_Tabitha4:
+	.string "Fwahaha!\p"
+	.string "You may have defeated me, but you\n"
+	.string "were too late to foil our plans!\p"
+	.string "I've just gotten word that MAXIE\n"
+	.string "has found the POKéMON we seek!\p"
+	.string ""
+
+NewMauville_Inside_EventScript_Grunt3::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_3, NewMauville_Inside_Text_Grunt3Intro, NewMauville_Inside_Text_Grunt3Defeat
+	msgbox NewMauville_Inside_Text_Grunt3Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt4::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_4, NewMauville_Inside_Text_Grunt4Intro, NewMauville_Inside_Text_Grunt4Defeat
+	msgbox NewMauville_Inside_Text_Grunt4Post, MSGBOX_AUTOCLOSE
+	end

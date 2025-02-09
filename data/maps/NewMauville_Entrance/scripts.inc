@@ -56,3 +56,35 @@ NewMauville_Entrance_Text_UsedBasementKey:
 	.string "{PLAYER} used the BASEMENT KEY.\p"
 	.string "The door opened!$"
 
+NewMauville_Entrance_Text_Grunt1Intro:
+	.string "Intruder Alert!\n"
+	.string "Intruder Alert!$"
+
+NewMauville_Entrance_Text_Grunt2Intro:
+	.string "You aren't allowed to be in here!$"
+
+NewMauville_Entrance_Text_Grunt1Defeat:
+	.string "Oh no, I lost to the intruder!$"
+
+NewMauville_Entrance_Text_Grunt2Defeat:
+	.string "You should turn back anyways!$"
+
+NewMauville_Entrance_Text_Grunt1Post:
+	.string "Even though you beat us you won't\n"
+	.string "be able to get inside NEW MAUVILLE\l"
+	.string "without a key!$"
+
+NewMauville_Entrance_Text_Grunt2Post:
+	.string "The others got inside using a forged\n"
+	.string "key, but that's long gone by now!$"
+
+NewMauville_Entrance_EventScript_Grunt1::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_1, NewMauville_Entrance_Text_Grunt1Intro, NewMauville_Entrance_Text_Grunt1Defeat
+	msgbox NewMauville_Entrance_Text_Grunt1Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Entrance_EventScript_Grunt2::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_2, NewMauville_Entrance_Text_Grunt2Intro, NewMauville_Entrance_Text_Grunt2Defeat
+	msgbox NewMauville_Entrance_Text_Grunt2Post, MSGBOX_AUTOCLOSE
+	end
+

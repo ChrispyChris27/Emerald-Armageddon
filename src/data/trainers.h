@@ -32672,11 +32672,11 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_MAUVILLE_GRUNT_1 ] =
     {
-        .trainerName = _("FERNANDO"),
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
@@ -32710,11 +32710,11 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_MAUVILLE_GRUNT_2] =
     {
-        .trainerName = _("FERNANDO"),
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
@@ -32748,11 +32748,11 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_MAUVILLE_GRUNT_3] =
     {
-        .trainerName = _("FERNANDO"),
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
@@ -32786,11 +32786,11 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_MAUVILLE_GRUNT_4] =
     {
-        .trainerName = _("FERNANDO"),
-        .trainerClass = TRAINER_CLASS_GUITARIST,
-        .trainerPic = TRAINER_PIC_GUITARIST,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
         .partySize = 3,
@@ -32824,11 +32824,11 @@ F_TRAINER_FEMALE |
     },
     [TRAINER_MAUVILLE_GRUNT_5] =
     {
-        .trainerName = _("SAWYER"),
-        .trainerClass = TRAINER_CLASS_HIKER,
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_MAGMA,
         .doubleBattle = FALSE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
         .partySize = 2,

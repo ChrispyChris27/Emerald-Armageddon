@@ -102,6 +102,10 @@ Route118_EventScript_StevenTrigger::
 	waitmovement 0
 	delay 30
 	msgbox Route118_Text_StevenQuestions, MSGBOX_DEFAULT
+	giveitem ITEM_MEGA_RING
+	msgbox Route118_Text_StevenMega, MSGBOX_DEFAULT
+	giveitem ITEM_MAWILITE
+	msgbox Route_118_Text_StevenMawile, MSGBOX_DEFAULT
 	closemessage
 	call_if_eq VAR_0x8008, 0, Route118_EventScript_StevenExit0
 	call_if_eq VAR_0x8008, 1, Route118_EventScript_StevenExit1
@@ -257,11 +261,34 @@ Route118_Text_StevenQuestions:
 	.string "favorites, that's fine.\p"
 	.string "Perhaps you find it more fun to raise\n"
 	.string "all sorts of POKéMON.\p"
-	.string "As a TRAINER of POKéMON,\n"
-	.string "what do you think?\p"
-	.string "Of course, it's not any of my business.\p"
-	.string "It would be nice if we were to meet\n"
-	.string "again somewhere.$"
+	.string "Regardless, I think this will help you\n"
+	.string "continue getting stronger.$"
+
+Route118_Text_StevenMega:
+	.string "That MEGA RING allows certain species\n"
+	.string "of POKéMON to transform into a more\l"
+	.string "powerful form in battle.\p"
+	.string "Not every POKéMON is capable of MEGA\n"
+	.string "EVOLUTION however.\p"
+	.string "The POKéMON you intend to MEGA EVOLVE\n"
+	.string "also needs to be holding its MEGA STONE.\p"
+	.string "You will likely encounter some of these\n"
+	.string "stones throughout your travels, but allow\l"
+	.string "me to start off your collection with\l"
+	.string "this one.$"
+
+Route_118_Text_StevenMawile:
+	.string "The MAWILITE allows MAWILE to mega\n"
+	.string "evolve.\p"
+	.string "MAWILE is one of the many STEEL type\n"
+	.string "POKéMON I adore.\p"
+	.string "Please put its mega stone to good use.\p"
+	.string "By the way, I heard that TEAM AQUA was\n"
+	.string "recently sighted nearby.\p"
+	.string "I have matters I must attend to but\n"
+	.string "perhaps you could pay them a visit for me?\p"
+	.string "I'm sure our paths will cross again soon.\p"
+	.string "Farewell for now.$"
 
 Route118_Text_YouAgreeGoodRodIsGood:
 	.string "Hmm!\n"
@@ -299,4 +326,24 @@ Route118_Text_RouteSignMauville:
 Route118_Text_RouteSign119:
 	.string "ROUTE 118\n"
 	.string "{UP_ARROW} ROUTE 119$"
+
+Route118_Text_Grunt1:
+	.string "What are you looking at punk?\p"
+	.string "TEAM MAGMA has business in these\n"
+	.string "parts so you better get lost!$"
+
+Route118_Text_Grunt2:
+	.string "The boss was looking for a source\n"
+	.string "of energy that was strong enough to\l"
+	.string "awaken GROUDON.\p"
+	.string "Oh no! I wasn't supposed to mention\n"
+	.string "GROUDON!$"
+
+Route118_EventScript_Grunt1::
+	msgbox Route118_Text_Grunt1, MSGBOX_NPC
+	end
+
+Route118_EventScript_Grunt2::
+	msgbox Route118_Text_Grunt2, MSGBOX_NPC
+	end
 
