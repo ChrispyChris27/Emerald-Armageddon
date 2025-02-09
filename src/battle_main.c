@@ -42,6 +42,7 @@
 #include "pokemon.h"
 #include "random.h"
 #include "recorded_battle.h"
+#include "reshow_battle_screen.h"
 #include "roamer.h"
 #include "safari_zone.h"
 #include "scanline_effect.h"
@@ -3723,6 +3724,10 @@ static void DoBattleIntro(void)
             }
 
             PrepareStringBattle(STRINGID_INTROSENDOUT, battler);
+        }
+        else
+        {
+            CreateBattlerSprite(GetBattlerAtPosition(B_POSITION_PLAYER_LEFT));
         }
         gBattleStruct->introState++;
         break;
