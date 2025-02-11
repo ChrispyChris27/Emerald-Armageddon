@@ -58,15 +58,7 @@ Route120_EventScript_SetBridgeKecleonMovement::
 
 Route120_OnTransition:
 	call GabbyAndTy_EventScript_UpdateLocation
-	call Route120_EventScript_SetWeather
 	end
-
-Route120_EventScript_SetWeather::
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-	goto_if_le VAR_TEMP_1, 14, Route120_EventScript_SetSunnyWeather
-	goto_if_le VAR_TEMP_1, 60, Route120_EventScript_TrySetRainyWeather
-	goto_if_ge VAR_TEMP_1, 61, Route120_EventScript_SetCloudyWeather
-	return
 
 Route120_EventScript_SetCloudyWeather::
 	setweather WEATHER_SUNNY_CLOUDS
@@ -404,10 +396,20 @@ Route120_Text_StevenGiveDevonScope:
 	.string "concealed POKéMON.$"
 
 Route120_Text_StevenGoodbye:
-	.string "STEVEN: {PLAYER}{KUN}.\p"
-	.string "I enjoy seeing POKéMON and TRAINERS\n"
-	.string "who strive together.\p"
-	.string "I think you're doing great.\p"
+	.string "STEVEN: Unfortunately, the DEVON\n"
+	.string "SCOPE doesn't seem to have any\l"
+	.string "effect on these PSYDUCK blocking\l"
+	.string "the edge of the bridge.\p"
+	.string "I've heard that PSYDUCK sometimes\n"
+	.string "get headaches in areas of dense fog\l"
+	.string "like this.\p"
+	.string "I've contacted a TRAINER from the\n"
+	.string "SINNOH region where this is more\l"
+	.string "common to provide some assistance.\p"
+	.string "She should be here soon, but in\n"
+	.string "the meantime, why not take on the\l"
+	.string "FORTREE GYM?\p"
+	.string "I think you'll do great.\p"
 	.string "Well, let's meet again somewhere.$"
 
 Kecleon_Text_SomethingUnseeable:
@@ -430,3 +432,20 @@ Route120_Text_RouteSignFortree:
 Route120_Text_RouteSign121:
 	.string "{RIGHT_ARROW} ROUTE 121\n"
 	.string "{LEFT_ARROW} ROUTE 120$"
+
+Route120_Text_Psyduck:
+	.string "PSY?\p"
+	.string "DUCK?$"
+
+Route120_Text_PsyduckMove:
+	.string "The PSYDUCK don't seem to feel\n"
+	.string "like moving right now.$"
+
+Route120_EventScript_Psyduck::
+	lockall
+	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
+	msgbox Route120_Text_Psyduck, MSGBOX_DEFAULT
+	msgbox Route120_Text_PsyduckMove, MSGBOX_AUTOCLOSE
+	releaseall
+	end
+	

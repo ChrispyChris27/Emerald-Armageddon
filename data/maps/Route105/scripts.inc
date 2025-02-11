@@ -126,7 +126,7 @@ Route105_Text_Give_Mints:
 	.string "so I could see what mints grow best in\l"
 	.string "an island environment.\p"
 	.string "Please allow me to share the fruits of\n"
-	.string "that experiment with you!"
+	.string "that experiment with you!$"
 
 Route105_Received_Mints:
 	.string "Those mints will allow you to raise\n"

@@ -288,5 +288,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_MINTS_7
 	setflag FLAG_MINTS_8
 	setflag FLAG_MINTS_9
+	setflag FLAG_CYNTHIA_120
 	call EventScript_ResetAllBerries
 	end

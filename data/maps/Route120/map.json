@@ -5,7 +5,7 @@
   "music": "MUS_ROUTE120",
   "region_map_section": "MAPSEC_ROUTE_120",
   "requires_flash": false,
-  "weather": "WEATHER_SUNNY",
+  "weather": "WEATHER_FOG_HORIZONTAL",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -307,7 +307,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_FULL_HEAL",
+      "trainer_sight_or_berry_tree_id": "ITEM_PINSIRITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_120_FULL_HEAL"
     },
@@ -469,14 +469,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_NINJA_BOY",
-      "x": 19,
-      "y": 28,
+      "x": 7,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_TREE_DISGUISE",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "Route120_EventScript_Riley",
       "flag": "0"
     },
@@ -560,14 +560,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
-      "x": 19,
-      "y": 32,
+      "x": 7,
+      "y": 17,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "Route120_EventScript_Callie",
       "flag": "0"
     },
@@ -596,6 +596,45 @@
       "trainer_sight_or_berry_tree_id": "ITEM_REVIVE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_120_REVIVE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PSYDUCK)",
+      "x": 8,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route120_EventScript_Psyduck",
+      "flag": "FLAG_BADGE06_GET"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PSYDUCK)",
+      "x": 8,
+      "y": 16,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_SLOWLY_IN_PLACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route120_EventScript_Psyduck",
+      "flag": "FLAG_BADGE06_GET"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_CYNTHIA",
+      "x": 9,
+      "y": 15,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_CYNTHIA_120"
     }
   ],
   "warp_events": [
@@ -617,31 +656,17 @@
   "coord_events": [
     {
       "type": "weather",
-      "x": 7,
-      "y": 15,
-      "elevation": 0,
-      "weather": "COORD_EVENT_WEATHER_RAIN"
-    },
-    {
-      "type": "weather",
-      "x": 7,
-      "y": 16,
-      "elevation": 0,
-      "weather": "COORD_EVENT_WEATHER_RAIN"
-    },
-    {
-      "type": "weather",
       "x": 22,
       "y": 61,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_RAIN"
+      "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
       "x": 12,
       "y": 64,
       "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_RAIN"
+      "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
     },
     {
       "type": "weather",
@@ -677,27 +702,6 @@
       "y": 88,
       "elevation": 5,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
-    },
-    {
-      "type": "weather",
-      "x": 28,
-      "y": 15,
-      "elevation": 0,
-      "weather": "COORD_EVENT_WEATHER_SUNNY"
-    },
-    {
-      "type": "weather",
-      "x": 28,
-      "y": 16,
-      "elevation": 0,
-      "weather": "COORD_EVENT_WEATHER_SUNNY"
-    },
-    {
-      "type": "weather",
-      "x": 28,
-      "y": 17,
-      "elevation": 3,
-      "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",

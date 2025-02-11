@@ -1,4 +1,4 @@
-.set LOCALID_STEVEN, 19
+.set LOCALID_STEVEN, 18
 
 Route118_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route118_OnTransition
@@ -259,10 +259,10 @@ Route118_Text_StevenQuestions:
 	.string "in this wide world of ours.\p"
 	.string "If you wanted to raise only your\n"
 	.string "favorites, that's fine.\p"
-	.string "Perhaps you find it more fun to raise\n"
-	.string "all sorts of POKéMON.\p"
-	.string "Regardless, I think this will help you\n"
-	.string "continue getting stronger.$"
+	.string "Perhaps you find it more fun to \n"
+	.string "raise all sorts of POKéMON.\p"
+	.string "Regardless, I think this will help\n"
+	.string "you continue getting stronger.$"
 
 Route118_Text_StevenMega:
 	.string "That MEGA RING allows certain species\n"
@@ -273,9 +273,9 @@ Route118_Text_StevenMega:
 	.string "The POKéMON you intend to MEGA EVOLVE\n"
 	.string "also needs to be holding its MEGA STONE.\p"
 	.string "You will likely encounter some of these\n"
-	.string "stones throughout your travels, but allow\l"
-	.string "me to start off your collection with\l"
-	.string "this one.$"
+	.string "stones throughout your travels, but \l"
+	.string "allow me to start off your collection \l"
+	.string "with this one.$"
 
 Route_118_Text_StevenMawile:
 	.string "The MAWILITE allows MAWILE to mega\n"
@@ -286,8 +286,8 @@ Route_118_Text_StevenMawile:
 	.string "By the way, I heard that TEAM AQUA was\n"
 	.string "recently sighted nearby.\p"
 	.string "I have matters I must attend to but\n"
-	.string "perhaps you could pay them a visit for me?\p"
-	.string "I'm sure our paths will cross again soon.\p"
+	.string "perhaps you could pay them a visit?\p"
+	.string "I'm sure our paths will cross again.\p"
 	.string "Farewell for now.$"
 
 Route118_Text_YouAgreeGoodRodIsGood:

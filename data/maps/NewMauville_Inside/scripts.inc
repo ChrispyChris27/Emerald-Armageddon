@@ -1,3 +1,6 @@
+.set LOCALID_TABITHA, 21
+.set LOCALID_GRUNT, 20
+
 NewMauville_Inside_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, NewMauville_Inside_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, NewMauville_Inside_OnTransition
@@ -447,7 +450,11 @@ NewMauville_Inside_Text_Tabitha4:
 	.string "were too late to foil our plans!\p"
 	.string "I've just gotten word that MAXIE\n"
 	.string "has found the POKéMON we seek!\p"
-	.string ""
+	.string "Go ahead and return the generator\n"
+	.string "to normal.\p"
+	.string "It is time for TEAM MAGMA to depart\n"
+	.string "from here and continue the next stage\l"
+	.string "of our operation!$"
 
 NewMauville_Inside_EventScript_Grunt3::
 	trainerbattle_single TRAINER_MAUVILLE_GRUNT_3, NewMauville_Inside_Text_Grunt3Intro, NewMauville_Inside_Text_Grunt3Defeat
@@ -457,4 +464,75 @@ NewMauville_Inside_EventScript_Grunt3::
 NewMauville_Inside_EventScript_Grunt4::
 	trainerbattle_single TRAINER_MAUVILLE_GRUNT_4, NewMauville_Inside_Text_Grunt4Intro, NewMauville_Inside_Text_Grunt4Defeat
 	msgbox NewMauville_Inside_Text_Grunt4Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt5::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_5, NewMauville_Inside_Text_Grunt5Intro, NewMauville_Inside_Text_Grunt5Defeat
+	msgbox NewMauville_Inside_Text_Grunt5Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt6::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_6, NewMauville_Inside_Text_Grunt6Intro, NewMauville_Inside_Text_Grunt6Defeat
+	msgbox NewMauville_Inside_Text_Grunt6Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt7::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_7, NewMauville_Inside_Text_Grunt7Intro, NewMauville_Inside_Text_Grunt7Defeat
+	msgbox NewMauville_Inside_Text_Grunt7Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt8::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_8, NewMauville_Inside_Text_Grunt8Intro, NewMauville_Inside_Text_Grunt8Defeat
+	msgbox NewMauville_Inside_Text_Grunt8Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt9::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_9, NewMauville_Inside_Text_Grunt9Intro, NewMauville_Inside_Text_Grunt9Defeat
+	msgbox NewMauville_Inside_Text_Grunt9Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt10::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_10, NewMauville_Inside_Text_Grunt10Intro, NewMauville_Inside_Text_Grunt10Defeat
+	msgbox NewMauville_Inside_Text_Grunt10Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt11::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_11, NewMauville_Inside_Text_Grunt11Intro, NewMauville_Inside_Text_Grunt11Defeat
+	msgbox NewMauville_Inside_Text_Grunt11Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt12::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_12, NewMauville_Inside_Text_Grunt12Intro, NewMauville_Inside_Text_Grunt12Defeat
+	msgbox NewMauville_Inside_Text_Grunt12Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt13::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_13, NewMauville_Inside_Text_Grunt13Intro, NewMauville_Inside_Text_Grunt13Defeat
+	msgbox NewMauville_Inside_Text_Grunt13Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Grunt14::
+	trainerbattle_single TRAINER_MAUVILLE_GRUNT_14, NewMauville_Inside_Text_Grunt14Intro, NewMauville_Inside_Text_Grunt14Defeat
+	msgbox NewMauville_Inside_Text_Grunt14Post, MSGBOX_AUTOCLOSE
+	end
+
+NewMauville_Inside_EventScript_Tabitha::
+	lockall
+	msgbox NewMauville_Inside_Text_Tabitha1, MSGBOX_DEFAULT
+	applymovement LOCALID_TABITHA, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_TABITHA, Common_Movement_FacePlayer
+	waitmovement 0
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
+	msgbox NewMauville_Inside_Text_Tabitha2, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_TABITHA_NM, NewMauville_Inside_Text_Tabitha3
+	playbgm MUS_ENCOUNTER_MAGMA, FALSE
+	msgbox NewMauville_Inside_Text_Tabitha4, MSGBOX_DEFAULT
+	fadedefaultbgm
+	fadescreen FADE_TO_BLACK 
+	setflag FLAG_118_GRUNTS
+	removeobject LOCALID_TABITHA
+	removeobject LOCALID_GRUNT
+	fadescreen FADE_FROM_BLACK 
+	releaseall
 	end

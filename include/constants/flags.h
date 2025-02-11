@@ -666,7 +666,7 @@
 #define FLAG_GIOVANNI_FALLS     0x26B // Unused Flag
 #define FLAG_RIVAL_BRIDGE       0x26C // Unused Flag
 #define FLAG_RIVAL_LILYCOVE     0x26D // Unused Flag
-#define FLAG_SHELLY_WINSTITUTE  0x26E // Unused Flag
+#define FLAG_CYNTHIA_120        0x26E // Unused Flag
 #define FLAG_ARCHIE_PYRE        0x26F // Unused Flag
 #define FLAG_HIDEOUT_MAXIE      0x270 // Unused Flag
 #define FLAG_HIDEOUT_MATT       0x271 // Unused Flag
