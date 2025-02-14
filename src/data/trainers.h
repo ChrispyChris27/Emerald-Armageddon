@@ -24735,7 +24735,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -24746,12 +24746,12 @@ F_TRAINER_FEMALE |
             .lvl = 64,
             .nature = NATURE_ADAMANT,
             .ability = ABILITY_WONDER_GUARD,
-            .heldItem = ITEM_ABILITY_SHIELD,
+            .heldItem = ITEM_FOCUS_SASH,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_PIN_MISSILE,
                 MOVE_SPIRIT_SHACKLE,
-                MOVE_QUICK_GUARD,
+                MOVE_ALLY_SWITCH,
                 MOVE_SWORDS_DANCE,
             },
             },
@@ -28668,7 +28668,7 @@ F_TRAINER_FEMALE |
 F_TRAINER_FEMALE | 
             TRAINER_ENCOUNTER_MUSIC_INTENSE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {

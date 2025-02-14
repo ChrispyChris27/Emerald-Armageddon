@@ -685,7 +685,7 @@
 #define FLAG_HIDE_REGIELEKI     0x27E // Unused Flag
 #define FLAG_HIDE_REGIDRAGO     0x27F // Unused Flag
 #define FLAG_115_ROXANNE        0x280 // Unused Flag
-#define FLAG_UNUSED_0x281  0x281 // Unused Flag
+#define FLAG_PSYDUCKS           0x281 // Unused Flag
 #define FLAG_UNUSED_0x282  0x282 // Unused Flag
 #define FLAG_UNUSED_0x283  0x283 // Unused Flag
 #define FLAG_UNUSED_0x284  0x284 // Unused Flag

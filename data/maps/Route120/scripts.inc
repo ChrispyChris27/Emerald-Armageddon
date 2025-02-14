@@ -1,5 +1,8 @@
 .set LOCALID_BRIDGE_KECLEON, 30
 .set LOCALID_STEVEN, 31
+.set LOCALID_DUCK1, 45
+.set LOCALID_DUCK2, 46
+.set LOCALID_CYNTHIA, 47
 .set LOCALID_BRIDGE_KECLEON_SHADOW, 36  @ They use a second object which is identical to Kecleon but has a reflection palette tag for the bridge shadow
 
 Route120_MapScripts::
@@ -441,6 +444,35 @@ Route120_Text_PsyduckMove:
 	.string "The PSYDUCK don't seem to feel\n"
 	.string "like moving right now.$"
 
+Route120_Text_Cynthia1:
+	.string "Here you go PSYDUCK, drink up.$"
+
+Route120_Text_Cynthia2:
+	.string "Ahh, you must be {PLAYER}{KUN},\n"
+	.string "STEVEN told me about you.\p"
+	.string "My name is CYNTHIA.\p"
+	.string "I flew here from the SINNOH region\n"
+	.string "where I reside as CHAMPION.\p"
+	.string "STEVEN had mentioned to me that there\n"
+	.string "were some PSYDUCK blocking a bridge,\l"
+	.string "and asked for my assistance in moving\l"
+	.string "them along.\p"
+	.string "This happens much more frequently in\n"
+	.string "the SINNOH region.\p"
+	.string "PSYDUCK are often blocking paths in\n"
+	.string "foggy areas because it gives them\l"
+	.string "headaches.\p"
+	.string "It seems the fog is much more common\n"
+	.string "in SINNOH however.\p"
+	.string "Anyways, now that the PSYDUCK have\n"
+	.string "moved along, you can continue on\l"
+	.string "your journey.\p"
+	.string "LILYCOVE CITY and the SAFARI ZONE are\n"
+	.string "just beyond this route.\p"
+	.string "Perhaps one of these days, you and I\n"
+	.string "will have a battle of our own.\p"
+	.string "Farewell for now.$"
+
 Route120_EventScript_Psyduck::
 	lockall
 	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
@@ -448,4 +480,42 @@ Route120_EventScript_Psyduck::
 	msgbox Route120_Text_PsyduckMove, MSGBOX_AUTOCLOSE
 	releaseall
 	end
+
+Route120DuckExit:
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Route120_EventScript_Cynthia::
+	lockall
+	msgbox Route120_Text_Cynthia1, MSGBOX_DEFAULT
+	playmoncry SPECIES_PSYDUCK, CRY_MODE_NORMAL
+	msgbox Route120_Text_Psyduck, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_DUCK1, Route120DuckExit
+	applymovement LOCALID_DUCK2, Route120DuckExit
+	waitmovement 0
+	removeobject LOCALID_DUCK1
+	removeobject LOCALID_DUCK2
+	applymovement LOCALID_CYNTHIA, Common_Movement_FacePlayer
+	msgbox Route120_Text_Cynthia2, MSGBOX_AUTOCLOSE
+	waitmovement 0
+	delay 50
+	setfieldeffectargument 0, 1
+	dofieldeffect FLDEFF_NPCFLY_OUT
+	delay 15
+	removeobject LOCALID_CYNTHIA
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+	releaseall
+	end
+	
+
+
 	
