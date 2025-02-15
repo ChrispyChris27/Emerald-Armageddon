@@ -15216,7 +15216,7 @@ static void Cmd_handleballthrow(void)
                 break;
             case BALL_SAFARI:
                 if (B_SAFARI_BALL_MODIFIER <= GEN_7)
-                    ballMultiplier = 150;
+                    ballMultiplier = 25500;
                 break;
             case BALL_NET:
                 if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_WATER) || IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_BUG))

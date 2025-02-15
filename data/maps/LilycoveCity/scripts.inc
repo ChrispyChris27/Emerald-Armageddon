@@ -392,6 +392,7 @@ LilycoveCity_EventScript_RivalFlyAway::
 	savebgm MUS_DUMMY
 	fadedefaultbgm
 	setflag FLAG_MET_RIVAL_LILYCOVE
+	setflag FLAG_RIVAL_LILYCOVE
 	release
 	end
 
