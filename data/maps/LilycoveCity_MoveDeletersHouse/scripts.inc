@@ -71,7 +71,12 @@ LilycoveCity_MoveDeletersHouse_EventScript_LastMonWithSurf::
 LilycoveCity_MoveDeletersHouse_Text_ICanMakeMonForgetMove:
 	.string "Uh…\n"
 	.string "Oh, yes, I'm the MOVE DELETER.\p"
-	.string "I can make POKéMON forget their moves.\p"
+	.string "I know that nowadays POKéMON can forget\n"
+	.string "even HMs on their own, but there may\l"
+	.string "be a reason you'd like your POKéMON to\l"
+	.string "know less than four moves.\p"
+	.string "If you'd like, I can make your POKéMON\n"
+	.string "forget some of their moves.\p"
 	.string "Would you like me to do that?$"
 
 LilycoveCity_MoveDeletersHouse_Text_WhichMonShouldForget:

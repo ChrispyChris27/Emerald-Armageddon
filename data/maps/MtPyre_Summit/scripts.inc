@@ -49,6 +49,23 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_ArchieFacePlayer2
 	msgbox MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo, MSGBOX_DEFAULT
 	closemessage
+	delay 20
+	playse SE_M_DETECT
+	setvar VAR_RESULT, 1
+	playfanfare MUS_AWAKEN_LEGEND
+	playse SE_ORB
+	special DoOrbEffect
+	waitmovement 0
+	delay 350
+	special FadeOutOrbEffect
+	setweather WEATHER_RAIN
+	doweather
+	waitstate
+	delay 200
+	msgbox MtPyre_Summit_ArchieIntro, MSGBOX_AUTOCLOSE
+	trainerbattle_no_intro TRAINER_ARCHIE_PYRE, ArchiePyreDefeat_Text
+	msgbox MtPyre_Summit_ArchieDepart, MSGBOX_DEFAULT
+	closemessage
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_ARCHIE
 	removeobject LOCALID_GRUNT_1
@@ -58,6 +75,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
 	fadedefaultbgm
+	resetweather
 	fadescreen FADE_FROM_BLACK
 	delay 20
 	setvar VAR_MT_PYRE_STATE, 1
@@ -66,6 +84,8 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	call_if_eq VAR_0x8008, 2, MtPyre_Summit_EventScript_OldLadyApproachPlayer2
 	msgbox MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis, MSGBOX_DEFAULT
 	giveitem ITEM_MAGMA_EMBLEM
+	msgbox MtPyre_Summit_ThirdOrb, MSGBOX_DEFAULT
+	giveitem ITEM_LIFE_ORB
 	setflag FLAG_RECEIVED_RED_OR_BLUE_ORB
 	setflag FLAG_HIDE_JAGGED_PASS_MAGMA_GUARD
 	releaseall
@@ -492,12 +512,11 @@ MtPyre_Summit_Text_Grunt4PostBattle:
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
 	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
 	.string "of us, but we also got what we wanted.\p"
-	.string "The RED ORB preserved at MT. PYRE…\n"
+	.string "The BLUE ORB preserved at MT. PYRE…\n"
 	.string "I, ARCHIE, now have it in my possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
-	.string "Okay, TEAM!\n"
-	.string "We're pulling out!$"
+	.string "Gaze upon the power of the BLUE ORB!$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 	.string "Oh, no…\n"
@@ -511,7 +530,7 @@ MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "Oh, yes. Was it TEAM MAGMA who came\n"
-	.string "and took the BLUE ORB first?\p"
+	.string "and took the RED ORB first?\p"
 	.string "Well, in their haste, they left this\n"
 	.string "behind.\p"
 	.string "I couldn't imagine what exactly it\n"
@@ -622,4 +641,38 @@ MtPyre_Summit_Text_HoennTrioTale:
 	.string "becalmed the two enraged POKéMON.\p"
 	.string "Then, its duty done, the green POKéMON\n"
 	.string "flew off into the wild blue yonder…$"
+
+ArchiePyreDefeat_Text:
+	.string "What strength from a mere child!$"
+
+MtPyre_Summit_ArchieIntro:
+	.string "Fwahahaha!\p"
+	.string "The BLUE ORB has summoned the rain\n"
+	.string "just as we predicted!\p"
+	.string "We are mere steps away from finding\n"
+	.string "the ancient POKéMON that we seek!\p"
+	.string "Now just as this rain has extinguished\n"
+	.string "the fog that lay at the top of this\l"
+	.string "mountain, I shall extinguish you!\p"
+	.string "No longer shall you meddle in the\n"
+	.string "affairs of TEAM AQUA!$"
+
+MtPyre_Summit_ArchieDepart:
+	.string "Hmmph. You may have beaten me,\n"
+	.string "but I still have the BLUE ORB!\p"
+	.string "With this in my possession there\n"
+	.string "is nothing you can do to stop me!\p"
+	.string "Come on TEAM AQUA, it's time to depart!\p"
+	.string "Our plans are almost complete, the\n"
+	.string "final preparations can now begin!$"
+
+MtPyre_Summit_ThirdOrb:
+	.string "You seem to be a good trainer,\n"
+	.string "unlike the two who took the RED ORB\l"
+	.string "and the BLUE ORB.\p"
+	.string "Please allow us to entrust you with\n"
+	.string "the third and final orb that we guard\l"
+	.string "atop this mountain.\p"
+	.string "May you someday reunite this purple orb\n"
+	.string "with the RED ORB and BLUE ORB.$"
 
