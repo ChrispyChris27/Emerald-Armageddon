@@ -336,6 +336,7 @@ static bool8 CanBurnHitThaw(u16 move);
 static u32 GetNextTarget(u32 moveTarget, bool32 excludeCurrent);
 static void TryUpdateEvolutionTracker(u32 evolutionMethod, u32 upAmount, u16 usedMove);
 static void AccuracyCheck(bool32 recalcDragonDarts, const u8 *nextInstr, const u8 *failInstr, u16 move);
+static void ResetValuesForCalledMove(void);
 
 static void Cmd_attackcanceler(void);
 static void Cmd_accuracycheck(void);
@@ -8138,6 +8139,18 @@ static void Cmd_hidepartystatussummary(void)
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
+static void ResetValuesForCalledMove(void)
+{
+    if (gBattlerByTurnOrder[gCurrentTurnActionNumber] != gBattlerAttacker)
+        gBattleStruct->atkCancellerTracker = 0;
+    else
+        SetAtkCancellerForCalledMove();
+    gBattleScripting.animTurn = 0;
+    gBattleScripting.animTargetsHit = 0;
+    SetTypeBeforeUsingMove(gCurrentMove, gBattlerAttacker);
+    HandleMoveTargetRedirection();
+}
+
 static void Cmd_jumptocalledmove(void)
 {
     CMD_ARGS(bool8 notChosenMove);
@@ -8146,6 +8159,8 @@ static void Cmd_jumptocalledmove(void)
         gCurrentMove = gCalledMove;
     else
         gChosenMove = gCurrentMove = gCalledMove;
+
+    ResetValuesForCalledMove();
 
     gBattlescriptCurrInstr = GET_MOVE_BATTLESCRIPT(gCurrentMove);
 }
@@ -10198,10 +10213,8 @@ static void Cmd_various(void)
                 gBattlescriptCurrInstr = cmd->failInstr;
             else
             {
-                SetTypeBeforeUsingMove(gCalledMove, gBattlerTarget);
                 gEffectBattler = gBattleStruct->lastMoveTarget[gBattlerTarget];
                 gHitMarker &= ~HITMARKER_ATTACKSTRING_PRINTED;
-                gBattleStruct->atkCancellerTracker = 0;
                 PREPARE_MON_NICK_WITH_PREFIX_BUFFER(gBattleTextBuff1, battler, gBattlerPartyIndexes[battler]);
                 gBattlescriptCurrInstr = cmd->nextInstr;
             }
@@ -11217,8 +11230,8 @@ static void SetMoveForMirrorMove(u32 move)
         gCurrentMove = move;
     }
 
-    SetAtkCancellerForCalledMove();
     gBattlerTarget = GetMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
+    ResetValuesForCalledMove();
     gBattlescriptCurrInstr = GET_MOVE_BATTLESCRIPT(gCurrentMove);
 }
 
@@ -12043,7 +12056,6 @@ static void Cmd_forcerandomswitch(void)
 {
     CMD_ARGS(const u8 *failInstr);
 
-    s32 i;
     s32 battler1PartyId = 0;
     s32 battler2PartyId = 0;
 
@@ -12178,7 +12190,7 @@ static void Cmd_forcerandomswitch(void)
             battler1PartyId = gBattlerPartyIndexes[gBattlerTarget];
         }
 
-        for (i = firstMonId; i < lastMonId; i++)
+        for (u32 i = firstMonId; i < lastMonId; i++)
         {
             if (GetMonData(&party[i], MON_DATA_SPECIES) != SPECIES_NONE
              && !GetMonData(&party[i], MON_DATA_IS_EGG)
@@ -12209,12 +12221,12 @@ static void Cmd_forcerandomswitch(void)
                 || (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && gBattleTypeFlags & BATTLE_TYPE_BATTLE_TOWER)
                 || (gBattleTypeFlags & BATTLE_TYPE_RECORDED_LINK && gBattleTypeFlags & BATTLE_TYPE_MULTI))
             {
-                SwitchPartyOrderLinkMulti(gBattlerTarget, i, 0);
-                SwitchPartyOrderLinkMulti(BATTLE_PARTNER(gBattlerTarget), i, 1);
+                SwitchPartyOrderLinkMulti(gBattlerTarget, gBattleStruct->monToSwitchIntoId[gBattlerTarget], 0);
+                SwitchPartyOrderLinkMulti(BATTLE_PARTNER(gBattlerTarget), gBattleStruct->monToSwitchIntoId[gBattlerTarget], 1);
             }
 
             if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
-                SwitchPartyOrderInGameMulti(gBattlerTarget, i);
+                SwitchPartyOrderInGameMulti(gBattlerTarget, gBattleStruct->monToSwitchIntoId[gBattlerTarget]);
         }
     }
     else
@@ -12771,10 +12783,10 @@ static void Cmd_metronome(void)
 #endif
 
     gCurrentMove = RandomUniformExcept(RNG_METRONOME, 1, moveCount - 1, InvalidMetronomeMove);
-    SetAtkCancellerForCalledMove();
     PrepareStringBattle(STRINGID_WAGGLINGAFINGER, gBattlerAttacker);
     gBattlescriptCurrInstr = GET_MOVE_BATTLESCRIPT(gCurrentMove);
     gBattlerTarget = GetMoveTarget(gCurrentMove, NO_TARGET_OVERRIDE);
+    ResetValuesForCalledMove();
 }
 
 static void Cmd_dmgtolevel(void)
@@ -17348,14 +17360,10 @@ void BS_JumpIfBlockedBySoundproof(void)
 void BS_SetMagicCoatTarget(void)
 {
     NATIVE_ARGS();
-    u32 side;
     gBattleStruct->attackerBeforeBounce = gBattleScripting.battler = gBattlerAttacker;
     gBattlerAttacker = gBattlerTarget;
-    side = BATTLE_OPPOSITE(GetBattlerSide(gBattlerAttacker));
-    if (IsAffectedByFollowMe(gBattlerAttacker, side, gCurrentMove))
-        gBattlerTarget = gSideTimers[side].followmeTarget;
-    else
-        gBattlerTarget = gBattleStruct->attackerBeforeBounce;
+    gBattlerTarget = gBattleStruct->attackerBeforeBounce;
+    HandleMoveTargetRedirection();
 
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
