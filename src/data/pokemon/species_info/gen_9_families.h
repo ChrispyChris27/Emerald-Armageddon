@@ -6150,6 +6150,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_GimmighoulChest,
             gShinyOverworldPalette_GimmighoulChest
         )
+        .isMythical = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sGimmighoulLevelUpLearnset,
         .teachableLearnset = sGimmighoulTeachableLearnset,
         .formSpeciesIdTable = sGimmighoulFormSpeciesIdTable,
@@ -6205,6 +6207,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .iconPalIndex = 0,
         SHADOW(-1, -4, SHADOW_SIZE_S)
         FOOTPRINT(GimmighoulRoaming)
+        .isMythical = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sGimmighoulLevelUpLearnset,
         .teachableLearnset = sGimmighoulTeachableLearnset,
         .formSpeciesIdTable = sGimmighoulFormSpeciesIdTable,
@@ -6268,6 +6272,8 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
             gOverworldPalette_Gholdengo,
             gShinyOverworldPalette_Gholdengo
         )
+        .isMythical = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sGholdengoLevelUpLearnset,
         .teachableLearnset = sGholdengoTeachableLearnset,
     },

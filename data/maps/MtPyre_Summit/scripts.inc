@@ -64,6 +64,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	delay 200
 	msgbox MtPyre_Summit_ArchieIntro, MSGBOX_AUTOCLOSE
 	trainerbattle_no_intro TRAINER_ARCHIE_PYRE, ArchiePyreDefeat_Text
+	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	msgbox MtPyre_Summit_ArchieDepart, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
@@ -74,8 +75,10 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	removeobject LOCALID_GRUNT_4
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_ARCHIE
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
+	setflag FLAG_ARCHIE_PYRE
 	fadedefaultbgm
-	resetweather
+	setweather WEATHER_FOG_HORIZONTAL
+	doweather
 	fadescreen FADE_FROM_BLACK
 	delay 20
 	setvar VAR_MT_PYRE_STATE, 1

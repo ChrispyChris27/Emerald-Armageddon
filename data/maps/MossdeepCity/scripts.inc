@@ -462,10 +462,10 @@ Mossdeep_Text_Give_Mints:
 
 Mossdeep_Received_Mints:
 	.string "Those mints will allow you to raise\n"
-	.string "one your POKéMON's speed at the expense\l"
+	.string "your POKéMON's speed at the expense\l"
 	.string "of one of their defenses.\p"
 	.string "If you strike first, your opponent\n"
-	.string "won't be able to take advantage of.\l"
+	.string "won't be able to take advantage of\l"
 	.string "your lowered defenses.\p"
 	.string "I look forward to sharing more mints\n"
 	.string "with you in the future!$"

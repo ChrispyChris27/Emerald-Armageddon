@@ -1,5 +1,6 @@
 .set LOCALID_STEVEN, 1
 .set LOCALID_BELDUM_BALL, 2
+.set LOCALID_MELTAN_BALL, 4
 
 MossdeepCity_StevensHouse_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MossdeepCity_StevensHouse_OnLoad
@@ -74,6 +75,7 @@ MossdeepCity_StevensHouse_Movement_StevenReturn:
 
 MossdeepCity_StevensHouse_EventScript_BeldumPokeball::
 	lockall
+	goto_if_set FLAG_RECEIVED_STEEL, ObtainedSteelMythicalAlready
 	msgbox MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MossdeepCity_StevensHouse_EventScript_LeaveBeldum
 	goto MossdeepCity_StevensHouse_EventScript_GiveBeldum
@@ -85,8 +87,8 @@ MossdeepCity_StevensHouse_EventScript_LeaveBeldum::
 	end
 
 MossdeepCity_StevensHouse_EventScript_GiveBeldum::
-	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_BELDUM
-	givemon SPECIES_BELDUM, 5
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_GIMMIGHOUL
+	givemon SPECIES_GIMMIGHOUL, 5, ITEM_CHOICE_SPECS
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, MossdeepCity_StevensHouse_EventScript_SendBeldumParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, MossdeepCity_StevensHouse_EventScript_SendBeldumPC
 	goto Common_EventScript_NoMoreRoomForPokemon
@@ -115,18 +117,18 @@ MossdeepCity_StevensHouse_EventScript_BeldumTransferredToPC::
 	end
 
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldumFanfare::
-	bufferspeciesname STR_VAR_2, SPECIES_BELDUM
+	bufferspeciesname STR_VAR_2, SPECIES_GIMMIGHOUL
 	removeobject LOCALID_BELDUM_BALL
 	playfanfare MUS_OBTAIN_ITEM
 	message MossdeepCity_StevensHouse_Text_ObtainedBeldum
 	waitmessage
 	waitfanfare
-	bufferspeciesname STR_VAR_1, SPECIES_BELDUM
+	bufferspeciesname STR_VAR_1, SPECIES_GIMMIGHOUL
 	return
 
 MossdeepCity_StevensHouse_EventScript_ReceivedBeldum::
-	setflag FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_BELDUM_POKEBALL
-	setflag FLAG_RECEIVED_BELDUM
+	setflag FLAG_GIMMIGHOUL_BALL
+	setflag FLAG_RECEIVED_STEEL
 	releaseall
 	end
 
@@ -168,7 +170,21 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "When you want to come back up, use\n"
 	.string "DIVE again.\p"
 	.string "In some places, it won't be possible\n"
-	.string "for you to surface, though.$"
+	.string "for you to surface, though.\p"
+	.string "{PLAYER}{KUN}, there's something else\n"
+	.string "I would like you to have as well.\p"
+	.string "With TEAM ROCKET having all that\n"
+	.string "rocket fuel and TEAM AQUA close to\l"
+	.string "achieving their goals, you'll need\l"
+	.string "to be as strong as possible.\p"
+	.string "To that end, there are two POKé BALLS\n"
+	.string "On my table over there.\p"
+	.string "Both contain mythical steel type POKéMON.\p"
+	.string "It would please me greatly if you would\n"
+	.string "take one with you on your journey.\p"
+	.string "I won't make you choose right now, but\n"
+	.string "consider it another gift to you for your\l"
+	.string "assistance.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 	.string "STEVEN: Apparently, there's an\n"
@@ -180,11 +196,11 @@ MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
 	.string "{PLAYER} checked the POKé BALL.\p"
 	.string "It contained the POKéMON\n"
-	.string "BELDUM.\p"
+	.string "GIMMIGHOUL.\p"
 	.string "Take the POKé BALL?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
-	.string "{PLAYER} obtained a BELDUM.$"
+	.string "{PLAYER} obtained a GIMMIGHOUL.$"
 
 @ Unused
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
@@ -215,3 +231,77 @@ MossdeepCity_StevensHouse_Text_CollectionOfRareRocks:
 	.string "It's a collection of rare rocks and\n"
 	.string "stones assembled by STEVEN.$"
 
+MossdeepCity_StevensHouse_Text_TakenBall:
+	.string "Better not be greedy.$"
+
+ObtainedSteelMythicalAlready::
+	msgbox MossdeepCity_StevensHouse_Text_TakenBall, MSGBOX_AUTOCLOSE
+	end
+
+MossdeepCity_StevensHouse_EventScript_MeltanPokeball::
+	lockall
+	goto_if_set FLAG_RECEIVED_STEEL, ObtainedSteelMythicalAlready
+	msgbox MossdeepCity_StevensHouse_Text_TakeBallContainingMeltan, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MossdeepCity_StevensHouse_EventScript_LeaveMeltan
+	goto MossdeepCity_StevensHouse_EventScript_GiveMeltan
+	end
+
+MossdeepCity_StevensHouse_EventScript_LeaveMeltan::
+	msgbox MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas, MSGBOX_DEFAULT
+	releaseall
+	end
+
+MossdeepCity_StevensHouse_EventScript_GiveMeltan::
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_MELTAN
+	givemon SPECIES_MELTAN, 5, ITEM_CHOICE_BAND
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, MossdeepCity_StevensHouse_EventScript_SendMeltanParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, MossdeepCity_StevensHouse_EventScript_SendMeltanPC
+	goto Common_EventScript_NoMoreRoomForPokemon
+	end
+
+MossdeepCity_StevensHouse_EventScript_SendMeltanParty::
+	call MossdeepCity_StevensHouse_EventScript_ReceivedMeltanFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MossdeepCity_StevensHouse_EventScript_ReceivedMeltan
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto MossdeepCity_StevensHouse_EventScript_ReceivedMeltan
+	end
+
+MossdeepCity_StevensHouse_EventScript_SendMeltanPC::
+	call MossdeepCity_StevensHouse_EventScript_ReceivedMeltanFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, MossdeepCity_StevensHouse_EventScript_MeltanTransferredToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto MossdeepCity_StevensHouse_EventScript_MeltanTransferredToPC
+	end
+
+MossdeepCity_StevensHouse_EventScript_MeltanTransferredToPC::
+	call Common_EventScript_TransferredToPC
+	goto MossdeepCity_StevensHouse_EventScript_ReceivedMeltan
+	end
+
+MossdeepCity_StevensHouse_EventScript_ReceivedMeltanFanfare::
+	bufferspeciesname STR_VAR_2, SPECIES_MELTAN
+	removeobject LOCALID_MELTAN_BALL
+	playfanfare MUS_OBTAIN_ITEM
+	message MossdeepCity_StevensHouse_Text_ObtainedMeltan
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_MELTAN
+	return
+
+MossdeepCity_StevensHouse_EventScript_ReceivedMeltan::
+	setflag FLAG_MELTAN_BALL
+	setflag FLAG_RECEIVED_STEEL
+	releaseall
+	end
+
+MossdeepCity_StevensHouse_Text_TakeBallContainingMeltan:
+	.string "{PLAYER} checked the POKé BALL.\p"
+	.string "It contained the POKéMON\n"
+	.string "MELTAN.\p"
+	.string "Take the POKé BALL?$"
+
+MossdeepCity_StevensHouse_Text_ObtainedMeltan:
+	.string "{PLAYER} obtained a MELTAN.$"

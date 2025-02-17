@@ -19,7 +19,7 @@ MagmaHideout_4F_EventScript_Maxie::
 	playse SE_M_DETECT
 	dofieldeffectsparkle 18, 42, 0
 	waitfieldeffect FLDEFF_SPARKLE
-	setvar VAR_RESULT, 1
+	setvar VAR_RESULT, 0
 	playfanfare MUS_AWAKEN_LEGEND
 	playse SE_ORB
 	special DoOrbEffect
@@ -40,6 +40,16 @@ MagmaHideout_4F_EventScript_Maxie::
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
+	msgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	delay 30
+	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
+	closemessage
+	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
 	applymovement LOCALID_GROUDON, MagmaHideout_4F_Movement_GroudonExit
 	waitmovement 0
 	removeobject LOCALID_GROUDON
@@ -53,20 +63,16 @@ MagmaHideout_4F_EventScript_Maxie::
 	delay 30
 	applymovement LOCALID_MAXIE, MagmaHideout_4F_Movement_MaxieLookAround
 	waitmovement 0
-	msgbox MagmaHideout_4F_Text_MaxieGroudonWhatsWrong, MSGBOX_DEFAULT
+	msgbox MagmaHideout_4F_Text_MaxieGroudon, MSGBOX_DEFAULT
 	closemessage
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_WalkInPlaceFasterRight
+	applymovement LOCALID_MAXIE, Common_Movement_FaceLeft
 	waitmovement 0
-	delay 30
-	applymovement LOCALID_MAXIE, Common_Movement_FacePlayer
-	waitmovement 0
-	msgbox MagmaHideout_4F_Text_MaxieOhItWasYou, MSGBOX_DEFAULT
-	closemessage
-	trainerbattle_no_intro TRAINER_MAXIE_MAGMA_HIDEOUT, MagmaHideout_4F_Text_MaxieDefeat
 	msgbox MagmaHideout_4F_Text_MaxieImGoingAfterGroudon, MSGBOX_DEFAULT
+	giveitem ITEM_CAMERUPTITE
 	closemessage
 	clearflag FLAG_HIDE_SLATEPORT_CITY_CAPTAIN_STERN
 	clearflag FLAG_HIDE_SLATEPORT_CITY_GABBY_AND_TY
+	setflag FLAG_HIDEOUT_MAXIE
 	setvar VAR_SLATEPORT_CITY_STATE, 1
 	setflag FLAG_GROUDON_AWAKENED_MAGMA_HIDEOUT
 	setvar VAR_SLATEPORT_HARBOR_STATE, 1
@@ -192,41 +198,70 @@ MagmaHideout_4F_Text_MaxieAwakenGroudon:
 	.string "MAXIE: GROUDON…\p"
 	.string "Nothing could awaken you from your\n"
 	.string "sleep bathed in magma…\p"
-	.string "This BLUE ORB is what you sought.\n"
+	.string "This RED ORB is what you sought.\n"
 	.string "Wasn't it?\p"
-	.string "I have brought you the BLUE ORB.\n"
+	.string "I have brought you the RED ORB.\n"
 	.string "Let its shine awaken you!\p"
 	.string "And show me…\n"
 	.string "Show me the full extent of your power!$"
 
 MagmaHideout_4F_Text_MaxieGroudonWhatsWrong:
 	.string "MAXIE: GROUDON!\n"
-	.string "What's wrong?\p"
-	.string "Wasn't the BLUE ORB the key?\p"
-	.string "GROUDON!\n"
-	.string "Where have you gone…$"
+	.string "I knew it!\p"
+	.string "The RED ORB was the key!\p"
+	.string "GROUDON!\p"
+	.string "Join me and together we shall expand\n"
+	.string "HOENN's landmass and realize my dream!$"
 
 MagmaHideout_4F_Text_MaxieOhItWasYou:
-	.string "MAXIE: Oh, so it was you?\p"
+	.string "You!\p"
 	.string "I've seen you poking around uninvited\n"
 	.string "here and there…\p"
 	.string "I get it now!\n"
-	.string "You must have pulled a cheap stunt!$"
+	.string "You must be trying to shatter my dreams!\p"
+	.string "You interrupted my plans on MT. CHIMNEY,\n"
+	.string "then again in NEW MAUVILLE.\p"
+	.string "But you were too late then and you're\n"
+	.string "too late again now!\p"
+	.string "Now that GROUDON is under my control,\n"
+	.string "there is nothing you can do to stop me!\p"
+	.string "Fwahahaha!\p"
+	.string "Come GROUDON!\p"
+	.string "With your power we shall crush this\n"
+	.string "child once and for all!$"
 
 MagmaHideout_4F_Text_MaxieDefeat:
-	.string "What makes you so adept at handling\n"
-	.string "POKéMON?$"
+	.string "Even with GROUDON I still lost?$"
+
+MagmaHideout_4F_Text_MaxieGroudon:
+	.string "GROUDON!\p"
+	.string "GROUDON where have you gone!?$"
 
 MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
-	.string "MAXIE: There has to be some reason\n"
-	.string "why GROUDON fled…\p"
-	.string "That's what you're trying to say,\n"
-	.string "aren't you?\p"
+	.string "You!\p"
+	.string "Did you pull a cheap stunt?\p"
+	.string "Are you the reason why GROUDON fled?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "Humph…\n"
-	.string "You think I didn't know that?\p"
+	.string "Humph…\p"
+	.string "With the RED ORB I should have been\n"
+	.string "able to control GROUDON.\p"
+	.string "How were you able to shatter that\n" 
+	.string "control?\p"
+	.string "Is it because we were defeated in\n"
+	.string "battle?\p"
+	.string "… … … … … …\n"
+	.string "… … … … … …\p"
+	.string "Perhaps GROUDON deemed me unworthy to\n"
+	.string "wield its power.\p"
 	.string "With GROUDON gone, there is no longer\n"
 	.string "any need for this blasted volcano.\p"
+	.string "Is this...the end of my dream?\p"
+	.string "No!\p"
+	.string "As long as I hold the RED ORB, I can\n"
+	.string "find GROUDON again!\p"
+	.string "One way or another I will achieve my\n"
+	.string "dream!\p"
 	.string "I am going after GROUDON, so this\n"
-	.string "is where we part!$"
+	.string "is where we part!\p"
+	.string "Consider this a bribe not to follow me!$"

@@ -73,7 +73,7 @@ MtPyre_1F_Text_Grunts1:
 	.string "any closer!$"
 
 MtPyre_1F_Text_Grunts2:
-	.string "The kid's ben weakened, time\n"
+	.string "The kid's been weakened, time\n"
 	.string "for you to have a go!$"
 
 MtPyre_1F_Text_Grunts3:
