@@ -1232,7 +1232,7 @@
 #define FLAG_MINTS_8                                                0x49A // Unused Flag
 #define FLAG_MINTS_9                                                0x49B // Unused Flag
 #define FLAG_GYM_INTRO                                              0x49C // Unused Flag
-#define FLAG_UNUSED_0x49D                                           0x49D // Unused Flag
+#define FLAG_INDOOR_PYRE_GRUNTS                                     0x49D // Unused Flag
 #define FLAG_UNUSED_0x49E                                           0x49E // Unused Flag
 #define FLAG_UNUSED_0x49F                                           0x49F // Unused Flag
 #define FLAG_UNUSED_0x4A0                                           0x4A0 // Unused Flag

@@ -133,3 +133,7 @@ MtPyre_2F_Text_ZanderPostBattle:
 	.string "anything move…\p"
 	.string "I shouldn't have come here to train…$"
 
+MtPyre_2F_EventScriptPrepareGruntBattle::
+	setvar VAR_PYRE_GRUNTS, 1
+	end
+

@@ -157,7 +157,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_PYRE_GRUNTS",
+      "var_value": "0",
+      "script": "MtPyre_2F_EventScriptPrepareGruntBattle"
+    }
   ],
   "bg_events": [
 

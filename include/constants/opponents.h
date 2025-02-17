@@ -849,8 +849,8 @@
 #define TRAINER_MAUVILLE_GRUNT_12           843
 #define TRAINER_MAUVILLE_GRUNT_13           844
 #define TRAINER_MAUVILLE_GRUNT_14           845
-#define TRAINER_PLACEHOLDER_1               846
-#define TRAINER_PLACEHOLDER_2               847
+#define TRAINER_AQUA_PYRE_1                 846
+#define TRAINER_AQUA_PYRE_2                 847
 #define TRAINER_MARIELA                     848
 #define TRAINER_ALVARO                      849
 #define TRAINER_EVERETT                     850
