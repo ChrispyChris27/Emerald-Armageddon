@@ -9246,6 +9246,7 @@ static const struct LevelUpMove sKecleonLevelUpLearnset[] = {
 static const struct LevelUpMove sShuppetLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_CURSE),
+    LEVEL_UP_MOVE( 1, MOVE_PAIN_SPLIT),
     LEVEL_UP_MOVE( 4, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE( 8, MOVE_POUNCE),
     LEVEL_UP_MOVE(12, MOVE_SHADOW_SNEAK),
@@ -9266,6 +9267,7 @@ static const struct LevelUpMove sBanetteLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SKITTER_SMACK),
     LEVEL_UP_MOVE( 1, MOVE_ASTONISH),
     LEVEL_UP_MOVE( 1, MOVE_CURSE),
+    LEVEL_UP_MOVE( 1, MOVE_PAIN_SPLIT),
     LEVEL_UP_MOVE( 4, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE( 8, MOVE_POUNCE),
     LEVEL_UP_MOVE(12, MOVE_SHADOW_SNEAK),
