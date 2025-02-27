@@ -7,7 +7,8 @@
 //
 
 
-    [PARTNER_NONE] =
+
+    [DIFFICULTY_NORMAL][PARTNER_NONE] =
     {
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
         .trainerPic = TRAINER_BACK_PIC_BRENDAN,
@@ -18,7 +19,8 @@
         {
         },
     },
-    [PARTNER_STEVEN] =
+
+    [DIFFICULTY_NORMAL][PARTNER_STEVEN] =
     {
         .trainerName = _("STEVEN"),
         .trainerClass = TRAINER_CLASS_RIVAL,
