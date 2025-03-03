@@ -4074,9 +4074,9 @@ static bool32 TryChangeBattleTerrain(u32 battler, u32 statusFlag, u16 *timer)
         gDisableStructs[battler].terrainAbilityDone = FALSE;
 
         if (GetBattlerHoldEffect(battler, TRUE) == HOLD_EFFECT_TERRAIN_EXTENDER)
-            *timer = gBattleTurnCounter + 8;
+            *timer = gBattleTurnCounter + 0;
         else
-            *timer = gBattleTurnCounter + 5;
+            *timer = gBattleTurnCounter + 0;
 
         gBattleScripting.battler = battler;
         return TRUE;
