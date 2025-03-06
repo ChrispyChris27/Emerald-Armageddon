@@ -19041,7 +19041,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Psyshield Bash"),
         .description = COMPOUND_STRING(
             "Hits a foe with psychic\n"
-            "energy. May raise Defense."),
+            "energy. Raises Defense."),
         .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_PSYCHIC,

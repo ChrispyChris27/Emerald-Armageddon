@@ -361,7 +361,7 @@ MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets:
 	.string "rockets.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel:
-	.string "Why would TEAM MAGMA want to steal\n"
+	.string "Why would TEAM ROCKET want to steal\n"
 	.string "our rocket fuel in the first place?$"
 
 MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut:
@@ -371,7 +371,7 @@ MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut:
 	.string "I can and will try!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis:
-	.string "If TEAM MAGMA takes the rocket fuel,\n"
+	.string "If TEAM ROCKET takes the rocket fuel,\n"
 	.string "I won't be able to go to space!\p"
 	.string "They can't be allowed to get away\n"
 	.string "with such an outrage!$"
@@ -381,20 +381,23 @@ MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace:
 	.string "space one day…$"
 
 MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace:
-	.string "TEAM MAGMA…\n"
+	.string "TEAM ROCKET…\n"
 	.string "Do they want to go to space, too?$"
 
 MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn:
 	.string "What's wrong with you?\p"
-	.string "You're outnumbered three to one,\n"
-	.string "but you still want to take us on?$"
+	.string "You're outnumbered three to one, but\n"
+	.string "you still want to take us sisters on?$"
 
 MossdeepCity_SpaceCenter_2F_Text_GoodAnswer:
 	.string "Good answer!\n"
 	.string "That's what a smart person'll do!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro:
-	.string "A reckless go-getter, are you?\n"
+	.string "A reckless go-getter, are you?\p"
+	.string "Unlike the ROCKET BROTHERS who prefer\n"
+	.string "to work individually, we'll take you\l"
+	.string "on together!\p"
 	.string "Okay, I'll go first!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat:
@@ -437,24 +440,30 @@ MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
 	.string "we'll take care of you at the same time!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere:
-	.string "MAXIE: Clear out of the way!\n"
+	.string "Clear out of the way!\n"
 	.string "Don't you dare interfere!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel:
-	.string "STEVEN: TEAM MAGMA…\p"
+	.string "STEVEN: TEAM ROCKET…\p"
 	.string "What's the point of stealing rocket\n"
 	.string "fuel?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano:
-	.string "MAXIE: Fufufu… Since you're so\n"
+	.string "Fufufu… Since you're so\n"
 	.string "curious, you deserve an explanation.\p"
-	.string "We're going to jettison the entire\n"
-	.string "load into MT. CHIMNEY!\p"
-	.string "With GROUDON gone, we have no need\n"
-	.string "for that slag heap of a mountain!\p"
-	.string "So we'll use the fuel's power to make\n"
-	.string "the volcano erupt!\p"
-	.string "It will be savage!$"
+	.string "We are ARIANA and ARCHER, admins for\n"
+	.string "TEAM ROCKET!\p"
+	.string "The ancient POKéMON our boss seeks to\n"
+	.string "obtain originated from outer space.\p"
+	.string "As a result, TEAM ROCKET has been\n"
+	.string "bulding a rocket in our home base!\p"
+	.string "Unfortunately while we managed to build\n"
+	.string "the rocket, we don't have the fuel\l"
+	.string "needed to launch the rocket.\p"
+	.string "So we'll be using yours to power our\n"
+	.string "rocket and find the ancient POKéMON!\p"
+	.string "Now, for the glory of TEAM ROCKET\n"
+	.string "we shall defeat you!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle:
 	.string "STEVEN: {PLAYER}{KUN}!\n"
@@ -474,31 +483,26 @@ MossdeepCity_SpaceCenter_Text_TabithaDefeat:
 	.string "I'm with our leader…$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
-	.string "MAXIE: We failed to make the volcano\n"
-	.string "erupt…\p"
-	.string "We failed to control GROUDON after\n"
-	.string "we had awoken it…\p"
-	.string "Is our goal to expand the land\n"
-	.string "misguided?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "If…\n"
-	.string "If we, TEAM MAGMA, are wrong…\l"
-	.string "… … … … … …\p"
-	.string "Then might TEAM AQUA's goal to expand\n"
-	.string "the sea also be equally misguided?$"
+	.string "ARCHER: Fwahahaha!\p"
+	.string "While you were distracted by us, our\n"
+	.string "boss made off with the rocket fuel!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp:
-	.string "MAXIE: All right…\n"
-	.string "We will give up on the fuel…\p"
-	.string "There appear to be more important\n"
-	.string "matters that I must examine…$"
+	.string "ARIANA: There's the signal to head back\n"
+	.string "to base for the final stage of our plan!\p"
+	.string "TEAM ROCKET will take our pursuit of\n"
+	.string "the ancient POKéMON out of this world!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
 	.string "STEVEN: Whew, that was too tense.\n"
 	.string "{PLAYER}{KUN}, thank you.\p"
-	.string "I have something to give you as\n"
-	.string "thanks for your support.\p"
+	.string "TEAM ROCKET may have gotten the rocket\n"
+	.string "fuel, but everyone in the space center\l"
+	.string "is safe thanks to you.\p"
+	.string "We'll find some way to track down their\n"
+	.string "base of operations and stop their plans.\p"
+	.string "In the meantime, I have something to give\n"
+	.string "you as thanks for your support.\p"
 	.string "Please come see me at home\n"
 	.string "after this.\p"
 	.string "Oh, yes, I don't live in RUSTBORO CITY.\n"

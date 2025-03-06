@@ -19,10 +19,10 @@ MossdeepCity_SpaceCenter_1F_EventScript_MoveObjectsForTeamMagma::
 	setobjectmovementtype LOCALID_SAILOR, MOVEMENT_TYPE_FACE_RIGHT
 	setobjectxyperm LOCALID_WOMAN, 0, 8
 	setobjectmovementtype LOCALID_WOMAN, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm LOCALID_OLD_MAN, 1, 6
-	setobjectmovementtype LOCALID_OLD_MAN, MOVEMENT_TYPE_FACE_RIGHT
-	setobjectxyperm LOCALID_SCIENTIST_1, 3, 4
-	setobjectmovementtype LOCALID_SCIENTIST_1, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectxyperm LOCALID_OLD_MAN, 15, 6
+	setobjectmovementtype LOCALID_OLD_MAN, MOVEMENT_TYPE_FACE_LEFT
+	setobjectxyperm LOCALID_SCIENTIST_1, 12, 6
+	setobjectmovementtype LOCALID_SCIENTIST_1, MOVEMENT_TYPE_FACE_LEFT
 	setobjectmovementtype LOCALID_SCIENTIST_2, MOVEMENT_TYPE_FACE_RIGHT
 	goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 1, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardLeft
 	goto_if_eq VAR_MOSSDEEP_SPACE_CENTER_STAIR_GUARD_STATE, 2, MossdeepCity_SpaceCenter_1F_EventScript_MoveStairGuardDown
@@ -369,6 +369,7 @@ MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
 	.string "check out the town?$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
+	.string "I am one of the four ROCKET BROTHERS!\p"
 	.string "As promised, we've come for\n"
 	.string "the rocket fuel!$"
 
@@ -380,6 +381,7 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
 	.string "because you've beaten me!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro:
+	.string "I am one of the four ROCKET BROTHERS!\p"
 	.string "We gave you fair warning!\n"
 	.string "There's nothing sneaky about us!$"
 
@@ -392,6 +394,7 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
 	.string "we'll come unannounced.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
+	.string "I am one of the four ROCKET BROTHERS!\p"
 	.string "The rocket fuel the SPACE CENTER has\n"
 	.string "in storage--that's what we're after.\p"
 	.string "We mean to take every last bit of it!$"
@@ -407,6 +410,7 @@ MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
 	.string "Ask our leader upstairs!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
+	.string "I am one of the four ROCKET BROTHERS!\p"
 	.string "Our leader said no one, but no one,\n"
 	.string "gets past me!$"
 
@@ -427,5 +431,5 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "rocket fuel.\p"
 	.string "“Please don't try to stop us.\n"
 	.string "We will take the fuel no matter what.\p"
-	.string "“Surrender or prepare to fight!\n"
+	.string "“Surrender now or prepare to fight!\n"
 	.string "                                   TEAM ROCKET”$"

@@ -820,13 +820,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_1] =
     {
-        .trainerName = _("GRUNT"),
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerName = _("BROTHER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -4766,13 +4766,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_2] =
     {
-        .trainerName = _("GRUNT"),
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerName = _("BROTHER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -10614,7 +10614,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -10635,18 +10635,18 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_NECROZMA_DUSK_MANE,
+            .species = SPECIES_SOLGALEO,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 80,
-            .nature = NATURE_ADAMANT,
+            .nature = NATURE_JOLLY,
             .heldItem = ITEM_ASSAULT_VEST,
-            .ability = ABILITY_PRISM_ARMOR,
+            .ability = ABILITY_FULL_METAL_BODY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_PHOTON_GEYSER,
+                MOVE_PSYCHIC_FANGS,
                 MOVE_SUNSTEEL_STRIKE,
-                MOVE_BRICK_BREAK,
+                MOVE_FLARE_BLITZ,
                 MOVE_STONE_EDGE,
             },
             },
@@ -18729,7 +18729,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -18753,7 +18753,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_TERRAKION,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 75,
+            .lvl = 82,
             .nature = NATURE_JOLLY,
             .ability = ABILITY_JUSTIFIED,
             .heldItem = ITEM_ASSAULT_VEST,
@@ -18769,7 +18769,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_GALLADE,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 75,
+            .lvl = 82,
             .nature = NATURE_JOLLY,
             .ability = ABILITY_SHARPNESS,
             .heldItem = ITEM_GALLADITE,
@@ -22363,14 +22363,14 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_3] =
     {
-        .trainerName = _("GRUNT"),
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .trainerName = _("BROTHER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
 F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -22394,13 +22394,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_4] =
     {
-        .trainerName = _("GRUNT"),
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerName = _("BROTHER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
@@ -22416,67 +22416,187 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_5] =
     {
-        .trainerName = _("GRUNT"),
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerName = _("SISTER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .partySize = 1,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
+        .partySize = 2,
         .party = (const struct TrainerMon[])
         {
             {
-            .species = SPECIES_ZUBAT,
+            .species = SPECIES_WEEZING_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-            .lvl = 32,
-            .nature = NATURE_HARDY,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 79,
+            .nature = NATURE_TIMID,
+            .ability = ABILITY_MISTY_SURGE,
+            .heldItem = ITEM_FOCUS_BAND,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_STRANGE_STEAM,
+                MOVE_SLUDGE_BOMB,
+                MOVE_FLAMETHROWER,
+                MOVE_MISTY_EXPLOSION,
+            },
+            },
+            {
+            .species = SPECIES_HITMONLEE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 79,
+            .nature = NATURE_ADAMANT,
+            .ability = ABILITY_UNBURDEN,
+            .heldItem = ITEM_MISTY_SEED,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_CLOSE_COMBAT,
+                MOVE_STONE_EDGE,
+                MOVE_EARTHQUAKE,
+                MOVE_POISON_JAB,
+            },
             },
         },
     },
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_6] =
     {
-        .trainerName = _("GRUNT"),
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerName = _("SISTER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .partySize = 1,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
+        .partySize = 3,
         .party = (const struct TrainerMon[])
         {
             {
-            .species = SPECIES_MIGHTYENA,
+            .species = SPECIES_LOKIX,
             .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-            .lvl = 32,
-            .nature = NATURE_HARDY,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 79,
+            .nature = NATURE_JOLLY,
+            .ability = ABILITY_TINTED_LENS,
+            .heldItem = ITEM_LIFE_ORB,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_LEECH_LIFE,
+                MOVE_THROAT_CHOP,
+                MOVE_TRIPLE_AXEL,
+                MOVE_AXE_KICK,
+            },
+            },
+            {
+            .species = SPECIES_BEWEAR,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 79,
+            .nature = NATURE_ADAMANT,
+            .ability = ABILITY_FLUFFY,
+            .heldItem = ITEM_ASSAULT_VEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_DRAIN_PUNCH,
+                MOVE_DOUBLE_EDGE,
+                MOVE_DARKEST_LARIAT,
+                MOVE_ICE_PUNCH,
+            },
+            },
+            {
+            .species = SPECIES_DRAPION,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 79,
+            .nature = NATURE_JOLLY,
+            .ability = ABILITY_SNIPER,
+            .heldItem = ITEM_SCOPE_LENS,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_CROSS_POISON,
+                MOVE_NIGHT_SLASH,
+                MOVE_AQUA_CUTTER,
+                MOVE_PSYCHO_CUT,
+            },
             },
         },
     },
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_7] =
     {
-        .trainerName = _("GRUNT"),
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerName = _("SISTER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MAGMA,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
-        .partySize = 1,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
+        .partySize = 4,
         .party = (const struct TrainerMon[])
         {
             {
-            .species = SPECIES_BALTOY,
+            .species = SPECIES_GOURGEIST_SUPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-            .lvl = 32,
-            .nature = NATURE_HARDY,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 79,
+            .nature = NATURE_ADAMANT,
+            .ability = ABILITY_INSOMNIA,
+            .heldItem = ITEM_QUICK_CLAW,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_POWER_WHIP,
+                MOVE_SPIRIT_SHACKLE,
+                MOVE_FIRE_LASH,
+                MOVE_EXPLOSION,
+            },
+            },
+            {
+            .species = SPECIES_SLOWKING_GALAR,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 79,
+            .nature = NATURE_MODEST,
+            .ability = ABILITY_REGENERATOR,
+            .heldItem = ITEM_EJECT_BUTTON,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_SLUDGE_BOMB,
+                MOVE_PSYCHIC,
+                MOVE_FOCUS_BLAST,
+                MOVE_FLAMETHROWER,
+            },
+            },
+            {
+            .species = SPECIES_SKUNTANK,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 79,
+            .nature = NATURE_HASTY,
+            .ability = ABILITY_AFTERMATH,
+            .heldItem = ITEM_AIR_BALLOON,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_GUNK_SHOT,
+                MOVE_PLAY_ROUGH,
+                MOVE_CRUNCH,
+                MOVE_FIRE_BLAST,
+            },
+            },
+            {
+            .species = SPECIES_GRAPPLOCT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 79,
+            .nature = NATURE_ADAMANT,
+            .ability = ABILITY_TECHNICIAN,
+            .heldItem = ITEM_BRIGHT_POWDER,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_POWER_UP_PUNCH,
+                MOVE_BRUTAL_SWING,
+                MOVE_STORM_THROW,
+                MOVE_SHADOW_PUNCH,
+            },
             },
         },
     },
@@ -28487,7 +28607,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -32239,7 +32359,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_FEMALE,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -32260,18 +32380,18 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_NECROZMA_DAWN_WINGS,
+            .species = SPECIES_LUNALA,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 80,
-            .nature = NATURE_MODEST,
+            .nature = NATURE_TIMID,
             .heldItem = ITEM_POWER_HERB,
-            .ability = ABILITY_PRISM_ARMOR,
+            .ability = ABILITY_SHADOW_SHIELD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_PHOTON_GEYSER,
+                MOVE_PSYCHIC,
                 MOVE_MOONGEIST_BEAM,
-                MOVE_EARTH_POWER,
+                MOVE_MOONBLAST,
                 MOVE_METEOR_BEAM,
             },
             },
