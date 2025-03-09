@@ -54,7 +54,7 @@
             .lvl = 82,
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_LEFTOVERS,
             .moves = {
                 MOVE_METEOR_MASH,
                 MOVE_ZEN_HEADBUTT,
@@ -70,7 +70,7 @@
             .lvl = 82,
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .heldItem = ITEM_METAGROSSITE,
+            .heldItem = ITEM_LIFE_ORB,
             .moves = {
                 MOVE_METEOR_MASH,
                 MOVE_PSYCHIC_FANGS,

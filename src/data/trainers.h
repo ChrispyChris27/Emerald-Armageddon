@@ -8677,11 +8677,11 @@ F_TRAINER_FEMALE |
             .lvl = 78,
             .nature = NATURE_JOLLY,
             .ability = ABILITY_OWN_TEMPO,
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_BERSERK_GENE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_PLAY_ROUGH,
-                MOVE_FAKE_OUT,
+                MOVE_DOUBLE_EDGE,
                 MOVE_SHADOW_CLAW,
                 MOVE_FLATTER,
             },
@@ -8693,7 +8693,7 @@ F_TRAINER_FEMALE |
             .lvl = 78,
             .nature = NATURE_JOLLY,
             .ability = ABILITY_OWN_TEMPO,
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_BERSERK_GENE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_GIGATON_HAMMER,
@@ -8709,7 +8709,7 @@ F_TRAINER_FEMALE |
             .lvl = 78,
             .nature = NATURE_ADAMANT,
             .ability = ABILITY_OWN_TEMPO,
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_BERSERK_GENE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_GUNK_SHOT,
