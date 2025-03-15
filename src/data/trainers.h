@@ -18744,9 +18744,9 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
                 MOVE_FUSION_BOLT,
-                MOVE_DRAGON_CLAW,
+                MOVE_DRAGON_RUSH,
                 MOVE_STONE_EDGE,
-                MOVE_CRUNCH,
+                MOVE_FIRE_PUNCH,
             },
             },
              {
@@ -18762,7 +18762,7 @@ F_TRAINER_FEMALE |
                 MOVE_SACRED_SWORD,
                 MOVE_STONE_EDGE,
                 MOVE_HIGH_HORSEPOWER,
-                MOVE_HELPING_HAND,
+                MOVE_POISON_JAB,
             },
             },
              {
@@ -18778,7 +18778,7 @@ F_TRAINER_FEMALE |
                 MOVE_SACRED_SWORD,
                 MOVE_PSYCHO_CUT,
                 MOVE_LEAF_BLADE,
-                MOVE_AQUA_CUTTER,
+                MOVE_X_SCISSOR,
             },
             },
         },
@@ -28624,7 +28624,7 @@ F_TRAINER_FEMALE |
                 MOVE_FUSION_FLARE,
                 MOVE_DRAGON_PULSE,
                 MOVE_EARTH_POWER,
-                MOVE_PSYCHIC,
+                MOVE_FOCUS_BLAST,
             },
             },
            {
@@ -28637,10 +28637,10 @@ F_TRAINER_FEMALE |
             .heldItem = ITEM_LIFE_ORB,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_AURA_SPHERE,
+                MOVE_FOCUS_BLAST,
                 MOVE_FLASH_CANNON,
                 MOVE_THUNDERBOLT,
-                MOVE_HELPING_HAND,
+                MOVE_COACHING,
             },
             },
            {
@@ -30806,7 +30806,7 @@ F_TRAINER_FEMALE |
     {
         .trainerName = _("ARIANA"),
         .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
-        .trainerPic = TRAINER_PIC_ARCHER,
+        .trainerPic = TRAINER_PIC_ARIANA,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,

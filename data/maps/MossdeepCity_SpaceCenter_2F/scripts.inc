@@ -476,11 +476,11 @@ MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly:
 	.string "Get ready quickly!$"
 
 MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand:
-	.string "All I want…\n"
-	.string "I just want to expand the land mass…$"
+	.string "All I wanted was to help the boss…$"
 
 MossdeepCity_SpaceCenter_Text_TabithaDefeat:
-	.string "I'm with our leader…$"
+	.string "We were on the verge of greatness…\n"
+	.string "We were this close!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
 	.string "ARCHER: Fwahahaha!\p"
