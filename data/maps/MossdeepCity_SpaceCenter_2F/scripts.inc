@@ -285,6 +285,7 @@ MossdeepCity_SpaceCenter_2F_EventScript_DefeatedMaxieTabitha::
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_1F_TEAM_MAGMA
 	setflag FLAG_HIDE_MOSSDEEP_CITY_SPACE_CENTER_2F_TEAM_MAGMA
 	setflag FLAG_HIDE_MOSSDEEP_CITY_TEAM_MAGMA
+	setflag FLAG_ROCKET_TAG
 	removeobject LOCALID_GRUNT_6
 	removeobject LOCALID_GRUNT_7
 	removeobject LOCALID_GRUNT_5
@@ -501,8 +502,8 @@ MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
 	.string "is safe thanks to you.\p"
 	.string "We'll find some way to track down their\n"
 	.string "base of operations and stop their plans.\p"
-	.string "In the meantime, I have something to give\n"
-	.string "you as thanks for your support.\p"
+	.string "In the meantime, I have something to\n"
+	.string "give you as thanks for your support.\p"
 	.string "Please come see me at home\n"
 	.string "after this.\p"
 	.string "Oh, yes, I don't live in RUSTBORO CITY.\n"

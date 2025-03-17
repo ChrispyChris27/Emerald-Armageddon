@@ -2377,28 +2377,28 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 20,
-                "max_level": 30,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_RELICANTH"
               },
               {
-                "min_level": 20,
-                "max_level": 30,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_DHELMISE"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_GOREBYSS"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_ARCTOVISH"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_DRACOVISH"
               }
             ]
@@ -9577,28 +9577,28 @@
             "encounter_rate": 4,
             "mons": [
               {
-                "min_level": 20,
-                "max_level": 30,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_RELICANTH"
               },
               {
-                "min_level": 20,
-                "max_level": 30,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_DHELMISE"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_HUNTAIL"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_DRACOVISH"
               },
               {
-                "min_level": 30,
-                "max_level": 35,
+                "min_level": 75,
+                "max_level": 75,
                 "species": "SPECIES_ARCTOVISH"
               }
             ]
