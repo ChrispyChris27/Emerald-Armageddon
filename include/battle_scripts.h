@@ -384,9 +384,7 @@ extern const u8 BattleScript_FriskMsg[];
 extern const u8 BattleScript_FriskMsgWithPopup[];
 extern const u8 BattleScript_MoodyActivates[];
 extern const u8 BattleScript_EmergencyExit[];
-extern const u8 BattleScript_EmergencyExitNoPopUp[];
 extern const u8 BattleScript_EmergencyExitWild[];
-extern const u8 BattleScript_EmergencyExitWildNoPopUp[];
 extern const u8 BattleScript_CheekPouchActivates[];
 extern const u8 BattleScript_TotemVar[];
 extern const u8 BattleScript_TotemFlaredToLife[];
@@ -558,6 +556,7 @@ extern const u8 BattleScript_RemoveGenericType[];
 // dynamax and max raids
 extern const u8 BattleScript_DynamaxBegins[];
 extern const u8 BattleScript_DynamaxEnds[];
+extern const u8 BattleScript_DynamaxEnds_Ret[];
 extern const u8 BattleScript_MoveBlockedByDynamax[];
 
 // Battle move scripts
