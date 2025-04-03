@@ -913,7 +913,9 @@ SootopolisCity_EventScript_StevenHelpWallace::
 	end
 
 SootopolisCity_EventScript_StevenMaxieArchieLeft::
+	goto_if_unset FLAG_LOCATINATOR, SootopolisCity_EventScript_GiveLocatinator 
 	msgbox SootopolisCity_Text_MaxieArchieLeft, MSGBOX_DEFAULT
+	setflag FLAG_HIDEOUT_GUARD
 	releaseall
 	end
 
@@ -1313,9 +1315,6 @@ SootopolisCity_EventScript_GiveWaterfall::
 	setflag FLAG_RECEIVED_HM_WATERFALL
 	msgbox SootopolisCity_Text_ExplainWaterfallGoToGym, MSGBOX_DEFAULT
 	closemessage
-	call_if_eq VAR_FACING, DIR_NORTH, SootopolisCity_EventScript_WallaceMoveFromGym
-	call_if_eq VAR_FACING, DIR_EAST, SootopolisCity_EventScript_WallaceMoveFromGym
-	call_if_eq VAR_FACING, DIR_WEST, SootopolisCity_EventScript_WallaceMoveFromGymWest
 	release
 	end
 
@@ -1378,7 +1377,7 @@ SootopolisCity_EventScript_Archie::
 
 SootopolisCity_EventScript_ArchieRayquaza::
 	msgbox SootopolisCity_Text_TryingMeaninglessToPokemon, MSGBOX_DEFAULT
-	setflag FLAG_MET_ARCHIE_SOOTOPOLIS
+	goto_if_unset FLAG_MET_ARCHIE_SOOTOPOLIS, SootopolisCity_EventScript_Sharpedoite
 	goto_if_set FLAG_MET_MAXIE_SOOTOPOLIS, SootopolisCity_EventScript_MaxieArchieLeave
 	releaseall
 	end
@@ -1633,6 +1632,12 @@ SootopolisCity_Text_TryingMeaninglessToPokemon:
 	.string "something small, even meaningless,\l"
 	.string "to POKéMON…$"
 
+SootopolisCity_Text_Sharpedoite:
+	.string "Still, I suppose in a way, I do owe\n"
+	.string "you for saving HOENN from the\l"
+	.string "calamity I caused.\p"
+	.string "I hope this will suffice.$"
+
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
 	.string "STEVEN: Those POKéMON fighting…\n"
 	.string "GROUDON… And KYOGRE…\p"
@@ -1679,10 +1684,22 @@ SootopolisCity_Text_SoThatsRayquaza:
 	.string "POKéMON would flee from it in fear…$"
 
 SootopolisCity_Text_MaxieArchieLeft:
-	.string "STEVEN: It looks like both MAXIE and\n"
-	.string "ARCHIE have gone away somewhere.\p"
-	.string "Perhaps they've gone to MT. PYRE to\n"
-	.string "return those ORBS…$"
+	.string "While you were hunting down RAYQUAZA,\n"
+	.string "I was busy on a hunt of my own.\p"
+	.string "I believe that I've managed to find\n"
+	.string "TEAM ROCKET's base of operations.\p"
+	.string "I've seen many TEAM ROCKET grunts going\n"
+	.string "in and out of a cave near PACIFIDLOG.\p"
+	.string "If I'm right, we better hurry.\p"
+	.string "It's clear to me now that RAYQUAZA is\n"
+	.string "the ancient POKéMON TEAM ROCKET seeks.\p"
+	.string "With you awakening it to calm KYOGRE\n"
+	.string "and GROUDON, TEAM ROCKET must also be\l"
+	.string "aware of its precense, especially as\l"
+	.string "their base of operations seems to be\l"
+	.string "near SKY PILLAR.\p"
+	.string "I have another matter to attend to, but\n"
+	.string "I'm positive you can defeat TEAM ROCKET!$"
 
 SootopolisCity_Text_HaventYouScaledSkyPillar:
 	.string "WALLACE: Oh?\n"
@@ -1716,11 +1733,50 @@ SootopolisCity_Text_ExplainWaterfallGoToGym:
 	.string "force its way up waterfalls.\p"
 	.string "And where does one get the RAIN BADGE?\n"
 	.string "You know, don't you?\p"
-	.string "That's right! You have to beat\n"
-	.string "the SOOTOPOLIS GYM LEADER.\p"
-	.string "I'll be waiting for you.$"
+	.string "That's right! You have to conquer\n"
+	.string "the SOOTOPOLIS GYM.\p"
+	.string "I'll be waiting for you, although I\n"
+	.string "understand STEVEN has a task for you\l"
+	.string "to complete first.$"
 
 SootopolisCity_Text_DazzledByMentor:
-	.string "WALLACE: I'm sure that you will be\n"
-	.string "dazzled by my mentor's breathtakingly\l"
-	.string "elegant battle style.$"
+	.string "WALLACE: TEAM ROCKET remains at large.\p"
+	.string "They must be stopped first, after which\n"
+	.string "I'm sure that you will be dazzled by my\l"
+	.string "breathtakingly elegant battle style.$"
+
+SootopolisCity_Text_StevenGiveLocatinator:
+	.string "STEVEN: {PLAYER}{KUN}, thanks to you\n"
+	.string "HOENN has been saved.\p"
+	.string "It seems however that in the chaos that\n"
+	.string "occurred, some new POKéMON may now be\l"
+	.string "roaming throughout the HOENN region.\p"
+	.string "They may be difficult to track down,\n"
+	.string "but this should help.$"
+
+SootopolisCity_Text_StevenExplainLocatinator:
+	.string "The item I just gave you is called\n"
+	.string "the LOCATINATOR.\p"
+	.string "When one of these new POKéMON is nearby,\n"
+	.string "the LOCATINATOR will alert you to its\l"
+	.string "presence.$"
+
+SootopolisCity_EventScript_Sharpedoite::
+	applymovement LOCALID_ARCHIE, Common_Movement_FacePlayer
+	msgbox SootopolisCity_Text_Sharpedoite, MSGBOX_DEFAULT
+	giveitem ITEM_SHARPEDONITE
+	setflag FLAG_MET_ARCHIE_SOOTOPOLIS
+	applymovement LOCALID_ARCHIE, Common_Movement_FaceDown
+	waitmovement 0
+	releaseall
+	end
+
+SootopolisCity_EventScript_GiveLocatinator::
+	msgbox SootopolisCity_Text_StevenGiveLocatinator, MSGBOX_DEFAULT
+	giveitem ITEM_LOCATINATOR
+	setflag FLAG_LOCATINATOR
+	special ReleaseRoamers
+	msgbox SootopolisCity_Text_StevenExplainLocatinator, MSGBOX_DEFAULT
+	closemessage
+	releaseall
+	end

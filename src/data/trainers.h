@@ -1400,8 +1400,8 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 84,
-            .nature = NATURE_TIMID,
-            .ability = ABILITY_ELECTROMORPHOSIS,
+            .nature = NATURE_MODEST,
+            .ability = ABILITY_SURGE_SURFER,
             .heldItem = ITEM_FOCUS_SASH,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -32832,14 +32832,14 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_1] =
     {
-        .trainerName = _("JUAN"),
+        .trainerName = _("GRUNT"),
         .trainerClass = TRAINER_CLASS_LEADER,
         .trainerPic = TRAINER_PIC_LEADER_JUAN,
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .doubleBattle = TRUE,
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = 5,
+        .partySize = 3,
         .party = (const struct TrainerMon[])
         {
             {
@@ -32884,36 +32884,7 @@ F_TRAINER_FEMALE |
                 MOVE_ICE_BEAM,
             },
             },
-            {
-            .species = SPECIES_CRAWDAUNT,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .heldItem = ITEM_CHESTO_BERRY,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 53,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_REST,
-                MOVE_GUILLOTINE,
-                MOVE_TAUNT,
-                MOVE_DOUBLE_TEAM,
-            },
-            },
-            {
-            .species = SPECIES_KINGDRA,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .heldItem = ITEM_CHESTO_BERRY,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 56,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_WATER_PULSE,
-                MOVE_DOUBLE_TEAM,
-                MOVE_ICE_BEAM,
-                MOVE_REST,
-            },
-            },
+            
         },
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_2] =
