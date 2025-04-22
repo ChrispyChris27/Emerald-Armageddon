@@ -183,7 +183,8 @@ struct ProtectStruct
     u16 eatMirrorHerb:1;
     u16 activateOpportunist:2; // 2 - to copy stats. 1 - stats copied (do not repeat). 0 - no stats to copy
     u16 usedAllySwitch:1;
-    u16 padding:2;
+    u16 lashOutAffected:1;
+    u16 padding:1;
     // End of 16-bit bitfield
     u32 physicalDmg;
     u32 specialDmg;
@@ -834,8 +835,6 @@ struct BattleStruct
     u8 usedMicleBerry;
     struct MessageStatus slideMessageStatus;
     u8 trainerSlideSpriteIds[MAX_BATTLERS_COUNT];
-    u8 embodyAspectBoost[NUM_BATTLE_SIDES];
-    u16 savedMove; // backup current move for mid-turn switching, e.g. Red Card
     u16 opponentMonCanTera:6;
     u16 opponentMonCanDynamax:6;
     u16 padding:4;
