@@ -1750,14 +1750,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_4] =
     {
-        .trainerName = _("ROSE"),
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -1789,14 +1788,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_5] =
     {
-        .trainerName = _("ROSE"),
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -1828,14 +1826,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_6] =
     {
-        .trainerName = _("ROSE"),
-        .trainerClass = TRAINER_CLASS_AROMA_LADY,
-        .trainerPic = TRAINER_PIC_AROMA_LADY,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -32833,12 +32830,12 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_1] =
     {
         .trainerName = _("GRUNT"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_JUAN,
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
-        .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -32889,14 +32886,14 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_2] =
     {
-        .trainerName = _("JUAN"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_JUAN,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
-        .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
-        .partySize = 6,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
+        .partySize = 3,
         .party = (const struct TrainerMon[])
         {
             {
@@ -32941,61 +32938,17 @@ F_TRAINER_FEMALE |
                 MOVE_HYDRO_PUMP,
             },
             },
-            {
-            .species = SPECIES_WALREIN,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 58,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_WATER_PULSE,
-                MOVE_BODY_SLAM,
-                MOVE_PROTECT,
-                MOVE_ICE_BEAM,
-            },
-            },
-            {
-            .species = SPECIES_CRAWDAUNT,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .heldItem = ITEM_CHESTO_BERRY,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 58,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_REST,
-                MOVE_GUILLOTINE,
-                MOVE_TAUNT,
-                MOVE_DOUBLE_TEAM,
-            },
-            },
-            {
-            .species = SPECIES_KINGDRA,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .heldItem = ITEM_CHESTO_BERRY,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 61,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_WATER_PULSE,
-                MOVE_DOUBLE_TEAM,
-                MOVE_ICE_BEAM,
-                MOVE_REST,
-            },
-            },
         },
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_3] =
     {
-        .trainerName = _("JUAN"),
-        .trainerClass = TRAINER_CLASS_LEADER,
-        .trainerPic = TRAINER_PIC_LEADER_JUAN,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
-        .doubleBattle = TRUE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
+        .doubleBattle = FALSE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -33407,13 +33360,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_7] =
     {
-        .trainerName = _("ANDRES"),
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33437,13 +33390,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_8] =
     {
-        .trainerName = _("ANDRES"),
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33475,13 +33428,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_9] =
     {
-        .trainerName = _("ANDRES"),
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33513,13 +33466,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_10] =
     {
-        .trainerName = _("ANDRES"),
-        .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-        .trainerPic = TRAINER_PIC_RUIN_MANIAC,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_HIKER,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33551,13 +33504,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_11] =
     {
-        .trainerName = _("CORY"),
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33589,13 +33542,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_12] =
     {
-        .trainerName = _("CORY"),
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33627,13 +33580,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_13] =
     {
-        .trainerName = _("CORY"),
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33665,13 +33618,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_14] =
     {
-        .trainerName = _("CORY"),
-        .trainerClass = TRAINER_CLASS_SAILOR,
-        .trainerPic = TRAINER_PIC_SAILOR,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_MALE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33703,13 +33656,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_15 ] =
     {
-        .trainerName = _("PABLO"),
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33733,13 +33686,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_16] =
     {
-        .trainerName = _("PABLO"),
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33771,13 +33724,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_17] =
     {
-        .trainerName = _("PABLO"),
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33809,13 +33762,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_18] =
     {
-        .trainerName = _("PABLO"),
-        .trainerClass = TRAINER_CLASS_TRIATHLETE,
-        .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33847,13 +33800,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_19] =
     {
-        .trainerName = _("KOJI"),
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerName = _("GRUNT"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -33877,13 +33830,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_20] =
     {
-        .trainerName = _("KOJI"),
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerName = _("BROTHER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33915,13 +33868,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_21] =
     {
-        .trainerName = _("KOJI"),
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerName = _("BROTHER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33953,13 +33906,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_22] =
     {
-        .trainerName = _("KOJI"),
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerName = _("BROTHER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-            TRAINER_ENCOUNTER_MUSIC_INTENSE,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -33991,14 +33944,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_23] =
     {
-        .trainerName = _("CRISTIN"),
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerName = _("BROTHER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
         .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_COOL,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 2,
         .party = (const struct TrainerMon[])
         {
@@ -34022,14 +33974,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_24] =
     {
-        .trainerName = _("CRISTIN"),
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerName = _("SISTER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_COOL,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -34061,14 +34012,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_25] =
     {
-        .trainerName = _("CRISTIN"),
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerName = _("SISTER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_COOL,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -34100,14 +34050,13 @@ F_TRAINER_FEMALE |
     },
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_26] =
     {
-        .trainerName = _("CRISTIN"),
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerName = _("SISTER"),
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
         .encounterMusic_gender = 
-F_TRAINER_FEMALE | 
-            TRAINER_ENCOUNTER_MUSIC_COOL,
+            TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {

@@ -78,4 +78,36 @@ RocketHideoutGrunt1Defeat:
 	.string "number one!$"
 
 RocketHideoutGrunt2Defeat:
-	.string 
+	.string "You beat me down!$"
+
+RocketHideoutGrunt3Defeat:
+	.string "I didn't operate my team well.$"
+
+RocketHideoutGrunt4Defeat:
+	.string "There's no space for a loser\n"
+	.string "like me here!$"
+
+RocketHideoutGrunt6Defeat:
+	.string "Looks like you taught me\n"
+	.string "a lesson.$"
+
+RocketHideoutGrunt1PostBattle:
+	.string "You think you're some big shot\n"
+	.string "just because you beat me?$"
+
+RocketHideoutGrunt2PostBattle:
+	.string "I'm not worried!\p"
+	.string "You've got a long way to go before\n"
+	.string "you can do any real damage!$"
+
+RocketHideoutGrunt3PostBattle:
+	.string "This facility has state of the art\n"
+	.string "technology developed by TEAM ROCKET!$"
+
+RocketHideoutGrunt4PostBattle:
+	.string "I wonder what it would be like to\n"
+	.string "go into outer space?$"
+
+RocketHideoutGrunt6PostBattle:
+	.string "You're in for a surprise when you\n"
+	.string "walk through that door!$"
