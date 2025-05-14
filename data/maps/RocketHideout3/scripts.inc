@@ -135,11 +135,11 @@ RocketHideoutGrunt10Intro:
 	.string "Once I crush you I'll send you\n"
 	.string "packing to the entrance!$"
 
-RocketHideoutGrunt11Intro:
+RocketHideoutGrunt12Intro:
 	.string "Now that we have the rocket fuel\n"
 	.string "TEAM ROCKET is unstoppable!$"
 
-RocketHideoutGrunt12Intro:
+RocketHideoutGrunt11Intro:
 	.string "TEAM ROCKET will soon complete its\n"
 	.string "master plan!$"
 
@@ -181,11 +181,11 @@ RocketHideoutGrunt9Defeat:
 RocketHideoutGrunt10Defeat:
 	.string "You sent me packing!$"
 
-RocketHideoutGrunt11Defeat:
+RocketHideoutGrunt12Defeat:
 	.string "We on the other hand are not\n"
 	.string "unstoppable.$"
 
-RocketHideoutGrunt12Defeat:
+RocketHideoutGrunt11Defeat:
 	.string "I guess this is why we don't\n"
 	.string "get to go on the rocket.$"
 
@@ -216,4 +216,31 @@ RocketHideoutGrunt9PostBattle:
 	.string "Don't ask me what the right panel is!$"
 
 RocketHideoutGrunt10PostBattle:
-	.string ""
+	.string "You'll have to do the warp pad again!$"
+
+RocketHideoutGrunt12PostBattle:
+	.string "You're too late!\p"
+	.string "The rocket fuel is already loaded!$"
+
+RocketHideoutGrunt11PostBattle:
+	.string "It's going to be time for\n"
+	.string "lift off soon!$"
+
+RocketHideoutGrunt13PostBattle:
+	.string "I may not get to go to space but\n"
+	.string "I did get to see inside the rocket.$"
+
+RocketHideoutGrunt14PostBattle:
+	.string "Ha!\p"
+	.string "Your reign of terror continues but\n"
+	.string "the rocket will launch regardless!$"
+
+RocketHideoutGrunt15PostBattle:
+	.string "We've been hard at work for months.\p"
+	.string "You won't be able to stop us, no\n"
+	.string "matter how hard you try!$"
+
+RocketHideoutGrunt16PostBattle:
+	.string "This is your last chance to stand\n"
+	.string "down!\p"
+	.string "Only pain awaits you if you proceed!$"
