@@ -30223,7 +30223,7 @@ F_TRAINER_FEMALE |
         .trainerPic = TRAINER_PIC_GIOVANNI,
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_ROCKET,
         .doubleBattle = FALSE,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -30232,7 +30232,7 @@ F_TRAINER_FEMALE |
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 87,
-            .nature = NATURE_MODEST,
+            .nature = NATURE_TIMID,
             .heldItem = ITEM_WHITE_HERB,
             .ability = ABILITY_HADRON_ENGINE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
