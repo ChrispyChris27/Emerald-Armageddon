@@ -20,6 +20,7 @@ NewMap1_OnLoad::
 
 NewMap1_OnTransition::
 	goto_if_eq VAR_ROCKET_HIDEOUT_STATE, 2, NewMap1_Move_Sister
+	goto_if_eq VAR_ROCKET_HIDEOUT_STATE, 3, NewMap1_Move_Sister
 	end
 
 NewMap1_OnFrame::
@@ -61,17 +62,7 @@ NewMap1_Sister_Battles::
 	
 NewMap1_EventScript_Giovanni::
 	lockall
-	applymovement LOCALID_SCI, Common_Movement_WalkInPlaceRight
-	waitmovement 0
-	msgbox Hideout_ScientistIntro, MSGBOX_AUTOCLOSE
-	applymovement LOCALID_GIO, Common_Movement_WalkInPlaceLeft
-	waitmovement 0
-	msgbox Hideout_GioIntro1, MSGBOX_AUTOCLOSE
-	applymovement LOCALID_SCI, Common_Movement_FaceUp
-	waitmovement 0
-	removeobject LOCALID_SCI
-	playse SE_DOOR
-	delay 32
+	goto_if_unset FLAG_HIDEOUT_SCIENTIST, Scientist_Gio_Meeting
 	applymovement LOCALID_GIO, Common_Movement_FacePlayer
 	msgbox Hideout_GioIntro2
 	trainerbattle_no_intro TRAINER_GIOVANNI_2, HideoutGioDefeat
@@ -92,7 +83,6 @@ NewMap1_EventScript_Giovanni::
 	applymovement LOCALID_RAY, Rayquaza_Movement
 	waitmovement 0
 	playmoncry SPECIES_RAYQUAZA, CRY_MODE_NORMAL
-	waitmoncry
 	applymovement LOCALID_GIO, GioMovement2
 	waitmovement 0
 	msgbox Hideout_GioExit4, MSGBOX_AUTOCLOSE
@@ -164,7 +154,8 @@ NewMap1_EventScript_Giovanni::
 	setflag FLAG_SMART_WILD
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
-	setwildbattle SPECIES_RAYQUAZA_MEGA, 100, ITEM_METEORITE
+	setvar VAR_ROCKET_HIDEOUT_STATE, 3
+	setwildbattle SPECIES_RAYQUAZA_MEGA, 90, ITEM_METEORITE
 	special BattleSetup_StartLegendaryBattle
 	waitstate
 	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL
@@ -187,6 +178,8 @@ NewMap1_EventScript_Giovanni::
 	applymovement LOCALID_GIO, Common_Movement_FaceDown
 	waitmovement 0
 	msgbox Hideout_GioExit12, MSGBOX_AUTOCLOSE
+	giveitem ITEM_KANGASKHANITE
+	msgbox Hideout_GioExit13, MSGBOX_AUTOCLOSE
 	fadescreen FADE_TO_BLACK 
 	removeobject LOCALID_GIO
 	removeobject LOCALID_SIS1
@@ -200,10 +193,95 @@ NewMap1_EventScript_Giovanni::
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
 	setflag FLAG_HIDEOUT_GIOVANNI
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
-	setvar VAR_ROCKET_HIDEOUT_STATE, 3
+	setvar VAR_ROCKET_HIDEOUT_STATE, 4
 	fadescreen FADE_FROM_BLACK
 	releaseall
 	end
+
+RayquazaShakes::
+	lockall
+	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 16  @ num shakes
+	setvar VAR_0x8007, 5  @ shake delay
+	special ShakeCamera
+	waitstate
+	releaseall
+	end
+
+RayquazaBattle::
+	lockall
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	applymovement LOCALID_MEGARAY, Rayquaza_Descends
+	waitmovement 0
+	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL
+	setvar VAR_0x8004, 4  @ vertical pan
+	setvar VAR_0x8005, 4  @ horizontal pan
+	setvar VAR_0x8006, 16  @ num shakes
+	setvar VAR_0x8007, 5  @ shake delay
+	special ShakeCamera
+	waitstate
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	setwildbattle SPECIES_RAYQUAZA_MEGA, 90, ITEM_METEORITE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL
+	waitmoncry
+	applymovement LOCALID_MEGARAY, Rayquaza_Leaves
+	waitmovement 0
+	removeobject LOCALID_MEGARAY
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	msgbox Hideout_GioExit9, MSGBOX_AUTOCLOSE
+	delay 32
+	applymovement LOCALID_GIO, Common_Movement_FaceDown
+	waitmovement 0
+	msgbox Hideout_GioExit10, MSGBOX_AUTOCLOSE
+	delay 32
+	applymovement LOCALID_GIO, Common_Movement_FaceUp
+	waitmovement 0
+	msgbox Hideout_GioExit11, MSGBOX_AUTOCLOSE
+	delay 32
+	applymovement LOCALID_GIO, Common_Movement_FaceDown
+	waitmovement 0
+	msgbox Hideout_GioExit12, MSGBOX_AUTOCLOSE
+	giveitem ITEM_KANGASKHANITE
+	msgbox Hideout_GioExit13, MSGBOX_AUTOCLOSE
+	fadescreen FADE_TO_BLACK 
+	removeobject LOCALID_GIO
+	removeobject LOCALID_SIS1
+	removeobject LOCALID_SIS2
+	removeobject LOCALID_SIS3
+	removeobject LOCALID_ARIANA
+	removeobject LOCALID_ARCHER
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_WALLACE
+	setflag FLAG_HIDEOUT_GIOVANNI
+	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
+	setvar VAR_ROCKET_HIDEOUT_STATE, 4
+	fadescreen FADE_FROM_BLACK
+	releaseall
+	end
+
+Scientist_Gio_Meeting::
+	applymovement LOCALID_SCI, Common_Movement_WalkInPlaceRight
+	waitmovement 0
+	msgbox Hideout_ScientistIntro, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_GIO, Common_Movement_WalkInPlaceLeft
+	waitmovement 0
+	msgbox Hideout_GioIntro1, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_SCI, Common_Movement_FaceUp
+	waitmovement 0
+	removeobject LOCALID_SCI
+	playse SE_DOOR
+	delay 32
+	goto NewMap1_EventScript_Giovanni
 
 Sister1Intro:
 	.string "I'm not surprised our useless\n"
@@ -345,28 +423,27 @@ Hideout_GioIntro2:
 	.string "enough already?\p"
 	.string "Still I suppose I owe you some\n"
 	.string "measure of gratitude.\p"
-	.string "You may have bested all of my\n"
-	.string "grunts, but you were also of\l"
-	.string "great help to us.\p"
-	.string "It was you after all that found\n"
-	.string "and summoned the great RAYQUAZA\l"
-	.string "alerting us to its location.\p"
-	.string "After resolving the conflict\n"
-	.string "between KYOGRE and GROUDON, we\l"
-	.string "witnessed RAYQUAZA return to the sky.\p"
-	.string "We had suspected that there was a\n"
-	.string "link between RAYQUAZA and outer\l"
-	.string "space which is why we swiped the\l"
-	.string "rocket fuel from the SPACE CENTER.\p"
+	.string "You may have bested all of my grunts,\n"
+	.string "but you were also of great help to us.\p"
+	.string "It was you after all that found and\n"
+	.string "summoned the great RAYQUAZA alerting\l"
+	.string "us to its location.\p"
+	.string "After resolving the conflict between\n"
+	.string "KYOGRE and GROUDON, we witnessed\l"
+	.string "RAYQUAZA return to the sky.\p"
+	.string "We had suspected that there was a link\n"
+	.string "between RAYQUAZA and outer space which\l"
+	.string "is why we swiped the rocket fuel from\l"
+	.string "the SPACE CENTER.\p"
 	.string "Thanks to you, we've confirmed our\n"
 	.string "suspicions were correct.\p"
 	.string "Now that RAYQUAZA has returned to\n"
 	.string "outer space, I too must follow!\p"
-	.string "The most powerful POKéMON out of\n"
-	.string "this world will soon be mine!\p"
-	.string "There is just one more task that\n"
-	.string "must be completed before I board\l"
-	.string "this rocket and fulfill my dreams.\p"
+	.string "The most powerful POKéMON out of this\n"
+	.string "world will soon be mine!\p"
+	.string "There is just one more task that must\n"
+	.string "be completed before I board this rocket\l"
+	.string "and fulfill my dreams.\p"
 	.string "I must vanquish you once and for all!$"
 
 HideoutGioDefeat:
@@ -421,8 +498,8 @@ Hideout_GioExit8:
 	.string "before our entire hideout crumbles!$"
 
 Hideout_GioExit9:
-	.string "...\n"
-	.string "...$"
+	.string ". . .\n"
+	.string ". . .$"
 
 Hideout_GioExit10:
 	.string "There goes MEGA RAYQUAZA...\p"
@@ -445,8 +522,12 @@ Hideout_GioExit12:
 	.string "I must come to terms with the fact that\n"
 	.string "in the end it was my own weakness that\l"
 	.string "prevented me from capturing RAYQUAZA.\p"
-	.string "We have no use for this hideout anymore.\n"
+	.string "We will be abandoning this hideout now.\n"
 	.string "Do with it as you see fit.\p"
+	.string "As thanks for saving us all, please\n"
+	.string "take this as well.$"
+
+Hideout_GioExit13:
 	.string "Perhaps one day, TEAM ROCKET will cross\n"
 	.string "paths with you again.$"
 	
