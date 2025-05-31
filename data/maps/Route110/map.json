@@ -291,6 +291,7 @@
       "flag": "FLAG_ITEM_ROUTE_110_RARE_CANDY"
     },
     {
+      "local_id": "LOCALID_CHALLENGE_BIKER",
       "graphics_id": "OBJ_EVENT_GFX_CYCLING_TRIATHLETE_M",
       "x": 27,
       "y": 92,
@@ -395,6 +396,7 @@
       "flag": "FLAG_ITEM_ROUTE_110_ELIXIR"
     },
     {
+      "local_id": "LOCALID_ROUTE110_BIRCH",
       "graphics_id": "OBJ_EVENT_GFX_PROF_BIRCH",
       "x": 18,
       "y": 93,
