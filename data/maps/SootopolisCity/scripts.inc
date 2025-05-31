@@ -1744,11 +1744,11 @@ SootopolisCity_Text_StevenExplainLocatinator:
 	.string "presence.$"
 
 SootopolisCity_EventScript_Sharpedoite::
-	applymovement LOCALID_ARCHIE, Common_Movement_FacePlayer
+	applymovement LOCALID_SOOTOPOLIS_ARCHIE, Common_Movement_FacePlayer
 	msgbox SootopolisCity_Text_Sharpedoite, MSGBOX_DEFAULT
 	giveitem ITEM_SHARPEDONITE
 	setflag FLAG_MET_ARCHIE_SOOTOPOLIS
-	applymovement LOCALID_ARCHIE, Common_Movement_FaceDown
+	applymovement LOCALID_SOOTOPOLIS_ARCHIE, Common_Movement_FaceDown
 	waitmovement 0
 	releaseall
 	end

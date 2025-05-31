@@ -2552,7 +2552,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sWoobatLevelUpLearnset,
         .teachableLearnset = sWoobatTeachableLearnset,
         .eggMoveLearnset = sWoobatEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_MOVE, MOVE_HEART_STAMP, SPECIES_SWOOBAT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SWOOBAT, CONDITIONS({IF_KNOWS_MOVE, MOVE_HEART_STAMP})}),
     },
 
     [SPECIES_SWOOBAT] =
@@ -4370,8 +4370,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sBasculinTeachableLearnset,
         .eggMoveLearnset = sBasculinEggMoveLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM_MALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_M},
-                                {EVO_ITEM_FEMALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_F}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_BASCULEGION_M, CONDITIONS({IF_GENDER, MON_MALE})},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_BASCULEGION_F, CONDITIONS({IF_GENDER, MON_FEMALE})}),
     },
 
     [SPECIES_BASCULIN_BLUE_STRIPED] =
@@ -4439,8 +4439,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sBasculinTeachableLearnset,
         .eggMoveLearnset = sBasculinEggMoveLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM_MALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_M},
-                                {EVO_ITEM_FEMALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_F}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_BASCULEGION_M, CONDITIONS({IF_GENDER, MON_MALE})},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_BASCULEGION_F, CONDITIONS({IF_GENDER, MON_FEMALE})}),
     },
 
 #if P_HISUIAN_FORMS
@@ -4509,8 +4509,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sBasculinWhiteStripedTeachableLearnset,
         .eggMoveLearnset = sBasculinWhiteStripedEggMoveLearnset,
         .formSpeciesIdTable = sBasculinFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM_MALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_M},
-                                {EVO_ITEM_FEMALE, ITEM_DUSK_STONE, SPECIES_BASCULEGION_F}),
+        .evolutions = EVOLUTION({EVO_ITEM, ITEM_DUSK_STONE, SPECIES_BASCULEGION_M, CONDITIONS({IF_GENDER, MON_MALE})},
+                                {EVO_ITEM, ITEM_DUSK_STONE, SPECIES_BASCULEGION_F, CONDITIONS({IF_GENDER, MON_FEMALE})}),
     },
 
     [SPECIES_BASCULEGION_M] =

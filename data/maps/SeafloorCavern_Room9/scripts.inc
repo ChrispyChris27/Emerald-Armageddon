@@ -54,7 +54,7 @@ SeafloorCavern_Room9_EventScript_ArchieAwakenKyogre::
 	special ShakeCamera
 	waitstate
 	msgbox SeafloorCavern_Room9_Text_RedOrbShinesByItself, MSGBOX_DEFAULT
-	applymovement LOCALID_ARCHIE, Common_Movement_FacePlayer
+	applymovement LOCALID_SEAFLOOR_CAVERN_ARCHIE, Common_Movement_FacePlayer
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 	waitmovement 0
 	msgbox SeafloorCavern_Room9_Text_ArchieYouMustDisappear, MSGBOX_DEFAULT

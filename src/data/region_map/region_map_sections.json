@@ -698,7 +698,6 @@
     },
     {
       "id": "MAPSEC_DYNAMIC",
-      "name": "",
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1705,7 +1704,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROUTE_100",
+      "id": "MAPSEC_ROUTE_100",
       "name": "ROUTE 100",
       "x": 6,
       "y": 11,
@@ -1713,7 +1712,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_PETALBURG_SANCTUARY",
+      "id": "MAPSEC_PETALBURG_SANCTUARY",
       "name": "PETALBURG SANCTUARY",
       "x": 0,
       "y": 0,
@@ -1721,7 +1720,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_METEOR_CASTLE",
+      "id": "MAPSEC_METEOR_CASTLE",
       "name": "METEOR CASTLE",
       "x": 0,
       "y": 0,
@@ -1729,7 +1728,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_ROCKET_HIDEOUT2",
+      "id": "MAPSEC_ROCKET_HIDEOUT2",
       "name": "ROCKET HIDEOUT",
       "x": 0,
       "y": 0,
@@ -1737,7 +1736,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_DRAGONS_DEN",
+      "id": "MAPSEC_DRAGONS_DEN",
       "name": "DRAGON'S DEN",
       "x": 0,
       "y": 0,
@@ -1745,7 +1744,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_TRANSISTOR_TUNNEL",
+      "id": "MAPSEC_TRANSISTOR_TUNNEL",
       "name": "TRANSISTOR TUNNEL",
       "x": 0,
       "y": 0,
@@ -1753,7 +1752,7 @@
       "height": 1
     },
     {
-      "map_section": "MAPSEC_MYTHICAL_MOUNTAIN",
+      "id": "MAPSEC_MYTHICAL_MOUNTAIN",
       "name": "MYTHICAL MOUNTAIN",
       "x": 0,
       "y": 0,

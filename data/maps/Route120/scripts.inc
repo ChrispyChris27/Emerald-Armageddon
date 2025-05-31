@@ -1,10 +1,3 @@
-.set LOCALID_BRIDGE_KECLEON, 30
-.set LOCALID_STEVEN, 31
-.set LOCALID_DUCK1, 45
-.set LOCALID_DUCK2, 46
-.set LOCALID_CYNTHIA, 47
-.set LOCALID_BRIDGE_KECLEON_SHADOW, 36  @ They use a second object which is identical to Kecleon but has a reflection palette tag for the bridge shadow
-
 Route120_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route120_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, Route120_OnTransition
@@ -504,14 +497,14 @@ Route120_EventScript_Cynthia::
 	waitmovement 0
 	removeobject LOCALID_DUCK1
 	removeobject LOCALID_DUCK2
-	applymovement LOCALID_CYNTHIA, Common_Movement_FacePlayer
+	applymovement LOCALID_120_CYNTHIA, Common_Movement_FacePlayer
 	msgbox Route120_Text_Cynthia2, MSGBOX_AUTOCLOSE
 	waitmovement 0
 	delay 50
 	setfieldeffectargument 0, 1
 	dofieldeffect FLDEFF_NPCFLY_OUT
 	delay 15
-	removeobject LOCALID_CYNTHIA
+	removeobject LOCALID_120_CYNTHIA
 	waitfieldeffect FLDEFF_NPCFLY_OUT
 	releaseall
 	end

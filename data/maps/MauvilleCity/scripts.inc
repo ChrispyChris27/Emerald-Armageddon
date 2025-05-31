@@ -78,11 +78,11 @@ MauvilleCity_EventScript_WallysUncle::
 	end
 
 MauvilleCity_EventScript_WallyNotReady::
-	applymovement LOCALID_WALLY, Common_Movement_FacePlayer
+	applymovement LOCALID_MAUVILLE_WALLY, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox MauvilleCity_Text_WallyNotReady, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_WALLY, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_MAUVILLE_WALLY, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end
@@ -90,7 +90,7 @@ MauvilleCity_EventScript_WallyNotReady::
 MauvilleCity_EventScript_WallUncleNotReady::
 	msgbox MauvilleCity_Text_WallyUncleNotReady, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCALID_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
+	applymovement LOCALID_MAUVILLE_WALLYS_UNCLE, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	releaseall
 	end

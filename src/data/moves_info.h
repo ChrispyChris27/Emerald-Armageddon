@@ -6275,7 +6275,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Hidden Power"),
         .description = COMPOUND_STRING(
-        #if B_HIDDEN_POWER_DMG >= GEN_6
             "The type varies\n"
             "with the user."),
         .power = 60,
@@ -11886,7 +11885,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_RECOIL,
         .power = 150,
         .type = TYPE_DRAGON,
         .accuracy = 100,
@@ -11894,7 +11893,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
-        .recoil = 25,
+        .argument = { .recoilPercentage = 25 },
         .contestEffect = CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN,
         .contestCategory = CONTEST_CATEGORY_COOL,
         .contestComboStarterId = 0,

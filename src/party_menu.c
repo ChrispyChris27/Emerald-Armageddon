@@ -7926,6 +7926,7 @@ void ItemUseCB_Candinator(u8 taskId, TaskFunc task)
     s16 *arrayPtr = ptr->data;
     u16 *itemPtr = &gSpecialVar_ItemId;
     bool8 cannotUseEffect;
+    bool32 canStopEvo = TRUE;
     u8 holdEffectParam = GetItemHoldEffectParam(*itemPtr);
 
     sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
@@ -7949,7 +7950,7 @@ void ItemUseCB_Candinator(u8 taskId, TaskFunc task)
         sFinalLevel = 0;
 
         if (holdEffectParam == 0)
-            targetSpecies = GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL);
+            targetSpecies = GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, &canStopEvo, CHECK_EVO);
 
         if (targetSpecies != SPECIES_NONE)
         {
