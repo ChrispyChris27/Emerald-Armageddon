@@ -362,7 +362,7 @@ static void FindMapsWithMon(u16 species)
 #if SHOW_STALKERS_ON_POKEDEX
 	    if (species == roamer->species)
 #else
-	    if (species == roamer->species && !roamer->isStalker)
+	    if (species == roamer->species)
 #endif
 		{
 			// This is a roamer's species, show where this roamer is currently

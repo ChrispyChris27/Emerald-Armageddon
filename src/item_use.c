@@ -81,6 +81,7 @@ static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
+static void ItemUseOnFieldCB_Locatinator(u8);
 
 static const u8 sText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");
 static const u8 sText_ItemFinderNearby[] = _("Huh?\nThe ITEMFINDER's responding!\pThere's an item buried around here!{PAUSE_UNTIL_PRESS}");
@@ -96,6 +97,8 @@ static const u8 sText_UsedVar2WildRepelled[] = _("{PLAYER} used the\n{STR_VAR_2}
 static const u8 sText_PlayedPokeFluteCatchy[] = _("Played the POKé FLUTE.\pNow, that's a catchy tune!{PAUSE_UNTIL_PRESS}");
 static const u8 sText_PlayedPokeFlute[] = _("Played the POKé FLUTE.");
 static const u8 sText_PokeFluteAwakenedMon[] = _("The POKé FLUTE awakened sleeping\nPOKéMON.{PAUSE_UNTIL_PRESS}");
+static const u8 sTextNormalLocatinator[] =_("The LOCATINATOR senses nothing\n unusual here.{PAUSE_UNTIL_PRESS}");
+static const u8 sTextRoamerLocatinator[] =_("The LOCATINATOR is flashing brightly!\nSomething rare must be nearby!{PAUSE_UNTIL_PRESS}");
 
 // EWRAM variables
 EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
@@ -1621,17 +1624,24 @@ void ItemUseOutOfBattle_TownMap(u8 taskId)
     }
 }
 
-void ItemUseOutOfBattle_Locatinator(u8 taskid)
+void ItemUseOutOfBattle_Locatinator(u8 var)
 {
+    sItemUseOnFieldCB = ItemUseOnFieldCB_Locatinator;
+    SetUpItemUseOnFieldCallback(var);
+}
+
+static void ItemUseOnFieldCB_Locatinator(u8 taskId)
+{   
     u32 i;
     for (i = 0; i < ROAMER_COUNT; i++)
 	{
 	    if (IsRoamerAt(i, gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum))
         {
+            DisplayItemMessageOnField(taskId, sTextRoamerLocatinator, Task_CloseItemfinderMessage);
             break;
-            AddTextPrinterParameterized(0, FONT_NORMAL, gTextRoamerLocatinator, 0, 17, 0, NULL);
         }
+        DisplayItemMessageOnField(taskId, sTextNormalLocatinator, Task_CloseItemfinderMessage);
     }
-        AddTextPrinterParameterized(0, FONT_NORMAL, gTextNormalLocatinator, 0, 17, 0, NULL);
+    
 }
 #undef tUsingRegisteredKeyItem
