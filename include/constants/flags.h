@@ -697,7 +697,7 @@
 #define FLAG_SMART_WILD         0x28A // Unused Flag
 #define FLAG_NO_CATCH_WILD      0x28B // Unused Flag
 #define FLAG_NO_RUN_WILD        0x28C // Unused Flag
-#define FLAG_UNUSED_0x28D  0x28D // Unused Flag
+#define FLAG_MAGIKARP_WF        0x28D // Unused Flag
 #define FLAG_UNUSED_0x28E  0x28E // Unused Flag
 #define FLAG_UNUSED_0x28F  0x28F // Unused Flag
 #define FLAG_UNUSED_0x290  0x290 // Unused Flag

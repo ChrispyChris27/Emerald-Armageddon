@@ -10683,7 +10683,7 @@ F_TRAINER_FEMALE |
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 89,
             .nature = NATURE_LONELY,
-            .ability = ABILITY_SOUNDPROOF,
+            .ability = ABILITY_SNOW_WARNING,
             .heldItem = ITEM_ABOMASITE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {

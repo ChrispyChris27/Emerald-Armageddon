@@ -47,6 +47,7 @@ SootopolisCity_OnTransition:
 	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 4, SootopolisCity_EventScript_SetExitCaveOfOriginObjPos
 	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 5, SootopolisCity_EventScript_SetOutsideGymObjPos
 	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_SetExpertBlockCaveEntrance
+	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_Move_Steven
 	end
 
 SootopolisCity_EventScript_HideMapNamePopup::
@@ -165,6 +166,7 @@ SootopolisCity_OnResume:
 SootopolisCity_OnFrame:
 	map_script_2 VAR_SOOTOPOLIS_CITY_STATE, 1, SootopolisCity_EventScript_StartLegendariesScene
 	map_script_2 VAR_SKY_PILLAR_STATE, 1, SootopolisCity_EventScript_StartRayquazaScene
+	map_script_2 VAR_SOOTOPOLIS_CITY_STATE, 6, SootopolisCity_EventScript_Steven2
 	.2byte 0
 
 @ If not at PokeCenter, assumed to have arrived via Dive
@@ -1762,3 +1764,57 @@ SootopolisCity_EventScript_GiveLocatinator::
 	closemessage
 	releaseall
 	end
+
+SootopolisCity_EventScript_Move_Steven::
+	setobjectxyperm LOCALID_SOOTOPOLIS_STEVEN, 31, 34
+	end
+
+SootopolisCity_EventScript_Steven2::
+	lockall
+	applymovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_FaceUp
+	waitmovement 0
+	msgbox SootopolisCity_Text_Steven_MeteorFalls, MSGBOX_AUTOCLOSE
+	waitmovement 0
+	delay 50
+	setfieldeffectargument 0, 1
+	dofieldeffect FLDEFF_NPCFLY_OUT
+	delay 15
+	removeobject LOCALID_SOOTOPOLIS_STEVEN
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+	clearflag FLAG_MAGIKARP_WF
+	setvar VAR_SOOTOPOLIS_CITY_STATE 7
+	releaseall
+	end
+
+SootopolisCity_Text_Steven_MeteorFalls:
+	.string "There you are {PLAYER}.\p"
+	.string "Thank you for putting an end to TEAM\n"
+	.string "ROCKET's plans and congratulations\l"
+	.string "on earning your eighth gym badge.\p"
+	.string "I wish there was time for us to\n"
+	.string "celebrate, but unfortunately that\l"
+	.string "other matter I was investigating has\l"
+	.string "become more serious than I thought.\p"
+	.string "While GROUDON and KYOGRE were fighting,\n"
+	.string "I became aware of energy surges that\l"
+	.string "were popping up around the HOENN region.\p"
+	.string "After RAYQUAZA calmed those two down,\n"
+	.string "most of these energy surges died down\l"
+	.string "as well.\p"
+	.string "However, one of them seems to have\n"
+	.string "grown stronger over that time rather\l"
+	.string "than weaker.\p"
+	.string "The source of that energy seems to be\n"
+	.string "deep within METEOR FALLS.\p"
+	.string "What's even stranger is that whatever\n"
+	.string "is causing the energy surge in METEOR\l"
+	.string "FALLS also seems to be causing MAGIKARP\l"
+	.string "to congregate around WATERFALLS.\p"
+	.string "I'll be heading to METEOR FALLS to\n"
+	.string "investigate this matter further.\p"
+	.string "Seeing as EVER GRANDE CITY is currently\n"
+	.string "inaccessible due to the aforementioned\l"
+	.string "MAGIKARP I do hope you will come and\l"
+	.string "assist my investigation.$"

@@ -67,7 +67,7 @@ SootopolisCity_Gym_1F_EventScript_Juan::
 	end
 
 SootopolisCity_Gym_1F_JuanScript::
-	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_DEFAULT
+	msgbox SootopolisCity_Gym_1F_Text_JuanPostBattle, MSGBOX_NPC
 	release
 	end
 
@@ -131,7 +131,7 @@ SootopolisCity_Gym_1F_EventScript_GymGuidePostVictory::
 	end
 
 SootopolisCity_Gym_1F_WallaceScript::
-	msgbox SootopolisCity_Gym_1F_Text_Wallace, MSGBOX_DEFAULT
+	msgbox SootopolisCity_Gym_1F_Text_Wallace, MSGBOX_NPC
 	release
 	end
 
@@ -327,7 +327,8 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch:
 SootopolisCity_Gym_1F_Text_Wallace:
 	.string "You battled with such elegance and\n"
 	.string "power at the same time.\p"
-	.string "Go forth and challenge the POKéMON LEAGUE!$"
+	.string "Go forth and challenge the POKéMON\n" 
+	.string "LEAGUE!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
 	.string "JUAN: Ah, this GYM had returned to its\n"

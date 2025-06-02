@@ -291,5 +291,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_CYNTHIA_120
 	setflag FLAG_MELTAN_BALL
 	setflag FLAG_GIMMIGHOUL_BALL
+	setflag FLAG_MAGIKARP_WF
 	call EventScript_ResetAllBerries
 	end
