@@ -736,7 +736,7 @@
 #define TRAINER_GRUNT_MAGMA_HIDEOUT_15      730
 #define TRAINER_GRUNT_MAGMA_HIDEOUT_16      731
 #define TRAINER_TABITHA_MAGMA_HIDEOUT       732
-#define TRAINER_DARCY                       733
+#define TRAINER_CYRUS_DOUBLE                733
 #define TRAINER_ARIANA_MOSSDEEP              734
 #define TRAINER_PETE                        735
 #define TRAINER_ISABELLE                    736

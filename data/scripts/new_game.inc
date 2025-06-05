@@ -292,5 +292,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_MELTAN_BALL
 	setflag FLAG_GIMMIGHOUL_BALL
 	setflag FLAG_MAGIKARP_WF
+	setflag FLAG_METEOR_FALLS_STEVEN
+	setflag FLAG_MF_STEVEN_2
 	call EventScript_ResetAllBerries
 	end

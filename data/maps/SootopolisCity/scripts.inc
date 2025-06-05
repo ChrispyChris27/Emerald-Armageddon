@@ -1784,7 +1784,9 @@ SootopolisCity_EventScript_Steven2::
 	removeobject LOCALID_SOOTOPOLIS_STEVEN
 	waitfieldeffect FLDEFF_NPCFLY_OUT
 	clearflag FLAG_MAGIKARP_WF
-	setvar VAR_SOOTOPOLIS_CITY_STATE 7
+	clearflag FLAG_METEOR_FALLS_STEVEN
+	setvar VAR_SOOTOPOLIS_CITY_STATE, 7
+	setvar VAR_STEVEN_MF_STATE, 1
 	releaseall
 	end
 

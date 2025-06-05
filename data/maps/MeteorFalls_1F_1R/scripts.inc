@@ -391,3 +391,26 @@ MeteorFalls_EventScript_Grunt14::
 	trainerbattle_single TRAINER_FALLS_GRUNT_14, MeteorFalls_Text_Grunt14Intro, MeteorFalls_Text_Grunt14Defeat
 	msgbox MeteorFalls_Text_Grunt14PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+MeteorFalls_EventScript_Steven::
+	lockall
+	msgbox MeteorFalls_Text_Steven1, MSGBOX_DEFAULT
+	applymovement LOCALID_MF_STEVEN1, Common_Movement_FacePlayer
+	msgbox MeteorFalls_Text_Steven2, MSGBOX_AUTOCLOSE
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_MF_STEVEN1
+	clearflag FLAG_MF_STEVEN_2
+	fadescreen FADE_FROM_BLACK
+	setvar VAR_STEVEN_MF_STATE, 2
+	releaseall
+	end
+
+MeteorFalls_Text_Steven1:
+	.string "Interesting...$"
+
+MeteorFalls_Text_Steven2:
+	.string "The WATERFALL in METEOR FALLS isn't\n"
+	.string "blocked by MAGIKARP.\p"
+	.string "I guess we better travel up it then.\p"
+	.string "I'll meet up with you again deeper\n"
+	.string "in the cave.$"
