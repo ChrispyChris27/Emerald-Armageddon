@@ -28589,7 +28589,7 @@ F_TRAINER_FEMALE |
             .moves = {
                 MOVE_CLOSE_COMBAT,
                 MOVE_DIRE_CLAW,
-                MOVE_X_SCISSOR,
+                MOVE_FAKE_OUT,
                 MOVE_THROAT_CHOP,
             },
             },

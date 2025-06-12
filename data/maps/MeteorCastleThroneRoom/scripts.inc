@@ -8,6 +8,7 @@ MeteorCastleThroneRoom_OnFrame::
 
 Cyrus_Event_Script::
 	lockall
+	setflag FLAG_ORIGIN_FORMS
 	special StopMapMusic
 	msgbox StevenStop, MSGBOX_DEFAULT
 	closemessage
@@ -16,7 +17,6 @@ Cyrus_Event_Script::
 	applymovement OBJ_EVENT_ID_PLAYER, PlayerApproach
 	waitmovement 0
 	playmoncry SPECIES_DIALGA, CRY_MODE_NORMAL
-	waitmoncry
 	playmoncry SPECIES_PALKIA, CRY_MODE_NORMAL
 	waitmoncry
 	applymovement LOCALID_CYRUS, Common_Movement_FaceDown
@@ -31,11 +31,69 @@ Cyrus_Event_Script::
 	waitmovement 0
 	msgbox Cyrus_Text2, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_CYRUS, CyrusDeffeat1
+	msgbox Cyrus_Text3, MSGBOX_DEFAULT
+	closemessage
+	delay 20
+	playse SE_M_DETECT
+	playfanfare MUS_AWAKEN_LEGEND
+	playse SE_ORB
+	fadescreen FADE_TO_WHITE
+	removeobject LOCALID_DIALGA_A
+	removeobject LOCALID_PALKIA_A
+	removeobject LOCALID_TINA_A
+	clearflag FLAG_ORIGIN_FORMS
+	addobject LOCALID_DIALGA_O
+	addobject LOCALID_PALKIA_O
+	addobject LOCALID_TINA_O
+	applymovement LOCALID_MF_STEVEN5, StevenEscape
+	waitmovement 0
+	delay 200
+	fadescreen FADE_FROM_WHITE
+	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
+	setvar VAR_0x8004, 1  @ vertical pan
+	setvar VAR_0x8005, 1  @ horizontal pan
+	setvar VAR_0x8006, 24  @ num shakes
+	setvar VAR_0x8007, 5  @ shake delay
+	special ShakeCamera
+	waitstate
+	delay 150
+	special StopMapMusic
+	playmoncry SPECIES_DIALGA_ORIGIN, CRY_MODE_NORMAL
+	playmoncry SPECIES_PALKIA_ORIGIN, CRY_MODE_NORMAL
+	waitmoncry
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	msgbox ThroneRoomStevenText2, MSGBOX_AUTOCLOSE
+	special HealPlayerParty
+	goto ThroneRoomPickMulti
+	end
 
+ThroneRoomDoMulti::
+	special StopMapMusic
+	multi_2_vs_1 TRAINER_CYRUS_DOUBLE, CyrusDefeat2, PARTNER_STEVEN2
+	switch VAR_RESULT
+	case 1, CyrusDefeated
+	fadescreen FADE_TO_BLACK
+	special SetCB2WhiteOut
+	waitstate
 
+ThroneRoomPickMulti::
+	special SavePlayerParty
+	fadescreen FADE_TO_BLACK
+	special ChooseHalfPartyForBattle
+	waitstate
+	goto_if_ne VAR_RESULT, 0, ThroneRoomDoMulti
+	special LoadPlayerParty
+	special StopMapMusic
+	goto StevenReadyBattle
 
+StevenReadyBattle::
+	msgbox StevenReadyPrompt, MSGBOX_AUTOCLOSE
+	closemessage
+	goto ThroneRoomPickMulti
 
-
+CyrusDefeated::
+	end
 
 
 StevenStop:
@@ -93,7 +151,7 @@ Cyrus_Text1:
 
 ThroneRoomStevenText1:
 	.string "{PLAYER}, I'm trapped by\n"
-	.string "DIALGA and PALKIA!\p"
+	.string "DIALGA, PALKIA, and GIRATINA!\p"
 	.string "You'll have to do something!$"
 
 Cyrus_Text2:
@@ -111,3 +169,62 @@ Cyrus_Text2:
 CyrusDeffeat1:
 	.string "No! I have come too far for\n"
 	.string "this to be the end!$"
+
+Cyrus_Text3:
+	.string ". . .\n"
+	.string ". . .\p"
+	.string "Hah...\p"
+	.string "Hahaha\p"
+	.string "Fwahahahaha!\p"
+	.string "You think that just because you\n"
+	.string "defeated me once this is over?\p"
+	.string "I am relentless!\p"
+	.string "I am inevitable!\p"
+	.string "I have been hardened by the void of\n"
+	.string "nothingness!\p"
+	.string "I have gained powers unimaginable\n"
+	.string "by staring into the origins of the\l"
+	.string "universe itself!\p"
+	.string "DIALGA!\p"
+	.string "PALKIA!\p"
+	.string "GIRATINA!\p"
+	.string "These three created everything in\n"
+	.string "this universe!\p"
+	.string "Now my POKéMON!\p"
+	.string "It is time to show off the origins of\n"
+	.string "your power!\p"
+	.string "Your unlimited power!$"
+
+ThroneRoomStevenText2:
+	.string "{PLAYER}, this is bad.\p"
+	.string "PALKIA, DIALGA, and GIRATINA have\n"
+	.string "reverted to their ORIGIN FORMS.\p"
+	.string "They have the power to turn CYRUS'S\n"
+	.string "dreams into reality.\p"
+	.string "We have to free them from his control\n"
+	.string "before irreparable damage is caused!\p"
+	.string "Fortunately I was able to escape while\n"
+	.string "they transformed, so I can provide you\l"
+	.string "with some assistance now.\p"
+	.string "It's time that we teamed up again to\n"
+	.string "save the creation trio and stop CYRUS.\p"
+	.string "There's no time to waste!\p" 
+	.string "I'll heal your POKéMON but I hope\n"
+	.string "you're ready!$"
+
+StevenEscape:
+	walk_fast_left
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	face_right
+	step_end
+
+CyrusDefeat2:
+	.string "Impossible! You defeated the\n"
+	.string "creators of the universe!$"
+
+StevenReadyPrompt:
+	.string "There's no time to waste!\p"
+	.string "I've healed your POKéMON, time\n"
+	.string "to get ready!$"

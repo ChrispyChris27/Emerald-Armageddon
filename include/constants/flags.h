@@ -705,8 +705,8 @@
 #define FLAG_MF_STEVEN_5  0x292 // Unused Flag
 #define FLAG_CYRUS_MONS1  0x293 // Unused Flag
 #define FLAG_CYRUS_MONS2  0x294 // Unused Flag
-#define FLAG_UNUSED_0x295  0x295 // Unused Flag
-#define FLAG_UNUSED_0x296  0x296 // Unused Flag
+#define FLAG_ORIGIN_FORMS  0x295 // Unused Flag
+#define FLAG_ALTERED_FORMS  0x296 // Unused Flag
 #define FLAG_UNUSED_0x297  0x297 // Unused Flag
 #define FLAG_UNUSED_0x298  0x298 // Unused Flag
 #define FLAG_UNUSED_0x299  0x299 // Unused Flag

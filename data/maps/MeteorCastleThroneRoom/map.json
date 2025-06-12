@@ -54,7 +54,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ALTERED_FORMS"
     },
     {
       "local_id": "LOCALID_DIALGA_A",
@@ -68,7 +68,63 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_ALTERED_FORMS"
+    },
+    {
+      "local_id": "LOCALID_PALKIA_O",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(PALKIA_ORIGIN)",
+      "x": 17,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ORIGIN_FORMS"
+    },
+    {
+      "local_id": "LOCALID_DIALGA_O",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(DIALGA_ORIGIN)",
+      "x": 13,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ORIGIN_FORMS"
+    },
+    {
+      "local_id": "LOCALID_TINA_O",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GIRATINA_ORIGIN)",
+      "x": 15,
+      "y": 12,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ORIGIN_FORMS"
+    },
+    {
+      "local_id": "LOCALID_TINA_A",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(GIRATINA)",
+      "x": 15,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ALTERED_FORMS"
     }
   ],
   "warp_events": [
