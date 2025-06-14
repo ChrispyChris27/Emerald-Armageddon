@@ -1161,6 +1161,15 @@ static bool16 IsInflitratedSpaceCenter(struct WarpData *warp)
     return FALSE;
 }
 
+static bool16 IsCyrusDefeated(struct WarpData *warp)
+{
+    if (VarGet(VAR_STEVEN_MF_STATE) < 5)
+        return FALSE;
+    else if (warp->mapNum == MAP_NUM(MAP_METEOR_CASTLE_THRONE_ROOM))
+        return TRUE;
+    return FALSE;
+}
+
 u16 GetLocationMusic(struct WarpData *warp)
 {
     if (NoMusicInSotopolisWithLegendaries(warp) == TRUE)
@@ -1171,6 +1180,8 @@ u16 GetLocationMusic(struct WarpData *warp)
         return MUS_RG_ROCKET_HIDEOUT;
     else if (IsInfiltratedWeatherInstitute(warp) == TRUE)
         return MUS_MT_CHIMNEY;
+    else if (IsCyrusDefeated(warp) == TRUE)
+        return MUS_NCASTLE;
     else
         return Overworld_GetMapHeaderByGroupAndId(warp->mapGroup, warp->mapNum)->music;
 }

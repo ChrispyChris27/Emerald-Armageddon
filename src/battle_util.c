@@ -3676,7 +3676,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 }
 
                 if (opposingDef < opposingSpDef)
-                    statId = STAT_ATK;
+                    statId = STAT_SPATK;
                 else
                     statId = STAT_SPATK;
 

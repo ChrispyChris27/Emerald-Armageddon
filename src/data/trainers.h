@@ -28573,10 +28573,26 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .battleType = TRAINER_BATTLE_TYPE_DOUBLES,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
+            {
+            .species = SPECIES_NECROZMA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+            .lvl = 91,
+            .nature = NATURE_TIMID,
+            .ability = ABILITY_PRISM_ARMOR,
+            .heldItem = ITEM_LIFE_ORB,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+                MOVE_PHOTON_GEYSER,
+                MOVE_POWER_GEM,
+                MOVE_SHADOW_BALL,
+                MOVE_EARTH_POWER,
+            },
+            },
             {
             .species = SPECIES_SNEASLER,
             .gender = TRAINER_MON_RANDOM_GENDER,
@@ -28591,22 +28607,6 @@ F_TRAINER_FEMALE |
                 MOVE_DIRE_CLAW,
                 MOVE_FAKE_OUT,
                 MOVE_THROAT_CHOP,
-            },
-            },
-            {
-            .species = SPECIES_ENAMORUS_THERIAN,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-            .lvl = 91,
-            .nature = NATURE_ADAMANT,
-            .ability = ABILITY_CONTRARY,
-            .heldItem = ITEM_ASSAULT_VEST,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-                MOVE_SPRINGTIDE_STORM,
-                MOVE_SUPERPOWER,
-                MOVE_PLAY_ROUGH,
-                MOVE_EARTH_POWER,
             },
             },
             {
@@ -28670,7 +28670,7 @@ F_TRAINER_FEMALE |
                 MOVE_SHADOW_FORCE,
                 MOVE_DRAGON_RUSH,
                 MOVE_DRAGON_DANCE,
-                MOVE_EARTHQUAKE,
+                MOVE_AQUA_TAIL,
             },
             },
         },
@@ -30604,7 +30604,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {

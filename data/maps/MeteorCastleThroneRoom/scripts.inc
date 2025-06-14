@@ -9,7 +9,7 @@ MeteorCastleThroneRoom_OnFrame::
 Cyrus_Event_Script::
 	lockall
 	setflag FLAG_ORIGIN_FORMS
-	special StopMapMusic
+	setflag FLAG_ARCEUS
 	msgbox StevenStop, MSGBOX_DEFAULT
 	closemessage
 	playmoncry SPECIES_GIRATINA, CRY_MODE_NORMAL
@@ -31,6 +31,7 @@ Cyrus_Event_Script::
 	waitmovement 0
 	msgbox Cyrus_Text2, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_CYRUS, CyrusDeffeat1
+	playbgm MUS_NCASTLE, FALSE
 	msgbox Cyrus_Text3, MSGBOX_DEFAULT
 	closemessage
 	delay 20
@@ -47,7 +48,8 @@ Cyrus_Event_Script::
 	addobject LOCALID_TINA_O
 	applymovement LOCALID_MF_STEVEN5, StevenEscape
 	waitmovement 0
-	delay 200
+	special HealPlayerParty
+	delay 180
 	fadescreen FADE_FROM_WHITE
 	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
 	setvar VAR_0x8004, 1  @ vertical pan
@@ -56,7 +58,7 @@ Cyrus_Event_Script::
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
-	delay 150
+	delay 120
 	special StopMapMusic
 	playmoncry SPECIES_DIALGA_ORIGIN, CRY_MODE_NORMAL
 	playmoncry SPECIES_PALKIA_ORIGIN, CRY_MODE_NORMAL
@@ -64,12 +66,11 @@ Cyrus_Event_Script::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 	waitmovement 0
 	msgbox ThroneRoomStevenText2, MSGBOX_AUTOCLOSE
-	special HealPlayerParty
 	goto ThroneRoomPickMulti
+	
 	end
 
 ThroneRoomDoMulti::
-	special StopMapMusic
 	multi_2_vs_1 TRAINER_CYRUS_DOUBLE, CyrusDefeat2, PARTNER_STEVEN2
 	switch VAR_RESULT
 	case 1, CyrusDefeated
@@ -84,7 +85,6 @@ ThroneRoomPickMulti::
 	waitstate
 	goto_if_ne VAR_RESULT, 0, ThroneRoomDoMulti
 	special LoadPlayerParty
-	special StopMapMusic
 	goto StevenReadyBattle
 
 StevenReadyBattle::
@@ -93,11 +93,102 @@ StevenReadyBattle::
 	goto ThroneRoomPickMulti
 
 CyrusDefeated::
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+	waitmovement 0
+	msgbox Cyrus_Text4, MSGBOX_DEFAULT
+	closemessage
+	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
+	waitmoncry
+	msgbox Steven_Throne_Text1, MSGBOX_DEFAULT
+	closemessage
+	applymovement OBJ_EVENT_ID_PLAYER, Player_run
+	applymovement LOCALID_MF_STEVEN5, Steven_run
+	waitmovement 0
+	playmoncry SPECIES_ARCEUS_NORMAL, CRY_MODE_NORMAL
+	waitmoncry
+	addobject LOCALID_ARCEUS
+	applymovement LOCALID_ARCEUS, ArceusEnters
+	waitmovement 0
+	setobjectmovementtype LOCALID_ARCEUS, MOVEMENT_TYPE_WALK_IN_PLACE_UP
+	waitmovement 0
+	msgbox Cyrus_Text5, MSGBOX_DEFAULT
+	closemessage
+	playmoncry SPECIES_ARCEUS_NORMAL, CRY_MODE_NORMAL
+	waitmoncry
+	delay 30
+	playmoncry SPECIES_DIALGA_ORIGIN, CRY_MODE_NORMAL
+	playmoncry SPECIES_PALKIA_ORIGIN, CRY_MODE_NORMAL
+	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
+	waitmoncry
+	applymovement LOCALID_TINA_O, TinaMove
+	applymovement LOCALID_DIALGA_O, DialgaMove
+	applymovement LOCALID_PALKIA_O, PalkiaMove
+	waitmovement 0
+	setobjectmovementtype LOCALID_TINA_O, MOVEMENT_TYPE_WALK_IN_PLACE_DOWN
+	setobjectmovementtype LOCALID_DIALGA_O, MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT
+	setobjectmovementtype LOCALID_PALKIA_O, MOVEMENT_TYPE_WALK_IN_PLACE_LEFT
+	waitmovement 0
+	playmoncry SPECIES_DIALGA_ORIGIN, CRY_MODE_NORMAL
+	playmoncry SPECIES_PALKIA_ORIGIN, CRY_MODE_NORMAL
+	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
+	waitmoncry
+	msgbox Cyrus_Text6, MSGBOX_DEFAULT
+	closemessage
+	playmoncry SPECIES_ARCEUS_NORMAL, CRY_MODE_NORMAL
+	waitmoncry
+	delay 30
+	playmoncry SPECIES_DIALGA_ORIGIN, CRY_MODE_NORMAL
+	playmoncry SPECIES_PALKIA_ORIGIN, CRY_MODE_NORMAL
+	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
+	waitmoncry
+	fadescreen FADE_TO_BLACK
+	msgbox Cyrus_Text7, MSGBOX_AUTOCLOSE
+	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
+	waitmoncry
+	playse SE_THUNDER
+	waitse
+	delay 16
+	playse SE_M_COSMIC_POWER
+	waitse
+	delay 16
+	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
+	waitmoncry
+	delay 16
+	playse SE_M_COSMIC_POWER
+	waitse
+	delay 16
+	removeobject LOCALID_CYRUS
+	removeobject LOCALID_TINA_O
+	fadescreen FADE_FROM_BLACK
+	setvar VAR_STEVEN_MF_STATE, 5
+	playmoncry SPECIES_ARCEUS_NORMAL, CRY_MODE_NORMAL
+	waitmoncry
+	delay 30
+	playmoncry SPECIES_DIALGA_ORIGIN, CRY_MODE_NORMAL
+	playmoncry SPECIES_PALKIA_ORIGIN, CRY_MODE_NORMAL
+	waitmoncry
+	applymovement LOCALID_ARCEUS, Legendary_Exit
+	applymovement LOCALID_DIALGA_O, Legendary_Exit
+	applymovement LOCALID_PALKIA_O, Legendary_Exit
+	waitmovement 0
+	removeobject LOCALID_DIALGA_O
+	removeobject LOCALID_PALKIA_O
+	removeobject LOCALID_ARCEUS
+	applymovement OBJ_EVENT_ID_PLAYER, Steven_walk
+	applymovement LOCALID_MF_STEVEN5, Player_walk
+	waitmovement 0
+	msgbox ThroneRoomStevenText3, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_MF_STEVEN5, Legendary_Exit
+	waitmovement 0
+	removeobject LOCALID_MF_STEVEN5
+	clearflag FLAG_STEVEN_HARBOR
+	setflag FLAG_MAGIKARP_WF
+	clearflag FLAG_HIDE_LILYCOVE_HARBOR_SSTIDAL
+	releaseall
 	end
 
-
 StevenStop:
-.string "{PLAYER}! Look out!$"
+.string "{PLAYER}! Help!$"
 
 PlayerApproach:
 	walk_faster_up
@@ -173,8 +264,8 @@ CyrusDeffeat1:
 Cyrus_Text3:
 	.string ". . .\n"
 	.string ". . .\p"
-	.string "Hah...\p"
-	.string "Hahaha\p"
+	.string "Ha. . .\p"
+	.string "Hahaha!\p"
 	.string "Fwahahahaha!\p"
 	.string "You think that just because you\n"
 	.string "defeated me once this is over?\p"
@@ -228,3 +319,147 @@ StevenReadyPrompt:
 	.string "There's no time to waste!\p"
 	.string "I've healed your POKéMON, time\n"
 	.string "to get ready!$"
+
+Cyrus_Text4:
+	.string ". . .\n"
+	.string ". . .\p"
+	.string "This can't be real!\p"
+	.string "I must turn this world into my\n"
+	.string "ideal place to thrive!\p"
+	.string "If you two won't back down then\n"
+	.string "I have no choice!\p"
+	.string "GIRATINA!\p"
+	.string "Send them to the DISTORTION WORLD!$"
+
+Steven_Throne_Text1:
+	.string "{PLAYER}!\p"
+	.string "Get out of the way!$"
+
+ArceusEnters:
+walk_up
+walk_up
+walk_up
+walk_up
+walk_up
+walk_up
+walk_up
+step_end
+
+Cyrus_Text5:
+	.string "ARCEUS...\p"
+	.string "DIALGA, PALKIA, and GIRATINA\n"
+	.string "may have created the universe,\l"
+	.string "but you created them.\p"
+	.string "ARCEUS!\p"
+	.string "You alone will help me realize my\n"
+	.string "dream of creating my ideal world!\p"
+	.string "With you under my control I shall\n"
+	.string "become truly unstoppable!$"
+
+Player_run:
+walk_fast_right
+walk_fast_right
+walk_fast_right
+face_left
+step_end
+
+Steven_run:
+walk_fast_left
+walk_fast_left
+face_right
+step_end
+
+TinaMove:
+walk_down
+step_end
+
+DialgaMove:
+walk_down
+walk_down
+face_right
+step_end
+
+PalkiaMove:
+walk_down
+walk_down
+face_left
+step_end
+
+Cyrus_Text6:
+	.string "DIALGA!\p"
+	.string "PALKIA!\p"
+	.string "GIRATINA!\p"
+	.string "What are you doing!?!?!\p"
+	.string "You work for me!\n"
+	.string "Send them to the DISTORTION WORLD!$"
+
+Cyrus_Text7:
+	.string "No!\p"
+	.string "Don't do this to me!\p"
+	.string "I will not go back!\p"
+	.string "After all these years of endless\n"
+	.string "darkness you can't send me back!\p"
+	.string "NOOOOO!!!!!$"
+
+Legendary_Exit:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Steven_walk:
+walk_left
+walk_left
+step_end
+
+Player_walk:
+walk_right
+walk_right
+walk_right
+step_end
+
+ThroneRoomStevenText3:
+	.string "It would seem GIRATINA has returned\n"
+	.string "to the DISTORTION WORLD and taken\l"
+	.string "CYRUS with it.\p"
+	.string "Fortunately ARCEUS was able to calm\n"
+	.string "the creation trio and break whatever\l"
+	.string "control CYRUS had over them.\p"
+	.string "I suppose that PALKIA, DIALGA, and\n"
+	.string "ARCEUS also returned from where they\l"
+	.string "came from.\p"
+	.string ". . .\p"
+	.string "The energy readings have returned to\n"
+	.string "normal, with one exception.\p"
+	.string "It would seem that when CYRUS entered\n"
+	.string "our dimension, several other POKéMON\l"
+	.string "also entered into this world.\p"
+	.string "It appears these POKéMON have been\n"
+	.string "confined to the throne room.\p"
+	.string "Perhaps that's what brought ARCEUS\n"
+	.string "to METEOR CASTLE.\p"
+	.string "Just like the servants in the legend\n"
+	.string "did to the king's son, ARCEUS has\l"
+	.string "sealed these POKéMON from the other\l"
+	.string "dimension inside the throne room.\p"
+	.string "{PLAYER}, thanks again\n"
+	.string "for your help.\p"
+	.string "With the energy surges finally gone\n"
+	.string "the MAGIKARP should go back to their\l"
+	.string "normal swimming patterns.\p"
+	.string "I would like to offer you one more\n"
+	.string "gift to assist you in challenging\l"
+	.string "the POKéMON LEAGUE.\p"
+	.string "When you have a chance, meet me at\n"
+	.string "the LILYCOVE HARBOR.\p"
+	.string "I'll be waiting for you.$"
+

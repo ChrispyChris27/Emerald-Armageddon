@@ -12,7 +12,7 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_MOTEL_OWNER",
@@ -63,7 +63,5 @@
       "script": "LilycoveCity_CoveLilyMotel_1F_EventScript_BlockingTV"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }
