@@ -585,3 +585,41 @@ LilycoveCity_Harbor_Text_SailorFerryAvailable:
 	.string "The folks at the SHIPYARD in SLATEPORT\n"
 	.string "must've worked extra hard.\p"
 	.string "Well, it's my turn to get busy now!$"
+
+
+HarborSteven_Text1:
+	.string "{PLAYER}, thanks again\n"
+	.string "for all your help.\p"
+	.string "I have something I would like\n"
+	.string "to show you.\p"
+	.string "Well, it's more like some place\n"
+	.string "I want to show you.\p"
+	.string "Please follow me on board the\n"
+	.string "S.S. TIDAL and I'll explain when\l"
+	.string "we arrive at our destination.$"
+
+PlayerBoardsTidal:
+walk_up
+set_invisible
+step_end
+
+LilycoveCity_Harbor_Steven::
+	lockall
+	msgbox HarborSteven_Text1, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_HARBOR_STEVEN, Common_Movement_FaceUp
+	waitmovement 0
+	playse SE_DOOR
+	removeobject LOCALID_HARBOR_STEVEN
+	applymovement OBJ_EVENT_ID_PLAYER, PlayerBoardsTidal
+	waitmovement 0
+	playse SE_DOOR
+	waitse
+	setvar VAR_0x8004, LOCALID_LILYCOVE_HARBOR_SS_TIDAL
+	call Common_EventScript_FerryDepart
+	clearflag FLAG_STEVEN_HARBOR
+	warp MAP_MYTHICAL_MOUNTAIN, 11, 16
+	waitstate
+	end
+	
+
+
