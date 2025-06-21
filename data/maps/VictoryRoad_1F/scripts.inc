@@ -216,3 +216,91 @@ VictoryRoad_1F_Text_KatelynnDefeat:
 VictoryRoad_1F_Text_KatelynnPostBattle:
 	.string "Humph, go right on ahead.\n"
 	.string "See if I care.$"
+
+
+VictoryRoad_Cynthia_SCript::
+	lockall
+	playbgm MUS_CYNTHIA_ENCOUNTER, FALSE
+	clearflag FLAG_CYNTHIA_VR_OW
+	addobject LOCALID_CYNTHIA_VR
+	applymovement LOCALID_CYNTHIA_VR, CynthiaApproach
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	msgbox CynthiaText1, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_CYNTHIA, CynthiaDefeat
+	msgbox CynthiaText2, MSGBOX_DEFAULT
+	giveitem ITEM_GARCHOMPITE
+	msgbox CynthiaText3, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_CYNTHIA_VR, CynthiaExit
+	waitmovement 0
+	removeobject LOCALID_CYNTHIA_VR
+	setvar VAR_CYNTHIA_STATE, 1
+	releaseall
+	end
+
+CynthiaText1:
+	.string "{PLAYER}, good to see you again!\p"
+	.string "STEVEN told me all about the help\n"
+	.string "you provided in taking down TEAM\l"
+	.string "MAGMA, TEAM AQUA, and TEAM ROCKET.\p"
+	.string "And to be able to take out CYRUS\n"
+	.string "as well...\p"
+	.string "You must be very strong!\p"
+	.string "You remind me a bit of the trainer\n"
+	.string "who first helped me defeat CYRUS and\l"
+	.string "TEAM GALACTIC in the SINNOH region.\p"
+	.string "Anyways, STEVEN told me you were off\n"
+	.string "to take on the POKéMON LEAGUE.\p"
+	.string "I figured I would try to catch you\n"
+	.string "on your way through VICTORY ROAD.\p"
+	.string "Looks like I was almost too late.\p"
+	.string "You made quick work of the other\n"
+	.string "TRAINERS here.\p"
+	.string "I suppose now that I'm here though\n"
+	.string "I might as well test your strength.\p"
+	.string "I never hold back, so let's see if\n"
+	.string "STEVEN is right about you being\l"
+	.string "ready for the POKéMON LEAGUE!$"
+
+CynthiaDefeat:
+	.string "What a wonderful display of strength!$"
+
+CynthiaText2:
+	.string "STEVEN was right about you.\p"
+	.string "You have impressive battling\n"
+	.string "capabilities.\p"
+	.string "I'm sure you won't need it, but\n"
+	.string "please take this as thanks for\l"
+	.string "battling me.$"
+
+CynthiaText3:
+	.string "MEGA GARCHOMP is strong, but not\n"
+	.string "nearly as strong as you are.\p"
+	.string "I suppose I ought to be returning\n"
+	.string "to SINNOH soon.\p"
+	.string "I wish you luck in your quest to\n"
+	.string "defeat the POKéMON LEAGUE.$"
+
+CynthiaApproach:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+CynthiaExit:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end

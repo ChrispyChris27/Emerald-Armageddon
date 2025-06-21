@@ -5870,7 +5870,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_TEAM_GALACTIC:
             return MUS_RG_VS_DEOXYS;
         case TRAINER_CLASS_SINNOH_CHAMP:
-            return MUS_RG_VS_CHAMPION;
+            return MUS_CYNTHIA;
         case TRAINER_CLASS_CHAMPION:
             return MUS_VS_CHAMPION;
         case TRAINER_CLASS_RIVAL:

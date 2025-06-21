@@ -295,5 +295,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_METEOR_FALLS_STEVEN
 	setflag FLAG_MF_STEVEN_2
 	setflag FLAG_STEVEN_HARBOR
+	setflag FLAG_CYNTHIA_VR_OW
 	call EventScript_ResetAllBerries
 	end
