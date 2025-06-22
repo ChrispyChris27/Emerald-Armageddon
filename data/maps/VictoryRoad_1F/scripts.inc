@@ -236,6 +236,7 @@ VictoryRoad_Cynthia_SCript::
 	waitmovement 0
 	removeobject LOCALID_CYNTHIA_VR
 	setvar VAR_CYNTHIA_STATE, 1
+	setflag FLAG_CYNTHIA_VR
 	releaseall
 	end
 

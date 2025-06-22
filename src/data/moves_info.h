@@ -14134,20 +14134,19 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Freeze Shock"),
         .description = COMPOUND_STRING(
-            "A powerful 2-turn move that\n"
+            "A powerful move that\n"
             "may paralyze the foe."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
-        .power = 140,
+        .effect = EFFECT_HIT,
+        .power = 120,
         .type = TYPE_ICE,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 8,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .metronomeBanned = TRUE,
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .argument.twoTurnAttack = { .stringId = STRINGID_CLOAKEDINAFREEZINGLIGHT },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_PARALYSIS,
             .chance = 30,
@@ -14165,18 +14164,17 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "A powerful 2-turn move that\n"
             "may inflict a burn."),
-        .effect = EFFECT_TWO_TURNS_ATTACK,
-        .power = 140,
+        .effect = EFFECT_HIT,
+        .power = 120,
         .type = TYPE_ICE,
         .accuracy = 100,
-        .pp = 5,
+        .pp = 8,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,
         .metronomeBanned = TRUE,
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
-        .argument.twoTurnAttack = { .stringId = STRINGID_CLOAKEDINAFREEZINGLIGHT },
         .additionalEffects = ADDITIONAL_EFFECTS({
             .moveEffect = MOVE_EFFECT_BURN,
             .chance = 30,
