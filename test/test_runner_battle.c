@@ -181,6 +181,7 @@ static void BattleTest_SetUp(void *data)
         STATE->battlersCount = 4;
         break;
     }
+    STATE->hasTornDownBattle = FALSE;
 }
 
 static void PrintTestName(void)
@@ -1420,8 +1421,11 @@ static void BattleTest_TearDown(void *data)
     // aborted unexpectedly.
     ClearFlagAfterTest();
     TestFreeConfigData();
-    if (STATE->tearDownBattle)
+    if (!STATE->hasTornDownBattle)
+    {
         TearDownBattle();
+        STATE->hasTornDownBattle = TRUE;
+    }
 }
 
 static bool32 BattleTest_CheckProgress(void *data)
@@ -1449,7 +1453,6 @@ static bool32 BattleTest_HandleExitWithResult(void *data, enum TestResult result
     }
     else
     {
-        STATE->tearDownBattle = TRUE;
         return FALSE;
     }
 }
@@ -1560,6 +1563,13 @@ void OpenPokemon(u32 sourceLine, u32 side, u32 species)
     data = MOVE_NONE;
     for (i = 0; i < MAX_MON_MOVES; i++)
         SetMonData(DATA.currentMon, MON_DATA_MOVE1 + i, &data);
+    data = 0;
+    if (B_FRIENDSHIP_BOOST)
+    {
+        // This way, we avoid the boost affecting tests unless explicitly stated.
+        SetMonData(DATA.currentMon, MON_DATA_FRIENDSHIP, &data);
+        CalculateMonStats(DATA.currentMon);
+    }
 }
 
 // (sNaturePersonalities[i] % NUM_NATURES) == i
