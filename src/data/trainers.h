@@ -9875,7 +9875,7 @@ F_TRAINER_FEMALE |
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 100,
             .nature = NATURE_ADAMANT,
-            .heldItem = ITEM_ASSAULT_VEST,
+            .heldItem = ITEM_LEFTOVERS,
             .ability = ABILITY_ICE_BODY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
@@ -9997,7 +9997,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_ZYGARDE_50,
+            .species = SPECIES_ZYGARDE_COMPLETE,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 100,
@@ -13098,7 +13098,7 @@ F_TRAINER_FEMALE |
         .encounterMusic_gender = 
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
         .mugshotColor = MUGSHOT_COLOR_PURPLE,
         .partySize = 6,
         .party = (const struct TrainerMon[])
@@ -13120,7 +13120,7 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_GENESECT,
+            .species = SPECIES_GENESECT_DOUSE,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 100,
@@ -13136,19 +13136,19 @@ F_TRAINER_FEMALE |
             },
             },
             {
-            .species = SPECIES_DIALGA,
+            .species = SPECIES_NECROZMA_DUSK_MANE,
             .gender = TRAINER_MON_RANDOM_GENDER,
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
             .lvl = 100,
-            .nature = NATURE_TIMID,
+            .nature = NATURE_JOLLY,
             .ability = ABILITY_PRESSURE,
-            .heldItem = ITEM_ADAMANT_ORB,
+            .heldItem = ITEM_LIFE_ORB,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-                MOVE_ROAR_OF_TIME,
-                MOVE_FLASH_CANNON,
-                MOVE_EARTH_POWER,
-                MOVE_ICE_BEAM,
+                MOVE_SUNSTEEL_STRIKE,
+                MOVE_PHOTON_GEYSER,
+                MOVE_EARTHQUAKE,
+                MOVE_STONE_EDGE,
             },
             },
             {
