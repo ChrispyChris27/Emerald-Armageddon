@@ -5,21 +5,21 @@
     F(FOCUS_PUNCH) \
     F(DRAGON_CLAW) \
     F(WATER_PULSE) \
-    F(CALM_MIND) \
+    F(ROLE_PLAY) \
     F(ROAR) \
     F(TOXIC) \
-    F(HAIL) \
-    F(BULK_UP) \
+    F(WILL_O_WISP) \
+    F(TERRAIN_PULSE) \
     F(BULLET_SEED) \
     F(HIDDEN_POWER) \
-    F(SUNNY_DAY) \
+    F(NATURAL_GIFT) \
     F(TAUNT) \
     F(ICE_BEAM) \
     F(BLIZZARD) \
     F(HYPER_BEAM) \
     F(LIGHT_SCREEN) \
-    F(PROTECT) \
-    F(RAIN_DANCE) \
+    F(GIGA_IMPACT) \
+    F(FOCUS_BLAST) \
     F(GIGA_DRAIN) \
     F(SAFEGUARD) \
     F(FRUSTRATION) \
@@ -33,25 +33,75 @@
     F(PSYCHIC) \
     F(SHADOW_BALL) \
     F(BRICK_BREAK) \
-    F(DOUBLE_TEAM) \
+    F(SCALD) \
     F(REFLECT) \
     F(SHOCK_WAVE) \
     F(FLAMETHROWER) \
-    F(SLUDGE_BOMB) \
-    F(SANDSTORM) \
+    F(LAVA_PLUME) \
+    F(CLOSE_COMBAT) \
     F(FIRE_BLAST) \
     F(ROCK_TOMB) \
     F(AERIAL_ACE) \
     F(TORMENT) \
     F(FACADE) \
     F(SECRET_POWER) \
-    F(REST) \
+    F(DRAGON_TAIL) \
     F(ATTRACT) \
-    F(THIEF) \
+    F(DEFOG) \
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(AURA_SPHERE) \
+    F(DUAL_WINGBEAT) \
+    F(ACROBATICS) \
+    F(HURRICANE) \
+    F(BRAVE_BIRD) \
+    F(TAILWIND) \
+    F(GRASSY_GLIDE) \
+    F(SOLAR_BLADE) \
+    F(LEAF_STORM) \
+    F(MAGICAL_LEAF) \
+    F(SWIFT) \
+    F(SMART_STRIKE) \
+    F(FEINT_ATTACK) \
+    F(ENERGY_BALL) \
+    F(POISON_JAB) \
+    F(GUNK_SHOT) \
+    F(SUPERCELL_SLAM) \
+    F(DOUBLE_EDGE) \
+    F(DRILL_RUN) \
+    F(HIGH_HORSEPOWER) \
+    F(EARTH_POWER) \
+    F(ZEN_HEADBUTT) \
+    F(WAVE_CRASH) \
+    F(TELEPORT) \
+    F(HYDRO_PUMP) \
+    F(POWER_GEM) \
+    F(STEALTH_ROCK) \
+    F(STONE_EDGE) \
+    F(ROCK_SLIDE) \
+    F(TRIPLE_AXEL) \
+    F(AVALANCHE) \
+    F(X_SCISSOR) \
+    F(DUAL_CHOP) \
+    F(SHADOW_CLAW) \
+    F(QUASH) \
+    F(FLASH_CANNON) \
+    F(IRON_HEAD) \
+    F(MISTY_EXPLOSION) \
+    F(SELF_DESTRUCT) \
+    F(EXPLOSION) \
+    F(DAZZLING_GLEAM) \
+    F(PLAY_ROUGH) \
+    F(AFTER_YOU) \
+    F(U_TURN) \
+    F(FLIP_TURN) \
+    F(VOLT_SWITCH) \
+    F(EMBARGO) \
+    F(ICE_SPINNER) \
+    F(DISCHARGE) \
+    F(SCALE_SHOT)
 
 #define FOREACH_HM(F) \
     F(CUT) \

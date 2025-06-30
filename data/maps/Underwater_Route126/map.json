@@ -29,9 +29,7 @@
       "direction": "emerge"
     }
   ],
-  "object_events": [
-
-  ],
+  "object_events": [],
   "warp_events": [
     {
       "x": 45,
@@ -41,9 +39,7 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [
-
-  ],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "hidden_item",
@@ -82,7 +78,7 @@
       "x": 11,
       "y": 39,
       "elevation": 3,
-      "item": "ITEM_IRON",
+      "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_126_IRON"
     },
     {

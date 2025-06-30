@@ -374,7 +374,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HP_UP",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_EARTH_POWER",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_111_HP_UP"
     },
@@ -1117,7 +1117,7 @@
       "x": 19,
       "y": 55,
       "elevation": 0,
-      "item": "ITEM_PROTEIN",
+      "item": "ITEM_STARDUST",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_PROTEIN"
     },
     {

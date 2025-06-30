@@ -2,8 +2,11 @@ MauvilleCity_GameCorner_MapScripts::
 	.byte 0
 
     @ Game Corner prices
-	.set TM_DOUBLE_TEAM_COINS, 1500
+	.set TM_ENERGY_BALL_COINS, 3500
+	.set TM_POWER_GEM_COINS, 3500
+	.set TM_DAZZLING_GLEAM_COINS, 3500
 	.set TM_PSYCHIC_COINS, 3500
+	.set TM_FLASH_CANNON_COINS, 3500
 	.set TM_FLAMETHROWER_COINS, 4000
 	.set TM_THUNDERBOLT_COINS, 4000
 	.set TM_ICE_BEAM_COINS, 4000
@@ -236,19 +239,22 @@ MauvilleCity_GameCorner_EventScript_ReturnToChooseTMPrize::
 MauvilleCity_GameCorner_EventScript_ChooseTMPrize::
 	multichoice 12, 0, MULTI_GAME_CORNER_TMS, FALSE
 	switch VAR_RESULT
-	case 0, MauvilleCity_GameCorner_EventScript_TMDoubleTeam
+	case 0, MauvilleCity_GameCorner_EventScript_TMEnergyBall
 	case 1, MauvilleCity_GameCorner_EventScript_TMPsychic
-	case 2, MauvilleCity_GameCorner_EventScript_TMFlamethrower
-	case 3, MauvilleCity_GameCorner_EventScript_TMThunderbolt
-	case 4, MauvilleCity_GameCorner_EventScript_TMIceBeam
-	case 5, MauvilleCity_GameCorner_EventScript_CancelTMSelect
+	case 2, MauvilleCity_GameCorner_EventScript_TMPowerGem
+	case 3, MauvilleCity_GameCorner_EventScript_TMDazzlingGleam
+	case 4, MauvilleCity_GameCorner_EventScript_TMFlashCannon
+	case 5, MauvilleCity_GameCorner_EventScript_TMFlamethrower
+	case 6, MauvilleCity_GameCorner_EventScript_TMThunderbolt
+	case 7, MauvilleCity_GameCorner_EventScript_TMIceBeam
+	case 8, MauvilleCity_GameCorner_EventScript_CancelTMSelect
 	goto MauvilleCity_GameCorner_EventScript_CancelTMSelect
 	end
 
-MauvilleCity_GameCorner_EventScript_TMDoubleTeam::
+MauvilleCity_GameCorner_EventScript_TMEnergyBall::
 	setvar VAR_TEMP_1, 1
-	bufferitemname STR_VAR_1, ITEM_TM_DOUBLE_TEAM
-	setvar VAR_0x8004, ITEM_TM_DOUBLE_TEAM
+	bufferitemname STR_VAR_1, ITEM_TM_ENERGY_BALL
+	setvar VAR_0x8004, ITEM_TM_ENERGY_BALL
 	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
 
 MauvilleCity_GameCorner_EventScript_TMPsychic::
@@ -280,20 +286,23 @@ MauvilleCity_GameCorner_EventScript_ConfirmTMPrize::
 	msgbox MauvilleCity_GameCorner_Text_SoYourChoiceIsTheTMX, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_CancelTMSelect
 	switch VAR_TEMP_1
-	case 1, MauvilleCity_GameCorner_EventScript_BuyTMDoubleTeam
+	case 1, MauvilleCity_GameCorner_EventScript_BuyTMEnergyBall
 	case 2, MauvilleCity_GameCorner_EventScript_BuyTMPsychic
 	case 3, MauvilleCity_GameCorner_EventScript_BuyTMFlamethrower
 	case 4, MauvilleCity_GameCorner_EventScript_BuyTMThunderbolt
 	case 5, MauvilleCity_GameCorner_EventScript_BuyTMIceBeam
+	case 6, MauvilleCity_GameCorner_EventScript_BuyTMPowerGem
+	case 7, MauvilleCity_GameCorner_EventScript_BuyTMDazzlingGleam
+	case 8, MauvilleCity_GameCorner_EventScript_BuyTMFlashCannon
 	end
 
-MauvilleCity_GameCorner_EventScript_BuyTMDoubleTeam::
+MauvilleCity_GameCorner_EventScript_BuyTMEnergyBall::
 	checkcoins VAR_TEMP_2
-	goto_if_lt VAR_TEMP_2, TM_DOUBLE_TEAM_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
-	checkitemspace ITEM_TM_DOUBLE_TEAM
+	goto_if_lt VAR_TEMP_2, TM_ENERGY_BALL_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
+	checkitemspace ITEM_TM_ENERGY_BALL
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
-	removecoins TM_DOUBLE_TEAM_COINS
-	additem ITEM_TM_DOUBLE_TEAM
+	removecoins TM_ENERGY_BALL_COINS
+	additem ITEM_TM_ENERGY_BALL
 	updatecoinsbox 1, 1
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT
@@ -775,4 +784,61 @@ MauvilleCity_GameCorner_Text_HeresSomeSlotsInfo:
 MauvilleCity_GameCorner_Text_CantPlayWithNoCoinCase:
 	.string "You can't play if you don't have\n"
 	.string "a COIN CASE.$"
+
+MauvilleCity_GameCorner_EventScript_TMPowerGem::
+	setvar VAR_TEMP_1, 6
+	bufferitemname STR_VAR_1, ITEM_TM_POWER_GEM
+	setvar VAR_0x8004, ITEM_TM_POWER_GEM
+	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
+
+MauvilleCity_GameCorner_EventScript_TMDazzlingGleam::
+	setvar VAR_TEMP_1, 7
+	bufferitemname STR_VAR_1, ITEM_TM_DAZZLING_GLEAM
+	setvar VAR_0x8004, ITEM_TM_DAZZLING_GLEAM
+	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
+
+MauvilleCity_GameCorner_EventScript_TMFlashCannon::
+	setvar VAR_TEMP_1, 8
+	bufferitemname STR_VAR_1, ITEM_TM_FLASH_CANNON
+	setvar VAR_0x8004, ITEM_TM_FLASH_CANNON
+	goto MauvilleCity_GameCorner_EventScript_ConfirmTMPrize
+
+MauvilleCity_GameCorner_EventScript_BuyTMPowerGem::
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, TM_POWER_GEM_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
+	checkitemspace ITEM_TM_POWER_GEM
+	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
+	removecoins TM_POWER_GEM_COINS
+	additem ITEM_TM_POWER_GEM
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT
+	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseTMPrize
+	end
+
+MauvilleCity_GameCorner_EventScript_BuyTMDazzlingGleam::
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, TM_DAZZLING_GLEAM_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
+	checkitemspace ITEM_DAZZLING_GLEAM
+	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
+	removecoins TM_DAZZLING_GLEAM_COINS
+	additem ITEM_TM_DAZZLING_GLEAM
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT
+	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseTMPrize
+	end
+
+MauvilleCity_GameCorner_EventScript_BuyTMFlashCannon::
+	checkcoins VAR_TEMP_2
+	goto_if_lt VAR_TEMP_2, TM_FLASH_CANNON_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
+	checkitemspace ITEM_TM_FLASH_CANNON
+	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
+	removecoins TM_FLASH_CANNON_COINS
+	additem ITEM_TM_FLASH_CANNON
+	updatecoinsbox 1, 1
+	playse SE_SHOP
+	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT
+	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseTMPrize
+	end
 

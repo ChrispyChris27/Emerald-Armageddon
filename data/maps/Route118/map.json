@@ -280,7 +280,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_HYPER_POTION",
+      "trainer_sight_or_berry_tree_id": "ITEM_TM_DUAL_WINGBEAT",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_118_HYPER_POTION"
     },
@@ -433,7 +433,7 @@
       "x": 31,
       "y": 13,
       "elevation": 3,
-      "item": "ITEM_IRON",
+      "item": "ITEM_STARDUST",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_IRON"
     },
     {

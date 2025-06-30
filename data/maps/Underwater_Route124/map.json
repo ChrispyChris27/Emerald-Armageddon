@@ -24,22 +24,16 @@
       "direction": "emerge"
     }
   ],
-  "object_events": [
-
-  ],
-  "warp_events": [
-
-  ],
-  "coord_events": [
-
-  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
   "bg_events": [
     {
       "type": "hidden_item",
       "x": 42,
       "y": 51,
       "elevation": 0,
-      "item": "ITEM_CARBOS",
+      "item": "ITEM_DEEP_SEA_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_CARBOS"
     },
     {
@@ -79,7 +73,7 @@
       "x": 42,
       "y": 5,
       "elevation": 3,
-      "item": "ITEM_CALCIUM",
+      "item": "ITEM_DEEP_SEA_TOOTH",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_124_CALCIUM"
     },
     {
