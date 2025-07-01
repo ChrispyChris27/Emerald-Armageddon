@@ -38,7 +38,6 @@ PetalburgCity_Mart_Pokemart_Expanded:
 	.2byte ITEM_PARALYZE_HEAL
 	.2byte ITEM_AWAKENING
 	.2byte ITEM_REPEL
-	.2byte ITEM_ORANGE_MAIL
 	pokemartlistend
 
 PetalburgCity_Mart_EventScript_Woman::

@@ -23,8 +23,6 @@ FallarborTown_Mart_Pokemart:
 	.2byte ITEM_MASTERPIECE_TEACUP
 	.2byte ITEM_CHIPPED_POT
 	.2byte ITEM_CRACKED_POT
-	.2byte ITEM_AUSPICIOUS_ARMOR
-	.2byte ITEM_MALICIOUS_ARMOR
 	.2byte ITEM_BLACK_AUGURITE
 	.2byte ITEM_NONE
 	pokemartlistend

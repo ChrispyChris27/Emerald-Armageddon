@@ -707,7 +707,7 @@
 #define FLAG_CYRUS_MONS2  0x294 // Unused Flag
 #define FLAG_ORIGIN_FORMS  0x295 // Unused Flag
 #define FLAG_ALTERED_FORMS  0x296 // Unused Flag
-#define FLAG_UNUSED  0x297 // Unused Flag
+#define FLAG_TRAINER_MET  0x297 // Unused Flag
 #define FLAG_FIST_PLATE  0x298 // Unused Flag
 #define FLAG_SKY_PLATE  0x299 // Unused Flag
 #define FLAG_TOXIC_PLATE  0x29A // Unused Flag

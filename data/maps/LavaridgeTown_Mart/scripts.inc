@@ -23,6 +23,8 @@ LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_PRISM_SCALE
 	.2byte ITEM_DRAGON_SCALE
 	.2byte ITEM_METAL_COAT
+	.2byte ITEM_MAGMARIZER
+	.2byte ITEM_ELECTIRIZER
 	.2byte ITEM_NONE
 	pokemartlistend
 

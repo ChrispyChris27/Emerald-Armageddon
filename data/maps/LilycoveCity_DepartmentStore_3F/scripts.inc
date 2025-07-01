@@ -13,12 +13,18 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkLeft::
 
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_Vitamins:
-	.2byte ITEM_PROTEIN
-	.2byte ITEM_CALCIUM
-	.2byte ITEM_IRON
-	.2byte ITEM_ZINC
-	.2byte ITEM_CARBOS
-	.2byte ITEM_HP_UP
+	.2byte ITEM_HARBOR_MAIL
+	.2byte ITEM_WOOD_MAIL
+	.2byte ITEM_BEAD_MAIL
+	.2byte ITEM_DREAM_MAIL
+	.2byte ITEM_FAB_MAIL
+	.2byte ITEM_GLITTER_MAIL
+	.2byte ITEM_WAVE_MAIL
+	.2byte ITEM_MECH_MAIL
+	.2byte ITEM_ORANGE_MAIL
+	.2byte ITEM_RETRO_MAIL
+	.2byte ITEM_SHADOW_MAIL
+	.2byte ITEM_TROPIC_MAIL
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
@@ -33,13 +39,12 @@ LilycoveCity_DepartmentStore_3F_EventScript_ClerkRight::
 
 	.align 2
 LilycoveCity_DepartmentStore_3F_Pokemart_StatBoosters:
-	.2byte ITEM_X_SPEED
-	.2byte ITEM_X_SP_ATK
-	.2byte ITEM_X_ATTACK
-	.2byte ITEM_X_DEFENSE
-	.2byte ITEM_DIRE_HIT
-	.2byte ITEM_GUARD_SPEC
-	.2byte ITEM_X_ACCURACY
+	.2byte ITEM_LEEK
+	.2byte ITEM_LIGHT_BALL
+	.2byte ITEM_THICK_CLUB
+	.2byte ITEM_LUCKY_PUNCH
+	.2byte ITEM_METAL_POWDER
+	.2byte ITEM_QUICK_POWDER
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_3F_EventScript_TriathleteM::
@@ -57,16 +62,16 @@ LilycoveCity_DepartmentStore_3F_EventScript_Woman::
 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon:
 	.string "For quickly toughening up POKéMON,\n"
 	.string "items are the best.\p"
-	.string "PROTEIN boosts ATTACK,\n"
-	.string "and CALCIUM raises SP. ATK.$"
+	.string "Some items only power up specific\n"
+	.string "POKéMON though.$"
 
 LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance:
 	.string "I want my POKéMON to have more\n"
-	.string "endurance.\p"
-	.string "I'm trying to decide whether to raise\n"
-	.string "DEFENSE with IRON, or SP. DEF with ZINC.$"
+	.string "attack power.\p"
+	.string "A leek is perfect to power up my\n"
+	.string "FARFETCH'D.$"
 
 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon:
-	.string "I gave a CARBOS to my POKéMON,\n"
-	.string "and its SPEED went up.$"
+	.string "Did you know that you can give\n"
+	.string "your POKéMON mail to hold?$"
 

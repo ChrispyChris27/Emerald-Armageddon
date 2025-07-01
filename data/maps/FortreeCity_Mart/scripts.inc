@@ -20,11 +20,11 @@ FortreeCity_Mart_Pokemart:
 	.2byte ITEM_RAZOR_CLAW
 	.2byte ITEM_RAZOR_FANG
 	.2byte ITEM_PROTECTOR
-	.2byte ITEM_MAGMARIZER
-	.2byte ITEM_ELECTIRIZER
+	.2byte ITEM_DUBIOUS_DISC
 	.2byte ITEM_PEAT_BLOCK
 	.2byte ITEM_METAL_ALLOY
-	.2byte ITEM_WOOD_MAIL
+	.2byte ITEM_AUSPICIOUS_ARMOR
+	.2byte ITEM_MALICIOUS_ARMOR
 	pokemartlistend
 
 FortreeCity_Mart_EventScript_Woman::
