@@ -800,7 +800,6 @@ static const struct MenuAction MultichoiceList_HyperTrain[] =
     {COMPOUND_STRING("SP. ATTACK")},
     {COMPOUND_STRING("SP. DEFENSE")},
     {COMPOUND_STRING("SPEED")},
-    {gText_Exit},
 };
 
 static const struct MultichoiceListStruct sMultichoiceLists[] =

@@ -252,8 +252,6 @@ HyperTrainGoldCap::
 	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_RESULT, PARTY_NOTHING_CHOSEN, HyperTrainingDeclined
-	specialvar VAR_0x8004, ScriptGetPartyMonSpecies
-	goto_if_eq VAR_RESULT, SPECIES_EGG, CannotTrainEgg
 	canhypertrain STAT_HP, VAR_0x8004
 	goto_if_eq VAR_RESULT, TRUE, HyperTrainAllStats
 	canhypertrain STAT_ATK, VAR_0x8004
@@ -278,6 +276,7 @@ HyperTrainAllStats::
 	hypertrain STAT_HP, VAR_0x8004
 	hypertrain STAT_SPEED, VAR_0x8004
 	msgbox GoldHyperTrainingComplete, MSGBOX_AUTOCLOSE
+	removeitem ITEM_GOLD_BOTTLE_CAP, 1
 	release
 	end
 
@@ -287,11 +286,9 @@ HyperTrainRegCap::
 	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_RESULT, PARTY_NOTHING_CHOSEN, HyperTrainingDeclined
-	specialvar VAR_0x8004, ScriptGetPartyMonSpecies
-	goto_if_eq VAR_RESULT, SPECIES_EGG, CannotTrainEgg
 	msgbox RegCapSelectStat, MSGBOX_DEFAULT
 	waitmessage
-	multichoice 20, 1, MULTI_HYPER_TRAIN, TRUE
+	multichoice 20, 0, MULTI_HYPER_TRAIN, FALSE
 	switch VAR_RESULT
 	case 0, HyperTrainHP
 	case 1, HyperTrainAttack
@@ -308,6 +305,7 @@ HyperTrainStatMaxed::
 
 RegCapTrainingComplete::
 	msgbox RegCapComplete, MSGBOX_AUTOCLOSE
+	removeitem ITEM_BOTTLE_CAP, 1
 	release
 	end
 
