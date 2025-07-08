@@ -61,7 +61,7 @@
       "x": 50,
       "y": 36,
       "elevation": 3,
-      "item": "ITEM_BIG_PEARL",
+      "item": "ITEM_BOTTLE_CAP",
       "flag": "FLAG_HIDDEN_ITEM_UNDERWATER_127_HP_UP"
     },
     {

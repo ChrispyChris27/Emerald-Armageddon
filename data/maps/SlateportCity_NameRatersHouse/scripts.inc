@@ -149,7 +149,7 @@ GoldBottleCapInBag:
 	.string "If you are willing, I would max the\n"
 	.string "power of not just one, but all of\l"
 	.string "your POKéMON'S stats in exchange for\l"
-	.string "that beautiful, golden, BOTTLE CAP!\p"
+	.string "that beautiful golden BOTTLE CAP!\p"
 	.string "What do you say?$"
 
 KeepGoldGiveRegular:
@@ -167,6 +167,47 @@ GoldCapSelectMon:
 	.string "Incredible!\p"
 	.string "Which of your POKéMON shall achieve\n"
 	.string "their maximum potential?$"
+
+GoldHyperTrainingComplete:
+	.string "Done!\p"
+	.string "Your POKéMON has unlocked its\n"
+	.string "maximum potential!\p"
+	.string "If you would like me to train another\n"
+	.string "of your POKéMON, come back with\l"
+	.string "another BOTTLE CAP.$"
+
+RegCapSelectMon:
+	.string "Which of your POKéMON should I train?$"
+
+RegCapSelectStat:
+	.string "Which of this POKéMON's stats should\n"
+	.string "I unlock the full potential of?$"
+
+CantHyperTrain:
+	.string "This POKéMON has already achieved its\n"
+	.string "maximum potential in that stat!\p"
+	.string "I can't train it to be any stronger!$"
+
+RegCapComplete:
+	.string "Done!\p"
+	.string "Your POKéMON has unlocked the\n"
+	.string "full potential of one of its stats!\p"
+	.string "If you would like me to train another\n"
+	.string "POKéMON or another of this one's stats,\l"
+	.string "come back with another BOTTLE CAP.$"
+
+AllStatsMaxed:
+	.string "This POKéMON has already achieved its\n"
+	.string "maximum potential!\p"
+	.string "It is a truly flawless specimen!\n"
+	.string "Even I cannot improve its ability!$"
+
+CantTrainEgg:
+	.string "Why this is merely an EGG!\p"
+	.string "Even I cannot unlock the full\n"
+	.string "potential of an EGG!\p"
+	.string "Once your EGG hatches I can train\n"
+	.string "the POKéMON that was inside.$"
 
 SlateportCity_HyperTraining::
 	lock
@@ -211,10 +252,102 @@ HyperTrainGoldCap::
 	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_RESULT, PARTY_NOTHING_CHOSEN, HyperTrainingDeclined
+	specialvar VAR_0x8004, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, CannotTrainEgg
+	canhypertrain STAT_HP, VAR_0x8004
+	goto_if_eq VAR_RESULT, TRUE, HyperTrainAllStats
+	canhypertrain STAT_ATK, VAR_0x8004
+	goto_if_eq VAR_RESULT, TRUE, HyperTrainAllStats
+	canhypertrain STAT_DEF, VAR_0x8004
+	goto_if_eq VAR_RESULT, TRUE, HyperTrainAllStats
+	canhypertrain STAT_SPATK, VAR_0x8004
+	goto_if_eq VAR_RESULT, TRUE, HyperTrainAllStats
+	canhypertrain STAT_SPDEF, VAR_0x8004
+	goto_if_eq VAR_RESULT, TRUE, HyperTrainAllStats
+	canhypertrain STAT_SPEED, VAR_0x8004
+	goto_if_eq VAR_RESULT, TRUE, HyperTrainAllStats
+	msgbox AllStatsMaxed, MSGBOX_AUTOCLOSE
+	release
+	end
+
+HyperTrainAllStats::
 	hypertrain STAT_ATK, VAR_0x8004
 	hypertrain STAT_DEF, VAR_0x8004
 	hypertrain STAT_SPATK, VAR_0x8004
 	hypertrain STAT_SPDEF, VAR_0x8004
 	hypertrain STAT_HP, VAR_0x8004
 	hypertrain STAT_SPEED, VAR_0x8004
-	
+	msgbox GoldHyperTrainingComplete, MSGBOX_AUTOCLOSE
+	release
+	end
+
+HyperTrainRegCap::
+	msgbox RegCapSelectMon, MSGBOX_AUTOCLOSE
+	special ChoosePartyMon
+	waitstate
+	copyvar VAR_RESULT, VAR_0x8004
+	goto_if_eq VAR_RESULT, PARTY_NOTHING_CHOSEN, HyperTrainingDeclined
+	specialvar VAR_0x8004, ScriptGetPartyMonSpecies
+	goto_if_eq VAR_RESULT, SPECIES_EGG, CannotTrainEgg
+	msgbox RegCapSelectStat, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 20, 1, MULTI_HYPER_TRAIN, TRUE
+	switch VAR_RESULT
+	case 0, HyperTrainHP
+	case 1, HyperTrainAttack
+	case 2, HyperTrainDefense
+	case 3, HyperTrainSpAttack
+	case 4, HyperTrainSpDef
+	case 5, HyperTrainSpeed
+	case MULTI_B_PRESSED, HyperTrainingDeclined
+
+HyperTrainStatMaxed::
+	msgbox CantHyperTrain, MSGBOX_AUTOCLOSE
+	release
+	end
+
+RegCapTrainingComplete::
+	msgbox RegCapComplete, MSGBOX_AUTOCLOSE
+	release
+	end
+
+HyperTrainHP::
+	canhypertrain STAT_HP, VAR_0x8004
+	goto_if_eq VAR_RESULT, FALSE, HyperTrainStatMaxed
+	hypertrain STAT_HP, VAR_0x8004
+	goto RegCapTrainingComplete
+
+HyperTrainAttack::
+	canhypertrain STAT_ATK, VAR_0x8004
+	goto_if_eq VAR_RESULT, FALSE, HyperTrainStatMaxed
+	hypertrain STAT_ATK, VAR_0x8004
+	goto RegCapTrainingComplete
+
+HyperTrainDefense::
+	canhypertrain STAT_DEF, VAR_0x8004
+	goto_if_eq VAR_RESULT, FALSE, HyperTrainStatMaxed
+	hypertrain STAT_DEF, VAR_0x8004
+	goto RegCapTrainingComplete
+
+HyperTrainSpAttack::
+	canhypertrain STAT_SPATK, VAR_0x8004
+	goto_if_eq VAR_RESULT, FALSE, HyperTrainStatMaxed
+	hypertrain STAT_SPATK, VAR_0x8004
+	goto RegCapTrainingComplete
+
+HyperTrainSpDef::
+	canhypertrain STAT_SPDEF, VAR_0x8004
+	goto_if_eq VAR_RESULT, FALSE, HyperTrainStatMaxed
+	hypertrain STAT_SPDEF, VAR_0x8004
+	goto RegCapTrainingComplete
+
+HyperTrainSpeed::
+	canhypertrain STAT_SPEED, VAR_0x8004
+	goto_if_eq VAR_RESULT, FALSE, HyperTrainStatMaxed
+	hypertrain STAT_SPEED, VAR_0x8004
+	goto RegCapTrainingComplete
+
+CannotTrainEgg::
+	msgbox CantTrainEgg, MSGBOX_AUTOCLOSE
+	release
+	end

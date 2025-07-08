@@ -1864,12 +1864,12 @@ void ExtractMonSkillStatsData(struct Pokemon *mon, struct PokeSummary *sum)
 
 void ExtractMonSkillIvData(struct Pokemon *mon, struct PokeSummary *sum)
 {
-    sum->currentHP = GetMonData(mon, MON_DATA_HP_IV);
-    sum->atk = GetMonData(mon, MON_DATA_ATK_IV);
-    sum->def = GetMonData(mon, MON_DATA_DEF_IV);
-    sum->spatk = GetMonData(mon, MON_DATA_SPATK_IV);
-    sum->spdef = GetMonData(mon, MON_DATA_SPDEF_IV);
-    sum->speed = GetMonData(mon, MON_DATA_SPEED_IV);
+    sum->currentHP = GetMonData(mon, MON_DATA_HP_IV) + GetMonData(mon, MON_DATA_HYPER_TRAINED_HP);
+    sum->atk = GetMonData(mon, MON_DATA_ATK_IV) + GetMonData(mon, MON_DATA_HYPER_TRAINED_ATK);
+    sum->def = GetMonData(mon, MON_DATA_DEF_IV) + GetMonData(mon, MON_DATA_HYPER_TRAINED_DEF);
+    sum->spatk = GetMonData(mon, MON_DATA_SPATK_IV) + GetMonData(mon, MON_DATA_HYPER_TRAINED_SPATK);
+    sum->spdef = GetMonData(mon, MON_DATA_SPDEF_IV) + GetMonData(mon, MON_DATA_HYPER_TRAINED_SPDEF);
+    sum->speed = GetMonData(mon, MON_DATA_SPEED_IV) + GetMonData(mon, MON_DATA_HYPER_TRAINED_SPEED);
 }
 
 void ExtractMonSkillEvData(struct Pokemon *mon, struct PokeSummary *sum)

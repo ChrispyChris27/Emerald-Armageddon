@@ -153,7 +153,7 @@
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_RARE_CANDY",
+      "trainer_sight_or_berry_tree_id": "ITEM_STARDUST",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_ROUTE_109_PP_UP"
     },
@@ -385,10 +385,10 @@
     },
     {
       "type": "hidden_item",
-      "x": 9,
-      "y": 10,
+      "x": 31,
+      "y": 2,
       "elevation": 3,
-      "item": "ITEM_GREAT_BALL",
+      "item": "ITEM_BOTTLE_CAP",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_109_GREAT_BALL"
     },
     {
@@ -402,7 +402,7 @@
     {
       "type": "hidden_item",
       "x": 26,
-      "y": 1,
+      "y": 32,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_109_HEART_SCALE_2"

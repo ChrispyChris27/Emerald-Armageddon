@@ -726,10 +726,10 @@
 #define FLAG_DREAD_PLATE  0x2A7 // Unused Flag
 #define FLAG_PIXIE_PLATE  0x2A8 // Unused Flag
 #define FLAG_AERODACTYLITE  0x2A9 // Unused Flag
-#define FLAG_UNUSED_0x2AA  0x2AA // Unused Flag
-#define FLAG_UNUSED_0x2AB  0x2AB // Unused Flag
-#define FLAG_UNUSED_0x2AC  0x2AC // Unused Flag
-#define FLAG_UNUSED_0x2AD  0x2AD // Unused Flag
+#define FLAG_ROCKET_HIDEOUT_CAP  0x2AA // Unused Flag
+#define FLAG_LOADED_DICE  0x2AB // Unused Flag
+#define FLAG_SPELL_TAG  0x2AC // Unused Flag
+#define FLAG_LAGGING_TAIL  0x2AD // Unused Flag
 #define FLAG_UNUSED_0x2AE  0x2AE // Unused Flag
 #define FLAG_UNUSED_0x2AF  0x2AF // Unused Flag
 #define FLAG_UNUSED_0x2B0  0x2B0 // Unused Flag

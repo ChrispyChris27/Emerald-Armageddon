@@ -11103,7 +11103,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Knocks foe away to\n"
             "switch it out or\n"
-            "end wild battle.")
+            "end wild battle."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

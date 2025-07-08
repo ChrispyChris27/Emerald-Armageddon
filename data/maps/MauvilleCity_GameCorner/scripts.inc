@@ -819,7 +819,7 @@ MauvilleCity_GameCorner_EventScript_BuyTMPowerGem::
 MauvilleCity_GameCorner_EventScript_BuyTMDazzlingGleam::
 	checkcoins VAR_TEMP_2
 	goto_if_lt VAR_TEMP_2, TM_DAZZLING_GLEAM_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForTM
-	checkitemspace ITEM_DAZZLING_GLEAM
+	checkitemspace ITEM_TM_DAZZLING_GLEAM
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
 	removecoins TM_DAZZLING_GLEAM_COINS
 	additem ITEM_TM_DAZZLING_GLEAM

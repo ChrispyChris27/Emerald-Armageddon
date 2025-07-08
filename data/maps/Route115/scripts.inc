@@ -315,3 +315,28 @@ Route115_EventScript_Giovanni::
 	releaseall
 	end
 
+LaggingTailText:
+	.string "No matter how hard I train I always\n"
+	.string "end up finishing last.\p"
+	.string "Perhaps if I got rid of this accursed\n"
+	.string "item my fortunes would change.\p"
+	.string "What's that? You want it?\p"
+	.string "By all means take it, although I don't\n"
+	.string "know what good it could do you.$"
+
+LaggingTailText2:
+	.string "Even after giving away that LAGGING\n"
+	.string "TAIL I'm still finishing last!\p"
+	.string "Maybe running just isn't for me.$"
+
+LaggingTailGirl::
+	lock
+	faceplayer
+	goto_if_set FLAG_LAGGING_TAIL, LaggingTailText2
+	msgbox LaggingTailText, MSGBOX_DEFAULT
+	giveitem ITEM_LAGGING_TAIL
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_LAGGING_TAIL
+	release
+	end
+

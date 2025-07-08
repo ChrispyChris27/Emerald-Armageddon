@@ -792,6 +792,17 @@ struct MultichoiceListStruct
     u8 count;
 };
 
+static const struct MenuAction MultichoiceList_HyperTrain[] =
+{
+    {COMPOUND_STRING("HP")},
+    {COMPOUND_STRING("ATTACK")},
+    {COMPOUND_STRING("DEFENSE")},
+    {COMPOUND_STRING("SP. ATTACK")},
+    {COMPOUND_STRING("SP. DEFENSE")},
+    {COMPOUND_STRING("SPEED")},
+    {gText_Exit},
+};
+
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
@@ -909,6 +920,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
+    [MULTI_HYPER_TRAIN]                = MULTICHOICE(MultichoiceList_HyperTrain),
 };
 
 const u8 *const gStdStrings[] =

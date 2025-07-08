@@ -240,7 +240,7 @@
       "x": 7,
       "y": 29,
       "elevation": 3,
-      "item": "ITEM_GREAT_BALL",
+      "item": "ITEM_BOTTLE_CAP",
       "flag": "FLAG_HIDDEN_ITEM_JAGGED_PASS_GREAT_BALL"
     }
   ]
