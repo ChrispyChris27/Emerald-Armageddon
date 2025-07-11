@@ -60,6 +60,7 @@ LavaridgeTown_Gym_1F_EventScript_FlanneryDefeated::
 	setflag FLAG_DEFEATED_LAVARIDGE_GYM
 	setflag FLAG_BADGE04_GET
 	clearflag FLAG_MF_ROCKETS
+	clearflag FLAG_BIG_ROOT_BOY
 	setvar VAR_0x8008, 4
 	call Common_EventScript_SetGymTrainers
 	setflag FLAG_HIDE_VERDANTURF_TOWN_WANDAS_HOUSE_WALLY

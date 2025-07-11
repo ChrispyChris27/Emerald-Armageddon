@@ -78,6 +78,17 @@ VerdanturfTown_GotMints::
 	release
 	end
 
+MetronomeGirl::
+	lock
+	faceplayer
+	goto_if_set FLAG_METRONOME, MetronomeText2
+	msgbox MetronomeText, MSGBOX_DEFAULT
+	giveitem ITEM_METRONOME
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_METRONOME
+	release
+	end
+
 VerdanturfTown_Text_ManTryingToDigTunnel:
 	.string "My papa told me.\p"
 	.string "He says this tunnel is full of\n"
@@ -158,4 +169,21 @@ VerdanturfTown_Text_ReceivedMints:
 	.string "the mint!\p"
 	.string "I look forward to sharing more mints with\n"
 	.string "you throughout your journey!$"
+
+MetronomeText:
+	.string "The grass here in VERDANTURF is filled\n"
+	.string "with FAIRY type POKéMON.\p"
+	.string "Many of these POKéMON are capable\n"
+	.string "of wonderful music through their\l"
+	.string "ALLURING VOICES.\p"
+	.string "The sound of music is delightful, but\n"
+	.string "sometimes the POKéMON geet desynched\l"
+	.string "in their songs.\p"
+	.string "This item allows them to stay in sync\n"
+	.string "with one another.\p"
+	.string "Go ahead and take one, I have plenty.$"
+
+MetronomeText2:
+	.string "Please use that METRONOME to create\n"
+	.string "beautiful music with your POKéMON."
 

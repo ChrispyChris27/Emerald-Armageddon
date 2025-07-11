@@ -1122,8 +1122,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 27,
-      "y": 40,
+      "x": 8,
+      "y": 73,
       "elevation": 0,
       "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_111_RARE_CANDY"

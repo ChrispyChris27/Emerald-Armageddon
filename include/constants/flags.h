@@ -730,20 +730,20 @@
 #define FLAG_LOADED_DICE  0x2AB // Unused Flag
 #define FLAG_SPELL_TAG  0x2AC // Unused Flag
 #define FLAG_LAGGING_TAIL  0x2AD // Unused Flag
-#define FLAG_UNUSED_0x2AE  0x2AE // Unused Flag
-#define FLAG_UNUSED_0x2AF  0x2AF // Unused Flag
-#define FLAG_UNUSED_0x2B0  0x2B0 // Unused Flag
-#define FLAG_UNUSED_0x2B1  0x2B1 // Unused Flag
-#define FLAG_UNUSED_0x2B2  0x2B2 // Unused Flag
-#define FLAG_UNUSED_0x2B3  0x2B3 // Unused Flag
-#define FLAG_UNUSED_0x2B4  0x2B4 // Unused Flag
-#define FLAG_UNUSED_0x2B5  0x2B5 // Unused Flag
-#define FLAG_UNUSED_0x2B6  0x2B6 // Unused Flag
-#define FLAG_UNUSED_0x2B7  0x2B7 // Unused Flag
-#define FLAG_UNUSED_0x2B8  0x2B8 // Unused Flag
-#define FLAG_UNUSED_0x2B9  0x2B9 // Unused Flag
-#define FLAG_UNUSED_0x2BA  0x2BA // Unused Flag
-#define FLAG_UNUSED_0x2BB  0x2BB // Unused Flag
+#define FLAG_NVMLTICE  0x2AE // Unused Flag
+#define FLAG_METRONOME  0x2AF // Unused Flag
+#define FLAG_BLACK_BELT  0x2B0 // Unused Flag
+#define FLAG_EJECT_PACK  0x2B1 // Unused Flag
+#define FLAG_EJECT_BUTTON  0x2B2 // Unused Flag
+#define FLAG_SHARP_BEAK  0x2B3 // Unused Flag
+#define FLAG_ABILITY_SHIELD  0x2B4 // Unused Flag
+#define FLAG_BLACK_SLUDGE  0x2B5 // Unused Flag
+#define FLAG_POWER_HERB  0x2B6 // Unused Flag
+#define FLAG_PUNCHING_GLOVES  0x2B7 // Unused Flag
+#define FLAG_RING_TARGET  0x2B8 // Unused Flag
+#define FLAG_BIG_ROOT  0x2B9 // Unused Flag
+#define FLAG_RED_CARD  0x2BA // Unused Flag
+#define FLAG_MIRROR_HERB  0x2BB // Unused Flag
 
 // Event Flags
 #define FLAG_HIDE_ROUTE_101_BIRCH_STARTERS_BAG                      0x2BC
@@ -1236,8 +1236,8 @@
 #define FLAG_ARCEUS                                                 0x49E // Unused Flag
 #define FLAG_STEVEN_HARBOR                                           0x49F // Unused Flag
 #define FLAG_CYNTHIA_VR_OW                                          0x4A0 // Unused Flag
-#define FLAG_UNUSED_0x4A1                                           0x4A1 // Unused Flag
-#define FLAG_UNUSED_0x4A2                                           0x4A2 // Unused Flag
+#define FLAG_BIG_ROOT_BOY                                           0x4A1 // Unused Flag
+#define FLAG_SAFETY_GOGGLES                                           0x4A2 // Unused Flag
 #define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
 #define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
 #define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag

@@ -1022,3 +1022,28 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "I have something to show you.\n"
 	.string "Let's go to my LAB.$"
 
+BigRootBoy_Script::
+	lock
+	faceplayer
+	goto_if_set FLAG_BIG_ROOT, BigRootText2
+	msgbox BigRootText, MSGBOX_DEFAULT
+	giveitem ITEM_BIG_ROOT
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_BIG_ROOT
+	release
+	end
+
+BigRootText:
+	.string "So this is LITTLEROOT TOWN?\p"
+	.string "With a name like that I can't be\n"
+	.string "carrying something like this around.\p"
+	.string "Since you seem to be traveling, why\n"
+	.string "don't you take it off my hands?\p"
+	.string "It belongs anywhere besides here.$"
+
+BigRootText2:
+	.string "That BIG ROOT makes draining moves\n"
+	.string "heal more HP from the foe.\p"
+	.string "A BIG ROOT in LITTLEROOT TOWN just\n"
+	.string "isn't right though.$"
+
