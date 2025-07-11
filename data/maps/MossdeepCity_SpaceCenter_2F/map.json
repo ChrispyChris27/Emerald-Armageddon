@@ -114,7 +114,7 @@
     },
     {
       "local_id": "LOCALID_SPACE_CENTER_TABITHA",
-      "graphics_id": "OBJ_EVENT_GFX_GRUNT_F",
+      "graphics_id": "OBJ_EVENT_GFX_ARIANA",
       "x": 0,
       "y": 8,
       "elevation": 3,
@@ -128,7 +128,7 @@
     },
     {
       "local_id": "LOCALID_SPACE_CENTER_MAXIE",
-      "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
+      "graphics_id": "OBJ_EVENT_GFX_ARCHER",
       "x": 1,
       "y": 9,
       "elevation": 3,

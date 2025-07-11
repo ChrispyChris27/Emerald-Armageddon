@@ -524,6 +524,8 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #define OBJ_EVENT_PAL_TAG_GRUNT_M                 0x1129
 #define OBJ_EVENT_PAL_TAG_GRUNT_F                 0x112A
 #define OBJ_EVENT_PAL_TAG_REGIDRAGO               0x112B
+#define OBJ_EVENT_PAL_TAG_ARCHER                  0x112C
+#define OBJ_EVENT_PAL_TAG_ARIANA                  0x112D
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -578,6 +580,8 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Cynthia,               OBJ_EVENT_PAL_TAG_CYNTHIA},
     {gObjectEventPal_Grunt_M,               OBJ_EVENT_PAL_TAG_GRUNT_M},
     {gObjectEventPal_Grunt_F,               OBJ_EVENT_PAL_TAG_GRUNT_F},
+    {gObjectEventPal_Archer,                OBJ_EVENT_PAL_TAG_ARCHER},
+    {gObjectEventPal_Ariana,                OBJ_EVENT_PAL_TAG_ARIANA},
 #if OW_FOLLOWERS_POKEBALLS
     {gObjectEventPal_MasterBall,            OBJ_EVENT_PAL_TAG_BALL_MASTER},
     {gObjectEventPal_UltraBall,             OBJ_EVENT_PAL_TAG_BALL_ULTRA},

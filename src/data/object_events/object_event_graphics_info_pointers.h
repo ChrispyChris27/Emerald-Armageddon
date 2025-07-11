@@ -255,6 +255,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cynthia;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giovanni;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grunt_F;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grunt_M;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Archer;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ariana;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -506,6 +508,8 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
     [OBJ_EVENT_GFX_OW_MON] =                   &gObjectEventGraphicsInfo_Follower,
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
+    [OBJ_EVENT_GFX_ARCHER] =                   &gObjectEventGraphicsInfo_Archer,
+    [OBJ_EVENT_GFX_ARIANA] =                   &gObjectEventGraphicsInfo_Ariana,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

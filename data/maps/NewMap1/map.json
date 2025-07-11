@@ -15,7 +15,7 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_GRUNT_F",
+      "graphics_id": "OBJ_EVENT_GFX_ARIANA",
       "x": 14,
       "y": 21,
       "elevation": 0,
@@ -28,7 +28,7 @@
       "flag": "FLAG_HIDEOUT_GIOVANNI"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
+      "graphics_id": "OBJ_EVENT_GFX_ARCHER",
       "x": 16,
       "y": 21,
       "elevation": 0,
