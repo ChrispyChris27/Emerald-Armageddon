@@ -12,7 +12,7 @@
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_TERRA_CAVE_GROUDON",
@@ -49,7 +49,5 @@
       "script": "TerraCave_End_EventScript_Groudon"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }

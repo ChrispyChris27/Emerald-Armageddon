@@ -508,7 +508,7 @@
       "x": 23,
       "y": 10,
       "elevation": 3,
-      "item": "ITEM_MAX_ELIXIR",
+      "item": "ITEM_FLYING_GEM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_121_HP_UP"
     },
     {

@@ -564,22 +564,6 @@
     },
     {
       "type": "hidden_item",
-      "x": 7,
-      "y": 6,
-      "elevation": 3,
-      "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION"
-    },
-    {
-      "type": "hidden_item",
-      "x": 3,
-      "y": 9,
-      "elevation": 3,
-      "item": "ITEM_POKE_BALL",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_POKE_BALL"
-    },
-    {
-      "type": "hidden_item",
       "x": 14,
       "y": 55,
       "elevation": 3,
@@ -588,10 +572,10 @@
     },
     {
       "type": "hidden_item",
-      "x": 16,
-      "y": 72,
+      "x": 20,
+      "y": 71,
       "elevation": 3,
-      "item": "ITEM_ANTIDOTE",
+      "item": "ITEM_NORMAL_GEM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_ANTIDOTE"
     },
     {

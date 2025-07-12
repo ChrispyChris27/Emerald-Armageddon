@@ -680,6 +680,14 @@
       "elevation": 3,
       "item": "ITEM_RARE_CANDY",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_114_REVIVE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 8,
+      "y": 7,
+      "elevation": 0,
+      "item": "ITEM_DRAGON_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_106_STARDUST"
     }
   ]
 }

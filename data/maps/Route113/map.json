@@ -482,7 +482,7 @@
       "x": 66,
       "y": 3,
       "elevation": 3,
-      "item": "ITEM_ETHER",
+      "item": "ITEM_GROUND_GEM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_113_ETHER"
     },
     {

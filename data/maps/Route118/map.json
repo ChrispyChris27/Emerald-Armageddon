@@ -430,8 +430,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 31,
-      "y": 13,
+      "x": 28,
+      "y": 7,
       "elevation": 3,
       "item": "ITEM_BOTTLE_CAP",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_IRON"
@@ -443,6 +443,14 @@
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_HEART_SCALE"
+    },
+    {
+      "type": "hidden_item",
+      "x": 45,
+      "y": 14,
+      "elevation": 3,
+      "item": "ITEM_ELECTRIC_GEM",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE_117_REPEL"
     }
   ]
 }

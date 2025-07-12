@@ -649,10 +649,10 @@
     },
     {
       "type": "hidden_item",
-      "x": 4,
-      "y": 35,
+      "x": 9,
+      "y": 19,
       "elevation": 3,
-      "item": "ITEM_POKE_BALL",
+      "item": "ITEM_BUG_GEM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_110_POKE_BALL"
     },
     {

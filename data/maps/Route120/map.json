@@ -856,9 +856,9 @@
     {
       "type": "hidden_item",
       "x": 24,
-      "y": 42,
+      "y": 63,
       "elevation": 3,
-      "item": "ITEM_STARDUST",
+      "item": "ITEM_STEEL_GEM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_120_ZINC"
     },
     {
