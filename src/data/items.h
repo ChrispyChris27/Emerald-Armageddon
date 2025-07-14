@@ -11484,19 +11484,18 @@ const struct Item gItemsInfo[] =
         .secondaryId = MOVE_DRILL_RUN, // Todo
     },
 
-    [ITEM_TM_HIGH_HORSEPOWER] =
+    [ITEM_TM_COVET] =
     {
         .name = _("TM70"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Slams hard into\n"
-            "the foe with\n"
-            "its entire body."),
+            "Cutely damages\n"
+            "the foe."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_HIGH_HORSEPOWER, // Todo
+        .secondaryId = MOVE_COVET, // Todo
     },
 
     [ITEM_TM_EARTH_POWER] =

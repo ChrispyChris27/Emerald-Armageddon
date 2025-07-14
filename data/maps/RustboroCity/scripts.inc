@@ -243,7 +243,7 @@ RustboroCity_EventScript_Man2::
 
 RustboroCity_EventScript_StolenGoodsTrigger0::
 	lockall
-	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_RUSTBORO_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 0
 	goto RustboroCity_EventScript_StolenGoodsScene
@@ -251,7 +251,7 @@ RustboroCity_EventScript_StolenGoodsTrigger0::
 
 RustboroCity_EventScript_StolenGoodsTrigger1::
 	lockall
-	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_RUSTBORO_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 1
 	goto RustboroCity_EventScript_StolenGoodsScene
@@ -259,7 +259,7 @@ RustboroCity_EventScript_StolenGoodsTrigger1::
 
 RustboroCity_EventScript_StolenGoodsTrigger2::
 	lockall
-	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_RUSTBORO_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 2
 	goto RustboroCity_EventScript_StolenGoodsScene
@@ -267,7 +267,7 @@ RustboroCity_EventScript_StolenGoodsTrigger2::
 
 RustboroCity_EventScript_StolenGoodsTrigger3::
 	lockall
-	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_RUSTBORO_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 3
 	goto RustboroCity_EventScript_StolenGoodsScene
@@ -275,7 +275,7 @@ RustboroCity_EventScript_StolenGoodsTrigger3::
 
 RustboroCity_EventScript_StolenGoodsTrigger4::
 	lockall
-	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 14, 21
+	setobjectxyperm LOCALID_RUSTBORO_DEVON_EMPLOYEE, 13, 18
 	setobjectmovementtype LOCALID_RUSTBORO_DEVON_EMPLOYEE, MOVEMENT_TYPE_FACE_RIGHT
 	setvar VAR_0x8004, 4
 	goto RustboroCity_EventScript_StolenGoodsScene
