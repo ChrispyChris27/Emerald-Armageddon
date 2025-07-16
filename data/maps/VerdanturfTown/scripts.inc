@@ -74,18 +74,23 @@ VerdanturfTown_EventScript_MintMan::
 	end
 
 VerdanturfTown_GotMints::
-	msgbox VerdanturfTown_Text_ReceivedMints, MSGBOX_DEFAULT
+	msgbox VerdanturfTown_Text_ReceivedMints, MSGBOX_NPC
 	release
 	end
 
 MetronomeGirl::
 	lock
 	faceplayer
-	goto_if_set FLAG_METRONOME, MetronomeText2
+	goto_if_set FLAG_METRONOME, MetronomeGirl2
 	msgbox MetronomeText, MSGBOX_DEFAULT
 	giveitem ITEM_METRONOME
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_METRONOME
+	release
+	end
+
+MetronomeGirl2:
+	msgbox MetronomeText2, MSGBOX_NPC
 	release
 	end
 
@@ -177,7 +182,7 @@ MetronomeText:
 	.string "of wonderful music through their\l"
 	.string "ALLURING VOICES.\p"
 	.string "The sound of music is delightful, but\n"
-	.string "sometimes the POKéMON geet desynched\l"
+	.string "sometimes the POKéMON get desynched\l"
 	.string "in their songs.\p"
 	.string "This item allows them to stay in sync\n"
 	.string "with one another.\p"
@@ -185,5 +190,5 @@ MetronomeText:
 
 MetronomeText2:
 	.string "Please use that METRONOME to create\n"
-	.string "beautiful music with your POKéMON."
+	.string "beautiful music with your POKéMON.$"
 
