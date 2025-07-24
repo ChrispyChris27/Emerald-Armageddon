@@ -182,6 +182,7 @@
       "flag": "FLAG_HIDE_MAUVILLE_CITY_SCOTT"
     },
     {
+      "local_id": "LOCALID_RIVAL_MAUVILLE",
       "graphics_id": "OBJ_EVENT_GFX_VAR_3",
       "x": 9,
       "y": 8,

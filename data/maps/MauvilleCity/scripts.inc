@@ -481,9 +481,9 @@ MauvilleCity_EventScript_RegisterWallyCall::
 	end
 
 MauvilleCity_Rival_Exit::
-	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement_Exit
+	applymovement LOCALID_RIVAL_MAUVILLE, MauvilleCity_Rival_Movement_Exit
 	waitmovement 0
-	removeobject LOCALID_RIVAL
+	removeobject LOCALID_RIVAL_MAUVILLE
 	call MauvilleCity_EventScript_RestoreBgm
 	releaseall
 	end
@@ -510,7 +510,7 @@ MauvilleCity_EventScript_PlayBrendanMusic::
 MauvilleCityEventScript_Rival1::
 	lockall
 	call MauvilleCity_EventScript_PlayRivalMusic
-	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement1
+	applymovement LOCALID_RIVAL_MAUVILLE, MauvilleCity_Rival_Movement1
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Player_Face_Down
 	waitmovement 0
@@ -520,7 +520,7 @@ MauvilleCityEventScript_Rival1::
 MauvilleCityEventScript_Rival2::
 	lockall
 	call MauvilleCity_EventScript_PlayRivalMusic
-	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement2
+	applymovement LOCALID_RIVAL_MAUVILLE, MauvilleCity_Rival_Movement2
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Player_Face_Down
 	waitmovement 0
@@ -530,7 +530,7 @@ MauvilleCityEventScript_Rival2::
 MauvilleCityEventScript_Rival3::
 	lockall
 	call MauvilleCity_EventScript_PlayRivalMusic
-	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement3
+	applymovement LOCALID_RIVAL_MAUVILLE, MauvilleCity_Rival_Movement3
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Player_Face_Up
 	waitmovement 0
@@ -540,7 +540,7 @@ MauvilleCityEventScript_Rival3::
 MauvilleCityEventScript_Rival4::
 	lockall
 	call MauvilleCity_EventScript_PlayRivalMusic
-	applymovement LOCALID_RIVAL, MauvilleCity_Rival_Movement4
+	applymovement LOCALID_RIVAL_MAUVILLE, MauvilleCity_Rival_Movement4
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, MauvilleCity_Player_Face_Up
 	waitmovement 0
