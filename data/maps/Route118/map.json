@@ -430,16 +430,16 @@
     },
     {
       "type": "hidden_item",
-      "x": 28,
-      "y": 7,
+      "x": 12,
+      "y": 14,
       "elevation": 3,
       "item": "ITEM_BOTTLE_CAP",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_IRON"
     },
     {
       "type": "hidden_item",
-      "x": 12,
-      "y": 14,
+      "x": 28,
+      "y": 7,
       "elevation": 3,
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_118_HEART_SCALE"
