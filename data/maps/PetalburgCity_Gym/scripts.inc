@@ -1350,7 +1350,7 @@ PetalburgCity_Gym_Text_Intro:
 	.string "healed to full health every time you\l"
 	.string "enter a GYM.\p"
 	.string "Unless you enter a new room in the\n"
-	.string "GYM, they won't be healed in between\n"
+	.string "GYM, they won't be healed in between\l"
 	.string "battles with GYM TRAINERS though.\p"
 	.string "If you keep progressing through\n"
 	.string "a GYM without leaving, you can take\l"
