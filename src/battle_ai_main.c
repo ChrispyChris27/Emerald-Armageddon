@@ -1816,6 +1816,12 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             else if (PartnerMoveIsSameNoTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove) && gSideTimers[GetBattlerSide(battlerDef)].stickyWebAmount)
                 ADJUST_SCORE(-10); // only one mon needs to set up Sticky Web
             break;
+        case EFFECT_TEATIME:
+            if (PartnerHasSameMoveEffectWithoutTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove))
+            {
+                ADJUST_SCORE(-10);    
+            }
+            break;   
         case EFFECT_FORESIGHT:
             if (gBattleMons[battlerDef].status2 & STATUS2_FORESIGHT)
                 ADJUST_SCORE(-10);
@@ -3450,6 +3456,18 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 if (AI_ShouldSpicyExtract(battlerAtk, battlerAtkPartner, move, aiData))
                 {
                     RETURN_SCORE_PLUS(GOOD_EFFECT);
+                }
+                break;
+            case EFFECT_TEATIME:
+                if (GetItemPocket(aiData->items[battlerAtkPartner]) == POCKET_BERRIES
+                && GetItemPocket(aiData->items[battlerAtk]) == POCKET_BERRIES)
+                {
+                    ADJUST_SCORE(BEST_EFFECT);
+                }
+                else if (GetItemPocket(aiData->items[battlerAtkPartner]) == POCKET_BERRIES
+                || GetItemPocket(aiData->items[battlerAtk]) == POCKET_BERRIES)
+                {
+                    ADJUST_SCORE(GOOD_EFFECT);
                 }
                 break;
             case EFFECT_PURIFY:
