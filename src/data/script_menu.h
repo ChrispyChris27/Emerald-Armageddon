@@ -802,6 +802,37 @@ static const struct MenuAction MultichoiceList_HyperTrain[] =
     {COMPOUND_STRING("SPEED")},
 };
 
+static const struct MenuAction MultichoiceList_FangTutor[] =
+{
+    {COMPOUND_STRING("FIRE FANG")},
+    {COMPOUND_STRING("ICE FANG")},
+    {COMPOUND_STRING("THUNDER FANG")},
+    {COMPOUND_STRING("POISON FANG")},
+    {COMPOUND_STRING("HYPER FANG")},
+    {COMPOUND_STRING("PSYCHIC FANGS")},
+};
+
+static const struct MenuAction MultichoiceList_BombTutor[] =
+{
+    {COMPOUND_STRING("EGG BOMB")},
+    {COMPOUND_STRING("MAGNET BOMB")},
+    {COMPOUND_STRING("MUD BOMB")},
+    {COMPOUND_STRING("SLUDGE BOMB")},
+    {COMPOUND_STRING("SEED BOMB")},
+    {COMPOUND_STRING("SYRUP BOMB")},
+};
+
+static const struct MenuAction MultichoiceList_PunchTutor[] =
+{
+    {COMPOUND_STRING("FIRE PUNCH")},
+    {COMPOUND_STRING("ICE PUNCH")},
+    {COMPOUND_STRING("THUNDER PUNCH")},
+    {COMPOUND_STRING("DRAIN PUNCH")},
+    {COMPOUND_STRING("DYNAMIC PUNCH")},
+    {COMPOUND_STRING("MEGA PUNCH")},
+    {COMPOUND_STRING("SHADOW PUNCH")},
+};
+
 static const struct MultichoiceListStruct sMultichoiceLists[] =
 {
     [MULTI_BRINEY_ON_DEWFORD]          = MULTICHOICE(MultichoiceList_BrineyOnDewford),
@@ -920,6 +951,9 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
     [MULTI_HYPER_TRAIN]                = MULTICHOICE(MultichoiceList_HyperTrain),
+    [MULTI_FANG_TUTOR]                 = MULTICHOICE(MultichoiceList_FangTutor),
+    [MULTI_BOMB_TUTOR]                 = MULTICHOICE(MultichoiceList_BombTutor),
+    [MULTI_PUNCH_TUTOR]                = MULTICHOICE(MultichoiceList_PunchTutor),
 };
 
 const u8 *const gStdStrings[] =

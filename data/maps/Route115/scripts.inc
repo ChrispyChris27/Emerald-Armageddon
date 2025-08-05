@@ -340,3 +340,135 @@ LaggingTailGirl::
 	release
 	end
 
+MeetPunchTutor:
+	.string "I wanna punch stuff!\p"
+	.string "I wanna punch, bam, boom, slam, kick!\p"
+	.string "Punch stuff!$"
+	
+PunchTutorTeachMove:
+	.string "Which move should I teach your POKéMON?$"
+
+PunchTutorShouldTeach:
+	.string "Should I teach your POKéMON how to\n"
+	.string "punch stuff too?$"
+
+PunchTutorChooseMon:
+	.string "Which POKéMON should learn to punch stuff?$"
+
+PunchTutorDontTeachText:
+	.string "You don't wanna punch stuff?\n"
+	.string "If you change your mind let me know.$"
+
+PunchTutorTaughtMove:
+	.string "Done! Your POKéMON has learned how\n"
+	.string "to punch stuff!\p"
+	.string "If you ever want me to teach another\n"
+	.string "move to your POKéMON let me know.$"
+
+PunchTutorScript::
+	lock
+	faceplayer
+	goto_if_unset FLAG_MET_PUNCH_TUTOR, MeetPunchTutorScript
+	goto PunchTutorTeachMoveScript
+	release
+	end
+
+MeetPunchTutorScript::
+	msgbox MeetPunchTutor, MSGBOX_DEFAULT
+	setflag FLAG_MET_PUNCH_TUTOR
+	goto PunchTutorTeachMoveScript
+	release
+	end
+
+PunchTutorSuccess::
+	msgbox PunchTutorTaughtMove, MSGBOX_DEFAULT
+	release
+	end
+
+PunchTutorTeachMoveScript::
+	msgbox PunchTutorShouldTeach, MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, PunchTutorDeclined
+	msgbox PunchTutorTeachMove, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 20, 0, MULTI_PUNCH_TUTOR, FALSE
+	switch VAR_RESULT
+	case 0, TeachFirePunch
+	case 1, TeachIcePunch
+	case 2, TeachThunderPunch
+	case 3, TeachDrainPunch
+	case 4, TeachDynamicPunch
+	case 5, TeachMegaPunch
+	case 6, TeachShadowPunch
+	case MULTI_B_PRESSED, PunchTutorDeclined
+	release
+	end
+
+PunchTutorDeclined::
+	msgbox PunchTutorDontTeachText, MSGBOX_AUTOCLOSE
+	release
+	end
+
+TeachFirePunch::
+	msgbox PunchTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_FIRE_PUNCH
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, PunchTutorDeclined
+	goto PunchTutorSuccess
+	release
+	end
+
+TeachIcePunch::
+	msgbox PunchTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_ICE_PUNCH
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, PunchTutorDeclined
+	goto PunchTutorSuccess
+	release
+	end
+
+TeachThunderPunch::
+	msgbox PunchTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_THUNDER_PUNCH
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, PunchTutorDeclined
+	goto PunchTutorSuccess
+	release
+	end
+
+TeachDrainPunch::
+	msgbox PunchTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_DRAIN_PUNCH
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, PunchTutorDeclined
+	goto PunchTutorSuccess
+	release
+	end
+
+TeachDynamicPunch::
+	msgbox PunchTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_DYNAMIC_PUNCH
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, PunchTutorDeclined
+	goto PunchTutorSuccess
+	release
+	end
+
+TeachMegaPunch::
+	msgbox PunchTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_MEGA_PUNCH
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, PunchTutorDeclined
+	goto PunchTutorSuccess
+	release
+	end
+
+TeachShadowPunch::
+	msgbox PunchTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_SHADOW_PUNCH
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, PunchTutorDeclined
+	goto PunchTutorSuccess
+	release
+	end
+

@@ -1238,9 +1238,9 @@
 #define FLAG_CYNTHIA_VR_OW                                          0x4A0 // Unused Flag
 #define FLAG_BIG_ROOT_BOY                                           0x4A1 // Unused Flag
 #define FLAG_SAFETY_GOGGLES                                           0x4A2 // Unused Flag
-#define FLAG_UNUSED_0x4A3                                           0x4A3 // Unused Flag
-#define FLAG_UNUSED_0x4A4                                           0x4A4 // Unused Flag
-#define FLAG_UNUSED_0x4A5                                           0x4A5 // Unused Flag
+#define FLAG_MET_FANG_TUTOR                                           0x4A3 // Unused Flag
+#define FLAG_MET_BOMB_TUTOR                                           0x4A4 // Unused Flag
+#define FLAG_MET_PUNCH_TUTOR                                           0x4A5 // Unused Flag
 #define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
 #define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
 #define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag

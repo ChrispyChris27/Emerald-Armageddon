@@ -15957,6 +15957,7 @@ static const struct LevelUpMove sInkayLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sMalamarLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_DRILL_PECK),
     LEVEL_UP_MOVE( 1, MOVE_PLUCK),
     LEVEL_UP_MOVE( 1, MOVE_PSYWAVE),
     LEVEL_UP_MOVE( 1, MOVE_HYPNOSIS),

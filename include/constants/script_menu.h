@@ -124,6 +124,9 @@
 #define MULTI_TAG_MATCH_TYPE               113
 #define MULTI_BERRY_PLOT                   114
 #define MULTI_HYPER_TRAIN                  115
+#define MULTI_FANG_TUTOR                   116
+#define MULTI_BOMB_TUTOR                   117
+#define MULTI_PUNCH_TUTOR                  118
 
 // Lilycove SS Tidal Multichoice Selections
 #define SSTIDAL_SELECTION_SLATEPORT        0

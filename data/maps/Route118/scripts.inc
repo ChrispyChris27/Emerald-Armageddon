@@ -345,3 +345,126 @@ Route118_EventScript_Grunt2::
 	msgbox Route118_Text_Grunt2, MSGBOX_NPC
 	end
 
+MeetFangTutor:
+	.string "Many POKéMON utilize their jaws to\n"
+	.string "inflict damage in battle.\p"
+	.string "I have mastered this art and could\n"
+	.string "teach your POKéMON how to use their\l"
+	.string "fangs in battle.$"
+
+FangTutorTeachMove:
+	.string "Which move should I teach your POKéMON?$"
+
+FangTutorShouldTeach:
+	.string "What do you say? Shall I teach your\n"
+	.string "POKéMON a move that uses fangs?$"
+
+FangTutorChooseMon:
+	.string "Which POKéMON should I teach?$"
+
+FangTutorDontTeachText:
+	.string "If you change your mind, I would be\n"
+	.string "happy to teach your POKéMON later.$"
+
+FangTutorTaughtMove:
+	.string "Done! Your POKéMON has learned a\n"
+	.string "new technique for battle!\p"
+	.string "If you ever want me to teach another\n"
+	.string "move to your POKéMON let me know.$"
+
+FangTutorScript::
+	lock
+	faceplayer
+	goto_if_unset FLAG_MET_FANG_TUTOR, MeetFangTutorScript
+	goto FangTutorTeachMoveScript
+	release
+	end
+
+MeetFangTutorScript::
+	msgbox MeetFangTutor, MSGBOX_DEFAULT
+	setflag FLAG_MET_FANG_TUTOR
+	goto FangTutorTeachMoveScript
+	release
+	end
+
+FangTutorSuccess::
+	msgbox FangTutorTaughtMove, MSGBOX_DEFAULT
+	release
+	end
+
+FangTutorTeachMoveScript::
+	msgbox FangTutorShouldTeach, MSGBOX_YESNO
+	switch VAR_RESULT
+	case NO, FangTutorDeclined
+	msgbox FangTutorTeachMove, MSGBOX_DEFAULT
+	waitmessage
+	multichoice 20, 0, MULTI_FANG_TUTOR, FALSE
+	switch VAR_RESULT
+	case 0, TeachFireFang
+	case 1, TeachIceFang
+	case 2, TeachThunderFang
+	case 3, TeachPoisonFang
+	case 4, TeachHyperFang
+	case 5, TeachPsychicFangs
+	case MULTI_B_PRESSED, FangTutorDeclined
+	release
+	end
+
+FangTutorDeclined::
+	msgbox FangTutorDontTeachText, MSGBOX_AUTOCLOSE
+	release
+	end
+
+TeachFireFang::
+	msgbox FangTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_FIRE_FANG
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, FangTutorDeclined
+	goto FangTutorSuccess
+	release
+	end
+
+TeachIceFang::
+	msgbox FangTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_ICE_FANG
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, FangTutorDeclined
+	goto FangTutorSuccess
+	release
+	end
+
+TeachThunderFang::
+	msgbox FangTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_THUNDER_FANG
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, FangTutorDeclined
+	goto FangTutorSuccess
+	release
+	end
+
+TeachPoisonFang::
+	msgbox FangTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_POISON_FANG
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, FangTutorDeclined
+	goto FangTutorSuccess
+	release
+	end
+
+TeachHyperFang::
+	msgbox FangTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_HYPER_FANG
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, FangTutorDeclined
+	goto FangTutorSuccess
+	release
+	end
+
+TeachPsychicFangs::
+	msgbox FangTutorChooseMon, MSGBOX_DEFAULT
+	setvar VAR_0x8005, MOVE_PSYCHIC_FANGS
+	call MoveTutor_EventScript_OpenPartyMenu
+	goto_if_eq VAR_RESULT, 0, FangTutorDeclined
+	goto FangTutorSuccess
+	release
+	end
