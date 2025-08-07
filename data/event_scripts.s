@@ -1198,3 +1198,23 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/MythicalMountain2/scripts.inc"
 	.include "data/scripts/dexnav.inc"
+
+	.include "data/maps/ContinentalCavernEntrance/scripts.inc"
+
+	.include "data/maps/ContinentalCavernIceRoom/scripts.inc"
+
+	.include "data/maps/ContinentalCavernRockRoom/scripts.inc"
+
+	.include "data/maps/ContinentalCavernSteelRoom/scripts.inc"
+
+	.include "data/maps/ContinentalCavernDragonRoom/scripts.inc"
+
+	.include "data/maps/ContinentalCavernElectricRoom/scripts.inc"
+
+	.include "data/maps/ContinentalCavernMagmaRoom/scripts.inc"
+
+	.include "data/maps/ContinentalCavernGigasRoom/scripts.inc"
+
+	.include "data/maps/ContinentalCavernWaterRoom/scripts.inc"
+
+	.include "data/maps/ContinentalCavernIcePuzzleRoom/scripts.inc"

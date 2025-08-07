@@ -13,6 +13,7 @@
 #include "party_menu.h"
 #include "fldeff.h"
 #include "constants/moves.h"
+#include "field_specials.h"
 
 EWRAM_DATA static bool8 sIsRegisteelPuzzle = 0;
 
@@ -392,4 +393,16 @@ void DoBrailleRegidragoEffect(void)
     FlagSet(FLAG_REGIDRAGO_PUZZLE);
     UnlockPlayerFieldControls();
     UnfreezeObjectEvents();
+}
+
+bool8 CheckPartyForRegis(void)
+{
+    if (CheckPartyHasSpecies(SPECIES_REGICE) == TRUE
+        && CheckPartyHasSpecies(SPECIES_REGIROCK) == TRUE
+        && CheckPartyHasSpecies(SPECIES_REGISTEEL) == TRUE
+        && CheckPartyHasSpecies(SPECIES_REGIELEKI) == TRUE
+        && CheckPartyHasSpecies(SPECIES_REGIDRAGO) == TRUE)
+        return TRUE;
+    else
+        return FALSE;
 }

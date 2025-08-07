@@ -568,4 +568,5 @@ gSpecials::
 	def_special HealUnfainted
 	def_special UseBlankMessageToCancelPokemonPic
 	def_special EnterCode
+	def_special CheckPartyForRegis
 	def_special GetCodeFeedback

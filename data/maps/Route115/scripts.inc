@@ -10,6 +10,7 @@ Route115_MapScripts::
 	.byte 0
 
 Route115_OnLoad:
+	call_if_unset FLAG_REGI_DOORS_OPENED, Route115_CloseRegiEntrance
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_115_WEST, AbnormalWeather_EventScript_PlaceTilesRoute115West
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_115_EAST, AbnormalWeather_EventScript_PlaceTilesRoute115East
 	end
@@ -471,4 +472,9 @@ TeachShadowPunch::
 	goto PunchTutorSuccess
 	release
 	end
+
+Route115_CloseRegiEntrance::
+	setmetatile 30, 5, METATILE_Fallarbor_BrownRockWall, TRUE
+	setmetatile 30, 6, METATILE_Fallarbor_BrownRockWall, TRUE
+	return
 

@@ -94,7 +94,16 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "Route100",
-    "MeteorCastle2F1"
+    "ContinentalCavernEntrance",
+    "ContinentalCavernIceRoom",
+    "ContinentalCavernRockRoom",
+    "ContinentalCavernSteelRoom",
+    "ContinentalCavernDragonRoom",
+    "ContinentalCavernElectricRoom",
+    "ContinentalCavernMagmaRoom",
+    "ContinentalCavernGigasRoom",
+    "ContinentalCavernWaterRoom",
+    "ContinentalCavernIcePuzzleRoom"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -441,6 +450,7 @@
     "MeteorCastle",
     "MeteorCastle2",
     "MeteorCastle1F1",
+    "MeteorCastle2F1",
     "MeteorCastle2F2",
     "DragonsDen",
     "MeteorCastle3F1",

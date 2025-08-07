@@ -1,0 +1,63 @@
+{
+  "id": "MAP_CONTINENTAL_CAVERN_ENTRANCE",
+  "name": "ContinentalCavernEntrance",
+  "layout": "LAYOUT_CONTINENTAL_CAVERN_ENTRANCE",
+  "music": "MUS_SEALED_CHAMBER",
+  "region_map_section": "MAPSEC_CONTINENTAL_CAVERN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": true,
+  "allow_escaping": true,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 39,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_ROUTE115",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 13,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_CONTINENTAL_CAVERN_ICE_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_CONTINENTAL_CAVERN_ROCK_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 52,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_CONTINENTAL_CAVERN_DRAGON_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 65,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_CONTINENTAL_CAVERN_ELECTRIC_ROOM",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_CONTINENTAL_CAVERN_STEEL_ROOM",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

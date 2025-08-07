@@ -4620,6 +4620,106 @@
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/MythicalMountain2/border.bin",
       "blockdata_filepath": "data/layouts/MythicalMountain2/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_ENTRANCE",
+      "name": "ContinentalCavernEntrance_Layout",
+      "width": 79,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_ICE_ROOM",
+      "name": "ContinentalCavernIceRoom_Layout",
+      "width": 17,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernIceRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernIceRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_ROCK_ROOM",
+      "name": "ContinentalCavernRockRoom_Layout",
+      "width": 17,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernRockRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernRockRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_STEEL_ROOM",
+      "name": "ContinentalCavernSteelRoom_Layout",
+      "width": 17,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernSteelRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernSteelRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_DRAGON_ROOM",
+      "name": "ContinentalCavernDragonRoom_Layout",
+      "width": 17,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernDragonRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernDragonRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_ELECTRIC_ROOM",
+      "name": "ContinentalCavernElectricRoom_Layout",
+      "width": 17,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernElectricRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernElectricRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_MAGMA_ROOM",
+      "name": "ContinentalCavernMagmaRoom_Layout",
+      "width": 17,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernMagmaRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernMagmaRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_GIGAS_ROOM",
+      "name": "ContinentalCavernGigasRoom_Layout",
+      "width": 17,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernGigasRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernGigasRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_WATER_ROOM",
+      "name": "ContinentalCavernWaterRoom_Layout",
+      "width": 17,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernWaterRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernWaterRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CONTINENTAL_CAVERN_ICE_PUZZLE_ROOM",
+      "name": "ContinentalCavernIcePuzzleRoom_Layout",
+      "width": 17,
+      "height": 34,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/ContinentalCavernIcePuzzleRoom/border.bin",
+      "blockdata_filepath": "data/layouts/ContinentalCavernIcePuzzleRoom/map.bin"
     }
   ]
 }

@@ -411,6 +411,13 @@
       "elevation": 0,
       "dest_map": "MAP_TERRA_CAVE_ENTRANCE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_CONTINENTAL_CAVERN_ENTRANCE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

@@ -1241,8 +1241,8 @@
 #define FLAG_MET_FANG_TUTOR                                           0x4A3 // Unused Flag
 #define FLAG_MET_BOMB_TUTOR                                           0x4A4 // Unused Flag
 #define FLAG_MET_PUNCH_TUTOR                                           0x4A5 // Unused Flag
-#define FLAG_UNUSED_0x4A6                                           0x4A6 // Unused Flag
-#define FLAG_UNUSED_0x4A7                                           0x4A7 // Unused Flag
+#define FLAG_HIDE_REGIGIGAS                                           0x4A6 // Unused Flag
+#define FLAG_DEFEATED_REGIGIGAS                                           0x4A7 // Unused Flag
 #define FLAG_UNUSED_0x4A8                                           0x4A8 // Unused Flag
 #define FLAG_UNUSED_0x4A9                                           0x4A9 // Unused Flag
 #define FLAG_UNUSED_0x4AA                                           0x4AA // Unused Flag
