@@ -11356,7 +11356,8 @@ const struct Item gItemsInfo[] =
         .price = 3000,
         .description = COMPOUND_STRING(
             "Sprays star-shaped\n"
-            "rays that never miss."),
+            "rays that never\n"
+            "miss."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -11384,7 +11385,7 @@ const struct Item gItemsInfo[] =
         .name = _("TM63"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Draws the foe close,\n"
+            "Draws the foe close\n"
             "then strikes\n"
             "without fail."),
         .importance = I_REUSABLE_TMS,

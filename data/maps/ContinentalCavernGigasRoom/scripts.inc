@@ -62,7 +62,7 @@ Regigigas_Text:
 	.string "giants eventually scattered themselves\l"
 	.string "across the world, returning to where\l"
 	.string "they were first created.\p"
-	.string "The legends state that the only way\p"
+	.string "The legends state that the only way\n"
 	.string "to awaken the sleeping giant is to\l"
 	.string "reunite the powers of rock, ice, steel,\l"
 	.string "lightning, and the dragons and return\l"
