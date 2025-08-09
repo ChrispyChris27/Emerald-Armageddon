@@ -30,7 +30,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MAGMA_MEMBER_M",
       "x": 25,
-      "y": 11,
+      "y": 10,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 1,
@@ -98,14 +98,14 @@
       "x": 10,
       "y": 22,
       "elevation": 3,
-      "dest_map": "MAP_MAGMA_HIDEOUT_2F_1R",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_MAGMA_HIDEOUT_3F_1R",
+      "dest_warp_id": "2"
     },
     {
       "x": 36,
       "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_MAGMA_HIDEOUT_1F",
+      "dest_map": "MAP_MAGMA_HIDEOUT_2F_1R",
       "dest_warp_id": "2"
     }
   ],

@@ -3175,6 +3175,25 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                     ADJUST_SCORE(GOOD_EFFECT);
                 }
                 break;
+            case HOLD_EFFECT_ABSORB_BULB:
+            case HOLD_EFFECT_LUMINOUS_MOSS:
+            if (moveType == TYPE_WATER)
+                {
+                    if (moveTarget == MOVE_TARGET_FOES_AND_ALLY)
+                    {
+                        ADJUST_SCORE(GOOD_EFFECT);
+                    }
+                }
+                break;
+            case HOLD_EFFECT_CELL_BATTERY:
+            if (moveType == TYPE_ELECTRIC)
+                {
+                    if (moveTarget == MOVE_TARGET_FOES_AND_ALLY)
+                    {
+                        ADJUST_SCORE(GOOD_EFFECT);
+                    }
+                }
+                break;
             default:
                 break;
             }
