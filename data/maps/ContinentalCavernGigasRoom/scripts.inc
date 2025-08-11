@@ -32,9 +32,6 @@ EventScript_RanFromRegigigas::
 	end
 
 Regigigas_Text:
-	.string "It appears to be a statue.\p"
-	.string "There is an inscription at the\n"
-	.string "base of the statue...\p"
 	.string "'Legends say this statue was once a\n"
 	.string "powerful POKéMON that towed the\l"
 	.string "continents together with ropes.\p"
@@ -83,15 +80,18 @@ Regigigas_No_Battle::
 
 Regigigas_Event_Script::
 	lock
+	msgbox Inscription_Read MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, ExitGigas
 	msgbox Regigigas_Text, MSGBOX_DEFAULT
 	waitmessage
 	specialvar VAR_RESULT, CheckPartyForRegis
 	goto_if_eq VAR_RESULT, FALSE, Regigigas_No_Battle
 	delay 30
+	closemessage
 	playmoncry SPECIES_REGIGIGAS, CRY_MODE_NORMAL
-	setvar VAR_0x8004, 1  @ vertical pan
-	setvar VAR_0x8005, 1  @ horizontal pan
-	setvar VAR_0x8006, 8  @ num shakes
+	setvar VAR_0x8004, 2  @ vertical pan
+	setvar VAR_0x8005, 2  @ horizontal pan
+	setvar VAR_0x8006, 12  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
 	waitstate
@@ -114,6 +114,12 @@ Regigigas_Event_Script::
 	release
 	end
 
+ExitGigas::
+	release
+	end
 
-
+Inscription_Read:
+	.string "It seems to be a statue of a POKéMON.\p"
+	.string "Do you want to read the inscription\n"
+	.string "at the base of the statue?$"
 
