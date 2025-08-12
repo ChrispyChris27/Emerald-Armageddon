@@ -1,5 +1,3 @@
-.set LOCALID_RIVAL, 18
-
 Route113_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, Route113_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, Route113_OnTransition
@@ -207,7 +205,7 @@ Route113_EventScript_RivalScene1::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route113_EventScript_PlayMayMusic
 	call_if_eq VAR_RESULT, FEMALE, Route113_EventScript_PlayBrendanMusic
-	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	applymovement LOCALID_RIVAL113, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
@@ -222,11 +220,11 @@ Route113_EventScript_RivalScene2::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route113_EventScript_PlayMayMusic
 	call_if_eq VAR_RESULT, FEMALE, Route113_EventScript_PlayBrendanMusic
-	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	applymovement LOCALID_RIVAL113, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_RIVAL, RivalMovementDown2
+	applymovement LOCALID_RIVAL113, RivalMovementDown2
 	waitmovement 0
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route113_EventScript_MayBattle
@@ -239,11 +237,11 @@ Route113_EventScript_RivalScene3::
 	checkplayergender
 	call_if_eq VAR_RESULT, MALE, Route113_EventScript_PlayMayMusic
 	call_if_eq VAR_RESULT, FEMALE, Route113_EventScript_PlayBrendanMusic
-	applymovement LOCALID_RIVAL, Common_Movement_ExclamationMark
+	applymovement LOCALID_RIVAL113, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
-	applymovement LOCALID_RIVAL, RivalMovementDown3
+	applymovement LOCALID_RIVAL113, RivalMovementDown3
 	waitmovement 0
 	checkplayergender
 	goto_if_eq VAR_RESULT, MALE, Route113_EventScript_MayBattle
@@ -325,9 +323,9 @@ Route113_EventScript_GiveItemfinder::
 
 Route113_EventScript_RivalExit::
 	closemessage
-	applymovement LOCALID_RIVAL, RivalMovementExit
+	applymovement LOCALID_RIVAL113, RivalMovementExit
 	waitmovement 0
-	removeobject LOCALID_RIVAL
+	removeobject LOCALID_RIVAL113
 	setflag FLAG_RIVAL_113
 	setvar VAR_ROUTE113_STATE, 1
 	savebgm MUS_DUMMY

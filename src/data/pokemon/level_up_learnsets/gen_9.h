@@ -4419,7 +4419,7 @@ static const struct LevelUpMove sOmastarLevelUpLearnset[] = {
 static const struct LevelUpMove sKabutoLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WHIRLPOOL),
     LEVEL_UP_MOVE( 1, MOVE_RAPID_SPIN),
-    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
+    LEVEL_UP_MOVE( 1, MOVE_ACCELEROCK),
     LEVEL_UP_MOVE( 4, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE( 8, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(12, MOVE_AQUA_JET),
@@ -4441,7 +4441,7 @@ static const struct LevelUpMove sKabutopsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_SUPERPOWER),
     LEVEL_UP_MOVE( 1, MOVE_WHIRLPOOL),
     LEVEL_UP_MOVE( 1, MOVE_RAPID_SPIN),
-    LEVEL_UP_MOVE( 1, MOVE_ROCK_THROW),
+    LEVEL_UP_MOVE( 1, MOVE_ACCELEROCK),
     LEVEL_UP_MOVE( 4, MOVE_WATER_PULSE),
     LEVEL_UP_MOVE( 8, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE(12, MOVE_AQUA_JET),
@@ -4466,7 +4466,7 @@ static const struct LevelUpMove sAerodactylLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_FIRE_FANG),
     LEVEL_UP_MOVE( 4, MOVE_SUPERSONIC),
     LEVEL_UP_MOVE( 8, MOVE_PLUCK),
-    LEVEL_UP_MOVE(12, MOVE_SMACK_DOWN),
+    LEVEL_UP_MOVE(12, MOVE_ACCELEROCK),
     LEVEL_UP_MOVE(16, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE(20, MOVE_IRON_HEAD),
     LEVEL_UP_MOVE(24, MOVE_CRUNCH),
@@ -9605,7 +9605,7 @@ static const struct LevelUpMove sGorebyssLevelUpLearnset[] = {
 #if P_FAMILY_RELICANTH
 static const struct LevelUpMove sRelicanthLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_AQUA_JET),
-    LEVEL_UP_MOVE( 1, MOVE_ROCK_TOMB),
+    LEVEL_UP_MOVE( 1, MOVE_ACCELEROCK),
     LEVEL_UP_MOVE( 4, MOVE_CHILLING_WATER),
     LEVEL_UP_MOVE( 8, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE(12, MOVE_BOUNCE),
@@ -17878,7 +17878,7 @@ static const struct LevelUpMove sSilvallyLevelUpLearnset[] = {
 static const struct LevelUpMove sMiniorLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_EXPLOSION),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSE_RAY),
-    LEVEL_UP_MOVE( 1, MOVE_ROCK_TOMB),
+    LEVEL_UP_MOVE( 1, MOVE_ACCELEROCK),
     LEVEL_UP_MOVE( 4, MOVE_ANCIENT_POWER),
     LEVEL_UP_MOVE( 8, MOVE_U_TURN),
     LEVEL_UP_MOVE(12, MOVE_SCORCHING_SANDS),

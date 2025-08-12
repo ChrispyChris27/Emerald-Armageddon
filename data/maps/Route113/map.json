@@ -239,6 +239,7 @@
       "flag": "FLAG_MINTS_3"
     },
     {
+      "local_id": "LOCALID_RIVAL113",
       "graphics_id": "OBJ_EVENT_GFX_VAR_3",
       "x": 91,
       "y": 7,

@@ -6,8 +6,8 @@ RustboroCity_Mart_EventScript_Clerk::
 	faceplayer
 	message gText_HowMayIServeYou
 	waitmessage
-	goto_if_unset FLAG_MET_DEVON_EMPLOYEE, RustboroCity_Mart_EventScript_PokemartBasic
-	goto_if_set FLAG_MET_DEVON_EMPLOYEE, RustboroCity_Mart_EventScript_PokemartExpanded
+	goto_if_unset FLAG_BADGE04_GET, RustboroCity_Mart_EventScript_PokemartBasic
+	goto_if_set FLAG_BADGE04_GET, RustboroCity_Mart_EventScript_PokemartExpanded
 	end
 
 RustboroCity_Mart_EventScript_PokemartBasic::

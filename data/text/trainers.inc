@@ -2694,27 +2694,23 @@ Route118_Text_DeandrePostBattle:
 	.string "You can copy me--I don't mind!$"
 
 Route119_Text_BrentIntro:
-	.string "We're the MIMIC CIRCLE!\n"
-	.string "We MIMIC what you do!$"
+	.string "Shhh!\n"
+	.string "There's no secrets here!$"
 
 Route119_Text_BrentDefeat:
 	.string "Whoopsie!\n"
 	.string "I lost!$"
 
 Route119_Text_BrentPostBattle:
-	.string "What's so good about mimicry?\p"
-	.string "Fufufu…\n"
 	.string "You'll never understand…$"
 
 Route119_Text_DonaldIntro:
-	.string "So, we finally meet!\n"
-	.string "My BUG POKéMON will keep you company!$"
+	.string "Want to know a secret?$"
 
 Route119_Text_DonaldDefeat:
 	.string "I wish we'd never met…$"
 
 Route119_Text_DonaldPostBattle:
-	.string "I want to MIMIC you some more.\n"
 	.string "Can you hurry up and move?$"
 
 Route119_Text_TaylorIntro:
