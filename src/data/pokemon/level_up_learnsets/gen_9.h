@@ -6566,6 +6566,7 @@ static const struct LevelUpMove sOctilleryLevelUpLearnset[] = {
     LEVEL_UP_MOVE(42, MOVE_GUNK_SHOT),
     LEVEL_UP_MOVE(45, MOVE_HYDRO_PUMP),
     LEVEL_UP_MOVE(48, MOVE_WATER_SPOUT),
+    LEVEL_UP_MOVE(80, MOVE_NO_RETREAT),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_REMORAID

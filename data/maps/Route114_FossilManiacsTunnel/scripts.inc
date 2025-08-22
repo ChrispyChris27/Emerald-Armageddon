@@ -80,12 +80,13 @@ Route114_FossilManiacsTunnel_Text_FossilsAreWonderful:
 	.string "It's so dreamy…$"
 
 Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
-	.string "Oh…\n"
-	.string "It's not safe that way…\p"
+	.string "Oh…\p"
 	.string "I was digging away, you see…\n"
 	.string "When the whole wall collapsed…\p"
 	.string "I think there's a giant cavern\n"
 	.string "underneath now…\p"
 	.string "But I've left it alone because I don't\n"
-	.string "think there are any FOSSILS there…$"
+	.string "think there are any FOSSILS there…\p"
+	.string "My brother thinks there are though,\n"
+	.string "you'll find him deep in the cavern.$"
 
