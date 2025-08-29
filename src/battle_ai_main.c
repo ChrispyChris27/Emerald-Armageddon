@@ -1879,7 +1879,7 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                 ADJUST_SCORE(-10); // only one mon needs to set up Sticky Web
             break;
         case EFFECT_TEATIME:
-            if (PartnerHasSameMoveEffectWithoutTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove))
+            if (PartnerMoveIsSameNoTarget(BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove))
                 ADJUST_SCORE(-10);    
             break;   
         case EFFECT_FORESIGHT:
@@ -2914,10 +2914,6 @@ static s32 AI_CheckBadMove(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                     ADJUST_SCORE(-10);
             }
             break;
-        case EFFECT_TEATIME:
-            if (DoesPartnerHaveSameMoveEffect(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove))
-                ADJUST_SCORE(-10);
-            break;
         case EFFECT_DARK_VOID:
             if (B_DARK_VOID_FAIL >= GEN_7 && gBattleMons[battlerAtk].species != SPECIES_DARKRAI)
                 ADJUST_SCORE(-10);
@@ -3570,7 +3566,6 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             switch (effect)
             {
             case EFFECT_DOODLE:
-            case EFFECT_ENTRAINMENT:
             case EFFECT_GASTRO_ACID:
             case EFFECT_ROLE_PLAY:
             case EFFECT_SIMPLE_BEAM:
@@ -3578,6 +3573,15 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
             case EFFECT_WORRY_SEED:
                 AbilityChangeScore(battlerAtk, battlerAtkPartner, effect, &score, aiData);
                 return score;
+            case EFFECT_ENTRAINMENT:
+            if (atkPartnerAbility == ABILITY_WONDER_GUARD)
+                {
+                    RETURN_SCORE_PLUS(20);
+                }
+            else
+                AbilityChangeScore(battlerAtk, battlerAtkPartner, effect, &score, aiData);
+                return score;
+                break;
             case EFFECT_SPICY_EXTRACT:
                 if (AI_ShouldSpicyExtract(battlerAtk, battlerAtkPartner, move, aiData))
                 {
@@ -3638,12 +3642,6 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
                         ADJUST_SCORE(DECENT_EFFECT);
                     }
                     RETURN_SCORE_PLUS(WEAK_EFFECT);
-                }
-                break;
-            case EFFECT_ENTRAINMENT:
-                if (atkPartnerAbility == ABILITY_WONDER_GUARD)
-                {
-                    RETURN_SCORE_PLUS(20);
                 }
                 break;
             case EFFECT_SOAK:

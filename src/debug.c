@@ -3391,13 +3391,13 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
 #undef tDigit
 
 #define SOUND_LIST_BGM              \
-    X(MUS_LITTLEROOT_TEST)          \
-    X(MUS_GSC_ROUTE38)              \
+    X(MUS_CYNTHIA)                  \
+    X(MUS_NCASTLE)                  \
     X(MUS_CAUGHT)                   \
     X(MUS_VICTORY_WILD)             \
     X(MUS_VICTORY_GYM_LEADER)       \
     X(MUS_VICTORY_LEAGUE)           \
-    X(MUS_C_COMM_CENTER)            \
+    X(MUS_CYNTHIA_ENCOUNTER)        \
     X(MUS_GSC_PEWTER)               \
     X(MUS_C_VS_LEGEND_BEAST)        \
     X(MUS_ROUTE101)                 \

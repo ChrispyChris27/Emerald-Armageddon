@@ -4495,7 +4495,7 @@ BattleScript_EffectFlatter::
 	attackanimation
 	waitanimation
 	setstatchanger STAT_SPATK, 2, FALSE
-	statbuffchange STAT_CHANGE_ALLOW_PTR, BattleScript_FlatterTryConfuse
+	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_FlatterTryConfuse
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_INCREASE, BattleScript_FlatterTryConfuse
 	printfromtable gStatUpStringIds
 	waitmessage B_WAIT_TIME_LONG
