@@ -570,3 +570,4 @@ gSpecials::
 	def_special EnterCode
 	def_special CheckPartyForRegis
 	def_special GetCodeFeedback
+	def_special SetHiddenNature
