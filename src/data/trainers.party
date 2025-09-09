@@ -19735,17 +19735,27 @@ Pic: Picnicker
 Gender: Female
 Music: Girl
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Prefer Status Moves
 
-Lombre
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Starmie @ Zoom Lens
+Level: 43
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Quiet
+- Hydro Pump
+- Thunder
+- Blizzard
+- Psychic
 
-Marill
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Beheeyem @ Zoom Lens
+Level: 43
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Quiet
+- Psychic
+- Thunder
+- Focus Blast
+- Nasty Plot
 
 === TRAINER_KAI ===
 Name: KAI
@@ -19793,12 +19803,27 @@ Pic: Picnicker
 Gender: Female
 Music: Girl
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Prefer Status Moves
 
-Nuzleaf
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Slowking @ Zoom Lens
+Level: 43
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Quiet
+- Hydro Pump
+- Fire Blast
+- Focus Blast
+- Blizzard
+
+Porygon-Z @ Zoom Lens
+Level: 43
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Quiet
+- Boomburst
+- Thunder
+- Blizzard
+- Nasty Plot
 
 === TRAINER_DEANDRE ===
 Name: DEANDRE
