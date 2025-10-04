@@ -3657,12 +3657,47 @@ Pic: Pokemaniac
 Gender: Male
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices 
 
-Aron
-Level: 19
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Dusknoir @ Leftovers
+Level: 41
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Spirit Shackle
+- Body Press
+- Pain Split
+- Earthquake
+
+Yanmega @ Focus Sash
+Level: 41
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Bug Buzz
+- Detect
+- Air Slash
+- Shadow Ball
+
+Magmortar @ Life Orb
+Level: 41
+Ability: Mega Launcher
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Lava Plume
+- Aura Sphere
+- Dark Pulse
+- Scorching Sands
+
+Lickilicky @ Leftovers
+Level: 41
+Ability: Own tempo
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Body Slam
+- Body Press
+- Zen Headbutt
+- Curse
 
 === TRAINER_THALIA_1 ===
 Name: THALIA
@@ -5049,17 +5084,27 @@ Pic: Kindler
 Gender: Male
 Music: Hiker
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices 
 
-Slugma
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Turtonator @ Assault Vest
+Level: 41
+Ability: SHell Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Dragon Pulse
+- Lava Plume
+- Charge Beam
+- Focus Blast
 
-Wingull
-Level: 18
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Turtonator @ Assault Vest
+Level: 41
+Ability: Shell Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Dragon Pulse
+- Lava Plume
+- Charge Beam
+- Focus Blast
 
 === TRAINER_BERNIE_2 ===
 Name: BERNIE
