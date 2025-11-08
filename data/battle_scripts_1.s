@@ -408,6 +408,7 @@ BattleScript_SaltCureExtraDamage::
 	printstring STRINGID_TARGETISHURTBYSALTCURE
 	waitmessage B_WAIT_TIME_LONG
 	tryfaintmon BS_ATTACKER
+	tryrestorehpberry
 	end2
 
 BattleScript_HurtTarget_NoString:
@@ -2879,6 +2880,7 @@ BattleScript_CantMakeAsleep::
 
 BattleScript_EffectAbsorbLiquidOoze::
 	call BattleScript_AbilityPopUpTarget
+	jumpifability BS_ATTACKER, ABILITY_MAGIC_GUARD, BattleScript_EffectAbsorbRet
 	goto BattleScript_EffectAbsorb
 
 BattleScript_EffectAbsorb::
@@ -2888,6 +2890,7 @@ BattleScript_EffectAbsorb::
 	waitmessage B_WAIT_TIME_LONG
 	tryfaintmon BS_ATTACKER
 	bicword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE | HITMARKER_PASSIVE_HP_UPDATE
+BattleScript_EffectAbsorbRet:
 	return
 
 BattleScript_EffectExplosion::
@@ -4218,7 +4221,7 @@ BattleScript_EffectBellyDrum::
 	attackcanceler
 	attackstring
 	ppreduce
-	jumpifstat BS_ATTACKER, CMP_EQUAL, STAT_ATK, MAX_STAT_STAGE, BattleScript_ButItFailed
+	jumpifstatignorecontrary BS_ATTACKER, CMP_EQUAL, STAT_ATK, MAX_STAT_STAGE, BattleScript_ButItFailed
 	halvehp BattleScript_ButItFailed
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	attackanimation
@@ -5082,8 +5085,8 @@ BattleScript_FaintAttacker::
 	tryrevertweatherform
 	flushtextbox
 	waitanimation
-	tryactivatesoulheart
 	tryactivatereceiver BS_ATTACKER
+	tryactivatesoulheart
 	trytrainerslidemsgfirstoff BS_ATTACKER
 	return
 
@@ -5100,8 +5103,8 @@ BattleScript_FaintTarget::
 	tryrevertweatherform
 	flushtextbox
 	waitanimation
-	tryactivatesoulheart
 	tryactivatereceiver BS_TARGET
+	tryactivatesoulheart
 	trytrainerslidemsgfirstoff BS_TARGET
 	return
 
@@ -5624,10 +5627,12 @@ BattleScript_LeechSeedTurnDrainLiquidOoze::
 	copybyte gBattlerAbility, gBattlerAttacker
 	call BattleScript_AbilityPopUp
 	copybyte gBattlerAttacker, gBattlerTarget   @ needed to get liquid ooze message correct
+	jumpifability BS_TARGET, ABILITY_MAGIC_GUARD, BattleScript_LeechSeedTurnDrainHealBlockEnd2
 	goto BattleScript_LeechSeedTurnDrainGainHp
 
 BattleScript_LeechSeedTurnDrainHealBlock::
 	call BattleScript_LeechSeedTurnDrain
+BattleScript_LeechSeedTurnDrainHealBlockEnd2:
 	end2
 
 BattleScript_LeechSeedTurnDrainRecovery::
@@ -6048,9 +6053,8 @@ BattleScript_ToxicDebrisActivates::
 	printstring STRINGID_POISONSPIKESSCATTERED
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_ToxicDebrisRet:
-	copybyte sBATTLER, gBattlerTarget
-	copybyte gBattlerTarget, gBattlerAttacker
-	copybyte gBattlerAttacker, sBATTLER
+	restoretarget
+	restoreattacker
 	return
 
 BattleScript_EarthEaterActivates::
@@ -7281,6 +7285,7 @@ BattleScript_ReceiverActivates::
 	printstring STRINGID_RECEIVERABILITYTAKEOVER
 	waitmessage B_WAIT_TIME_LONG
 	settracedability BS_ABILITY_BATTLER
+	switchinabilities BS_ABILITY_BATTLER
 	return
 
 BattleScript_AbilityHpHeal:
@@ -8210,11 +8215,13 @@ BattleScript_CuteCharmActivates::
 	return
 
 BattleScript_GooeyActivates::
+	statbuffchange BS_ATTACKER, STAT_CHANGE_ONLY_CHECKING, BattleScript_GooeyActivatesRet
 	waitstate
 	call BattleScript_AbilityPopUp
 	swapattackerwithtarget  @ for defiant, mirror armor
 	seteffectsecondary BS_ATTACKER, BS_TARGET, MOVE_EFFECT_SPD_MINUS_1
 	swapattackerwithtarget
+BattleScript_GooeyActivatesRet:
 	return
 
 BattleScript_AbilityStatusEffect::

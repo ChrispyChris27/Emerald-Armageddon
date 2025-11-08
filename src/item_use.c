@@ -101,7 +101,7 @@ static const u8 sTextNormalLocatinator[] =_("The LOCATINATOR senses nothing\n un
 static const u8 sTextRoamerLocatinator[] =_("The LOCATINATOR is flashing brightly!\nSomething rare must be nearby!{PAUSE_UNTIL_PRESS}");
 
 // EWRAM variables
-EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
+EWRAM_DATA static TaskFunc sItemUseOnFieldCB = NULL;
 
 // Below is set TRUE by UseRegisteredKeyItemOnField
 #define tUsingRegisteredKeyItem  data[3]
@@ -132,7 +132,7 @@ static void SetUpItemUseCallback(u8 taskId)
         type = gTasks[taskId].tEnigmaBerryType - 1;
     else
         type = GetItemType(gSpecialVar_ItemId) - 1;
-    
+
     if (gTasks[taskId].tUsingRegisteredKeyItem && type == (ITEM_USE_PARTY_MENU - 1))
     {
         FadeScreen(FADE_TO_BLACK, 0);
@@ -1301,15 +1301,18 @@ bool32 CannotUseItemsInBattle(u16 itemId, struct Pokemon *mon)
         }
         break;
     case EFFECT_ITEM_INCREASE_ALL_STATS:
+    {
+        u32 ability = GetBattlerAbility(gBattlerInMenuId);
         for (i = STAT_ATK; i < NUM_STATS; i++)
         {
-            if (CompareStat(gBattlerInMenuId, i, MAX_STAT_STAGE, CMP_EQUAL))
+            if (CompareStat(gBattlerInMenuId, i, MAX_STAT_STAGE, CMP_EQUAL, ability))
             {
                 cannotUse = TRUE;
                 break;
             }
         }
         break;
+    }
     case EFFECT_ITEM_RESTORE_HP:
         if (hp == 0 || hp == GetMonData(mon, MON_DATA_MAX_HP))
             cannotUse = TRUE;
