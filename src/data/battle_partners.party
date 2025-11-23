@@ -13,34 +13,67 @@ Pic: Steven
 Gender: Male
 Music: Male
 Back Pic: Steven
-AI: Basic Trainer
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Metang
-Brave Nature
-Level: 42
+Magearna @ White Herb
+Level: 82
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 Def / 6 SpA
-- Light Screen
+Nature: Modest
+- Fleur Cannon
+- Aura Sphere
+- Flash Cannon
+- Thunderbolt
+
+Jirachi @ Leftovers
+Level: 82
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Meteor Mash
+- Zen Headbutt
+- Icy Wind
+- Thunderbolt
+
+Metagross @ Metagrossite
+Level: 82
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Meteor Mash
+- Psychic Fangs
+- Ice Punch
+- Bullet Punch
+
+=== PARTNER_STEVEN2 ===
+Name: STEVEN
+Class: Rival
+Pic: Steven
+Gender: Male
+Music: Male
+Back Pic: Steven
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+
+Genesect-Chill @ Chill Drive
+Level: 91
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Techno Blast
 - Psychic
-- Reflect
-- Metal Claw
+- Flash Cannon
+- Bug Buzz
 
-Skarmory
-Impish Nature
-Level: 43
+Magearna @ White Herb
+Level: 91
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 HP / 6 SpA / 252 SpD
-- Toxic
-- Aerial Ace
-- Protect
-- Steel Wing
+Nature: Modest
+- Fleur Cannon
+- Aura Sphere
+- Flash Cannon
+- Moonblast
 
-Aggron
-Adamant Nature
-Level: 44
+Metagross @ Metagrossite
+Level: 91
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-EVs: 252 Atk / 252 SpA / 6 SpD
-- Thunder
-- Protect
-- Solar Beam
-- Dragon Claw
+Nature: Jolly
+- Meteor Mash
+- Psychic Fangs
+- Ice Punch
+- Bullet Punch
