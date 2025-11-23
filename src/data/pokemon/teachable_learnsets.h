@@ -33226,7 +33226,6 @@ static const u16 sHydrappleTeachableLearnset[] = {
     MOVE_LEAF_STORM,
     MOVE_MAGICAL_LEAF,
     MOVE_REFLECT,
-    MOVE_REST,
     MOVE_ROLLOUT,
     MOVE_SLEEP_TALK,
     MOVE_SOLAR_BEAM,
