@@ -52611,7 +52611,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CYRUS] =
     {
 #line 21693
-        .trainerName = _("CYRUS"),
+        .trainerName = _("Cyrus"),
 #line 21694
         .trainerClass = TRAINER_CLASS_TEAM_GALACTIC,
 #line 21695
@@ -52772,7 +52772,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CYNTHIA] =
     {
 #line 21762
-        .trainerName = _("CYNTHIA"),
+        .trainerName = _("Cynthia"),
 #line 21763
         .trainerClass = TRAINER_CLASS_SINNOH_CHAMP,
 #line 21764
