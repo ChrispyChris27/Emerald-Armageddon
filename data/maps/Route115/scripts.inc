@@ -333,7 +333,7 @@ LaggingTailText2:
 LaggingTailGirl::
 	lock
 	faceplayer
-	goto_if_set FLAG_LAGGING_TAIL, LaggingTailText2
+	goto_if_set FLAG_LAGGING_TAIL, LaggingGirl2
 	msgbox LaggingTailText, MSGBOX_DEFAULT
 	giveitem ITEM_LAGGING_TAIL
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
@@ -347,14 +347,16 @@ MeetPunchTutor:
 	.string "Punch stuff!$"
 	
 PunchTutorTeachMove:
-	.string "Which move should I teach your POKéMON?$"
+	.string "Which move should I\n"
+	.string "teach your POKéMON?$"
 
 PunchTutorShouldTeach:
 	.string "Should I teach your POKéMON how to\n"
 	.string "punch stuff too?$"
 
 PunchTutorChooseMon:
-	.string "Which POKéMON should learn to punch stuff?$"
+	.string "Which POKéMON should learn\n"
+	.string "to punch stuff?$"
 
 PunchTutorDontTeachText:
 	.string "You don't wanna punch stuff?\n"
@@ -477,4 +479,8 @@ Route115_CloseRegiEntrance::
 	setmetatile 30, 5, METATILE_Fallarbor_BrownRockWall, TRUE
 	setmetatile 30, 6, METATILE_Fallarbor_BrownRockWall, TRUE
 	return
+
+LaggingGirl2::
+	msgbox LaggingTailText2, MSGBOX_NPC
+	end
 

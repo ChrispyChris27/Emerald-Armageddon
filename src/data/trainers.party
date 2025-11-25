@@ -21,7 +21,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -35,7 +35,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -59,7 +59,7 @@ Nature: Jolly
 - X Scissor
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -73,7 +73,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -87,7 +87,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -101,7 +101,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -115,7 +115,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -168,7 +168,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_PETALBURG_WOODS ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -264,7 +264,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -292,7 +292,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -349,7 +349,7 @@ Nature: Adamant
 - Fire Fang
 
 === TRAINER_GRUNT_WEATHER_INST_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -368,7 +368,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_WEATHER_INST_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -387,7 +387,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_WEATHER_INST_3 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -411,7 +411,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MUSEUM_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -460,7 +460,7 @@ Nature: Calm
 - Safeguard
 
 === TRAINER_GRUNT_MUSEUM_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -523,7 +523,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MT_PYRE_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -537,7 +537,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MT_PYRE_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -551,7 +551,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MT_PYRE_3 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -570,7 +570,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_WEATHER_INST_4 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -584,7 +584,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -598,7 +598,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -1024,24 +1024,14 @@ Nature: Hardy
 - Skill Swap
 - Earthquake
 
-=== TRAINER_VIOLET ===
-Name: TABITHA
+=== TRAINER_TABITHA_NM ===
+Name: Tabitha
 Class: Magma Admin
 Pic: Magma Admin
-Gender: Female
+Gender: Male
 Music: Magma
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
-
-Roselia
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-
-Gloom
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
 
 Koraidon @ Roseli Berry
 Level: 58
@@ -1104,7 +1094,7 @@ Nature: Timid
 - Weather Ball
 
 === TRAINER_HIDEOUT_GRUNT_4 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -1128,7 +1118,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_5 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -1152,7 +1142,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_6 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -3733,18 +3723,63 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MT_CHIMNEY_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
 
-Numel
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Jumpluff @ Focus Sash
+Level: 42
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- U-Turn
+- Sleep Powder
+- Stun Spore
+
+Claydol @ Quick Claw
+Level: 42
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Zen Headbutt
+- Earthquake
+- Explosion
+- Ice Spinner
+
+Simisear @ Life Orb
+Level: 42
+Ability: Blaze
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Fire Blast
+- Solarbeam
+- Focus Blast
+- Substitute
+
+Pyroar @ Throat Spray
+Level: 42
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Fire Blast
+- Solarbeam
+- Hyper Voice
+- Earth Power
+
+Klawf @ Brightpowder
+Level: 42
+Ability: Anger Shell
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- High Horsepower
+- Stone Edge
+- Temper Flare
+- Skitter Smack
 
 === TRAINER_STEVE_2 ===
 Name: STEVE
@@ -4577,7 +4612,7 @@ Nature: Jolly
 - Crunch
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_7 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -4596,7 +4631,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -5086,15 +5121,15 @@ Music: Hiker
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices 
 
-Turtonator @ Assault Vest
+Golem Alola @ Air Balloon
 Level: 41
-Ability: Shell Armor
+Ability: Galvanize
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Dragon Pulse
-- Lava Plume
-- Charge Beam
-- Focus Blast
+Nature: Adamant
+- Fire Punch
+- Stone Edge
+- Double Edge
+- Ice Punch
 
 Turtonator @ Assault Vest
 Level: 41
@@ -5105,6 +5140,26 @@ Nature: Modest
 - Lava Plume
 - Charge Beam
 - Focus Blast
+
+Pelipper @ Wacan Berry
+Level: 41
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Muddy Water
+- Ice Beam
+- Air Slash
+- Roost
+
+Scovillain @ Focus Sash
+Level: 41
+Ability: Insomnia
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Overheat
+- Seed Bomb
+- Fire Lash
+- Stomping Tantrum
 
 === TRAINER_BERNIE_2 ===
 Name: BERNIE
@@ -7035,7 +7090,7 @@ Nature: Jolly
 - Dragon Dance
 
 === TRAINER_NORMAN_1 ===
-Name: NORMAN
+Name: Norman
 Class: Leader
 Pic: Leader Norman
 Gender: Male
@@ -7101,7 +7156,7 @@ Nature: Bold
 - Calm Mind
 
 === TRAINER_WINONA_1 ===
-Name: WINONA
+Name: Winona
 Class: Leader
 Pic: Leader Winona
 Gender: Female
@@ -7168,7 +7223,7 @@ Nature: Adamant
 - Swords Dance
 
 === TRAINER_TATE ===
-Name: TATE
+Name: Tate
 Class: Leader
 Pic: Tate
 Gender: Male
@@ -7207,7 +7262,7 @@ Nature: Timid
 - Shadow Ball
 
 === TRAINER_JUAN_1 ===
-Name: JUAN
+Name: Juan
 Class: Leader
 Pic: Leader Juan
 Gender: Male
@@ -7275,7 +7330,7 @@ Nature: Timid
 - Psychic
 
 === TRAINER_JERRY_1 ===
-Name: JERRY
+Name: Jerry
 Class: School Kid
 Pic: School Kid M
 Gender: Male
@@ -14920,7 +14975,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_5 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -14939,7 +14994,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_UNUSED ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Aqua Grunt F
 Gender: Female
@@ -14958,7 +15013,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MT_PYRE_4 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -14977,7 +15032,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_JAGGED_PASS ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -15188,18 +15243,63 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MT_CHIMNEY_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
 
-Zubat
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Crobat @ Kings Rock
+Level: 42
+Ability: Infiltrator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Brave Bird
+- U-Turn
+- Gunk Shot
+- Heat Wave
+
+Cacturne @ Focus Sash
+Level: 42
+Ability: Water Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Solarbeam
+- Weather Ball
+- Sucker Punch
+- Growth
+
+Golurk @ Quick Claw
+Level: 42
+Ability: No Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Spirit Shackle
+- Headlong Rush
+- Dynamic Punch
+- Ice Punch
+
+Heatmor @ Salac Berry
+Level: 42
+Ability: Gluttony
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Heat Wave
+- Solarbeam
+- Scorching Sands
+- Belch
+
+Garganacl @ Custap Berry
+Level: 42
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Stone Edge
+- Explosion
+- Fire Punch
+- Salt Cure
 
 === TRAINER_CLARENCE ===
 Name: CLARENCE
@@ -15746,7 +15846,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_WEATHER_INST_5 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Female
@@ -15765,7 +15865,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_TABITHA_MT_CHIMNEY ===
-Name: COURTNEY
+Name: Courtney
 Class: Magma Admin
 Pic: Courtney
 Gender: Male
@@ -15991,7 +16091,7 @@ Nature: Lonely
 - Rock Slide
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
-Name: MAXIE
+Name: Maxie
 Class: Magma Leader
 Pic: Magma Leader Maxie
 Gender: Male
@@ -16060,7 +16160,7 @@ Nature: Modest
 - Flash Cannon
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
-Name: MAXIE
+Name: Maxie
 Class: Magma Leader
 Pic: Magma Leader Maxie
 Gender: Male
@@ -17018,7 +17118,7 @@ Nature: Jolly
 - Dragon Dance
 
 === TRAINER_ERIC ===
-Name: ERIC
+Name: Eric
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -19890,7 +19990,7 @@ Nature: Jolly
 - Shell Smash
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -19904,7 +20004,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -19918,7 +20018,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_3 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -19932,7 +20032,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -19951,7 +20051,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -19970,7 +20070,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -19984,7 +20084,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -19998,7 +20098,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -20012,7 +20112,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -20031,7 +20131,7 @@ Nature: Jolly
 - Dual Wingbeat
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -20045,7 +20145,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -20059,7 +20159,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -20089,7 +20189,7 @@ Nature: Modest
 - Eruption
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_13 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -20128,7 +20228,7 @@ Nature: Jolly
 - False Surrender
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_14 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Female
@@ -20142,7 +20242,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Female
@@ -20156,7 +20256,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Female
@@ -20175,7 +20275,7 @@ Nature: Modest
 - Fire Blast
 
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
-Name: COURTNEY
+Name: Courtney
 Class: Magma Admin
 Pic: Courtney
 Gender: Male
@@ -21568,7 +21668,7 @@ Nature: Timid
 - Thunderbolt
 
 === TRAINER_FALLS_GRUNT_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -21627,7 +21727,7 @@ Nature: Jolly
 - Stomping Tantrum
 
 === TRAINER_FALLS_GRUNT_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -21906,7 +22006,7 @@ Nature: Timid
 - Nasty Plot
 
 === TRAINER_FALLS_GRUNT_3 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -21951,7 +22051,7 @@ Nature: Hardy
 - Protect
 
 === TRAINER_FALLS_GRUNT_4 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -22005,7 +22105,7 @@ Nature: Hardy
 - Protect
 
 === TRAINER_FALLS_GRUNT_5 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -22059,7 +22159,7 @@ Nature: Hardy
 - Protect
 
 === TRAINER_FALLS_GRUNT_6 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -22122,7 +22222,7 @@ Nature: Hardy
 - Protect
 
 === TRAINER_FALLS_GRUNT_11 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -22167,7 +22267,7 @@ Nature: Hardy
 - Attract
 
 === TRAINER_FALLS_GRUNT_12 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -22221,7 +22321,7 @@ Nature: Hardy
 - Attract
 
 === TRAINER_FALLS_GRUNT_13 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -22284,7 +22384,7 @@ Nature: Hardy
 - Attract
 
 === TRAINER_FALLS_GRUNT_14 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -22602,7 +22702,7 @@ Nature: Jolly
 - Cross Chop
 
 === TRAINER_FALLS_GRUNT_7 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -22656,7 +22756,7 @@ Nature: Hardy
 - Earthquake
 
 === TRAINER_FALLS_GRUNT_8 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -22719,7 +22819,7 @@ Nature: Hardy
 - Earthquake
 
 === TRAINER_FALLS_GRUNT_9 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -22782,7 +22882,7 @@ Nature: Hardy
 - Earthquake
 
 === TRAINER_FALLS_GRUNT_10 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -22884,7 +22984,7 @@ Nature: Timid
 - Ice Beam
 
 === TRAINER_FALLS_GRUNT_15 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -22947,7 +23047,7 @@ Nature: Hardy
 - Flamethrower
 
 === TRAINER_FALLS_GRUNT_16 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -23145,7 +23245,7 @@ Nature: Adamant
 - Poison Jab
 
 === TRAINER_HIDEOUT_GRUNT_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -23181,7 +23281,7 @@ Nature: Hardy
 - Ice Beam
 
 === TRAINER_HIDEOUT_GRUNT_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -23217,7 +23317,7 @@ Nature: Hardy
 - Hydro Pump
 
 === TRAINER_HIDEOUT_GRUNT_3 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -23504,7 +23604,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_7 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -23523,7 +23623,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_8 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -23547,7 +23647,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_9 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -23571,7 +23671,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_10 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -23595,7 +23695,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_11 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -23619,7 +23719,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_12 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -23643,7 +23743,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_13 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -23667,7 +23767,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_14 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -23701,7 +23801,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_16 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -23725,7 +23825,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_17 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -23749,7 +23849,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_18 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
@@ -23773,7 +23873,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_19 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
@@ -23931,7 +24031,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_26 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Male
@@ -23970,7 +24070,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -23994,7 +24094,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_3 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -24018,7 +24118,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_4 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Male
@@ -24042,7 +24142,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_5 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Male
@@ -24061,7 +24161,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_6 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -24085,7 +24185,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_7 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Male
@@ -24109,7 +24209,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_8 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -24133,7 +24233,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_9 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Male
@@ -24157,7 +24257,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_10 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -24181,7 +24281,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_11 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Male
@@ -24205,7 +24305,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_12 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -24229,7 +24329,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_13 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
 Gender: Male
@@ -24248,7 +24348,7 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
 === TRAINER_MAUVILLE_GRUNT_14 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M
 Gender: Male
@@ -24272,7 +24372,7 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 Nature: Hardy
 
 === TRAINER_AQUA_PYRE_1 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
 Gender: Male
@@ -24311,7 +24411,7 @@ Nature: Jolly
 - Aqua Jet
 
 === TRAINER_AQUA_PYRE_2 ===
-Name: GRUNT
+Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
 Gender: Male

@@ -13092,8 +13092,8 @@
                 "species": "SPECIES_BRAVIARY"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 36,
+                "max_level": 36,
                 "species": "SPECIES_AXEW"
               }
             ]
