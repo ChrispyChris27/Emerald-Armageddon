@@ -17778,7 +17778,7 @@ void BS_JumpIfPranksterBlocked(void)
 void BS_TryToClearPrimalWeather(void)
 {
     NATIVE_ARGS();
-    bool32 shouldNotClear = FALSE;
+    bool32 shouldNotClear = TRUE;
 
     for (u32 i = 0; i < gBattlersCount; i++)
     {

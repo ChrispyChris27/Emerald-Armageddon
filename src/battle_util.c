@@ -3809,7 +3809,7 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_DELTA_STREAM;
                     gBattleWeather = B_WEATHER_STRONG_WINDS;
                     gBattleScripting.animArg1 = B_ANIM_STRONG_WINDS;
-                effect++;
+                effect=TRUE;
                 }
                 break;
         }
