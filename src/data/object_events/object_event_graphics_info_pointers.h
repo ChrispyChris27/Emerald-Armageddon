@@ -257,6 +257,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grunt_F;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grunt_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Archer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ariana;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ApricornTree;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -510,6 +511,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
     [OBJ_EVENT_GFX_ARCHER] =                   &gObjectEventGraphicsInfo_Archer,
     [OBJ_EVENT_GFX_ARIANA] =                   &gObjectEventGraphicsInfo_Ariana,
+    [OBJ_EVENT_GFX_APRICORN_TREE] =            &gObjectEventGraphicsInfo_ApricornTree,
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {

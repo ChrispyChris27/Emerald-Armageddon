@@ -49,9 +49,8 @@ BattleScript_UseItemMessage:
 
 BattleScript_ItemRestoreHPRet:
 	clearmoveresultflags MOVE_RESULT_NO_EFFECT
-	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE
-	healthbarupdate BS_SCRIPTING
-	datahpupdate BS_SCRIPTING
+	healthbarupdate BS_SCRIPTING, PASSIVE_HP_UPDATE
+	datahpupdate BS_SCRIPTING, PASSIVE_HP_UPDATE
 	printstring STRINGID_ITEMRESTOREDSPECIESHEALTH
 	waitmessage B_WAIT_TIME_LONG
 	return
@@ -87,11 +86,16 @@ BattleScript_ItemRestoreHP_SendOutRevivedBattler:
 BattleScript_ItemCureStatus::
 	call BattleScript_UseItemMessage
 BattleScript_ItemCureStatusAfterItemMsg:
-	itemcurestatus BattleScript_ItemCureStatusEnd
-	updatestatusicon BS_SCRIPTING
+	itemcurestatus BattleScript_ItemCureStatusEnd, BattleScript_CureStatus_Battler
 	printstring STRINGID_ITEMCUREDSPECIESSTATUS
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_ItemCureStatusEnd:
+	end
+
+BattleScript_CureStatus_Battler::
+	updatestatusicon BS_SCRIPTING
+	printstring STRINGID_ITEMCUREDSPECIESSTATUS
+	waitmessage B_WAIT_TIME_LONG
 	end
 
 BattleScript_ItemHealAndCureStatus::
