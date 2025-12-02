@@ -138,25 +138,25 @@ Route115_EventScript_Marlene::
 Route115_Text_NeverKnowWhenCavePokemonWillAppear:
 	.string "Exploring a cave isn't like walking\n"
 	.string "on a road.\p"
-	.string "You never know when wild POKéMON will\n"
+	.string "You never know when wild Pokémon will\n"
 	.string "appear. It's full of suspense.$"
 
 Route115_Text_RouteSignRustboro:
-	.string "ROUTE 115\n"
-	.string "{DOWN_ARROW} RUSTBORO CITY$"
+	.string "Route 115\n"
+	.string "{DOWN_ARROW} Rustboro City$"
 
 Route115_Text_MeteorFallsSign:
-	.string "METEOR FALLS\n"
-	.string "FALLARBOR TOWN THROUGH HERE$"
+	.string "Meteor Falls\n"
+	.string "Fallarbor Town through here$"
 
 Route115_Text_Grunt15Intro:
-	.string "Hey! You aren't a member of TEAM\n"
-	.string "ROCKET!\p"
+	.string "Hey! You aren't a member of Team\n"
+	.string "Rocket!\p"
 	.string "I can't let you get any closer\n"
 	.string "to the boss!$"
 
 Route115_Text_Grunt15Defeat:
-	.string "Maybe you should join TEAM ROCKET?$"
+	.string "Maybe you should join Team Rocket?$"
 
 Route115_Text_Grunt15PostBattle:
 	.string "If you won't join us, at least\n"
@@ -188,30 +188,30 @@ Route115_EventScript_Grunt16::
 Route115_Text_GiovanniPreBattle:
 	.string "You must be who I was warned about.\p"
 	.string "Allow me to introduce myself.\p"
-	.string "I am GIOVANNI! The LEADER of TEAM\n"
-	.string "ROCKET!\p"
+	.string "I am Giovanni! The leader of Team\n"
+	.string "Rocket!\p"
 	.string "You may have beaten all of my grunts\n"
 	.string "but you're too late to stop our plans!\p"
 	.string "You see, a long time ago a powerful,\n"
-	.string "ancient POKéMON descended from outer\l"
-	.string "space into the HOENN region.\p"
-	.string "Legends say this POKéMON was able to\n"
-	.string "harness the power of METEORITES to\l"
+	.string "ancient Pokémon descended from outer\l"
+	.string "space into the Hoenn region.\p"
+	.string "Legends say this Pokémon was able to\n"
+	.string "harness the power of meteorites to\l"
 	.string "achieve incredible power!\p"
-	.string "I intend to find this POKéMON and\n"
+	.string "I intend to find this Pokémon and\n"
 	.string "unlock this power!\p"
 	.string "Fwahahahaha!!!!\p"
-	.string "That useless TEAM MAGMA may have\n"
-	.string "beaten us to the largest METEORITE,\l"
-	.string "but it turns out that METEOR FALLS\l"
+	.string "That useless Team Magma may have\n"
+	.string "beaten us to the largest meteorite,\l"
+	.string "but it turns out that Meteor Falls\l"
 	.string "itself is filled with particles and\l"
-	.string "dust that come from METEORITES.\p"
+	.string "dust that come from meteorites.\p"
 	.string "Our research here is now complete,\n"
 	.string "and phase two of our plan can now\l"
 	.string "commence!\p"
 	.string "I've already captured the strongest\n"
-	.string "POKéMON in KANTO, and soon enough the\l"
-	.string "strongest POKéMON in HOENN will also\l"
+	.string "Pokémon in Kanto, and soon enough the\l"
+	.string "strongest Pokémon in Hoenn will also\l"
 	.string "be mine!\p"
 	.string "Of course, now that you know this,\n"
 	.string "I'll have to stop you from meddling\l"
@@ -227,7 +227,7 @@ Route115_Text_GiovanniPostBattle:
 	.string "effortlessly defeat my grunts.\p"
 	.string "It doesn't matter though. We've\n"
 	.string "gotten what we came here for.\p"
-	.string "There is much to do, I don't have\n"
+	.string "There is much to do. I don't have\n"
 	.string "have the time for any more chit chat!\p"
 	.string "We will be on our way now, and you\n"
 	.string "would do well to stay clear of us in\l"
@@ -262,27 +262,27 @@ Route115_Movement_Roxanne:
 Route115_Text_Roxanne:
 	.string "Are they finally gone?\p"
 	.string "Thank you for your help in\n"
-	.string "clearing those TEAM ROCKET\l"
-	.string "fellows out of METEOR FALLS.\p"
+	.string "clearing those Team Rocket\l"
+	.string "fellows out of Meteor Falls.\p"
 	.string "I was researching some rocks in\n"
 	.string "the deeper parts of the cave with\l"
-	.string "ROXANNE when those hooligans arrived.\p"
+	.string "Roxanne when those hooligans arrived.\p"
 	.string "We probably could have beaten them\n"
 	.string "in battle ourselves, but we decided\l"
 	.string "to wait it out and see what we could\l"
 	.string "learn about why they were here.\p"
 	.string "Oh, so you know as well?\p"
 	.string "That they are trying to use the\n"
-	.string "METEORITES to somehow awaken the\l"
-	.string "powers of a super ancient POKéMON.\p"
-	.string "I'm unsure what POKéMON they may be\n"
+	.string "meteorites to somehow awaken the\l"
+	.string "powers of a super ancient Pokémon.\p"
+	.string "I'm unsure what Pokémon they may be\n"
 	.string "looking for unfortunately.\p"
 	.string "Well, since we finished our research,\n"
-	.string "ROXANNE should have arrived back at\l"
-	.string "the RUSTBORO CITY GYM.\p"
+	.string "Roxanne should have arrived back at\l"
+	.string "the Rustboro City Gym.\p"
 	.string "You should show her the power\n"
 	.string "that allowed you to defeat all those\l"
-	.string "TEAM ROCKET thugs.$"
+	.string "Team Rocket thugs.$"
 
 Route115_EventScript_Giovanni::
 	lockall
@@ -326,8 +326,8 @@ LaggingTailText:
 	.string "know what good it could do you.$"
 
 LaggingTailText2:
-	.string "Even after giving away that LAGGING\n"
-	.string "TAIL I'm still finishing last!\p"
+	.string "Even after giving away that Lagging\n"
+	.string "Tail I'm still finishing last!\p"
 	.string "Maybe running just isn't for me.$"
 
 LaggingTailGirl::
@@ -348,14 +348,14 @@ MeetPunchTutor:
 	
 PunchTutorTeachMove:
 	.string "Which move should I\n"
-	.string "teach your POKéMON?$"
+	.string "teach your Pokémon?$"
 
 PunchTutorShouldTeach:
-	.string "Should I teach your POKéMON how to\n"
+	.string "Should I teach your Pokémon how to\n"
 	.string "punch stuff too?$"
 
 PunchTutorChooseMon:
-	.string "Which POKéMON should learn\n"
+	.string "Which Pokémon should learn\n"
 	.string "to punch stuff?$"
 
 PunchTutorDontTeachText:
@@ -363,10 +363,10 @@ PunchTutorDontTeachText:
 	.string "If you change your mind let me know.$"
 
 PunchTutorTaughtMove:
-	.string "Done! Your POKéMON has learned how\n"
+	.string "Done! Your Pokémon has learned how\n"
 	.string "to punch stuff!\p"
 	.string "If you ever want me to teach another\n"
-	.string "move to your POKéMON let me know.$"
+	.string "move to your Pokémon let me know.$"
 
 PunchTutorScript::
 	lock

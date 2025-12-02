@@ -277,7 +277,7 @@ NewMauville_Inside_Text_Grunt3Post:
 
 NewMauville_Inside_Text_Grunt4Intro:
 	.string "I thought we had the only copy of the\n"
-	.string "BASEMENT KEY?$"
+	.string "Basement Key?$"
 
 NewMauville_Inside_Text_Grunt4Defeat:
 	.string "It was you who had the key to victory.$"
@@ -300,7 +300,7 @@ NewMauville_Inside_Text_Grunt5Post:
 
 NewMauville_Inside_Text_Grunt6Intro:
 	.string "The boss intends to awaken an\n"
-	.string "ancient POKéMON!\p"
+	.string "ancient Pokémon!\p"
 	.string "I must help the boss achieve his\n"
 	.string "dream!$"
 
@@ -308,12 +308,12 @@ NewMauville_Inside_Text_Grunt6Defeat:
 	.string "I've failed you boss. Forgive me.$"
 
 NewMauville_Inside_Text_Grunt6Post:
-	.string "MAXIE is an amazing boss.\p"
+	.string "Maxie is an amazing boss.\p"
 	.string "Us grunts are very well compensated.$"
 
 NewMauville_Inside_Text_Grunt7Intro:
-	.string "The NEW MAUVILLE generator supplies\n"
-	.string "power throughout all of HOENN!\p"
+	.string "The New Mauville generator supplies\n"
+	.string "power throughout all of Hoenn!\p"
 	.string "We intend to take over that power!$"
 
 NewMauville_Inside_Text_Grunt7Defeat:
@@ -327,7 +327,7 @@ NewMauville_Inside_Text_Grunt7Post:
 NewMauville_Inside_Text_Grunt8Intro:
 	.string "Well what have we here?\p"
 	.string "You must be lost kid!\p"
-	.string "Only TEAM MAGMA should be in here!$"
+	.string "Only Team Magma should be in here!$"
 
 NewMauville_Inside_Text_Grunt8Defeat:
 	.string "I lost to a kid!?!?$"
@@ -393,7 +393,7 @@ NewMauville_Inside_Text_Grunt13Post:
 	.string "I failed in my mission!$"
 
 NewMauville_Inside_Text_Grunt14Intro:
-	.string "The ancient POKéMON we seek...\p"
+	.string "The ancient Pokémon we seek...\p"
 	.string "We need the generator's power to\n"
 	.string "awaken it...\p"
 	.string "Which means I can't let you turn it off!$"
@@ -413,46 +413,46 @@ NewMauville_Inside_Text_Tabitha1:
 
 NewMauville_Inside_Text_Tabitha2:
 	.string "What are you doing here?\p"
-	.string "You aren't part of TEAM MAGMA!\p"
+	.string "You aren't part of Team Magma!\p"
 	.string "You must be the meddlesome child\n"
-	.string "MAXIE warned me about.\p"
+	.string "Maxie warned me about.\p"
 	.string "I suppose you are wondering what\n"
 	.string "exactly it is we are doing here.\p"
-	.string "We at TEAM MAGMA seek to awaken a\n"
-	.string "powerful ancient POKéMON.\p"
+	.string "We at Team Magma seek to awaken a\n"
+	.string "powerful ancient Pokémon.\p"
 	.string "After a long time searching, we have\n"
 	.string "finally discovered its location.\p"
-	.string "To reach the POKéMON we were in need\n"
+	.string "To reach the Pokémon we were in need\n"
 	.string "of an immense amount of power.\p"
 	.string "That level of power is not normally\n"
 	.string "available thanks to limits placed on\l"
 	.string "the generator for safety.\p"
 	.string "This is why it was necessary for us\n"
-	.string "to infiltrate NEW MAUVILLE.\p"
+	.string "to infiltrate New Mauville.\p"
 	.string "By removing the safety limits set on\n"
-	.string "the generator by WATTSON, MAXIE and \l"
-	.string "COURTNEY will be able blow away the\l"
+	.string "the generator by Wattson, Maxie and \l"
+	.string "Courtney will be able blow away the\l"
 	.string "last obstacles in our way!\p"
 	.string "Of course, removing these limits has\n"
 	.string "led the generator to go haywire.\p"
 	.string "An inconvenience, although more for\n"
-	.string "the rest of HOENN than for us.\p"
-	.string "Now, like COURTNEY and MAXIE, I too\n"
+	.string "the rest of Hoenn than for us.\p"
+	.string "Now, like Courtney and Maxie, I too\n"
 	.string "must remove an obstacle in our way.\p"
 	.string "That obstacle being you!$"
 
 NewMauville_Inside_Text_Tabitha3:
-	.string "No wonder MAXIE warned me about you.$"
+	.string "No wonder Maxie warned me about you.$"
 
 NewMauville_Inside_Text_Tabitha4:
 	.string "Fwahaha!\p"
 	.string "You may have defeated me, but you\n"
 	.string "were too late to foil our plans!\p"
-	.string "I've just gotten word that MAXIE\n"
+	.string "I've just gotten word that Maxie\n"
 	.string "has found the POKéMON we seek!\p"
 	.string "Go ahead and return the generator\n"
 	.string "to normal.\p"
-	.string "It is time for TEAM MAGMA to depart\n"
+	.string "It is time for Team Magma to depart\n"
 	.string "from here and continue the next stage\l"
 	.string "of our operation!$"
 
