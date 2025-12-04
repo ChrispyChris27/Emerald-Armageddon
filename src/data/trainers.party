@@ -3766,7 +3766,7 @@ Level: 42
 Ability: Unnerve
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- Fire Blast
+- Flamethrower
 - Solarbeam
 - Hyper Voice
 - Earth Power
@@ -15271,15 +15271,15 @@ Nature: Naive
 - Sucker Punch
 - Growth
 
-Golurk @ Quick Claw
+Lunatone @ Life Orb
 Level: 42
-Ability: No Guard
+Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Naive
-- Spirit Shackle
-- Headlong Rush
-- Dynamic Punch
-- Ice Punch
+Nature: Timid
+- Ancientpower
+- Weather Ball
+- Psyshock
+- Solarbeam
 
 Heatmor @ Salac Berry
 Level: 42
