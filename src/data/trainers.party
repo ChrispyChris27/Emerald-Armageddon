@@ -631,7 +631,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Nature: Hardy
 
 === TRAINER_MATT ===
-Name: MATT
+Name: Matt
 Class: Aqua Admin
 Pic: Aqua Admin M
 Gender: Male
@@ -657,7 +657,7 @@ Nature: Modest
 - Fickle Beam
 - Energy Ball
 - Hydro Pump
-- Recycle
+- Fire Blast
 
 Volcanion @ Life Orb
 Level: 77
@@ -669,15 +669,15 @@ Nature: Modest
 - Heat Wave
 - Sludge Wave
 
-Suicune @ Leftovers
+Ogrepon @ Wellspring Mask
 Level: 77
-Ability: Inner Focus
+Ability: Water Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Bold
-- Scald
-- Calm Mind
-- Substitute
-- Ice Beam
+Nature: Jolly
+- Ivy Cudgel
+- Wood Hammer
+- Play Rough
+- Knock Off
 
 Hawlucha @ Grassy Seed
 Level: 77
@@ -689,15 +689,15 @@ Nature: Adamant
 - Close Combat
 - Swords Dance
 
-Venusaur @ Venusaurite
+Slowbro @ Slowbronite
 Level: 77
-Ability: Overgrow
+Ability: Regenerator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Energy Ball
-- Earth Power
-- Sludge Bomb
-- Synthesis
+Nature: Bold
+- Scald
+- Slack Off
+- Stored Power
+- Calm Mind
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -714,7 +714,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_SHELLY_WEATHER_INSTITUTE ===
-Name: SHELLY
+Name: Shelly
 Class: Aqua Admin
 Pic: Aqua Admin F
 Gender: Female
@@ -783,7 +783,7 @@ Nature: Modest
 - Dark Pulse
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
-Name: SHELLY
+Name: Shelly
 Class: Aqua Admin
 Pic: Aqua Admin F
 Gender: Female
@@ -823,7 +823,7 @@ Nature: Adamant
 
 Primarina @ Throat Spray
 Level: 83
-Ability: Hydration
+Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Sparkling Aria
@@ -841,18 +841,18 @@ Nature: Timid
 - Shadow Ball
 - Substitute
 
-Scizor @ Scizorite
+Starmie @ Starminite
 Level: 83
-Ability: Technician
+Ability: Natural Cure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Bullet Punch
-- Bug Bite
-- Trailblaze
-- Aqua Cutter
+Nature: Hasty
+- Wave Crash
+- Zen Headbutt
+- Thunder
+- Ice Beam
 
 === TRAINER_ARCHIE ===
-Name: ARCHIE
+Name: Archie
 Class: Aqua Leader
 Pic: Aqua Leader Archie
 Gender: Male
@@ -6539,7 +6539,7 @@ Nature: Hardy
 - Roar
 
 === TRAINER_SIDNEY ===
-Name: SIDNEY
+Name: Sidney
 Class: Elite Four
 Pic: Elite Four Sidney
 Gender: Male
@@ -6607,7 +6607,7 @@ Nature: Jolly
 - Stone Edge
 
 === TRAINER_PHOEBE ===
-Name: PHOEBE
+Name: Phoebe
 Class: Elite Four
 Pic: Elite Four Phoebe
 Gender: Female
@@ -6677,7 +6677,7 @@ Nature: Timid
 - Knock Off
 
 === TRAINER_GLACIA ===
-Name: GLACIA
+Name: Glacia
 Class: Elite Four
 Pic: Elite Four Glacia
 Gender: Female
@@ -6736,18 +6736,18 @@ Nature: Adamant
 - High Horsepower
 - Zen Headbutt
 
-Glalie @ Glalitite
+Froslass @ Froslassite
 Level: 100
-Ability: Moody
+Ability: Snow Cloak
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hasty
-- Body Slam
+Nature: Timid
+- Shadow Ball
 - Freeze Dry
-- Explosion
-- Blizzard
+- Ice Beam
+- Thunderbolt
 
 === TRAINER_DRAKE ===
-Name: DRAKE
+Name: Drake
 Class: Elite Four
 Pic: Elite Four Drake
 Gender: Male
@@ -6817,7 +6817,7 @@ Nature: Adamant
 - Dragon Dance
 
 === TRAINER_ROXANNE_1 ===
-Name: ROXANNE
+Name: Roxanne
 Class: Leader
 Pic: Leader Roxanne
 Gender: Female
@@ -6886,7 +6886,7 @@ Nature: Timid
 - Calm Mind
 
 === TRAINER_BRAWLY_1 ===
-Name: BRAWLY
+Name: Brawly
 Class: Leader
 Pic: Leader Brawly
 Gender: Male
@@ -6955,7 +6955,7 @@ Nature: Hasty
 - Close Combat
 
 === TRAINER_WATTSON_1 ===
-Name: WATTSON
+Name: Wattson
 Class: Leader
 Pic: Leader Wattson
 Gender: Male
@@ -7024,7 +7024,7 @@ Nature: Timid
 - Discharge
 
 === TRAINER_FLANNERY_1 ===
-Name: FLANNERY
+Name: Flannery
 Class: Leader
 Pic: Leader Flannery
 Gender: Female
@@ -7145,15 +7145,15 @@ Nature: Jolly
 - Night Slash
 - Drain Punch
 
-Audino @ Audinite
+Staraptor @ Leftovers
 Level: 30
-Ability: Regenerator
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Bold
-- Hyper Voice
-- Draining Kiss
-- Flamethrower
-- Calm Mind
+Nature: Jolly
+- Dual Wingbeat
+- Close Combat
+- Roost
+- Bulk Up
 
 === TRAINER_WINONA_1 ===
 Name: Winona
@@ -7498,7 +7498,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Nature: Hardy
 
 === TRAINER_KAREN_1 ===
-Name: KAREN
+Name: Karen
 Class: School Kid
 Pic: School Kid F
 Gender: Female
@@ -7669,7 +7669,7 @@ Nature: Hardy
 - Feint Attack
 
 === TRAINER_ANNA_AND_MEG_1 ===
-Name: ANNA & MEG
+Name: Anna & Meg
 Class: Sr And Jr
 Pic: Sr And Jr
 Gender: Male
@@ -7822,7 +7822,7 @@ Nature: Hardy
 - Arm Thrust
 
 === TRAINER_VICTOR ===
-Name: VICTOR
+Name: Victor
 Class: Winstrate
 Pic: Pokefan M
 Gender: Male
@@ -7861,7 +7861,7 @@ Nature: Modest
 - Thunder Wave
 
 === TRAINER_MIGUEL_1 ===
-Name: MIGUEL
+Name: Miguel
 Class: Pokefan
 Pic: Pokefan M
 Gender: Male
@@ -15923,15 +15923,15 @@ Nature: Adamant
 - Throat Chop
 - Ruination
 
-Altaria @ Altarianite
+Pyroar @ Pyroarite
 Level: 43
-Ability: Natural Cure
+Ability: Unnerve
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Frustration
-- Dragon Pulse
+Nature: Timid
+- Flamethrower
+- Hyper Voice
 - Solarbeam
-- Heat Wave
+- Earth Power
 
 === TRAINER_JONATHAN ===
 Name: JONATHAN
@@ -16218,15 +16218,15 @@ Nature: Timid
 - Solarbeam
 - Scorching Sands
 
-Blaziken @ Blazikenite
+Drampa @ Drampanite
 Level: 44
-Ability: Speed Boost
+Ability: Berserk
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Blaze Kick
-- Thunder Punch
-- Detect
-- Sky Uppercut
+Nature: Modest
+- Dragon Pulse
+- Hyper Voice
+- Flamethrower
+- Solarbeam
 
 === TRAINER_TIANA ===
 Name: TIANA
@@ -17124,17 +17124,47 @@ Pic: Hiker
 Gender: Male
 Music: Hiker
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
 
-Geodude
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Solrock @ Blunder Policy
+Level: 43
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Hypnosis
+- Rock Slide
+- Zen Headbutt
+- Earthquake
 
-Baltoy
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Torterra @ Yache Berry
+Level: 43
+Ability: Shell Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Wood Hammer
+- Earthquake
+- Stone Edge
+- Curse
+
+Druddigon @ Life Orb
+Level: 43
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Rock Slide
+- Fire Punch
+- Dragon Rush
+- Gunk Shot
+
+Exploud @ Throat Spray
+Level: 43
+Ability: Scrappy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Boomburst
+- Fire Blast
+- Ice Beam
+- Surf
 
 === TRAINER_LUCAS_2 ===
 Name: LUCAS
@@ -23138,16 +23168,6 @@ Nature: Jolly
 - Behemoth Blade
 - Aqua Cutter
 
-Dragalge @ Assault Vest
-Level: 69
-Ability: Adaptability
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Sludge Wave
-- Dragon Pulse
-- Thunder
-- Hydro Pump
-
 Raikou @ Life Orb
 Level: 69
 Ability: Inner Focus
@@ -23158,6 +23178,16 @@ Nature: Timid
 - Weather Ball
 - Aura Sphere
 
+Suicune @ Leftovers
+Level: 69
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Scald
+- Calm Mind
+- Substitute
+- Ice Beam
+
 Drednaw @ Sitrus Berry
 Level: 69
 Ability: Swift Swim
@@ -23167,6 +23197,16 @@ Nature: Adamant
 - Head Smash
 - Swords Dance
 - Earthquake
+
+Dragalge @ Dragalgite
+Level: 69
+Ability: Adaptability
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Sludge Wave
+- Dragon Pulse
+- Thunder
+- Hydro Pump
 
 Slowbro @ Slowbronite
 Level: 69
