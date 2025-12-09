@@ -1024,10 +1024,14 @@ static void TryClearChargeVolatile(u32 moveType)
     if (B_CHARGE < GEN_9) // Prior to gen9, charge is cleared during the end turn
         return;
 
-    if (gBattleMons[gBattlerAttacker].volatiles.chargeTimer == 2) // Has been set this turn by move
-        gBattleMons[gBattlerAttacker].volatiles.chargeTimer--;
-    else if (moveType == TYPE_ELECTRIC && gBattleMons[gBattlerAttacker].volatiles.chargeTimer == 1)
+    if (moveType == TYPE_ELECTRIC && gBattleMons[gBattlerAttacker].volatiles.chargeTimer == 1)
         gBattleMons[gBattlerAttacker].volatiles.chargeTimer = 0;
+
+    for (u32 battler = 0; battler < gBattlersCount; battler++)
+    {
+        if (gBattleMons[battler].volatiles.chargeTimer == 2) // Has been set this turn by move
+            gBattleMons[battler].volatiles.chargeTimer--;
+    }
 }
 
 static bool32 IsAnyTargetAffected(void)
@@ -2328,6 +2332,8 @@ static void PassiveDataHpUpdate(u32 battler, const u8 *nextInstr)
             gBattleMons[battler].hp -= gBattleStruct->passiveHpUpdate[battler];
         else
             gBattleMons[battler].hp = 0;
+        // Since this is reset for the next turn, it should be fine to set it here.
+        gProtectStructs[battler].assuranceDoubled = TRUE;
     }
 
     // Send updated HP
@@ -2427,7 +2433,6 @@ static void MoveDamageDataHpUpdate(u32 battler, u32 scriptBattler, const u8 *nex
                     gProtectStructs[battler].physicalBattlerId = gBattlerAttacker;
                 else
                     gProtectStructs[battler].physicalBattlerId = gBattlerTarget;
-                gProtectStructs[battler].assuranceDoubled = TRUE;
             }
             else // Physical move
             {
@@ -2437,8 +2442,10 @@ static void MoveDamageDataHpUpdate(u32 battler, u32 scriptBattler, const u8 *nex
                     gProtectStructs[battler].specialBattlerId = gBattlerAttacker;
                 else
                     gProtectStructs[battler].specialBattlerId = gBattlerTarget;
-                gProtectStructs[battler].assuranceDoubled = TRUE;
             }
+            gProtectStructs[battler].assuranceDoubled = TRUE;
+            gProtectStructs[battler].revengeDoubled |= 1u << gBattlerAttacker;
+
         }
         // Send updated HP
         BtlController_EmitSetMonData(battler, B_COMM_TO_CONTROLLER, REQUEST_HP_BATTLE, 0, sizeof(gBattleMons[battler].hp), &gBattleMons[battler].hp);
@@ -4046,7 +4053,7 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
             gBattleMons[gBattlerAttacker].volatiles.bonusCritStages++;
         if (gBattleMons[BATTLE_PARTNER(gBattlerAttacker)].volatiles.bonusCritStages < 3)
             gBattleMons[BATTLE_PARTNER(gBattlerAttacker)].volatiles.bonusCritStages++;
-        BattleScriptPush(gBattlescriptCurrInstr + 1);
+        BattleScriptPush(battleScript);
         gBattlescriptCurrInstr = BattleScript_EffectRaiseCritAlliesAnim;
         break;
     case MOVE_EFFECT_HEAL_TEAM:
@@ -5899,8 +5906,12 @@ static bool32 HandleMoveEndMoveBlock(u32 moveEffect)
                 recoil = GetNonDynamaxMaxHP(gBattlerAttacker) / 2;
             else if (B_RECOIL_IF_MISS_DMG == GEN_4 && (GetNonDynamaxMaxHP(gBattlerTarget) / 2) < gBattleStruct->moveDamage[gBattlerTarget])
                 recoil = GetNonDynamaxMaxHP(gBattlerTarget) / 2;
-            else // Fallback if B_RECOIL_IF_MISS_DMG is set to gen3 or lower.
+            else if (B_RECOIL_IF_MISS_DMG == GEN_3)
                 recoil = GetNonDynamaxMaxHP(gBattlerTarget) / 2;
+            else if (B_RECOIL_IF_MISS_DMG == GEN_2)
+                recoil = GetNonDynamaxMaxHP(gBattlerTarget) / 8;
+            else
+                recoil = 1;
             SetPassiveDamageAmount(gBattlerAttacker, recoil);
             BattleScriptCall(BattleScript_RecoilIfMiss);
             effect = TRUE;
@@ -9392,14 +9403,20 @@ static bool32 TryDefogClear(u32 battlerAtk, bool32 clear)
         }
         if (gBattleWeather & B_WEATHER_FOG)
         {
-            gBattleWeather &= ~B_WEATHER_FOG;
-            BattleScriptCall(BattleScript_FogEnded_Ret);
+            if (clear)
+            {
+                gBattleWeather &= ~B_WEATHER_FOG;
+                BattleScriptCall(BattleScript_FogEnded_Ret);
+            }
             return TRUE;
         }
         if (GetConfig(CONFIG_DEFOG_EFFECT_CLEARING) >= GEN_8 && (gFieldStatuses & STATUS_FIELD_TERRAIN_ANY))
         {
-            RemoveAllTerrains();
-            BattleScriptCall(BattleScript_TerrainEnds_Ret);
+            if (clear)
+            {
+                RemoveAllTerrains();
+                BattleScriptCall(BattleScript_TerrainEnds_Ret);
+            }
             return TRUE;
         }
     }
@@ -12205,6 +12222,8 @@ static void Cmd_tryactivateitem(void)
     CMD_ARGS(u8 battler, u8 flag);
     u32 battler = GetBattlerForBattleScript(cmd->battler);
 
+    gBattlescriptCurrInstr = cmd->nextInstr;
+
     switch ((enum ItemActivationState)cmd->flag)
     {
     case ACTIVATION_ON_USABLE_AGAIN:
@@ -12222,8 +12241,6 @@ static void Cmd_tryactivateitem(void)
             return;
         break;
     }
-
-    gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
 // Belly Drum, Fillet Away

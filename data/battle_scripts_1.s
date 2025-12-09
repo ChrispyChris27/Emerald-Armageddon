@@ -1493,12 +1493,17 @@ BattleScript_EffectHitEnemyHealAlly::
 BattleScript_EffectDefog::
 	setstatchanger STAT_EVASION, 1, TRUE
 	attackcanceler
+	jumpifgenconfiglowerthan CONFIG_DEFOG_EFFECT_CLEARING, GEN_5, BattleScript_DefogAfterSubstituteCheck
 	jumpifsubstituteblocks BattleScript_DefogIfCanClearHazards
+BattleScript_DefogAfterSubstituteCheck:
 	jumpifstat BS_TARGET, CMP_NOT_EQUAL, STAT_EVASION, MIN_STAT_STAGE, BattleScript_DefogWorks
 BattleScript_DefogIfCanClearHazards:
 	trydefog FALSE, BattleScript_ButItFailed
 BattleScript_DefogWorks:
 	accuracycheck BattleScript_MoveMissedPause, ACC_CURR_MOVE
+	jumpifgenconfiglowerthan CONFIG_DEFOG_EFFECT_CLEARING, GEN_5, BattleScript_DefogWorksAfterSubstituteCheck
+	jumpifsubstituteblocks BattleScript_DefogTryHazardsWithAnim
+BattleScript_DefogWorksAfterSubstituteCheck:
 	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_ONLY_CHECKING, BattleScript_DefogTryHazardsWithAnim
 	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_DefogDoAnim
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_CHANGE_EMPTY, BattleScript_DefogTryHazardsWithAnim
@@ -1508,7 +1513,9 @@ BattleScript_DefogWorks:
 BattleScript_DefogDoAnim::
 	attackanimation
 	waitanimation
+	call BattleScript_SwapFromSubstitute
 	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR, BattleScript_DefogTryHazards
+	call BattleScript_SwapToSubstitute
 BattleScript_DefogPrintString::
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
@@ -2574,7 +2581,9 @@ BattleScript_MaxHp50Recoil::
 
 BattleScript_EffectDreamEater::
 	attackcanceler
+.if B_DREAM_EATER_SUBSTITUTE < GEN_5
 	jumpifsubstituteblocks BattleScript_DoesntAffectTargetAtkString
+.endif
 	jumpifstatus BS_TARGET, STATUS1_SLEEP, BattleScript_HitFromAccCheck
 	jumpifability BS_TARGET, ABILITY_COMATOSE, BattleScript_HitFromAccCheck
 	goto BattleScript_DoesntAffectTargetAtkString
@@ -3517,9 +3526,14 @@ BattleScript_TryDestinyKnotTarget:
 	playanimation BS_ATTACKER, B_ANIM_HELD_ITEM_EFFECT
 	waitanimation
 	printstring STRINGID_DESTINYKNOTACTIVATES
-	tryinfatuating BattleScript_ButItFailed
+	tryinfatuating BattleScript_TryDestinyKnotTargetFailed
 	volatileanimation BS_TARGET, VOLATILE_INFATUATION
 	waitanimation
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_TryDestinyKnotTargetRet
+BattleScript_TryDestinyKnotTargetFailed:
+	pause B_WAIT_TIME_SHORT
+	printstring STRINGID_BUTITFAILED
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_TryDestinyKnotTargetRet:
 	return

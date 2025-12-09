@@ -4717,7 +4717,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
                 if (gDisableStructs[battler].isFirstTurn != 2)
                 {
                     u32 validToRaise = 0, validToLower = 0;
-                    u32 statsNum = GetConfig(CONFIG_MOODY_STATS) >= GEN_8 ? NUM_STATS : NUM_BATTLE_STATS;
+                    u32 statsNum = GetConfig(CONFIG_MOODY_ACC_EVASION) >= GEN_8 ? NUM_STATS : NUM_BATTLE_STATS;
 
                     for (i = STAT_ATK; i < statsNum; i++)
                     {
@@ -7045,10 +7045,7 @@ static inline u32 CalcMoveBasePower(struct DamageContext *ctx)
         basePower = 100 * gDisableStructs[battlerAtk].stockpileCounter;
         break;
     case EFFECT_REVENGE:
-        if ((gProtectStructs[battlerAtk].physicalDmg
-                && gProtectStructs[battlerAtk].physicalBattlerId == battlerDef)
-            || (gProtectStructs[battlerAtk].specialDmg
-                && gProtectStructs[battlerAtk].specialBattlerId == battlerDef))
+        if (gProtectStructs[battlerAtk].revengeDoubled & 1u << battlerDef)
             basePower *= 2;
         break;
     case EFFECT_WEATHER_BALL:
@@ -8077,8 +8074,13 @@ static inline s32 CalculateBaseDamage(u32 power, u32 userFinalAttack, u32 level,
 
 static inline uq4_12_t GetTargetDamageModifier(struct DamageContext *ctx)
 {
-    if (IsDoubleBattle() && GetMoveTargetCount(ctx) >= 2)
-        return B_MULTIPLE_TARGETS_DMG >= GEN_4 ? UQ_4_12(0.75) : UQ_4_12(0.5);
+    if (IsDoubleBattle())
+	{
+        if (GetMoveTargetCount(ctx) == 2)
+            return B_MULTIPLE_TARGETS_DMG >= GEN_4 ? UQ_4_12(0.75) : UQ_4_12(0.5);
+        else if (GetMoveTargetCount(ctx) >= 3)
+            return B_MULTIPLE_TARGETS_DMG >= GEN_4 ? UQ_4_12(0.75) : UQ_4_12(1.0);
+	}
     return UQ_4_12(1.0);
 }
 
