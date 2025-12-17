@@ -155,7 +155,7 @@
 #define TRAINER_STEVE_4                     149
 #define TRAINER_STEVE_5                     150
 #define TRAINER_LUIS                        151
-#define TRAINER_DOMINIK                     152
+#define TRAINER_MATT_DOUBLE                     152
 #define TRAINER_DOUGLAS                     153
 #define TRAINER_DARRIN                      154
 #define TRAINER_TONY_1                      155
@@ -444,7 +444,7 @@
 #define TRAINER_MADELINE_3                  438
 #define TRAINER_MADELINE_4                  439
 #define TRAINER_MADELINE_5                  440
-#define TRAINER_BEVERLY                     441
+#define TRAINER_TABITHA_DOUBLE              441
 #define TRAINER_IMANI                       442
 #define TRAINER_KYLA                        443
 #define TRAINER_DENISE                      444

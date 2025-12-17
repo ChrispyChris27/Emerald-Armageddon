@@ -669,7 +669,7 @@ Nature: Modest
 - Heat Wave
 - Sludge Wave
 
-Ogrepon @ Wellspring Mask
+Ogerpon @ Wellspring Mask
 Level: 77
 Ability: Water Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -801,26 +801,6 @@ Nature: Modest
 - Psychic
 - Thunder
 
-Overqwil @ Focus Sash
-Level: 83
-Ability: Swift Swim
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Gunk Shot
-- Throat Chop
-- Aqua Tail
-- Destiny Bond
-
-Kabutops @ Life Orb
-Level: 83
-Ability: Swift Swim
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Wave Crash
-- Stone Edge
-- Leech Life
-- Swords Dance
-
 Primarina @ Throat Spray
 Level: 83
 Ability: Torrent
@@ -830,16 +810,6 @@ Nature: Timid
 - Ice Beam
 - Sing
 - Alluring Voice
-
-Jolteon @ Wise Glasses
-Level: 83
-Ability: Static
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Thunder
-- Weather Ball
-- Shadow Ball
-- Substitute
 
 Starmie @ Starminite
 Level: 83
@@ -1063,16 +1033,6 @@ Nature: Adamant
 - Iron Head
 - Dragon Dance
 
-Blacephalon @ Sitrus Berry
-Level: 58
-Ability: Shadow Tag
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Flamethrower
-- Solarbeam
-- Shadow Ball
-- Mind Blown
-
 Cinderace @ Life Orb
 Level: 58
 Ability: Libero
@@ -1082,6 +1042,16 @@ Nature: Jolly
 - Swords Dance
 - Gunk Shot
 - Solar Blade
+
+Heatran @ Air Balloon
+Level: 58
+Ability: Flash Fire
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Magma Storm
+- Flash Cannon
+- Solarbeam
+- Earth Power
 
 Sceptile @ Sceptilite
 Level: 58
@@ -3866,19 +3836,44 @@ Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
-=== TRAINER_DOMINIK ===
-Name: DOMINIK
-Class: Swimmer M
-Pic: Swimmer M
+=== TRAINER_MATT_DOUBLE ===
+Name: Matt
+Class: Aqua Admin
+Pic: Aqua Admin M
 Gender: Male
-Music: Swimmer
+Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Tentacool
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Overqwil @ Focus Sash
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Gunk Shot
+- Throat Chop
+- Aqua Tail
+- Destiny Bond
+
+Kabutops @ Life Orb
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Wave Crash
+- Stone Edge
+- Leech Life
+- Swords Dance
+
+Golisopod @ Life Orb
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Liquidation
+- Iron Head
+- Leech Life
+- Swords Dance
 
 === TRAINER_DOUGLAS ===
 Name: DOUGLAS
@@ -11485,24 +11480,44 @@ Nature: Hardy
 - Earthquake
 - Sunny Day
 
-=== TRAINER_BEVERLY ===
-Name: BEVERLY
-Class: Swimmer F
-Pic: Swimmer F
-Gender: Female
-Music: Swimmer
+=== TRAINER_TABITHA_DOUBLE ===
+Name: Tabitha
+Class: Magma Admin
+Pic: Magma Admin
+Gender: Male
+Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wingull
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Walking Wake @ Chesto Berry
+Level: 73
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Hydro Steam
+- Weather Ball
+- Dragon Pulse
+- Leer
 
-Wailmer
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Great Tusk @ Focus Sash
+Level: 73
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Close Combat
+- Stone Edge
+- Headlong Rush
+- Endeavor
+
+Heatran @ Air Balloon
+Level: 73
+Ability: Flash Fire
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Magma Storm
+- Flash Cannon
+- Solarbeam
+- Earth Power
 
 === TRAINER_IMANI ===
 Name: IMANI
@@ -14988,10 +15003,15 @@ Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Nature: Hardy
 
-Golbat
-Level: 35
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Jolteon @ Wise Glasses
+Level: 80
+Ability: Static
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunder
+- Weather Ball
+- Shadow Ball
+- Substitute
 
 === TRAINER_GRUNT_UNUSED ===
 Name: Grunt
@@ -20323,16 +20343,6 @@ Nature: Naughty
 - Solarbeam
 - Earthquake
 
-Heliolisk @ Leftovers
-Level: 73
-Ability: Solar Power
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Thunderbolt
-- Weather Ball
-- Solarbeam
-- Dragon Pulse
-
 Exeggutor @ Life Orb
 Level: 73
 Ability: Chlorophyll
@@ -20343,33 +20353,13 @@ Nature: Modest
 - Weather Ball
 - Growth
 
-Walking Wake @ Leftovers
+Chandelure @ Chandelurite
 Level: 73
-Ability: Protosynthesis
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Hydro Steam
-- Dragon Pulse
-- Flamethrower
-- Substitute
-
-Great Tusk @ Focus Sash
-Level: 73
-Ability: Protosynthesis
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Headlong Rush
-- Stone Edge
-- Knock Off
-- Close Combat
-
-Houndoom @ Houndoominite
-Level: 73
-Ability: Unnerve
+Ability: Shadow Tag
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- Heat Wave
-- Dark Pulse
+- Fire Blast
+- Shadow Ball
 - Solarbeam
 - Nasty Plot
 

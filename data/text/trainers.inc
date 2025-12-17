@@ -453,26 +453,6 @@ Route105_Text_LuisPostBattle:
 	.string "If you are drowning, the signal is to\n"
 	.string "wave one arm toward the beach.$"
 
-Route105_Text_DominikIntro:
-	.string "Swimming the deep blue sea…\n"
-	.string "It feels the greatest!$"
-
-Route105_Text_DominikDefeated:
-	.string "I lost…\n"
-	.string "Now I'm feeling blue…$"
-
-Route105_Text_DominikPostBattle:
-	.string "Why is the sea blue?\p"
-	.string "I learned about that at the MUSEUM in\n"
-	.string "SLATEPORT, but I forgot.$"
-
-Route105_Text_BeverlyIntro:
-	.string "My body feels lighter in the water.\n"
-	.string "It's as if I've gotten slimmer!$"
-
-Route105_Text_BeverlyDefeated:
-	.string "I'm floating…$"
-
 Route105_Text_PostBattle:
 	.string "Your body weight is reduced to just\n"
 	.string "one tenth in the water.\p"

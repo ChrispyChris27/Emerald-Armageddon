@@ -35,16 +35,6 @@ Route105_EventScript_Luis::
 	msgbox Route105_Text_LuisPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route105_EventScript_Dominik::
-	trainerbattle_single TRAINER_DOMINIK, Route105_Text_DominikIntro, Route105_Text_DominikDefeated
-	msgbox Route105_Text_DominikPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route105_EventScript_Beverly::
-	trainerbattle_single TRAINER_BEVERLY, Route105_Text_BeverlyIntro, Route105_Text_BeverlyDefeated
-	msgbox Route105_Text_PostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route105_EventScript_Imani::
 	trainerbattle_single TRAINER_IMANI, Route105_Text_ImaniIntro, Route105_Text_ImaniDefeated
 	msgbox Route105_Text_ImaniPostBattle, MSGBOX_AUTOCLOSE
