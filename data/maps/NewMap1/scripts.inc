@@ -1,13 +1,3 @@
-.set LOCALID_SIS1, 4
-.set LOCALID_SIS2, 5
-.set LOCALID_SIS3, 6
-.set LOCALID_GIO, 3
-.set LOCALID_SCI, 8
-.set LOCALID_RAY, 9
-.set LOCALID_MEGARAY, 10
-.set LOCALID_ARCHER, 2
-.set LOCALID_ARIANA, 1
-
 NewMap1_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, NewMap1_OnLoad
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, NewMap1_OnFrame

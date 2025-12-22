@@ -16071,14 +16071,14 @@ F_TRAINER_FEMALE |
             },
             {
 #line 6594
-            .species = SPECIES_GYARADOS,
+            .species = SPECIES_ABSOL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 6594
-            .heldItem = ITEM_GYARADOSITE,
+            .heldItem = ITEM_ABSOLITE,
 #line 6597
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 6596
-            .ability = ABILITY_INTIMIDATE,
+            .ability = ABILITY_PRESSURE,
 #line 6595
             .lvl = 100,
 #line 6598
@@ -16086,10 +16086,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 6599
-                MOVE_AQUA_TAIL,
-                MOVE_CRUNCH,
-                MOVE_DRAGON_DANCE,
-                MOVE_STONE_EDGE,
+                MOVE_KNOCK_OFF,
+                MOVE_SHADOW_CLAW,
+                MOVE_PLAY_ROUGH,
+                MOVE_SWORDS_DANCE,
             },
             },
         },
@@ -56221,10 +56221,10 @@ F_TRAINER_FEMALE |
             },
             {
 #line 23267
-            .species = SPECIES_SWAMPERT,
+            .species = SPECIES_GYARADOS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 23267
-            .heldItem = ITEM_SWAMPERTITE,
+            .heldItem = ITEM_GYARADOSITE,
 #line 23270
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 23269
@@ -56236,10 +56236,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 23272
-                MOVE_LIQUIDATION,
-                MOVE_EARTHQUAKE,
-                MOVE_ICE_PUNCH,
-                MOVE_POISON_JAB,
+                MOVE_WAVE_CRASH,
+                MOVE_CRUNCH,
+                MOVE_STONE_EDGE,
+                MOVE_DRAGON_DANCE,
             },
             },
         },

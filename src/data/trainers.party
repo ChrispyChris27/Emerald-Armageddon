@@ -6591,15 +6591,15 @@ Nature: Adamant
 - Zen Headbutt
 - Stone Edge
 
-Gyarados @ Gyaradosite
+Absol @ Absolite
 Level: 100
-Ability: Intimidate
+Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Aqua Tail
-- Crunch
-- Dragon Dance
-- Stone Edge
+- Knock Off
+- Shadow Claw
+- Play Rough
+- Swords Dance
 
 === TRAINER_PHOEBE ===
 Name: Phoebe
@@ -23264,15 +23264,15 @@ Nature: Timid
 - Energy Ball
 - Tail Glow
 
-Swampert @ Swampertite
+Gyarados @ Gyaradosite
 Level: 89
 Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
-- Liquidation
-- Earthquake
-- Ice Punch
-- Poison Jab
+- Wave Crash
+- Crunch
+- Stone Edge
+- Dragon Dance
 
 === TRAINER_HIDEOUT_GRUNT_1 ===
 Name: Grunt

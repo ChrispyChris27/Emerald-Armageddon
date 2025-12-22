@@ -297,5 +297,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_STEVEN_HARBOR
 	setflag FLAG_CYNTHIA_VR_OW
 	setflag FLAG_BIG_ROOT_BOY
+	setflag FLAG_HIDEOUT_MEGA_RAY
+	setflag FLAG_HIDEOUT_RAY
 	call EventScript_ResetAllBerries
 	end
