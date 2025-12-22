@@ -15,6 +15,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_BRO1",
       "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
       "x": 3,
       "y": 14,
@@ -28,6 +29,7 @@
       "flag": "FLAG_ROCKET_BROS"
     },
     {
+      "local_id": "LOCALID_BRO2",
       "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
       "x": 4,
       "y": 15,
@@ -41,6 +43,7 @@
       "flag": "FLAG_ROCKET_BROS"
     },
     {
+      "local_id": "LOCALID_BRO3",
       "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
       "x": 2,
       "y": 15,
@@ -54,6 +57,7 @@
       "flag": "FLAG_ROCKET_BROS"
     },
     {
+      "local_id": "LOCALID_BRO4",
       "graphics_id": "OBJ_EVENT_GFX_GRUNT_M",
       "x": 3,
       "y": 16,

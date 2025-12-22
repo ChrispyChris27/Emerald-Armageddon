@@ -1,6 +1,3 @@
-.set LOCALID_TABITHA, 21
-.set LOCALID_GRUNT, 20
-
 NewMauville_Inside_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, NewMauville_Inside_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, NewMauville_Inside_OnTransition
@@ -519,9 +516,9 @@ NewMauville_Inside_EventScript_Grunt14::
 NewMauville_Inside_EventScript_Tabitha::
 	lockall
 	msgbox NewMauville_Inside_Text_Tabitha1, MSGBOX_DEFAULT
-	applymovement LOCALID_TABITHA, Common_Movement_ExclamationMark
+	applymovement LOCALID_TABITHA_NM, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_TABITHA, Common_Movement_FacePlayer
+	applymovement LOCALID_TABITHA_NM, Common_Movement_FacePlayer
 	waitmovement 0
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 	msgbox NewMauville_Inside_Text_Tabitha2, MSGBOX_DEFAULT
@@ -531,8 +528,8 @@ NewMauville_Inside_EventScript_Tabitha::
 	fadedefaultbgm
 	fadescreen FADE_TO_BLACK 
 	setflag FLAG_118_GRUNTS
-	removeobject LOCALID_TABITHA
-	removeobject LOCALID_GRUNT
+	removeobject LOCALID_TABITHA_NM
+	removeobject LOCALID_GRUNT_NM
 	fadescreen FADE_FROM_BLACK 
 	releaseall
 	end

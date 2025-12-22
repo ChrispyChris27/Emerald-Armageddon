@@ -1,6 +1,3 @@
-.set LOCALID_GRUNTM, 4
-.set LOCALID_GRUNTF, 5
-
 MtPyre_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, MtPyre_1F_OnFrame
 	.byte 0
@@ -122,11 +119,11 @@ MtPyre_1F_EventScript_GruntBattles::
 	lockall
 	setvar VAR_PYRE_GRUNTS, 0
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	applymovement LOCALID_GRUNTM, Common_Movement_ExclamationMark
-	applymovement LOCALID_GRUNTF, Common_Movement_ExclamationMark
+	applymovement LOCALID_PYRE_GRUNTM, Common_Movement_ExclamationMark
+	applymovement LOCALID_PYRE_GRUNTF, Common_Movement_ExclamationMark
 	waitmovement 0
-	applymovement LOCALID_GRUNTM, Common_Movement_FaceLeft
-	applymovement LOCALID_GRUNTF, Common_Movement_FaceLeft
+	applymovement LOCALID_PYRE_GRUNTM, Common_Movement_FaceLeft
+	applymovement LOCALID_PYRE_GRUNTF, Common_Movement_FaceLeft
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 	waitmovement 0
@@ -135,7 +132,7 @@ MtPyre_1F_EventScript_GruntBattles::
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	msgbox MtPyre_1F_Text_Grunts2, MSGBOX_DEFAULT
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
-	applymovement LOCALID_GRUNTF, GruntPyreMovement
+	applymovement LOCALID_PYRE_GRUNTF, GruntPyreMovement
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	waitmovement 0
@@ -143,14 +140,14 @@ MtPyre_1F_EventScript_GruntBattles::
 	trainerbattle_no_intro TRAINER_AQUA_PYRE_2, Pyre_Grunt2_Defeat
 	playbgm MUS_ENCOUNTER_AQUA, FALSE
 	msgbox MtPyre_1F_Text_Grunts4, MSGBOX_AUTOCLOSE
-	applymovement LOCALID_GRUNTM, GruntPyreMovement2
+	applymovement LOCALID_PYRE_GRUNTM, GruntPyreMovement2
 	waitmovement 0
-	applymovement LOCALID_GRUNTF, GruntsPyreExit
-	applymovement LOCALID_GRUNTM, GruntsPyreExit
+	applymovement LOCALID_PYRE_GRUNTF, GruntsPyreExit
+	applymovement LOCALID_PYRE_GRUNTM, GruntsPyreExit
 	waitmovement 0
 	playse SE_EXIT
-	removeobject LOCALID_GRUNTM
-	removeobject LOCALID_GRUNTF
+	removeobject LOCALID_PYRE_GRUNTM
+	removeobject LOCALID_PYRE_GRUNTF
 	setvar VAR_PYRE_GRUNTS, 2
 	fadedefaultbgm
 	releaseall

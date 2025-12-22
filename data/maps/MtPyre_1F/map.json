@@ -54,6 +54,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_PYRE_GRUNTM",
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
       "x": 8,
       "y": 5,
@@ -67,6 +68,7 @@
       "flag": "FLAG_INDOOR_PYRE_GRUNTS"
     },
     {
+      "local_id": "LOCALID_PYRE_GRUNTF",
       "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
       "x": 8,
       "y": 6,

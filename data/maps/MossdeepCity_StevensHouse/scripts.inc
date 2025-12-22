@@ -1,7 +1,3 @@
-.set LOCALID_STEVEN, 1
-.set LOCALID_BELDUM_BALL, 2
-.set LOCALID_MELTAN_BALL, 4
-
 MossdeepCity_StevensHouse_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, MossdeepCity_StevensHouse_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_StevensHouse_OnTransition

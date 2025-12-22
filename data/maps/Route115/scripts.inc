@@ -1,8 +1,3 @@
-.set LOCAL_ID_GRUNT_1, 23
-.set LOCAL_ID_GRUNT_2, 24 
-.set LOCAL_ID_GIOVANNI, 25
-.set LOCAL_ID_ROXANNE, 26
-
 Route115_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, Route115_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, Route115_OnTransition
@@ -287,22 +282,22 @@ Route115_Text_Roxanne:
 Route115_EventScript_Giovanni::
 	lockall
 	playbgm MUS_RG_ENCOUNTER_ROCKET, FALSE
-	applymovement LOCAL_ID_GIOVANNI, Common_Movement_FacePlayer
+	applymovement LOCALID_GIOVANNI_115, Common_Movement_FacePlayer
 	waitmovement 0
 	msgbox Route115_Text_GiovanniPreBattle, MSGBOX_DEFAULT
 	closemessage
 	trainerbattle_no_intro TRAINER_GIOVANNI_1, Route115_Text_GiovanniDefeat
 	msgbox Route115_Text_GiovanniPostBattle, MSGBOX_DEFAULT
 	closemessage
-	applymovement LOCAL_ID_GIOVANNI, Route115_Movement_Giovanni
+	applymovement LOCALID_GIOVANNI_115, Route115_Movement_Giovanni
 	waitmovement 0
-	removeobject LOCAL_ID_GIOVANNI
-	removeobject LOCAL_ID_GRUNT_1
-	removeobject LOCAL_ID_GRUNT_2
+	removeobject LOCALID_GIOVANNI_115
+	removeobject LOCALID_GRUNT_M_115
+	removeobject LOCALID_GRUNT_F_115
 	setflag FLAG_GIOVANNI_FALLS
 	clearflag FLAG_115_ROXANNE
-	addobject LOCAL_ID_ROXANNE
-	applymovement LOCAL_ID_ROXANNE, Route115_Movement_Giovanni
+	addobject LOCALID_115_HIKER
+	applymovement LOCALID_115_HIKER, Route115_Movement_Giovanni
 	waitmovement 0
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
@@ -310,9 +305,9 @@ Route115_EventScript_Giovanni::
 	closemessage
 	applymovement OBJ_EVENT_ID_PLAYER, Route115_Movement_Player
 	waitmovement 0
-	applymovement LOCAL_ID_ROXANNE, Route115_Movement_Roxanne
+	applymovement LOCALID_115_HIKER, Route115_Movement_Roxanne
 	waitmovement 0
-	removeobject LOCAL_ID_ROXANNE
+	removeobject LOCALID_115_HIKER
 	releaseall
 	end
 

@@ -1,8 +1,3 @@
-.set LOCALID_BRO1, 1
-.set LOCALID_BRO2, 2
-.set LOCALID_BRO3, 3
-.set LOCALID_BRO4, 4
-
 RocketHideout4_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, RocketHideout4_OnLoad
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, RocketHideout4_OnFrame

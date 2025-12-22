@@ -29,12 +29,12 @@
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_STEVEN"
     },
     {
-      "local_id": "LOCALID_STEVENS_HOUSE_BALL",
+      "local_id": "LOCALID_BELDUM_BALL",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
       "x": 4,
       "y": 3,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -56,6 +56,7 @@
       "flag": "FLAG_HIDE_MOSSDEEP_CITY_STEVENS_HOUSE_INVISIBLE_NINJA_BOY"
     },
     {
+      "local_id": "LOCALID_MELTAN_BALL",
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 7,
       "y": 3,
