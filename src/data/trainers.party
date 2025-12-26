@@ -20170,15 +20170,15 @@ Music: Magma
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
 
-Dragonite @ Bright Powder
+Bruxish @ Bright Powder
 Level: 71
-Ability: Multiscale
+Ability: Dazzling
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Fire Punch
+- Ice Fang
 - Aqua Jet
-- Dragon Rush
-- Dual Wingbeat
+- Psychic Fangs
+- Super Fang
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
 Name: Grunt
