@@ -7308,10 +7308,10 @@ static void Cmd_switchindataupdate(void)
     #if TESTING
     if (gTestRunnerEnabled)
     {
-        u32 side = GetBattlerSide(battler);
+        u32 array = (!IsPartnerMonFromSameTrainer(battler)) ? battler : GetBattlerSide(battler);
         u32 partyIndex = gBattlerPartyIndexes[battler];
-        if (TestRunner_Battle_GetForcedAbility(side, partyIndex))
-            gBattleMons[battler].ability = TestRunner_Battle_GetForcedAbility(side, partyIndex);
+        if (TestRunner_Battle_GetForcedAbility(array, partyIndex))
+            gBattleMons[battler].ability = TestRunner_Battle_GetForcedAbility(array, partyIndex);
     }
     #endif
 
@@ -11846,9 +11846,9 @@ static void Cmd_healpartystatus(void)
                 #if TESTING
                 if (gTestRunnerEnabled)
                 {
-                    u32 side = GetBattlerSide(gBattlerAttacker);
-                    if (TestRunner_Battle_GetForcedAbility(side, i))
-                        ability = TestRunner_Battle_GetForcedAbility(side, i);
+                    u32 array = (!IsPartnerMonFromSameTrainer(gBattlerAttacker)) ? gBattlerAttacker : GetBattlerSide(gBattlerAttacker);
+                    if (TestRunner_Battle_GetForcedAbility(array, i))
+                        ability = TestRunner_Battle_GetForcedAbility(array, i);
                 }
                 #endif
             }
@@ -12733,7 +12733,7 @@ static void Cmd_tryswapitems(void)
 
             if (GetBattlerAbility(gBattlerTarget) != ABILITY_GORILLA_TACTICS)
                 gBattleStruct->choicedMove[gBattlerTarget] = MOVE_NONE;
-            if (GetBattlerAbility(gBattlerTarget) != ABILITY_GORILLA_TACTICS)
+            if (GetBattlerAbility(gBattlerAttacker) != ABILITY_GORILLA_TACTICS)
                 gBattleStruct->choicedMove[gBattlerAttacker] = MOVE_NONE;
 
             gBattlescriptCurrInstr = cmd->nextInstr;
@@ -18011,4 +18011,30 @@ void BS_JumpIfGenConfigLowerThan(void)
         gBattlescriptCurrInstr = cmd->jumpInstr;
     else
         gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
+// Used when the Pokemon faints before Toxic Spikes would normally be processed in the hazards queue.
+void BS_TryAbsorbToxicSpikesOnFaint(void)
+{
+    NATIVE_ARGS();
+    u32 battler = gBattlerFainted;
+    u32 side = GetBattlerSide(battler);
+
+    if (gSideTimers[side].toxicSpikesAmount == 0)
+    {
+        gBattlescriptCurrInstr = cmd->nextInstr;
+        return;
+    }
+
+    if (IsBattlerGrounded(battler, GetBattlerAbility(battler), GetBattlerHoldEffect(battler))
+     && IS_BATTLER_OF_TYPE(battler, TYPE_POISON))
+    {
+        gSideTimers[side].toxicSpikesAmount = 0;
+        RemoveHazardFromField(side, HAZARDS_TOXIC_SPIKES);
+        gEffectBattler = battler;
+        BattleScriptCall(BattleScript_ToxicSpikesAbsorbed);
+        return;
+    }
+
+    gBattlescriptCurrInstr = cmd->nextInstr;
 }
