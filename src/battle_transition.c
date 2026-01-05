@@ -2596,7 +2596,7 @@ static bool8 Mugshot_WaitPlayerSlide(struct Task *task)
         else
         {
             return FALSE;
-        } 
+        }
     }
     else
     {
@@ -2618,7 +2618,7 @@ static bool8 Mugshot_WaitPlayerSlide(struct Task *task)
         else
         {
             return FALSE;
-        } 
+        }
     }
     return FALSE;
 }
@@ -2784,7 +2784,7 @@ static void Mugshots_CreateTrainerPics(struct Task *task)
     task->tPlayerSpriteId = CreateTrainerSprite(PlayerGenderToFrontTrainerPicId(gSaveBlock2Ptr->playerGender), 
                                                 DISPLAY_WIDTH + 32, 
                                                 106, 
-                                                0, NULL); 
+                                                0, NULL);
 
     opponentSpriteA = &gSprites[task->tOpponentSpriteAId];
     playerSprite = &gSprites[task->tPlayerSpriteId];
