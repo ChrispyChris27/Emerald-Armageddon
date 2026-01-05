@@ -48919,14 +48919,14 @@ F_TRAINER_FEMALE |
         {
             {
 #line 20173
-            .species = SPECIES_DRAGONITE,
+            .species = SPECIES_BRUXISH,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 20173
             .heldItem = ITEM_BRIGHT_POWDER,
 #line 20176
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 20175
-            .ability = ABILITY_MULTISCALE,
+            .ability = ABILITY_DAZZLING,
 #line 20174
             .lvl = 71,
 #line 20177
@@ -48934,10 +48934,10 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 20178
-                MOVE_FIRE_PUNCH,
+                MOVE_ICE_FANG,
                 MOVE_AQUA_JET,
-                MOVE_DRAGON_RUSH,
-                MOVE_DUAL_WINGBEAT,
+                MOVE_PSYCHIC_FANGS,
+                MOVE_SUPER_FANG,
             },
             },
         },
