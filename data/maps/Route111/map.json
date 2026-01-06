@@ -654,7 +654,7 @@
       "flag": "FLAG_MINTS_4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDACONDA_GMAX)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDACONDA)",
       "x": 33,
       "y": 103,
       "elevation": 0,
@@ -664,7 +664,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TOTEM_SANDACONDA"
     }
   ],
   "warp_events": [

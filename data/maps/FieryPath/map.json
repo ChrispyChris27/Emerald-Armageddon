@@ -119,7 +119,7 @@
       "flag": "FLAG_ITEM_FIERY_PATH_FIRE_STONE"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CENTISKORCH_GMAX)",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(CENTISKORCH)",
       "x": 20,
       "y": 3,
       "elevation": 0,
@@ -129,7 +129,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_TOTEM_CENTISKORCH"
     }
   ],
   "warp_events": [

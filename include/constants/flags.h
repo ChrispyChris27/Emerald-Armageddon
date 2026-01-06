@@ -1259,7 +1259,7 @@
 #define FLAG_TOTEM_TATSUGIRI                                           0x4B5 // Unused Flag
 #define FLAG_TOTEM_DONDOZO                                           0x4B6 // Unused Flag
 #define FLAG_TOTEM_ROARING_MOON                                           0x4B7 // Unused Flag
-#define FLAG_TOTEM_SEAFLOOR                                           0x4B8 // Unused Flag
+#define FLAG_TOTEM_THUNDURUS                                           0x4B8 // Unused Flag
 #define FLAG_TOTEM_GYARADOS                                           0x4B9 // Unused Flag
 #define FLAG_TOTEM_MILOTIC                                           0x4BA // Unused Flag
 #define FLAG_TOTEM_KABUTOPS                                           0x4BB // Unused Flag
