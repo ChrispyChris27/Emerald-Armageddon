@@ -12,3 +12,18 @@ FieryPath_EventScript_MoveScottToFallarbor::
 	clearflag FLAG_HIDE_FALLARBOR_TOWN_BATTLE_TENT_SCOTT
 	return
 
+FieryPath_CentiskorchBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	setflag FLAG_WILD_DYNAMAX_BATTLE
+	settotemboost B_POSITION_OPPONENT_LEFT, 1, 1, 1, 1, 1
+	setwildbattle SPECIES_CENTISKORCH_GMAX, 45, ITEM_CHARTI_BERRY
+	dowildbattle
+	waitstate
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setflag FLAG_TOTEM_CENTISKORCH
+	releaseall
+	end
