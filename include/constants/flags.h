@@ -1268,7 +1268,7 @@
 #define FLAG_TOTEM_IRON_JUGULIS                                          0x4BE // Unused Flag
 #define FLAG_TOTEM_ULTRA_NECROZMA                                           0x4BF // Unused Flag
 #define FLAG_WILD_DYNAMAX_BATTLE                                           0x4C0 // Unused Flag
-#define FLAG_UNUSED_0x4C1                                           0x4C1 // Unused Flag
+#define FLAG_WILD_TERA_BATTLE                                           0x4C1 // Unused Flag
 #define FLAG_UNUSED_0x4C2                                           0x4C2 // Unused Flag
 #define FLAG_UNUSED_0x4C3                                           0x4C3 // Unused Flag
 #define FLAG_UNUSED_0x4C4                                           0x4C4 // Unused Flag

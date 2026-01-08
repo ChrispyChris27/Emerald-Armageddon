@@ -114,6 +114,8 @@ bool8 DoesPartyHaveEnigmaBerry(void)
 void CreateScriptedWildMon(u16 species, u8 level, u16 item)
 {
     u8 heldItem[2];
+    bool8 gmaxFactor = TRUE;
+    enum Type teraType;
 
     ZeroEnemyPartyMons();
     if (OW_SYNCHRONIZE_NATURE > GEN_3)
@@ -125,6 +127,14 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         heldItem[0] = item;
         heldItem[1] = item >> 8;
         SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, heldItem);
+    }
+    if (species == SPECIES_CENTISKORCH || species == SPECIES_SANDACONDA)
+        SetMonData(&gEnemyParty[0], MON_DATA_GIGANTAMAX_FACTOR, &gmaxFactor);
+
+    if (species == SPECIES_CRYOGONAL || species == SPECIES_SHEDINJA)
+    {
+        teraType = TYPE_ELECTRIC;
+        SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType);
     }
 }
 void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u16 species2, u8 level2, u16 item2)

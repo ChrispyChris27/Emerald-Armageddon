@@ -18,12 +18,19 @@ FieryPath_CentiskorchBattle::
 	setflag FLAG_NO_CATCH_WILD
 	setflag FLAG_WILD_DYNAMAX_BATTLE
 	settotemboost B_POSITION_OPPONENT_LEFT, 1, 1, 1, 1, 1
-	setwildbattle SPECIES_CENTISKORCH_GMAX, 45, ITEM_CHARTI_BERRY
-	dowildbattle
+	setwildbattle SPECIES_CENTISKORCH, 45, ITEM_CHARTI_BERRY
+	waitse
+	playmoncry SPECIES_CENTISKORCH, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartGigantamaxWildBattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	waitstate
 	clearflag FLAG_SMART_WILD
 	clearflag FLAG_NO_RUN_WILD
 	clearflag FLAG_NO_CATCH_WILD
 	setflag FLAG_TOTEM_CENTISKORCH
+	setvar VAR_ROGUE_STATE, 
 	releaseall
 	end
