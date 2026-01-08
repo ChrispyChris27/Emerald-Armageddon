@@ -574,3 +574,6 @@ gSpecials::
 	def_special SetAbility
 	def_special ObjectEventInteractionGetApricornTreeData
 	def_special ObjectEventInteractionPickApricornTree
+	def_special BattleSetup_StartGigantamaxWildBattle
+	def_special BattleSetup_StartTeraWildBattle
+	def_special BattleSetup_StartRogueWildBattle

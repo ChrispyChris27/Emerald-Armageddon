@@ -70,6 +70,9 @@ bool32 CanTerastallize(u32 battler)
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && !IsOnPlayerSide(battler))
         return FALSE;
 
+    if (gBattleTypeFlags & BATTLE_TYPE_ROGUE_TERA && !IsOnPlayerSide(battler))
+        return TRUE;
+
     if (TESTING || !IsOnPlayerSide(battler))
     {
         // Skip all other checks in this block, go to HasTrainerUsedGimmick

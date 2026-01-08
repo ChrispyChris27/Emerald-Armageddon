@@ -79,6 +79,9 @@ bool32 CanDynamax(u32 battler)
     if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE && !IsOnPlayerSide(battler))
         return FALSE;
 
+    if (gBattleTypeFlags & BATTLE_TYPE_ROGUE_GMAX && !IsOnPlayerSide(battler))
+        return TRUE;
+
     // Check if Player has a Dynamax Band.
     if (!TESTING && (GetBattlerPosition(battler) == B_POSITION_PLAYER_LEFT
         || (!(gBattleTypeFlags & BATTLE_TYPE_MULTI) && GetBattlerPosition(battler) == B_POSITION_PLAYER_RIGHT)))
