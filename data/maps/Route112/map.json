@@ -259,7 +259,26 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 43,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "2",
+      "script": "Route112_RoguePokenavCall"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 43,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "2",
+      "script": "Route112_RoguePokenavCall"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

@@ -136,6 +136,37 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         teraType = TYPE_ELECTRIC;
         SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType);
     }
+
+    if(species == SPECIES_CENTISKORCH)
+    {
+        u16 move1 = MOVE_FIRE_LASH;
+        u16 move2 = MOVE_LEECH_LIFE;
+        u16 move3 = MOVE_POWER_WHIP;
+        u16 move4 = MOVE_THUNDER_FANG;
+        u8 nature = NATURE_JOLLY;
+
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+    }
+
+    if(species == SPECIES_CRYOGONAL)
+    {
+        u16 move1 = MOVE_ICE_BEAM;
+        u16 move2 = MOVE_TERA_BLAST;
+        u16 move3 = MOVE_EARTH_POWER;
+        u16 move4 = MOVE_RECOVER;
+        u8 nature = NATURE_TIMID;
+
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+    }
+
 }
 void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u16 species2, u8 level2, u16 item2)
 {

@@ -140,3 +140,29 @@ Route112_Text_RouteSignLavaridge:
 	.string "ROUTE 112\n"
 	.string "{LEFT_ARROW} LAVARIDGE TOWN$"
 
+Route112_RoguePokenavCall::
+	pokenavcall Route112_Text_RogueNavCall
+	waitmessage
+	setvar VAR_ROGUE_STATE, 3
+	end
+
+Route112_Text_RogueNavCall:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hey, {PLAYER}{KUN}!\p"
+	.string "I heard you beat the Mauville\n"
+	.string "City Gym; Congrats!\p"
+	.string "Listen, I need your help.\p"
+	.string "I'm picking up unusual energy\n"
+	.string "readings from the Fiery Path.\p"
+	.string "I'm guessing another wild\n"
+	.string "Pokémon may have gone rogue.\p"
+	.string "Can you find it and calm it down?\p"
+	.string "You will? Perfect!\p"
+	.string "Thanks again for your help.\p"
+	.string "Fair warning, the energy readings\n"
+	.string "I'm picking up are the strongest yet!\p"
+	.string "Be careful!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
