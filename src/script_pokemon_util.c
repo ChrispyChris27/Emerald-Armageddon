@@ -181,6 +181,21 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
+    if(species == SPECIES_SHEDINJA)
+    {
+        u16 move1 = MOVE_SPIRIT_SHACKLE;
+        u16 move2 = MOVE_ATTACK_ORDER;
+        u16 move3 = MOVE_TERA_BLAST;
+        u16 move4 = MOVE_MAGIC_COAT;
+        u8 nature = NATURE_JOLLY;
+
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+    }
+
     if(species == SPECIES_SIGILYPH)
     {
         u16 move1 = MOVE_STORED_POWER;

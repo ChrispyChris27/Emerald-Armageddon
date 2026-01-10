@@ -7886,6 +7886,7 @@ static const struct LevelUpMove sNinjaskLevelUpLearnset[] = {
 static const struct LevelUpMove sShedinjaLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE( 1, MOVE_SHADOW_SNEAK),
+    LEVEL_UP_MOVE( 1, MOVE_SPIRIT_SHACKLE),
     LEVEL_UP_MOVE( 4, MOVE_BUG_BITE),
     LEVEL_UP_MOVE( 8, MOVE_AERIAL_ACE),
     LEVEL_UP_MOVE(12, MOVE_SKITTER_SMACK),

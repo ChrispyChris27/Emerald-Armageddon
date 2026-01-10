@@ -29,7 +29,7 @@ MtPyre_Exterior_ShedinjaBattle::
 	setflag FLAG_SMART_WILD
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
-	settotemboost B_POSITION_OPPONENT_LEFT, 2, 0, 3, 0, 0
+	settotemboost B_POSITION_OPPONENT_LEFT, 2, 0, 4, 0, 0
 	setwildbattle SPECIES_SHEDINJA, 44, ITEM_AIR_BALLOON
 	waitse
 	playmoncry SPECIES_SHEDINJA, CRY_MODE_ENCOUNTER
