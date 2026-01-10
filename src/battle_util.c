@@ -5876,9 +5876,13 @@ bool32 IsBattlerTerrainAffected(u32 battler, enum Ability ability, enum HoldEffe
 {
     if (!(gFieldStatuses & terrainFlag))
         return FALSE;
+
+    if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
+    return TRUE;
+
     if (IsSemiInvulnerable(battler, CHECK_ALL))
         return FALSE;
-
+        
     return IsBattlerGrounded(battler, ability, holdEffect);
 }
 

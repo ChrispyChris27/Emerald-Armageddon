@@ -23198,16 +23198,6 @@ Nature: Modest
 - Thunder
 - Hydro Pump
 
-Slowbro @ Slowbronite
-Level: 69
-Ability: Regenerator
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Bold
-- Scald
-- Slack Off
-- Stored Power
-- Calm Mind
-
 === TRAINER_WALLACE_1 ===
 Name: WALLACE
 Class: Leader
