@@ -137,6 +137,18 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType);
     }
 
+    if (gBattleTypeFlags == BATTLE_TYPE_ROGUE || gBattleTypeFlags == BATTLE_TYPE_ROGUE_GMAX || gBattleTypeFlags == BATTLE_TYPE_ROGUE_TERA)
+    {
+        u8 ivs = 31;
+
+        SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &ivs);
+    }
+
     if(species == SPECIES_CENTISKORCH)
     {
         u16 move1 = MOVE_FIRE_LASH;
@@ -144,12 +156,14 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         u16 move3 = MOVE_POWER_WHIP;
         u16 move4 = MOVE_THUNDER_FANG;
         u8 nature = NATURE_JOLLY;
+        u8 ability = 0;
 
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
         SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_CRYOGONAL)
@@ -165,6 +179,23 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
         SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+    }
+
+    if(species == SPECIES_SIGILYPH)
+    {
+        u16 move1 = MOVE_STORED_POWER;
+        u16 move2 = MOVE_DAZZLING_GLEAM;
+        u16 move3 = MOVE_COSMIC_POWER;
+        u16 move4 = MOVE_ROOST;
+        u8 nature = NATURE_TIMID;
+        u8 ability = 1;
+
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
     }
 
 }

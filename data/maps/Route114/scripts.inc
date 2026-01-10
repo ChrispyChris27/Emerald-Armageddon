@@ -358,3 +358,130 @@ Route114_EventScript_Grunt9::
 	trainerbattle_single TRAINER_FALLS_GRUNT_9, Route114_Text_Grunt9Intro, Route114_Text_Grunt9Defeat
 	msgbox Route114_Text_Grunt9PostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route114_RoguePokenavCall::
+	pokenavcall Route114_Text_RogueNavCall
+	waitmessage
+	setvar VAR_ROGUE_STATE, 5
+	end
+
+Route114_Text_RogueNavCall:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hey, {PLAYER}{KUN}!\p"
+	.string "I have good news and bad news.\p"
+	.string "The bad news is I've picked up\n"
+	.string "another energy surge near the\l"
+	.string "entrance to Meteor Falls.\p"
+	.string "The good news is that the energy\n"
+	.string "surge isn't as strong this time.\p"
+	.string "I don't expect you'll be seeing\n"
+	.string "any Gigantamaxing or Mega\l"
+	.string "Evolution on this occasion.\p"
+	.string "Think you can handle this one?\p"
+	.string "Thanks again for your help with\n"
+	.string "handling these rogue Pokémon.\p"
+	.string "It will help me figure out where\n"
+	.string "all of this energy is coming from.\p"
+	.string "Good luck!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+Route114_SigilyphBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 1, 1, 1, 1
+	setwildbattle SPECIES_SIGILYPH, 44, ITEM_WEAKNESS_POLICY
+	waitse
+	playmoncry SPECIES_SIGILYPH, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartRogueWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Sigilyph_Defeated
+	releaseall
+	end
+
+Sigilyph_Defeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setflag FLAG_TOTEM_SIGILYPH
+	setvar VAR_ROGUE_STATE, 6 
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_ROGUE5
+	fadescreen FADE_FROM_BLACK
+	pokenavcall SigilyphCalmedText
+	waitmessage
+	releaseall
+	end
+
+SigilyphCalmedText:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hey, {PLAYER}{KUN}!\n"
+	.string "Great work!\p"
+	.string "That Sigilyph has calmed down and\n"
+	.string "the energy surge is also over.\p"
+	.string "We're one step closer to finding\n"
+	.string "out where these energy surges\l"
+	.string "are coming from and what's\l"
+	.string "causing them to go off.\p"
+	.string "Thanks again for the\n"
+	.string "help {PLAYER}{KUN}!\p"
+	.string "I'll let you know if we track\n"
+	.string "down anymore energy surges.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+Sigilyph_Movement1:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_left
+	walk_fast_left
+	walk_fast_down
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+Sigilyph_Movement2:
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_left
+	walk_fast_left
+	walk_fast_down
+	walk_fast_down
+	walk_fast_right
+	walk_fast_right
+	walk_fast_right
+	walk_fast_up
+	walk_fast_up
+	walk_fast_up
+	step_end
+
+Route114_Sigi_Enter1::
+	lockall
+	playmoncry SPECIES_SIGILYPH, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE5, Sigilyph_Movement1
+	goto Route114_SigilyphBattle
+
+Route114_Sigi_Enter2::
+	lockall
+	playmoncry SPECIES_SIGILYPH, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE5, Sigilyph_Movement2
+	goto Route114_SigilyphBattle
+

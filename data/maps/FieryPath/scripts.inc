@@ -47,6 +47,10 @@ FieryPath_CentiskorchBattle::
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
 	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Centiskorch_Defeated
+	clearflag FLAG_WILD_DYNAMAX_BATTLE
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
 	releaseall
 	end
 

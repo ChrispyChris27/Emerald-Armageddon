@@ -163,19 +163,14 @@ void BattleAI_SetupItems(void)
 
 static u64 GetWildAiFlags(void)
 {
-    u32 avgLevel = GetMonData(&gEnemyParty[0], MON_DATA_LEVEL);
     u64 flags = 0;
-
-    if (IsDoubleBattle())
-        avgLevel = (GetMonData(&gEnemyParty[0], MON_DATA_LEVEL) + GetMonData(&gEnemyParty[1], MON_DATA_LEVEL)) / 2;
-
     flags |= AI_FLAG_CHECK_BAD_MOVE;
-    if (avgLevel >= 20)
-        flags |= AI_FLAG_CHECK_VIABILITY;
-    if (avgLevel >= 60)
-        flags |= AI_FLAG_TRY_TO_2HKO;
-    if (avgLevel >= 80)
-        flags |= AI_FLAG_HP_AWARE;
+    flags |= AI_FLAG_CHECK_VIABILITY;
+    flags |= AI_FLAG_TRY_TO_FAINT;
+    flags |= AI_FLAG_OMNISCIENT;
+    flags |= AI_FLAG_WILL_SUICIDE;
+    flags |= AI_FLAG_TRY_TO_2HKO;
+    flags |= AI_FLAG_HP_AWARE;
 
     if (B_VAR_WILD_AI_FLAGS != 0 && VarGet(B_VAR_WILD_AI_FLAGS) != 0)
         flags |= VarGet(B_VAR_WILD_AI_FLAGS);
