@@ -183,32 +183,32 @@ Route114_EventScript_Kai::
 	end
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
-	.string "All my POKéMON does is ROAR…\n"
+	.string "All my Pokémon does is roar…\n"
 	.string "No one dares to come near me…\p"
 	.string "Sigh… If you would, please take\n"
 	.string "this TM away…$"
 
 Route114_Text_ExplainRoar:
-	.string "TM05 contains ROAR.\n"
-	.string "A ROAR sends POKéMON scurrying.$"
+	.string "TM05 contains Roar.\n"
+	.string "A roar sends POKéMON scurrying.$"
 
 Route114_Text_Poochyena:
 	.string "Bow! Bowwow!$"
 
 Route114_Text_MeteorFallsSign:
-	.string "METEOR FALLS\n"
-	.string "RUSTBORO CITY THROUGH HERE$"
+	.string "Meteor Falls\n"
+	.string "Rustboro City through here$"
 
 Route114_Text_FossilManiacsHouseSign:
-	.string "FOSSIL MANIAC'S HOUSE\n"
+	.string "Fossil Maniac's House\n"
 	.string "“Fossils gratefully accepted!”$"
 
 Route114_Text_LanettesHouse:
-	.string "LANETTE'S HOUSE$"
+	.string "Lanette's House$"
 
 Route114_Text_Grunt1Intro:
 	.string "Who are you?\p"
-	.string "You dare meddle with TEAM ROCKET?$"
+	.string "You dare meddle with Team Rocket?$"
 
 Route114_Text_Grunt1Defeat:
 	.string "You meddlesome monkey!$"
@@ -222,8 +222,8 @@ Route114_EventScript_Grunt1::
 	end
 
 Route114_Text_Grunt2Intro:
-	.string "We at TEAM ROCKET come from the\n"
-	.string "KANTO region!\p"
+	.string "We at Team Rocket come from the\n"
+	.string "Kanto region!\p"
 	.string "What are we doing here?\p"
 	.string "It's a secret!$"
 
@@ -239,7 +239,7 @@ Route114_EventScript_Grunt2::
 	end
 
 Route114_Text_Grunt3Intro:
-	.string "We're after something in METEOR FALLS.\p"
+	.string "We're after something in Meteor Falls.\p"
 	.string "I can't let you get in our way!$"
 
 Route114_Text_Grunt3Defeat:
@@ -279,7 +279,7 @@ Route114_Text_Grunt5Defeat:
 	.string "I wanted to be at a beach!$"
 
 Route114_Text_Grunt5PostBattle:
-	.string "I heard HOENN had too much water.\p"
+	.string "I heard Hoenn had too much water.\p"
 	.string "Well where is it?!?!\p"
 	.string "I was hoping to relax at a beach.$"
 
@@ -289,16 +289,16 @@ Route114_EventScript_Grunt5::
 	end
 
 Route114_Text_Grunt6Intro:
-	.string "We at TEAM ROCKET are always after\n"
-	.string "rare POKéMON.\p"
-	.string "We came to see what HOENN has to offer!$"
+	.string "We at Team Rocket are always after\n"
+	.string "rare Pokémon.\p"
+	.string "We came to see what Hoenn has to offer!$"
 
 Route114_Text_Grunt6Defeat:
-	.string "Apparently you're what HOENN has\n"
+	.string "Apparently you're what Hoenn has\n"
 	.string "to offer...$"
 
 Route114_Text_Grunt6PostBattle:
-	.string "I was hoping to catch a NINCADA\n"
+	.string "I was hoping to catch a Nincada\n"
 	.string "while I was here but they don't\l"
 	.string "to be living around here.$"
 
@@ -309,7 +309,7 @@ Route114_EventScript_Grunt6::
 
 Route114_Text_Grunt7Intro:
 	.string "Do you think there are meteorites\n"
-	.string "in METEOR FALLS?\p"
+	.string "in Meteor Falls?\p"
 	.string "I think that's what the boss is after!$"
 
 Route114_Text_Grunt7Defeat:
@@ -318,7 +318,7 @@ Route114_Text_Grunt7Defeat:
 
 Route114_Text_Grunt7PostBattle:
 	.string "Did you know there's a city in the\n"
-	.string "SINNOH region where meteorites can\l"
+	.string "Sinnoh region where meteorites can\l"
 	.string "be found?$"
 
 Route114_EventScript_Grunt7::
@@ -327,14 +327,14 @@ Route114_EventScript_Grunt7::
 	end
 
 Route114_Text_Grunt8Intro:
-	.string "I hear there are some fossil POKéMON\n"
-	.string "that can be found in METEOR FALLS!$"
+	.string "I hear there are some fossil Pokémon\n"
+	.string "that can be found in Meteor Falls!$"
 
 Route114_Text_Grunt8Defeat:
 	.string "Oops! All fainted!$"
 
 Route114_Text_Grunt8PostBattle:
-	.string "Fossil POKéMON are cool and all but\n"
+	.string "Fossil Pokémon are cool and all but\n"
 	.string "our boss is after something bigger.$"
 
 Route114_EventScript_Grunt8::
@@ -344,7 +344,7 @@ Route114_EventScript_Grunt8::
 
 Route114_Text_Grunt9Intro:
 	.string "Stop right there!\p"
-	.string "Nobody is allowed in METEOR FALLS!\n"
+	.string "Nobody is allowed in Meteor Falls!\n"
 	.string "until the boss finds what he's after!$"
 
 Route114_Text_Grunt9Defeat:

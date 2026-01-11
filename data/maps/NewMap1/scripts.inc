@@ -355,32 +355,32 @@ Ariana_Hideout_Script::
 	end
 
 Hideout_Archer_Intro:
-	.string "We owe a lot of thanks to TEAM\n"
-	.string "MAGMA and AQUA, as well as you.\p"
+	.string "We owe a lot of thanks to Team\n"
+	.string "Magma and Aqua, as well as you.\p"
 	.string "Their mess caused you to awaken\n"
-	.string "RAYQUAZA, which alerted us to its\l"
+	.string "Rayquaza, which alerted us to its\l"
 	.string "presence as well.\p"
-	.string "Long ago, RAYQUAZA descended from\n"
+	.string "Long ago, Rayquaza descended from\n"
 	.string "space, which explains why its true\l"
 	.string "power is unlocked with the aid of\l"
 	.string "the meteorites we've been studying.\p"
-	.string "It would appear RAYQUAZA has returned\n"
-	.string "to the skies after calming GROUDON\l"
-	.string "and KYOGRE.\p"
+	.string "It would appear Rayquaza has returned\n"
+	.string "to the skies after calming Groudon\l"
+	.string "and Kyogre.\p"
 	.string "The boss is about to board our rocket\n"
-	.string "to find and capture RAYQUAZA and it's\l"
+	.string "to find and capture Rayquaza and it's\l"
 	.string "our job to make sure he can!$"
 
 Hideout_Ariana_Intro:
 	.string "You again!?!\p"
 	.string "Didn't you meddle in our affairs\n"
-	.string "enough at the SPACE CENTER?\p"
+	.string "enough at the Space Center?\p"
 	.string "Even with your interference, we\n"
 	.string "still made off with the rocket fuel\l"
 	.string "and we're moments from using it!\p"
 	.string "That's right.\p"
 	.string "Up these stairs the boss is ready\n"
-	.string "to board to go after RAYQUAZA.$"
+	.string "to board to go after Rayquaza.$"
 
 Hideout_Ariana_Defeat:
 	.string "Impossible!\n"
@@ -391,7 +391,7 @@ Hideout_Archer_Defeat:
 	.string "The boss will stop you himself!$"
 
 Hideout_Archer_PostBattle:
-	.string "GIOVANNI is up these steps.\p"
+	.string "Giovanni is up these steps.\p"
 	.string "He'll be wiping the floor with you.$"
 
 Hideout_Ariana_PostBattle:
@@ -417,20 +417,20 @@ Hideout_GioIntro2:
 	.string "You may have bested all of my grunts,\n"
 	.string "but you were also of great help to us.\p"
 	.string "It was you after all that found and\n"
-	.string "summoned the great RAYQUAZA alerting\l"
+	.string "summoned the great Rayquaza alerting\l"
 	.string "us to its location.\p"
 	.string "After resolving the conflict between\n"
-	.string "KYOGRE and GROUDON, we witnessed\l"
-	.string "RAYQUAZA return to the sky.\p"
+	.string "Kyogre and Groudon, we witnessed\l"
+	.string "Rayquaza return to the sky.\p"
 	.string "We had suspected that there was a link\n"
-	.string "between RAYQUAZA and outer space which\l"
+	.string "between Rayquaza and outer space which\l"
 	.string "is why we swiped the rocket fuel from\l"
-	.string "the SPACE CENTER.\p"
+	.string "the Space Center.\p"
 	.string "Thanks to you, we've confirmed our\n"
 	.string "suspicions were correct.\p"
-	.string "Now that RAYQUAZA has returned to\n"
+	.string "Now that Rayquaza has returned to\n"
 	.string "outer space, I too must follow!\p"
-	.string "The most powerful POKéMON out of this\n"
+	.string "The most powerful Pokémon out of this\n"
 	.string "world will soon be mine!\p"
 	.string "There is just one more task that must\n"
 	.string "be completed before I board this rocket\l"
@@ -445,47 +445,47 @@ Hideout_GioExit1:
 	.string "Blast it all!\p"
 	.string "I don't care that you've beaten\n"
 	.string "me yet again!\p"
-	.string "RAYQUAZA shall be mine!$"
+	.string "Rayquaza shall be mine!$"
 
 Hideout_GioExit2:
 	.string "That sound...\p"
 	.string "I recognize it...$"
 
 Hideout_GioExit3:
-	.string "RAYQUAZA!\p"
+	.string "Rayquaza!\p"
 	.string "Is that you?!?!$"
 
 Hideout_GioExit4:
 	.string "Fwahahaha!\p"
 	.string "It would appear that my trip to\n"
 	.string "space is no longer necessary!\p"
-	.string "RAYQUAZA has come to me on its own!$"
+	.string "Rayquaza has come to me on its own!$"
 
 Hideout_GioExit5:
-	.string "RAYQUAZA!\p"
+	.string "Rayquaza!\p"
 	.string "I have in my possession the\n"
-	.string "METEORITE you need to unlock\l"
+	.string "Meteorite you need to unlock\l"
 	.string "your true power!\p"
 	.string "Join me and we shall conquer all\n"
-	.string "of HOENN!$"
+	.string "of Hoenn!$"
 
 Hideout_GioExit6:
 	.string "Fwahahaha!\p"
-	.string "Behold the true power of RAYQUAZA!\p"
-	.string "With MEGA RAYQUAZA at my command\n"
+	.string "Behold the true power of Rayquaza!\p"
+	.string "With Mega Rayquaza at my command\n"
 	.string "I will be truly unstoppable!$"
 
 Hideout_GioExit7:
-	.string "RAYQUAZA, what are you doing?!?\p"
+	.string "Rayquaza, what are you doing?!?\p"
 	.string "Why won't you listen to me?!?$"
 
 Hideout_GioExit8:
-	.string "RAYQUAZA is going berserk!\p"
+	.string "Rayquaza is going berserk!\p"
 	.string "It is even more powerful than\n"
 	.string "I could have imagined!\p"
 	.string "I can't control it!\p"
 	.string "{PLAYER}!\p"
-	.string "You will have to calm RAYQUAZA\n"
+	.string "You will have to calm Rayquaza\n"
 	.string "before our entire hideout crumbles!$"
 
 Hideout_GioExit9:
@@ -493,33 +493,33 @@ Hideout_GioExit9:
 	.string ". . .$"
 
 Hideout_GioExit10:
-	.string "There goes MEGA RAYQUAZA...\p"
+	.string "There goes Mega Rayquaza...\p"
 	.string "Even the most powerful POKéMON\n"
 	.string "was no match for you.$"
 
 Hideout_GioExit11:
 	.string "I have no use for this rocket\n"
 	.string "anymore.\p"
-	.string "There's no doubt that RAYQUAZA is\n"
+	.string "There's no doubt that Rayquaza is\n"
 	.string "long gone by now.\p"
-	.string "Just like MAXIE and ARCHIE before me,\n"
+	.string "Just like Maxie and Archie before me,\n"
 	.string "I failed to achieve my dream.$"
 
 Hideout_GioExit12:
 	.string "Despite all that we did, you still\n"
-	.string "saved us all by calming MEGA RAYQUAZA.\p"
-	.string "Starting today, TEAM ROCKET will cease\n"
-	.string "all operations in HOENN.\p"
+	.string "saved us all by calming Mega Rayquaza.\p"
+	.string "Starting today, Team Rocket will cease\n"
+	.string "all operations in Hoenn.\p"
 	.string "I must come to terms with the fact that\n"
 	.string "in the end it was my own weakness that\l"
-	.string "prevented me from capturing RAYQUAZA.\p"
+	.string "prevented me from capturing Rayquaza.\p"
 	.string "We will be abandoning this hideout now.\n"
 	.string "Do with it as you see fit.\p"
 	.string "As thanks for saving us all, please\n"
 	.string "take this as well.$"
 
 Hideout_GioExit13:
-	.string "Perhaps one day, TEAM ROCKET will cross\n"
+	.string "Perhaps one day, Team Rocket will cross\n"
 	.string "paths with you again.$"
 	
 
