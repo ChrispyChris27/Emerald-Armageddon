@@ -13056,9 +13056,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Scald"),
         .description = COMPOUND_STRING(
-            "Shoots boiling water at the\n"
-            "foe. May inflict a burn."),
-        .effect = EFFECT_HIT,
+            "Boils hotter in the sun.\n"
+            "May inflict a burn."),
+        .effect = EFFECT_HYDRO_STEAM,
         .power = 80,
         .type = TYPE_WATER,
         .accuracy = 100,
@@ -20878,10 +20878,10 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "This move's power increases\n"
             "under harsh sunlight."),
         .effect = EFFECT_HYDRO_STEAM,
-        .power = 80,
+        .power = 120,
         .type = TYPE_WATER,
         .accuracy = 100,
-        .pp = 15,
+        .pp = 10,
         .target = MOVE_TARGET_SELECTED,
         .priority = 0,
         .category = DAMAGE_CATEGORY_SPECIAL,

@@ -295,8 +295,16 @@ Route128_Text_StevenWholeWorldWillDrown:
 
 Route128_Text_StevenImGoingToSootopolis:
 	.string "{PLAYER}{KUN}…\n"
-	.string "I don't know what you intend to do,\l"
-	.string "but don't do anything reckless.\p"
-	.string "Okay.\n"
-	.string "I'm going to SOOTOPOLIS.$"
+	.string "I came here to warn you about another\l"
+	.string "rogue Pokémon nearby, but this will\l"
+	.string "have to take priority.\n"
+	.string "To be honest, it wouldn't surprise me\n"
+	.string "if the two events are related.\p"
+	.string "{PLAYER}{KUN}, I'm going to fly into\n"
+	.string "Sootopolis and see what I can find out\l"
+	.string "about this erratic weather.\p"
+	.string "If you could enter from underwater\n"
+	.string "and calm the rogue Pokémon, I'll\l"
+	.string "fill you in when you arrive.\p"
+	.string "I'm counting on you {PLAYER}{KUN}!$"
 
