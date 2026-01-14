@@ -268,7 +268,7 @@ bool32 EndOrContinueWeather(void)
         return TRUE;
     }
 
-    if (FlagGet(FLAG_SYS_WEATHER_CTRL))
+    if (FlagGet(FLAG_SYS_WEATHER_CTRL) && Random() % 100 >= 50)
         {
             if (currBattleWeather == BATTLE_WEATHER_RAIN)
             {   
