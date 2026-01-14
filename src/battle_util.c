@@ -267,6 +267,25 @@ bool32 EndOrContinueWeather(void)
         BattleScriptExecute(BattleScript_WeatherFaded);
         return TRUE;
     }
+
+    if (FlagGet(FLAG_SYS_WEATHER_CTRL))
+        {
+            if (currBattleWeather == BATTLE_WEATHER_RAIN)
+            {   
+                gBattleWeather = B_WEATHER_SUN_NORMAL;
+                currBattleWeather = BATTLE_WEATHER_SUN;
+            }
+            else if (currBattleWeather == BATTLE_WEATHER_SUN)
+            {   
+                gBattleWeather = B_WEATHER_RAIN_NORMAL;
+                currBattleWeather = BATTLE_WEATHER_RAIN;
+            }
+            gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CHANGE_ERRATIC;
+            gBattleScripting.animArg1 = sBattleWeatherInfo[currBattleWeather].animation;
+            BattleScriptExecute(BattleScript_WeatherContinues);
+            return TRUE;
+        }
+        
     else
     {
         gBattleCommunication[MULTISTRING_CHOOSER] = sBattleWeatherInfo[currBattleWeather].continuesMessage;

@@ -877,6 +877,8 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_POWERCONSTRUCTTRANSFORM]              = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} transformed into its Complete Forme!"),
     [STRINGID_ABILITYSHIELDPROTECTS]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}'s Ability is protected by the effects of its {B_LAST_ITEM}!"),
     [STRINGID_TERASTALIZATION]                      = COMPOUND_STRING("Energy surges are causing the rogue {B_OPPONENT_MON1_NAME} to change type!"),
+    [STRINGID_ERRATIC_WEATHER_START]                = COMPOUND_STRING("The erratic weather could change at any moment!"),
+    [STRINGID_ERRATIC_WEATHER_CHANGE]               = COMPOUND_STRING("The erratic weather has changed!"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1005,6 +1007,7 @@ const u16 gMoveWeatherChangeStringIds[] =
     [B_MSG_STARTED_HAIL]      = STRINGID_STARTEDHAIL,
     [B_MSG_STARTED_SNOW]      = STRINGID_STARTEDSNOW,
     [B_MSG_STARTED_FOG]       = STRINGID_FOGCREPTUP, // Unused, can use for custom moves that set fog
+    [B_MSG_STARTED_ERRATIC]   = STRINGID_ERRATIC_WEATHER_START,
 };
 
 const u16 gWeatherEndsStringIds[B_MSG_WEATHER_END_COUNT] =
@@ -1028,6 +1031,7 @@ const u16 gWeatherTurnStringIds[] =
     [B_MSG_WEATHER_TURN_SNOW]         = STRINGID_SNOWCONTINUES,
     [B_MSG_WEATHER_TURN_FOG]          = STRINGID_FOGISDEEP,
     [B_MSG_WEATHER_TURN_STRONG_WINDS] = STRINGID_STRONGWINDCONTINUES,
+    [B_MSG_CHANGE_ERRATIC]            = STRINGID_ERRATIC_WEATHER_CHANGE,
 };
 
 const u16 gSandStormHailDmgStringIds[] =
