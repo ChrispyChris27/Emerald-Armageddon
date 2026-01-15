@@ -268,7 +268,7 @@ bool32 EndOrContinueWeather(void)
         return TRUE;
     }
 
-    if (FlagGet(FLAG_SYS_WEATHER_CTRL) && Random() % 100 >= 50)
+    if (FlagGet(FLAG_SYS_WEATHER_CTRL) && GetSavedWeather() == WEATHER_ABNORMAL && Random() % 100 >= 50)
         {
             if (currBattleWeather == BATTLE_WEATHER_RAIN)
             {   
@@ -3942,8 +3942,16 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
         }
         if (effect)
         {
+            if (FlagGet(FLAG_SYS_WEATHER_CTRL) && GetSavedWeather() == WEATHER_ABNORMAL)
+            {
+                gBattleCommunication[MULTISTRING_CHOOSER] = GetCurrentWeather();
+                BattleScriptPushCursorAndCallback(BattleScript_ErraticWeatherStarts);
+            }
+            else
+            {
             gBattleCommunication[MULTISTRING_CHOOSER] = GetCurrentWeather();
             BattleScriptPushCursorAndCallback(BattleScript_OverworldWeatherStarts);
+            }
         }
         break;
     }
