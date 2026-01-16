@@ -4,6 +4,7 @@ Route123_MapScripts::
 
 Route123_OnTransition:
 	special SetRoute123Weather
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	end
 
 Route123_EventScript_GigaDrainGirl::

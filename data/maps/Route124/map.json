@@ -206,7 +206,89 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 20,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "11",
+      "script": "NULL"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",

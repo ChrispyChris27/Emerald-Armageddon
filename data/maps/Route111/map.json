@@ -654,9 +654,10 @@
       "flag": "FLAG_MINTS_4"
     },
     {
+      "local_id": "LOCALID_ROGUE_SANDACONDA",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDACONDA)",
       "x": 29,
-      "y": 80,
+      "y": 83,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -1010,6 +1011,96 @@
       "var": "TRIGGER_RUN_IMMEDIATELY",
       "var_value": "0",
       "script": "Route111_EventScript_SandstormTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 24,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 26,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 27,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 29,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "6",
+      "script": "NULL"
     }
   ],
   "bg_events": [

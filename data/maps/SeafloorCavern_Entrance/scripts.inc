@@ -67,10 +67,9 @@ SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
 	.string "a trillion years!\p"
 	.string "You're a perfect fit for the likes of\n"
 	.string "TEAM MAGMA!\p"
-	.string "Speaking of TEAM MAGMA, I hear they\n"
-	.string "were spotted near MOSSDEEP.\p"
-	.string "That bunch of goons, they sure don't\n"
-	.string "look good near the sea!$"
+	.string "Speaking of TEAM MAGMA, I hear they've\n"
+	.string "disbanded after Groudon ran off!\p"
+	.string "What a bunch of losers!$"
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
 	.string "A punk like you, do you really think\n"
@@ -79,8 +78,7 @@ SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
 	.string "a trillion years!\p"
 	.string "You're a perfect fit for the likes of\n"
 	.string "TEAM MAGMA!\p"
-	.string "Speaking of TEAM MAGMA, I hear they\n"
-	.string "were spotted near MOSSDEEP.\p"
-	.string "That bunch of goons, they sure don't\n"
-	.string "look good near the sea!$"
+	.string "Speaking of TEAM MAGMA, I hear they've\n"
+	.string "disbanded after Groudon ran off!\p"
+	.string "What a bunch of losers!$"
 

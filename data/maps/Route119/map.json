@@ -640,9 +640,9 @@
       "flag": "FLAG_MAGIKARP_WF"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(TORNADUS_INCARNATE)",
-      "x": 4,
-      "y": 81,
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KILOWATTREL)",
+      "x": 12,
+      "y": 84,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -650,7 +650,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "FLAG_TOTEM_TORNADUS"
+      "flag": "FLAG_TOTEM_KILOWATTREL"
     }
   ],
   "warp_events": [
@@ -687,6 +687,24 @@
       "var": "VAR_ROUTE119_STATE",
       "var_value": "0",
       "script": "Route119_EventScript_RivalTrigger2"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 84,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "8",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 85,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "8",
+      "script": "NULL"
     }
   ],
   "bg_events": [

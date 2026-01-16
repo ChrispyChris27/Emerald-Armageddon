@@ -438,7 +438,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGNEZONE)",
       "x": 35,
-      "y": 25,
+      "y": 26,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -450,8 +450,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ABSOL_MEGA)",
-      "x": 4,
-      "y": 62,
+      "x": 8,
+      "y": 69,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -560,6 +560,87 @@
       "var": "VAR_REGISTER_BIRCH_STATE",
       "var_value": "0",
       "script": "Route110_EventScript_BirchScene4"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 71,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 70,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 69,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 68,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 67,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "1",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "7",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "7",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 27,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "7",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 28,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "7",
+      "script": "NULL"
     }
   ],
   "bg_events": [
