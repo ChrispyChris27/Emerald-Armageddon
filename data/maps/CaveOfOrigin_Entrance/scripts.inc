@@ -85,24 +85,6 @@ RoaringMoon_Movement1:
 	walk_fast_up
 	step_end
 
-Sigilyph_Movement2:
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_up
-	walk_fast_up
-	walk_fast_left
-	walk_fast_left
-	walk_fast_down
-	walk_fast_down
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
-	step_end
-
 RoaringMoon_Enter1::
 	lockall
 	playmoncry SPECIES_SIGILYPH, CRY_MODE_ENCOUNTER

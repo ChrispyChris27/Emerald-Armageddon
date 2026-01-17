@@ -145,9 +145,9 @@ NewMap1_EventScript_Giovanni::
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
 	setvar VAR_ROCKET_HIDEOUT_STATE, 3
-	settotemboost B_POSITION_OPPONENT_LEFT, 1, 1, 1, 1, 1
+	settotemboost B_POSITION_OPPONENT_LEFT, 2, 1, 1, 2, 1
 	setwildbattle SPECIES_RAYQUAZA_MEGA, 90, ITEM_METEORITE
-	special BattleSetup_StartLegendaryBattle
+	special BattleSetup_StartRogueWildBattle
 	waitstate
 	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL
 	waitmoncry
@@ -217,8 +217,9 @@ RayquazaBattle::
 	setflag FLAG_SMART_WILD
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 2, 1, 1, 2, 1
 	setwildbattle SPECIES_RAYQUAZA_MEGA, 90, ITEM_METEORITE
-	special BattleSetup_StartLegendaryBattle
+	special BattleSetup_StartRogueWildBattle
 	waitstate
 	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL
 	waitmoncry

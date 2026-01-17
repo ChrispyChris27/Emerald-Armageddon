@@ -19782,7 +19782,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "If the user's Terastallized,\n"
             "it hits with its Tera type."),
         .effect = EFFECT_TERA_BLAST,
-        .power = 80,
+        .power = 100,
         .type = TYPE_NORMAL,
         .accuracy = 100,
         .pp = 10,
