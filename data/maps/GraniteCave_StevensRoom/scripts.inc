@@ -7,8 +7,6 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	msgbox GraniteCave_StevensRoom_Text_ImStevenLetterForMe, MSGBOX_DEFAULT
 	setvar VAR_0x8004, ITEM_LETTER
 	call Common_EventScript_PlayerHandedOverTheItem
-	setflag FLAG_MF_ROCKETS
-	setflag FLAG_115_ROXANNE
 	setflag FLAG_DELIVERED_STEVEN_LETTER
 	setvar VAR_PETALBURG_GYM_STATE, 6
 	setflag FLAG_HIDE_ROUTE_116_WANDAS_BOYFRIEND

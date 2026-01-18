@@ -772,3 +772,224 @@ Route111CantFight:
 .string "If you wish to battle us, come\n"
 .string "back when you are stronger and\l"
 .string "can put up a fight!$"
+
+
+Sandaconda_Enter1::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement1
+	goto Route111_Sandaconda_Battle
+
+Sandaconda_Enter2::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement2
+	goto Route111_Sandaconda_Battle
+
+Sandaconda_Enter3::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement3
+	goto Route111_Sandaconda_Battle
+
+Sandaconda_Enter4::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement4
+	goto Route111_Sandaconda_Battle
+
+Sandaconda_Enter5::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement5
+	goto Route111_Sandaconda_Battle
+
+Sandaconda_Enter6::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement6
+	goto Route111_Sandaconda_Battle
+
+Sandaconda_Enter7::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement7
+	goto Route111_Sandaconda_Battle
+
+Sandaconda_Enter8::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement8
+	goto Route111_Sandaconda_Battle
+
+Sandaconda_Enter9::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement9
+	goto Route111_Sandaconda_Battle
+
+Sandaconda_Enter10::
+	lockall
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_SANDACONDA, Sandaconda_Movement10
+	goto Route111_Sandaconda_Battle
+
+Route111_Sandaconda_Battle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 1, 1, 1, 0, 1
+	setwildbattle SPECIES_SANDACONDA, 50, ITEM_LEFTOVERS
+	waitse
+	playmoncry SPECIES_SANDACONDA, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartGigantamaxWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Sandaconda_Defeated
+	releaseall
+	end
+
+Sandaconda_Movement1:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+Sandaconda_Movement2:
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_up
+	step_end
+
+Sandaconda_Movement3:
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_up
+	step_end
+
+Sandaconda_Movement4:
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	step_end
+
+Sandaconda_Movement5:
+	walk_up
+	walk_up
+	walk_up
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	step_end
+
+Sandaconda_Movement6:
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_up
+	step_end
+
+Sandaconda_Movement7:
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_up
+	step_end
+
+Sandaconda_Movement8:
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	step_end
+
+Sandaconda_Movement9:
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	step_end
+
+Sandaconda_Movement10:
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	step_end
+
+Sandaconda_Defeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	clearflag FLAG_MF_ROCKETS
+	setflag FLAG_TOTEM_SANDACONDA
+	setvar VAR_ROGUE_STATE, 7 
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_ROGUE_SANDACONDA
+	fadescreen FADE_FROM_BLACK
+	pokenavcall SandacondaCalmedText
+	waitmessage
+	releaseall
+	end
+
+SandacondaCalmedText:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hi {PLAYER}{KUN}!\p"
+	.string "I see that you got the gift\n"
+	.string "I sent you.\p"
+	.string "So Sandaconda was the Pokémon\n"
+	.string "that went rogue this time, and\l"
+	.string "it Gigantamaxed too...\p"
+	.string "Where is all of this energy coming\n"
+	.string "from to allow these Pokémon to Mega\l"
+	.string "Evolve and Gigantamax on their own?\p"
+	.string "Anyways, thank you for the help\n"
+	.string "again {PLAYER}{KUN}.\p"
+	.string "I'll keep investigating the root\n"
+	.string "cause of the matter, but in the\l"
+	.string "meantime, I should let you know\l"
+	.string "that Team Rocket was recently seen\l"
+	.string "near Meteor Falls.\p"
+	.string "First Team Magma, now Team Rocket...\p"
+	.string "Are there secrets hidden in Meteor\n"
+	.string "Falls that we don't know about?\p"
+	.string "Why don't you go pay Team Rocket a\n"
+	.string "visit while I see what research I\l"
+	.string "can uncover here?\p"
+	.string "Hopefully we can meet again in\n"
+	.string "person soon.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+

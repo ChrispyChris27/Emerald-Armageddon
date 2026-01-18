@@ -11904,7 +11904,7 @@ F_TRAINER_FEMALE |
 #line 4866
             .ability = ABILITY_FLASH_FIRE,
 #line 4865
-            .lvl = 44,
+            .lvl = 43,
 #line 4868
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -11927,7 +11927,7 @@ F_TRAINER_FEMALE |
 #line 4876
             .ability = ABILITY_FLASH_FIRE,
 #line 4875
-            .lvl = 44,
+            .lvl = 43,
 #line 4878
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -11950,7 +11950,7 @@ F_TRAINER_FEMALE |
 #line 4886
             .ability = ABILITY_FLASH_FIRE,
 #line 4885
-            .lvl = 44,
+            .lvl = 43,
 #line 4888
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -11996,7 +11996,7 @@ F_TRAINER_FEMALE |
 #line 4905
             .ability = ABILITY_STURDY,
 #line 4904
-            .lvl = 44,
+            .lvl = 43,
 #line 4907
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12019,7 +12019,7 @@ F_TRAINER_FEMALE |
 #line 4915
             .ability = ABILITY_WHITE_SMOKE,
 #line 4914
-            .lvl = 44,
+            .lvl = 43,
 #line 4917
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12042,7 +12042,7 @@ F_TRAINER_FEMALE |
 #line 4925
             .ability = ABILITY_INTIMIDATE,
 #line 4924
-            .lvl = 44,
+            .lvl = 43,
 #line 4927
             .nature = NATURE_CAREFUL,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12065,7 +12065,7 @@ F_TRAINER_FEMALE |
 #line 4935
             .ability = ABILITY_VITAL_SPIRIT,
 #line 4934
-            .lvl = 44,
+            .lvl = 43,
 #line 4937
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12088,7 +12088,7 @@ F_TRAINER_FEMALE |
 #line 4945
             .ability = ABILITY_PURE_POWER,
 #line 4944
-            .lvl = 44,
+            .lvl = 43,
 #line 4947
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12134,7 +12134,7 @@ F_TRAINER_FEMALE |
 #line 4964
             .ability = ABILITY_SOLID_ROCK,
 #line 4963
-            .lvl = 44,
+            .lvl = 43,
 #line 4966
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12157,7 +12157,7 @@ F_TRAINER_FEMALE |
 #line 4974
             .ability = ABILITY_BLAZE,
 #line 4973
-            .lvl = 44,
+            .lvl = 43,
 #line 4976
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12180,7 +12180,7 @@ F_TRAINER_FEMALE |
 #line 4984
             .ability = ABILITY_CHLOROPHYLL,
 #line 4983
-            .lvl = 44,
+            .lvl = 43,
 #line 4986
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12203,7 +12203,7 @@ F_TRAINER_FEMALE |
 #line 4994
             .ability = ABILITY_GALE_WINGS,
 #line 4993
-            .lvl = 44,
+            .lvl = 43,
 #line 4996
             .nature = NATURE_NAUGHTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12226,7 +12226,7 @@ F_TRAINER_FEMALE |
 #line 5004
             .ability = ABILITY_ROCK_HEAD,
 #line 5003
-            .lvl = 44,
+            .lvl = 43,
 #line 5006
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12272,7 +12272,7 @@ F_TRAINER_FEMALE |
 #line 5023
             .ability = ABILITY_DROUGHT,
 #line 5022
-            .lvl = 44,
+            .lvl = 43,
 #line 5025
             .nature = NATURE_BRAVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12295,7 +12295,7 @@ F_TRAINER_FEMALE |
 #line 5033
             .ability = ABILITY_CHLOROPHYLL,
 #line 5032
-            .lvl = 44,
+            .lvl = 43,
 #line 5035
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12318,7 +12318,7 @@ F_TRAINER_FEMALE |
 #line 5043
             .ability = ABILITY_SHEER_FORCE,
 #line 5042
-            .lvl = 44,
+            .lvl = 43,
 #line 5045
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12364,7 +12364,7 @@ F_TRAINER_FEMALE |
 #line 5062
             .ability = ABILITY_DROUGHT,
 #line 5061
-            .lvl = 44,
+            .lvl = 43,
 #line 5064
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12387,7 +12387,7 @@ F_TRAINER_FEMALE |
 #line 5072
             .ability = ABILITY_IRON_FIST,
 #line 5071
-            .lvl = 44,
+            .lvl = 43,
 #line 5074
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12410,7 +12410,7 @@ F_TRAINER_FEMALE |
 #line 5082
             .ability = ABILITY_WEAK_ARMOR,
 #line 5081
-            .lvl = 44,
+            .lvl = 43,
 #line 5084
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12433,7 +12433,7 @@ F_TRAINER_FEMALE |
 #line 5092
             .ability = ABILITY_DEFEATIST,
 #line 5091
-            .lvl = 44,
+            .lvl = 43,
 #line 5094
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -12456,7 +12456,7 @@ F_TRAINER_FEMALE |
 #line 5102
             .ability = ABILITY_INTIMIDATE,
 #line 5101
-            .lvl = 44,
+            .lvl = 43,
 #line 5104
             .nature = NATURE_CAREFUL,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -38705,7 +38705,7 @@ F_TRAINER_FEMALE |
 #line 15893
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 15894
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .trainerBackPic = TRAINER_PIC_COURTNEY,
         .partySize = 6,
@@ -41727,7 +41727,7 @@ F_TRAINER_FEMALE |
 #line 17146
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17147
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .trainerBackPic = TRAINER_PIC_HIKER,
         .partySize = 4,
@@ -42706,7 +42706,7 @@ F_TRAINER_FEMALE |
 #line 17547
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17548
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .trainerBackPic = TRAINER_PIC_COOLTRAINER_M,
         .partySize = 3,
@@ -42723,7 +42723,7 @@ F_TRAINER_FEMALE |
 #line 17552
             .ability = ABILITY_FLASH_FIRE,
 #line 17551
-            .lvl = 44,
+            .lvl = 43,
 #line 17554
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -42746,7 +42746,7 @@ F_TRAINER_FEMALE |
 #line 17562
             .ability = ABILITY_FLASH_FIRE,
 #line 17561
-            .lvl = 44,
+            .lvl = 43,
 #line 17564
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -42769,7 +42769,7 @@ F_TRAINER_FEMALE |
 #line 17572
             .ability = ABILITY_FLASH_FIRE,
 #line 17571
-            .lvl = 44,
+            .lvl = 43,
 #line 17574
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -42894,7 +42894,7 @@ F_TRAINER_FEMALE |
 #line 17625
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17626
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .trainerBackPic = TRAINER_PIC_BATTLE_GIRL,
         .partySize = 5,
@@ -42911,7 +42911,7 @@ F_TRAINER_FEMALE |
 #line 17630
             .ability = ABILITY_FLAME_BODY,
 #line 17629
-            .lvl = 44,
+            .lvl = 43,
 #line 17632
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -42934,7 +42934,7 @@ F_TRAINER_FEMALE |
 #line 17640
             .ability = ABILITY_CHLOROPHYLL,
 #line 17639
-            .lvl = 44,
+            .lvl = 43,
 #line 17642
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -42957,7 +42957,7 @@ F_TRAINER_FEMALE |
 #line 17650
             .ability = ABILITY_HARVEST,
 #line 17649
-            .lvl = 44,
+            .lvl = 43,
 #line 17652
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -42980,7 +42980,7 @@ F_TRAINER_FEMALE |
 #line 17660
             .ability = ABILITY_STURDY,
 #line 17659
-            .lvl = 44,
+            .lvl = 43,
 #line 17662
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -43003,7 +43003,7 @@ F_TRAINER_FEMALE |
 #line 17670
             .ability = ABILITY_GUTS,
 #line 17669
-            .lvl = 44,
+            .lvl = 43,
 #line 17672
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
@@ -48329,7 +48329,7 @@ F_TRAINER_FEMALE |
 #line 19932
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 19933
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .trainerBackPic = TRAINER_PIC_PICNICKER,
         .partySize = 2,
@@ -48492,7 +48492,7 @@ F_TRAINER_FEMALE |
 #line 20000
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 20001
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .trainerBackPic = TRAINER_PIC_PICNICKER,
         .partySize = 2,

@@ -656,8 +656,8 @@
     {
       "local_id": "LOCALID_ROGUE_SANDACONDA",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SANDACONDA)",
-      "x": 29,
-      "y": 83,
+      "x": 26,
+      "y": 81,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -1019,7 +1019,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter5"
     },
     {
       "type": "trigger",
@@ -1028,7 +1028,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter4"
     },
     {
       "type": "trigger",
@@ -1037,7 +1037,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter3"
     },
     {
       "type": "trigger",
@@ -1046,7 +1046,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter2"
     },
     {
       "type": "trigger",
@@ -1055,7 +1055,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter1"
     },
     {
       "type": "trigger",
@@ -1064,7 +1064,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter6"
     },
     {
       "type": "trigger",
@@ -1073,7 +1073,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter7"
     },
     {
       "type": "trigger",
@@ -1082,7 +1082,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter8"
     },
     {
       "type": "trigger",
@@ -1091,7 +1091,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter9"
     },
     {
       "type": "trigger",
@@ -1100,7 +1100,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "6",
-      "script": "NULL"
+      "script": "Sandaconda_Enter10"
     }
   ],
   "bg_events": [

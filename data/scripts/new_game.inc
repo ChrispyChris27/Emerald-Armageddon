@@ -299,5 +299,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_BIG_ROOT_BOY
 	setflag FLAG_HIDEOUT_MEGA_RAY
 	setflag FLAG_HIDEOUT_RAY
+	setflag FLAG_MF_ROCKETS
+	setflag FLAG_115_ROXANNE
 	call EventScript_ResetAllBerries
 	end
