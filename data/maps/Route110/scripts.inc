@@ -760,7 +760,7 @@ Route110_MagnezoneBattle::
 	setflag FLAG_SMART_WILD
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
-	settotemboost B_POSITION_OPPONENT_LEFT, 0, 2, 2, 2, 2
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 1, 1, 1, 1
 	setwildbattle SPECIES_MAGNEZONE, 58, ITEM_WISE_GLASSES
 	waitse
 	playmoncry SPECIES_MAGNEZONE, CRY_MODE_ENCOUNTER

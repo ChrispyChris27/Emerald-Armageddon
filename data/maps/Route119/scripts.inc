@@ -638,3 +638,100 @@ Route119_Received_Mints:
 	.string "drop in defenses won't even matter.\p"
 	.string "I look forward to sharing more mints\n"
 	.string "with you in the future!$"
+
+Route119_KilowattrelBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 1, 1, 1, 1
+	setwildbattle SPECIES_KILOWATTREL, 61, ITEM_RINDO_BERRY
+	waitse
+	playmoncry SPECIES_KILOWATTREL, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartTeraWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Kilowattrel_Defeated
+	releaseall
+	end
+
+Kilowattrel_Defeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setflag FLAG_TOTEM_KILOWATTREL
+	setvar VAR_ROGUE_STATE, 9
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_ROGUE_KILO
+	fadescreen FADE_FROM_BLACK
+	pokenavcall KilowattrelCalmedText
+	waitmessage
+	releaseall
+	end
+
+Kilowattrel_Enters1::
+	lockall
+	clearflag FLAG_TOTEM_KILOWATTREL
+	addobject LOCALID_ROGUE_KILO
+	playmoncry SPECIES_KILOWATTREL, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_KILO, Kilowattrel_Movement1
+	goto Route119_KilowattrelBattle
+
+Kilowattrel_Enters2::
+	lockall
+	clearflag FLAG_TOTEM_KILOWATTREL
+	addobject LOCALID_ROGUE_KILO
+	playmoncry SPECIES_KILOWATTREL, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_KILO, Kilowattrel_Movement2
+	goto Route119_KilowattrelBattle
+
+Kilowattrel_Movement1:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+Kilowattrel_Movement2:
+	walk_faster_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+KilowattrelCalmedText:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hey, {PLAYER}{KUN}!\p"
+	.string "Kilowattrel seems to have been\n"
+	.string "attracted by the thunderstorm.\p"
+	.string "Now that you've calmed it and\n"
+	.string "dispersed that energy it should\l"
+	.string "go back to normal.\p"
+	.string "Still, it seems that in addition\n"
+	.string "to getting more powerful, the \l"
+	.string "rogue pokémon are getting\l"
+	.string "smarter too.\p"
+	.string "Kilowattrel knew that the rain\n"
+	.string "would enhance its powers.\p"
+	.string "If this keeps up, who knows what we\n"
+	.string "may be dealing with soon.\p"
+	.string "Anyways, I've returned to my home\n"
+	.string "in Mossdeep which means my research\l"
+	.string "can continue once again.\p"
+	.string "I'll be in touch if I discover\n"
+	.string "anything new.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"

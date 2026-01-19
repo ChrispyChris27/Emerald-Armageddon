@@ -303,5 +303,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_115_ROXANNE
 	setflag FLAG_118_GRUNTS
 	setflag FLAG_TOTEM_MAGNEZONE
+	setflag FLAG_TOTEM_KILOWATTREL
 	call EventScript_ResetAllBerries
 	end

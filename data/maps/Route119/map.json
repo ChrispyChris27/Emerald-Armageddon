@@ -640,6 +640,7 @@
       "flag": "FLAG_MAGIKARP_WF"
     },
     {
+      "local_id": "LOCALID_ROGUE_KILO",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(KILOWATTREL)",
       "x": 12,
       "y": 84,
@@ -695,7 +696,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "8",
-      "script": "NULL"
+      "script": "Kilowattrel_Enters1"
     },
     {
       "type": "trigger",
@@ -704,7 +705,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "8",
-      "script": "NULL"
+      "script": "Kilowattrel_Enters2"
     }
   ],
   "bg_events": [
