@@ -436,6 +436,7 @@
       "flag": "0"
     },
     {
+      "local_id": "LOCALID_ROGUE_ZONE",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MAGNEZONE)",
       "x": 35,
       "y": 26,
@@ -608,39 +609,48 @@
     },
     {
       "type": "trigger",
-      "x": 33,
+      "x": 32,
       "y": 25,
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "7",
-      "script": "NULL"
+      "script": "MagnezoneEnters2"
     },
     {
       "type": "trigger",
-      "x": 33,
+      "x": 32,
       "y": 26,
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "7",
-      "script": "NULL"
+      "script": "MagnezoneEnters1"
     },
     {
       "type": "trigger",
-      "x": 33,
+      "x": 32,
       "y": 27,
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "7",
-      "script": "NULL"
+      "script": "MagnezoneEnters3"
     },
     {
       "type": "trigger",
-      "x": 33,
+      "x": 32,
       "y": 28,
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "7",
-      "script": "NULL"
+      "script": "MagnezoneEnters4"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 29,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "7",
+      "script": "MagnezoneEnters5"
     }
   ],
   "bg_events": [

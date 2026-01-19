@@ -756,3 +756,155 @@ Route110_Received_Mints:
 	.string "I look forward to sharing more mints\n"
 	.string "with you in the future!$"
 
+Route110_MagnezoneBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 2, 2, 2, 2
+	setwildbattle SPECIES_MAGNEZONE, 58, ITEM_WISE_GLASSES
+	waitse
+	playmoncry SPECIES_MAGNEZONE, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartTeraWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Magnezone_Defeated
+	releaseall
+	end
+
+Magnezone_Defeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setflag FLAG_TOTEM_MAGNEZONE
+	setvar VAR_ROGUE_STATE, 8 
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_ROGUE_ZONE
+	fadescreen FADE_FROM_BLACK
+	pokenavcall MagnezoneCalmedText
+	waitmessage
+	releaseall
+	end
+
+MagnezoneEnters1::
+	goto_if_set FLAG_TOTEM_MAGNEZONE, RogueZoneExit
+	lockall
+	playmoncry SPECIES_MAGNEZONE, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ZONE, Magnezone_Movement1
+	goto Route110_MagnezoneBattle
+
+MagnezoneEnters2::
+	goto_if_set FLAG_TOTEM_MAGNEZONE, RogueZoneExit
+	lockall
+	playmoncry SPECIES_MAGNEZONE, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ZONE, Magnezone_Movement2
+	goto Route110_MagnezoneBattle
+
+MagnezoneEnters3::
+	goto_if_set FLAG_TOTEM_MAGNEZONE, RogueZoneExit
+	lockall
+	playmoncry SPECIES_MAGNEZONE, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ZONE, Magnezone_Movement3
+	goto Route110_MagnezoneBattle
+
+MagnezoneEnters4::
+	goto_if_set FLAG_TOTEM_MAGNEZONE, RogueZoneExit
+	lockall
+	playmoncry SPECIES_MAGNEZONE, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ZONE, Magnezone_Movement4
+	goto Route110_MagnezoneBattle
+
+MagnezoneEnters5::
+	goto_if_set FLAG_TOTEM_MAGNEZONE, RogueZoneExit
+	lockall
+	playmoncry SPECIES_MAGNEZONE, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ZONE, Magnezone_Movement5
+	goto Route110_MagnezoneBattle
+
+RogueZoneExit::
+	releaseall
+	end
+
+Magnezone_Movement1:
+face_down
+delay_16
+face_up
+delay_16
+face_right
+delay_16
+walk_left
+walk_left
+step_end
+
+Magnezone_Movement2:
+face_down
+delay_16
+face_up
+delay_16
+face_right
+delay_16
+walk_up
+walk_left
+walk_left
+step_end
+
+Magnezone_Movement3:
+face_down
+delay_16
+face_up
+delay_16
+face_right
+delay_16
+walk_left
+walk_left
+walk_down
+face_left
+step_end
+
+Magnezone_Movement4:
+face_down
+delay_16
+face_up
+delay_16
+face_right
+delay_16
+walk_left
+walk_left
+walk_down
+walk_down
+face_left
+step_end
+
+Magnezone_Movement5:
+face_down
+delay_16
+face_up
+delay_16
+face_right
+delay_16
+walk_left
+walk_left
+walk_down
+walk_down
+step_end
+
+MagnezoneCalmedText:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hi, {PLAYER}{KUN}!\p"
+	.string "I saw a sudden spike in energy\n"
+	.string "near New Mauville but assumed it\l"
+	.string "was just the generator.\p"
+	.string "Now that you've calmed Magnezone\n"
+	.string "down, the energy surges are gone.\p"
+	.string "I've got something to give you once\n"
+	.string "you've rid New Mauville of Team Magma.\p"
+	.string "Once you've taken care of them I'll\n"
+	.string "meet you east of Mauville City.\p"
+	.string "Take care {PLAYER}{KUN}!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+

@@ -301,5 +301,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDEOUT_RAY
 	setflag FLAG_MF_ROCKETS
 	setflag FLAG_115_ROXANNE
+	setflag FLAG_118_GRUNTS
+	setflag FLAG_TOTEM_MAGNEZONE
 	call EventScript_ResetAllBerries
 	end

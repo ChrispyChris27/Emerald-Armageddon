@@ -18,6 +18,8 @@ Route111_WinstrateFamilysHouse_EventScript_Victoria::
 	giveitem ITEM_HM03
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_RECEIVED_HM_SURF
+	setflag FLAG_HIDE_MAUVILLE_GYM_WATTSON
+	clearflag FLAG_HIDE_MAUVILLE_CITY_WATTSON
 	goto Route111_WinstrateFamilysHouse_EventScript_FaceOriginalDirection
 	end
 

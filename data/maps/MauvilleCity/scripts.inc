@@ -442,6 +442,8 @@ MauvilleCity_EventScript_Wattson::
 	giveitem ITEM_BASEMENT_KEY
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	setflag FLAG_GOT_BASEMENT_KEY_FROM_WATTSON
+	clearflag FLAG_TOTEM_MAGNEZONE
+	clearflag FLAG_118_GRUNTS
 	msgbox MauvilleCity_Text_WattsonWontBeChallenge, MSGBOX_DEFAULT
 	release
 	end
@@ -775,46 +777,50 @@ MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "I'll be cheering for you!$"
 
 MauvilleCity_Text_WattsonNeedFavorTakeKey:
-	.string "WATTSON: Oh, {PLAYER}{KUN}!\n"
+	.string "Wattson: Oh, {PLAYER}{KUN}!\n"
 	.string "You look like you have a lot of zip!\l"
 	.string "That's a good thing, wahahahaha!\p"
-	.string "Fine! I've decided!\n"
 	.string "I need a favor, {PLAYER}{KUN}!\p"
-	.string "MAUVILLE CITY has an underground\n"
-	.string "sector called NEW MAUVILLE.\p"
-	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
-	.string "switch off the GENERATOR.\p"
-	.string "The GENERATOR has been running a bit\n"
+	.string "Mauville City has an underground\n"
+	.string "sector called New Mauville.\p"
+	.string "{PLAYER}{KUN}, I'd like you to go there\n"
+	.string "and switch off the generator.\p"
+	.string "The generator has been running a bit\n"
 	.string "haywire. It's getting unsafe.\p"
-	.string "I'm worried that TEAM MAGMA may have\n"
-	.string "succeeded in their plans to take\l"
-	.string "control of NEW MAUVILLE.\p"
-	.string "Here, this is the KEY to get into\n"
-	.string "NEW MAUVILLE.$"
+	.string "It seems to have attracted the\n"
+	.string "attention of both Team Magma\l"
+	.string "and a rogue pokémon.\p"
+	.string "I'm worried that Team Magma may be\n"
+	.string "forcing the generator to exceed its\l"
+	.string "suggested power limits.\p"
+	.string "If they are and the generator blows, it\n"
+	.string "would be catastrophic for all of us!\p"
+	.string "Here, this is the key to get into\n"
+	.string "New Mauville.$"
 
 MauvilleCity_Text_WattsonWontBeChallenge:
-	.string "WATTSON: Don't you worry about it.\n"
+	.string "Wattson: Don't you worry about it.\n"
 	.string "It won't be a challenge to you.\p"
-	.string "The entrance to NEW MAUVILLE is just\n"
-	.string "a short SURF away from ROUTE 110.\p"
-	.string "Once you've evicted TEAM MAGMA and shut\n"
+	.string "The entrance to New Mauville is just\n"
+	.string "a short SURF away from Route 110.\p"
+	.string "Once you've evicted Team Magma and shut\n"
 	.string "off the generator, I promise to reward\l"
 	.string "you for your troubles!\p"
 	.string "That's it, then, you have my trust!\n"
 	.string "Wahahahaha!$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
-	.string "WATTSON: Wahahahaha!\p"
+	.string "Wattson: Wahahahaha!\p"
 	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
 	.string "the right choice asking you!\p"
-	.string "The generator is disabled and TEAM\n"
-	.string "MAGMA has flown the coop!\p"
+	.string "The generator is disabled and Team\n"
+	.string "Magma has flown the coop!\p"
 	.string "This is my thanks--a TM containing\n"
-	.string "THUNDERBOLT!\p"
+	.string "Thunderbolt!\p"
 	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:
-	.string "WATTSON: Wahahahaha!\p"
+	.string "Wattson: Wahahahaha!\p"
 	.string "It pleases me to no end to see\n"
 	.string "the young step up and take charge!$"
 

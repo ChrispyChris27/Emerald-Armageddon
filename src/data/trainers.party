@@ -24089,6 +24089,30 @@ Level: 35
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
+=== TRAINER_MAUVILLE_GRUNT_1 ===
+Name: Grunt
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Battle Type: Singles
+AI: Check Bad Move
+
+Skitty
+Level: 33
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Nature: Hardy
+
+Mightyena
+Level: 33
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Nature: Hardy
+
+Linoone
+Level: 33
+IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
+Nature: Hardy
+
 === TRAINER_MAUVILLE_GRUNT_2 ===
 Name: Grunt
 Class: Team Magma
