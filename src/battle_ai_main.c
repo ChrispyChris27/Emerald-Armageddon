@@ -5122,7 +5122,7 @@ static s32 AI_CalcMoveEffectScore(u32 battlerAtk, u32 battlerDef, u32 move, stru
         break;
     case EFFECT_MAGIC_COAT:
         if (IsBattleMoveStatus(predictedMove) && GetBattlerMoveTargetType(battlerDef, predictedMove) & (MOVE_TARGET_SELECTED | MOVE_TARGET_OPPONENTS_FIELD | MOVE_TARGET_BOTH))
-            ADJUST_SCORE(GOOD_EFFECT);
+            ADJUST_SCORE(SLOW_KILL);
         break;
     case EFFECT_RECYCLE:
         if (GetBattlerPartyState(battlerAtk)->usedHeldItem != ITEM_NONE)

@@ -351,8 +351,10 @@ Route120_EventScript_Callie::
 	end
 
 Route120_Text_StevenGreeting:
-	.string "STEVEN: Hm? {PLAYER}{KUN}, hi.\n"
-	.string "It's been a while.\p"
+	.string "Steven: Hi {PLAYER}{KUN}, perfect.\p"
+	.string "I know we just talked but I realized\n"
+	.string "in my haste that there was something\l"
+	.string "else I should give you.\p"
 	.string "There's something here that you can't\n"
 	.string "see, right?\p"
 	.string "Now, if I were to use this device on\n"
@@ -364,49 +366,55 @@ Route120_Text_StevenGreeting:
 	.string "battle?$"
 
 Route120_Text_StevenIllWaitHere:
-	.string "STEVEN: No?\p"
+	.string "Steven: No?\p"
 	.string "I'll wait here, so you can get ready.$"
 
 Route120_Text_StevenReadyForBattle:
-	.string "STEVEN: {PLAYER}{KUN}, are your POKéMON\n"
+	.string "Steven: {PLAYER}{KUN}, are your POKéMON\n"
 	.string "ready for battle?$"
 
 Route120_Text_StevenShowMeYourPower:
-	.string "STEVEN: {PLAYER}{KUN}, show me your true\n"
+	.string "Steven: {PLAYER}{KUN}, show me your true\n"
 	.string "power as a TRAINER!$"
 
 Route120_Text_StevenUsedDevonScope:
-	.string "STEVEN used the DEVON SCOPE.\p"
+	.string "Steven used the DEVON SCOPE.\p"
 	.string "An invisible POKéMON became completely\n"
 	.string "visible!\p"
 	.string "The startled POKéMON attacked!$"
 
 Route120_Text_StevenGiveDevonScope:
-	.string "STEVEN: I see…\n"
+	.string "Steven: I know you've been calming\n"
+	.string "a lot of pokémon but I haven't seen\l"
+	.string "you battle in person since the\l"
+	.string "Sableye you fought back in Dewford.\p"
 	.string "Your battle style is intriguing.\p"
-	.string "Your POKéMON have obviously grown\n"
-	.string "since I first met you in DEWFORD.\p"
-	.string "I'd like you to have this\n"
-	.string "DEVON SCOPE.\p"
+	.string "Your pokémon have obviously grown\n"
+	.string "since then.\p"
+	.string "I'd like you to take this\n"
+	.string "Devon Scope.\p"
 	.string "Who knows, there may be other\n"
-	.string "concealed POKéMON.$"
+	.string "concealed pokémon.$"
 
 Route120_Text_StevenGoodbye:
-	.string "STEVEN: Unfortunately, the DEVON\n"
-	.string "SCOPE doesn't seem to have any\l"
-	.string "effect on these PSYDUCK blocking\l"
+	.string "Steven: Unfortunately, the Devon\n"
+	.string "Scope doesn't seem to have any\l"
+	.string "effect on these Psyduck blocking\l"
 	.string "the edge of the bridge.\p"
-	.string "I've heard that PSYDUCK sometimes\n"
+	.string "I've heard that Psyduck sometimes\n"
 	.string "get headaches in areas of dense fog\l"
 	.string "like this.\p"
-	.string "I've contacted a TRAINER from the\n"
-	.string "SINNOH region where this is more\l"
+	.string "I've contacted a trainer from the\n"
+	.string "Sinnoh region where this is more\l"
 	.string "common to provide some assistance.\p"
 	.string "She should be here soon, but in\n"
 	.string "the meantime, why not take on the\l"
-	.string "FORTREE GYM?\p"
-	.string "I think you'll do great.\p"
-	.string "Well, let's meet again somewhere.$"
+	.string "Fortree Gym?\p"
+	.string "On the brightside, I don't think\n"
+	.string "these Psyduck will go rogue.\p"
+	.string "Seems they've just got a headache.\p"
+	.string "I'll be returning to Mossdeep now.\p"
+	.string "I'm sure we'll meet again soon.$"
 
 Kecleon_Text_SomethingUnseeable:
 	.string "Something unseeable is in the way.$"
@@ -442,11 +450,11 @@ Route120_Text_Cynthia1:
 
 Route120_Text_Cynthia2:
 	.string "Ahh, you must be {PLAYER}{KUN},\n"
-	.string "STEVEN told me about you.\p"
+	.string "Steven told me about you.\p"
 	.string "My name is CYNTHIA.\p"
 	.string "I flew here from the SINNOH region\n"
 	.string "where I reside as CHAMPION.\p"
-	.string "STEVEN had mentioned to me that there\n"
+	.string "Steven had mentioned to me that there\n"
 	.string "were some PSYDUCK blocking a bridge,\l"
 	.string "and asked for my assistance in moving\l"
 	.string "them along.\p"
