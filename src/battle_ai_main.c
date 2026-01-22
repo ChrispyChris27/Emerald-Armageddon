@@ -3123,6 +3123,20 @@ static s32 AI_DoubleBattle(u32 battlerAtk, u32 battlerDef, u32 move, s32 score)
         case EFFECT_AFTER_YOU:
             if (effect == EFFECT_TRICK_ROOM && !(gFieldStatuses & STATUS_FIELD_TRICK_ROOM) && ShouldSetFieldStatus(battlerAtk, STATUS_FIELD_TRICK_ROOM))
                 ADJUST_SCORE(DECENT_EFFECT);
+            if (effect == EFFECT_POWER_BASED_ON_USER_HP)
+            {
+                u32 speed = aiData->speedStats[battlerAtk];
+                u32 partnerSpeed = aiData->speedStats[BATTLE_PARTNER(battlerAtk)];
+                u32 foe1Speed = aiData->speedStats[LEFT_FOE(battlerAtk)];
+                u32 foe2Speed = aiData->speedStats[RIGHT_FOE(battlerAtk)];
+
+                if ((speed < foe1Speed ) && (speed < foe2Speed))
+                ADJUST_SCORE(-10);
+                if ((partnerSpeed > foe1Speed) && (partnerSpeed < foe2Speed))
+                ADJUST_SCORE(-10);
+                if ((speed > foe1Speed) && (speed < foe2Speed) && (partnerSpeed < foe1Speed ) && (partnerSpeed < foe2Speed))
+                ADJUST_SCORE(+6);
+            }
             break;
         case EFFECT_TRICK_ROOM:
             if (effect == EFFECT_AFTER_YOU && !(gFieldStatuses & STATUS_FIELD_TRICK_ROOM) && ShouldSetFieldStatus(battlerAtk, STATUS_FIELD_TRICK_ROOM))
