@@ -1224,3 +1224,7 @@ EventScript_VsSeekerChargingDone::
 	.include "data/maps/ContinentalCavernIcePuzzleRoom/scripts.inc"
 	.include "data/scripts/battle_frontier.inc"
 	.include "data/scripts/apricorn_tree.inc"
+
+Common_EventScript_SetSnow:
+	setweather WEATHER_SNOW
+	return

@@ -42,10 +42,10 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 34,
-      "y": 25,
+      "x": 29,
+      "y": 23,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 5,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -55,36 +55,36 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 61,
-      "y": 74,
+      "x": 24,
+      "y": 27,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
       "movement_range_x": 5,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "7",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route124_EventScript_Roland",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 49,
-      "y": 45,
+      "x": 28,
+      "y": 28,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_ROTATE_CLOCKWISE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
+      "trainer_sight_or_berry_tree_id": "5",
       "script": "Route124_EventScript_Jenny",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 7,
-      "y": 23,
+      "x": 9,
+      "y": 22,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 6,
       "movement_range_y": 8,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -94,14 +94,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 58,
-      "y": 58,
+      "x": 17,
+      "y": 34,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_WALK_RIGHT_AND_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 7,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "2",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route124_EventScript_Chad",
       "flag": "0"
     },
@@ -146,10 +146,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 18,
-      "y": 44,
+      "x": 36,
+      "y": 37,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -159,10 +159,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_TUBER_M_SWIMMING",
-      "x": 17,
-      "y": 44,
+      "x": 36,
+      "y": 34,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -172,10 +172,10 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 7,
-      "y": 29,
+      "x": 9,
+      "y": 28,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
@@ -185,14 +185,14 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 69,
-      "y": 74,
+      "x": 19,
+      "y": 27,
       "elevation": 1,
-      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_LEFT",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "7",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route124_EventScript_Isabella",
       "flag": "0"
     }
@@ -214,7 +214,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "11",
-      "script": "NULL"
+      "script": "Route124_RoguePokenavCall"
     },
     {
       "type": "trigger",
@@ -223,7 +223,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "11",
-      "script": "NULL"
+      "script": "Route124_RoguePokenavCall"
     },
     {
       "type": "trigger",
@@ -232,7 +232,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "11",
-      "script": "NULL"
+      "script": "Route124_RoguePokenavCall"
     },
     {
       "type": "trigger",
@@ -241,7 +241,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "11",
-      "script": "NULL"
+      "script": "Route124_RoguePokenavCall"
     },
     {
       "type": "trigger",
@@ -250,7 +250,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "11",
-      "script": "NULL"
+      "script": "Route124_RoguePokenavCall"
     },
     {
       "type": "trigger",
@@ -259,7 +259,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "11",
-      "script": "NULL"
+      "script": "Route124_RoguePokenavCall"
     },
     {
       "type": "trigger",
@@ -268,7 +268,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "11",
-      "script": "NULL"
+      "script": "Route124_RoguePokenavCall"
     },
     {
       "type": "trigger",
@@ -277,7 +277,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "11",
-      "script": "NULL"
+      "script": "Route124_RoguePokenavCall"
     },
     {
       "type": "trigger",
@@ -286,7 +286,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "11",
-      "script": "NULL"
+      "script": "Route124_RoguePokenavCall"
     }
   ],
   "bg_events": [

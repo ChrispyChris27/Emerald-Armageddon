@@ -169,11 +169,11 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
 
     if(species == SPECIES_CRYOGONAL)
     {
-        u16 move1 = MOVE_ICE_BEAM;
+        u16 move1 = MOVE_BLIZZARD;
         u16 move2 = MOVE_TERA_BLAST;
         u16 move3 = MOVE_EARTH_POWER;
         u16 move4 = MOVE_RECOVER;
-        u8 nature = NATURE_TIMID;
+        u8 nature = NATURE_MODEST;
 
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);

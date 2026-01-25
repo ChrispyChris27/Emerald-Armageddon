@@ -8,6 +8,7 @@ MossdeepCity_OnTransition:
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_3
 	clearflag FLAG_MOSSDEEP_GYM_SWITCH_4
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+	call_if_unset FLAG_TOTEM_CRYOGONAL, Common_EventScript_SetSnow
 	end
 
 MossdeepCity_EventScript_PokefanF::
@@ -462,4 +463,14 @@ Mossdeep_Received_Mints:
 	.string "your lowered defenses.\p"
 	.string "I look forward to sharing more mints\n"
 	.string "with you in the future!$"
+
+Mossdeep_Spheals::
+	playmoncry SPECIES_SPHEAL, CRY_MODE_NORMAL
+	msgbox Mossdeep_Spheal_Text
+	release
+	end
+
+Mossdeep_Spheal_Text:
+	.string "Spheal is having too much fun in\n"
+	.string "the snow to move out of the way now.$"
 

@@ -3,6 +3,7 @@ ShoalCave_LowTideEntranceRoom_MapScripts::
 	.byte 0
 
 ShoalCave_LowTideEntranceRoom_OnTransition:
+	call_if_unset FLAG_TOTEM_CRYOGONAL, Common_EventScript_SetSnow
 	goto_if_unset FLAG_TOTEM_CRYOGONAL, ShoalCave_LowTideEntranceRoom_EventScript_SetLowTide
 	special UpdateShoalTideFlag
 	goto_if_set FLAG_SYS_SHOAL_TIDE, ShoalCave_LowTideEntranceRoom_EventScript_SetHighTide

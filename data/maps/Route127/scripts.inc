@@ -6,6 +6,7 @@ Route127_MapScripts::
 
 Route127_OnTransition:
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+	call_if_unset FLAG_TOTEM_CRYOGONAL, Common_EventScript_SetSnow
 	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_127_NORTH, AbnormalWeather_StartKyogreWeather
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_127_SOUTH, AbnormalWeather_StartKyogreWeather
@@ -104,4 +105,13 @@ Route127_Received_Mints:
 	.string "I look forward to sharing more mints\n"
 	.string "with you in the future!$"
 
+Route127_Wailord::
+	playmoncry SPECIES_WAILORD, CRY_MODE_NORMAL
+	msgbox Route127_Wailord_Text, MSGBOX_DEFAULT
+	release
+	end
+
+Route127_Wailord_Text:
+	.string "Wailord appears to be stuck\n"
+	.string "between a rock and a hard place.$"
 

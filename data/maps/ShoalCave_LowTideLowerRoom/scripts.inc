@@ -1,5 +1,6 @@
 ShoalCave_LowTideLowerRoom_MapScripts::
 	map_script MAP_SCRIPT_ON_LOAD, ShoalCave_LowTideLowerRoom_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, ShoalCave_LowTideLowerRoom_OnTransition
 	.byte 0
 
 ShoalCave_LowTideLowerRoom_OnLoad:
@@ -55,4 +56,8 @@ ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus:
 
 ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus:
 	.string "Everything starts with focus!$"
+
+ShoalCave_LowTideLowerRoom_OnTransition:
+	call_if_unset FLAG_TOTEM_CRYOGONAL, Common_EventScript_SetSnow
+	end
 

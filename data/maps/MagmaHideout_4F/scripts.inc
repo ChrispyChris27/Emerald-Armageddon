@@ -257,3 +257,26 @@ MagmaHideout_4F_Text_MaxieImGoingAfterGroudon:
 	.string "I am going after GROUDON, so this\n"
 	.string "is where we part!\p"
 	.string "Consider this a bribe not to follow me!$"
+
+MagmaHideout_4F_EventScript_RealTabitha::
+	trainerbattle_single TRAINER_TABITHA_DOUBLE, MagmaHideout_4F_Text_RealTabithaIntro, MagmaHideout_4F_Text_RealTabithaDefeat
+	msgbox MagmaHideout_4F_Text_RealTabithaPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+MagmaHideout_4F_Text_RealTabithaIntro:
+	.string "With the Red Orb, Maxie will be able\n"
+	.string "to awaken Groudon's true power!\p"
+	.string "Finally our mission will be complete!\p"
+	.string "I'm sure Maxie could handle you himself\n"
+	.string "but we're both itching for revenge.\p"
+	.string "We'll do him a favor and take you\n"
+	.string "out ourselves!$"
+
+MagmaHideout_4F_Text_RealTabithaDefeat:
+	.string "I can't believe it.\n"
+	.string "We lost again!?!$"
+
+MagmaHideout_4F_Text_RealTabithaPostBattle:
+	.string "You're too late!\p"
+	.string "Maxie has already reached Groudon!\p"
+	.string "By now it should be under his control.$"

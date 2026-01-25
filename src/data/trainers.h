@@ -1653,7 +1653,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 672
-            .species = SPECIES_OGERPON,
+            .species = SPECIES_OGERPON_WELLSPRING,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 672
             .heldItem = ITEM_WELLSPRING_MASK,

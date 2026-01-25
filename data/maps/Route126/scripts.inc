@@ -4,6 +4,7 @@ Route126_MapScripts::
 
 Route126_OnTransition:
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+	call_if_unset FLAG_TOTEM_CRYOGONAL, Common_EventScript_SetSnow
 	end
 
 Route126_EventScript_Barry::
