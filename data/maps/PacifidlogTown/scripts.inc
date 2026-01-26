@@ -5,6 +5,7 @@ PacifidlogTown_MapScripts::
 
 PacifidlogTown_OnTransition:
 	setflag FLAG_VISITED_PACIFIDLOG_TOWN
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	end
 
 PacifidlogTown_OnResume:

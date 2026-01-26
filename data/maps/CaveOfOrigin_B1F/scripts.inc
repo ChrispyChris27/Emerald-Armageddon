@@ -52,6 +52,10 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar::
 	playse SE_EXIT
 	fadescreenspeed FADE_TO_BLACK, 4
 	setflag FLAG_WALLACE_GOES_TO_SKY_PILLAR
+	clearflag FLAG_TOTEM_CHARIZARD_MEGA
+	clearflag FLAG_TOTEM_LUDICOLO
+	clearflag FLAG_TOTEM_DURALUDON
+	clearflag FLAG_TOTEM_SHIFTRY
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 3
 	removeobject LOCALID_CAVE_OF_ORIGIN_WALLACE
 	clearflag FLAG_HIDE_SKY_PILLAR_WALLACE
@@ -62,26 +66,55 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar::
 CaveOfOrigin_B1F_Text_WallaceStory:
 	.string "Ah, so you are {PLAYER}{KUN}?\n"
 	.string "I've heard tales of your exploits.\p"
-	.string "My name is WALLACE.\p"
-	.string "I was once the GYM LEADER of\n"
-	.string "SOOTOPOLIS, but something came up.\p"
-	.string "So now, I've entrusted my mentor JUAN\n"
+	.string "My name is Wallace.\p"
+	.string "I was once the gym leader of\n"
+	.string "Sootopolis, but lately I have been\l"
+	.string "more focused on researching ancient\l"
+	.string "times in Hoenn.\p"
+	.string "For now, I've entrusted my mentor JUAN\n"
 	.string "with the GYM's operation.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "GROUDON and KYOGRE, the two POKéMON\n"
+	.string "I suppose you wish to learn what I've\n"
+	.string "discovered so far.\p"
+	.string "In ancient times, it appears that most\n"
+	.string "who lived in Hoenn resided deep within\l"
+	.string "Meteor Falls in an ancient castle.\p"
+	.string "The castle was carved out of rock\n"
+	.string "formations deep within the cave system.\p"
+	.string "While we aren't yet sure why, at some\n"
+	.string "point, the castle was sealed off\l"
+	.string "from the outside world.\p"
+	.string "Presumably, those inside the castle\n"
+	.string "when it was sealed ultimately perished\l"
+	.string "within the walls meant to protect them.\p"
+	.string "One thing we can be sure of from\n"
+	.string "artifacts we have uncovered is that\l"
+	.string "the people of ancient Hoenn worshipped\l"
+	.string "many super-ancient pokémon.\p"
+	.string "Groudon and Kyogre, the two pokémon\n"
 	.string "wreaking havoc here, are considered\l"
-	.string "to be super-ancient POKéMON.\p"
+	.string "to be super-ancient pokémon.\p"
 	.string "But there aren't just two super-\n"
-	.string "ancient POKéMON.\p"
-	.string "There is one more somewhere.\p"
+	.string "ancient pokémon.\p"
+	.string "There are more somewhere.\p"
 	.string "Somewhere, there is a super-\n"
-	.string "ancient POKéMON named RAYQUAZA.\p"
-	.string "It's said that it was RAYQUAZA that\n"
+	.string "ancient pokémon named Rayquaza.\p"
+	.string "It's said that it was Rayquaza that\n"
 	.string "becalmed the two combatants in\l"
 	.string "the distant past.\p"
-	.string "But even I have no clue as to\n"
-	.string "RAYQUAZA's whereabouts…$"
+	.string "Once calmed, Groudon and Kyogre were\n"
+	.string "able to create the land and sea in the\l"
+	.string "eastern part of Hoenn we inhabit today.\p"
+	.string "A fourth pokémon, Regigigas, helped\n"
+	.string "tow the land Groudon created to where\l"
+	.string "it is today.\p"
+	.string "After all of this, Regigigas, Groudon,\n"
+	.string "and Kyogre went into deep slumbers.\p"
+	.string "Rayquaza however flew off into space.\p"
+	.string "It is said that Rayquaza returned to\n"
+	.string "Hoenn at some point, but its wherabouts\l"
+	.string "have remained unknown.$"
 
 CaveOfOrigin_B1F_Text_WhereIsRayquaza:
 	.string "WALLACE: {PLAYER}{KUN}, do you perhaps\n"

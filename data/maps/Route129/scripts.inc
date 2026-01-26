@@ -11,14 +11,10 @@ Route129_OnLoad:
 
 Route129_OnTransition:
 	call_if_eq VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_HideMapNamePopup
-	call_if_ge VAR_SOOTOPOLIS_CITY_STATE, 4, Route129_EventScript_CheckSetAbnormalWeather
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_129_WEST, AbnormalWeather_StartKyogreWeather
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_129_EAST, AbnormalWeather_StartKyogreWeather
 	end
-
-Route129_EventScript_CheckSetAbnormalWeather::
-	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
-	return
 
 Route129_OnFrame:
 	map_script_2 VAR_SHOULD_END_ABNORMAL_WEATHER, 1, AbnormalWeather_EventScript_EndEventAndCleanup_1
@@ -48,4 +44,16 @@ Route129_EventScript_Clarence::
 	trainerbattle_single TRAINER_CLARENCE, Route129_Text_ClarenceIntro, Route129_Text_ClarenceDefeat
 	msgbox Route129_Text_ClarencePostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route129_Wailord::
+	playmoncry SPECIES_WAILORD, CRY_MODE_NORMAL
+	msgbox Wailord_Stuck, MSGBOX_AUTOCLOSE
+	end
+
+Wailord_Stuck:
+	.string "Energy surges caused Wailord to\n"
+	.string "dynamax and get stuck.\p"
+	.string "Perhaps calming all of the rogue\n"
+	.string "pokémon will return Waillord to\l"
+	.string "its normal size.$"
 

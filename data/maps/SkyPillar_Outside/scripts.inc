@@ -6,15 +6,11 @@ SkyPillar_Outside_MapScripts::
 
 SkyPillar_Outside_OnTransition:
 	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SkyPillar_Outside_EventScript_HideMapNamePopup
-	call_if_ge VAR_SOOTOPOLIS_CITY_STATE, 4, SkyPillar_Outside_EventScript_CheckSetAbnormalWeather
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	end
 
 SkyPillar_Outside_EventScript_HideMapNamePopup::
 	setflag FLAG_HIDE_MAP_NAME_POPUP
-	return
-
-SkyPillar_Outside_EventScript_CheckSetAbnormalWeather::
-	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
 	return
 
 SkyPillar_Outside_OnLoad:
@@ -141,30 +137,30 @@ SkyPillar_Outside_Text_DoorIsClosed:
 	.string "The door is closed.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-	.string "WALLACE: Oh, my, I'm terribly sorry!\p"
-	.string "In my haste, I didn't notice that\n"
-	.string "I'd left you behind!\p"
+	.string "Oh there you are {PLAYER}{KUN}!\p"
+	.string "I trust you calmed down all the\n"
+	.string "rogue pokémon.\p"
 	.string "I've opened the locked door of\n"
-	.string "the SKY PILLAR.\p"
+	.string "the Sky Pillar.\p"
 	.string "{PLAYER}{KUN}, let's be on our way!$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "WALLACE: It's an earthquake!\p"
+	.string "Wallace: It's an earthquake!\p"
 	.string "There's not a moment to waste!\n"
 	.string "We've got to hurry!$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
-	.string "WALLACE: Hmm…\n"
+	.string "Wallace: Hmm…\n"
 	.string "The situation is getting worse…$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
-	.string "WALLACE: This isn't good…\p"
-	.string "The weather distortion is spreading\n"
-	.string "even here…\p"
+	.string "Wallace: This isn't good…\p"
+	.string "The weather distortion is getting\n"
+	.string "even worse…\p"
 	.string "{PLAYER}{KUN}.\p"
-	.string "RAYQUAZA should be farther up\n"
+	.string "Rayquaza should be farther up\n"
 	.string "from here.\p"
-	.string "I'm worried about SOOTOPOLIS.\n"
+	.string "I'm worried about Sootopolis.\n"
 	.string "I've got to go back.\p"
 	.string "Everything is in your hands now.\n"
 	.string "Don't fail us!$"
