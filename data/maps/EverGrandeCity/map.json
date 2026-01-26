@@ -151,9 +151,10 @@
       "flag": "FLAG_MAGIKARP_WF"
     },
     {
+      "local_id": "LOCALID_ROGUE_ZARD_Y",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(CHARIZARD_MEGA_Y)",
-      "x": 20,
-      "y": 63,
+      "x": 19,
+      "y": 75,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -293,6 +294,24 @@
       "var": "VAR_TEMP_1",
       "var_value": "0",
       "script": "EverGrandeCity_EventScript_SetVisitedEverGrande"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 75,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "EverGrande_RogueEnters1"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 76,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "EverGrande_RogueEnters2"
     }
   ],
   "bg_events": [

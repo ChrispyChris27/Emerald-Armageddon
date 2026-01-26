@@ -757,3 +757,46 @@ LilycoveCity_Text_HoneymoonVowToSeeRarePokemon:
 	.string "POKéMON as soon as we arrived.\p"
 	.string "I mean, we are totally happy!$"
 
+Lilycove_RogueBattle::
+	lockall
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 1, 2, 1, 2
+	setwildbattle SPECIES_DURALUDON, 87, ITEM_EVIOLITE
+	waitse
+	playmoncry SPECIES_DURALUDON, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartGigantamaxWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, LilycoveRogueDefeated
+	releaseall
+	end
+
+LilycoveRogueDefeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_ROGUE_DURALUDON
+	fadescreen FADE_FROM_BLACK
+	goto_if_unset FLAG_TOTEM_SHIFTRY, CheckZardLilycove
+	goto_if_unset FLAG_TOTEM_CHARIZARD_MEGA, Rt123_OneRogueLeft
+	pokenavcall StevenErraticRoguesCalmed
+	waitmessage
+	setflag FLAG_ERRATIC_TOTEMS
+	setvar VAR_ROGUE_STATE, 17
+	releaseall
+	end
+
+CheckZardLilycove::
+	goto_if_set FLAG_TOTEM_CHARIZARD_MEGA, Rt123_OneRogueLeft
+	msgbox TwoRoguesLeft, MSGBOX_AUTOCLOSE
+	waitmessage
+	releaseall
+	end
+

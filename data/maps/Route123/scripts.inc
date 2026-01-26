@@ -228,5 +228,139 @@ Route123_Received_Mints:
 	.string "I imagine at this point, you will take\n"
 	.string "on the POKéMON LEAGUE.\p"
 	.string "I wish you the best of luck!$"
+
+Route123_RogueBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_RIGHT, 0, 2, 1, 1, 2
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 2, 1, 1, 2
+	setwildbattle SPECIES_LUDICOLO, 87, ITEM_SHELL_BELL, SPECIES_SHIFTRY, 87, ITEM_SHELL_BELL
+	waitse
+	playmoncry SPECIES_SHIFTRY, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_LUDICOLO, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Route123RogueDefeated
+	releaseall
+	end
+
+Route123RogueDefeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_ROGUE_LUDI
+	removeobject LOCALID_ROGUE_SHIFTRY
+	fadescreen FADE_FROM_BLACK
+	goto_if_unset FLAG_TOTEM_DURALUDON, CheckZard123
+	goto_if_unset FLAG_TOTEM_CHARIZARD_MEGA, Rt123_OneRogueLeft
+	pokenavcall StevenErraticRoguesCalmed
+	waitmessage
+	setflag FLAG_ERRATIC_TOTEMS
+	setvar VAR_ROGUE_STATE, 17
+	releaseall
+	end
+
+CheckZard123::
+	goto_if_set FLAG_TOTEM_CHARIZARD_MEGA, Rt123_OneRogueLeft
+	msgbox TwoRoguesLeft, MSGBOX_AUTOCLOSE
+	waitmessage
+	releaseall
+	end
+
+Rt123_OneRogueLeft::
+	msgbox OneRogueLeft, MSGBOX_AUTOCLOSE
+	waitmessage
+	releaseall
+	end
+
+TwoRoguesLeft:
+	.string "There are still two rogue\n"
+	.string "pokémon to calm.$"
+
+OneRogueLeft:
+	.string "There is stil one rogue\n"
+	.string "pokémon to calm.$"
+
+StevenErraticRoguesCalmed:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hey, {PLAYER}{KUN}!\p"
+	.string "The energy surges are gone.\p"
+	.string "All of the rogue pokémon\n"
+	.string "have calmed down now.\p"
+	.string "Please go meet Walalce at\n"
+	.string "Sky Pillar now.\p"
+	.string "All of Hoenn is counting on\n"
+	.string "you {PLAYER}{KUN}!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+Route123_RogueEnters1::
+	goto_if_set FLAG_TOTEM_LUDICOLO Rt123BattleDone
+	lockall
+	playmoncry SPECIES_LUDICOLO, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SHIFTRY, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_LUDI, Ludicolo_Movement1
+	applymovement LOCALID_ROGUE_SHIFTRY, Shiftry_Movement1
+	goto Route123_RogueBattle
+
+Ludicolo_Movement1:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+Shiftry_Movement1:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	face_left
+	step_end
+
+Route123_RogueEnters2::
+	goto_if_set FLAG_TOTEM_LUDICOLO Rt123BattleDone
+	lockall
+	playmoncry SPECIES_LUDICOLO, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_SHIFTRY, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_LUDI, Ludicolo_Movement2
+	applymovement LOCALID_ROGUE_SHIFTRY, Shiftry_Movement2
+	goto Route123_RogueBattle
+
+Ludicolo_Movement2:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	face_right
+	step_end
+
+Shiftry_Movement2:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+Rt123BattleDone::
+	releaseall
+	end
 	
 

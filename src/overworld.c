@@ -1120,6 +1120,9 @@ static bool16 ShouldLegendaryMusicPlayAtLocation(struct WarpData *warp)
         case MAP_NUM(MAP_ROUTE129):
         case MAP_NUM(MAP_ROUTE130):
         case MAP_NUM(MAP_ROUTE131):
+        case MAP_NUM(MAP_ROUTE121):
+        case MAP_NUM(MAP_ROUTE122):
+        case MAP_NUM(MAP_ROUTE123):
             return TRUE;
         default:
             if (VarGet(VAR_SOOTOPOLIS_CITY_STATE) < 4)

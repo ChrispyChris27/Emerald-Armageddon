@@ -663,6 +663,7 @@
       "flag": "FLAG_MAGIKARP_WF"
     },
     {
+      "local_id": "LOCALID_ROGUE_LUDI",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(LUDICOLO)",
       "x": 119,
       "y": 17,
@@ -676,6 +677,7 @@
       "flag": "FLAG_TOTEM_LUDICOLO"
     },
     {
+      "local_id": "LOCALID_ROGUE_SHIFTRY",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(SHIFTRY)",
       "x": 120,
       "y": 17,
@@ -866,6 +868,24 @@
       "y": 11,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_ROUTE123_CYCLE"
+    },
+    {
+      "type": "trigger",
+      "x": 119,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "16",
+      "script": "Route123_RogueEnters1"
+    },
+    {
+      "type": "trigger",
+      "x": 120,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "16",
+      "script": "Route123_RogueEnters2"
     }
   ],
   "bg_events": [
