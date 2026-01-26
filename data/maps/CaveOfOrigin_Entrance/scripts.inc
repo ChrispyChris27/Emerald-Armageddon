@@ -10,14 +10,14 @@ CaveOfOriginEntrance_RoaringMoonBattle::
 	setflag FLAG_SMART_WILD
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
-	settotemboost B_POSITION_OPPONENT_LEFT, 2, 1, 2, 2, 1
-	setwildbattle SPECIES_ROARING_MOON, 44, ITEM_WEAKNESS_POLICY
+	settotemboost B_POSITION_OPPONENT_LEFT, 2, 1, 1, 0, 1
+	setwildbattle SPECIES_ROARING_MOON, 87, ITEM_WEAKNESS_POLICY
 	waitse
 	playmoncry SPECIES_ROARING_MOON, CRY_MODE_ENCOUNTER
 	delay 40
 	waitmoncry
 	setflag FLAG_SYS_CTRL_OBJ_DELETE
-	special BattleSetup_StartRogueWildBattle
+	special BattleSetup_StartTeraWildBattle
 	waitstate
 	clearflag FLAG_SYS_CTRL_OBJ_DELETE
 	specialvar VAR_RESULT, GetBattleOutcome
@@ -29,8 +29,7 @@ RoaringMoon_Defeated::
 	clearflag FLAG_SMART_WILD
 	clearflag FLAG_NO_RUN_WILD
 	clearflag FLAG_NO_CATCH_WILD
-	setflag FLAG_TOTEM_ROARING_MOON
-	setvar VAR_ROGUE_STATE, 6 
+	setvar VAR_ROGUE_STATE, 16
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_MOON
 	fadescreen FADE_FROM_BLACK
@@ -69,25 +68,77 @@ RoaringMoonCalmedText:
 	.string "… … … … … Click!$"
 
 RoaringMoon_Movement1:
-	walk_fast_right
-	walk_fast_right
-	walk_fast_right
-	walk_fast_up
-	walk_fast_up
-	walk_fast_left
-	walk_fast_left
-	walk_fast_down
-	walk_fast_down
-	walk_fast_right
-	walk_fast_right
-	walk_fast_up
-	walk_fast_up
-	walk_fast_up
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
 	step_end
 
 RoaringMoon_Enter1::
 	lockall
-	playmoncry SPECIES_SIGILYPH, CRY_MODE_ENCOUNTER
-	applymovement LOCALID_ROGUE5, Sigilyph_Movement1
+	playmoncry SPECIES_ROARING_MOON, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_MOON, RoaringMoon_Movement1
 	goto CaveOfOriginEntrance_RoaringMoonBattle
 
+RoaringMoon_Movement2:
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+RoaringMoon_Enter2::
+	lockall
+	playmoncry SPECIES_ROARING_MOON, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_MOON, RoaringMoon_Movement2
+	goto CaveOfOriginEntrance_RoaringMoonBattle
+
+RoaringMoon_Movement3:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+RoaringMoon_Enter3::
+	lockall
+	playmoncry SPECIES_ROARING_MOON, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_MOON, RoaringMoon_Movement3
+	goto CaveOfOriginEntrance_RoaringMoonBattle
+
+RoaringMoon_Movement4:
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+RoaringMoon_Enter4::
+	lockall
+	playmoncry SPECIES_ROARING_MOON, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_MOON, RoaringMoon_Movement4
+	goto CaveOfOriginEntrance_RoaringMoonBattle
+
+RoaringMoon_Movement5:
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+RoaringMoon_Enter5::
+	lockall
+	playmoncry SPECIES_ROARING_MOON, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_MOON, RoaringMoon_Movement5
+	goto CaveOfOriginEntrance_RoaringMoonBattle

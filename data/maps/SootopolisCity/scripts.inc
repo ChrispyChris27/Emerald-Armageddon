@@ -1632,7 +1632,7 @@ SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
 	.string "…{PLAYER}{KUN}.\p"
 	.string "You being here now I'll take to mean\n"
 	.string "that you're prepared to become\l"
-	.string "involved in this crisis.\p"
+	.string "further involved in this crisis.\p"
 	.string "Well, then, there's someone that\n"
 	.string "I'd like you to meet.\p"
 	.string "Come with me, please.$"
@@ -1651,7 +1651,10 @@ SootopolisCity_Text_HereWereAreHelpWallace:
 	.string "Inside here you'll find someone named\n"
 	.string "WALLACE.\p"
 	.string "I think you have what's needed to\n"
-	.string "help him…$"
+	.string "help him.\p"
+	.string "I also think he may be able to help\n"
+	.string "us solve the mystery of Meteor Falls.\p"
+	.string "Please go speak with him inside.$"
 
 SootopolisCity_Text_KnowWhatsNeededToHelpHim:
 	.string "STEVEN: I think you have what's\n"
