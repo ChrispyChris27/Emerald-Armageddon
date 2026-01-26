@@ -121,15 +121,15 @@
   ],
   "warp_events": [
     {
-      "x": 10,
-      "y": 7,
-      "elevation": 3,
-      "dest_map": "MAP_SEAFLOOR_CAVERN_ROOM1",
-      "dest_warp_id": "2"
-    },
-    {
       "x": 4,
       "y": 10,
+      "elevation": 3,
+      "dest_map": "MAP_SEAFLOOR_CAVERN_ROOM4",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 10,
+      "y": 7,
       "elevation": 3,
       "dest_map": "MAP_SEAFLOOR_CAVERN_ROOM4",
       "dest_warp_id": "0"

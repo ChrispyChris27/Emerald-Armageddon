@@ -30,7 +30,6 @@ Dhelmise_Relicanth_Defeated::
 	clearflag FLAG_SMART_WILD
 	clearflag FLAG_NO_RUN_WILD
 	clearflag FLAG_NO_CATCH_WILD
-	setflag FLAG_TOTEM_CRYOGONAL
 	setvar VAR_ROGUE_STATE, 14
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
 	fadescreen FADE_TO_BLACK

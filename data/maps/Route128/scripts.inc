@@ -297,7 +297,7 @@ Route128_Text_StevenImGoingToSootopolis:
 	.string "{PLAYER}{KUN}…\n"
 	.string "I came here to warn you about another\l"
 	.string "rogue Pokémon nearby, but this will\l"
-	.string "have to take priority.\n"
+	.string "have to take priority.\p"
 	.string "To be honest, it wouldn't surprise me\n"
 	.string "if the two events are related.\p"
 	.string "{PLAYER}{KUN}, I'm going to fly into\n"

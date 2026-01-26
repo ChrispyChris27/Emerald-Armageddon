@@ -31,8 +31,9 @@
   ],
   "object_events": [
     {
+      "local_id": "LOCALID_ROGUE_BOZO",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(DONDOZO)",
-      "x": 44,
+      "x": 47,
       "y": 60,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -44,8 +45,9 @@
       "flag": "FLAG_TOTEM_DONDOZO"
     },
     {
+      "local_id": "LOCALID_ROGUE_SUSHI",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(TATSUGIRI_CURLY)",
-      "x": 46,
+      "x": 44,
       "y": 60,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
@@ -74,7 +76,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "14",
-      "script": "NULL"
+      "script": "Tatsu_Dozo_Enters"
     }
   ],
   "bg_events": [
