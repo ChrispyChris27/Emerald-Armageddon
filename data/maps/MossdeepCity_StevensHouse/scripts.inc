@@ -45,8 +45,7 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	delay 20
 	applymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenReturn
 	waitmovement 0
-	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT
-	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT 
+	setflag FLAG_HIDE_MOSSDEEP_CITY_SCOTT 
 	setvar VAR_STEVENS_HOUSE_STATE, 2
 	releaseall
 	end
@@ -149,34 +148,44 @@ MossdeepCity_StevensHouse_EventScript_DiveItemBall::
 	end
 
 MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
-	.string "STEVEN: {PLAYER}{KUN}…\p"
+	.string "Steven: {PLAYER}{KUN}…\p"
 	.string "As you can see, there's not much here,\n"
 	.string "but this is my home.\p"
 	.string "Thank you for all that you've done.\p"
 	.string "This is my token of appreciation.\n"
-	.string "It's the HIDDEN MACHINE DIVE.\p"
+	.string "It's the hidden machine dive.\p"
 	.string "No need to be shy--you've earned\n"
 	.string "this HM.$"
 
 MossdeepCity_StevensHouse_Text_ExplainDive:
-	.string "STEVEN: While you're using SURF, you\n"
+	.string "Steven: While you're using surf, you\n"
 	.string "should notice dark patches of water.\p"
-	.string "Use DIVE if you come to deep water\n"
+	.string "Use dive if you come to deep water\n"
 	.string "like it. You'll drop to the seafloor.\p"
 	.string "When you want to come back up, use\n"
-	.string "DIVE again.\p"
+	.string "dive again.\p"
 	.string "In some places, it won't be possible\n"
 	.string "for you to surface, though.\p"
+	.string "Now that you can traverse underseas,\n"
+	.string "I'm hoping I can get you to investigate\l"
+	.string "something east of Dewford Town for me.\p"
+	.string "An energy surge recently popped up in\n"
+	.string "The Abandoned Ship on Route 108.\p"
+	.string "I believe you may find a rogue pokémon\n"
+	.string "at the bottom of that shipwreck.\p"
+	.string "While you investigate that, I'll\n"
+	.string "continue my research here and let\l"
+	.string "you know if I learn more about Team\l"
+	.string "Rocket or Team Aqua's whereabouts.\p"
 	.string "{PLAYER}{KUN}, there's something else\n"
 	.string "I would like you to have as well.\p"
-	.string "With TEAM ROCKET having all that\n"
-	.string "rocket fuel and TEAM AQUA close to\l"
-	.string "achieving their goals, you'll need\l"
-	.string "to be as strong as possible.\p"
+	.string "As you face more and more difficult\n"
+	.string "challenges, you'll need to be as\l"
+	.string "strong as possible.\p"
 	.string "To that end, there are two POKé BALLS\n"
 	.string "On my table over there.\p"
 	.string "Both contain mythical steel type\n"
-	.string "POKéMON.\p"
+	.string "pokémon.\p"
 	.string "It would please me greatly if you\n"
 	.string "would take one with you.\p"
 	.string "I won't make you choose right now,\n"

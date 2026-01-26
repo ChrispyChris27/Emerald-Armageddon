@@ -304,5 +304,9 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_118_GRUNTS
 	setflag FLAG_TOTEM_MAGNEZONE
 	setflag FLAG_TOTEM_KILOWATTREL
+	setflag FLAG_TOTEM_DURALUDON
+	setflag FLAG_TOTEM_LUDICOLO
+	setflag FLAG_TOTEM_SHIFTRY
+	setflag FLAG_TOTEM_CHARIZARD_MEGA
 	call EventScript_ResetAllBerries
 	end
