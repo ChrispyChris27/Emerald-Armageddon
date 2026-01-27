@@ -85,6 +85,7 @@ NewMap1_EventScript_Giovanni::
 	playfanfare MUS_AWAKEN_LEGEND
 	playse SE_ORB
 	fadescreen FADE_TO_WHITE
+	setflag FLAG_HIDEOUT_RAY
 	removeobject LOCALID_RAY
 	clearflag FLAG_HIDEOUT_MEGA_RAY
 	addobject LOCALID_MEGARAY
@@ -146,7 +147,7 @@ NewMap1_EventScript_Giovanni::
 	setflag FLAG_NO_CATCH_WILD
 	setvar VAR_ROCKET_HIDEOUT_STATE, 3
 	settotemboost B_POSITION_OPPONENT_LEFT, 2, 1, 1, 2, 1
-	setwildbattle SPECIES_RAYQUAZA_MEGA, 90, ITEM_METEORITE
+	setwildbattle SPECIES_RAYQUAZA_MEGA, 89, ITEM_METEORITE
 	special BattleSetup_StartRogueWildBattle
 	waitstate
 	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL

@@ -1067,7 +1067,7 @@ Nature: Timid
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -1115,7 +1115,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -15539,10 +15539,10 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_GRUNT_SPACE_CENTER_5 ===
-Name: SISTER
+Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
@@ -15568,10 +15568,10 @@ Nature: Adamant
 - Poison Jab
 
 === TRAINER_GRUNT_SPACE_CENTER_6 ===
-Name: SISTER
+Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
@@ -15607,10 +15607,10 @@ Nature: Jolly
 - Psycho Cut
 
 === TRAINER_GRUNT_SPACE_CENTER_7 ===
-Name: SISTER
+Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
@@ -21750,7 +21750,7 @@ Nature: Jolly
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability
@@ -22074,7 +22074,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability
@@ -22182,7 +22182,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability
@@ -22290,7 +22290,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability
@@ -22407,7 +22407,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability
@@ -22779,7 +22779,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability / Risky
@@ -22905,7 +22905,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability / Risky
@@ -23070,7 +23070,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability
@@ -23304,7 +23304,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -23646,7 +23646,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -23694,7 +23694,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -23742,7 +23742,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -23789,8 +23789,8 @@ Nature: Hardy
 === TRAINER_HIDEOUT_GRUNT_14 ===
 Name: Grunt
 Class: Team Rocket
-Pic: Rocket Grunt M
-Gender: Male
+Pic: Rocket Grunt F
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -23820,11 +23820,25 @@ Level: 37
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
+=== TRAINER_HIDEOUT_GRUNT_15 ===
+Name: Grunt
+Class: Team Rocket
+Pic: Rocket Grunt M
+Gender: Male
+Music: Rocket
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+
+Pelipper
+Level: 36
+IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
+Nature: Hardy
+
 === TRAINER_HIDEOUT_GRUNT_16 ===
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -23848,7 +23862,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -23896,7 +23910,7 @@ Nature: Hardy
 Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -24003,10 +24017,10 @@ IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_24 ===
-Name: SISTER
+Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -24027,10 +24041,10 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_25 ===
-Name: SISTER
+Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
-Gender: Male
+Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
@@ -24051,11 +24065,11 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_26 ===
-Name: Grunt
-Class: Team Magma
-Pic: Magma Grunt F
-Gender: Male
-Music: Magma
+Name: Sister
+Class: Team Rocket
+Pic: Rocket Grunt F
+Gender: Female
+Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move
 
