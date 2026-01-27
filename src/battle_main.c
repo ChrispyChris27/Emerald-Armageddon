@@ -5781,8 +5781,6 @@ static void ReturnFromBattleToOverworld(void)
     {
         UpdateRoamerHPStatus(&gEnemyParty[0]);
         ZeroEnemyPartyMons();
-
-        UpdateRoamerHPStatus(&gEnemyParty[0]);
     }
 
     m4aSongNumStop(SE_LOW_HEALTH);
