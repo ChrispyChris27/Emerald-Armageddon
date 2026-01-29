@@ -2994,7 +2994,7 @@ static const struct SpriteFrameImage sPicTable_Latias[] = {
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_LatiasMega[] = {
-    overworld_ascending_frames(gObjectEventPic_LatiasMega, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_LatiasMega, 8, 8),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
@@ -3007,7 +3007,7 @@ static const struct SpriteFrameImage sPicTable_Latios[] = {
 #if OW_BATTLE_ONLY_FORMS
 #if P_MEGA_EVOLUTIONS
 static const struct SpriteFrameImage sPicTable_LatiosMega[] = {
-    overworld_ascending_frames(gObjectEventPic_LatiosMega, 4, 4),
+    overworld_ascending_frames(gObjectEventPic_LatiosMega, 8, 8),
 };
 #endif // P_MEGA_EVOLUTIONS
 #endif // OW_BATTLE_ONLY_FORMS
