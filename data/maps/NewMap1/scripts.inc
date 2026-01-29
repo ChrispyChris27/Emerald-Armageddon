@@ -146,7 +146,6 @@ NewMap1_EventScript_Giovanni::
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
 	setvar VAR_ROCKET_HIDEOUT_STATE, 3
-	settotemboost B_POSITION_OPPONENT_LEFT, 2, 1, 1, 2, 1
 	setwildbattle SPECIES_RAYQUAZA_MEGA, 89, ITEM_METEORITE
 	special BattleSetup_StartRogueWildBattle
 	waitstate
@@ -187,6 +186,7 @@ NewMap1_EventScript_Giovanni::
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
 	setvar VAR_ROCKET_HIDEOUT_STATE, 4
 	fadescreen FADE_FROM_BLACK
+	pokenavcall StevenCalmedRayquazaText
 	releaseall
 	end
 
@@ -218,8 +218,7 @@ RayquazaBattle::
 	setflag FLAG_SMART_WILD
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
-	settotemboost B_POSITION_OPPONENT_LEFT, 2, 1, 1, 2, 1
-	setwildbattle SPECIES_RAYQUAZA_MEGA, 90, ITEM_METEORITE
+	setwildbattle SPECIES_RAYQUAZA_MEGA, 89, ITEM_METEORITE
 	special BattleSetup_StartRogueWildBattle
 	waitstate
 	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL
@@ -259,6 +258,7 @@ RayquazaBattle::
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
 	setvar VAR_ROCKET_HIDEOUT_STATE, 4
 	fadescreen FADE_FROM_BLACK
+	pokenavcall StevenCalmedRayquazaText
 	releaseall
 	end
 
@@ -482,7 +482,7 @@ Hideout_GioExit7:
 	.string "Why won't you listen to me?!?$"
 
 Hideout_GioExit8:
-	.string "Rayquaza is going berserk!\p"
+	.string "Rayquaza's gone rogue!\p"
 	.string "It is even more powerful than\n"
 	.string "I could have imagined!\p"
 	.string "I can't control it!\p"
@@ -572,3 +572,30 @@ GioMovement2:
 	face_down
 	delay_16
 	step_end
+
+StevenCalmedRayquazaText:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hey, {PLAYER}{KUN}!\p"
+	.string "A massive energy surge just\n"
+	.string "swept through your area!\p"
+	.string "There was an earthquake soon\n"
+	.string "after, are you okay?\p"
+	.string "...\p"
+	.string "So Giovanni forced Rayquaza to\n"
+	.string "Mega Evolve and it went rogue\l"
+	.string "soon after?\p"
+	.string "I'm glad to hear you were able\n"
+	.string "to calm Mega Rayquaza.\p"
+	.string "It seems it's returned to space\n"
+	.string "from whence it came.\p"
+	.string "Anyways, with Team Rocket now\n"
+	.string "disbanded as well they are all\l"
+	.string "set for you at the Sootopolis\l"
+	.string "City Gym.\p"
+	.string "It's time for you to earn that\n"
+	.string "final gym badge.\p"
+	.string "All of Hoenn thanks you for\n"
+	.string "your help {PLAYER}{KUN}!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
