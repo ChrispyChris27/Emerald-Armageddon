@@ -1774,11 +1774,22 @@ SootopolisCity_EventScript_Move_Steven::
 
 SootopolisCity_EventScript_Steven2::
 	lockall
+	playse SE_PIN
 	applymovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_ExclamationMark
 	waitmovement 0
 	applymovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_FaceUp
 	waitmovement 0
 	msgbox SootopolisCity_Text_Steven_MeteorFalls, MSGBOX_AUTOCLOSE
+	waitmovement 0
+	delay 50
+	applymovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_FaceDown
+	waitmovement 0
+	msgbox SootopolisCity_Text_Steven_MeteorFalls2, MSGBOX_AUTOCLOSE
+	waitmovement 0
+	delay 50
+	applymovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_FaceUp
+	waitmovement 0
+	msgbox SootopolisCity_Text_Steven_MeteorFalls3, MSGBOX_AUTOCLOSE
 	waitmovement 0
 	delay 50
 	setfieldeffectargument 0, 1
@@ -1795,31 +1806,78 @@ SootopolisCity_EventScript_Steven2::
 
 SootopolisCity_Text_Steven_MeteorFalls:
 	.string "There you are {PLAYER}.\p"
-	.string "Thank you for putting an end to TEAM\n"
-	.string "ROCKET's plans and congratulations\l"
+	.string "Thank you for putting an end to Team\n"
+	.string "Rocket's plans and congratulations\l"
 	.string "on earning your eighth gym badge.\p"
 	.string "I wish there was time for us to\n"
-	.string "celebrate, but unfortunately that\l"
-	.string "other matter I was investigating has\l"
-	.string "become more serious than I thought.\p"
-	.string "While GROUDON and KYOGRE were fighting,\n"
-	.string "I became aware of energy surges that\l"
-	.string "were popping up around the HOENN region.\p"
-	.string "After RAYQUAZA calmed those two down,\n"
-	.string "most of these energy surges died down\l"
+	.string "celebrate, but unfortunately we've\l"
+	.string "got a bit of a situation on our hands.\p"
+	.string "After you got Rayquaza to calm down\n"
+	.string "Groudon and Kyogre, I went back to\l"
+	.string "Mossdeep to continue my research.\p"
+	.string "When that massive energy surge caused\n"
+	.string "Mega Rayquaza to go rogue, I noticed\l"
+	.string "a secondary surge in Meteor Falls.\p"
+	.string "Even after you calmed Mega Rayquaza,\n"
+	.string "the energy readings in Meteor Falls\l"
+	.string "continued to grow stronger.\p"
+	.string "The energy readings are out of this\n"
+	.string "world, and I mean that literally.\p"
+	.string "You see, during my research I\n"
+	.string "discovered records of powerful\l"
+	.string "pokémon from other dimensions that\l"
+	.string "came to earth in ancient times.\p"
+	.string "This was the reason that the Meteor\n"
+	.string "Castle was built all those years ago.\p"
+	.string "You see, these pokémon caused chaos\n"
+	.string "and disorder, nearly destroying all\l"
+	.string "of Hoenn.\p"
+	.string "The one area that remained free of\n"
+	.string "this chaos and destruction was the\l"
+	.string "castle deep within Meteor Falls.\p"
+	.string "At some point, the inhabitants of\n"
+	.string "the castle decided to fight back.\p"
+	.string "They managed to seal the pokémon\n"
+	.string "from another dimension inside the\l"
+	.string "castle to prevent them from causing\l"
+	.string "any more destruction.\p"
+	.string "With the help of the super-ancient\n"
+	.string "pokémon, the pokémon from another\l"
+	.string "world were sent back and the process\l"
+	.string "of rebuilding Hoenn began.$"
+
+SootopolisCity_Text_Steven_MeteorFalls2:
+	.string "I'm worried that the pokémon\n"
+	.string "from another world may be trying\l"
+	.string "to get back into Hoenn.\p"
+	.string "I believe you may have fought some of\n"
+	.string "these pokémon on your journey already,\l"
+	.string "but the most powerful of them, Ultra\l"
+	.string "Necrozma, has so far remained in its\l"
+	.string "own dimension.\p"
+	.string "If that pokémon were to escape into\n"
+	.string "the wild, who knows what kind of\l"
+	.string "damage it could cause.\p"
+	.string "Still, unless something else was\n"
+	.string "going on, Necrozma wouldn't be able\l"
+	.string "to enter our dimension.\p"
+	.string "Someone or something must be weakening\n"
+	.string "the rift between its world and ours.$"
+
+SootopolisCity_Text_Steven_MeteorFalls3:
+	.string "The energy surges continue to\n"
+	.string "impact the wild pokémon of Hoenn\l"
 	.string "as well.\p"
-	.string "However, one of them seems to have\n"
-	.string "grown stronger over that time rather\l"
-	.string "than weaker.\p"
-	.string "The source of that energy seems to be\n"
-	.string "deep within METEOR FALLS.\p"
-	.string "What's even stranger is that whatever\n"
-	.string "is causing the energy surge in METEOR\l"
-	.string "FALLS also seems to be causing MAGIKARP\l"
-	.string "to congregate around WATERFALLS.\p"
-	.string "I'll be heading to METEOR FALLS to\n"
-	.string "investigate this matter further.\p"
-	.string "Seeing as EVER GRANDE CITY is currently\n"
-	.string "inaccessible due to the aforementioned\l"
-	.string "MAGIKARP I do hope you will come and\l"
-	.string "assist my investigation.$"
+	.string "Currently, it seems to be having a\n"
+	.string "dramatic effect on Magikarp.\p"
+	.string "Magikarp from around Hoenn seem to\n"
+	.string "be congregating around waterfalls,\l"
+	.string "blocking the ability to traverse\l"
+	.string "them even with the HM.\p"
+	.string "{PLAYER}{KUN}, I'm going to\n"
+	.string "Meteor Falls to investigate.\p"
+	.string "As traveling up the waterfall to\n"
+	.string "Ever Grande City is currently not\l"
+	.string "possible, I suggest you join me.\p"
+	.string "It's time we put a stop to these\n"
+	.string "energy surges once and for all.$"

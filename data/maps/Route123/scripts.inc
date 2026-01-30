@@ -294,7 +294,7 @@ StevenErraticRoguesCalmed:
 	.string "The energy surges are gone.\p"
 	.string "All of the rogue pokémon\n"
 	.string "have calmed down now.\p"
-	.string "Please go meet Walalce at\n"
+	.string "Please go meet Wallace at\n"
 	.string "Sky Pillar now.\p"
 	.string "All of Hoenn is counting on\n"
 	.string "you {PLAYER}{KUN}!\p"
