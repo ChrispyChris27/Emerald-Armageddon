@@ -409,8 +409,12 @@ MeteorFalls_Text_Steven1:
 	.string "Interesting...$"
 
 MeteorFalls_Text_Steven2:
-	.string "The WATERFALL in METEOR FALLS isn't\n"
-	.string "blocked by MAGIKARP.\p"
+	.string "The waterfall in Meteor Falls isn't\n"
+	.string "blocked by Magikarp.\p"
 	.string "I guess we better travel up it then.\p"
+	.string "Be careful {PLAYER}{KUN}.\p"
+	.string "As we get closer to the energy source\n"
+	.string "we may encounter rogue pokemon with\l"
+	.string "little to no notice.\p"
 	.string "I'll meet up with you again deeper\n"
 	.string "in the cave.$"
