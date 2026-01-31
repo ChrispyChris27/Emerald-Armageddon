@@ -137,6 +137,8 @@ static const u8 sText_SpAttack[] = _("Sp. Atk");
 static const u8 sText_SpDefense[] = _("Sp. Def");
 static const u8 sText_Accuracy[] = _("accuracy");
 static const u8 sText_Evasiveness[] = _("evasiveness");
+static const u8 sText_Necrozma[] = _("Ultra Necrozma seeks chaos and destruction!\p");
+static const u8 sText_Ultra[] = _("Ultra ");
 
 const u8 *const gStatNamesTable[NUM_BATTLE_STATS] =
 {
@@ -2128,6 +2130,8 @@ void BufferStringBattle(enum StringID stringID, u32 battler)
         {
             if (gBattleTypeFlags & BATTLE_TYPE_LEGENDARY)
                 stringPtr = sText_LegendaryPkmnAppeared;
+            if (gBattleTypeFlags & BATTLE_TYPE_NECROZMA)
+                stringPtr = sText_Necrozma;
             else if (gBattleTypeFlags & BATTLE_TYPE_ROGUE || gBattleTypeFlags & BATTLE_TYPE_ROGUE_TERA || gBattleTypeFlags & BATTLE_TYPE_ROGUE_GMAX)
                 stringPtr = sText_RoguePkmnAppeared;
             else if (IsDoubleBattle() && IsValidForBattle(GetBattlerMon(GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT))))
@@ -2463,6 +2467,8 @@ static void GetBattlerNick(u32 battler, u8 *dst)
     {                                                                   \
         if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)                     \
             toCpy = sText_FoePkmnPrefix;                                \
+        else if (gBattleTypeFlags & BATTLE_TYPE_NECROZMA)               \
+            toCpy = sText_Ultra;                                        \
         else                                                            \
             toCpy = sText_WildPkmnPrefix;                               \
         while (*toCpy != EOS)                                           \
@@ -2480,6 +2486,8 @@ static void GetBattlerNick(u32 battler, u8 *dst)
     {                                                                   \
         if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)                     \
             toCpy = sText_FoePkmnPrefixLower;                           \
+        else if (gBattleTypeFlags & BATTLE_TYPE_NECROZMA)               \
+            toCpy = sText_Ultra;                                        \
         else                                                            \
             toCpy = sText_WildPkmnPrefixLower;                          \
         while (*toCpy != EOS)                                           \
@@ -2926,6 +2934,8 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
                 {
                     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                         toCpy = sText_FoePkmnPrefix;
+                    else if (gBattleTypeFlags & BATTLE_TYPE_NECROZMA)               
+                        toCpy = sText_Ultra;                                        
                     else
                         toCpy = sText_WildPkmnPrefix;
                     while (*toCpy != EOS)
@@ -3297,6 +3307,8 @@ void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst)
                 {
                     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                         StringAppend(dst, sText_FoePkmnPrefixLower);
+                    else if (gBattleTypeFlags & BATTLE_TYPE_NECROZMA)               
+                        StringAppend(dst, sText_Ultra);                                     
                     else
                         StringAppend(dst, sText_WildPkmnPrefixLower);
                 }
@@ -3304,6 +3316,8 @@ void ExpandBattleTextBuffPlaceholders(const u8 *src, u8 *dst)
                 {
                     if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
                         StringAppend(dst, sText_FoePkmnPrefix);
+                    else if (gBattleTypeFlags & BATTLE_TYPE_NECROZMA)               
+                        StringAppend(dst, sText_Ultra); 
                     else
                         StringAppend(dst, sText_WildPkmnPrefix);
                 }

@@ -130,3 +130,233 @@ Omastar_Movement3:
 	walk_right
 	walk_right
 	step_end
+
+MeteorCastleJugulis_Enter::
+	lockall
+	playmoncry SPECIES_IRON_JUGULIS, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_TOTEM_JUG, Jug_Movement1
+	goto MeteorCastleJugulisBattle
+
+MeteorCastleJugulisBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 2, 2, 2, 2
+	setwildbattle SPECIES_IRON_JUGULIS, 90, ITEM_LIFE_ORB
+	waitse
+	playmoncry SPECIES_IRON_JUGULIS, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartTeraWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Jugulis_Defeated
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	releaseall
+	end
+
+Jugulis_Defeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setvar VAR_ROGUE_STATE, 22 
+	playmoncry SPECIES_IRON_JUGULIS, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_TOTEM_JUG, Jug_Movement2
+	waitmovement
+	removeobject LOCALID_TOTEM_JUG
+	releaseall
+	end
+
+Jug_Movement1:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Jug_Movement2:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+MeteorCastleOrbeetle_Enter::
+	lockall
+	playmoncry SPECIES_ORBEETLE, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_TOTEM_BEETLE, Beetle_Movement1
+	goto MeteorCastleBeetleBattle
+
+MeteorCastleBeetleBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 0, 2, 2, 2, 2
+	setwildbattle SPECIES_ORBEETLE, 90, ITEM_ASSAULT_VEST
+	waitse
+	playmoncry SPECIES_ORBEETLE, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartGigantamaxWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Beetle_Defeated
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	releaseall
+	end
+
+Beetle_Defeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setvar VAR_ROGUE_STATE, 23 
+	playmoncry SPECIES_ORBEETLE, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_TOTEM_BEETLE, Beetle_Movement2
+	waitmovement
+	removeobject LOCALID_TOTEM_BEETLE
+	pokenavcall StevenCastleCall
+	releaseall
+	end
+
+Beetle_Movement1:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Beetle_Movement2:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+StevenCastleCall:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hey, {PLAYER}{KUN}!\p"
+	.string "You should almost be at the\n"
+	.string "throne room by now.\p"
+	.string "Be warned, there is a massive\n"
+	.string "concentration of energy just\l"
+	.string "ahead of you.\p"
+	.string "I'll be right behind you once\n"
+	.string "I calm down this rogue Iron\l"
+	.string "Valiant but please don't wait!\p"
+	.string "I'll catch up when I can but\n"
+	.string "we need to resolve this as\l"
+	.string "soon as possible!\p"
+	.string "This is what you've been\n"
+	.string "training for {PLAYER}{KUN}!\p"
+	.string "Good luck!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+MeteorCastleNecrozma_Enter::
+	lockall
+	special StopMapMusic
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement
+	delay 60
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement
+	delay 60
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement
+	special SpawnCameraObject
+	applymovement LOCALID_CAMERA, CameraPantoNecrozma1
+	waitmovement
+	playse SE_M_COSMIC_POWER
+	waitse
+	addobject LOCALID_ULTRA_NECRO
+	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
+	delay 300
+	applymovement LOCALID_ULTRA_NECRO, Necro_Movement1
+	goto MeteorCastleNecrozmaBattle
+
+MeteorCastleNecrozmaBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	setflag FLAG_TOTEM_ULTRA_NECROZMA
+	settotemboost B_POSITION_OPPONENT_LEFT, 2, 2, 2, 2, 2
+	setwildbattle SPECIES_NECROZMA_ULTRA, 90
+	waitse
+	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartLegendaryBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Necro_Defeated
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	releaseall
+	end
+
+Necro_Defeated::
+	special StopMapMusic
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	clearflag FLAG_TOTEM_NECROZMA
+	setvar VAR_ROGUE_STATE, 24 
+	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
+	special SpawnCameraObject
+	applymovement LOCALID_CAMERA, CameraPanAwayNecro
+	waitmovement
+	special RemoveCameraObject
+	fadescreen FADE_TO_BLACK
+	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
+	waitmoncry
+	playse SE_M_COSMIC_POWER
+	waitse
+	fadescreen FADE_FROM_BLACK
+	playbgm MUS_NCASTLE, TRUE
+	releaseall
+	end
+
+CameraPantoNecrozma1:
+	walk_slow_up
+	walk_slow_up
+	walk_slow_up
+	walk_slow_up
+	walk_slow_up
+	step_end
+
+Necro_Movement1:
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	walk_faster_down
+	step_end
+
+CameraPanAwayNecro:
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	step_end
+

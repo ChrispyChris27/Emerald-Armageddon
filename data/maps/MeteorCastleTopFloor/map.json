@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 20,
-      "y": 30,
+      "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -82,9 +82,10 @@
       "flag": "FLAG_TOTEM_OMASTAR"
     },
     {
+      "local_id": "LOCALID_TOTEM_JUG",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(IRON_JUGULIS)",
       "x": 20,
-      "y": 31,
+      "y": 29,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -95,9 +96,10 @@
       "flag": "FLAG_TOTEM_IRON_JUGULIS"
     },
     {
+      "local_id": "LOCALID_ULTRA_NECRO",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(NECROZMA_ULTRA)",
       "x": 20,
-      "y": 0,
+      "y": 2,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -106,6 +108,34 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_TOTEM_ULTRA_NECROZMA"
+    },
+    {
+      "local_id": "LOCALID_TOTEM_BEETLE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(ORBEETLE)",
+      "x": 20,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TOTEM_ORBEETLE"
+    },
+    {
+      "local_id": "LOCALID_STEVE_CASTLE_TOP",
+      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "x": 20,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TOTEM_NECROZMA"
     }
   ],
   "warp_events": [
@@ -133,6 +163,33 @@
       "var": "VAR_ROGUE_STATE",
       "var_value": "20",
       "script": "MeteorCastle_Fossils_Enter"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 34,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "21",
+      "script": "MeteorCastleJugulis_Enter"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "22",
+      "script": "MeteorCastleOrbeetle_Enter"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "23",
+      "script": "MeteorCastleNecrozma_Enter"
     }
   ],
   "bg_events": []

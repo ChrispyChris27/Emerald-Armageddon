@@ -385,7 +385,7 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
     if(species == SPECIES_NECROZMA_ULTRA)
     {
         u16 move1 = MOVE_PHOTON_GEYSER;
-        u16 move2 = MOVE_EARTH_POWER;
+        u16 move2 = MOVE_DRAGON_PULSE;
         u16 move3 = MOVE_HEAT_WAVE;
         u16 move4 = MOVE_MOONLIGHT;
         u8 nature = NATURE_MODEST;

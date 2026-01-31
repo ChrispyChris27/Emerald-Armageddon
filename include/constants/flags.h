@@ -1251,8 +1251,8 @@
 #define FLAG_TOTEM_MAGNEZONE                                           0x4AD // Unused Flag
 #define FLAG_TOTEM_KILOWATTREL                                         0x4AE // Unused Flag
 #define FLAG_TOTEM_SHEDINJA                                           0x4AF // Unused Flag
-#define FLAG_UNUSED_0x4B0                                           0x4B0 // Unused Flag
-#define FLAG_UNUSED_0x4B1                                           0x4B1 // Unused Flag
+#define FLAG_TOTEM_ORBEETLE                                           0x4B0 // Unused Flag
+#define FLAG_TOTEM_NECROZMA                                           0x4B1 // Unused Flag
 #define FLAG_TOTEM_DHELMISE                                           0x4B2 // Unused Flag
 #define FLAG_TOTEM_RELICANTH                                           0x4B3 // Unused Flag
 #define FLAG_TOTEM_CRYOGONAL                                           0x4B4 // Unused Flag

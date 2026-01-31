@@ -310,5 +310,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_TOTEM_CHARIZARD_MEGA
 	setflag FLAG_TOTEM_MAGIKARP
 	setflag FLAG_TOTEM_AERODACTYL_MEGA
+	setflag FLAG_TOTEM_ULTRA_NECROZMA
+	setflag FLAG_TOTEM_NECROZMA
 	call EventScript_ResetAllBerries
 	end
