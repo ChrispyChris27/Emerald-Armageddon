@@ -496,7 +496,7 @@ Hideout_GioExit9:
 
 Hideout_GioExit10:
 	.string "There goes Mega Rayquaza...\p"
-	.string "Even the most powerful POKéMON\n"
+	.string "Even the most powerful pokémon\n"
 	.string "was no match for you.$"
 
 Hideout_GioExit11:

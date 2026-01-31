@@ -124,7 +124,7 @@
       "flag": "FLAG_TOTEM_ORBEETLE"
     },
     {
-      "local_id": "LOCALID_STEVE_CASTLE_TOP",
+      "local_id": "LOCALID_STEVEN_CASTLE_TOP",
       "graphics_id": "OBJ_EVENT_GFX_STEVEN",
       "x": 20,
       "y": 13,

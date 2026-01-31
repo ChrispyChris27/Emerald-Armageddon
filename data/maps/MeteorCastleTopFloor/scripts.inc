@@ -272,7 +272,7 @@ StevenCastleCall:
 
 MeteorCastleNecrozma_Enter::
 	lockall
-	special StopMapMusic
+	playbgm MUS_NONE, TRUE
 	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
 	waitmovement
 	delay 60
@@ -286,10 +286,27 @@ MeteorCastleNecrozma_Enter::
 	waitmovement
 	playse SE_M_COSMIC_POWER
 	waitse
+	setvar VAR_0x8004, 3  @ vertical pan
+	setvar VAR_0x8005, 3  @ horizontal pan
+	setvar VAR_0x8006, 8  @ num shakes
+	setvar VAR_0x8007, 5  @ shake delay
+	special ShakeCamera
 	addobject LOCALID_ULTRA_NECRO
 	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
-	delay 300
+	waitmoncry
+	delay 120
+	applymovement LOCALID_CAMERA, CameraPanAwayNecro
+	waitmovement
+	special RemoveCameraObject
+	delay 150
 	applymovement LOCALID_ULTRA_NECRO, Necro_Movement1
+	setvar VAR_0x8004, 5  @ vertical pan
+	setvar VAR_0x8005, 5  @ horizontal pan
+	setvar VAR_0x8006, 16  @ num shakes
+	setvar VAR_0x8007, 5  @ shake delay
+	special ShakeCamera
+	waitstate
+	delay 30
 	goto MeteorCastleNecrozmaBattle
 
 MeteorCastleNecrozmaBattle::
@@ -297,8 +314,8 @@ MeteorCastleNecrozmaBattle::
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
 	setflag FLAG_TOTEM_ULTRA_NECROZMA
-	settotemboost B_POSITION_OPPONENT_LEFT, 2, 2, 2, 2, 2
-	setwildbattle SPECIES_NECROZMA_ULTRA, 90
+	settotemboost B_POSITION_OPPONENT_LEFT, 1, 2, 2, 1, 2
+	setwildbattle SPECIES_NECROZMA_ULTRA, 90, ITEM_LUM_BERRY
 	waitse
 	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
 	delay 40
@@ -316,24 +333,30 @@ MeteorCastleNecrozmaBattle::
 	end
 
 Necro_Defeated::
-	special StopMapMusic
 	clearflag FLAG_SMART_WILD
 	clearflag FLAG_NO_RUN_WILD
 	clearflag FLAG_NO_CATCH_WILD
 	clearflag FLAG_TOTEM_NECROZMA
 	setvar VAR_ROGUE_STATE, 24 
-	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
-	special SpawnCameraObject
-	applymovement LOCALID_CAMERA, CameraPanAwayNecro
-	waitmovement
-	special RemoveCameraObject
 	fadescreen FADE_TO_BLACK
 	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
 	waitmoncry
+	removeobject LOCALID_ULTRA_NECRO
+	addobject LOCALID_STEVEN_CASTLE_TOP
 	playse SE_M_COSMIC_POWER
 	waitse
 	fadescreen FADE_FROM_BLACK
 	playbgm MUS_NCASTLE, TRUE
+	applymovement LOCALID_PLAYER, PlayerMoveRightCastle
+	applymovement LOCALID_STEVEN_CASTLE_TOP, Steven_Climb_Stairs
+	waitmovement LOCALID_STEVEN_CASTLE_TOP 
+	msgbox NecroDefeated_Text, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement LOCALID_STEVEN_CASTLE_TOP, StevenEnterThroneRoom
+	waitmovement
+	removeobject LOCALID_STEVEN_CASTLE_TOP
+	playse SE_DOOR
+	waitse
 	releaseall
 	end
 
@@ -360,3 +383,56 @@ CameraPanAwayNecro:
 	walk_slow_down
 	step_end
 
+Steven_Climb_Stairs:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	face_right
+	step_end
+
+NecroDefeated_Text:
+	.string "{PLAYER}{KUN}, I got here\n"
+	.string "as quickly as I could.\p"
+	.string "So I was right.\p"
+	.string "It was Ultra Necrozma that was\n"
+	.string "responsible for everything.\p"
+	.string "Just as it tried to destroy Hoenn\n"
+	.string "in ancient times it once again\l"
+	.string "attempted to cause chaos.\p"
+	.string "Thanks to you, Necrozma has been\n"
+	.string "sent back to its own dimension\l"
+	.string "once again, hopefully for good.\p"
+	.string "Still, after all these years why\n"
+	.string "was it now that Necrozma was able\l"
+	.string "to return?\p"
+	.string "Something must have weakened the\n"
+	.string "barrier between our worlds, allowing\l"
+	.string "Necrozma to cross into our dimension.\p"
+	.string "Hmmm...\p"
+	.string "The energy spikes appear to be gone,\n"
+	.string "but there is still residual energy\l"
+	.string "leaking out of the throne room.\p"
+	.string "{PLAYER}{KUN}, we should investigate\n"
+	.string "the throne room.\p"
+	.string "While Necrozma has been banished once\n"
+	.string "again thanks to you, it's possible\l"
+	.string "Necrozma wasn't the only pokémon\l"
+	.string "that crossed into our dimension.\p"
+	.string "If there are others, we'll need to\n"
+	.string "prevent them from escaping as well.$"
+
+StevenEnterThroneRoom:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+PlayerMoveRightCastle:
+	walk_right
+	face_left
+	step_end
