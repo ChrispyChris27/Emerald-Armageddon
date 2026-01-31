@@ -414,7 +414,72 @@ MeteorFalls_Text_Steven2:
 	.string "I guess we better travel up it then.\p"
 	.string "Be careful {PLAYER}{KUN}.\p"
 	.string "As we get closer to the energy source\n"
-	.string "we may encounter rogue pokemon with\l"
+	.string "we may encounter rogue pokémon with\l"
 	.string "little to no notice.\p"
 	.string "I'll meet up with you again deeper\n"
 	.string "in the cave.$"
+
+MeteorFalls_Magikarp_Enter::
+	lockall
+	clearflag FLAG_TOTEM_MAGIKARP
+	addobject LOCALID_TOTEM_CARP
+	playmoncry SPECIES_MAGIKARP, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_TOTEM_CARP, Karp_Movement1
+	goto MeteorFallsMagikarpBattle
+
+MeteorFallsMagikarpBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 6, 6, 6, 6, 6
+	setwildbattle SPECIES_MAGIKARP, 100, ITEM_WATER_GEM
+	waitse
+	playmoncry SPECIES_MAGIKARP, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartRogueWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Magikarp_Defeated
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	releaseall
+	end
+
+Magikarp_Defeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setvar VAR_ROGUE_STATE, 18 
+	playmoncry SPECIES_MAGIKARP, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_TOTEM_CARP, Karp_Movement2
+	waitmovement
+	removeobject LOCALID_TOTEM_CARP
+	playse SE_M_DIVE
+	releaseall
+	end
+
+
+Karp_Movement1:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Karp_Movement2:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+

@@ -29,11 +29,12 @@
       "flag": "FLAG_MF_STEVEN_3"
     },
     {
+      "local_id": "LOCALID_TOTEM_GARY",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(GYARADOS_MEGA)",
-      "x": 11,
-      "y": 8,
+      "x": 9,
+      "y": 11,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -42,11 +43,12 @@
       "flag": "FLAG_TOTEM_GYARADOS"
     },
     {
+      "local_id": "LOCALID_TOTEM_MILO",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(MILOTIC)",
-      "x": 11,
-      "y": 11,
+      "x": 9,
+      "y": 8,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -80,6 +82,24 @@
       "var": "VAR_STEVEN_MF_STATE",
       "var_value": "2",
       "script": "MeteorCastle_Steven_Script"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "18",
+      "script": "MeteorCastle_GyaraMilo_Enter"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "18",
+      "script": "MeteorCastle_GyaraMilo_Enter"
     }
   ],
   "bg_events": []

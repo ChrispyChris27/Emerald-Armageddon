@@ -27,6 +27,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_MF_STEVEN_4"
+    },
+    {
+      "local_id": "LOCALID_TOTEM_AERO",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AERODACTYL_MEGA)",
+      "x": 25,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_WALK_IN_PLACE_DOWN",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "MeteorCastleAeroBattle",
+      "flag": "FLAG_TOTEM_AERODACTYL_MEGA"
     }
   ],
   "warp_events": [
@@ -115,6 +129,16 @@
       "dest_warp_id": "1"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "19",
+      "script": "MeteorCastle_Aero_Enter"
+    }
+  ],
   "bg_events": []
 }

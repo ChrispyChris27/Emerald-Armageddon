@@ -73,43 +73,75 @@ MCPlayerUp:
 	step_end
 
 MC_Steven1:
-	.string "I don't believe it.\p"
-	.string "The legends really were true...$"
+	.string "Well would you look at that...\p"
+	.string "It's even more impressive in person.$"
 
 MC_Steven2:
-	.string "{PLAYER}, welcome to the METEOR\n"
-	.string "CASTLE.\p"
-	.string "I didn't believe it truly existed,\n"
-	.string "but I certainly believe it now.\p"
-	.string "Legends said that long ago, an ancient\n"
-	.string "ruler constructed the METEOR CASTLE by\l"
-	.string "digging into the bedrock deep within\l"
-	.string "METEOR FALLS.\p"
-	.string "With the help of his servants as well\n"
-	.string "as his POKéMON, the ruler created the\l"
-	.string "castle for all of them to live in.\p"
-	.string "Years later, the ruler passed away,\n"
-	.string "leaving the keys to his kingdom with\l"
-	.string "his son.\p"
-	.string "Unlike his father, the son did not\n"
-	.string "appreciate sharing the castle with\l"
-	.string "all of his father's servants.\p"
-	.string "The son wanted the castle all to\n"
-	.string "himself and exiled the servants out\l"
-	.string "of METEOR CASTLE.\p"
-	.string "As revenge for this act, the servants,\n"
-	.string "their families, and their POKéMON\l"
-	.string "sealed the castle away within METEOR\l"
-	.string "FALLS, leaving the new king inside.\p"
-	.string "Presumably, the king starved to death\n"
-	.string "after being sealed away.$"
+	.string "{PLAYER}, welcome to Meteor Castle.\p"
+	.string "This is the castle that protected\n"
+	.string "the ancient citizens of Hoenn from\l"
+	.string "pokémon of another world.\p"
+	.string "I imagine that long ago this castle\n"
+	.string "and its many rooms functioned as a\l"
+	.string "small city for its inhabitants.\p"
+	.string "At the very top of this cliff is\n"
+	.string "the throne room where the pokémon\l"
+	.string "were sealed away all those years ago.\p"
+	.string "I would bet that if they are trying\n"
+	.string "to return they will come from there.$"
 
 MC_Steven3:
+	.string "Exactly what I thought.\p"
 	.string "The energy readings are coming from\n"
-	.string "the top of METEOR CASTLE.\p"
-	.string "I'm guessing that whatever is causing\n"
-	.string "the energy surge may be coming from\l"
-	.string "the throne room of the castle.\p"
-	.string "It's a long ways up from here.\n"
-	.string "I'll meet you at the top.$"
+	.string "the top of Meteor Castle.\p"
+	.string "It's a long ways up from here,\n"
+	.string "I'll meet you at the top.\p"
+	.string "Be careful of any more rogue pokémon\n"
+	.string "that pop up along the way.$"
+
+MeteorCastle_Aero_Enter::
+	lockall
+	playmoncry SPECIES_AERODACTYL_MEGA, CRY_MODE_ENCOUNTER
+	setfieldeffectargument 0, 1
+	dofieldeffect FLDEFF_NPCFLY_OUT
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+	addobject LOCALID_TOTEM_AERO
+	goto MeteorCastleAeroBattle
+
+MeteorCastleAeroBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 1, 2, 1, 0, 2
+	setwildbattle SPECIES_AERODACTYL_MEGA, 90, ITEM_MUSCLE_BAND
+	waitse
+	playmoncry SPECIES_AERODACTYL_MEGA, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartRogueWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, Aerodactyl_Defeated
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	releaseall
+	end
+
+Aerodactyl_Defeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setvar VAR_ROGUE_STATE, 20 
+	playmoncry SPECIES_AERODACTYL_MEGA, CRY_MODE_ENCOUNTER
+	waitmoncry
+	setfieldeffectargument 0, 1
+	dofieldeffect FLDEFF_NPCFLY_OUT
+	delay 15
+	removeobject LOCALID_TOTEM_AERO
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+	releaseall
+	end
 

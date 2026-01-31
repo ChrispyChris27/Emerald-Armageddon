@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 20,
-      "y": 32,
+      "y": 52,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -43,7 +43,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_POKE_BALL",
       "x": 20,
-      "y": 5,
+      "y": 30,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -54,9 +54,10 @@
       "flag": "FLAG_AERODACTYLITE"
     },
     {
+      "local_id": "LOCALID_TOTEM_KABU",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(KABUTOPS)",
       "x": 19,
-      "y": 50,
+      "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -67,9 +68,10 @@
       "flag": "FLAG_TOTEM_KABUTOPS"
     },
     {
+      "local_id": "LOCALID_TOTEM_HELIX",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(OMASTAR)",
       "x": 21,
-      "y": 50,
+      "y": 41,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
@@ -104,19 +106,6 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_TOTEM_ULTRA_NECROZMA"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_SPECIES(AERODACTYL_MEGA)",
-      "x": 20,
-      "y": 19,
-      "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
-      "flag": "FLAG_TOTEM_AERODACTYL_MEGA"
     }
   ],
   "warp_events": [
@@ -135,6 +124,16 @@
       "dest_warp_id": "11"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 46,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "20",
+      "script": "MeteorCastle_Fossils_Enter"
+    }
+  ],
   "bg_events": []
 }

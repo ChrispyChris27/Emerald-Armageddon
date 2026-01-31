@@ -129,7 +129,7 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         SetMonData(&gEnemyParty[0], MON_DATA_HELD_ITEM, heldItem);
     }
 
-    if (species == SPECIES_CENTISKORCH || species == SPECIES_SANDACONDA || species == SPECIES_DURALUDON)
+    if (species == SPECIES_CENTISKORCH || species == SPECIES_SANDACONDA || species == SPECIES_DURALUDON || species == SPECIES_ORBEETLE)
         SetMonData(&gEnemyParty[0], MON_DATA_GIGANTAMAX_FACTOR, &gmaxFactor);
 
     if (species == SPECIES_CRYOGONAL || species == SPECIES_SHEDINJA)
@@ -397,6 +397,41 @@ void CreateScriptedWildMon(u16 species, u8 level, u16 item)
         SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
+    if(species == SPECIES_MAGIKARP)
+    {
+        u16 move1 = MOVE_HYDRO_PUMP;
+        u16 move2 = MOVE_BOUNCE;
+        u16 move3 = MOVE_FLAIL;
+        u16 move4 = MOVE_FACADE;
+        u8 nature = NATURE_HASTY;
+        bool32 shiny = TRUE;
+
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gEnemyParty[0], MON_DATA_IS_SHINY, &shiny);
+
+    }
+
+    if(species == SPECIES_ORBEETLE)
+    {
+        u16 move1 = MOVE_HURRICANE;
+        u16 move2 = MOVE_BUG_BUZZ;
+        u16 move3 = MOVE_PSYCHIC;
+        u16 move4 = MOVE_SLUDGE_BOMB;
+        u8 nature = NATURE_MODEST;
+        u8 ability = 1;
+
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
 }
 void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u16 species2, u8 level2, u16 item2)
 {
@@ -565,6 +600,100 @@ void CreateScriptedDoubleWildMon(u16 species1, u8 level1, u16 item1, u16 species
         SetMonData(&gEnemyParty[1], MON_DATA_MOVE4, &move4);
         SetMonData(&gEnemyParty[1], MON_DATA_HIDDEN_NATURE, &nature);
         SetMonData(&gEnemyParty[1], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species1 == SPECIES_MILOTIC)
+    {
+        u16 move1 = MOVE_MUDDY_WATER;
+        u16 move2 = MOVE_ICE_BEAM;
+        u16 move3 = MOVE_ALLURING_VOICE;
+        u16 move4 = MOVE_HYDRO_PUMP;
+        u8 nature = NATURE_TIMID;
+        u8 ivs = 31;
+        u8 ability = 1;
+
+        SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gEnemyParty[1], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species2 == SPECIES_GYARADOS_MEGA)
+    {
+        u16 move1 = MOVE_DRAGON_DANCE;
+        u16 move2 = MOVE_WAVE_CRASH;
+        u16 move3 = MOVE_STONE_EDGE;
+        u16 move4 = MOVE_CRUNCH;
+        u8 nature = NATURE_JOLLY;
+        u8 ivs = 31;
+
+        SetMonData(&gEnemyParty[1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[1], MON_DATA_HIDDEN_NATURE, &nature);
+    }
+
+    if(species1 == SPECIES_KABUTOPS)
+    {
+        u16 move1 = MOVE_STONE_EDGE;
+        u16 move2 = MOVE_WAVE_CRASH;
+        u16 move3 = MOVE_DRILL_RUN;
+        u16 move4 = MOVE_LEECH_LIFE;
+        u8 nature = NATURE_ADAMANT;
+        u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gEnemyParty[1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species2 == SPECIES_OMASTAR)
+    {
+        u16 move1 = MOVE_POWER_GEM;
+        u16 move2 = MOVE_HYDRO_PUMP;
+        u16 move3 = MOVE_EARTH_POWER;
+        u16 move4 = MOVE_ICE_BEAM;
+        u8 nature = NATURE_MODEST;
+        u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gEnemyParty[1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gEnemyParty[1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
     }
 }
 

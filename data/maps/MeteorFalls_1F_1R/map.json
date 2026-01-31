@@ -227,6 +227,20 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
       "flag": "FLAG_METEOR_FALLS_STEVEN"
+    },
+    {
+      "local_id": "LOCALID_TOTEM_CARP",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES_SHINY(MAGIKARP)",
+      "x": 18,
+      "y": 4,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TOTEM_MAGIKARP"
     }
   ],
   "warp_events": [
@@ -300,6 +314,15 @@
       "var": "VAR_STEVEN_MF_STATE",
       "var_value": "1",
       "script": "MeteorFalls_EventScript_Steven"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 4,
+      "elevation": 0,
+      "var": "VAR_ROGUE_STATE",
+      "var_value": "17",
+      "script": "MeteorFalls_Magikarp_Enter"
     }
   ],
   "bg_events": [

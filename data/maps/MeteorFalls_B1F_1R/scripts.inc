@@ -15,10 +15,10 @@ MeteorFalls_B1F_1R_Steven_Script::
 MeteorFalls_B1F_StevenText:
 	.string "The energy readings are getting\n"
 	.string "stronger.\p"
-	.string "Whatever is causing the surge is\n"
-	.string "even deeper inside the cave.\p"
-	.string "{PLAYER} I hope you're ready for\n"
-	.string "lies ahead.\p"
+	.string "We'll have to continue moving\n"
+	.string "deeper into the cave system.\p"
+	.string "{PLAYER}{KUN} I hope you're ready\n"
+	.string "for what lies ahead.\p"
 	.string ". . . \p"
 	.string "I hope I'm ready for what lies ahead.$"
 
