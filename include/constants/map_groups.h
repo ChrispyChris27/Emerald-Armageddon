@@ -80,6 +80,7 @@ enum
     MAP_CONTINENTAL_CAVERN_GIGAS_ROOM      = (65 | (0 << 8)),
     MAP_CONTINENTAL_CAVERN_WATER_ROOM      = (66 | (0 << 8)),
     MAP_CONTINENTAL_CAVERN_ICE_PUZZLE_ROOM = (67 | (0 << 8)),
+    MAP_MYTHICAL_MOUNTAIN2                 = (68 | (0 << 8)),
 
     // gMapGroup_IndoorLittleroot
     MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    = (0 | (1 << 8)),
@@ -436,7 +437,6 @@ enum
     MAP_METEOR_CASTLE_THRONE_ROOM                = (124 | (24 << 8)),
     MAP_TRANSISTOR_TUNNEL                        = (125 | (24 << 8)),
     MAP_MYTHICAL_MOUNTAIN                        = (126 | (24 << 8)),
-    MAP_MYTHICAL_MOUNTAIN2                       = (127 | (24 << 8)),
 
     // gMapGroup_IndoorDynamic
     MAP_SECRET_BASE_RED_CAVE1    = (0 | (25 << 8)),

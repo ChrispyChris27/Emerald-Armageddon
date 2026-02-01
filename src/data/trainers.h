@@ -49415,7 +49415,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CYRUS_DOUBLE] =
     {
 #line 20367
-        .trainerName = _("CYRUS"),
+        .trainerName = _("Cyrus"),
 #line 20368
         .trainerClass = TRAINER_CLASS_TEAM_GALACTIC,
 #line 20369
