@@ -6771,17 +6771,17 @@ Nature: Timid
 - Dragon Pulse
 - Flash Cannon
 
-Necrozma Ultra @ Life Orb
+Naganadel @ Life Orb
 Level: 100
-Ability: Neuroforce
+Ability: Beast Boost
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- Photon Geyser
+- Sludge Bomb
 - Dragon Pulse
-- Charge Beam
+- Nasty Plot
 - Flamethrower
 
-Zygarde Complete @ Leftovers
+Zygarde 50 @ Leftovers
 Level: 100
 Ability: Power Construct
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -9202,6 +9202,25 @@ Nature: Bold
 - Brine
 - Will O Wisp
 - Icy Wind
+
+=== TRAINER_VIOLET ===
+Name: Violet
+Class: Aroma Lady
+Pic: Aroma Lady
+Gender: Female
+Music: Female
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+
+Vileplume @ Assault Vest
+Level: 31
+Ability: Effect Spore
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Giga Drain
+- Sludge Bomb
+- Moonblast
+- Pollen Puff
 
 === TRAINER_CLAUDE ===
 Name: CLAUDE
@@ -21927,15 +21946,15 @@ Nature: Jolly
 - Stone Edge
 - Swords Dance
 
-Heatran @ Air Balloon
+Rhyperior @ Weakness Policy
 Level: 96
-Ability: Flash Fire
+Ability: Solid Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Magma Storm
-- Flash Cannon
-- Earth Power
-- Power Gem
+Nature: Jolly
+- Stone Edge
+- Earthquake
+- Rock Polish
+- Fire Punch
 
 Garchomp @ Garchompite
 Level: 96
