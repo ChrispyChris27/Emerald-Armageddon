@@ -607,7 +607,7 @@ Route119_Text_TrainerTipsDecoration:
 	lock
 	faceplayer
 	goto_if_set FLAG_MINTS_6, Route119_GotMints
-	msgbox Route111_Text_Give_Mints, MSGBOX_DEFAULT
+	msgbox Route119_Text_Give_Mints, MSGBOX_DEFAULT
 	giveitem ITEM_LONELY_MINT
 	giveitem ITEM_NAUGHTY_MINT
 	giveitem ITEM_MILD_MINT
