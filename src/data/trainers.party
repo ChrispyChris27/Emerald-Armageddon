@@ -174,7 +174,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Magnemite @ Custap Berry
 Level: 12
@@ -2382,11 +2382,11 @@ Nature: Modest
 - Earth Power
 - Dazzling Gleam
 
-Oranguru @ Throat Spray
+Indeedee F @ Throat Spray
 Level: 28
-Ability: Inner Focus
+Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
+Nature: Timid
 - Psychic Noise
 - Hyper Voice
 - Shadow Ball
@@ -5591,7 +5591,7 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
 === TRAINER_BRENT ===
-Name: BUSH
+Name: George
 Class: Bug Maniac
 Pic: Bug Maniac
 Gender: Male
@@ -5609,7 +5609,7 @@ Nature: Hasty
 - Fly
 
 === TRAINER_DONALD ===
-Name: GEORGE
+Name: Bush
 Class: Bug Maniac
 Pic: Bug Maniac
 Gender: Male
@@ -7058,7 +7058,7 @@ Volcarona @ Focus Sash
 Level: 46
 Ability: Swarm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
+Nature: Timid
 - Fiery Dance
 - Bug Buzz
 - Solarbeam
@@ -7079,7 +7079,7 @@ Level: 46
 Ability: Blaze
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Flare Blitz
+- Fire Punch
 - Dragon Claw
 - Thunderpunch
 - Dragon Dance
@@ -7100,25 +7100,25 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Population Bomb
 
-Wyrdeer @ Life Orb
+Bibarel @ Life Orb
 Level: 30
-Ability: Intimidate
+Ability: Simple
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Naive
-- Psyshield Bash
-- Facade
-- Shadow Ball
-- Earth Power
+Nature: Jolly
+- Aqua Jet
+- Swords Dance
+- Hyper Fang
+- Waterfall
 
-Zoroark Hisui @ Sitrus Berry
+Oranguru @ Leftovers
 Level: 30
-Ability: Illusion
+Ability: Inner Focus
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hasty
-- Bitter Malice
-- Skitter Smack
-- Facade
-- Flamethrower
+Nature: Timid
+- Stored Power
+- Nasty Plot
+- Hyper Voice
+- Shadow Ball
 
 Bewear @ Assault Vest
 Level: 30
@@ -7140,15 +7140,15 @@ Nature: Jolly
 - Night Slash
 - Drain Punch
 
-Staraptor @ Leftovers
+Audino @ Audinite
 Level: 30
-Ability: Intimidate
+Ability: Regenerator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Jolly
-- Dual Wingbeat
-- Close Combat
-- Roost
-- Bulk Up
+Nature: Bold
+- Calm Mind
+- Draining Kiss
+- Tri Attack
+- Flamethrower
 
 === TRAINER_WINONA_1 ===
 Name: Winona
@@ -7687,7 +7687,7 @@ Level: 22
 Ability: Friend Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
-- Hyper Voice
+- Icy Wind
 - Dazzling Gleam
 - Follow Me
 - Helping Hand

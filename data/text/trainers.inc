@@ -2674,8 +2674,7 @@ Route118_Text_DeandrePostBattle:
 	.string "You can copy me--I don't mind!$"
 
 Route119_Text_BrentIntro:
-	.string "Shhh!\n"
-	.string "There's no secrets here!$"
+	.string "Want to know a secret?$"
 
 Route119_Text_BrentDefeat:
 	.string "Whoopsie!\n"
@@ -2685,7 +2684,8 @@ Route119_Text_BrentPostBattle:
 	.string "You'll never understand…$"
 
 Route119_Text_DonaldIntro:
-	.string "Want to know a secret?$"
+	.string "Shhh!\n"
+	.string "There's no secrets here!$"
 
 Route119_Text_DonaldDefeat:
 	.string "I wish we'd never met…$"

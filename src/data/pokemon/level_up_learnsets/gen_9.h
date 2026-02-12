@@ -570,9 +570,9 @@ static const struct LevelUpMove sRaichuAlolaLevelUpLearnset[] = {
 #if P_FAMILY_SANDSHREW
 static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
-    LEVEL_UP_MOVE( 1, MOVE_BULLDOZE),
+    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
-    LEVEL_UP_MOVE( 3, MOVE_POISON_STING),
+    LEVEL_UP_MOVE( 3, MOVE_BULLDOZE),
     LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(12, MOVE_METAL_CLAW),
@@ -592,9 +592,9 @@ static const struct LevelUpMove sSandshrewLevelUpLearnset[] = {
 static const struct LevelUpMove sSandslashLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 0, MOVE_CRUSH_CLAW),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
-    LEVEL_UP_MOVE( 1, MOVE_BULLDOZE),
+    LEVEL_UP_MOVE( 3, MOVE_BULLDOZE),
     LEVEL_UP_MOVE( 1, MOVE_DEFENSE_CURL),
-    LEVEL_UP_MOVE( 3, MOVE_POISON_STING),
+    LEVEL_UP_MOVE( 1, MOVE_POISON_STING),
     LEVEL_UP_MOVE( 6, MOVE_SAND_ATTACK),
     LEVEL_UP_MOVE( 9, MOVE_ROLLOUT),
     LEVEL_UP_MOVE(12, MOVE_METAL_CLAW),
