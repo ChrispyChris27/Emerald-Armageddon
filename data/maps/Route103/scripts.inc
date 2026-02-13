@@ -361,3 +361,23 @@ Route103_Text_Fisherman:
 	.string "I've gotta snag it before it\n"
 	.string "swims back to sea!$"
 
+Route103_RoguePokenavCall::
+	pokenavcall Rt103RogueText
+	waitmessage
+	setvar VAR_ROGUE_STATE, 1
+	end
+
+Rt103RogueText:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hi, {PLAYER}{KUN}!\p"
+	.string "I'm detecting an energy surge\n"
+	.string "near you on Route 110.\p"
+	.string "Can you investigate if another\n"
+	.string "pokémon has gone rogue?\p"
+	.string "Let me know what you find,\n"
+	.string "it may help with my research.\p"
+	.string "Good luck {PLAYER}!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+

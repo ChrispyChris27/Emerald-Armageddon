@@ -908,3 +908,153 @@ MagnezoneCalmedText:
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
+Route110_AbsolBattle::
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	settotemboost B_POSITION_OPPONENT_LEFT, 1, 1, 1, 0, 0
+	setwildbattle SPECIES_ABSOL_MEGA, 35, ITEM_MUSCLE_BAND
+	waitse
+	playmoncry SPECIES_ABSOL_MEGA, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	special BattleSetup_StartRogueWildBattle
+	waitstate
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, MegaAbsol_Defeated
+	releaseall
+	end
+
+MegaAbsol_Defeated::
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	setflag FLAG_TOTEM_MAGNEZONE
+	setvar VAR_ROGUE_STATE, 2 
+	fadescreen FADE_TO_BLACK
+	removeobject LOCALID_ROGUE_ABSOL
+	fadescreen FADE_FROM_BLACK
+	pokenavcall AbsolCalmedText
+	waitmessage
+	releaseall
+	end
+
+AbsolEnters1::
+	lockall
+	playmoncry SPECIES_ABSOL_MEGA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ABSOL, Absol_Movement1
+	goto Route110_AbsolBattle
+
+Absol_Movement1:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	face_left
+	step_end
+
+AbsolEnters2::
+	lockall
+	playmoncry SPECIES_ABSOL_MEGA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ABSOL, Absol_Movement2
+	goto Route110_AbsolBattle
+
+Absol_Movement2:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	face_left
+	step_end
+
+AbsolEnters3::
+	lockall
+	playmoncry SPECIES_ABSOL_MEGA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ABSOL, Absol_Movement3
+	goto Route110_AbsolBattle
+
+Absol_Movement3:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+AbsolEnters4::
+	lockall
+	playmoncry SPECIES_ABSOL_MEGA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ABSOL, Absol_Movement4
+	goto Route110_AbsolBattle
+
+Absol_Movement4:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	face_left
+	step_end
+
+AbsolEnters5::
+	lockall
+	playmoncry SPECIES_ABSOL_MEGA, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_ROGUE_ABSOL, Absol_Movement5
+	goto Route110_AbsolBattle
+
+Absol_Movement5:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	face_left
+	step_end
+
+AbsolCalmedText:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hi, {PLAYER}{KUN}!\p"
+	.string "Excellent work calming that\n"
+	.string "Mega Absol!\p"
+	.string "I'm rather worried now though.\p"
+	.string "The situation may be more\n"
+	.string "serious than I first thought.\p"
+	.string "It's said that Absol commonly\n"
+	.string "appears when a disaster is\l"
+	.string "imminent to warn people.\p"
+	.string "The fact that Absol mega\n"
+	.string "evolved on its own may mean\l"
+	.string "a mega disaster is coming!\p"
+	.string "We'll have to continue to\n"
+	.string "monitor this situation in\l"
+	.string "case Mega Absol was correct.\p"
+	.string "If there really is something\n"
+	.string "disasterous on its way we'll\l"
+	.string "want to be prepared.\p"
+	.string "I'll continue my research and\n"
+	.string "I'll let you know if I find\l"
+	.string "any more energy surges I need\l"
+	.string "you to investigate.\p"
+	.string "Thanks again for offering to\n"
+	.string "help me out {PLAYER}!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+	
+
+

@@ -23,6 +23,7 @@ PetalburgCity_WallysHouse_EventScript_GiveHMSurf::
 	setflag FLAG_RECEIVED_MACHO_BRACE
 	msgbox PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces, MSGBOX_DEFAULT
 	setvar VAR_PETALBURG_CITY_STATE, 5
+	clearflag FLAG_TOTEM_ABSOL_MEGA
 	releaseall
 	end
 

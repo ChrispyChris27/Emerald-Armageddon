@@ -317,7 +317,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "Route103_RoguePokenavCall"
     }
   ],
   "bg_events": [

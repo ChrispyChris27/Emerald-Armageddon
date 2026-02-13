@@ -450,11 +450,12 @@
       "flag": "FLAG_TOTEM_MAGNEZONE"
     },
     {
+      "local_id": "LOCALID_ROGUE_ABSOL",
       "graphics_id": "OBJ_EVENT_GFX_SPECIES(ABSOL_MEGA)",
       "x": 8,
       "y": 69,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -569,7 +570,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "AbsolEnters5"
     },
     {
       "type": "trigger",
@@ -578,7 +579,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "AbsolEnters4"
     },
     {
       "type": "trigger",
@@ -587,7 +588,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "AbsolEnters3"
     },
     {
       "type": "trigger",
@@ -596,7 +597,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "AbsolEnters2"
     },
     {
       "type": "trigger",
@@ -605,7 +606,7 @@
       "elevation": 0,
       "var": "VAR_ROGUE_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "AbsolEnters1"
     },
     {
       "type": "trigger",
