@@ -5,7 +5,7 @@ NewMap1_MapScripts::
 	.byte 0
 
 NewMap1_OnLoad::
-	setvar VAR_UNUSED_0x40F7, 0
+	setvar VAR_BATTLE_START, 0
 	end
 
 NewMap1_OnTransition::

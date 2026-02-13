@@ -4,7 +4,7 @@ RocketHideout4_MapScripts::
 	.byte 0
 
 RocketHideout4_OnLoad::
-	setvar VAR_UNUSED_0x40F7, 1
+	setvar VAR_BATTLE_START, 1
 	end
 
 RocketHideout4_OnFrame::

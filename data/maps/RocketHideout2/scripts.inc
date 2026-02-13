@@ -3,7 +3,7 @@ RocketHideout2_MapScripts::
 	.byte 0
 
 RocketHideout2_OnLoad::
-	setvar VAR_UNUSED_0x40F7, 1
+	setvar VAR_BATTLE_START, 1
 	end
 
 RocketHideout_Grunt1_Script::

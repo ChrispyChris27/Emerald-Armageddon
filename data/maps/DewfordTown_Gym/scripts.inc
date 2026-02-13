@@ -134,11 +134,11 @@ DewfordTown_Gym_EventScript_StopCountingTrainers::
 	return
 
 DewfordTown_Gym_EventScript_Brawly::
-	setvar VAR_UNUSED_0x40F7, 3
+	setvar VAR_BATTLE_START, 3
 	trainerbattle_single TRAINER_BRAWLY_1, DewfordTown_Gym_Text_BrawlyIntro, DewfordTown_Gym_Text_BrawlyDefeat, DewfordTown_Gym_EventScript_BrawlyDefeated, NO_MUSIC
 	goto_if_unset FLAG_RECEIVED_HM_ROCK_SMASH, DewfordTown_Gym_EventScript_GiveBulkUp2
 	msgbox DewfordTown_Gym_Text_BrawlyPostBattle, MSGBOX_DEFAULT
-	setvar VAR_UNUSED_0x40F7, 0
+	setvar VAR_BATTLE_START, 0
 	release
 	end
 
@@ -150,7 +150,7 @@ DewfordTown_Gym_EventScript_BrawlyDefeated::
 	msgbox DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_DEWFORD_GYM
 	setflag FLAG_BADGE02_GET
-	setvar VAR_UNUSED_0x40F7, 0
+	setvar VAR_BATTLE_START, 0
 	setvar VAR_0x8008, 2
 	call Common_EventScript_SetGymTrainers
 	call DewfordTown_Gym_EventScript_GiveBulkUp
