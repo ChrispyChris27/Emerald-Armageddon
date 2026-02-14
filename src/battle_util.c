@@ -10731,7 +10731,7 @@ bool32 TrySwitchInEjectPack(enum EjectPackTiming timing)
         if (gDisableStructs[i].tryEjectPack
          && GetBattlerHoldEffect(i) == HOLD_EFFECT_EJECT_PACK
          && IsBattlerAlive(i)
-         && CountUsablePartyMons(i) > 0)
+         && CanBattlerSwitch(i))
         {
             ejectPackBattlers |= 1u << i;
             numEjectPackBattlers++;

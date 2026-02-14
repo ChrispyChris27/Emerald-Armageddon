@@ -3895,6 +3895,7 @@ static void TryDoEventsBeforeFirstTurn(void)
         while (gBattleStruct->switchInBattlerCounter < gBattlersCount) // From fastest to slowest
         {
             u32 battler = gBattlerByTurnOrder[gBattleStruct->switchInBattlerCounter++];
+            gBattlerAttacker = battler;
             if (ItemBattleEffects(battler, 0, GetBattlerHoldEffect(battler), IsOnSwitchInFirstTurnActivation))
                 return;
         }
