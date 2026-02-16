@@ -17842,7 +17842,7 @@ Pic: Wally
 Gender: Male
 Music: Male
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Magnezone @ Custap Berry
 Level: 35
@@ -23487,67 +23487,74 @@ IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 Nature: Hardy
 
 === TRAINER_STEVEN ===
-Name: STEVEN
+Name: Chrispy
 Class: Rival
-Pic: Steven
+Pic: Pyramid King Brandon
 Gender: Male
 Music: Male
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Mugshot: Green
 
-Skarmory
-Level: 77
+Genesect Douse @ Douse Drive
+Level: 100
+Ability: Download
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Toxic
-- Aerial Ace
-- Spikes
-- Steel Wing
-
-Claydol
-Level: 75
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Reflect
-- Light Screen
-- Ancient Power
-- Earthquake
-
-Aggron
-Level: 76
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
+Nature: Timid
+- Bug Buzz
+- Techno Blast
+- Flash Cannon
 - Thunder
-- Earthquake
-- Solar Beam
-- Dragon Claw
 
-Cradily
-Level: 76
+Regice @ Life Orb
+Level: 100
+Ability: Clear Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
+Nature: Modest
+- Thunder
+- Ice Beam
+- Earth Power
+- Weather Ball
+
+Kabutops @ Rindo Berry
+Level: 100
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Stone Edge
+- Leech Life
+- Swords Dance
+
+Escavalier @ Assault Vest
+Level: 100
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- X Scissor
+- Aqua Cutter
+- Sacred Sword
+- Iron Head
+
+Sigilyph @ Life Orb
+Level: 100
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Psyshock
+- Weather Ball
+- Ice Beam
+
+Yanmega @ Focus Sash
+Level: 100
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Hurricane
+- Bug Buzz
+- Quiver Dance
 - Giga Drain
-- Ancient Power
-- Ingrain
-- Confuse Ray
-
-Armaldo
-Level: 76
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Water Pulse
-- Ancient Power
-- Aerial Ace
-- Slash
-
-Metagross @ Sitrus Berry
-Level: 78
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Earthquake
-- Psychic
-- Meteor Mash
-- Shadow Ball
 
 === TRAINER_ANABEL ===
 Name: ANABEL
