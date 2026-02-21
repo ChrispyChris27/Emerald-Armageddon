@@ -3514,8 +3514,11 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
         }
         break;
     case MOVE_EFFECT_THROAT_CHOP:
-        gDisableStructs[gEffectBattler].throatChopTimer = 2;
-        gBattlescriptCurrInstr = battleScript;
+        if (gDisableStructs[gEffectBattler].throatChopTimer == 0)
+        {
+            gDisableStructs[gEffectBattler].throatChopTimer = 2;
+            gBattlescriptCurrInstr = battleScript;
+        }
         break;
     case MOVE_EFFECT_INCINERATE:
         if (((gBattleMons[gEffectBattler].item >= FIRST_BERRY_INDEX && gBattleMons[gEffectBattler].item <= LAST_BERRY_INDEX)
@@ -16554,6 +16557,12 @@ void BS_JumpIfAbilityCantBeReactivated(void)
     NATIVE_ARGS(u8 battler, const u8 *jumpInstr);
     u32 battler = GetBattlerForBattleScript(cmd->battler);
     u32 ability = gBattleMons[battler].ability;
+
+    if (GetBattlerHoldEffectIgnoreAbility(battler) == HOLD_EFFECT_ABILITY_SHIELD)
+    {
+        gBattlescriptCurrInstr = cmd->jumpInstr;
+        return;
+    }
 
     switch (ability)
     {
