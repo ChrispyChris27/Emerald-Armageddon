@@ -338,14 +338,14 @@ Necro_Defeated::
 	clearflag FLAG_NO_CATCH_WILD
 	clearflag FLAG_TOTEM_NECROZMA
 	setvar VAR_ROGUE_STATE, 24 
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	playmoncry SPECIES_NECROZMA_ULTRA, CRY_MODE_ENCOUNTER
 	waitmoncry
 	removeobject LOCALID_ULTRA_NECRO
 	addobject LOCALID_STEVEN_CASTLE_TOP
 	playse SE_M_COSMIC_POWER
 	waitse
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	playbgm MUS_NCASTLE, TRUE
 	applymovement LOCALID_PLAYER, PlayerMoveRightCastle
 	applymovement LOCALID_STEVEN_CASTLE_TOP, Steven_Climb_Stairs

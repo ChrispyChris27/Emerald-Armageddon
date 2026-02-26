@@ -30,9 +30,9 @@ RoaringMoon_Defeated::
 	clearflag FLAG_NO_RUN_WILD
 	clearflag FLAG_NO_CATCH_WILD
 	setvar VAR_ROGUE_STATE, 16
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_MOON
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall RoaringMoonCalmedText
 	waitmessage
 	releaseall

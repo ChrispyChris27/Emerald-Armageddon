@@ -61,9 +61,9 @@ Centiskorch_Defeated::
 	setflag FLAG_TOTEM_CENTISKORCH
 	clearflag FLAG_WILD_DYNAMAX_BATTLE
 	setvar VAR_ROGUE_STATE, 4 
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE3
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall CentiCalmedText
 	waitmessage
 	releaseall

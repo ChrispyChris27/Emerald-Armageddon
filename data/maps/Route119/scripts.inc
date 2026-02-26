@@ -664,9 +664,9 @@ Kilowattrel_Defeated::
 	clearflag FLAG_NO_CATCH_WILD
 	setflag FLAG_TOTEM_KILOWATTREL
 	setvar VAR_ROGUE_STATE, 9
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_KILO
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall KilowattrelCalmedText
 	waitmessage
 	releaseall

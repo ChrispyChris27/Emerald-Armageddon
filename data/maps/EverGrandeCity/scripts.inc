@@ -58,9 +58,9 @@ EverGrandeRogueDefeated::
 	clearflag FLAG_SMART_WILD
 	clearflag FLAG_NO_RUN_WILD
 	clearflag FLAG_NO_CATCH_WILD
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_ZARD_Y
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	goto_if_unset FLAG_TOTEM_DURALUDON, CheckLudiEverGrande
 	goto_if_unset FLAG_TOTEM_SHIFTRY, Rt123_OneRogueLeft
 	pokenavcall StevenErraticRoguesCalmed

@@ -955,9 +955,9 @@ Sandaconda_Defeated::
 	clearflag FLAG_MF_ROCKETS
 	setflag FLAG_TOTEM_SANDACONDA
 	setvar VAR_ROGUE_STATE, 7 
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_SANDACONDA
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall SandacondaCalmedText
 	waitmessage
 	releaseall

@@ -31,11 +31,11 @@ Cryogonal_Defeated::
 	clearflag FLAG_NO_CATCH_WILD
 	setflag FLAG_TOTEM_CRYOGONAL
 	setvar VAR_ROGUE_STATE, 13
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	setweather WEATHER_NONE
 	doweather
 	removeobject LOCALID_ROGUE_CRYO
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall CryogonalCalmedText
 	waitmessage
 	releaseall

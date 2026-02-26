@@ -16228,7 +16228,7 @@ Ability: Chlorophyll
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Lonely
 - Solar Blade
-- Gunk Shot
+- Poison Jab
 - Growth
 - Weather Ball
 
@@ -20819,7 +20819,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
 
 Lanturn @ Leftovers
-Level: 38
+Level: 36
 Ability: Volt Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -20829,7 +20829,7 @@ Nature: Timid
 - Thunderbolt
 
 Raichu @ Air Balloon
-Level: 38
+Level: 36
 Ability: Lightning Rod
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -20839,7 +20839,7 @@ Nature: Timid
 - Focus Blast
 
 Raichu Alola @ Focus Sash
-Level: 38
+Level: 36
 Ability: Lightning Rod
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -20858,7 +20858,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
 
 Electivire @ Cell Battery
-Level: 38
+Level: 36
 Ability: Vital Spirit
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -20868,21 +20868,21 @@ Nature: Jolly
 - Cross Chop
 
 Starmie @ Absorb Bulb
-Level: 38
+Level: 36
 Ability: Analytic
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- Hydro Pump
+- Scald
 - Ice Beam
 - Psychic
 - Thunderbolt
 
 Ludicolo @ Absorb Bulb
-Level: 38
+Level: 36
 Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- Hydro Pump
+- Scald
 - Ice Beam
 - Fake Out
 - Giga Drain

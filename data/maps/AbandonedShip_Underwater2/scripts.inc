@@ -32,10 +32,10 @@ Dhelmise_Relicanth_Defeated::
 	clearflag FLAG_NO_CATCH_WILD
 	setvar VAR_ROGUE_STATE, 14
 	setflag FLAG_HIDE_SEAFLOOR_CAVERN_ENTRANCE_AQUA_GRUNT
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_RELI
 	removeobject LOCALID_ROGUE_DHEL
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall ShipCalmedText
 	waitmessage
 	releaseall

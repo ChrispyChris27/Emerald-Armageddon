@@ -781,9 +781,9 @@ Magnezone_Defeated::
 	clearflag FLAG_NO_CATCH_WILD
 	setflag FLAG_TOTEM_MAGNEZONE
 	setvar VAR_ROGUE_STATE, 8 
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_ZONE
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall MagnezoneCalmedText
 	waitmessage
 	releaseall
@@ -933,9 +933,9 @@ MegaAbsol_Defeated::
 	clearflag FLAG_NO_CATCH_WILD
 	setflag FLAG_TOTEM_MAGNEZONE
 	setvar VAR_ROGUE_STATE, 2 
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_ABSOL
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall AbsolCalmedText
 	waitmessage
 	releaseall

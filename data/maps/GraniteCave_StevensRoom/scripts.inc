@@ -181,9 +181,9 @@ Sableye_Defeated::
 	clearflag FLAG_NO_CATCH_WILD
 	setvar VAR_PETALBURG_GYM_STATE, 6
 	call_if_eq VAR_PETALBURG_GYM_STATE, 6, Common_EventScript_ReadyPetalburgGymForBattle
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_SABLEYE
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	applymovement LOCALID_GRANITE_CAVE_STEVEN, Common_Movement_FaceUp
 	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
 	waitmovement

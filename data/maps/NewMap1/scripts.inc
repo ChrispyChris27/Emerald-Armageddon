@@ -84,14 +84,14 @@ NewMap1_EventScript_Giovanni::
 	playse SE_M_DETECT
 	playfanfare MUS_AWAKEN_LEGEND
 	playse SE_ORB
-	fadescreen FADE_TO_WHITE
+	fadescreenswapbuffers FADE_TO_WHITE
 	setflag FLAG_HIDEOUT_RAY
 	removeobject LOCALID_RAY
 	clearflag FLAG_HIDEOUT_MEGA_RAY
 	addobject LOCALID_MEGARAY
 	waitmovement 0
 	delay 200
-	fadescreen FADE_FROM_WHITE
+	fadescreenswapbuffers FADE_FROM_WHITE
 	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
@@ -171,7 +171,7 @@ NewMap1_EventScript_Giovanni::
 	msgbox Hideout_GioExit12, MSGBOX_AUTOCLOSE
 	giveitem ITEM_KANGASKHANITE
 	msgbox Hideout_GioExit13, MSGBOX_AUTOCLOSE
-	fadescreen FADE_TO_BLACK 
+	fadescreenswapbuffers FADE_TO_BLACK 
 	removeobject LOCALID_GIO
 	removeobject LOCALID_SIS1
 	removeobject LOCALID_SIS2
@@ -185,7 +185,7 @@ NewMap1_EventScript_Giovanni::
 	setflag FLAG_HIDEOUT_GIOVANNI
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
 	setvar VAR_ROCKET_HIDEOUT_STATE, 4
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall StevenCalmedRayquazaText
 	releaseall
 	end
@@ -243,7 +243,7 @@ RayquazaBattle::
 	msgbox Hideout_GioExit12, MSGBOX_AUTOCLOSE
 	giveitem ITEM_KANGASKHANITE
 	msgbox Hideout_GioExit13, MSGBOX_AUTOCLOSE
-	fadescreen FADE_TO_BLACK 
+	fadescreenswapbuffers FADE_TO_BLACK 
 	removeobject LOCALID_GIO
 	removeobject LOCALID_SIS1
 	removeobject LOCALID_SIS2
@@ -257,7 +257,7 @@ RayquazaBattle::
 	setflag FLAG_HIDEOUT_GIOVANNI
 	setflag FLAG_HIDE_SOOTOPOLIS_CITY_STEVEN
 	setvar VAR_ROCKET_HIDEOUT_STATE, 4
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall StevenCalmedRayquazaText
 	releaseall
 	end

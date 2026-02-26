@@ -397,10 +397,10 @@ MeteorFalls_EventScript_Steven::
 	msgbox MeteorFalls_Text_Steven1, MSGBOX_DEFAULT
 	applymovement LOCALID_MF_STEVEN1, Common_Movement_FacePlayer
 	msgbox MeteorFalls_Text_Steven2, MSGBOX_AUTOCLOSE
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_MF_STEVEN1
 	clearflag FLAG_MF_STEVEN_2
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	setvar VAR_STEVEN_MF_STATE, 2
 	releaseall
 	end

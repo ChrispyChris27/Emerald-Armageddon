@@ -38,7 +38,7 @@ Cyrus_Event_Script::
 	playse SE_M_DETECT
 	playfanfare MUS_AWAKEN_LEGEND
 	playse SE_ORB
-	fadescreen FADE_TO_WHITE
+	fadescreenswapbuffers FADE_TO_WHITE
 	removeobject LOCALID_DIALGA_A
 	removeobject LOCALID_PALKIA_A
 	removeobject LOCALID_TINA_A
@@ -50,7 +50,7 @@ Cyrus_Event_Script::
 	waitmovement 0
 	special HealPlayerParty
 	delay 180
-	fadescreen FADE_FROM_WHITE
+	fadescreenswapbuffers FADE_FROM_WHITE
 	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 1  @ horizontal pan
@@ -141,7 +141,7 @@ CyrusDefeated::
 	playmoncry SPECIES_PALKIA_ORIGIN, CRY_MODE_NORMAL
 	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
 	waitmoncry
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	msgbox Cyrus_Text7, MSGBOX_AUTOCLOSE
 	playmoncry SPECIES_GIRATINA_ORIGIN, CRY_MODE_NORMAL
 	waitmoncry
@@ -159,7 +159,7 @@ CyrusDefeated::
 	delay 16
 	removeobject LOCALID_CYRUS
 	removeobject LOCALID_TINA_O
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	setvar VAR_STEVEN_MF_STATE, 5
 	playmoncry SPECIES_ARCEUS_NORMAL, CRY_MODE_NORMAL
 	waitmoncry

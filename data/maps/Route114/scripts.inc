@@ -412,9 +412,9 @@ Sigilyph_Defeated::
 	clearflag FLAG_NO_CATCH_WILD
 	setflag FLAG_TOTEM_SIGILYPH
 	setvar VAR_ROGUE_STATE, 6 
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE5
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall SigilyphCalmedText
 	waitmessage
 	releaseall

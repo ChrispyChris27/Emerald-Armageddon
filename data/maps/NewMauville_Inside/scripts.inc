@@ -526,10 +526,10 @@ NewMauville_Inside_EventScript_Tabitha::
 	playbgm MUS_ENCOUNTER_MAGMA, FALSE
 	msgbox NewMauville_Inside_Text_Tabitha4, MSGBOX_DEFAULT
 	fadedefaultbgm
-	fadescreen FADE_TO_BLACK 
+	fadescreenswapbuffers FADE_TO_BLACK 
 	setflag FLAG_118_GRUNTS
 	removeobject LOCALID_TABITHA_NM
 	removeobject LOCALID_GRUNT_NM
-	fadescreen FADE_FROM_BLACK 
+	fadescreenswapbuffers FADE_FROM_BLACK 
 	releaseall
 	end

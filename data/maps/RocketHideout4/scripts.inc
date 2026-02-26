@@ -42,14 +42,14 @@ RocketHideout4_Brother_Battles::
 	msgbox Brother4Intro, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_HIDEOUT_GRUNT_23, Brother4Defeat
 	msgbox Brother4Exit, MSGBOX_AUTOCLOSE
-	fadescreen FADE_TO_BLACK
+	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_BRO1
 	removeobject LOCALID_BRO2
 	removeobject LOCALID_BRO3
 	removeobject LOCALID_BRO4
 	setvar VAR_ROCKET_HIDEOUT_STATE, 1
 	setflag FLAG_ROCKET_BROS
-	fadescreen FADE_FROM_BLACK
+	fadescreenswapbuffers FADE_FROM_BLACK
 	releaseall
 	end
 
