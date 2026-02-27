@@ -13253,7 +13253,7 @@ F_TRAINER_FEMALE |
 #line 5434
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 5433
-            .ability = ABILITY_SHADOW_TAG,
+            .ability = ABILITY_ARENA_TRAP,
 #line 5432
             .lvl = 43,
 #line 5435

@@ -5895,6 +5895,9 @@ u32 IsAbilityPreventingEscape(u32 battler)
         if (battler == battlerDef || IsBattlerAlly(battler, battlerDef))
             continue;
 
+        if (!IsBattlerAlive(battlerDef))
+            continue;
+
         enum Ability ability = GetBattlerAbility(battlerDef);
 
         if (ability == ABILITY_SHADOW_TAG && (B_SHADOW_TAG_ESCAPE <= GEN_3 || GetBattlerAbility(battler) != ABILITY_SHADOW_TAG))
