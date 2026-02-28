@@ -5894,6 +5894,9 @@ u32 IsAbilityPreventingEscape(u32 battler)
     {
         if (battler == battlerDef || IsBattlerAlly(battler, battlerDef))
             continue;
+        
+        if (!IsBattlerAlive(battlerDef))
+            continue;
 
         if (!IsBattlerAlive(battlerDef))
             continue;
@@ -6039,6 +6042,7 @@ static u32 GetStatValueWithStages(u32 battler, u32 stat)
 u32 GetParadoxHighestStatId(u32 battler)
 {
     u32 highestId = STAT_ATK;
+    bool32 wonderRoom = (gFieldStatuses & STATUS_FIELD_WONDER_ROOM) != 0;
     u32 highestStat = GetStatValueWithStages(battler, STAT_ATK);
 
     for (u32 stat = STAT_DEF; stat < NUM_STATS; stat++)
@@ -6046,7 +6050,23 @@ u32 GetParadoxHighestStatId(u32 battler)
         if (stat == STAT_SPEED)
             continue;
 
-        u32 statValue = GetStatValueWithStages(battler, stat);
+        u32 statValue;
+        switch (stat)
+        {
+        case STAT_DEF:
+            statValue = wonderRoom ? gBattleMons[battler].spDefense : gBattleMons[battler].defense;
+            statValue *= gStatStageRatios[gBattleMons[battler].statStages[STAT_DEF]][0];
+            statValue /= gStatStageRatios[gBattleMons[battler].statStages[STAT_DEF]][1];
+            break;
+        case STAT_SPDEF:
+            statValue = wonderRoom ? gBattleMons[battler].defense : gBattleMons[battler].spDefense;
+            statValue *= gStatStageRatios[gBattleMons[battler].statStages[STAT_SPDEF]][0];
+            statValue /= gStatStageRatios[gBattleMons[battler].statStages[STAT_SPDEF]][1];
+            break;
+        default:
+            statValue = GetStatValueWithStages(battler, stat);
+            break;
+        }
         if (statValue > highestStat)
         {
             highestStat = statValue;
