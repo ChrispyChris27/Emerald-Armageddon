@@ -14079,6 +14079,7 @@ static const struct LevelUpMove sKlinkLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_WILD_CHARGE),
     LEVEL_UP_MOVE(36, MOVE_METAL_BURST),
     LEVEL_UP_MOVE(40, MOVE_STEEL_ROLLER),
+    LEVEL_UP_MOVE(44, MOVE_RECOVER),
     LEVEL_UP_END
 };
 
@@ -14095,6 +14096,7 @@ static const struct LevelUpMove sKlangLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_WILD_CHARGE),
     LEVEL_UP_MOVE(36, MOVE_METAL_BURST),
     LEVEL_UP_MOVE(40, MOVE_STEEL_ROLLER),
+    LEVEL_UP_MOVE(44, MOVE_RECOVER),
     LEVEL_UP_END
 };
 
@@ -14111,6 +14113,7 @@ static const struct LevelUpMove sKlinklangLevelUpLearnset[] = {
     LEVEL_UP_MOVE(32, MOVE_WILD_CHARGE),
     LEVEL_UP_MOVE(36, MOVE_METAL_BURST),
     LEVEL_UP_MOVE(40, MOVE_STEEL_ROLLER),
+    LEVEL_UP_MOVE(44, MOVE_RECOVER),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_KLINK

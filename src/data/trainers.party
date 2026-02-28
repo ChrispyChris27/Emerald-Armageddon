@@ -21774,7 +21774,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Glimmora @ Air Balloon
-Level: 47
+Level: 46
 Ability: Toxic Debris
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -21784,7 +21784,7 @@ Nature: Timid
 - Sludge Bomb
 
 Butterfree @ Brightpowder
-Level: 47
+Level: 46
 Ability: Compound Eyes
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -21794,7 +21794,7 @@ Nature: Timid
 - Tailwind
 
 Pangoro @ Assault Vest
-Level: 47
+Level: 46
 Ability: Iron Fist
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -21804,7 +21804,7 @@ Nature: Jolly
 - Ice Punch
 
 Polteageist @ Focus Sash
-Level: 47
+Level: 46
 Ability: Weak Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -21814,7 +21814,7 @@ Nature: Timid
 - Scald
 
 Garbodor @ Liechi Berry
-Level: 47
+Level: 46
 Ability: Weak Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -21829,62 +21829,48 @@ Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Aerodactyl
+Omastar @ Focus Band
 Level: 47
+Ability: Weak Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Rock Slide
-- Hyper Beam
-- Supersonic
-- Protect
-
-Golem
-Level: 47
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Focus Punch
-- Rollout
-- Earthquake
-- Explosion
-
-Omastar
-Level: 47
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Protect
+Nature: Timid
+- Stealth Rock
+- Spikes
 - Ice Beam
-- Rock Slide
-- Surf
+- Scald
 
-Kabutops @ Sitrus Berry
-Level: 50
+Mandibuzz @ Leftovers
+Level: 47
+Ability: Big Pecks
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
+Nature: Jolly
+- Roost
+- Foul Play
+- Toxic
+- Swagger
+
+Bouffalant @ Sitrus Berry
+Level: 47
+Ability: Reckless
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Head Charge
+- High Horsepower
+- Megahorn
 - Swords Dance
-- Ice Beam
-- Surf
-- Rock Slide
 
-Steelix
-Level: 50
+Klinklang @ Brightpowder
+Level: 47
+Ability: Clear Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Iron Tail
-- Explosion
-- Roar
-- Rock Slide
-
-Nosepass @ Sitrus Berry
-Level: 52
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Double Team
-- Explosion
-- Protect
-- Rock Slide
+Nature: Jolly
+- Substitute
+- Shift Gear
+- Gear Grind
+- Recover
 
 === TRAINER_CYRUS ===
 Name: Cyrus
@@ -22108,44 +22094,59 @@ Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Mareep
-Level: 36
+Skarmory @ Brightpowder
+Level: 46
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder
-- Protect
-- Thunder Wave
-- Light Screen
+Nature: Jolly
+- Stealth Rock
+- Spikes
+- Whirlwind
+- Drill Peck
 
-Electrode
-Level: 36
+Throh @ Red Card
+Level: 46
+Ability: Mold Breaker
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
+Nature: Jolly
+- Stone Edge
+- Earthquake
+- Circle Throw
+- Poison Jab
 
-Magneton @ Sitrus Berry
-Level: 38
+Eelektross @ Red Card
+Level: 46
+Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
+Nature: Jolly
+- Dragon Tail
+- Rest
+- Sleep Talk
+- Thunder Punch
 
-Manectric @ Sitrus Berry
-Level: 40
+Grumpig @ Red Card
+Level: 46
+Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Bite
-- Thunder Wave
-- Thunder
-- Protect
+Nature: Timid
+- Psyshock
+- Shadow Ball
+- Whirlwind
+- Focus Blast
+
+Mabosstiff @ Red Card
+Level: 46
+Ability: Stakeout
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Roar
+- Knock Off
+- Play Rough
+- Double Edge
+
 
 === TRAINER_FALLS_GRUNT_4 ===
 Name: Grunt
@@ -22153,53 +22154,58 @@ Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Pikachu
-Level: 39
+Klefki @ Focus Band
+Level: 46
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder
-- Slam
-- Rain Dance
-- Shock Wave
+Nature: Timid
+- Stealth Rock
+- Spikes
+- Draining Kiss
+- Flash Cannon
 
-Flaaffy
-Level: 40
+Lanturn @ Brightpowder
+Level: 46
+Ability: Volt Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder
-- Protect
-- Thunder Wave
-- Light Screen
+Nature: Timid
+- Ice Beam
+- Scald
+- Discharge
+- Confuse Ray
 
-Electrode
-Level: 40
+Zoroark Hisui @ Life Orb
+Level: 46
+Ability: Illsuion
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
+Nature: Timid
+- Hyper Voice
+- Bitter Malice
+- Flamethrower
+- Nasty Plot
 
-Magneton @ Sitrus Berry
-Level: 43
+Mienshao @ Sitrus Berry
+Level: 46
+Ability: Reckless
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
+Nature: Jolly
+- Hone Claws
+- Hi Jump Kick
+- Stone Edge
+- Triple Axel
 
-Manectric @ Sitrus Berry
-Level: 45
+Claydol @ Leftovers
+Level: 46
+Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Bite
-- Thunder Wave
-- Thunder
-- Protect
+Nature: Timid
+- Cosmic Power
+- Recover
+- Stored Power
+- Body Press
 
 === TRAINER_FALLS_GRUNT_5 ===
 Name: Grunt
@@ -22228,14 +22234,15 @@ Nature: Hardy
 - Thunder Wave
 - Light Screen
 
-Electrode
+Cacturne @ Brightpowder
 Level: 46
+Ability: Water Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
+Nature: Jolly
+- Growth
+- Power Trip
+- Needle Arm
+- Drain Punch
 
 Magneton @ Sitrus Berry
 Level: 48

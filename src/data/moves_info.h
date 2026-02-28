@@ -11646,9 +11646,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Stabs the foe with stones.\n"
             "High critical-hit ratio."),
         .effect = EFFECT_HIT,
-        .power = 100,
+        .power = 120,
         .type = TYPE_ROCK,
-        .accuracy = 100,
+        .accuracy = 85,
         .criticalHitStage = 1,
         .pp = 8,
         .target = MOVE_TARGET_SELECTED,
