@@ -20449,16 +20449,6 @@ Music: Male
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Necrozma @ Life Orb
-Level: 91
-Ability: Prism Armor
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Photon Geyser
-- Power Gem
-- Shadow Ball
-- Earth Power
-
 Sneasler @ Focus Sash
 Level: 91
 Ability: Unburden
@@ -20508,6 +20498,16 @@ Nature: Adamant
 - Dragon Rush
 - Dragon Dance
 - Aqua Tail
+
+Darkrai @ Darkranite
+Level: 91
+Ability: Bad Dreams
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dark Void
+- Dark Pulse
+- Focus Blast
+- Psychic
 
 === TRAINER_ARIANA_MOSSDEEP ===
 Name: ARIANA

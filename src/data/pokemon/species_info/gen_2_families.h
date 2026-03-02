@@ -347,6 +347,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         SHADOW(0, -1, SHADOW_SIZE_S)
         FOOTPRINT(Cyndaquil)
         .isStarter = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         OVERWORLD(
             sPicTable_Cyndaquil,
             SIZE_32x32,

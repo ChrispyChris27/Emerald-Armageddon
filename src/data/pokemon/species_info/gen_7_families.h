@@ -58,6 +58,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         SHADOW(-1, 1, SHADOW_SIZE_S)
         FOOTPRINT(Rowlet)
         .isStarter = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         OVERWORLD(
             sPicTable_Rowlet,
             SIZE_32x32,

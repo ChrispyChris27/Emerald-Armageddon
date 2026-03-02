@@ -637,6 +637,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         SHADOW(-3, 0, SHADOW_SIZE_S)
         FOOTPRINT(Oshawott)
         .isStarter = TRUE,
+        .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         OVERWORLD(
             sPicTable_Oshawott,
             SIZE_32x32,
