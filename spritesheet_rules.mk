@@ -729,7 +729,7 @@ $(OBJEVENTGFXDIR)/people/youngster_frlg.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/people/cyrus.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
-$(OBJEVENTGFXDIR)/people/giovanni.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/people/giovanni1.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 4
 
 $(OBJEVENTGFXDIR)/people/gruntf.4bpp: %.4bpp: %.png

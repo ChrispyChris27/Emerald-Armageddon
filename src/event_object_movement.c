@@ -515,7 +515,7 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
 #define OBJ_EVENT_PAL_TAG_DYNAMIC                 0x1124 
 #define OBJ_EVENT_PAL_TAG_REGIELEKI               0x1125
-#define OBJ_EVENT_PAL_TAG_GIOVANNI                0x1126
+#define OBJ_EVENT_PAL_TAG_GIOVANNI1               0x1126
 #define OBJ_EVENT_PAL_TAG_CYRUS                   0x1127
 #define OBJ_EVENT_PAL_TAG_CYNTHIA                 0x1128
 #define OBJ_EVENT_PAL_TAG_GRUNT_M                 0x1129
@@ -572,7 +572,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
     {gObjectEventPal_RegidragoOW,           OBJ_EVENT_PAL_TAG_REGIDRAGO},
     {gObjectEventPal_RegielekiOW,           OBJ_EVENT_PAL_TAG_REGIELEKI},
-    {gObjectEventPal_Giovanni,              OBJ_EVENT_PAL_TAG_GIOVANNI},
+    {gObjectEventPal_Giovanni1,             OBJ_EVENT_PAL_TAG_GIOVANNI1},
     {gObjectEventPal_Cyrus,                 OBJ_EVENT_PAL_TAG_CYRUS},
     {gObjectEventPal_Cynthia,               OBJ_EVENT_PAL_TAG_CYNTHIA},
     {gObjectEventPal_Grunt_M,               OBJ_EVENT_PAL_TAG_GRUNT_M},

@@ -4503,9 +4503,9 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cynthia = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giovanni = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giovanni1 = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_GIOVANNI,
+    .paletteTag = OBJ_EVENT_PAL_TAG_GIOVANNI1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
     .size = 256,
     .width = 16,
@@ -4517,7 +4517,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giovanni = {
     .oam = &gObjectEventBaseOam_16x32,
     .subspriteTables = sOamTables_16x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_Giovanni,
+    .images = sPicTable_Giovanni1,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
