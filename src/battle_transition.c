@@ -901,7 +901,6 @@ static const struct SpriteTemplate sSpriteTemplate_UnusedBrendan =
     .oam = &sOam_UnusedBrendanLass,
     .anims = sSpriteAnimTable_UnusedBrendanLass,
     .images = sImageTable_UnusedBrendan,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_MugshotTrainerPic
 };
 
@@ -912,7 +911,6 @@ static const struct SpriteTemplate sSpriteTemplate_UnusedLass =
     .oam = &sOam_UnusedBrendanLass,
     .anims = sSpriteAnimTable_UnusedBrendanLass,
     .images = sImageTable_UnusedLass,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_MugshotTrainerPic
 };
 
@@ -2438,7 +2436,7 @@ static bool8 Mugshot_SetGfx(struct Task *task)
     if (mugshotColor >= ARRAY_COUNT(sOpponentMugshotsPals))
         mugshotColor = MUGSHOT_COLOR_PURPLE;
 
-    LoadPalette(sOpponentMugshotsPals[mugshotColor], 0xF0, 0x20);
+    LoadPalette(sOpponentMugshotsPals[mugshotColor], BG_PLTT_ID(15), PLTT_SIZE_4BPP);
     LoadPalette(sPlayerMugshotsPals[gSaveBlock2Ptr->playerGender], BG_PLTT_ID(15) + 10, PLTT_SIZEOF(6));
 
     for (i = 0; i < 20; i++)
