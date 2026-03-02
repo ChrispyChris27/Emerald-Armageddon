@@ -1,9 +1,9 @@
 RocketHideout2_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, RocketHideout2_OnLoad
+	map_script MAP_SCRIPT_ON_RESUME, RocketHideout2_OnLoad
 	.byte 0
 
 RocketHideout2_OnLoad::
-	setvar VAR_BATTLE_START, 1
+	setstartingstatus STARTING_STATUS_ELECTRIC_TERRAIN
 	end
 
 RocketHideout_Grunt1_Script::

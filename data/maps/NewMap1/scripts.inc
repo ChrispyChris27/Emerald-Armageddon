@@ -5,7 +5,7 @@ NewMap1_MapScripts::
 	.byte 0
 
 NewMap1_OnLoad::
-	setvar VAR_BATTLE_START, 0
+	callnative ResetStartingStatuses
 	end
 
 NewMap1_OnTransition::

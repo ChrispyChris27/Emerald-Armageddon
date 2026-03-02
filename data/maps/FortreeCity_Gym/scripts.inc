@@ -19,11 +19,10 @@ FortreeCity_Gym_EventScript_InitRotatingGates::
 	end
 
 FortreeCity_Gym_EventScript_Winona::
-	setvar VAR_BATTLE_START, 10
+	setstartingstatus STARTING_STATUS_DELTA_STREAM
 	trainerbattle_single TRAINER_WINONA_1, FortreeCity_Gym_Text_WinonaIntro, FortreeCity_Gym_Text_WinonaDefeat, FortreeCity_Gym_EventScript_WinonaDefeated, NO_MUSIC
 	goto_if_unset FLAG_RECEIVED_TM_AERIAL_ACE, FortreeCity_Gym_EventScript_GiveAerialAce2
 	msgbox FortreeCity_Gym_Text_WinonaPostBattle, MSGBOX_DEFAULT
-	setvar VAR_BATTLE_START, 0
 	release
 	end
 
@@ -35,7 +34,6 @@ FortreeCity_Gym_EventScript_WinonaDefeated::
 	setflag FLAG_DEFEATED_FORTREE_GYM
 	setflag FLAG_BADGE06_GET
 	clearflag FLAG_CYNTHIA_120
-	setvar VAR_BATTLE_START, 0
 	setvar VAR_0x8008, 6
 	call Common_EventScript_SetGymTrainers
 	call FortreeCity_Gym_EventScript_GiveAerialAce
