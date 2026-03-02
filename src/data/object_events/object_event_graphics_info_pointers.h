@@ -654,7 +654,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_REGIELEKI] =                &gObjectEventGraphicsInfo_Regieleki,
     [OBJ_EVENT_GFX_CYRUS] =                    &gObjectEventGraphicsInfo_Cyrus,
     [OBJ_EVENT_GFX_CYNTHIA] =                  &gObjectEventGraphicsInfo_Cynthia,
-    [OBJ_EVENT_GFX_GIOVANNI] =                 &gObjectEventGraphicsInfo_Giovanni,
+    [OBJ_EVENT_GFX_GIOVANNI1] =                 &gObjectEventGraphicsInfo_Giovanni,
     [OBJ_EVENT_GFX_GRUNT_F] =                  &gObjectEventGraphicsInfo_Grunt_F,
     [OBJ_EVENT_GFX_GRUNT_M] =                  &gObjectEventGraphicsInfo_Grunt_M,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,

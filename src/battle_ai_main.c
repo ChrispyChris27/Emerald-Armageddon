@@ -3472,7 +3472,7 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             case HOLD_EFFECT_LUMINOUS_MOSS:
             if (moveType == TYPE_WATER)
                 {
-                    if (moveTarget == MOVE_TARGET_FOES_AND_ALLY)
+                    if (moveTarget == TARGET_FOES_AND_ALLY)
                     {
                         ADJUST_SCORE(GOOD_EFFECT);
                     }
@@ -3481,7 +3481,7 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             case HOLD_EFFECT_CELL_BATTERY:
             if (moveType == TYPE_ELECTRIC)
                 {
-                    if (moveTarget == MOVE_TARGET_FOES_AND_ALLY)
+                    if (moveTarget == TARGET_FOES_AND_ALLY)
                     {
                         ADJUST_SCORE(GOOD_EFFECT);
                     }
@@ -3777,7 +3777,7 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                     RETURN_SCORE_PLUS(20);
                 }
             else
-                AbilityChangeScore(battlerAtk, battlerAtkPartner, effect, &score, aiData);
+                AbilityChangeScore(battlerAtk, battlerAtkPartner, move, &score, aiData);
                 return score;
                 break;
             case EFFECT_SPICY_EXTRACT:

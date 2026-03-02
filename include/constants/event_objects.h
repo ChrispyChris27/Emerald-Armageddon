@@ -266,7 +266,7 @@
 #define OBJ_EVENT_GFX_REGIELEKI                  240
 #define OBJ_EVENT_GFX_CYRUS                      241
 #define OBJ_EVENT_GFX_CYNTHIA                    242
-#define OBJ_EVENT_GFX_GIOVANNI                   243
+#define OBJ_EVENT_GFX_GIOVANNI1                   243
 #define OBJ_EVENT_GFX_GRUNT_F                    244
 #define OBJ_EVENT_GFX_GRUNT_M                    245
 #define OBJ_EVENT_GFX_POKE_BALL                  246

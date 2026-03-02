@@ -12,51 +12,54 @@
 #line 3
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 4
-        .trainerPic = TRAINER_PIC_BRENDAN,
-        .encounterMusic_gender =
+        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+#line 5
+        .gender = TRAINER_GENDER_MALE,
 #line 6
-            TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 7
-        .trainerBackPic = TRAINER_BACK_PIC_BRENDAN,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+#line 0
+        .trainerBackPic = TRAINER_PIC_FRONT_BRENDAN,
         .partySize = 0,
         .party = (const struct TrainerMon[])
         {
         },
     },
-#line 9
+#line 8
     [DIFFICULTY_NORMAL][PARTNER_STEVEN] =
     {
-#line 10
+#line 9
         .trainerName = _("STEVEN"),
-#line 11
+#line 10
         .trainerClass = TRAINER_CLASS_RIVAL,
+#line 11
+        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
 #line 12
-        .trainerPic = TRAINER_PIC_STEVEN,
-        .encounterMusic_gender =
+        .gender = TRAINER_GENDER_MALE,
+#line 13
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 14
-            TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 16
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 15
-        .trainerBackPic = TRAINER_BACK_PIC_STEVEN,
+#line 0
+        .trainerBackPic = TRAINER_PIC_FRONT_STEVEN,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
             {
-#line 18
+#line 16
             .species = SPECIES_MAGEARNA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 18
+#line 16
             .heldItem = ITEM_WHITE_HERB,
-#line 20
+#line 18
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 19
+#line 17
             .lvl = 82,
-#line 21
+            .ball = POKEBALL_COUNT,
+#line 19
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 22
+#line 20
                 MOVE_FLEUR_CANNON,
                 MOVE_AURA_SPHERE,
                 MOVE_FLASH_CANNON,
@@ -64,20 +67,21 @@
             },
             },
             {
-#line 27
+#line 25
             .species = SPECIES_JIRACHI,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27
+#line 25
             .heldItem = ITEM_LEFTOVERS,
-#line 29
+#line 27
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28
+#line 26
             .lvl = 82,
-#line 30
+            .ball = POKEBALL_COUNT,
+#line 28
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 31
+#line 29
                 MOVE_METEOR_MASH,
                 MOVE_ZEN_HEADBUTT,
                 MOVE_ICY_WIND,
@@ -85,20 +89,21 @@
             },
             },
             {
-#line 36
+#line 34
             .species = SPECIES_METAGROSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 36
+#line 34
             .heldItem = ITEM_METAGROSSITE,
-#line 38
+#line 36
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 37
+#line 35
             .lvl = 82,
-#line 39
+            .ball = POKEBALL_COUNT,
+#line 37
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 40
+#line 38
                 MOVE_METEOR_MASH,
                 MOVE_PSYCHIC_FANGS,
                 MOVE_ICE_PUNCH,
@@ -107,40 +112,42 @@
             },
         },
     },
-#line 45
+#line 43
     [DIFFICULTY_NORMAL][PARTNER_STEVEN2] =
     {
-#line 46
+#line 44
         .trainerName = _("STEVEN"),
-#line 47
+#line 45
         .trainerClass = TRAINER_CLASS_RIVAL,
+#line 46
+        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+#line 47
+        .gender = TRAINER_GENDER_MALE,
 #line 48
-        .trainerPic = TRAINER_PIC_STEVEN,
-        .encounterMusic_gender =
-#line 50
-            TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 52
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+#line 49
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 51
-        .trainerBackPic = TRAINER_BACK_PIC_STEVEN,
+#line 0
+        .trainerBackPic = TRAINER_PIC_FRONT_STEVEN,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
             {
-#line 54
+#line 51
             .species = SPECIES_GENESECT_CHILL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 54
+#line 51
             .heldItem = ITEM_CHILL_DRIVE,
-#line 56
+#line 53
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 55
+#line 52
             .lvl = 91,
-#line 57
+            .ball = POKEBALL_COUNT,
+#line 54
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 58
+#line 55
                 MOVE_TECHNO_BLAST,
                 MOVE_PSYCHIC,
                 MOVE_FLASH_CANNON,
@@ -148,20 +155,21 @@
             },
             },
             {
-#line 63
+#line 60
             .species = SPECIES_MAGEARNA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 63
+#line 60
             .heldItem = ITEM_WHITE_HERB,
-#line 65
+#line 62
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 64
+#line 61
             .lvl = 91,
-#line 66
+            .ball = POKEBALL_COUNT,
+#line 63
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 67
+#line 64
                 MOVE_FLEUR_CANNON,
                 MOVE_AURA_SPHERE,
                 MOVE_FLASH_CANNON,
@@ -169,20 +177,21 @@
             },
             },
             {
-#line 72
+#line 69
             .species = SPECIES_METAGROSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 72
+#line 69
             .heldItem = ITEM_METAGROSSITE,
-#line 74
+#line 71
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 73
+#line 70
             .lvl = 91,
-#line 75
+            .ball = POKEBALL_COUNT,
+#line 72
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 76
+#line 73
                 MOVE_METEOR_MASH,
                 MOVE_PSYCHIC_FANGS,
                 MOVE_ICE_PUNCH,

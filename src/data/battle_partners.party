@@ -4,7 +4,6 @@ Class: Pkmn Trainer 1
 Pic: Brendan
 Gender: Male
 Music: Male
-Back Pic: Brendan
 
 === PARTNER_STEVEN ===
 Name: STEVEN
@@ -12,7 +11,6 @@ Class: Rival
 Pic: Steven
 Gender: Male
 Music: Male
-Back Pic: Steven
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Magearna @ White Herb
@@ -48,7 +46,6 @@ Class: Rival
 Pic: Steven
 Gender: Male
 Music: Male
-Back Pic: Steven
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Genesect-Chill @ Chill Drive

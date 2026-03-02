@@ -51,7 +51,7 @@ MirageTower_4F_EventScript_DomeFossil::
 	closemessage
 	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
 	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
-	removeobject LOCALID_DOME_FOSSIL
+	removeobject LOCALID_MIRAGE_DOME_FOSSIL
 	delay 30
 	goto MirageTower_4F_EventScript_CollapseMirageTower
 	end
@@ -71,7 +71,7 @@ MirageTower_4F_EventScript_HelixFossil::
 	closemessage
 	setflag FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL
 	setflag FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL
-	removeobject LOCALID_HELIX_FOSSIL
+	removeobject LOCALID_MIRAGE_HELIX_FOSSIL
 	delay 30
 	goto MirageTower_4F_EventScript_CollapseMirageTower
 	end

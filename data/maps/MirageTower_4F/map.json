@@ -43,7 +43,7 @@
       "flag": "FLAG_HIDE_MIRAGE_TOWER_CLAW_FOSSIL"
     },
     {
-      "local_id": "LOCALID_DOME_FOSSIL",
+      "local_id": "LOCALID_MIRAGE_DOME_FOSSIL",
       "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
       "x": 5,
       "y": 5,
@@ -57,7 +57,7 @@
       "flag": "FLAG_HIDE_MIRAGE_TOWER_ROOT_FOSSIL"
     },
     {
-      "local_id": "LOCALID_HELIX_FOSSIL",
+      "local_id": "LOCALID_MIRAGE_HELIX_FOSSIL",
       "graphics_id": "OBJ_EVENT_GFX_FOSSIL",
       "x": 7,
       "y": 5,
