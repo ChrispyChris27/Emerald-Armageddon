@@ -6863,7 +6863,7 @@ Nature: Timid
 - Power Gem
 - Shell Smash
 
-Archeops @ Heavy Duty Boots
+Aerodactyl @ Heavy Duty Boots
 Level: 52
 Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -6942,15 +6942,15 @@ Nature: Jolly
 - Close Combat
 - Swords Dance
 
-Blaziken @ Life Orb
+Machamp @ Leftovers
 Level: 54
-Ability: Speed Boost
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
-- Flare Blitz
-- Thunder Punch
-- Rock Slide
-- Close Combat
+- Dynamic Punch
+- Stone Edge
+- Fissure
+- Substitute
 
 Lucario @ Lucarionite
 Level: 54
@@ -7077,25 +7077,25 @@ Nature: Timid
 - Solarbeam
 - Quiver Dance
 
-Scovillain @ Ground Gem
+Ceruledge @ Assault Vest
+Level: 46
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Bitter Blade
+- Shadow Claw
+- Solar Blade
+- Swords Dance
+
+Scovillain @ Scovillainite
 Level: 46
 Ability: Chlorophyll
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
+Nature: Mild
 - Solarbeam
 - Flamethrower
 - Growth
-- Scorching Sands
-
-Charizard @ Charizardite X
-Level: 46
-Ability: Blaze
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Jolly
-- Fire Punch
-- Dragon Claw
-- Thunderpunch
-- Dragon Dance
+- Earthquake
 
 === TRAINER_NORMAN_1 ===
 Name: Norman
@@ -7220,15 +7220,15 @@ Nature: Timid
 - Psychic
 - Nasty Plot
 
-Aerodactyl @ Aerodactylite
+Staraptor @ Staraptorite
 Level: 63
-Ability: Unnerve
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Earthquake
+Nature: Jolly
+- Close Combat
 - Brave Bird
-- Head Smash
-- Swords Dance
+- U Turn
+- Roost
 
 === TRAINER_TATE ===
 Name: Tate
@@ -7278,15 +7278,15 @@ Music: Male
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Abomasnow @ Abomasite
+Vanilluxe @ Light Clay
 Level: 89
 Ability: Snow Warning
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Lonely
-- Wood Hammer
-- Earthquake
+Nature: Naive
 - Blizzard
-- Ice Shard
+- Freeze Dry
+- Explosion
+- Aurora Veil
 
 Lapras @ Throat Spray
 Level: 89
@@ -7328,14 +7328,14 @@ Nature: Adamant
 - High Horsepower
 - Swords Dance
 
-Kyurem @ Assault Vest
+Baxcalibur @ Baxcalibrite
 Level: 89
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Blizzard
-- Dragon Pulse
-- Earth Power
-- Psychic
+Nature: Jolly
+- Icicle Crash
+- Glaive Rush
+- Earthquake
+- Dragon Dance
 
 === TRAINER_JERRY_1 ===
 Name: Jerry
