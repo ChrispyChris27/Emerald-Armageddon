@@ -56083,8 +56083,10 @@
         {
             {
 #line 22219
-            .species = SPECIES_RAICHU,
+            .species = SPECIES_DELPHOX,
             .gender = TRAINER_MON_RANDOM_GENDER,
+#line 22219
+            .heldItem = ITEM_DELPHOXITE,
 #line 22221
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 22220
@@ -56130,7 +56132,7 @@
 #line 22240
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 22239
-            .ability = ABILITY_WATER_ABSORB,
+            .ability = ABILITY_SAND_VEIL,
 #line 22238
             .lvl = 46,
             .ball = POKEBALL_COUNT,
