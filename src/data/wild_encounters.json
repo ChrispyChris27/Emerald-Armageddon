@@ -14372,6 +14372,229 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_RUBY_VILLA",
+          "base_label": "gRubyVilla",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_ENTEI"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_VOLCARONA"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_URSHIFU_SINGLE_STRIKE"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_GOUGING_FIRE"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_HEATRAN"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_VOLCANION"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_GREAT_TUSK"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_SANDY_SHOCKS"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_MOLTRES"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_LANDORUS_INCARNATE"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_LANDORUS_THERIAN"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_LATIAS"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_SAPPHIRE_VILLA",
+          "base_label": "gSapphireVilla",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_SUICUNE"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_URSHIFU_RAPID_STRIKE"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_PALAFIN"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RAGING_BOLT"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RAIKOU"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_VOLCANION"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_WALKING_WAKE"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_MANAPHY"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_LATIOS"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_THUNDURUS_INCARNATE"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_THUNDURUS_THERIAN"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_ZAPDOS"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_WAILORD"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 85,
+                "max_level": 85,
+                "species": "SPECIES_RELICANTH"
+              }
+            ]
+          }
         }
       ]
     },

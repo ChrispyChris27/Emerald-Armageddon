@@ -9734,6 +9734,36 @@
       "secondary_tileset": "gTileset_NavelRock",
       "border_filepath": "data/layouts/CaveOfLegendsEmeraldRoom/border.bin",
       "blockdata_filepath": "data/layouts/CaveOfLegendsEmeraldRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAPPHIRE_VILLA",
+      "name": "SapphireVilla_Layout",
+      "width": 25,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Sootopolis",
+      "border_filepath": "data/layouts/SapphireVilla/border.bin",
+      "blockdata_filepath": "data/layouts/SapphireVilla/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUBY_VILLA",
+      "name": "RubyVilla_Layout",
+      "width": 25,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lavaridge",
+      "border_filepath": "data/layouts/RubyVilla/border.bin",
+      "blockdata_filepath": "data/layouts/RubyVilla/map.bin"
+    },
+    {
+      "id": "LAYOUT_EMERALD_VILLA",
+      "name": "EmeraldVilla_Layout",
+      "width": 25,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Pacifidlog",
+      "border_filepath": "data/layouts/EmeraldVilla/border.bin",
+      "blockdata_filepath": "data/layouts/EmeraldVilla/map.bin"
     }
   ]
 }

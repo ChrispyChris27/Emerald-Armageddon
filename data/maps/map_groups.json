@@ -145,7 +145,10 @@
     "ContinentalCavernGigasRoom",
     "ContinentalCavernWaterRoom",
     "ContinentalCavernIcePuzzleRoom",
-    "MythicalMountain2"
+    "MythicalMountain2",
+    "RubyVilla",
+    "SapphireVilla",
+    "EmeraldVilla"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

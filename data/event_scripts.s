@@ -1815,3 +1815,9 @@ Common_EventScript_SetSnow:
 	.include "data/maps/CaveOfLegendsSapphireRoom/scripts.inc"
 
 	.include "data/maps/CaveOfLegendsEmeraldRoom/scripts.inc"
+
+	.include "data/maps/SapphireVilla/scripts.inc"
+
+	.include "data/maps/RubyVilla/scripts.inc"
+
+	.include "data/maps/EmeraldVilla/scripts.inc"
