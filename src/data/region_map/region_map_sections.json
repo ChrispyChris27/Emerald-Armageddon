@@ -1690,6 +1690,38 @@
       "y": 0,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_RUBY_VILLA",
+      "name": "RUBY VILLA",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_SAPPHIRE_VILLA",
+      "name": "SAPPHIRE VILLA",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_EMERALD_VILLA",
+      "name": "EMERALD VILLA",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_CAVE_OF_LEGENDS",
+      "name": "CAVE OF LEGENDS",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }

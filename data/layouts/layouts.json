@@ -9664,6 +9664,76 @@
       "border_height": 2,
       "border_width": 2,
       "layout_version": "frlg"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_LEGENDS1",
+      "name": "CaveOfLegends1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveOfLegends1/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfLegends1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_LEGENDS2",
+      "name": "CaveOfLegends2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveOfLegends2/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfLegends2/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_LEGENDS3",
+      "name": "CaveOfLegends3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/CaveOfLegends3/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfLegends3/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_LEGENDS4",
+      "name": "CaveOfLegends4_Layout",
+      "width": 21,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/CaveOfLegends4/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfLegends4/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_LEGENDS_SAPPHIRE_ROOM",
+      "name": "CaveOfLegendsSapphireRoom_Layout",
+      "width": 45,
+      "height": 37,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveOfLegendsSapphireRoom/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfLegendsSapphireRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_LEGENDS_RUBY_ROOM",
+      "name": "CaveOfLegendsRubyRoom_Layout",
+      "width": 45,
+      "height": 37,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/CaveOfLegendsRubyRoom/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfLegendsRubyRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_LEGENDS_EMERALD_ROOM",
+      "name": "CaveOfLegendsEmeraldRoom_Layout",
+      "width": 21,
+      "height": 37,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/CaveOfLegendsEmeraldRoom/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfLegendsEmeraldRoom/map.bin"
     }
   ]
 }

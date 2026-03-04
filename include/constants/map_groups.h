@@ -591,6 +591,13 @@ enum
     MAP_NAVEL_ROCK_DOWN11                               = (86 | (26 << 8)),
     MAP_NAVEL_ROCK_BOTTOM                               = (87 | (26 << 8)),
     MAP_TRAINER_HILL_ELEVATOR                           = (88 | (26 << 8)),
+    MAP_CAVE_OF_LEGENDS1                                = (89 | (26 << 8)),
+    MAP_CAVE_OF_LEGENDS2                                = (90 | (26 << 8)),
+    MAP_CAVE_OF_LEGENDS3                                = (91 | (26 << 8)),
+    MAP_CAVE_OF_LEGENDS4                                = (92 | (26 << 8)),
+    MAP_CAVE_OF_LEGENDS_RUBY_ROOM                       = (93 | (26 << 8)),
+    MAP_CAVE_OF_LEGENDS_SAPPHIRE_ROOM                   = (94 | (26 << 8)),
+    MAP_CAVE_OF_LEGENDS_EMERALD_ROOM                    = (95 | (26 << 8)),
 
     // gMapGroup_IndoorRoute104Prototype
     MAP_ROUTE104_PROTOTYPE                          = (0 | (27 << 8)),

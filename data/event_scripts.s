@@ -1801,3 +1801,17 @@ EventScript_PalletTown_PlayersHouse_2F_TurnOnPC::
 Common_EventScript_SetSnow:
 	setweather WEATHER_SNOW
 	return
+
+	.include "data/maps/CaveOfLegends1/scripts.inc"
+
+	.include "data/maps/CaveOfLegends2/scripts.inc"
+
+	.include "data/maps/CaveOfLegends3/scripts.inc"
+
+	.include "data/maps/CaveOfLegends4/scripts.inc"
+
+	.include "data/maps/CaveOfLegendsRubyRoom/scripts.inc"
+
+	.include "data/maps/CaveOfLegendsSapphireRoom/scripts.inc"
+
+	.include "data/maps/CaveOfLegendsEmeraldRoom/scripts.inc"

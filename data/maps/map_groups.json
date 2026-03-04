@@ -655,7 +655,14 @@
     "NavelRock_Down10",
     "NavelRock_Down11",
     "NavelRock_Bottom",
-    "TrainerHill_Elevator"
+    "TrainerHill_Elevator",
+    "CaveOfLegends1",
+    "CaveOfLegends2",
+    "CaveOfLegends3",
+    "CaveOfLegends4",
+    "CaveOfLegendsRubyRoom",
+    "CaveOfLegendsSapphireRoom",
+    "CaveOfLegendsEmeraldRoom"
   ],
   "gMapGroup_IndoorRoute104Prototype": [
     "Route104_Prototype",
