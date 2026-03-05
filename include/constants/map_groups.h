@@ -81,6 +81,13 @@ enum
     MAP_CONTINENTAL_CAVERN_WATER_ROOM      = (66 | (0 << 8)),
     MAP_CONTINENTAL_CAVERN_ICE_PUZZLE_ROOM = (67 | (0 << 8)),
     MAP_MYTHICAL_MOUNTAIN2                 = (68 | (0 << 8)),
+    MAP_RUBY_VILLA                         = (69 | (0 << 8)),
+    MAP_SAPPHIRE_VILLA                     = (70 | (0 << 8)),
+    MAP_EMERALD_VILLA                      = (71 | (0 << 8)),
+    MAP_CAVE_OF_LEGENDS_FINAL_ROOM         = (72 | (0 << 8)),
+    MAP_RUBY_VILLA_HOUSE                   = (73 | (0 << 8)),
+    MAP_SAPPHIRE_VILLA_HOUSE               = (74 | (0 << 8)),
+    MAP_EMERALD_VILLA_HOUSE                = (75 | (0 << 8)),
 
     // gMapGroup_IndoorLittleroot
     MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    = (0 | (1 << 8)),

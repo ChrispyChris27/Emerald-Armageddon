@@ -1,7 +1,7 @@
 {
-  "id": "MAP_CAVE_OF_LEGENDS_EMERALD_ROOM",
-  "name": "CaveOfLegendsEmeraldRoom",
-  "layout": "LAYOUT_CAVE_OF_LEGENDS_EMERALD_ROOM",
+  "id": "MAP_CAVE_OF_LEGENDS_FINAL_ROOM",
+  "name": "CaveOfLegendsFinalRoom",
+  "layout": "LAYOUT_CAVE_OF_LEGENDS_FINAL_ROOM",
   "music": "MUS_RG_VICTORY_ROAD",
   "region_map_section": "MAPSEC_CAVE_OF_LEGENDS",
   "requires_flash": false,
@@ -16,18 +16,11 @@
   "object_events": [],
   "warp_events": [
     {
-      "x": 10,
-      "y": 33,
-      "elevation": 0,
-      "dest_map": "MAP_CAVE_OF_LEGENDS4",
-      "dest_warp_id": "3"
-    },
-    {
-      "x": 10,
-      "y": 2,
+      "x": 11,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_EMERALD_VILLA",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [],

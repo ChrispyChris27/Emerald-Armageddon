@@ -2,7 +2,7 @@
   "id": "MAP_RUBY_VILLA",
   "name": "RubyVilla",
   "layout": "LAYOUT_RUBY_VILLA",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_B_PYRAMID_TOP",
   "region_map_section": "MAPSEC_RUBY_VILLA",
   "requires_flash": false,
   "weather": "WEATHER_DROUGHT",
@@ -21,6 +21,13 @@
       "elevation": 0,
       "dest_map": "MAP_CAVE_OF_LEGENDS_RUBY_ROOM",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 11,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_RUBY_VILLA_HOUSE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

@@ -2,11 +2,11 @@
   "id": "MAP_CAVE_OF_LEGENDS4",
   "name": "CaveOfLegends4",
   "layout": "LAYOUT_CAVE_OF_LEGENDS4",
-  "music": "MUS_CAVE_OF_ORIGIN",
+  "music": "MUS_RG_VICTORY_ROAD",
   "region_map_section": "MAPSEC_CAVE_OF_LEGENDS",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
@@ -20,7 +20,7 @@
       "y": 16,
       "elevation": 0,
       "dest_map": "MAP_CAVE_OF_LEGENDS3",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     },
     {
       "x": 4,

@@ -9758,12 +9758,52 @@
     {
       "id": "LAYOUT_EMERALD_VILLA",
       "name": "EmeraldVilla_Layout",
-      "width": 25,
-      "height": 25,
+      "width": 35,
+      "height": 37,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Pacifidlog",
       "border_filepath": "data/layouts/EmeraldVilla/border.bin",
       "blockdata_filepath": "data/layouts/EmeraldVilla/map.bin"
+    },
+    {
+      "id": "LAYOUT_CAVE_OF_LEGENDS_FINAL_ROOM",
+      "name": "CaveOfLegendsFinalRoom_Layout",
+      "width": 23,
+      "height": 23,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_NavelRock",
+      "border_filepath": "data/layouts/CaveOfLegendsFinalRoom/border.bin",
+      "blockdata_filepath": "data/layouts/CaveOfLegendsFinalRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAPPHIRE_VILLA_HOUSE",
+      "name": "SapphireVillaHouse_Layout",
+      "width": 17,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SapphireVillaHouse/border.bin",
+      "blockdata_filepath": "data/layouts/SapphireVillaHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUBY_VILLA_HOUSE",
+      "name": "RubyVillaHouse_Layout",
+      "width": 17,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RubyVillaHouse/border.bin",
+      "blockdata_filepath": "data/layouts/RubyVillaHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_EMERALD_VILLA_HOUSE",
+      "name": "EmeraldVillaHouse_Layout",
+      "width": 17,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/EmeraldVillaHouse/border.bin",
+      "blockdata_filepath": "data/layouts/EmeraldVillaHouse/map.bin"
     }
   ]
 }

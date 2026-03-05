@@ -12654,9 +12654,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM36"),
         .price = 1000,
         .description = COMPOUND_STRING(
-            "Scarlet flames torch\n"
-            "everything around\n"
-            "the user."),
+            "Scarlet flames \n"
+            "torch everything\n"
+            "around the user."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

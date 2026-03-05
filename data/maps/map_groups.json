@@ -148,7 +148,11 @@
     "MythicalMountain2",
     "RubyVilla",
     "SapphireVilla",
-    "EmeraldVilla"
+    "EmeraldVilla",
+    "CaveOfLegendsFinalRoom",
+    "RubyVillaHouse",
+    "SapphireVillaHouse",
+    "EmeraldVillaHouse"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
