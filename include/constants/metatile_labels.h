@@ -122,6 +122,8 @@
 #define METATILE_BuildingFrlg_PCOn   0x063
 
 // gTileset_Cave
+#define METATILE_Cave_BrownRockFloor                     0x211
+#define METATILE_Cave_BrownRockNorthBarrier              0x209
 #define METATILE_Cave_CrackedFloor                       0x22F
 #define METATILE_Cave_CrackedFloor_Hole                  0x206
 #define METATILE_Cave_EntranceCover                      0x229
@@ -436,6 +438,10 @@
 
 // gTileset_MtEmber
 #define METATILE_MtEmber_CaveEntrance  0x346
+
+// gTileset_NavelRock
+#define METATILE_NavelRock_GreenRockFace  0x2F9
+#define METATILE_NavelRock_WhiteRockFace  0x2E1
 
 // gTileset_Pacifidlog
 #define METATILE_Pacifidlog_Door                               0x21A

@@ -6971,7 +6971,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .friendship = 100,
         .growthRate = GROWTH_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_NO_EGGS_DISCOVERED),
-        .abilities = { ABILITY_FLASH_FIRE, ABILITY_NONE, ABILITY_FLAME_BODY },
+        .abilities = { ABILITY_MAGMA_ARMOR, ABILITY_MAGMA_ARMOR, ABILITY_FLAME_BODY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Heatran"),
     #if P_MODIFIED_MEGA_CRIES

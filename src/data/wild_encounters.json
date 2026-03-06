@@ -14818,6 +14818,574 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_CAVE_OF_LEGENDS1",
+          "base_label": "gCaveOfLegends1",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SLUGMA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_ROLYCOLY"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_VENIPEDE"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PARAS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SHROOMISH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PAWNIARD"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_STUFFUL"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MIENFOO"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_THROH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SAWK"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NIDORAN_M"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_NIDORAN_F"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_CAVE_OF_LEGENDS2",
+          "base_label": "gCaveOfLegends2",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_DONPHAN"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_MUDSDALE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_RHYDON"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_CLAYDOL"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_PILOSWINE"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_GRAVELER"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_MAROWAK"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_KROKOROK"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_STUNFISK_GALAR"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_STUNFISK"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_DUGTRIO"
+              },
+              {
+                "min_level": 30,
+                "max_level": 30,
+                "species": "SPECIES_DUGTRIO_ALOLA"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_CAVE_OF_LEGENDS3",
+          "base_label": "gCaveOfLegends3",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_CLAYDOL"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_CHIMECHO"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_GLISCOR"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_FLAMIGO"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_CORVIKNIGHT"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_SIGILYPH"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MEDICHAM"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_GALLADE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_RUNERIGUS"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_MINIOR"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_HAWLUCHA"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_SKARMORY"
+              }
+            ]
+          },
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_LAPRAS"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_MINIOR"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_MANTINE"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_TENTACRUEL"
+              },
+              {
+                "min_level": 50,
+                "max_level": 50,
+                "species": "SPECIES_TENTACRUEL"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 30,
+            "mons": [
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_CLODSIRE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_QUAGSIRE"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_WHISCASH"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_QWILFISH"
+              },
+              {
+                "min_level": 45,
+                "max_level": 45,
+                "species": "SPECIES_QWILFISH_HISUI"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_OVERQWIL"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_SHARPEDO"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_SAMUROTT_HISUI"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_GRENINJA"
+              },
+              {
+                "min_level": 60,
+                "max_level": 60,
+                "species": "SPECIES_GRENINJA"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_CAVE_OF_LEGENDS4",
+          "base_label": "gCaveOfLegends4",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_HONCHKROW"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_MALAMAR"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_GRIMMSNARL"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_SPIRITOMB"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_DRAPION"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_FORRETRESS"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_ESCAVALIER"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_SCIZOR"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_YANMEGA"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_NINJASK"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_SABLEYE"
+              },
+              {
+                "min_level": 55,
+                "max_level": 55,
+                "species": "SPECIES_MUK_ALOLA"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_CAVE_OF_LEGENDS_RUBY_ROOM",
+          "base_label": "gCaveOfLegendsRubyRoom",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_SKELEDIRGE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_INFERNAPE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_MAGMORTAR"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_DELPHOX"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_EMBOAR"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_CHARIZARD"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_BLAZIKEN"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_CINDERACE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_TYPHLOSION"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_TYPHLOSION_HISUI"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_MOLTRES"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_ENTEI"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_CAVE_OF_LEGENDS_SAPPHIRE_ROOM",
+          "base_label": "gCaveOfLegendsSapphireRoom",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_BLASTOISE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_FERALIGATR"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_SWAMPERT"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_EMPOLEON"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_GRENINJA"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_PRIMARINA"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_INTELEON"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_QUAQUAVAL"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_SAMUROTT"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_SAMUROTT_HISUI"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_ZAPDOS"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_SUICUNE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_CAVE_OF_LEGENDS_EMERALD_ROOM",
+          "base_label": "gCaveOfLegendsEmeraldRoom",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_VENUSAUR"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_MEGANIUM"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_SCEPTILE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_TORTERRA"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_SERPERIOR"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_CHESNAUGHT"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_RILLABOOM"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_MEOWSCARADA"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_DECIDUEYE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_DECIDUEYE_HISUI"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_ARTICUNO"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_RAIKOU"
+              }
+            ]
+          }
         }
       ]
     },

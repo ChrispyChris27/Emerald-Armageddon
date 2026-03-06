@@ -1298,10 +1298,10 @@
 #define FLAG_DELPHOXITE                                           0x4DC // Unused Flag
 #define FLAG_DRAMPANITE                                           0x4DD // Unused Flag
 #define FLAG_SKARMORITE                                           0x4DE // Unused Flag
-#define FLAG_UNUSED_0x4DF                                           0x4DF // Unused Flag
-#define FLAG_UNUSED_0x4E0                                           0x4E0 // Unused Flag
-#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
-#define FLAG_UNUSED_0x4E2                                           0x4E2 // Unused Flag
+#define FLAG_RUBY_LEGEND                                           0x4DF // Unused Flag
+#define FLAG_SAPPPHIRE_LEGEND                                           0x4E0 // Unused Flag
+#define FLAG_UNLOCK_EMERALD_VILLA                                           0x4E1 // Unused Flag
+#define FLAG_EMERALD_LEGEND                                           0x4E2 // Unused Flag
 #define FLAG_UNUSED_0x4E3                                           0x4E3 // Unused Flag
 #define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
