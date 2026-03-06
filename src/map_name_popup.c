@@ -28,6 +28,8 @@ enum MapPopUp_Themes
 {
     MAPPOPUP_THEME_WOOD,
     MAPPOPUP_THEME_MARBLE,
+    MAPPOPUP_THEME_RUBY,
+    MAPPOPUP_THEME_SAPPHIRE,
     MAPPOPUP_THEME_STONE,
     MAPPOPUP_THEME_BRICK,
     MAPPOPUP_THEME_UNDERWATER,
@@ -53,6 +55,8 @@ static const u8 sMapPopUp_Table[][960] =
 {
     [MAPPOPUP_THEME_WOOD]       = INCBIN_U8("graphics/map_popup/wood.4bpp"),
     [MAPPOPUP_THEME_MARBLE]     = INCBIN_U8("graphics/map_popup/marble.4bpp"),
+    [MAPPOPUP_THEME_RUBY]     = INCBIN_U8("graphics/map_popup/marble.4bpp"),
+    [MAPPOPUP_THEME_SAPPHIRE]     = INCBIN_U8("graphics/map_popup/marble.4bpp"),
     [MAPPOPUP_THEME_STONE]      = INCBIN_U8("graphics/map_popup/stone.4bpp"),
     [MAPPOPUP_THEME_BRICK]      = INCBIN_U8("graphics/map_popup/brick.4bpp"),
     [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U8("graphics/map_popup/underwater.4bpp"),
@@ -63,6 +67,8 @@ static const u8 sMapPopUp_OutlineTable[][960] =
 {
     [MAPPOPUP_THEME_WOOD]       = INCBIN_U8("graphics/map_popup/wood_outline.4bpp"),
     [MAPPOPUP_THEME_MARBLE]     = INCBIN_U8("graphics/map_popup/marble_outline.4bpp"),
+    [MAPPOPUP_THEME_RUBY]     = INCBIN_U8("graphics/map_popup/marble_outline.4bpp"),
+    [MAPPOPUP_THEME_SAPPHIRE]     = INCBIN_U8("graphics/map_popup/marble_outline.4bpp"),
     [MAPPOPUP_THEME_STONE]      = INCBIN_U8("graphics/map_popup/stone_outline.4bpp"),
     [MAPPOPUP_THEME_BRICK]      = INCBIN_U8("graphics/map_popup/brick_outline.4bpp"),
     [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U8("graphics/map_popup/underwater_outline.4bpp"),
@@ -73,6 +79,8 @@ static const u16 sMapPopUp_PaletteTable[][16] =
 {
     [MAPPOPUP_THEME_WOOD]       = INCBIN_U16("graphics/map_popup/wood.gbapal"),
     [MAPPOPUP_THEME_MARBLE]     = INCBIN_U16("graphics/map_popup/marble_outline.gbapal"),
+    [MAPPOPUP_THEME_RUBY]     = INCBIN_U16("graphics/map_popup/rubypopup.gbapal"),
+    [MAPPOPUP_THEME_SAPPHIRE]     = INCBIN_U16("graphics/map_popup/sapphirepopup.gbapal"),
     [MAPPOPUP_THEME_STONE]      = INCBIN_U16("graphics/map_popup/stone_outline.gbapal"),
     [MAPPOPUP_THEME_BRICK]      = INCBIN_U16("graphics/map_popup/brick_outline.gbapal"),
     [MAPPOPUP_THEME_UNDERWATER] = INCBIN_U16("graphics/map_popup/underwater_outline.gbapal"),
@@ -198,8 +206,8 @@ static const u8 sMapSectionToThemeId[MAPSEC_COUNT - KANTO_MAPSEC_COUNT - 1] =
     [MAPSEC_TRANSISTOR_TUNNEL - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE,
     [MAPSEC_MYTHICAL_MOUNTAIN - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD,
     [MAPSEC_CONTINENTAL_CAVERN - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE,
-    [MAPSEC_RUBY_VILLA - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_MARBLE,
-    [MAPSEC_SAPPHIRE_VILLA - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_MARBLE,
+    [MAPSEC_RUBY_VILLA - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_RUBY,
+    [MAPSEC_SAPPHIRE_VILLA - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_SAPPHIRE,
     [MAPSEC_EMERALD_VILLA - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_MARBLE,
     [MAPSEC_CAVE_OF_LEGENDS - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE
 };
