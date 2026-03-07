@@ -1208,7 +1208,7 @@ bool32 IsLastMonToMove(enum BattlerId battler)
 bool32 ShouldDefiantCompetitiveActivate(enum BattlerId battler, enum Ability ability)
 {
     enum BattleSide side = GetBattlerSide(battler);
-    if (ability != ABILITY_DEFIANT && ability != ABILITY_COMPETITIVE)
+    if (ability != ABILITY_DEFIANT && ability != ABILITY_COMPETITIVE && ability != ABILITY_AS_ONE_MEOWSTIC)
         return FALSE;
     // if an ally dropped the stats (except for Sticky Web), don't activate
     if (IsBattlerAlly(gSpecialStatuses[battler].changedStatsBattlerId, battler) && !gBattleScripting.stickyWebStatDrop)
@@ -1277,6 +1277,8 @@ void PrepareStringBattle(enum StringID stringId, enum BattlerId battler)
      && ShouldDefiantCompetitiveActivate(gBattlerTarget, targetAbility))
     {
         gBattlerAbility = gBattlerTarget;
+        if (targetAbility == ABILITY_AS_ONE_MEOWSTIC)
+            gBattleScripting.abilityPopupOverwrite = gLastUsedAbility = ABILITY_COMPETITIVE;
         BattleScriptCall(BattleScript_AbilityRaisesDefenderStat);
         if (targetAbility == ABILITY_DEFIANT)
             SET_STATCHANGER(STAT_ATK, 2, FALSE);

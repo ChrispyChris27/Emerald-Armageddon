@@ -332,6 +332,9 @@ enum __attribute__((packed)) Ability
     ABILITY_TERA_SHELL = 308,
     ABILITY_TERAFORM_ZERO = 309,
     ABILITY_POISON_PUPPETEER = 310,
+
+    // custom ability
+    ABILITY_AS_ONE_MEOWSTIC = 311,
     ABILITIES_COUNT_GEN9,
     ABILITIES_COUNT = ABILITIES_COUNT_GEN9,
 };

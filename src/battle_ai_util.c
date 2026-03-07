@@ -5848,6 +5848,7 @@ bool32 DoesAbilityRaiseStatsWhenLowered(enum Ability ability)
     case ABILITY_CONTRARY:
     case ABILITY_COMPETITIVE:
     case ABILITY_DEFIANT:
+    case ABILITY_AS_ONE_MEOWSTIC:
         return TRUE;
     default:
         return FALSE;
@@ -5859,6 +5860,7 @@ bool32 DoesIntimidateRaiseStats(enum Ability ability)
     switch (ability)
     {
     case ABILITY_COMPETITIVE:
+    case ABILITY_AS_ONE_MEOWSTIC:
     case ABILITY_CONTRARY:
     case ABILITY_DEFIANT:
     case ABILITY_GUARD_DOG:
@@ -5891,6 +5893,7 @@ bool32 ShouldTriggerAbility(enum BattlerId battlerAtk, enum BattlerId battlerDef
             return (BattlerStatCanRise(battlerDef, ability, STAT_ATK) && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_PHYSICAL));
 
         case ABILITY_COMPETITIVE:
+        case ABILITY_AS_ONE_MEOWSTIC:
             return (BattlerStatCanRise(battlerDef, ability, STAT_SPATK) && HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_SPECIAL));
 
         // TODO: logic for when to trigger Contrary

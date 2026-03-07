@@ -1366,6 +1366,12 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
           && moveTarget != TARGET_USER)
             RETURN_SCORE_MINUS(10);
 
+        if (GetConfig(B_PRANKSTER_DARK_TYPES) >= GEN_7 && IS_BATTLER_OF_TYPE(battlerDef, TYPE_DARK)
+          && aiData->abilities[battlerAtk] == ABILITY_AS_ONE_MEOWSTIC && IsBattleMoveStatus(move)
+          && moveTarget != TARGET_OPPONENTS_FIELD
+          && moveTarget != TARGET_USER)
+            RETURN_SCORE_MINUS(10);
+
         // terrain & effect checks
         if (IsElectricTerrainAffected(battlerDef, abilityDef, aiData->holdEffects[battlerDef], gFieldStatuses))
         {
@@ -3738,6 +3744,7 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             case ABILITY_CONTRARY:
             case ABILITY_DEFIANT:
             case ABILITY_COMPETITIVE:
+            case ABILITY_AS_ONE_MEOWSTIC:
                 if (IsStatLoweringEffect(effect) && isFriendlyFireOK && ShouldTriggerAbility(battlerAtk, battlerAtkPartner, atkPartnerAbility))
                 {
                     if (moveTarget == TARGET_FOES_AND_ALLY)
