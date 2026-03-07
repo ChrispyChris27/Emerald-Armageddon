@@ -10312,12 +10312,12 @@
         },
     },
 #line 4057
-    [DIFFICULTY_NORMAL][TRAINER_DEAN] =
+    [DIFFICULTY_NORMAL][TRAINER_LK_EMERALD] =
     {
 #line 4058
-        .trainerName = _("DEAN"),
+        .trainerName = _("Emerald"),
 #line 4059
-        .trainerClass = TRAINER_CLASS_SWIMMER_M,
+        .trainerClass = TRAINER_CLASS_LOREKEEPER_EMERALD,
 #line 4060
         .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
 #line 4061
@@ -29790,12 +29790,12 @@
         },
     },
 #line 11728
-    [DIFFICULTY_NORMAL][TRAINER_NIKKI] =
+    [DIFFICULTY_NORMAL][TRAINER_LK_SAPPHIRE] =
     {
 #line 11729
-        .trainerName = _("NIKKI"),
+        .trainerName = _("Sapphire"),
 #line 11730
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
+        .trainerClass = TRAINER_CLASS_LOREKEEPER_SAPPHIRE,
 #line 11731
         .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
 #line 11732
@@ -29840,12 +29840,12 @@
         },
     },
 #line 11747
-    [DIFFICULTY_NORMAL][TRAINER_BRENDA] =
+    [DIFFICULTY_NORMAL][TRAINER_LK_RUBY] =
     {
 #line 11748
-        .trainerName = _("BRENDA"),
+        .trainerName = _("Ruby"),
 #line 11749
-        .trainerClass = TRAINER_CLASS_SWIMMER_F,
+        .trainerClass = TRAINER_CLASS_LOREKEEPER_RUBY,
 #line 11750
         .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
 #line 11751

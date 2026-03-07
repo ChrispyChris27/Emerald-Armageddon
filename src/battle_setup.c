@@ -869,6 +869,15 @@ enum BattleTransition GetTrainerBattleTransition(void)
         || trainerClass == TRAINER_CLASS_ROCKET_ADMIN)
         return B_TRANSITION_ROCKET;
     
+    if (trainerClass == TRAINER_CLASS_LOREKEEPER_EMERALD)
+        return B_TRANSITION_RAYQUAZA;
+    
+    if (trainerClass == TRAINER_CLASS_LOREKEEPER_RUBY)
+        return B_TRANSITION_GROUDON;
+
+    if (trainerClass == TRAINER_CLASS_LOREKEEPER_SAPPHIRE)
+        return B_TRANSITION_KYOGRE;
+
     if (trainerClass == TRAINER_CLASS_TEAM_GALACTIC)
         return B_TRANSITION_CYRUS;
     

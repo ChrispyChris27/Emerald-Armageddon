@@ -12,21 +12,6 @@ Route126_EventScript_Barry::
 	msgbox Route126_Text_BarryPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route126_EventScript_Dean::
-	trainerbattle_single TRAINER_DEAN, Route126_Text_DeanIntro, Route126_Text_DeanDefeat
-	msgbox Route126_Text_DeanPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route126_EventScript_Nikki::
-	trainerbattle_single TRAINER_NIKKI, Route126_Text_NikkiIntro, Route126_Text_NikkiDefeat
-	msgbox Route126_Text_NikkiPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route126_EventScript_Brenda::
-	trainerbattle_single TRAINER_BRENDA, Route126_Text_BrendaIntro, Route126_Text_BrendaDefeat
-	msgbox Route126_Text_BrendaPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route126_EventScript_Leonardo::
 	trainerbattle_single TRAINER_LEONARDO, Route126_Text_LeonardoIntro, Route126_Text_LeonardoDefeat
 	msgbox Route126_Text_LeonardoPostBattle, MSGBOX_AUTOCLOSE

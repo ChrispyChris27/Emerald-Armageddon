@@ -4054,9 +4054,9 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
-=== TRAINER_DEAN ===
-Name: DEAN
-Class: Swimmer M
+=== TRAINER_LK_EMERALD ===
+Name: Emerald 
+Class: Lorekeeper Emerald
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
@@ -11725,9 +11725,9 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
-=== TRAINER_NIKKI ===
-Name: NIKKI
-Class: Swimmer F
+=== TRAINER_LK_SAPPHIRE ===
+Name: Sapphire
+Class: Lorekeeper Sapphire
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
@@ -11744,9 +11744,9 @@ Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
-=== TRAINER_BRENDA ===
-Name: BRENDA
-Class: Swimmer F
+=== TRAINER_LK_RUBY ===
+Name: Ruby
+Class: Lorekeeper Ruby
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer

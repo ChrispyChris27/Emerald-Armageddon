@@ -168,7 +168,7 @@
 #define TRAINER_NOLEN                       161
 #define TRAINER_STAN                        162
 #define TRAINER_BARRY                       163
-#define TRAINER_DEAN                        164
+#define TRAINER_LK_EMERALD                        164
 #define TRAINER_RODNEY                      165
 #define TRAINER_RICHARD                     166
 #define TRAINER_HERMAN                      167
@@ -457,8 +457,8 @@
 #define TRAINER_GRACE                       450
 #define TRAINER_TANYA                       451
 #define TRAINER_SHARON                      452
-#define TRAINER_NIKKI                       453
-#define TRAINER_BRENDA                      454
+#define TRAINER_LK_SAPPHIRE                       453
+#define TRAINER_LK_RUBY                      454
 #define TRAINER_KATIE                       455
 #define TRAINER_SUSIE                       456
 #define TRAINER_KARA                        457
