@@ -11732,17 +11732,68 @@ Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Marill
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Enamorus Therian @ Red Card
+Level: 87
+Ability: Cute Charm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Quiet
+- Stealth Rock
+- Earth Power
+- Misty Explosion
+- Springtide Storm
 
-Spheal
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Armaldo @ Shell Bell
+Level: 87
+Ability: Battle Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Brave
+- Leech Life
+- Rock Slide
+- Earthquake
+- Swords Dance
+
+Bronzong @ Leftovers
+Level: 87
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Relaxed
+- Calm Mind
+- Recover
+- Stored Power
+- Dazzling Gleam
+
+Snorlax @ Liechi Berry
+Level: 87
+Ability: Gluttony
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Sassy
+- Double Edge
+- Curse
+- Pursuit
+- Slack Off
+
+Octillery @ Scope Lens
+Level: 87
+Ability: Sniper 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Quiet
+- Water Spout
+- Energy Ball
+- Ice Beam
+- Hydro Pump
+
+Crabominable @ Crabominite
+Level: 87
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Brave
+- Ice Hammer
+- Hammer Arm
+- Thunderpunch
+- Swords Dance
+
 
 === TRAINER_LK_RUBY ===
 Name: Ruby
@@ -11751,12 +11802,65 @@ Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Goldeen
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Kyurem @ Eject Pack
+Level: 87
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Draco Meteor
+- Ice Beam
+- Roost
+- Dragon Pulse
+
+Lunatone @ Blunder Policy
+Level: 87
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hypnosis
+- Cosmic Power 
+- Stored Power
+- Moonlight
+
+Serperior @ Leftovers
+Level: 87
+Ability: Contrary
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Leaf Storm
+- Draco Meteor
+- Synthesis
+- Mean Look
+
+Slaking @ Choice Band
+Level: 87
+Ability: Truant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Giga Impact
+- Return
+
+Heracross @ Flame Orb
+Level: 87
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Megahorn
+- Facade
+- Rest
+- Sleep Talk
+
+Meowstic F @ Meowsticite
+Level: 87
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Nasty Plot
+- Psychic
+- Dark Pulse
+- Recover
 
 === TRAINER_KATIE ===
 Name: KATIE
