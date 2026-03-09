@@ -298,9 +298,9 @@ Route114_Text_Grunt6Defeat:
 	.string "to offer...$"
 
 Route114_Text_Grunt6PostBattle:
-	.string "I was hoping to catch a Nincada\n"
-	.string "while I was here but they don't\l"
-	.string "to be living around here.$"
+	.string "I was hoping to catch a Shedinja\n"
+	.string "while I was here but I only got\l"
+	.string "a Ninjask when my Nincada evolved.$"
 
 Route114_EventScript_Grunt6::
 	trainerbattle_single TRAINER_FALLS_GRUNT_6, Route114_Text_Grunt6Intro, Route114_Text_Grunt6Defeat

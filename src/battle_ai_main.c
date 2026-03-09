@@ -2081,9 +2081,6 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         else
             ADJUST_SCORE(GOOD_EFFECT);
         break;
-    case EFFECT_TELEPORT:
-        ADJUST_SCORE(-10);
-        break;
     case EFFECT_FIRST_TURN_ONLY:
         if (!gBattleStruct->battlerState[battlerAtk].isFirstTurn)
             ADJUST_SCORE(-10);
@@ -4803,13 +4800,11 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         if (IsConsideringZMove(battlerAtk, battlerDef, move))
             ADJUST_SCORE(BEST_EFFECT);
         break;
-    case EFFECT_TELEPORT:
-        if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
-            break;
         //fallthrough
     case EFFECT_HIT_ESCAPE:
     case EFFECT_PARTING_SHOT:
     case EFFECT_WEATHER_AND_SWITCH:
+    case EFFECT_TELEPORT:
         switch (ShouldPivot(battlerAtk, battlerDef, move))
         {
         case DONT_PIVOT:
@@ -5678,7 +5673,11 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             ADJUST_SCORE(DECENT_EFFECT); // Get some super effective moves
         break;
     case EFFECT_THIRD_TYPE:
-        if (aiData->abilities[battlerDef] == ABILITY_WONDER_GUARD)
+        if (CanTargetFaintAi(battlerDef, battlerAtk) && (aiData->abilities[battlerAtk] == ABILITY_PRANKSTER))
+            ADJUST_SCORE(SLOW_KILL +1);
+
+        else if (aiData->abilities[battlerDef] == ABILITY_WONDER_GUARD
+        || (HasMoveWithType(battlerAtk, TYPE_GHOST)))
             ADJUST_SCORE(DECENT_EFFECT); // Give target more weaknesses
         break;
     case EFFECT_ELECTRIFY:

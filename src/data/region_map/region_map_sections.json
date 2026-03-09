@@ -1639,7 +1639,7 @@
       "id": "MAPSEC_PETALBURG_SANCTUARY",
       "name": "PETALBURG SANCTUARY",
       "x": 0,
-      "y": 0,
+      "y": 8,
       "width": 1,
       "height": 1
     },
@@ -1647,22 +1647,22 @@
       "id": "MAPSEC_METEOR_CASTLE",
       "name": "METEOR CASTLE",
       "x": 0,
-      "y": 0,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_ROCKET_HIDEOUT2",
       "name": "ROCKET HIDEOUT",
-      "x": 0,
-      "y": 0,
+      "x": 17,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_DRAGONS_DEN",
       "name": "DRAGON'S DEN",
-      "x": 0,
+      "x": 1,
       "y": 0,
       "width": 1,
       "height": 1
@@ -1670,8 +1670,8 @@
     {
       "id": "MAPSEC_TRANSISTOR_TUNNEL",
       "name": "TRANSISTOR TUNNEL",
-      "x": 0,
-      "y": 0,
+      "x": 11,
+      "y": 6,
       "width": 1,
       "height": 1
     },
@@ -1687,39 +1687,39 @@
       "id": "MAPSEC_CONTINENTAL_CAVERN",
       "name": "CONTINENTAL CAVERN",
       "x": 0,
-      "y": 0,
+      "y": 1,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_RUBY_VILLA",
       "name": "RUBY VILLA",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 7,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_SAPPHIRE_VILLA",
       "name": "SAPPHIRE VILLA",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 7,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_EMERALD_VILLA",
       "name": "EMERALD VILLA",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 7,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_CAVE_OF_LEGENDS",
       "name": "CAVE OF LEGENDS",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 7,
       "width": 1,
       "height": 1
     }

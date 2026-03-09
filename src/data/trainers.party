@@ -5509,7 +5509,7 @@ Nature: Timid
 
 Gourgeist Super @ Custap Berry
 Level: 37
-Ability: Insomnia
+Ability: Harvest
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Spirit Shackle
@@ -16892,16 +16892,6 @@ Nature: Timid
 - Venoshock
 - Silver Wind
 
-Spidops @ Berry Juice
-Level: 15
-Ability: Stakeout
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Pounce
-- Rock Tomb
-- Circle Throw
-- Aerial Ace
-
 Kricketune @ Metronome
 Level: 15
 Ability: Technician
@@ -22318,53 +22308,47 @@ Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Raichu
-Level: 44
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder
-- Slam
-- Rain Dance
-- Protect
-
-Ampharos
+Gourgeist Super @ Brightpowder
 Level: 46
+Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder
-- Protect
-- Thunder Wave
-- Light Screen
+Nature: Adamant
+- Trick or Treat
+- Power Whip
+- Spirit Shackle
+- Confuse Ray
 
-Cacturne @ Brightpowder
+Weavile @ Dark Gem
 Level: 46
-Ability: Sand Veil
+Ability: Technician
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Growth
-- Power Trip
-- Needle Arm
-- Drain Punch
+- Pursuit
+- Ice Shard
+- Triple Axel
+- Power Up Punch
 
-Magneton @ Sitrus Berry
-Level: 48
+Spidops @ Quick Claw
+Level: 46
+Ability: Stakeout
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
+Nature: Adamant
+- Lunge
+- Skitter Smack
+- Bulldoze
+- Rock Tomb
 
-Manectric @ Sitrus Berry
-Level: 50
+Stunfisk @ Quick Claw
+Level: 46
+Ability: Static
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Bite
-- Thunder Wave
-- Thunder
-- Protect
+Nature: Modest
+- Earth Power
+- Muddy Water
+- Sludge Wave
+- Discharge
 
 === TRAINER_FALLS_GRUNT_6 ===
 Name: Grunt
@@ -22372,62 +22356,48 @@ Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Electabuzz
-Level: 50
+Slowking Galar @ Focus Band
+Level: 46
+Ability: Regenerator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Swift
-- Focus Punch
-- Thunder Punch
-- Light Screen
+Nature: Modest
+- Teleport
+- Eerie Spell
+- Sludge Wave
+- Flamethrower
 
-Raichu
-Level: 51
+Gengar @ Choice Specs
+Level: 46
+Ability: Shadow Tag
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder
-- Slam
-- Rain Dance
-- Protect
+Nature: Timid
+- Shadow Ball
+- Sludge Bomb
+- Thunderbolt
+- Dazzling Gleam
 
-Ampharos
-Level: 51
+Ninjask @ Brightpowder
+Level: 46
+Ability: Speed Boost
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder
-- Protect
-- Thunder Wave
-- Light Screen
+Nature: Adamant
+- Drill Run
+- Dual Wingbeat
+- U Turn
+- Final Gambit
 
-Electrode
-Level: 53
+Dugtrio @ Choice Band
+Level: 46
+Ability: Arena Trap
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Rollout
-- Thunder
-- Explosion
-- Rain Dance
-
-Magneton @ Sitrus Berry
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Supersonic
-- Protect
-- Thunder
-- Rain Dance
-
-Manectric @ Sitrus Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Bite
-- Thunder Wave
-- Thunder
-- Protect
+Nature: Jolly
+- Earthquake
+- Throat Chop
+- Stone Edge
+- Final Gambit
 
 === TRAINER_FALLS_GRUNT_11 ===
 Name: Grunt
@@ -22438,14 +22408,15 @@ Music: Rocket
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Magcargo @ White Herb
-Level: 38
+Cacturne @ Brightpowder
+Level: 46
+Ability: Sand Veil
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Attract
-- Light Screen
-- Rock Slide
+Nature: Jolly
+- Growth
+- Power Trip
+- Needle Arm
+- Drain Punch
 
 Ponyta
 Level: 36
