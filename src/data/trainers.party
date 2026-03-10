@@ -2903,12 +2903,37 @@ Pic: Hex Maniac
 Gender: Female
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Sableye
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Flutter Mane @ Focus Sash
+Level: 66
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Perish Song
+- Volt Switch
+- Shadow Ball
+- Imprison
+
+Milotic @ Flame Orb
+Level: 66
+Ability: Marvel Scale
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Impish
+- Perish Song
+- Flip Turn
+- Recover
+- Imprison
+
+Mr. Mime @ Focus Sash
+Level: 66
+Ability: Soundproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Perish Song
+- Calm Mind
+- Dazzling Gleam
+- Recover
 
 === TRAINER_TASHA ===
 Name: TASHA
@@ -6604,7 +6629,7 @@ Nature: Adamant
 - Zen Headbutt
 - Stone Edge
 
-Absol @ Absolite
+Absol @ Absolite Z
 Level: 100
 Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -12354,16 +12379,37 @@ Pic: Psychic M
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wobbuffet
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Gengar @ Focus Sash
+Level: 66
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shadow Ball
+- Volt Switch
 - Destiny Bond
-- Safeguard
-- Counter
-- Mirror Coat
+- Imprison
+
+Chandelure @ Focus Sash
+Level: 66
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shadow Ball
+- Parting Shot
+- Flamethrower
+- Imprison
+
+Spiritomb @ Roseli Berry
+Level: 66
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dark Pulse
+- Destiny Bond
+- Shadow Ball
+- Substitute
 
 === TRAINER_IRENE ===
 Name: IRENE
