@@ -4082,9 +4082,9 @@ Nature: Hardy
 === TRAINER_LK_EMERALD ===
 Name: Emerald 
 Class: Lorekeeper Emerald
-Pic: Swimmer M
+Pic: Emerald LK
 Gender: Male
-Music: Swimmer
+Music: Suspicious
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -11798,9 +11798,9 @@ Nature: Hardy
 === TRAINER_LK_SAPPHIRE ===
 Name: Sapphire
 Class: Lorekeeper Sapphire
-Pic: Swimmer F
+Pic: Sapphire LK
 Gender: Female
-Music: Swimmer
+Music: Suspicious
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -11868,9 +11868,9 @@ Nature: Brave
 === TRAINER_LK_RUBY ===
 Name: Ruby
 Class: Lorekeeper Ruby
-Pic: Swimmer F
+Pic: Ruby LK
 Gender: Female
-Music: Swimmer
+Music: Suspicious
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 

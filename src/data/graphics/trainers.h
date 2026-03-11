@@ -67,6 +67,15 @@ const u16 gTrainerPalette_Liza[] = INCBIN_U16("graphics/trainers/front_pics/Liza
 const u32 gTrainerFrontPic_Cyrus[] = INCBIN_U32("graphics/trainers/front_pics/cyrus.4bpp.smol");
 const u16 gTrainerPalette_Cyrus[] = INCBIN_U16("graphics/trainers/front_pics/cyrus.gbapal");
 
+const u32 gTrainerFrontPic_EmeraldLK[] = INCBIN_U32("graphics/trainers/front_pics/emeraldLK.4bpp.smol");
+const u16 gTrainerPalette_EmeraldLK[] = INCBIN_U16("graphics/trainers/front_pics/emeraldLK.gbapal");
+
+const u32 gTrainerFrontPic_RubyLK[] = INCBIN_U32("graphics/trainers/front_pics/rubyLK.4bpp.smol");
+const u16 gTrainerPalette_RubyLK[] = INCBIN_U16("graphics/trainers/front_pics/rubyLK.gbapal");
+
+const u32 gTrainerFrontPic_SapphireLK[] = INCBIN_U32("graphics/trainers/front_pics/sapphireLK.4bpp.smol");
+const u16 gTrainerPalette_SapphireLK[] = INCBIN_U16("graphics/trainers/front_pics/sapphireLK.gbapal");
+
 const u32 gTrainerFrontPic_Cynthia[] = INCBIN_U32("graphics/trainers/front_pics/cynthia.4bpp.smol");
 const u16 gTrainerPalette_Cynthia[] = INCBIN_U16("graphics/trainers/front_pics/cynthia.gbapal");
 
@@ -532,6 +541,9 @@ const struct TrainerSprite gTrainerSprites[] =
     TRAINER_SPRITE(TRAINER_PIC_FRONT_LIZA, gTrainerFrontPic_Liza, gTrainerPalette_Liza),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_CYNTHIA, gTrainerFrontPic_Cynthia, gTrainerPalette_Cynthia),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_CYRUS, gTrainerFrontPic_Cyrus, gTrainerPalette_Cyrus),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_EMERALD_LK, gTrainerFrontPic_EmeraldLK, gTrainerPalette_EmeraldLK),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_RUBY_LK, gTrainerFrontPic_RubyLK, gTrainerPalette_RubyLK),
+    TRAINER_SPRITE(TRAINER_PIC_FRONT_SAPPHIRE_LK, gTrainerFrontPic_SapphireLK, gTrainerPalette_SapphireLK),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_ROCKET_GRUNT_F, gTrainerFrontPic_RocketGruntF, gTrainerPalette_RocketGruntF),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_ROCKET_GRUNT_M, gTrainerFrontPic_RocketGruntM, gTrainerPalette_RocketGruntM),
     TRAINER_SPRITE(TRAINER_PIC_FRONT_GIOVANNI, gTrainerFrontPic_RocketLeaderGiovanni, gTrainerPalette_RocketLeaderGiovanni),

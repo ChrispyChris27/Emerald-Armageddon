@@ -10378,17 +10378,17 @@
 #line 4084
         .trainerClass = TRAINER_CLASS_LOREKEEPER_EMERALD,
 #line 4085
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerPic = TRAINER_PIC_FRONT_EMERALD_LK,
 #line 4086
         .gender = TRAINER_GENDER_MALE,
 #line 4087
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 4088
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4089
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
-        .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_M,
+        .trainerBackPic = TRAINER_PIC_FRONT_EMERALD_LK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -29961,17 +29961,17 @@
 #line 11800
         .trainerClass = TRAINER_CLASS_LOREKEEPER_SAPPHIRE,
 #line 11801
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_FRONT_SAPPHIRE_LK,
 #line 11802
         .gender = TRAINER_GENDER_FEMALE,
 #line 11803
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 11804
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 11805
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
-        .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerBackPic = TRAINER_PIC_FRONT_SAPPHIRE_LK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {
@@ -30129,17 +30129,17 @@
 #line 11870
         .trainerClass = TRAINER_CLASS_LOREKEEPER_RUBY,
 #line 11871
-        .trainerPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerPic = TRAINER_PIC_FRONT_RUBY_LK,
 #line 11872
         .gender = TRAINER_GENDER_FEMALE,
 #line 11873
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
 #line 11874
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 11875
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
-        .trainerBackPic = TRAINER_PIC_FRONT_SWIMMER_F,
+        .trainerBackPic = TRAINER_PIC_FRONT_RUBY_LK,
         .partySize = 6,
         .party = (const struct TrainerMon[])
         {

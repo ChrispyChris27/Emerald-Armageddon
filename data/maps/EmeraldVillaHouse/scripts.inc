@@ -27,7 +27,7 @@ EmeraldLorekeeperPreBattle:
 	.string "although this villa is protected.\p"
 	.string "If those two aren't calmed soon, all\n"
 	.string "of Hoenn could be destroyed...\p"
-	.string "But you already know all of this.\n"
+	.string "But you already know all of this.\p"
 	.string "If the entrance to this Villa was\l"
 	.string "revealed to you, it means you have\l"
 	.string "spoken to the Lorekeepers of the Ruby\l"
