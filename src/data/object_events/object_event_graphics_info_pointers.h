@@ -409,6 +409,9 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Grunt_M;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Archer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ariana;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ApricornTree;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_EmeraldLorekeeper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubyLorekeeper;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SapphireLorekeeper;
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
     [OBJ_EVENT_GFX_BRENDAN_NORMAL] =           &gObjectEventGraphicsInfo_BrendanNormal,
@@ -654,7 +657,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_REGIELEKI] =                &gObjectEventGraphicsInfo_Regieleki,
     [OBJ_EVENT_GFX_CYRUS] =                    &gObjectEventGraphicsInfo_Cyrus,
     [OBJ_EVENT_GFX_CYNTHIA] =                  &gObjectEventGraphicsInfo_Cynthia,
-    [OBJ_EVENT_GFX_GIOVANNI1] =                 &gObjectEventGraphicsInfo_Giovanni1,
+    [OBJ_EVENT_GFX_GIOVANNI1] =                &gObjectEventGraphicsInfo_Giovanni1,
     [OBJ_EVENT_GFX_GRUNT_F] =                  &gObjectEventGraphicsInfo_Grunt_F,
     [OBJ_EVENT_GFX_GRUNT_M] =                  &gObjectEventGraphicsInfo_Grunt_M,
     [OBJ_EVENT_GFX_POKE_BALL] =                &gObjectEventGraphicsInfo_PokeBall,
@@ -662,6 +665,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LIGHT_SPRITE] =             &gObjectEventGraphicsInfo_BallLight,
     [OBJ_EVENT_GFX_ARCHER] =                   &gObjectEventGraphicsInfo_Archer,
     [OBJ_EVENT_GFX_ARIANA] =                   &gObjectEventGraphicsInfo_Ariana,
+    [OBJ_EVENT_GFX_EMERALD_LK] =               &gObjectEventGraphicsInfo_EmeraldLorekeeper,
+    [OBJ_EVENT_GFX_RUBY_LK] =                  &gObjectEventGraphicsInfo_RubyLorekeeper,
+    [OBJ_EVENT_GFX_SAPPHIRE_LK] =              &gObjectEventGraphicsInfo_SapphireLorekeeper,
     [OBJ_EVENT_GFX_APRICORN_TREE] =            &gObjectEventGraphicsInfo_ApricornTree,
 #if IS_FRLG
     [OBJ_EVENT_GFX_RED_NORMAL] =               &gObjectEventGraphicsInfo_RedNormal,

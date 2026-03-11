@@ -523,6 +523,9 @@ const u8 gInitialMovementTypeFacingDirections[NUM_MOVEMENT_TYPES] = {
 #define OBJ_EVENT_PAL_TAG_REGIDRAGO               0x112B
 #define OBJ_EVENT_PAL_TAG_ARCHER                  0x112C
 #define OBJ_EVENT_PAL_TAG_ARIANA                  0x112D
+#define OBJ_EVENT_PAL_TAG_EMERALD                 0x112E
+#define OBJ_EVENT_PAL_TAG_RUBY                    0x112F
+#define OBJ_EVENT_PAL_TAG_SAPPHIRE                0x1130
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -579,6 +582,9 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Grunt_F,               OBJ_EVENT_PAL_TAG_GRUNT_F},
     {gObjectEventPal_Archer,                OBJ_EVENT_PAL_TAG_ARCHER},
     {gObjectEventPal_Ariana,                OBJ_EVENT_PAL_TAG_ARIANA},
+    {gObjectEventPal_Emerald,               OBJ_EVENT_PAL_TAG_EMERALD},
+    {gObjectEventPal_Ruby,                  OBJ_EVENT_PAL_TAG_RUBY},
+    {gObjectEventPal_Sapphire,              OBJ_EVENT_PAL_TAG_SAPPHIRE},
 #if IS_FRLG
     {gObjectEventPal_PlayerFrlg,            OBJ_EVENT_PAL_TAG_PLAYER_RED},
     {gObjectEventPal_PlayerReflectionFrlg,  OBJ_EVENT_PAL_TAG_PLAYER_RED_REFLECTION},

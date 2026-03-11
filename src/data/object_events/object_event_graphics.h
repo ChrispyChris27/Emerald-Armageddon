@@ -401,6 +401,9 @@ const u32 gObjectEventPic_Archer[] = INCBIN_U32("graphics/object_events/pics/peo
 const u16 gObjectEventPal_Archer[] = INCBIN_U16("graphics/object_events/palettes/archer.gbapal");
 const u32 gObjectEventPic_Ariana[] = INCBIN_U32("graphics/object_events/pics/people/ariana.4bpp");
 const u16 gObjectEventPal_Ariana[] = INCBIN_U16("graphics/object_events/palettes/ariana.gbapal");
+const u16 gObjectEventPal_Emerald[] = INCBIN_U16("graphics/object_events/palettes/emeraldLK.gbapal");
+const u16 gObjectEventPal_Ruby[] = INCBIN_U16("graphics/object_events/palettes/rubyLK.gbapal");
+const u16 gObjectEventPal_Sapphire[] = INCBIN_U16("graphics/object_events/palettes/sapphireLK.gbapal");
 const u16 gObjectEventPal_Lugia[] = INCBIN_U16("graphics/object_events/palettes/lugia.gbapal");
 
 const u16 gObjectEventPaletteLight[] = INCBIN_U16("graphics/object_events/palettes/light.gbapal");
@@ -485,6 +488,9 @@ const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");
 
 const u32 gObjectEventPic_ApricornTree[] = INCBIN_U32("graphics/object_events/pics/misc/apricorn_tree.4bpp");
+
+const u16 gObjectEventPic_OldMan1[] = INCBIN_U16("graphics/object_events/pics/people/old_man_1.4bpp");
+const u16 gObjectEventPic_OldWomanFrlg[] = INCBIN_U16("graphics/object_events/pics/people/old_woman_frlg.4bpp");
 
 #if IS_FRLG
 

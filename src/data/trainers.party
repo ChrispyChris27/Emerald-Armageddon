@@ -4086,22 +4086,67 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Aerodactyl @ Rock Gem
+Level: 87
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Head Smash
+- Brave Bird
+- Crunch
+- Stealth Rock
 
-Wingull
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Flygon @ Yache Berry
+Level: 87
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Claw
+- Rock Slide
+- Fire Punch
+- Dragon Dance
 
-Carvanha
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Articuno @ Leftovers
+Level: 87
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Ice Beam
+- Roost
+- Tailwind
+
+Azelf @ Life Orb
+Level: 87
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Mystical Power
+- Recover
+- Thunderbolt
+- Baton Pass
+
+Moltres Galar @ Sitrus Berry
+Level: 87
+Ability: Berserk
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Fiery Wrath
+- Nasty Plot
+- Roost
+- Hurricane
+
+Dragonite @ Dragoninite
+Level: 87
+Ability: Multiscale
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Blizzard
+- Dragon Pulse
+- Thunder
 
 === TRAINER_RODNEY ===
 Name: RODNEY
@@ -11865,7 +11910,6 @@ Ability: Truant
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Giga Impact
-- Return
 
 Heracross @ Flame Orb
 Level: 87

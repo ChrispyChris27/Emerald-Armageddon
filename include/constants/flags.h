@@ -1303,7 +1303,7 @@
 #define FLAG_UNLOCK_EMERALD_VILLA                                           0x4E1 // Unused Flag
 #define FLAG_EMERALD_LEGEND                                           0x4E2 // Unused Flag
 #define FLAG_INVERSE_BATTLES                                           0x4E3 // Unused Flag
-#define FLAG_UNUSED_0x4E4                                           0x4E4 // Unused Flag
+#define FLAG_SKY_BATTLES                                           0x4E4 // Unused Flag
 #define FLAG_UNUSED_0x4E5                                           0x4E5 // Unused Flag
 #define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
 #define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag

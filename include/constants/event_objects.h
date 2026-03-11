@@ -424,6 +424,9 @@
 #define OBJ_EVENT_GFX_ARCHER                     394
 #define OBJ_EVENT_GFX_ARIANA                     395
 #define OBJ_EVENT_GFX_APRICORN_TREE              396
+#define OBJ_EVENT_GFX_EMERALD_LK                 397
+#define OBJ_EVENT_GFX_RUBY_LK                    398
+#define OBJ_EVENT_GFX_SAPPHIRE_LK                399
 
 // FRLG equivalents
 
@@ -435,7 +438,7 @@
 // NOTE: The maximum amount of object events has been expanded from 255 to 65535.
 // Since dynamic graphics ids still require at least 16 free values, the actual limit
 // is 65519, but even considering follower Pokémon, this should be more than enough :)
-#define NUM_OBJ_EVENT_GFX                        397
+#define NUM_OBJ_EVENT_GFX                        400
 
 
 // These are dynamic object gfx ids.
