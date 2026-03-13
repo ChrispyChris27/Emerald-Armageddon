@@ -1723,9 +1723,7 @@ static enum CancelerResult CancelerTargetFailure(struct BattleContext *ctx)
 
         if (moveTarget == TARGET_OPPONENTS_FIELD)
         {
-            if (IsSemiInvulnerable(ctx->battlerDef, CHECK_ALL))
-                ctx->abilityDef = ABILITY_NONE;
-            if (CanBattlerBounceBackMove(ctx))
+            if (!IsSemiInvulnerable(ctx->battlerDef, CHECK_ALL) && CanBattlerBounceBackMove(ctx))
                 gBattleStruct->moveResultFlags[ctx->battlerDef] |= MOVE_RESULT_FAILED;
         }
         else if (IsBattlerUnaffectedByMove(ctx->battlerDef)) // immune but targeted
@@ -3792,8 +3790,8 @@ static enum MoveEndResult MoveEndDancer(void)
     // Set target for other Dancer mons; set bit so that mon cannot activate Dancer off of its own move
     if (!gSpecialStatuses[gBattlerAttacker].dancerUsedMove)
     {
-        gBattleScripting.savedBattler = gBattlerTarget | 0x4;
-        gBattleScripting.savedBattler |= (gBattlerAttacker << 4);
+        gBattleStruct->dancerSavedTarget = gBattlerTarget;
+        gBattleStruct->dancerSavedAttacker = gBattlerAttacker;
         gSpecialStatuses[gBattlerAttacker].dancerUsedMove = TRUE;
     }
 
