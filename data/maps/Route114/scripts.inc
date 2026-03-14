@@ -314,7 +314,7 @@ Route114_Text_Grunt7Intro:
 
 Route114_Text_Grunt7Defeat:
 	.string "I feel like I've been struck by a\n"
-	.string "meteor$"
+	.string "meteor...$"
 
 Route114_Text_Grunt7PostBattle:
 	.string "Did you know there's a city in the\n"
@@ -344,7 +344,7 @@ Route114_EventScript_Grunt8::
 
 Route114_Text_Grunt9Intro:
 	.string "Stop right there!\p"
-	.string "Nobody is allowed in Meteor Falls!\n"
+	.string "Nobody is allowed in Meteor Falls\n"
 	.string "until the boss finds what he's after!$"
 
 Route114_Text_Grunt9Defeat:

@@ -22976,53 +22976,58 @@ Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability / Risky
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Dratini @ Sitrus Berry
-Level: 40
+Donphan @ Red Card
+Level: 46
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder Wave
-- Thunderbolt
-- Protect
+Nature: Jolly
+- Earthquake
+- Ice Spinner
+- Stealth Rock
+- Endeavor
+
+Porygon2 @ Eviolite
+Level: 46
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Tri Attack
 - Ice Beam
+- Thunderbolt
+- Recover
 
-Tropius
-Level: 38
+Salazzle @ Focus Band
+Level: 46
+Ability: Corrosion
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Earthquake
-
-Pelipper
-Level: 41
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Surf
-- Supersonic
+Nature: Timid
+- Toxic
+- Flamethrower
+- Venoshock
 - Protect
-- Aerial Ace
 
-Skarmory
-Level: 43
+Comfey @ Brightpowder
+Level: 46
+Ability: Triage
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Whirlwind
-- Spikes
-- Steel Wing
-- Aerial Ace
+Nature: Timid
+- Draining Kiss
+- Psychic
+- Synthesis
+- Leech Seed
 
-Altaria @ Chesto Berry
-Level: 45
+Boltund @ Life Orb
+Level: 46
+Ability: Strong Jaw
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Aerial Ace
-- Rest
-- Dragon Dance
-- Earthquake
+Nature: Jolly
+- Thunder Fang
+- Ice Fang
+- Crunch
+- Psychic Fangs
 
 === TRAINER_FALLS_GRUNT_8 ===
 Name: Grunt
@@ -23030,61 +23035,47 @@ Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability / Risky
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Hoothoot
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Hypnosis
-- Psychic
-- Reflect
-- Dream Eater
-
-Tropius
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Earthquake
-
-Dragonair @ Sitrus Berry
-Level: 45
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder Wave
-- Thunderbolt
-- Protect
-- Ice Beam
-
-Pelipper
+Dracovish @ Red Card
 Level: 46
+Ability: Strong Jaw
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Surf
-- Supersonic
-- Protect
-- Aerial Ace
+Nature: Jolly
+- Fishious Rend
+- Dragon Claw
+- Psychic Fangs
+- Ice Fang
 
-Skarmory
-Level: 48
+Carracosta @ Focus Band
+Level: 46
+Ability: Solid Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Whirlwind
-- Spikes
-- Steel Wing
-- Aerial Ace
+Nature: Jolly
+- Shell Smash
+- Liquidation
+- Rock Slide
+- Ice Spinner
 
-Altaria @ Chesto Berry
-Level: 50
+Arctozolt @ Brightpowder
+Level: 46
+Ability: Static
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Aerial Ace
-- Rest
-- Dragon Dance
+Nature: Jolly
+- Bolt Beak
+- Icicle Crash
+- Earthquake
+- Substitute
+
+Tyrantrum @ Rock Gem
+Level: 46
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Head Smash
+- Dragon Claw
+- Play Rough
 - Earthquake
 
 === TRAINER_FALLS_GRUNT_9 ===
@@ -23093,62 +23084,58 @@ Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability / Risky
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Noctowl
-Level: 48
+Crobat @ Leftovers
+Level: 46
+Ability: Infiltrator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
+Nature: Jolly
 - Hypnosis
-- Psychic
-- Reflect
-- Dream Eater
+- Cross Poison
+- U Turn
+- Drill Peck
 
-Tropius
-Level: 49
+Reuniclus @ Life Orb
+Level: 46
+Ability: Magic Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Earthquake
+Nature: Timid
+- Psyshock
+- Shadow Ball
+- Dazzling Gleam
+- Recover
 
-Dragonair @ Sitrus Berry
-Level: 50
+Shiftry @ Brightpowder
+Level: 46
+Ability: Wind Rider
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Thunder Wave
-- Thunderbolt
-- Protect
-- Ice Beam
+Nature: Hasty
+- Silver Wind
+- Ominous Wind
+- Heat Wave
+- Explosion
 
-Pelipper
-Level: 51
+Dusclops @ Eviolite
+Level: 46
+Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Surf
-- Supersonic
-- Protect
-- Aerial Ace
+Nature: Impish
+- Pain Split
+- Will O Wisp
+- Mean Look
+- Night Shade
 
-Skarmory
-Level: 53
+Runerigus @ Chesto Berry
+Level: 46
+Ability: Wandering Spirit
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Whirlwind
-- Spikes
-- Steel Wing
-- Aerial Ace
-
-Altaria @ Chesto Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Aerial Ace
+Nature: Jolly
+- Amnesia
+- Iron Defense
+- Power Trip
 - Rest
-- Dragon Dance
-- Earthquake
 
 === TRAINER_FALLS_GRUNT_10 ===
 Name: Grunt
