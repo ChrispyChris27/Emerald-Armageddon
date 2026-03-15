@@ -897,12 +897,67 @@ Pic: Hex Maniac
 Gender: Female
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Spoink
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Rotom @ Focus Sash
+Level: 65
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Discharge
+- Shadow Ball
+- Will O Wisp
+- Thunder Wave
+
+Rotom Mow @ White Herb
+Level: 65
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunderbolt
+- Leaf Storm
+- Volt Switch
+- Reflect
+
+Rotom Wash @ Leftovers
+Level: 65
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunderbolt
+- Scald
+- Ice Beam
+- Substitute
+
+Rotom Fan @ Charti Berry
+Level: 65
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunderbolt
+- Air Slash
+- Foul Play
+- Will O Wisp
+
+Rotom Heat @ Weakness Policy
+Level: 65
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunderbolt
+- Flamethrower
+- Nasty Plot
+- Stored Power
+
+Rotom Frost @ Weakness Policy
+Level: 65
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunderbolt
+- Ice Beam
+- Nasty Plot
+- Freeze Dry
 
 === TRAINER_DAISY ===
 Name: DAISY
