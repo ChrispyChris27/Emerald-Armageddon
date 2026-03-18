@@ -6365,7 +6365,7 @@ Nature: Timid
 
 Cryogonal @ Light Clay
 Level: 78
-Ability: Levitate
+Ability: Filter
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Frost Breath
@@ -19988,7 +19988,7 @@ Nature: Jolly
 
 Vanilluxe @ Water Gem
 Level: 37
-Ability: Weak Armor
+Ability: Filter
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Ice Beam
@@ -22103,7 +22103,7 @@ Nature: Jolly
 
 Klinklang @ Brightpowder
 Level: 47
-Ability: Clear Body
+Ability: Filter
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Substitute

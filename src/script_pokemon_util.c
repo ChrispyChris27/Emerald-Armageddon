@@ -178,6 +178,7 @@ void CreateScriptedWildMon(u16 species, u8 level, enum Item item)
         u16 move3 = MOVE_EARTH_POWER;
         u16 move4 = MOVE_RECOVER;
         u8 nature = NATURE_MODEST;
+        u8 ability = 0;
 
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
