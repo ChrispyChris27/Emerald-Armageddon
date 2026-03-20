@@ -5065,6 +5065,9 @@ u32 IsAbilityPreventingEscape(enum BattlerId battler)
     if (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return 0;
 
+    if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
+        return 0;
+
     bool32 isBattlerGrounded = IsBattlerGrounded(battler, GetBattlerAbility(battler), GetBattlerHoldEffect(battler));
     for (enum BattlerId battlerDef = 0; battlerDef < gBattlersCount; battlerDef++)
     {

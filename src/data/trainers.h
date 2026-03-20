@@ -16195,7 +16195,7 @@
 #line 6369
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 6368
-            .ability = ABILITY_LEVITATE,
+            .ability = ABILITY_FILTER,
 #line 6367
             .lvl = 78,
             .ball = POKEBALL_COUNT,
@@ -50482,7 +50482,7 @@
 #line 19992
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 19991
-            .ability = ABILITY_WEAK_ARMOR,
+            .ability = ABILITY_FILTER,
 #line 19990
             .lvl = 37,
             .ball = POKEBALL_COUNT,
@@ -51313,7 +51313,7 @@
             },
             {
 #line 20329
-            .species = SPECIES_PORYGON_Z,
+            .species = SPECIES_MAGNEZONE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 20329
             .heldItem = ITEM_ZOOM_LENS,
@@ -51329,10 +51329,10 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 20334
-                MOVE_BOOMBURST,
+                MOVE_FLASH_CANNON,
                 MOVE_THUNDER,
-                MOVE_BLIZZARD,
-                MOVE_NASTY_PLOT,
+                MOVE_MAGNET_RISE,
+                MOVE_TRI_ATTACK,
             },
             },
         },
@@ -55795,7 +55795,7 @@
 #line 22107
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 22106
-            .ability = ABILITY_CLEAR_BODY,
+            .ability = ABILITY_FILTER,
 #line 22105
             .lvl = 47,
             .ball = POKEBALL_COUNT,

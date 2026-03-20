@@ -474,6 +474,8 @@ bool32 AI_CanBattlerEscape(enum BattlerId battler)
         return TRUE;
     if (holdEffect == HOLD_EFFECT_SHED_SHELL)
         return TRUE;
+    if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
+        return TRUE;
 
     return FALSE;
 }

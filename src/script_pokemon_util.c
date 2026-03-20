@@ -185,6 +185,7 @@ void CreateScriptedWildMon(u16 species, u8 level, enum Item item)
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
         SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
         SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_SHEDINJA)
