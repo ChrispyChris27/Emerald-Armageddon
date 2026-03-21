@@ -10468,6 +10468,7 @@ u32 GetTotalAccuracy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
     switch (atkAbility)
     {
     case ABILITY_COMPOUND_EYES:
+    case ABILITY_ILLUMINATE:
         calc = (calc * 130) / 100; // 1.3 compound eyes boost
         break;
     case ABILITY_VICTORY_STAR:
