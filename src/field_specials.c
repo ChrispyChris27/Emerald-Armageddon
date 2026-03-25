@@ -5777,3 +5777,78 @@ bool8 CheckAddCoins(void)
     else
         return TRUE;
 }
+
+bool8 CanPoison(void)
+{
+    struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
+    u16 species = GetBoxMonData(boxmon, MON_DATA_SPECIES);
+    u8 ability = GetBoxMonData(boxmon, MON_DATA_ABILITY_NUM);
+
+        if (GetBoxMonData(boxmon, MON_DATA_IS_EGG) || GetSpeciesAbility(species, ability) == ABILITY_IMMUNITY || GetSpeciesAbility(species, ability) == ABILITY_COMATOSE || GetSpeciesAbility(species, ability) == ABILITY_PASTEL_VEIL || GetSpeciesAbility(species, ability) == ABILITY_PURIFYING_SALT || GetSpeciesType(species, 0) == TYPE_POISON || GetSpeciesType(species, 1) == TYPE_POISON || GetSpeciesType(species, 0) == TYPE_STEEL || GetSpeciesType(species, 1) == TYPE_STEEL)
+            {
+                gSpecialVar_Result = FALSE;
+                return FALSE;
+            }
+        else
+            return TRUE;
+}
+
+bool8 CanBurn(void)
+{
+    struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
+    u16 species = GetBoxMonData(boxmon, MON_DATA_SPECIES);
+    u8 ability = GetBoxMonData(boxmon, MON_DATA_ABILITY_NUM);
+
+        if (GetBoxMonData(boxmon, MON_DATA_IS_EGG) || GetSpeciesAbility(species, ability) == ABILITY_WATER_VEIL || GetSpeciesAbility(species, ability) == ABILITY_COMATOSE || GetSpeciesAbility(species, ability) == ABILITY_WATER_BUBBLE || GetSpeciesAbility(species, ability) == ABILITY_PURIFYING_SALT || GetSpeciesAbility(species, ability) == ABILITY_THERMAL_EXCHANGE || GetSpeciesType(species, 0) == TYPE_FIRE || GetSpeciesType(species, 1) == TYPE_FIRE)
+            {
+                gSpecialVar_Result = FALSE;
+                return FALSE;
+            }
+        else
+            return TRUE;
+}
+
+bool8 CanParalyze(void)
+{
+    struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
+    u16 species = GetBoxMonData(boxmon, MON_DATA_SPECIES);
+    u8 ability = GetBoxMonData(boxmon, MON_DATA_ABILITY_NUM);
+
+        if (GetBoxMonData(boxmon, MON_DATA_IS_EGG) || GetSpeciesAbility(species, ability) == ABILITY_PURIFYING_SALT || GetSpeciesAbility(species, ability) == ABILITY_LIMBER || GetSpeciesAbility(species, ability) == ABILITY_COMATOSE || GetSpeciesType(species, 0) == TYPE_ELECTRIC || GetSpeciesType(species, 1) == TYPE_ELECTRIC )
+            {
+                gSpecialVar_Result = FALSE;
+                return FALSE;
+            }
+        else
+            return TRUE;
+}
+
+bool8 CanFreeze(void)
+{
+    struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
+    u16 species = GetBoxMonData(boxmon, MON_DATA_SPECIES);
+    u8 ability = GetBoxMonData(boxmon, MON_DATA_ABILITY_NUM);
+
+        if (GetBoxMonData(boxmon, MON_DATA_IS_EGG) || GetSpeciesAbility(species, ability) == ABILITY_PURIFYING_SALT || GetSpeciesAbility(species, ability) == ABILITY_MAGMA_ARMOR || GetSpeciesAbility(species, ability) == ABILITY_COMATOSE || GetSpeciesType(species, 0) == TYPE_ICE || GetSpeciesType(species, 1) == TYPE_ICE )
+            {
+                gSpecialVar_Result = FALSE;
+                return FALSE;
+            }
+        else
+            return TRUE;
+}
+
+bool8 CanSleep(void)
+{
+    struct BoxPokemon *boxmon = GetSelectedBoxMonFromPcOrParty();
+    u16 species = GetBoxMonData(boxmon, MON_DATA_SPECIES);
+    u8 ability = GetBoxMonData(boxmon, MON_DATA_ABILITY_NUM);
+
+        if (GetBoxMonData(boxmon, MON_DATA_IS_EGG) || GetSpeciesAbility(species, ability) == ABILITY_PURIFYING_SALT || GetSpeciesAbility(species, ability) == ABILITY_INSOMNIA || GetSpeciesAbility(species, ability) == ABILITY_COMATOSE || GetSpeciesAbility(species, ability) == ABILITY_VITAL_SPIRIT || GetSpeciesAbility(species, ability) == ABILITY_SWEET_VEIL )
+            {
+                gSpecialVar_Result = FALSE;
+                return FALSE;
+            }
+        else
+            return TRUE;
+}

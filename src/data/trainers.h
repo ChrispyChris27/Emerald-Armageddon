@@ -9389,7 +9389,7 @@
 #line 3705
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 3704
-            .ability = ABILITY_PRESSURE,
+            .ability = ABILITY_LEVITATE,
 #line 3703
             .lvl = 41,
             .ball = POKEBALL_COUNT,
@@ -15224,11 +15224,11 @@
             .species = SPECIES_XATU,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 5984
-            .heldItem = ITEM_MUSCLE_BAND,
+            .heldItem = ITEM_LIFE_ORB,
 #line 5987
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 5986
-            .ability = ABILITY_EARLY_BIRD,
+            .ability = ABILITY_MAGIC_GUARD,
 #line 5985
             .lvl = 31,
             .ball = POKEBALL_COUNT,
@@ -37494,7 +37494,7 @@
 #line 14802
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 14801
-            .ability = ABILITY_DEFIANT,
+            .ability = ABILITY_SUPER_LUCK,
 #line 14800
             .lvl = 20,
             .ball = POKEBALL_COUNT,
@@ -54218,7 +54218,7 @@
 #line 21475
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 21474
-            .ability = ABILITY_STEADFAST,
+            .ability = ABILITY_SNIPER,
 #line 21473
             .lvl = 21,
             .ball = POKEBALL_COUNT,

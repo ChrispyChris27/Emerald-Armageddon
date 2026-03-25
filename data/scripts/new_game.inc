@@ -314,6 +314,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_TOTEM_NECROZMA
 	setflag FLAG_TOTEM_ABSOL_MEGA
 	setflag FLAG_TOTEM_SABLEYE
+	setflag FLAG_PRESTATUS_TRAINER
 	call EventScript_ResetAllBerries
 	end
 

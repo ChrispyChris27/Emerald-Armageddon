@@ -566,6 +566,11 @@ gSpecials::
 	def_special DoBrailleRegidragoEffect
 	def_special ReleaseRoamers
 	def_special HealUnfainted
+	def_special CanBurn
+	def_special CanPoison
+	def_special CanSleep
+	def_special CanFreeze
+	def_special CanParalyze
 	def_special UseBlankMessageToCancelPokemonPic
 	def_special EnterCode
 	def_special CheckPartyForRegis

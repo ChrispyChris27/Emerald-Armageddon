@@ -15,6 +15,7 @@ GraniteCave_StevensRoom_EventScript_Steven::
 	clearflag FLAG_HIDE_RUSTURF_TUNNEL_ROCK_2
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_MR_BRINEY
 	clearflag FLAG_HIDE_BRINEYS_HOUSE_PEEKO
+	clearflag FLAG_PRESTATUS_TRAINER
 	msgbox GraniteCave_StevensRoom_Text_ThankYouTakeThis, MSGBOX_DEFAULT
 	giveitem ITEM_TM_STEEL_WING
 	call_if_eq VAR_RESULT, FALSE, GraniteCave_StevensRoom_EventScript_BagFull
