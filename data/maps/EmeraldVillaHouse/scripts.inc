@@ -15,6 +15,12 @@ EmeraldVillaHouseLoreKeeper::
 	releaseall
 	end
 
+CannotSkyBattle::
+	msgbox CannotSkyBattleText, MSGBOX_AUTOCLOSE
+	clearflag FLAG_SKY_BATTLES
+	releaseall
+	end
+
 EmeraldLorekeeperPreBattle:
 	.string "A visitor to the Emerald Villa is\n"
 	.string "most unusual...\p"
@@ -28,7 +34,7 @@ EmeraldLorekeeperPreBattle:
 	.string "If those two aren't calmed soon, all\n"
 	.string "of Hoenn could be destroyed...\p"
 	.string "But you already know all of this.\p"
-	.string "If the entrance to this Villa was\l"
+	.string "If the entrance to this Villa was\n"
 	.string "revealed to you, it means you have\l"
 	.string "spoken to the Lorekeepers of the Ruby\l"
 	.string "and Sapphire Legends already.\p"
@@ -48,7 +54,7 @@ EmeraldLorekeeperPostBattle:
 	.string "yourself worthy of hearing\l"
 	.string "the legend of Rayquaza.$"
 
-CannotSkyBattle:
+CannotSkyBattleText:
 	.string "A true master of the skies would\n"
 	.string "have a Pokemon that can fly!\p"
 	.string "See me again when you have brought\n"

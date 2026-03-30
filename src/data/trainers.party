@@ -11933,7 +11933,7 @@ Kyurem @ Eject Pack
 Level: 87
 Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hasty
+Nature: Timid
 - Draco Meteor
 - Ice Beam
 - Roost
@@ -22550,45 +22550,38 @@ Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Cacturne @ Brightpowder
+Weezing @ Payapa Berry
 Level: 46
-Ability: Sand Veil
+Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Jolly
-- Growth
-- Power Trip
-- Needle Arm
-- Drain Punch
-
-Ponyta
-Level: 36
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Flamethrower
-- Attract
-- Solar Beam
-- Bounce
-
-Camerupt @ White Herb
-Level: 38
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
-
-Torkoal @ White Herb
-Level: 40
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Sunny Day
+Nature: Hasty
+- Venoshock
+- Poison Gas
+- Incinerate
 - Explosion
-- Attract
+
+Smeargle @ Focus Sash
+Level: 46
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Icy Wind
+- Snarl
+- Dark Void
+- Explosion
+
+Turtonator @ Rowap Berry
+Level: 46
+Ability: Shell Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Quiet
+- Shell Trap
+- Explosion
+- Dragon Pulse
+- Incinerate
 
 === TRAINER_FALLS_GRUNT_12 ===
 Name: Grunt
@@ -22596,53 +22589,58 @@ Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Growlithe
-Level: 41
+Electrode Hisui @ Light Clay
+Level: 46
+Ability: Aftermath
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Helping Hand
-- Flamethrower
-- Roar
-- Sunny Day
-
-Magcargo @ White Herb
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Attract
+Nature: Hasty
+- Reflect
 - Light Screen
-- Rock Slide
-
-Ponyta
-Level: 41
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Flamethrower
-- Attract
-- Solar Beam
-- Bounce
-
-Camerupt @ White Herb
-Level: 43
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
-
-Torkoal @ White Herb
-Level: 45
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Sunny Day
+- Leaf Storm
 - Explosion
-- Attract
+
+Cacturne @ Brightpowder
+Level: 46
+Ability: Adaptability
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Growth
+- Power Trip
+- Needle Arm
+- Drain Punch
+
+Ariados @ Focus Band
+Level: 46
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Swords Dance
+- Leech Life
+- Cross Poison
+- Knock Off
+
+Orthworm @ Quick Claw
+Level: 46
+Ability: Earth Eater
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Coil
+- Iron Tail
+- Stone Edge
+- Earthquake
+
+Chatot @ King's Rock
+Level: 46
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Nasty Plot
+- Chatter
+- Heat Wave
+- Boomburst
 
 === TRAINER_FALLS_GRUNT_13 ===
 Name: Grunt
@@ -23198,62 +23196,28 @@ Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability / Risky
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Noctowl
-Level: 53
+Gengar @ Focus Sash
+Level: 46
+Ability: Shadow Tag
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Hypnosis
-- Psychic
-- Reflect
-- Dream Eater
+Nature: Timid
+- Poison Gas
+- Venom Drench
+- Hex
+- Sludge Bomb
 
-Tropius
-Level: 54
+Trevenant @ Scope Lens
+Level: 46
+Ability: Shadow Tag
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Sunny Day
-- Aerial Ace
-- Solar Beam
-- Earthquake
-
-Pelipper
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Surf
-- Supersonic
-- Protect
-- Aerial Ace
-
-Dragonite @ Sitrus Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Hyper Beam
-- Thunderbolt
-- Earthquake
-- Ice Beam
-
-Skarmory
-Level: 58
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Whirlwind
-- Spikes
-- Steel Wing
-- Aerial Ace
-
-Altaria @ Chesto Berry
-Level: 60
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Sky Attack
-- Rest
-- Dragon Dance
-- Earthquake
+Nature: Jolly
+- Leaf Blade
+- Shadow Claw
+- Forests Curse
+- X Scissor
 
 === TRAINER_LIZA ===
 Name: LIZA
