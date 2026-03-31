@@ -22648,62 +22648,38 @@ Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Houndour
+Indeedee F @ Light Clay
 Level: 46
+Ability: Psychic Surge
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Roar
-- Solar Beam
-- Taunt
-- Sunny Day
-
-Growlithe
-Level: 46
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Helping Hand
-- Flamethrower
-- Sunny Day
-- Roar
-
-Magcargo @ White Herb
-Level: 48
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Attract
+Nature: Naive
+- Follow Me
+- Expanding Force
 - Light Screen
-- Rock Slide
+- Reflect
 
-Rapidash
+Bronzong @ Brightpowder
 Level: 46
+Ability: Heatproof
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Flamethrower
-- Attract
-- Solar Beam
-- Bounce
+Nature: Bold
+- Follow Me
+- Expanding Force
+- Flash Cannon
+- Helping Hand
 
-Camerupt @ White Herb
-Level: 48
+Musharna @ Focus Band
+Level: 46
+Ability: Healer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
-
-Torkoal @ White Herb
-Level: 50
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Sunny Day
-- Explosion
-- Attract
+Nature: Modest
+- Moonblast
+- Expanding Force
+- Ally Switch
+- Hypnosis
 
 === TRAINER_FALLS_GRUNT_14 ===
 Name: Grunt
@@ -22711,62 +22687,28 @@ Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Arcanine
-Level: 51
+Xatu @ Iron Ball
+Level: 46
+Ability: Magic Bounce
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Helping Hand
-- Flamethrower
-- Sunny Day
-- Roar
+Nature: Timid
+- Hurricane
+- Expanding Force
+- Ally Switch
+- Heat Wave
 
-Magcargo @ White Herb
-Level: 53
+Hatterene @ Quick Claw
+Level: 46
+Ability: Healer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Attract
-- Light Screen
-- Rock Slide
-
-Houndoom
-Level: 51
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Roar
-- Solar Beam
-- Taunt
-- Sunny Day
-
-Rapidash
-Level: 51
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Flamethrower
-- Attract
-- Solar Beam
-- Bounce
-
-Camerupt @ White Herb
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Sunny Day
-- Earthquake
-- Attract
-
-Torkoal @ White Herb
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Overheat
-- Sunny Day
-- Explosion
-- Attract
+Nature: Modest
+- Mystical Fire
+- Expanding Force
+- Dazzling Gleam
+- Life Dew
 
 === TRAINER_SANDY ===
 Name: SANDY
