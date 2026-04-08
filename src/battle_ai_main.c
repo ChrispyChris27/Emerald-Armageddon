@@ -145,15 +145,19 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
 void AIDebugTimerStart()
 {
     // Set delay timer to count how long it takes for AI to choose action/move
-    gBattleStruct->aiDelayTimer = gMain.vblankCounter1;
-    CycleCountStart();
+    if ((TESTING && gBattleTurnCounter == 0) || DEBUG_AI_DELAY_TIMER)
+        gBattleStruct->aiDelayTimer = gMain.vblankCounter1;
+    if (!TESTING && DEBUG_AI_DELAY_TIMER)
+        CycleCountStart();
 }
 
 void AIDebugTimerEnd()
 {
     // We add to existing to compound multiple calls
-    gBattleStruct->aiDelayFrames += gMain.vblankCounter1 - gBattleStruct->aiDelayTimer;
-    gBattleStruct->aiDelayCycles += CycleCountEnd();
+    if ((TESTING && gBattleTurnCounter == 0) || DEBUG_AI_DELAY_TIMER)
+        gBattleStruct->aiDelayFrames += gMain.vblankCounter1 - gBattleStruct->aiDelayTimer;
+    if (!TESTING && DEBUG_AI_DELAY_TIMER)
+        gBattleStruct->aiDelayCycles += CycleCountEnd();
 }
 
 void BattleAI_SetupItems(void)
@@ -380,8 +384,7 @@ void ComputeBattlerDecisions(enum BattlerId battler)
 
         gAiLogicData->aiCalcInProgress = TRUE;
 
-        if (DEBUG_AI_DELAY_TIMER)
-            AIDebugTimerStart();
+        AIDebugTimerStart();
 
         // Setup battler and prediction data
         BattleAI_SetupAIData(0xF, battler);
@@ -402,8 +405,7 @@ void ComputeBattlerDecisions(enum BattlerId battler)
             BattlerChooseNonMoveAction();
         ModifySwitchAfterMoveScoring(battler);
 
-        if (DEBUG_AI_DELAY_TIMER)
-            AIDebugTimerEnd();
+        AIDebugTimerEnd();
 
         gAiLogicData->aiCalcInProgress = FALSE;
     }
@@ -725,8 +727,7 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
 
        gAiLogicData->aiCalcInProgress = TRUE;
     
-    if (DEBUG_AI_DELAY_TIMER)
-        AIDebugTimerStart();
+    AIDebugTimerStart();
 
     aiData->weatherHasEffect = HasWeatherEffect();
     weather = AI_GetWeather();
@@ -763,8 +764,7 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
         aiData->predictingMove = RandomPercentage(RNG_AI_PREDICT_MOVE, PREDICT_MOVE_CHANCE);
     }
 
-    if (DEBUG_AI_DELAY_TIMER)
-        AIDebugTimerEnd();
+    AIDebugTimerEnd();
         
     gAiLogicData->aiCalcInProgress = FALSE;
 }
