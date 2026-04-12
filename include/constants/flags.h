@@ -1299,7 +1299,7 @@
 #define FLAG_DRAMPANITE                                           0x4DD // Unused Flag
 #define FLAG_SKARMORITE                                           0x4DE // Unused Flag
 #define FLAG_RUBY_LEGEND                                           0x4DF // Unused Flag
-#define FLAG_SAPPPHIRE_LEGEND                                           0x4E0 // Unused Flag
+#define FLAG_SAPPHIRE_LEGEND                                           0x4E0 // Unused Flag
 #define FLAG_UNLOCK_EMERALD_VILLA                                           0x4E1 // Unused Flag
 #define FLAG_EMERALD_LEGEND                                           0x4E2 // Unused Flag
 #define FLAG_INVERSE_BATTLES                                           0x4E3 // Unused Flag

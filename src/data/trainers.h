@@ -30115,7 +30115,7 @@
 #line 11865
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
 #line 11864
-            .ability = ABILITY_CUTE_CHARM,
+            .ability = ABILITY_CONTRARY,
 #line 11863
             .lvl = 87,
             .ball = POKEBALL_COUNT,

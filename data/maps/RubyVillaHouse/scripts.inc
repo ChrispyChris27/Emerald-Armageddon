@@ -131,11 +131,11 @@ RubyLorekeeperLegend:
 	.string "so much land across the oceans, went\l"
 	.string "into a deep slumber and hasn't been\l"
 	.string "seen since.\p"
-	.string "This is the Ruby Legend: every island\n"
-	.string "in all of Hoenn was created by Groudon\l"
-	.string "and moved by Regigigas to allow for\l"
-	.string "humans to expand their civilization\l"
-	.string "out of Meteor Falls.$"
+	.string "This is the Ruby Legend.\p" 
+	.string "every island in all of Hoenn was made\n"
+	.string "by Groudon and moved by Regigigas to\l"
+	.string "allow for humans to expand their\l"
+	.string "civilization beyond Meteor Falls.$"
 
 TellRubyLegendAgainText:
 	.string "Would you like to hear the Ruby\n"
