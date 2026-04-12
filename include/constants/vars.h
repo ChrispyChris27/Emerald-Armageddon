@@ -270,9 +270,9 @@
 #define VAR_STEVEN_MF_STATE                              0x40F8 // Unused Var
 #define VAR_CYNTHIA_STATE                                0x40F9 // Unused Var
 #define VAR_ROGUE_STATE                                  0x40FA // Unused Var
-#define VAR_SKY_BATTLE_STATE                                0x40FB // Unused Var
-#define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
-#define VAR_UNUSED_0x40FD                                0x40FD // Unused Var
+#define VAR_SKY_BATTLE_STATE                             0x40FB // Unused Var
+#define VAR_RUBY_LEGEND_STATE                            0x40FC // Unused Var
+#define VAR_SAPPHIRE_LEGEND_STATE                        0x40FD // Unused Var
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 
