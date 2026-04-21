@@ -1305,10 +1305,10 @@
 #define FLAG_INVERSE_BATTLES                                           0x4E3 // Unused Flag
 #define FLAG_SKY_BATTLES                                           0x4E4 // Unused Flag
 #define FLAG_PRESTATUS_TRAINER                                           0x4E5 // Unused Flag
-#define FLAG_UNUSED_0x4E6                                           0x4E6 // Unused Flag
-#define FLAG_UNUSED_0x4E7                                           0x4E7 // Unused Flag
-#define FLAG_UNUSED_0x4E8                                           0x4E8 // Unused Flag
-#define FLAG_UNUSED_0x4E9                                           0x4E9 // Unused Flag
+#define FLAG_RUBY_LK_OUTSIDE                                           0x4E6 // Unused Flag
+#define FLAG_SAPPHIRE_LK_OUTSIDE                                           0x4E7 // Unused Flag
+#define FLAG_EMERALD_LK_OUTSIDE                                           0x4E8 // Unused Flag
+#define FLAG_LK_TEMP                                           0x4E9 // Unused Flag
 #define FLAG_UNUSED_0x4EA                                           0x4EA // Unused Flag
 #define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
 #define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag

@@ -4,7 +4,7 @@ SapphireVillaHouse_MapScripts::
 SapphireVillaHouseLoreKeeper::
 	lockall
 	applymovement LOCALID_SAPPHIRE_LK, Common_Movement_FacePlayer
-	goto_if_eq VAR_SAPPHIRE_LEGEND_STATE, 2, RetellSapphireLegend
+	goto_if_eq VAR_SAPPHIRE_LEGEND_STATE, 3, RetellSapphireLegend
 	goto_if_eq VAR_SAPPHIRE_LEGEND_STATE, 1, SapphireVillaShouldBattle
 	msgbox SapphireLorekeeperPreBattle, MSGBOX_DEFAULT
 	setvar VAR_SAPPHIRE_LEGEND_STATE, 1
@@ -21,10 +21,11 @@ StartSapphireVillaBattle::
 	setstartingstatus STARTING_STATUS_TRICK_ROOM
 	msgbox SapphireLorekeeperBattleStart, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_LK_SAPPHIRE, SapphireLorekeeperDefeat
-	msgbox SapphireLorekeeperPostBattle, MSGBOX_DEFAULT
+	msgbox SapphireLorekeeperPostBattle, MSGBOX_AUTOCLOSE
 	setflag FLAG_SAPPHIRE_LEGEND
 	setvar VAR_SAPPHIRE_LEGEND_STATE, 2
-	goto TellSapphireLegend
+	clearflag FLAG_SAPPHIRE_LK_OUTSIDE
+	goto LeaveToTellSapphireLegendOutside
 
 TellSapphireLegend::
 	msgbox SapphireLorekeeperLegend, MSGBOX_DEFAULT
@@ -37,6 +38,22 @@ RetellSapphireLegend::
 	releaseall
 	end
 
+LeaveToTellSapphireLegendOutside::
+	specialvar VAR_RESULT, GetPlayerFacingDirection
+	call_if_eq VAR_RESULT, DIR_NORTH, MovePlayerOutofLKWay
+	applymovement LOCALID_SAPPHIRE_LK, LK_Leave_Building
+	waitmovement
+	removeobject LOCALID_SAPPHIRE_LK
+	playse SE_DOOR
+	waitse
+	specialvar VAR_RESULT, GetPlayerFacingDirection
+	call_if_eq VAR_RESULT, DIR_EAST, MovePlayerRightAndDownRuby
+	call_if_eq VAR_RESULT, DIR_WEST, MovePlayerDownRuby
+	applymovement LOCALID_PLAYER, Player_Leave_Building
+	waitmovement
+	warp MAP_SAPPHIRE_VILLA, 11, 21
+	waitstate
+	end
 
 SapphireLorekeeperPreBattle:
 	.string "It has been a long time since I\n"
@@ -78,7 +95,8 @@ SapphireLorekeeperReturnLater:
 SapphireLorekeeperPostBattle:
 	.string "Very well, I shall entrust to you the\n"
 	.string "knowledge of the Sapphire Legend just\l"
-	.string "as my ancestors entrusted it to me...$"
+	.string "as my ancestors entrusted it to me.\p"
+	.string "Please follow me outside.$"
 
 SapphireLorekeeperLegend:
 	.string "Thousands of years ago Hoenn looked\n"
@@ -88,47 +106,45 @@ SapphireLorekeeperLegend:
 	.string "deserted wasteland.\p"
 	.string "Sandstorms and intense heat raged\n"
 	.string "from what is now Fallarbor Town all\l"
-	.string "the way to the edge of the sea."
+	.string "the way to the edge of the sea.\p"
 	.string "At the time, all of civilization\n"
 	.string "inhabited a castle within Meteor Falls.\p"
-	.string "As their population grew, the castle\n"
-	.string "became overcrowded to the point that\l"
-	.string "there was no choice but to seek another\l"
-	.string "place to live.\p"
-	.string "With the power to summon rain, Kyogre was\n"
-	.string "able to cool the heat of the desert and\l"
-	.string "bring rain to the region, allowing plants\l"
-	.string "and vegetation to grow and the humans\l"
-	.string "to begin traveling east towards the sea.\p"
+	.string "One day, a pokémon from another\n"
+	.string "dimension entered into our world and\l"
+	.string "sought to plunge Hoenn into chaos.\p"
+	.string "With the help of their pokémon, the\n"
+	.string "humans were able to trap this pokémon\l"
+	.string "within their castle and return it to\l"
+	.string "its own dimension; however their home\l"
+	.string "was largely destroyed in the process.\p"
+	.string "With the power to summon rain, Kyogre\n"
+	.string "was able to cool the heat of the\l"
+	.string "desert and bring rain to the region,\l"
+	.string "allowing plants and vegetation to grow\l"
+	.string "and humans to move east towards the sea.\p"
 	.string "Kyogre had the help of two other\n"
-	.string "pokémon, Wailord and Relicanth, to spread\l"
-	.string "water across mainland Hoenn.\p"
-	.string "Wailord, a large pokémon in its own right,\n"
-	.string "created spouts of water near the ocean\l"
-	.string "that Kyogre funneled inland.\p"
+	.string "pokémon, Wailord and Relicanth, to\l"
+	.string "spread water across mainland Hoenn.\p"
+	.string "Wailord, a large pokémon in its own\n"
+	.string "right, created spouts of water near the\l"
+	.string "ocean that Kyogre funneled inland.\p"
 	.string "Relicanth, regarded as the ultimate\n"
 	.string "lifeform, was able to travel upstream\l"
-	.string "through even the muddiest rivers as Kyogre\l"
-	.string "created them and route them where they\l"
-	.string "would best serve people.\p"
-	.string "This is how the rivers you see in modern\n"
-	.string "Hoenn first came to be.\p"
+	.string "through even the muddiest rivers as\l"
+	.string "Kyogre created them and route them\l"
+	.string "where they would best serve people.\p"
+	.string "This is how the rivers you see in\n"
+	.string "modern Hoenn first came to be.\p"
 	.string "Unfortunately, Groudon felt threatened\n"
 	.string "by Kyogre as the rivers and storms grew\l"
 	.string "closer to the cavern it called home.\p"
 	.string "Kyogre proceeded to get into a conflict\n"
-	.string "with Groudon and left the job of spreading\l"
-	.string "water to humans to Relicanth and Wailord.\p"
-	.string "Eventually, the conflict between Kyogre\n"
-	.string "and Groudon subsided, at which time\l"
-	.string "the Wailord and Relicanth also returned\l"
-	.string "to the open ocean.\p"
-	.string "This is the Sapphire Legend.\p"
-	.string "Every river in Hoenn was made by Kyogre\n"
-	.string "with the help of Wailord and Relicanth\l"
-	.string "to allow vegetation to grow and human\l"
-	.string "civilization to survive outside the\l"
-	.string "castle within Meteor Falls.$"
+	.string "with Groudon and left the job of\l"
+	.string "spreading water to Relicanth and Wailord.\p"
+	.string "Eventually, the conflict between\n"
+	.string "Kyogre and Groudon subsided, at which\l"
+	.string "time the Wailord and Relicanth also\l"
+	.string "returned to the open ocean.\p"
 
 TellSapphireLegendAgainText:
 	.string "Would you like to hear the Sapphire\n"

@@ -315,6 +315,9 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_TOTEM_ABSOL_MEGA
 	setflag FLAG_TOTEM_SABLEYE
 	setflag FLAG_PRESTATUS_TRAINER
+	setflag FLAG_RUBY_LK_OUTSIDE
+	setflag FLAG_EMERALD_LK_OUTSIDE
+	setflag FLAG_SAPPHIRE_LK_OUTSIDE
 	call EventScript_ResetAllBerries
 	end
 

@@ -273,7 +273,7 @@
 #define VAR_SKY_BATTLE_STATE                             0x40FB // Unused Var
 #define VAR_RUBY_LEGEND_STATE                            0x40FC // Unused Var
 #define VAR_SAPPHIRE_LEGEND_STATE                        0x40FD // Unused Var
-#define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
+#define VAR_EMERALD_LEGEND_STATE                         0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 
 #define VARS_END                                         0x40FF

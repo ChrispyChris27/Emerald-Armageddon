@@ -10580,7 +10580,7 @@
 #line 4169
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 4168
-            .ability = ABILITY_PRESSURE,
+            .ability = ABILITY_ICE_BODY,
 #line 4167
             .lvl = 87,
             .ball = POKEBALL_COUNT,

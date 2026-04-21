@@ -4,7 +4,7 @@ RubyVillaHouse_MapScripts::
 RubyVillaHouseLoreKeeper::
 	lockall
 	applymovement LOCALID_RUBY_LK, Common_Movement_FacePlayer
-	goto_if_eq VAR_RUBY_LEGEND_STATE, 2, RetellRubyLegend
+	goto_if_eq VAR_RUBY_LEGEND_STATE, 3, RetellRubyLegend
 	goto_if_eq VAR_RUBY_LEGEND_STATE, 1, RubyVillaShouldBattle
 	msgbox RubyLorekeeperPreBattle, MSGBOX_DEFAULT
 	setvar VAR_RUBY_LEGEND_STATE, 1
@@ -22,10 +22,11 @@ StartRubyVillaBattle::
 	msgbox RubyLorekeeperBattleStart, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_LK_RUBY, RubyLorekeeperDefeat
 	clearflag FLAG_INVERSE_BATTLES
-	msgbox RubyLorekeeperPostBattle, MSGBOX_DEFAULT
+	msgbox RubyLorekeeperPostBattle, MSGBOX_AUTOCLOSE
 	setflag FLAG_RUBY_LEGEND
 	setvar VAR_RUBY_LEGEND_STATE, 2
-	goto TellRubyLegend
+	clearflag FLAG_RUBY_LK_OUTSIDE
+	goto LeaveToTellRubyLegendOutside
 
 TellRubyLegend::
 	msgbox RubyLorekeeperLegend, MSGBOX_DEFAULT
@@ -38,6 +39,37 @@ RetellRubyLegend::
 	releaseall
 	end
 
+LeaveToTellRubyLegendOutside::
+	specialvar VAR_RESULT, GetPlayerFacingDirection
+	call_if_eq VAR_RESULT, DIR_NORTH, MovePlayerOutofLKWay
+	applymovement LOCALID_RUBY_LK, LK_Leave_Building
+	waitmovement
+	removeobject LOCALID_RUBY_LK
+	playse SE_DOOR
+	waitse
+	specialvar VAR_RESULT, GetPlayerFacingDirection
+	call_if_eq VAR_RESULT, DIR_EAST, MovePlayerRightAndDownRuby
+	call_if_eq VAR_RESULT, DIR_WEST, MovePlayerDownRuby
+	applymovement LOCALID_PLAYER, Player_Leave_Building
+	waitmovement
+	warp MAP_RUBY_VILLA, 11, 21
+	waitstate
+	end
+
+MovePlayerOutofLKWay::
+	applymovement LOCALID_PLAYER, MovePlayerRight
+	waitmovement
+	return
+
+MovePlayerRightAndDownRuby::
+	applymovement LOCALID_PLAYER, MovePlayerRightAndDown
+	waitmovement
+	return
+
+MovePlayerDownRuby::
+	applymovement LOCALID_PLAYER, MovePlayerDown
+	waitmovement
+	return
 
 RubyLorekeeperPreBattle:
 	.string "It has been a long time since I\n"
@@ -82,18 +114,17 @@ RubyLorekeeperReturnLater:
 RubyLorekeeperPostBattle:
 	.string "Very well, I shall entrust to you the\n"
 	.string "knowledge of the Ruby Legend just as\l"
-	.string "my ancestors entrusted it to me...$"
+	.string "my ancestors entrusted it to me.\p"
+	.string "Please follow me outside.$"
 
 RubyLorekeeperLegend:
-	.string "Thousands of years ago Hoenn looked\n"
-	.string "much different than it did now.\p"
-	.string "All of eastern Hoenn was ocean as\n"
-	.string "far as the eye could see.\p"
-	.string "Cities like Mossdeep and Sootopolis\n"
-	.string "didn't even exist.\p"
-	.string "All human civilization lived in what\n"
-	.string "is now Meteor Falls and the nearby\l"
-	.string "towns and villages.\p"
+	.string "Thousands of years ago, all of\n"
+	.string "eastern Hoenn was ocean as far\l"
+	.string "as the eye could see.\p"
+	.string "Island cities like Mossdeep and\n"
+	.string "Sootopolis didn't yet exist.\p"
+	.string "All human civilization lived in a\n"
+	.string "castle in what is now Meteor Falls.\p"
 	.string "The desert that nowadays exists only\n"
 	.string "on Route 111 spread from what is now\l"
 	.string "Fallarbor Town all the way to the\l"
@@ -103,9 +134,16 @@ RubyLorekeeperLegend:
 	.string "Groudon, while able to manipulate\n"
 	.string "the land, could do nothing about the\l"
 	.string "intense heat of the desert.\p"
-	.string "As civilization grew, Meteor Falls\n"
-	.string "was no longer large enough for all\l"
-	.string "humans to live peacefully.\p"
+	.string "One day, a pokémon from another\n"
+	.string "dimension entered into our world and\l"
+	.string "sought to destroy the Hoenn region,\l"
+	.string "plunging it into chaos.\p"
+	.string "Those living in Meteor Falls were able\n"
+	.string "to secure this pokémon deep within\l"
+	.string "the confines of their castle, however\l"
+	.string "their old home became uninhabitable\l"
+	.string "as a result of trapping the pokémon\l"
+	.string "from another dimension inside.\p"
 	.string "In response, Groudon created land\n"
 	.string "in the ocean to the south as travel\l"
 	.string "to the east was impossible.\p"
@@ -130,13 +168,37 @@ RubyLorekeeperLegend:
 	.string "Regigigas, exhausted from pulling\l"
 	.string "so much land across the oceans, went\l"
 	.string "into a deep slumber and hasn't been\l"
-	.string "seen since.\p"
-	.string "This is the Ruby Legend.\p" 
-	.string "every island in all of Hoenn was made\n"
-	.string "by Groudon and moved by Regigigas to\l"
-	.string "allow for humans to expand their\l"
-	.string "civilization beyond Meteor Falls.$"
+	.string "seen since.$"
 
 TellRubyLegendAgainText:
 	.string "Would you like to hear the Ruby\n"
 	.string "Legend once again?$"
+
+MovePlayerRight:
+	walk_right
+	face_down
+	step_end
+
+MovePlayerRightAndDown:
+	walk_right
+	walk_down
+	step_end
+
+MovePlayerDown:
+	walk_down
+	step_end
+
+LK_Leave_Building:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
+
+Player_Leave_Building:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	step_end
