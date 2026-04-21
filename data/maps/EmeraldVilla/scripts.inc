@@ -7,67 +7,78 @@ EmeraldVilla_OnFrame::
 	.2byte 0
 
 TellEmeraldLegendOutside:
-lockall
-applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
-waitmovement
-msgbox EmeraldLegendPart1, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement1
-applymovement LOCALID_PLAYER, SLegendMovement1
-waitmovement
-msgbox EmeraldLegendPart2, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement2
-applymovement LOCALID_PLAYER, SLegendMovement2
-waitmovement
-msgbox EmeraldLegendPart3, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement3
-applymovement LOCALID_PLAYER, SLegendMovement3
-waitmovement
-msgbox EmeraldLegendPart4, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement4
-applymovement LOCALID_PLAYER, SLegendMovement4
-waitmovement
-msgbox EmeraldLegendPart5, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement5
-applymovement LOCALID_PLAYER, SLegendMovement5
-waitmovement
-msgbox EmeraldLegendPart6, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement6
-applymovement LOCALID_PLAYER, SLegendMovement6
-waitmovement
-msgbox EmeraldLegendPart7, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement7
-applymovement LOCALID_PLAYER, SLegendMovement7
-waitmovement
-msgbox EmeraldLegendPart8, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement8
-applymovement LOCALID_PLAYER, SLegendMovement8
-waitmovement
-msgbox EmeraldLegendPart9, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement9
-applymovement LOCALID_PLAYER, SLegendMovement9
-waitmovement
-msgbox EmeraldLegendPart10, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement10
-applymovement LOCALID_PLAYER, SLegendMovement10
-waitmovement
-msgbox EmeraldLegendPart11, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement11
-applymovement LOCALID_PLAYER, SLegendMovement11
-waitmovement
-msgbox EmeraldLegendPart12, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement12
-applymovement LOCALID_PLAYER, SLegendMovement12
-waitmovement
-msgbox EmeraldLegendPart13, MSGBOX_AUTOCLOSE
-applymovement LOCALID_EMERALD_LK_OUTSIDE, SLKMovement13
-waitmovement
-removeobject LOCALID_EMERALD_LK_OUTSIDE
-playse SE_DOOR
-waitse
-setvar VAR_EMERALD_LEGEND_STATE, 3
-clearflag FLAG_LK_TEMP
-releaseall
-end
+	lockall
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement
+	msgbox EmeraldLegendPart1, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement1
+	applymovement LOCALID_PLAYER, ELegendMovement1
+	waitmovement
+	msgbox EmeraldLegendPart2, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement2
+	applymovement LOCALID_PLAYER, ELegendMovement2
+	waitmovement
+	msgbox EmeraldLegendPart3, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement3
+	applymovement LOCALID_PLAYER, ELegendMovement3
+	waitmovement
+	msgbox EmeraldLegendPart4, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement4
+	applymovement LOCALID_PLAYER, ELegendMovement4
+	waitmovement
+	msgbox EmeraldLegendPart5, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement5
+	applymovement LOCALID_PLAYER, ELegendMovement5
+	waitmovement
+	msgbox EmeraldLegendPart6, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement6
+	applymovement LOCALID_PLAYER, ELegendMovement6
+	waitmovement
+	msgbox EmeraldLegendPart7, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement7
+	applymovement LOCALID_PLAYER, ELegendMovement7
+	waitmovement
+	msgbox EmeraldLegendPart8, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement8
+	applymovement LOCALID_PLAYER, ELegendMovement8
+	waitmovement
+	msgbox EmeraldLegendPart9, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement9
+	applymovement LOCALID_PLAYER, ELegendMovement9
+	waitmovement
+	msgbox EmeraldLegendPart10, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement10
+	applymovement LOCALID_PLAYER, ELegendMovement10
+	waitmovement
+	msgbox EmeraldLegendPart11, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement11
+	applymovement LOCALID_PLAYER, ELegendMovement11
+	waitmovement
+	msgbox EmeraldLegendPart12, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement12
+	applymovement LOCALID_PLAYER, ELegendMovement12
+	waitmovement
+	msgbox EmeraldLegendPart13, MSGBOX_AUTOCLOSE
+	closemessage
+	delay 30
+	setvar VAR_0x8004, 3  @ vertical pan
+	setvar VAR_0x8005, 3  @ horizontal pan
+	setvar VAR_0x8006, 24  @ num shakes
+	setvar VAR_0x8007, 3  @ shake delay
+	special ShakeCamera
+	waitstate
+	delay 40
+	msgbox EmeraldLKReturnText, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_EMERALD_LK_OUTSIDE, ELKMovement13
+	waitmovement
+	removeobject LOCALID_EMERALD_LK_OUTSIDE
+	playse SE_DOOR
+	waitse
+	setvar VAR_EMERALD_LEGEND_STATE, 3
+	clearflag FLAG_LK_TEMP
+	setflag FLAG_EMERALD_LEGEND
+	releaseall
+	end
 
 EmeraldLegendPart1:
 	.string "Thousands of years ago Groudon\n"
@@ -198,3 +209,240 @@ EmeraldLegendPart13:
 	.string "and Groudon and allowing the three\l"
 	.string "of them to shape a Hoenn that would\l"
 	.string "allow civilization to thrive.$"
+
+EmeraldLKReturnText:
+	.string "The conflict between Kyogre and\n"
+	.string "Groudon must have grown incredibly\l"
+	.string "fierce if we can feel the effects.\p"
+	.string "Normally no weather effects or\n"
+	.string "natural disasters can be felt here.\p"
+	.string "I dread to think what it is like in\n"
+	.string "Sootopolis right now!\p"
+	.string "Please return to Sootopolis to make\n"
+	.string "sure everyone is okay!\p"
+	.string "Then, you must find Rayquaza!\p"
+	.string "Only Rayquaza can calm Groudon and\n"
+	.string "Kyogre to put an end to their conflict.\p"
+	.string "I must remain here and protect the Villa!$"
+
+ELKMovement1:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_right
+	step_end
+
+ELKMovement2:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	face_down
+	step_end
+
+ELKMovement3:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	face_down
+	step_end
+
+ELKMovement4:
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	face_down
+	step_end
+
+ELKMovement5:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_left
+	step_end
+
+ELKMovement6:
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_left
+	step_end
+
+ELKMovement7:
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	walk_up
+	face_down
+	step_end
+
+ELKMovement8:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_left
+	step_end
+
+ELKMovement9:
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	walk_down
+	face_up
+	step_end
+
+ELKMovement10:
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	face_right
+	step_end
+
+ELKMovement11:
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	face_right
+	step_end
+
+ELKMovement12:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_right
+	step_end
+
+ELKMovement13:
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	step_end
+
+ELegendMovement1:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+ELegendMovement2:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	face_up
+	step_end
+
+ELegendMovement3:
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	step_end
+
+ELegendMovement4:
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	step_end
+
+ELegendMovement5:
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+ELegendMovement6:
+	walk_right
+	walk_down
+	walk_down
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+ELegendMovement7:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	step_end
+
+ELegendMovement8:
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+ELegendMovement9:
+	walk_right
+	walk_right
+	walk_right
+	walk_down
+	walk_down
+	step_end
+
+ELegendMovement10:
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	step_end
+
+ELegendMovement11:
+	walk_left
+	walk_down
+	walk_down
+	walk_down
+	walk_down
+	face_left
+	step_end
+
+ELegendMovement12:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+

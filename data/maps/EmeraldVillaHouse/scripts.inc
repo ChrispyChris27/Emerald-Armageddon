@@ -4,7 +4,7 @@ EmeraldVillaHouse_MapScripts::
 EmeraldVillaHouseLoreKeeper::
 	lockall
 	applymovement LOCALID_EMERALD_LK, Common_Movement_FacePlayer
-	goto_if_eq VAR_EMERALD_LEGEND_STATE, 2, RetellEmeraldLegend
+	goto_if_eq VAR_EMERALD_LEGEND_STATE, 3, RetellEmeraldLegend
 	goto_if_eq VAR_EMERALD_LEGEND_STATE, 1, EmeraldVillaShouldBattle
 	msgbox EmeraldLorekeeperPreBattle, MSGBOX_DEFAULT
 	setvar VAR_EMERALD_LEGEND_STATE, 1
@@ -21,13 +21,14 @@ StartEmeraldVillaBattle::
 	setstartingstatus STARTING_STATUS_DELTA_STREAM
 	msgbox EmeraldLorekeeperBattleStart, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_LK_EMERALD, EmeraldLorekeeperDefeat
-	msgbox EmeraldLorekeeperPostBattle, MSGBOX_DEFAULT
-	setflag FLAG_EMERALD_LEGEND
+	msgbox EmeraldLorekeeperPostBattle, MSGBOX_AUTOCLOSE
 	setvar VAR_EMERALD_LEGEND_STATE, 2
-	goto TellEmeraldLegend
+	clearflag FLAG_EMERALD_LK_OUTSIDE
+	goto LeaveToTellEmeraldLegendOutside
 
 TellEmeraldLegend::
-	msgbox EmeraldLorekeeperLegend, MSGBOX_DEFAULT
+	msgbox EmeraldLorekeeperLegend1, MSGBOX_AUTOCLOSE
+	msgbox EmeraldLorekeeperLegend2, MSGBOX_AUTOCLOSE
 	releaseall
 	end
 
@@ -35,6 +36,23 @@ RetellEmeraldLegend::
 	msgbox TellEmeraldLegendAgainText, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, TellEmeraldLegend
 	releaseall
+	end
+
+LeaveToTellEmeraldLegendOutside::
+	specialvar VAR_RESULT, GetPlayerFacingDirection
+	call_if_eq VAR_RESULT, DIR_NORTH, MovePlayerOutofLKWay
+	applymovement LOCALID_EMERALD_LK, LK_Leave_Building
+	waitmovement
+	removeobject LOCALID_EMERALD_LK
+	playse SE_DOOR
+	waitse
+	specialvar VAR_RESULT, GetPlayerFacingDirection
+	call_if_eq VAR_RESULT, DIR_EAST, MovePlayerRightAndDownRuby
+	call_if_eq VAR_RESULT, DIR_WEST, MovePlayerDownRuby
+	applymovement LOCALID_PLAYER, Player_Leave_Building
+	waitmovement
+	warp MAP_EMERALD_VILLA, 17, 32
+	waitstate
 	end
 
 EmeraldLorekeeperPreBattle:
@@ -63,7 +81,7 @@ EmeraldLorekeeperPreBattle:
 	.string "unsuspecting pokemon off the ground.\p"
 	.string "This very villa was constructed on\n"
 	.string "one such spot where the gusts of\l"
-	.string "wind are exceptionally strong."
+	.string "wind are exceptionally strong.$"
 
 EmeraldLorekeeperPrepForBattle:
 	.string "If you wish to hear the Emerald\n"
@@ -88,7 +106,7 @@ EmeraldLorekeeperBattleStart:
 	.string "Take to the skies and prove to me you\n"
 	.string "are worthy of the Emerald Legend!$"
 
-EmeraldLorekeeperLegend:
+EmeraldLorekeeperLegend1:
 	.string "Thousands of years ago Groudon\n"
 	.string "and Kyogre lived in harmony, with\l"
 	.string "Kyogre having dominion over the sea\l"
@@ -106,7 +124,7 @@ EmeraldLorekeeperLegend:
 	.string "those crops to grow.\p"
 	.string "Rayquaza patroled the skies, making\n"
 	.string "sure that no natural disaster or\l"
-	.string "aerial threat would harm people.\n"
+	.string "aerial threat would harm people.\p"
 	.string "Kyogre. Groudon. Humans. Rayquaza.\p"
 	.string "For awhile, all four lived together\n"
 	.string "in harmony.\p"
@@ -136,7 +154,9 @@ EmeraldLorekeeperLegend:
 	.string "the actions of each other as a threat.\p"
 	.string "The two goliaths primarily fought\n"
 	.string "each other, while Regigigas, Wailord,\l"
-	.string "and Relicanth helped the humans.\p"
+	.string "and Relicanth helped the humans.$"
+
+EmeraldLorekeeperLegend2:
 	.string "Despite Groudon and Kyogre both\n"
 	.string "having the same end goal, they were\l"
 	.string "lost in the chaos caused by the\l"
