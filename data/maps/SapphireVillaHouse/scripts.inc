@@ -144,7 +144,7 @@ SapphireLorekeeperLegend:
 	.string "Eventually, the conflict between\n"
 	.string "Kyogre and Groudon subsided, at which\l"
 	.string "time the Wailord and Relicanth also\l"
-	.string "returned to the open ocean.\p"
+	.string "returned to the open ocean.$"
 
 TellSapphireLegendAgainText:
 	.string "Would you like to hear the Sapphire\n"
