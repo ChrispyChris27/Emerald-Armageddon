@@ -2655,11 +2655,9 @@
 	specialvar VAR_0x8009, GetInGameTradeSpeciesInfo
 	msgbox \wantTradeMsg, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, \declineTradeJump
-	chooseboxmon SELECT_PC_MON_TRADE
+	chooseboxmon SELECT_PC_MON_NORMAL
 	waitstate
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, \declineTradeJump
-	specialvar VAR_0x800B, GetTradeSpecies
-	goto_if_ne VAR_0x800B, VAR_0x8009, \wrongMonJump
 	special CreateInGameTradePokemon
 	special DoInGameTradeScene
 	waitstate
