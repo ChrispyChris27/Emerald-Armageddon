@@ -1014,6 +1014,7 @@ extern const u8 gBattleAnimGeneral_GhostGetOut[];
 extern const u8 gBattleAnimGeneral_SilphScoped[];
 extern const u8 gBattleAnimGeneral_SafariRockThrow[];
 extern const u8 gBattleAnimGeneral_SafariReaction[];
+extern const u8 gBattleAnimaGeneral_GustOfWind[];
 
 // special animations
 extern const u8 gBattleAnimSpecial_LevelUp[];

@@ -8267,6 +8267,13 @@ BattleScript_ErraticWeatherStarts::
 	playanimation_var BS_BATTLER_0, sB_ANIM_ARG1
 	call BattleScript_ActivateWeatherAbilities
 	end3
+
+BattleScript_WindGusts::
+	printstring STRINGID_WIND_GUSTS_BLOWN_AWAY
+	waitmessage B_WAIT_TIME_SHORT
+	swapattackerwithtarget
+	forcerandomswitch BattleScript_ButItFailed
+	return
 	
 BattleScript_TooScaredToMove::
 	printstring STRINGID_MONTOOSCAREDTOMOVE

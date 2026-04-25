@@ -12,6 +12,7 @@
 #include "constants/abilities.h"
 #include "constants/items.h"
 #include "constants/moves.h"
+#include "event_data.h"
 
 static u32 GetBattlerSideForMessage(enum BattleSide side)
 {
@@ -1430,6 +1431,23 @@ static bool32 HandleEndTurnTrainerPartnerSlides(enum BattlerId battler)
     return slide;
 }
 
+static bool32 HandleEndTurnWindGusts(enum BattlerId battler)
+{
+    bool32 effect = FALSE;
+    gBattleStruct->eventState.endTurnBattler++;
+
+    if ((FlagGet(FLAG_EMERALD_BATTLE)
+        && IsBattlerAlive(battler)
+        && IsBattlerGrounded(battler, GetBattlerAbility(battler), GetBattlerHoldEffect(battler))))
+    {
+        gCurrentMove = MOVE_WHIRLWIND;
+        BattleScriptExecute(BattleScript_WindGusts);
+        effect = TRUE;
+    }
+
+    return effect;
+}
+
 /*
  * Various end turn effects that happen after all battlers moved.
  * Each Case will apply the effects for each battler. Moving to the next case when all battlers are done.
@@ -1492,6 +1510,7 @@ static bool32 (*const sEndTurnEffectHandlers[])(enum BattlerId battler) =
     [ENDTURN_FORM_CHANGE] = HandleEndTurnFormChange,
     [ENDTURN_EJECT_PACK] = HandleEndTurnEjectPack,
     [ENDTURN_DYNAMAX] = HandleEndTurnDynamax,
+    [ENDTURN_WIND_GUSTS] = HandleEndTurnWindGusts,
     [ENDTURN_TRAINER_A_SLIDES] = HandleEndTurnTrainerASlides,
     [ENDTURN_TRAINER_B_SLIDES] = HandleEndTurnTrainerBSlides,
     [ENDTURN_TRAINER_PARTNER_SLIDES] = HandleEndTurnTrainerPartnerSlides,

@@ -18,12 +18,13 @@ EmeraldVillaShouldBattle::
 	end
 
 StartEmeraldVillaBattle::
-	setstartingstatus STARTING_STATUS_DELTA_STREAM
+	setflag FLAG_EMERALD_BATTLE
 	msgbox EmeraldLorekeeperBattleStart, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_LK_EMERALD, EmeraldLorekeeperDefeat
 	msgbox EmeraldLorekeeperPostBattle, MSGBOX_AUTOCLOSE
 	setvar VAR_EMERALD_LEGEND_STATE, 2
 	clearflag FLAG_EMERALD_LK_OUTSIDE
+	clearflag FLAG_EMERALD_BATTLE
 	goto LeaveToTellEmeraldLegendOutside
 
 TellEmeraldLegend::

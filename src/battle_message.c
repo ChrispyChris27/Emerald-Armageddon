@@ -873,6 +873,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_TERASTALIZATION]                      = COMPOUND_STRING("Energy surges are causing the rogue {B_OPPONENT_MON1_NAME} to change type!"),
     [STRINGID_ERRATIC_WEATHER_START]                = COMPOUND_STRING("The erratic weather could change at any moment!"),
     [STRINGID_ERRATIC_WEATHER_CHANGE]               = COMPOUND_STRING("The erratic weather has changed!"),
+    [STRINGID_WIND_GUSTS_BLOWN_AWAY]                = COMPOUND_STRING("A powerful gust of wind carries {B_ATK_NAME_WITH_PREFIX} away!"),
     [STRINGID_MONTOOSCAREDTOMOVE]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX} is too scared to move!"),
     [STRINGID_GHOSTGETOUTGETOUT]                    = COMPOUND_STRING("GHOST: Get out…… Get out……"),
     [STRINGID_SILPHSCOPEUNVEILED]                   = COMPOUND_STRING("SILPH SCOPE unveiled the GHOST's\nidentity!"),
