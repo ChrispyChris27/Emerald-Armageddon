@@ -10528,7 +10528,7 @@
             .species = SPECIES_AERODACTYL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4221
-            .heldItem = ITEM_ROCK_GEM,
+            .heldItem = ITEM_FOCUS_SASH,
 #line 4224
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 4223
@@ -10543,7 +10543,7 @@
 #line 4226
                 MOVE_HEAD_SMASH,
                 MOVE_BRAVE_BIRD,
-                MOVE_CRUNCH,
+                MOVE_EARTHQUAKE,
                 MOVE_STEALTH_ROCK,
             },
             },
@@ -10567,7 +10567,7 @@
 #line 4236
                 MOVE_DRAGON_CLAW,
                 MOVE_ROCK_SLIDE,
-                MOVE_FIRE_PUNCH,
+                MOVE_EARTHQUAKE,
                 MOVE_DRAGON_DANCE,
             },
             },
