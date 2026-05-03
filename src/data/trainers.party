@@ -4218,14 +4218,14 @@ Music: Suspicious
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Aerodactyl @ Rock Gem
+Aerodactyl @ Focus Sash
 Level: 87
 Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Head Smash
 - Brave Bird
-- Crunch
+- Earthquake
 - Stealth Rock
 
 Flygon @ Yache Berry
@@ -4235,7 +4235,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Dragon Claw
 - Rock Slide
-- Fire Punch
+- Earthquake
 - Dragon Dance
 
 Articuno @ Leftovers
