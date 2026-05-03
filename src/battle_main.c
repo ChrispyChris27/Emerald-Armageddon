@@ -6048,7 +6048,6 @@ enum Type GetDynamicMoveType(struct Pokemon *mon, enum Move move, enum BattlerId
                     return TYPE_ELECTRIC;
                 break;
             case WEATHER_FOG_HORIZONTAL:
-            case WEATHER_FOG_DIAGONAL:
                 if (B_OVERWORLD_FOG >= GEN_8)
                     return TYPE_FAIRY;
                 break;

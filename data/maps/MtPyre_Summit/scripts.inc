@@ -69,7 +69,7 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	setflag FLAG_HIDE_MT_PYRE_SUMMIT_TEAM_AQUA
 	setflag FLAG_ARCHIE_PYRE
 	fadedefaultbgm
-	setweather WEATHER_FOG_HORIZONTAL
+	setweather WEATHER_FOG_DIAGONAL
 	doweather
 	fadescreenswapbuffers FADE_FROM_BLACK
 	delay 20
