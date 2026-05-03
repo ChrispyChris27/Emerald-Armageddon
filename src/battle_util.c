@@ -2992,7 +2992,7 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
             effect = TRUE;
         }
         else if (B_OVERWORLD_FOG >= GEN_8
-              && (GetCurrentWeather() == WEATHER_FOG_HORIZONTAL || GetCurrentWeather() == WEATHER_FOG_DIAGONAL)
+              && (GetCurrentWeather() == WEATHER_FOG_HORIZONTAL)
               && !(gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN))
         {
             gFieldStatuses = STATUS_FIELD_MISTY_TERRAIN;
@@ -3050,7 +3050,6 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
                 }
                 break;
             case WEATHER_FOG_DIAGONAL:
-            case WEATHER_FOG_HORIZONTAL:
                 if (!(gBattleWeather & B_WEATHER_FOG))
                 {
                     gBattleWeather = B_WEATHER_FOG;
