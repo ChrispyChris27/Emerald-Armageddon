@@ -13899,6 +13899,7 @@ void BS_TryDefiantRattled(void)
     {
     case ABILITY_DEFIANT:
     case ABILITY_COMPETITIVE:
+    case ABILITY_AS_ONE_MEOWSTIC:
         if (ShouldDefiantCompetitiveActivate(battler, ability))
         {
             if (ability == ABILITY_DEFIANT)

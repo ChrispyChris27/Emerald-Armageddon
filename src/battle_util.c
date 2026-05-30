@@ -1180,6 +1180,7 @@ bool32 ShouldDefiantCompetitiveActivate(enum BattlerId battler, enum Ability abi
             return FALSE;
         break;
     case ABILITY_COMPETITIVE:
+    case ABILITY_AS_ONE_MEOWSTIC:
         if (CompareStat(battler, STAT_SPATK, MAX_STAT_STAGE, CMP_EQUAL, ability))
             return FALSE;
         break;

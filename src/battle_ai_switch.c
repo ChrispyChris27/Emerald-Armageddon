@@ -2752,7 +2752,8 @@ static void SetBattlerStatStagesForSwitchin(enum BattlerId battler, enum Battler
                 gBattleMons[opposingBattler].statStages[STAT_ATK] -= 1;
                 if (gAiLogicData->abilities[opposingBattler] == ABILITY_DEFIANT)
                     gBattleMons[opposingBattler].statStages[STAT_ATK] += 2;
-                if (gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE)
+                if (gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE 
+                || gAiLogicData->abilities[opposingBattler] == ABILITY_AS_ONE_MEOWSTIC)
                     gBattleMons[opposingBattler].statStages[STAT_SPATK] += 2;
             }
         }
@@ -2770,7 +2771,8 @@ static void SetBattlerStatStagesForSwitchin(enum BattlerId battler, enum Battler
                 gBattleMons[opposingBattler].statStages[STAT_EVASION] -= 1;
                 if (gAiLogicData->abilities[opposingBattler] == ABILITY_DEFIANT)
                     gBattleMons[opposingBattler].statStages[STAT_ATK] += 2;
-                if (gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE)
+                if (gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE
+                || gAiLogicData->abilities[opposingBattler] == ABILITY_AS_ONE_MEOWSTIC)
                     gBattleMons[opposingBattler].statStages[STAT_SPATK] += 2;
             }
         }
@@ -2784,6 +2786,7 @@ static void SetBattlerStatStagesForSwitchin(enum BattlerId battler, enum Battler
             gBattleMons[battler].statStages[STAT_ATK] += 2;
         break;
     case ABILITY_COMPETITIVE:
+    case ABILITY_AS_ONE_MEOWSTIC:
         if (isStickyWebsAffected)
             gBattleMons[battler].statStages[STAT_SPATK] += 2;
         break;
@@ -2833,7 +2836,8 @@ static void SetBattlerStatStagesForSwitchin(enum BattlerId battler, enum Battler
     case HOLD_EFFECT_MIRROR_HERB:
         if (opponentStatDrop && gAiLogicData->abilities[opposingBattler] == ABILITY_DEFIANT)
             gBattleMons[battler].statStages[STAT_ATK] += 2;
-        if (opponentStatDrop && gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE)
+        if (opponentStatDrop && gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE
+        || opponentStatDrop && gAiLogicData->abilities[opposingBattler] == ABILITY_AS_ONE_MEOWSTIC)
             gBattleMons[battler].statStages[STAT_SPATK] += 2;
         break;
     default:
