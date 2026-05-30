@@ -54,6 +54,7 @@
 #include "constants/pokedex.h"
 #include "constants/pokemon.h"
 #include "constants/pokemon_size_record.h"
+#include "constants/random_mon_generation.h"
 #include "constants/rtc.h"
 #include "constants/roulette.h"
 #include "constants/script_menu.h"
@@ -1347,10 +1348,10 @@ Common_EventScript_PlayerHandedOverTheItem::
 	.include "data/scripts/elite_four.inc"
 	.include "data/scripts/movement.inc"
 	.include "data/scripts/check_furniture.inc"
+	.include "data/scripts/mart_clerk.inc"
 	.include "data/text/record_mix.inc"
 	.include "data/text/pc.inc"
 	.include "data/text/pkmn_center_nurse.inc"
-	.include "data/text/mart_clerk.inc"
 	.include "data/text/obtain_item.inc"
 	.include "data/text/move_relearner.inc"
 
@@ -1828,3 +1829,4 @@ Common_EventScript_SetSnow:
 	.include "data/maps/RubyVillaHouse/scripts.inc"
 
 	.include "data/maps/EmeraldVillaHouse/scripts.inc"
+	.include "data/scripts/wild_encounter.inc"
