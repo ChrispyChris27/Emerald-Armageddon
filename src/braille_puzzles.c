@@ -348,7 +348,7 @@ bool8 ShouldDoBrailleRegicePuzzle(void)
 
 bool8 Regieleki_Check(void)
 {
-    if (GetMonData(&gPlayerParty[0], MON_DATA_MOVE1) == MOVE_THUNDER || MOVE_THUNDERBOLT)
+    if (GetMonData(&gParties[B_TRAINER_PLAYER][0], MON_DATA_MOVE1) == MOVE_THUNDER || MOVE_THUNDERBOLT)
         return TRUE;
     else
         return FALSE;
@@ -373,7 +373,7 @@ void DoBrailleRegielekiEffect(void)
 bool8 Regidrago_Check(void)
 {
     CalculatePlayerPartyCount();
-        if (GetMonData(&gPlayerParty[gPlayerPartyCount - 1], MON_DATA_MOVE4, 0) == MOVE_DRAGON_RAGE)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][gPartiesCount[B_TRAINER_PLAYER] - 1], MON_DATA_MOVE4, 0) == MOVE_DRAGON_RAGE)
             return TRUE;
         else
             return FALSE;

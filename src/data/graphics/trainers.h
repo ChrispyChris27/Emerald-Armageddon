@@ -1265,4 +1265,57 @@ const struct TrainerPicInfo gTrainerPicInfo[TRAINER_PIC_COUNT] =
     {
         .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_PainterFrlg, gTrainerPalette_PainterFrlg),
     },
+    [TRAINER_PIC_EMERALD_LK] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_EmeraldLK, gTrainerPalette_EmeraldLK),
+    },
+    [TRAINER_PIC_RUBY_LK] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RubyLK, gTrainerPalette_RubyLK),
+    },
+    [TRAINER_PIC_SAPPHIRE_LK] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_SapphireLK, gTrainerPalette_SapphireLK),
+    },
+    [TRAINER_PIC_TATE] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Tate, gTrainerPalette_Tate),
+    },
+    [TRAINER_PIC_LIZA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Liza, gTrainerPalette_Liza),
+    },
+    [TRAINER_PIC_GIOVANNI] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RocketLeaderGiovanni, gTrainerPalette_RocketLeaderGiovanni),
+    },
+    [TRAINER_PIC_ARCHER] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RocketAdminM, gTrainerPalette_RocketAdminM),
+    },
+    [TRAINER_PIC_ARIANA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RocketAdminF, gTrainerPalette_RocketAdminF),
+    },
+    [TRAINER_PIC_ROCKET_GRUNT_F] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RocketGruntF, gTrainerPalette_RocketGruntF),
+    },
+    [TRAINER_PIC_ROCKET_GRUNT_M] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_RocketGruntM, gTrainerPalette_RocketGruntM),
+    },
+    [TRAINER_PIC_CYNTHIA] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Cynthia, gTrainerPalette_Cynthia),
+    },
+    [TRAINER_PIC_CYRUS] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Cyrus, gTrainerPalette_Cyrus),
+    },
+    [TRAINER_PIC_COURTNEY] =
+    {
+        .frontPic = TRAINER_FRONT_PIC(gTrainerFrontPic_Courtney, gTrainerPalette_Courtney),
+    },
+
 };

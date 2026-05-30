@@ -1196,9 +1196,9 @@ void Script_SetStatus1(struct ScriptContext *ctx)
 void HealUnfainted(void)
 {
     u32 i;
-    for (i = 0; i < gPlayerPartyCount; i++)
-        if (GetMonData(&gPlayerParty[i], MON_DATA_HP) != 0)
-        HealPokemon(&gPlayerParty[i]);
+    for (i = 0; i < gPartiesCount[B_TRAINER_PLAYER]; i++)
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_HP) != 0)
+        HealPokemon(&gParties[B_TRAINER_PLAYER][i]);
     if (OW_PC_HEAL >= GEN_8)
         HealPlayerBoxes();
 

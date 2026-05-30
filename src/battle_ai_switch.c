@@ -2836,8 +2836,8 @@ static void SetBattlerStatStagesForSwitchin(enum BattlerId battler, enum Battler
     case HOLD_EFFECT_MIRROR_HERB:
         if (opponentStatDrop && gAiLogicData->abilities[opposingBattler] == ABILITY_DEFIANT)
             gBattleMons[battler].statStages[STAT_ATK] += 2;
-        if (opponentStatDrop && gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE
-        || opponentStatDrop && gAiLogicData->abilities[opposingBattler] == ABILITY_AS_ONE_MEOWSTIC)
+        if ((opponentStatDrop && gAiLogicData->abilities[opposingBattler] == ABILITY_COMPETITIVE)
+        || (opponentStatDrop && gAiLogicData->abilities[opposingBattler] == ABILITY_AS_ONE_MEOWSTIC))
             gBattleMons[battler].statStages[STAT_SPATK] += 2;
         break;
     default:
