@@ -1584,7 +1584,6 @@ static bool32 (*const sEndTurnEffectHandlers[])(enum BattlerId battler) =
     [ENDTURN_SEND_OUT_REPLACEMENTS_4] = HandleEndTurnSendOutReplacements,
     [ENDTURN_FORM_CHANGE] = HandleEndTurnFormChange,
     [ENDTURN_EJECT_PACK] = HandleEndTurnEjectPack,
-    [ENDTURN_DYNAMAX] = HandleEndTurnDynamax,
     [ENDTURN_SEND_OUT_REPLACEMENTS_5] = HandleEndTurnSendOutReplacements,
     [ENDTURN_WIND_GUSTS] = HandleEndTurnWindGusts,
     [ENDTURN_TRAINER_A_SLIDES] = HandleEndTurnTrainerASlides,

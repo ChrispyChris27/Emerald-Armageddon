@@ -12,13 +12,13 @@
 #line 3
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 4
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
+        .trainerPic = TRAINER_PIC_BRENDAN,
 #line 5
         .gender = TRAINER_GENDER_MALE,
 #line 6
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 0
-        .trainerBackPic = TRAINER_PIC_FRONT_BRENDAN,
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
         .partySize = 0,
         .party = (const struct TrainerMon[])
         {
@@ -32,7 +32,7 @@
 #line 10
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 11
-        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+        .trainerPic = TRAINER_PIC_STEVEN,
 #line 12
         .gender = TRAINER_GENDER_MALE,
 #line 13
@@ -40,7 +40,7 @@
 #line 14
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
-        .trainerBackPic = TRAINER_PIC_FRONT_STEVEN,
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -120,7 +120,7 @@
 #line 45
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 46
-        .trainerPic = TRAINER_PIC_FRONT_STEVEN,
+        .trainerPic = TRAINER_PIC_STEVEN,
 #line 47
         .gender = TRAINER_GENDER_MALE,
 #line 48
@@ -128,7 +128,7 @@
 #line 49
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
-        .trainerBackPic = TRAINER_PIC_FRONT_STEVEN,
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
         .partySize = 3,
         .party = (const struct TrainerMon[])
         {
@@ -197,38 +197,6 @@
                 MOVE_ICE_PUNCH,
                 MOVE_BULLET_PUNCH,
             },
-            },
-        },
-    },
-#line 78
-    [DIFFICULTY_NORMAL][PARTNER_DUMMY] =
-    {
-#line 80
-        .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
-#line 81
-        .trainerPic = TRAINER_PIC_FRONT_BRENDAN,
-#line 82
-        .gender = TRAINER_GENDER_MALE,
-#line 83
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 84
-        .trainerBackPic = TRAINER_PIC_BACK_BRENDAN,
-#line 85
-        .partySize = 0,
-        .poolSize = 1,
-        .party = (const struct TrainerMon[])
-        {
-            {
-#line 87
-            .species = SPECIES_WYNAUT,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 88
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 88
-            .lvl = 100,
-            .ball = POKEBALL_COUNT,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },

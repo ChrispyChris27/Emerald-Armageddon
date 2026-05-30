@@ -12,9 +12,9 @@
 
 // Wild Battle Flags
 #define WE_FLAG_FORCE_DOUBLE_WILD    0     // If this flag is set, all land and surfing wild battles will be double battles.
-#define WE_SMART_WILD_AI_FLAG        0     // If this flag is set, wild Pokémon will become smart, with all AI flags enabled.
-#define WE_FLAG_NO_CATCHING          0     // If this flag is set, the ability to catch wild Pokémon is disabled.
-#define WE_FLAG_NO_RUNNING           0     // If this flag is set, the ability to escape from wild battles is disabled. Also makes Roar/Whirlwind and Teleport (under Gen8) fail.
+#define WE_SMART_WILD_AI_FLAG        FLAG_SMART_WILD    // If this flag is set, wild Pokémon will become smart, with all AI flags enabled.
+#define WE_FLAG_NO_CATCHING          FLAG_NO_CATCH_WILD     // If this flag is set, the ability to catch wild Pokémon is disabled.
+#define WE_FLAG_NO_RUNNING           FLAG_NO_RUN_WILD     // If this flag is set, the ability to escape from wild battles is disabled. Also makes Roar/Whirlwind and Teleport (under Gen8) fail.
 
 // Overworld Wild Encounters (OWEs)
 #define WE_OW_ENCOUNTERS                        FALSE   // If TRUE, OW Pokémon can spawn as Overworld Wild Encounters on the current map. Requires OW_POKEMON_OBJECT_EVENTS.

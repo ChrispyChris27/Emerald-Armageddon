@@ -135,24 +135,24 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
     }
 
     if (species == SPECIES_CENTISKORCH || species == SPECIES_SANDACONDA || species == SPECIES_DURALUDON || species == SPECIES_ORBEETLE)
-        SetMonData(&gEnemyParty[0], MON_DATA_GIGANTAMAX_FACTOR, &gmaxFactor);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_GIGANTAMAX_FACTOR, &gmaxFactor);
 
     if (species == SPECIES_CRYOGONAL || species == SPECIES_SHEDINJA)
     {
         teraType = TYPE_ELECTRIC;
-        SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_TERA_TYPE, &teraType);
     }
 
     if (gBattleTypeFlags == BATTLE_TYPE_ROGUE || gBattleTypeFlags == BATTLE_TYPE_ROGUE_GMAX || gBattleTypeFlags == BATTLE_TYPE_ROGUE_TERA)
     {
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
     }
 
     if(species == SPECIES_CENTISKORCH)
@@ -164,12 +164,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_JOLLY;
         u8 ability = 0;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_CRYOGONAL)
@@ -181,12 +181,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_MODEST;
         u8 ability = 0;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_SHEDINJA)
@@ -197,11 +197,11 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u16 move4 = MOVE_MAGIC_COAT;
         u8 nature = NATURE_JOLLY;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species == SPECIES_SIGILYPH)
@@ -213,12 +213,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_TIMID;
         u8 ability = 1;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_ABSOL_MEGA)
@@ -229,11 +229,11 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u16 move4 = MOVE_ROCK_SLIDE;
         u8 nature = NATURE_JOLLY;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species == SPECIES_SABLEYE)
@@ -245,12 +245,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_JOLLY;
         u8 ability = 1;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_SANDACONDA)
@@ -262,12 +262,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_JOLLY;
         u8 ability = 0;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_MAGNEZONE)
@@ -280,13 +280,13 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 ability = 2;
         teraType = TYPE_DRAGON;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_TERA_TYPE, &teraType);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_KILOWATTREL)
@@ -299,13 +299,13 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 ability = 2;
         teraType = TYPE_WATER;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_TERA_TYPE, &teraType);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_ROARING_MOON)
@@ -317,12 +317,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_ADAMANT;
         teraType = TYPE_STEEL;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_TERA_TYPE, &teraType);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species == SPECIES_CHARIZARD_MEGA_Y)
@@ -333,11 +333,11 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u16 move4 = MOVE_EARTH_POWER;
         u8 nature = NATURE_MODEST;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species == SPECIES_DURALUDON)
@@ -349,12 +349,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_MODEST;
         u8 ability = 2;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species == SPECIES_IRON_JUGULIS)
@@ -366,12 +366,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_MODEST;
         teraType = TYPE_STEEL;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_TERA_TYPE, &teraType);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_TERA_TYPE, &teraType);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species == SPECIES_AERODACTYL_MEGA)
@@ -382,11 +382,11 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u16 move4 = MOVE_ROOST;
         u8 nature = NATURE_ADAMANT;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species == SPECIES_NECROZMA_ULTRA)
@@ -397,11 +397,11 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u16 move4 = MOVE_MOONLIGHT;
         u8 nature = NATURE_MODEST;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species == SPECIES_MAGIKARP)
@@ -413,12 +413,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_HASTY;
         bool32 shiny = TRUE;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_IS_SHINY, &shiny);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_IS_SHINY, &shiny);
 
     }
 
@@ -431,12 +431,12 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         u8 nature = NATURE_MODEST;
         u8 ability = 1;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
 }
@@ -482,18 +482,18 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 0;
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species2 == SPECIES_SHIFTRY)
@@ -506,18 +506,18 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 0;
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[1], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[1], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species1 == SPECIES_DHELMISE)
@@ -529,17 +529,17 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 nature = NATURE_ADAMANT;
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species2 == SPECIES_RELICANTH)
@@ -552,18 +552,18 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 1;
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[1], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[1], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species1 == SPECIES_TATSUGIRI_CURLY)
@@ -575,17 +575,17 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 nature = NATURE_TIMID;
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species2 == SPECIES_DONDOZO)
@@ -598,18 +598,18 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 1;
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[1], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[1], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species1 == SPECIES_MILOTIC)
@@ -622,18 +622,18 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ivs = 31;
         u8 ability = 1;
 
-        SetMonData(&gEnemyParty[0], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[1], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species2 == SPECIES_GYARADOS_MEGA)
@@ -645,17 +645,17 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 nature = NATURE_JOLLY;
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[1], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
     }
 
     if(species1 == SPECIES_KABUTOPS)
@@ -668,18 +668,18 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 0;
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species2 == SPECIES_OMASTAR)
@@ -692,18 +692,18 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 0;
         u8 ivs = 31;
 
-        SetMonData(&gEnemyParty[1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gEnemyParty[1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gEnemyParty[0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gEnemyParty[0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gEnemyParty[0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 }
 

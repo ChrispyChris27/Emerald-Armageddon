@@ -51,7 +51,6 @@ enum EndTurnResolutionOrder
     ENDTURN_SEND_OUT_REPLACEMENTS_4, // For Emergency Exit/Wimp Out activations
     ENDTURN_FORM_CHANGE,
     ENDTURN_EJECT_PACK,
-    ENDTURN_DYNAMAX,
     ENDTURN_SEND_OUT_REPLACEMENTS_5, // For Eject Pack activations
     ENDTURN_WIND_GUSTS,
     ENDTURN_TRAINER_A_SLIDES,

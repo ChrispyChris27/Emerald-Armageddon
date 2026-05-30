@@ -3714,8 +3714,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 }
                 break;
             case ABILITY_BALL_FETCH:
-                if (!(gBattleTypeFlags & BATTLE_TYPE_RAID)
-                 && gBattleMons[battler].item == ITEM_NONE
+                if (gBattleMons[battler].item == ITEM_NONE
                  && gBattleResults.catchAttempts[ItemIdToBallId(gLastUsedBall)] >= 1
                  && !gHasFetchedBall)
                 {
@@ -7904,7 +7903,7 @@ s32 CalcCritChanceStage(struct DamageContext *ctx)
             critChance = ARRAY_COUNT(sCriticalHitOdds) - 1;
     }
 
-    if (critChance != CRITICAL_HIT_BLOCKED && (ctx->abilityDef == ABILITY_BATTLE_ARMOR || ctx->abilityDef == ABILITY_SHELL_ARMOR || ctx->abilityDef == ABILITY_LEAF_GUARD || ctx->abilityDef == ABILITY_MAGMA_ARMOR))
+    if (critChance != CRITICAL_HIT_BLOCKED && (ctx->abilities[ctx->battlerDef] == ABILITY_BATTLE_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_SHELL_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_LEAF_GUARD || ctx->abilities[ctx->battlerDef] == ABILITY_MAGMA_ARMOR))
     {
         // Record ability only if move had 100% chance to get a crit
         if (ctx->updateFlags)
@@ -7956,7 +7955,7 @@ s32 CalcCritChanceStageGen1(struct DamageContext *ctx)
     if (critChance > 255)
         critChance = 255;
 
-    if (ctx->abilityDef == ABILITY_BATTLE_ARMOR || ctx->abilityDef == ABILITY_SHELL_ARMOR || ctx->abilityDef == ABILITY_LEAF_GUARD || ctx->abilityDef == ABILITY_MAGMA_ARMOR)
+    if (ctx->abilities[ctx->battlerDef] == ABILITY_BATTLE_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_SHELL_ARMOR || ctx->abilities[ctx->battlerDef] == ABILITY_LEAF_GUARD || ctx->abilities[ctx->battlerDef] == ABILITY_MAGMA_ARMOR)
     {
         if (ctx->updateFlags)
             RecordAbilityBattle(ctx->battlerDef, ctx->abilities[ctx->battlerDef]);

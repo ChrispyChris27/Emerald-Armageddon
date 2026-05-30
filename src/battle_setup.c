@@ -2170,7 +2170,7 @@ void BattleSetup_StartRogueWildBattle(void)
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_ROGUE;
 
-    if (GetMonData(&gEnemyParty[0], MON_DATA_SPECIES)==SPECIES_RAYQUAZA_MEGA)
+    if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES)==SPECIES_RAYQUAZA_MEGA)
     CreateBattleStartTask(B_TRANSITION_RAYQUAZA, MUS_VS_RAYQUAZA);
 
     else
