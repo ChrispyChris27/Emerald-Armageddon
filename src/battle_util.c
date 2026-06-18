@@ -4584,7 +4584,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
         switch (ability)
         {
         case ABILITY_OPPORTUNIST:
-            if (gProtectStructs[battler].activateOpportunist == 2)
+            if (gProtectStructs[battler].activateOpportunist)
             {
                 for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
                 {
@@ -4594,7 +4594,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
 
                 }
                 gBattleScripting.battler = gBattlerAbility = battler;
-                gProtectStructs[battler].activateOpportunist--;
+                gProtectStructs[battler].activateOpportunist = FALSE;
                 BattleScriptCall(BattleScript_OpportunistCopyStatChange);
                 effect = 1;
             }
@@ -9989,7 +9989,7 @@ bool32 EmergencyExitCanBeTriggered(enum BattlerId battler, enum Ability ability)
         return FALSE;
 
     if (IsBattlerAlive(battler)
-     && HadMoreThanHalfHpNowDoesnt(battler)
+     && (HadMoreThanHalfHpNowDoesnt(battler) || gSpecialStatuses[battler].shellBellEmergencyExit)
      && (CanBattlerSwitch(battler) || !(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
      && !(gBattleTypeFlags & BATTLE_TYPE_ARENA)
      && gBattleMons[battler].volatiles.semiInvulnerable != STATE_SKY_DROP_TARGET)
