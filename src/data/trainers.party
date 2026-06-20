@@ -7429,7 +7429,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Close Combat
 - Brave Bird
-- U Turn
+- Blaze Kick
 - Roost
 
 === TRAINER_TATE ===
@@ -23239,7 +23239,7 @@ Nature: Jolly
 - X Scissor
 
 === TRAINER_LIZA ===
-Name: LIZA
+Name: Liza
 Class: Leader
 Pic: Liza
 Gender: Male
@@ -23404,7 +23404,7 @@ Nature: Hardy
 - Flamethrower
 
 === TRAINER_ARCHIE_PYRE ===
-Name: ARCHIE
+Name: Archie
 Class: Aqua Leader
 Pic: Aqua Leader Archie
 Gender: Male
@@ -23473,7 +23473,7 @@ Nature: Modest
 - Hydro Pump
 
 === TRAINER_WALLACE_1 ===
-Name: WALLACE
+Name: Wallace
 Class: Leader
 Pic: Champion Wallace
 Gender: Male
@@ -23530,7 +23530,7 @@ Nature: Timid
 
 Gyarados @ Gyaradosite
 Level: 89
-Ability: Torrent
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 - Wave Crash

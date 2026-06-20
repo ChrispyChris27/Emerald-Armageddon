@@ -52,7 +52,6 @@ MtPyre_Summit_EventScript_TeamAquaExits::
 	special FadeOutOrbEffect
 	setweather WEATHER_RAIN
 	doweather
-	waitstate
 	delay 200
 	msgbox MtPyre_Summit_ArchieIntro, MSGBOX_AUTOCLOSE
 	trainerbattle_no_intro TRAINER_ARCHIE_PYRE, ArchiePyreDefeat_Text

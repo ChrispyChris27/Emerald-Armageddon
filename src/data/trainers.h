@@ -18641,7 +18641,7 @@
 #line 7430
                 MOVE_CLOSE_COMBAT,
                 MOVE_BRAVE_BIRD,
-                MOVE_U_TURN,
+                MOVE_BLAZE_KICK,
                 MOVE_ROOST,
             },
             },
@@ -58382,7 +58382,7 @@
     [DIFFICULTY_NORMAL][TRAINER_LIZA] =
     {
 #line 23242
-        .trainerName = _("LIZA"),
+        .trainerName = _("Liza"),
 #line 23243
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 23244
@@ -58778,7 +58778,7 @@
     [DIFFICULTY_NORMAL][TRAINER_ARCHIE_PYRE] =
     {
 #line 23407
-        .trainerName = _("ARCHIE"),
+        .trainerName = _("Archie"),
 #line 23408
         .trainerClass = TRAINER_CLASS_AQUA_LEADER,
 #line 23409
@@ -58946,7 +58946,7 @@
     [DIFFICULTY_NORMAL][TRAINER_WALLACE_1] =
     {
 #line 23476
-        .trainerName = _("WALLACE"),
+        .trainerName = _("Wallace"),
 #line 23477
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 23478
@@ -59090,7 +59090,7 @@
 #line 23534
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 23533
-            .ability = ABILITY_TORRENT,
+            .ability = ABILITY_INTIMIDATE,
 #line 23532
             .lvl = 89,
             .ball = POKEBALL_COUNT,
