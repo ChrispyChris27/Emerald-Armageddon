@@ -27,20 +27,19 @@ BattleFrontier_Lounge6_EventScript_TradeCompleted::
 	end
 
 BattleFrontier_Lounge6_Text_WouldYouLikeToTrade:
-	.string "My POKéMON is a {STR_VAR_2}.\n"
+	.string "My Pokémon is a Meloetta.\n"
 	.string "Do you know it?\l"
 	.string "It's quite cute and rather nice.\p"
 	.string "This little one, I could trade with\n"
 	.string "pride!\p"
-	.string "Would you like to trade me a {STR_VAR_1}\n"
-	.string "for my {STR_VAR_2}?$"
+	.string "Would you like to trade for my Meloetta?$"
 
 BattleFrontier_Lounge6_Text_PromiseIllBeGoodToIt:
-	.string "Oh, it's adorable!\n"
-	.string "Thank you!\l"
-	.string "I promise I'll be good to it!\p"
-	.string "Oh! I hope you'll be good to\n"
-	.string "my {STR_VAR_2}, too!$"
+	.string "Hahaha!\n"
+	.string "I bet you weren't expecting that!\p"
+	.string "I do hope you aren't too upset though.\p"
+	.string "Please be good to my Onix!\n"
+	.string "I'd be honored if you could evolve it!$"
 
 BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon:
 	.string "Oh, I'm sorry!\n"
@@ -48,11 +47,12 @@ BattleFrontier_Lounge6_Text_DontTradeForAnythingButMon:
 	.string "but a {STR_VAR_1}.$"
 
 BattleFrontier_Lounge6_Text_WellThatsFineToo:
-	.string "Oh, you won't?\n"
-	.string "Well, that's fine, too.\l"
+	.string "Oh, you won't?\p"
+	.string "Why not?\p"
+	.string "I promise it's not a trick!\p"
 	.string "Please come visit us again.$"
 
 BattleFrontier_Lounge6_Text_SkittySoMuchCuterThanImagined:
 	.string "Giggle!\n"
-	.string "A SKITTY is so much cuter than I had\l"
+	.string "That trick was much funnier than I\l"
 	.string "imagined. I'm delighted!$"

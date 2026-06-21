@@ -3,7 +3,6 @@
   "name": "Route123",
   "layout": "LAYOUT_ROUTE123",
   "music": "MUS_ROUTE122",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_ROUTE_123",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -985,8 +984,9 @@
       "x": 123,
       "y": 11,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_ABILITY_CAPSULE",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_123_RARE_CANDY"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

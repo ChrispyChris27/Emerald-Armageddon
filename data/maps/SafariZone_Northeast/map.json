@@ -3,7 +3,6 @@
   "name": "SafariZone_Northeast",
   "layout": "LAYOUT_SAFARI_ZONE_NORTHEAST",
   "music": "MUS_SAFARI_ZONE",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_SAFARI_ZONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -152,7 +151,7 @@
       "x": 31,
       "y": 35,
       "elevation": 3,
-      "item": "ITEM_RARE_CANDY",
+      "item": "ITEM_ABILITY_CAPSULE",
       "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_RARE_CANDY"
     },
     {
@@ -163,5 +162,6 @@
       "item": "ITEM_PP_UP",
       "flag": "FLAG_HIDDEN_ITEM_SAFARI_ZONE_NORTH_EAST_ZINC"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }
