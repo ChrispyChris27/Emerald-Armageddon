@@ -196,7 +196,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("Wonder Guard"),
         .description = COMPOUND_STRING("Only “Supereffective” hits."),
         .aiRating = 10,
-        .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
         .breakable = TRUE,
     },

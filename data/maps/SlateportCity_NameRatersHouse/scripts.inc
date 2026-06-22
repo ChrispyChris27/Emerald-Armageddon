@@ -141,7 +141,6 @@ HyperTrainNoGoldCap::
 HyperTrainGoldCap::
 	msgbox GoldCapSelectMon, MSGBOX_AUTOCLOSE
 	special ChoosePartyMon
-	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_RESULT, PARTY_NOTHING_CHOSEN, HyperTrainingDeclined
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies
@@ -177,7 +176,6 @@ HyperTrainAllStats::
 HyperTrainRegCap::
 	msgbox RegCapSelectMon, MSGBOX_AUTOCLOSE
 	special ChoosePartyMon
-	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_RESULT, PARTY_NOTHING_CHOSEN, HyperTrainingDeclined
 	specialvar VAR_RESULT, ScriptGetPartyMonSpecies

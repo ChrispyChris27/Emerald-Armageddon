@@ -76,13 +76,11 @@ ThroneRoomDoMulti::
 	case 1, CyrusDefeated
 	fadescreen FADE_TO_BLACK
 	special SetCB2WhiteOut
-	waitstate
 
 ThroneRoomPickMulti::
 	special SavePlayerParty
 	fadescreen FADE_TO_BLACK
 	special ChooseHalfPartyForBattle
-	waitstate
 	goto_if_ne VAR_RESULT, 0, ThroneRoomDoMulti
 	special LoadPlayerParty
 	goto StevenReadyBattle

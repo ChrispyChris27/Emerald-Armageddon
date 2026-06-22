@@ -20582,10 +20582,15 @@ Music: Magma
 Battle Type: Singles
 AI: Check Bad Move
 
-Mightyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Magcargo @ Air Balloon
+Level: 71
+Ability: Magma Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Stockpile
+- Recover
+- Fire Blast
+- Solarbeam
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
 Name: Grunt
@@ -20807,7 +20812,7 @@ Nature: Timid
 
 Giratina-Origin @ Griseous Core
 Level: 91
-Ability: Pressure
+Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 - Shadow Force
@@ -21943,7 +21948,7 @@ Nature: Jolly
 - Waterfall
 
 === TRAINER_GIOVANNI_1 ===
-Name: GIOVANNI
+Name: Giovanni
 Class: Rocket Leader
 Pic: Giovanni
 Gender: Male
@@ -23283,62 +23288,58 @@ Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
-Battle Type: Doubles
-AI: Check Bad Move / Try To Faint / Check Viability
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Drowzee
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Hypnosis
-- Dream Eater
-- Headbutt
-- Protect
+Aggron @ Covert Cloak
+Level: 46
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Brave
+- Metal Burst
+- Iron Tail
+- Stealth Rock
+- Stone Edge
 
-Slowpoke
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Yawn
-- Psychic
-- Calm Mind
-- Protect
+Orbeetle @ Leftovers
+Level: 46
+Ability: Tinted Lens
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Cosmic Power
+- Stored Power
+- Bug Buzz
+- Recover
 
-Claydol
-Level: 54
+Skuntank @ Rowap Berry
+Level: 46
+Ability: Aftermath
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Earthquake
+Nature: Jolly
 - Explosion
-- Psychic
-- Light Screen
+- Knock Off
+- Poison Jab
+- Play Rough
 
-Xatu @ Chesto Berry
-Level: 54
+Thievul @ Life Orb
+Level: 46
+Ability: Stakeout
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
+Nature: Timid
+- Dark Pulse
 - Psychic
-- Rest
-- Confuse Ray
-- Calm Mind
+- Alluring Voice
+- Nasty Plot
 
-Lunatone @ Chesto Berry
-Level: 55
+Hitmonlee @ White Herb
+Level: 46
+Ability: Unburden
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
+Nature: Jolly
+- Close Combat
+- Stone Edge
+- Blaze Kick
 - Earthquake
-- Psychic
-- Rest
-- Calm Mind
-
-Solrock @ Sitrus Berry
-Level: 55
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
 
 === TRAINER_FALLS_GRUNT_16 ===
 Name: Grunt
@@ -23346,62 +23347,58 @@ Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
-Battle Type: Doubles
+Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Hypno
-Level: 58
+Aerodactyl @ Focus Sash
+Level: 46
+Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Hypnosis
-- Dream Eater
-- Headbutt
-- Protect
-
-Claydol
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
+Nature: Jolly
+- Stealth Rock
+- Rock Slide
+- Brave Bird
 - Earthquake
+
+Muk Alola @ Liechi Berry
+Level: 46
+Ability: Gluttony
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Gunk Shot
+- Knock Off
 - Explosion
-- Psychic
-- Light Screen
+- Ice Punch
 
-Slowpoke
-Level: 58
+Lurantis @ Brightpowder
+Level: 46
+Ability: Contrary
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Yawn
-- Psychic
-- Calm Mind
-- Protect
+Nature: Hasty
+- Superpower
+- Leaf Storm
+- Psycho Cut
+- Rock Slide
 
-Xatu @ Chesto Berry
-Level: 59
+Golurk @ Focus Band
+Level: 46
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Psychic
-- Rest
-- Confuse Ray
-- Calm Mind
-
-Lunatone @ Chesto Berry
-Level: 60
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
+Nature: Jolly
+- Dynamic Punch
+- Spirit Shackle
+- Stone Edge
 - Earthquake
-- Psychic
-- Rest
-- Calm Mind
 
-Solrock @ Sitrus Berry
-Level: 60
+Lickilicky @ Berserk Gene
+Level: 46
+Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hardy
-- Sunny Day
-- Solar Beam
-- Psychic
-- Flamethrower
+Nature: Jolly
+- Body Slam
+- Zen Headbutt
+- Aqua Tail
+- Earthquake
 
 === TRAINER_ARCHIE_PYRE ===
 Name: Archie

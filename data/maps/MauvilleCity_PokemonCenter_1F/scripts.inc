@@ -179,7 +179,6 @@ SetStatusScript::
 InflictStatus1_Single_Poison::
 	msgbox WhoShouldPoisonText, MSGBOX_AUTOCLOSE
 	special ChoosePartyMon
-	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, InflictStatus1_Close
 	specialvar VAR_RESULT, CanPoison
@@ -197,7 +196,6 @@ CannotInflictStatusPoison::
 InflictStatus1_Single_Sleep::
 	msgbox WhoShouldSleepText, MSGBOX_AUTOCLOSE
 	special ChoosePartyMon
-	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, InflictStatus1_Close
 	specialvar VAR_RESULT, CanSleep
@@ -215,7 +213,6 @@ CannotInflictStatusSleep::
 InflictStatus1_Single_Paralyze::
 	msgbox WhoShouldParalyzeText, MSGBOX_AUTOCLOSE
 	special ChoosePartyMon
-	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, InflictStatus1_Close
 	specialvar VAR_RESULT, CanParalyze
@@ -233,7 +230,6 @@ CannotInflictStatusParalyze::
 InflictStatus1_Single_Burn::
 	msgbox WhoShouldBurnText, MSGBOX_AUTOCLOSE
 	special ChoosePartyMon
-	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, InflictStatus1_Close
 	specialvar VAR_RESULT, CanBurn
@@ -251,7 +247,6 @@ CannotInflictStatusBurn::
 InflictStatus1_Single_Freeze::
 	msgbox WhoShouldFreezeText, MSGBOX_AUTOCLOSE
 	special ChoosePartyMon
-	waitstate
 	copyvar VAR_RESULT, VAR_0x8004
 	goto_if_eq VAR_0x8004, PARTY_NOTHING_CHOSEN, InflictStatus1_Close
 	specialvar VAR_RESULT, CanFreeze

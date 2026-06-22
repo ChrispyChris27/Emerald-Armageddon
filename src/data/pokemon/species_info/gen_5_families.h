@@ -1142,7 +1142,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sHerdierLevelUpLearnset,
         .teachableLearnset = sHerdierTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_STOUTLAND}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_STOUTLAND}),
     },
 
     [SPECIES_STOUTLAND] =
@@ -2761,7 +2761,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sDrilburLevelUpLearnset,
         .teachableLearnset = sDrilburTeachableLearnset,
         .eggMoveLearnset = sDrilburEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 31, SPECIES_EXCADRILL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_EXCADRILL}),
     },
 
     [SPECIES_EXCADRILL] =
