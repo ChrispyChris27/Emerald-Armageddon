@@ -362,7 +362,7 @@ DewfordTown_Gym_Text_BrendenPostBattle:
 
 DewfordTown_Gym_Text_CristianIntro:
 	.string "If you mean to pass, it has to be\n"
-	.string "through me!$"
+	.string "through us!$"
 
 DewfordTown_Gym_Text_CristianDefeat:
 	.string "Grrrrr!\n"
@@ -451,3 +451,18 @@ DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
 	.string "that can battle.\p"
 	.string "I'm sorry, but I'd like you to come back\n"
 	.string "with at least two POKéMON.$"
+
+DewfordTown_Gym_EventScript_Christine::
+	trainerbattle_single TRAINER_CHRISTINE, DewfordTown_Gym_Text_ChristineIntro, DewfordTown_Gym_Text_ChristineDefeat
+	msgbox DewfordTown_Gym_Text_ChristinePostBattle, MSGBOX_AUTOCLOSE
+	end
+
+DewfordTown_Gym_Text_ChristineIntro::
+	.string "We're gonna beat you up!$"
+
+DewfordTown_Gym_Text_ChristineDefeat::
+	.string "You beat our strategy!$"
+
+DewfordTown_Gym_Text_ChristinePostBattle::
+	.string "Nobody ever beat me that bad\n"
+	.string "before.$"

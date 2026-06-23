@@ -11387,7 +11387,7 @@ IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 Nature: Hardy
 
 === TRAINER_LAURA ===
-Name: LAURA
+Name: Laura
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
@@ -11396,7 +11396,7 @@ Battle Type: Singles
 AI: Check Bad Move
 
 Sawk @ Choice Band
-Level: 40
+Level: 51
 Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -11406,8 +11406,8 @@ Nature: Jolly
 - Stone Edge
 
 Poliwrath @ Sitrus Berry
-Level: 40
-Ability: Water Absorb
+Level: 51
+Ability: Iron Fist
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 - Jet Punch
@@ -15416,24 +15416,44 @@ Nature: Timid
 - Shadow Ball
 - Substitute
 
-=== TRAINER_GRUNT_UNUSED ===
-Name: Grunt
-Class: Team Magma
-Pic: Aqua Grunt F
+=== TRAINER_CHRISTINE ===
+Name: Christine
+Class: Battle Girl
+Pic: Battle Girl
 Gender: Female
-Music: Aqua
+Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wailmer
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Salazzle @ Focus Sash
+Level: 51
+Ability: Corrosion
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Beat Up
+- Sludge Bomb
+- Scorching Sands
+- Flamethrower
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Dugtrio @ Focus Sash
+Level: 51
+Ability: Arena Trap
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Beat Up
+- Dig
+- Stone Edge
+- Shadow Claw
+
+Vanilluxe @ Weakness Policy
+Level: 51
+Ability: Filter
+IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Beat Up
+- Blizzard
+- Flash Cannon
+- Freeze Dry
 
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: Grunt
@@ -15567,12 +15587,37 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Makuhita
-Level: 13
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-Nature: Hardy
+Gallade @ Scope Lens
+Level: 51
+Ability: Justified
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Psycho Cut
+- Leaf Blade
+- Sacred Sword
+- Shadow Claw
+
+Arcanine @ White Herb
+Level: 51
+Ability: Justified
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Flare Blitz
+- Extremespeed
+- Wild Charge
+- Close Combat
+
+Lucario @ Scope Lens
+Level: 51
+Ability: Justified
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Meteor Mash
+- Stone Edge
+- Close Combat
+- Ice Punch
 
 === TRAINER_SYLVIA ===
 Name: SYLVIA
