@@ -8708,7 +8708,7 @@ Nature: Timid
 - Twister
 
 === TRAINER_JOSH ===
-Name: JOSH
+Name: Josh
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -8717,7 +8717,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Forretress @ Custap Berry
-Level: 50
+Level: 49
 Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -8727,7 +8727,7 @@ Nature: Adamant
 - Earthquake
 
 Probopass @ Air Balloon
-Level: 50
+Level: 49
 Ability: Sand Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -8737,7 +8737,7 @@ Nature: Modest
 - Dazzling Gleam
 
 Lycanroc Midday @ Focus Sash
-Level: 50
+Level: 49
 Ability: Sand Rush
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -8747,7 +8747,7 @@ Nature: Adamant
 - Swords Dance
 
 Golurk @ Punching Glove
-Level: 50
+Level: 49
 Ability: Iron Fist
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -8757,7 +8757,7 @@ Nature: Adamant
 - Thunder Punch
 
 Torterra @ Yache Berry
-Level: 50
+Level: 49
 Ability: Overgrow
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -8767,7 +8767,7 @@ Nature: Jolly
 - Shell Smash
 
 === TRAINER_TOMMY ===
-Name: TOMMY
+Name: Tommy
 Class: Youngster
 Pic: Youngster
 Gender: Male
@@ -8776,7 +8776,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Carbink @ Custap Berry
-Level: 50
+Level: 49
 Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Bold
@@ -8786,7 +8786,7 @@ Nature: Bold
 - Reflect
 
 Crustle @ Covert Cloak
-Level: 50
+Level: 49
 Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -8796,7 +8796,7 @@ Nature: Jolly
 - Shell Smash
 
 Magnezone @ Air Balloon
-Level: 50
+Level: 49
 Ability: Magnet Pull
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -8806,7 +8806,7 @@ Nature: Timid
 - Thunder Wave
 
 Tyrantrum @ Life Orb
-Level: 50
+Level: 49
 Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -8816,7 +8816,7 @@ Nature: Jolly
 - Psychic Fangs
 
 Toedscruel @ White Herb
-Level: 50
+Level: 49
 Ability: Mycelium Might
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -15474,7 +15474,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Nature: Hardy
 
 === TRAINER_MARC ===
-Name: MARC
+Name: Marc
 Class: Hiker
 Pic: Hiker
 Gender: Male
@@ -15483,7 +15483,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Revavroom @ Eject Pack
-Level: 50
+Level: 49
 Ability: Filter
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -15493,7 +15493,7 @@ Nature: Jolly
 - High Horsepower
 
 Bronzong @ Wise Glasses
-Level: 50
+Level: 49
 Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -15503,7 +15503,7 @@ Nature: Modest
 - Body Press
 
 Armaldo @ Life Orb
-Level: 50
+Level: 49
 Ability: Sand Rush
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -15513,7 +15513,7 @@ Nature: Jolly
 - Swords Dance
 
 Sudowoodo @ Assault Vest
-Level: 50
+Level: 49
 Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -15523,7 +15523,7 @@ Nature: Adamant
 - Sucker Punch
 
 Mamoswine @ Leftovers
-Level: 50
+Level: 49
 Ability: Thick Fat
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -22793,7 +22793,7 @@ Nature: Modest
 - Life Dew
 
 === TRAINER_SANDY ===
-Name: SANDY
+Name: Sandy
 Class: Expert
 Pic: Expert F
 Gender: Male
@@ -22802,7 +22802,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Shuckle @ Leftovers
-Level: 50
+Level: 49
 Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Careful
@@ -22812,7 +22812,7 @@ Nature: Careful
 - Sand Tomb
 
 Marowak @ Thick Club
-Level: 50
+Level: 49
 Ability: Battle Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -22822,7 +22822,7 @@ Nature: Adamant
 - Swords Dance
 
 Copperajah @ Life Orb
-Level: 50
+Level: 49
 Ability: Sheer Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -22831,18 +22831,8 @@ Nature: Adamant
 - Play Rough
 - Rock Slide
 
-Aurorus @ Focus Sash
-Level: 50
-Ability: Refrigerate
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Hyper Voice
-- Thunderbolt
-- Power Gem
-- Earth Power
-
 Klawf @ Focus Sash
-Level: 50
+Level: 49
 Ability: Anger Shell
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -22852,7 +22842,7 @@ Nature: Adamant
 - Shell Smash
 
 Runerigus @ Leftovers
-Level: 50
+Level: 49
 Ability: Wandering Spirit
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -22862,7 +22852,7 @@ Nature: Adamant
 - Stone Edge
 
 === TRAINER_ROCKY ===
-Name: ROCKY
+Name: Rocky
 Class: Expert
 Pic: Expert M
 Gender: Male
@@ -22871,7 +22861,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Orthworm @ Sitrus Berry
-Level: 50
+Level: 49
 Ability: Sand Veil
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -22881,7 +22871,7 @@ Nature: Jolly
 - Shed Tail
 
 Camerupt @ Passho Berry
-Level: 50
+Level: 49
 Ability: Solid Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Quiet
@@ -22891,7 +22881,7 @@ Nature: Quiet
 - Stone Edge
 
 Dugtrio @ Choice Band
-Level: 50
+Level: 49
 Ability: Arena Trap
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -22901,7 +22891,7 @@ Nature: Adamant
 - Throat Chop
 
 Cradily @ Leftovers
-Level: 50
+Level: 49
 Ability: Suction Cups
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Careful
@@ -22911,9 +22901,9 @@ Nature: Careful
 - Shore Up
 
 Aggron @ Assault Vest
-Level: 50
+Level: 49
 Ability: Sturdy
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 Nature: Brave
 - Stone Edge
 - Earthquake
@@ -22921,7 +22911,7 @@ Nature: Brave
 - Metal Burst
 
 === TRAINER_RUSTY ===
-Name: RUSTY
+Name: Rusty
 Class: Ruin Maniac
 Pic: Ruin Maniac
 Gender: Male
@@ -22930,7 +22920,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Garchomp @ Yache Berry
-Level: 51
+Level: 49
 Ability: Sand Veil
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -22940,7 +22930,7 @@ Nature: Jolly
 - Poison Jab
 
 Krookodile @ Expert Belt
-Level: 51
+Level: 49
 Ability: Moxie
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -22950,7 +22940,7 @@ Nature: Jolly
 - Aqua Tail
 
 Ursaluna @ Flame Orb
-Level: 51
+Level: 49
 Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -22960,7 +22950,7 @@ Nature: Jolly
 - Stone Edge
 
 Excadrill @ Life Orb
-Level: 51
+Level: 49
 Ability: Sand Rush
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -22969,17 +22959,8 @@ Nature: Adamant
 - Rock Slide
 - Swords Dance
 
-Sandy Shocks @ Booster Energy
-Level: 51
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Earth Power
-- Thunderbolt
-- Power Gem
-- Charge Beam
-
 Steelix @ Steelixite
-Level: 51
+Level: 49
 Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -22989,7 +22970,7 @@ Nature: Jolly
 - Rock Polish
 
 === TRAINER_GLORIA ===
-Name: GLORIA
+Name: Gloria
 Class: Beauty
 Pic: Beauty
 Gender: Male
@@ -22998,7 +22979,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Donphan @ Sitrus Berry
-Level: 50
+Level: 49
 Ability: Sand Veil
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -23008,7 +22989,7 @@ Nature: Adamant
 - Stealth Rock
 
 Lunatone @ Life Orb
-Level: 50
+Level: 49
 Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -23018,7 +22999,7 @@ Nature: Timid
 - Ice Beam
 
 Garganacl @ Leftovers
-Level: 50
+Level: 49
 Ability: Purifying Salt
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -23028,7 +23009,7 @@ Nature: Adamant
 - Curse
 
 Empoleon @ Assault Vest
-Level: 50
+Level: 49
 Ability: Competitive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -23038,7 +23019,7 @@ Nature: Modest
 - Weather Ball
 
 Barbaracle @ Scope Lens
-Level: 50
+Level: 49
 Ability: Sniper
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
