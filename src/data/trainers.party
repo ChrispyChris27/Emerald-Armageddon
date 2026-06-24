@@ -4518,12 +4518,57 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Machop
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-Nature: Hardy
+Mienshao @ Eject Pack
+Level: 51
+Ability: Regenerator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Close Combat
+- Stone Edge
+- U Turn
+- Triple Axel
+
+Annihilape @ Assault Vest
+Level: 51
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Rage Fist
+- Drain Punch
+- Ice Punch
+- Poison Jab
+
+Toxicroak @ Passho Berry
+Level: 51
+Ability: Poison Touch
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Poison Jab
+- Cross Chop
+- Ice Punch
+- Throat Chop
+
+Throh @ Chesto Berry
+Level: 51
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Rest
+- Drain Punch
+- Bulk Up
+- Stone Edge
+
+Hariyama @ Life Orb
+Level: 51
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Rock Slide
+- Force Palm
+- Ice Punch
+- Poison Jab
 
 === TRAINER_HITOSHI ===
 Name: HITOSHI
@@ -7154,15 +7199,15 @@ Nature: Adamant
 - Fissure
 - Substitute
 
-Lucario @ Lucarionite
+Lucario @ Lucarionite Z
 Level: 54
 Ability: Inner Focus
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Hasty
 - Aura Sphere
 - Flash Cannon
-- Stone Edge
-- Close Combat
+- Nasty Plot
+- Shadow Ball
 
 === TRAINER_WATTSON_1 ===
 Name: Wattson
@@ -11373,18 +11418,63 @@ Nature: Hardy
 - Sludge
 
 === TRAINER_JOCELYN ===
-Name: JOCELYN
+Name: Jocelyn
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Meditite
-Level: 13
-IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
-Nature: Hardy
+Silvally @ Fighting Memory
+Level: 51
+Ability: RKS System
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Multi Attack
+- Selfdestruct
+- Rock Slide
+- Crunch
+
+Breloom @ Focus Sash
+Level: 51
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Rock Blast
+- Spore
+- Bullet Seed
+- Arm Thrust
+
+Kommo-o @ Throat Spray
+Level: 51
+Ability: Soundproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Clangorous Soul
+- Aura Sphere
+- Clanging Scales
+- Flash Cannon
+
+Heracross @ Flame Orb
+Level: 51
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Swords Dance
+- Rock Slide
+- Megahorn
+- Close Combat
+
+Sirfetch'd @ Scope Lens
+Level: 51
+Ability: Scrappy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Leaf Blade
+- Night Slash
+- Brave Bird
+- Close Combat
 
 === TRAINER_LAURA ===
 Name: Laura
@@ -11414,6 +11504,36 @@ Nature: Adamant
 - Mach Punch
 - Ice Punch
 - Belly Drum
+
+Grapploct @ Leftovers
+Level: 51
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Octolock
+- Storm Throw
+- Rock Tomb
+- Bullet Punch
+
+Tauros Paldea Blaze @ Liechi Berry
+Level: 51
+Ability: Cud Chew
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Raging Bull
+- Rock Slide
+- Close Combat
+- Wild Charge
+
+Flamigo @ Expert Belt
+Level: 51
+Ability: Scrappy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Brave Bird
+- Triple Axel
+- Close Combat
+- Lunge
 
 === TRAINER_CYNDY_1 ===
 Name: CYNDY
@@ -15445,15 +15565,15 @@ Nature: Jolly
 - Stone Edge
 - Shadow Claw
 
-Vanilluxe @ Weakness Policy
+Durant @ Covert Cloak
 Level: 51
-Ability: Filter
-IVs: 31 HP / 0 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
 - Beat Up
-- Blizzard
-- Flash Cannon
-- Freeze Dry
+- X Scissor
+- Drill Run
+- Iron Head
 
 === TRAINER_GRUNT_MT_PYRE_4 ===
 Name: Grunt
@@ -15559,26 +15679,76 @@ Pic: Sailor
 Gender: Male
 Music: Male
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Machop
-Level: 13
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Scrafty @ Roseli Berry
+Level: 51
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Coaching
+- Poison Jab
+- Crunch
+- Close Combat
+
+Quaquaval @ Life Orb
+Level: 51
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Coaching
+- Aqua Step
+- Triple Axel
+- Close Combat
+
+Medicham @ Wide Lens
+Level: 51
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Coaching
+- Psycho Cut
+- Hi Jump Kick
+- Stone Edge
 
 === TRAINER_LILITH ===
-Name: LILITH
+Name: Lilith
 Class: Battle Girl
 Pic: Battle Girl
 Gender: Female
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Meditite
-Level: 13
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Hardy
+Hitmontop @ White Herb
+Level: 51
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Coaching
+- Detect
+- Stone Edge
+- Close Combat
+
+Decidueye Hisui @ Focus Sash
+Level: 51
+Ability: Scrappy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Coaching
+- Triple Arrows
+- Leaf Blade
+- Dual Wingbeat
+
+Pawmot @ Punching Glove
+Level: 51
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Coaching
+- Thunder Punch
+- Ice Punch
+- Drain Punch
 
 === TRAINER_CRISTIAN ===
 Name: CRISTIAN
@@ -18183,7 +18353,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 - Pin Missile
 - Spirit Shackle
-- Ally Switch
+- Magic Coat
 - Swords Dance
 
 === TRAINER_FLINT ===
