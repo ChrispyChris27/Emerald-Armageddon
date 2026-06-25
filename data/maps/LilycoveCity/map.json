@@ -3,7 +3,6 @@
   "name": "LilycoveCity",
   "layout": "LAYOUT_LILYCOVE_CITY",
   "music": "MUS_LILYCOVE",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_LILYCOVE_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -535,5 +534,6 @@
       "item": "ITEM_WATER_GEM",
       "flag": "FLAG_HIDDEN_ITEM_LILYCOVE_CITY_POKE_BALL"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

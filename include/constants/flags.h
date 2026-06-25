@@ -1285,7 +1285,7 @@
 #define FLAG_VICTREEBELITE                                           0x4CF // Unused Flag
 #define FLAG_EXCADRITE                                           0x4D0 // Unused Flag
 #define FLAG_EELEKTROSSITE                                           0x4D1 // Unused Flag
-#define FLAG_UNUSUED                                           0x4D2 // Unused Flag
+#define FLAG_GENESECT_PUZZLE                                           0x4D2 // Unused Flag
 #define FLAG_MALAMARITE                                           0x4D3 // Unused Flag
 #define FLAG_DRAGALGITE                                           0x4D4 // Unused Flag
 #define FLAG_FROSLASSITE                                           0x4D5 // Unused Flag
@@ -1310,9 +1310,9 @@
 #define FLAG_EMERALD_LK_OUTSIDE                                           0x4E8 // Unused Flag
 #define FLAG_LK_TEMP                                           0x4E9 // Unused Flag
 #define FLAG_EMERALD_BATTLE                                           0x4EA // Unused Flag
-#define FLAG_UNUSED_0x4EB                                           0x4EB // Unused Flag
-#define FLAG_UNUSED_0x4EC                                           0x4EC // Unused Flag
-#define FLAG_UNUSED_0x4ED                                           0x4ED // Unused Flag
+#define FLAG_DEFEATED_GENESECT                                           0x4EB // Unused Flag
+#define FLAG_HIDE_GENESECT                                           0x4EC // Unused Flag
+#define FLAG_DRIVE                                           0x4ED // Unused Flag
 #define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
 #define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
 

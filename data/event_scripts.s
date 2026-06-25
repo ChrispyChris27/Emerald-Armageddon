@@ -1830,3 +1830,7 @@ Common_EventScript_SetSnow:
 
 	.include "data/maps/EmeraldVillaHouse/scripts.inc"
 	.include "data/scripts/wild_encounter.inc"
+
+	.include "data/maps/PetalburgTombOutside/scripts.inc"
+
+	.include "data/maps/PetalburgTombInside/scripts.inc"

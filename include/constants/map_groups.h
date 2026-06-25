@@ -88,6 +88,8 @@ enum
     MAP_RUBY_VILLA_HOUSE                   = (73 | (0 << 8)),
     MAP_SAPPHIRE_VILLA_HOUSE               = (74 | (0 << 8)),
     MAP_EMERALD_VILLA_HOUSE                = (75 | (0 << 8)),
+    MAP_PETALBURG_TOMB_OUTSIDE             = (76 | (0 << 8)),
+    MAP_PETALBURG_TOMB_INSIDE              = (77 | (0 << 8)),
 
     // gMapGroup_IndoorLittleroot
     MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    = (0 | (1 << 8)),

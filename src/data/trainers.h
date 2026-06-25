@@ -28797,7 +28797,7 @@
         {
             {
 #line 11429
-            .species = SPECIES_SILVALLY,
+            .species = SPECIES_SILVALLY_FIGHTING,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 11429
             .heldItem = ITEM_FIGHTING_MEMORY,
@@ -28933,7 +28933,7 @@
 #line 11485
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 11486
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
         .partySize = 5,

@@ -152,7 +152,9 @@
     "CaveOfLegendsFinalRoom",
     "RubyVillaHouse",
     "SapphireVillaHouse",
-    "EmeraldVillaHouse"
+    "EmeraldVillaHouse",
+    "PetalburgTombOutside",
+    "PetalburgTombInside"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

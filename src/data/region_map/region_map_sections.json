@@ -1722,6 +1722,14 @@
       "y": 7,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_PETALBURG_TOMB",
+      "name": "PETALBURG TOMB",
+      "x": 0,
+      "y": 8,
+      "width": 1,
+      "height": 1
     }
   ]
 }

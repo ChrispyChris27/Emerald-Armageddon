@@ -3,7 +3,6 @@
   "name": "MossdeepCity",
   "layout": "LAYOUT_MOSSDEEP_CITY",
   "music": "MUS_RUSTBORO",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_MOSSDEEP_CITY",
   "requires_flash": false,
   "weather": "WEATHER_SUNNY",
@@ -613,5 +612,6 @@
       "item": "ITEM_PSYCHIC_GEM",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_104_SUPER_POTION"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

@@ -406,3 +406,172 @@ bool8 CheckPartyForRegis(void)
     else
         return FALSE;
 }
+
+void DoBrailleGenesectEffect(void)
+{
+    MapGridSetMetatileIdAt(7 + MAP_OFFSET, 19 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_TopLeft);
+    MapGridSetMetatileIdAt(8 + MAP_OFFSET, 19 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_TopMid);
+    MapGridSetMetatileIdAt(9 + MAP_OFFSET, 19 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_TopRight);
+    MapGridSetMetatileIdAt(7 + MAP_OFFSET, 20 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_BottomLeft | MAPGRID_COLLISION_MASK);
+    MapGridSetMetatileIdAt(8 + MAP_OFFSET, 20 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_BottomMid);
+    MapGridSetMetatileIdAt(9 + MAP_OFFSET, 20 + MAP_OFFSET, METATILE_Cave_SealedChamberEntrance_BottomRight | MAPGRID_COLLISION_MASK);
+    DrawWholeMapView();
+    PlaySE(SE_BANG);
+    FlagSet(FLAG_GENESECT_PUZZLE);
+    UnlockPlayerFieldControls();
+    UnfreezeObjectEvents();
+}
+
+bool8 IsFireTypeInParty(void)
+{
+    u8 i;
+    enum Species species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gParties[B_TRAINER_PLAYER][i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        {
+            species = GetMonData(pokemon, MON_DATA_SPECIES);
+            if (GetSpeciesType(species, 0) == TYPE_FIRE || GetSpeciesType(species, 1) == TYPE_FIRE)
+            {
+                return TRUE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+bool8 IsIceTypeInParty(void)
+{
+    u8 i;
+    enum Species species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gParties[B_TRAINER_PLAYER][i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        {
+            species = GetMonData(pokemon, MON_DATA_SPECIES);
+            if (GetSpeciesType(species, 0) == TYPE_ICE || GetSpeciesType(species, 1) == TYPE_ICE)
+            {
+                return TRUE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+bool8 IsWaterTypeInParty(void)
+{
+    u8 i;
+    enum Species species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gParties[B_TRAINER_PLAYER][i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        {
+            species = GetMonData(pokemon, MON_DATA_SPECIES);
+            if (GetSpeciesType(species, 0) == TYPE_WATER || GetSpeciesType(species, 1) == TYPE_WATER)
+            {
+                return TRUE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+bool8 IsElectricTypeInParty(void)
+{
+    u8 i;
+    enum Species species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gParties[B_TRAINER_PLAYER][i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        {
+            species = GetMonData(pokemon, MON_DATA_SPECIES);
+            if (GetSpeciesType(species, 0) == TYPE_ELECTRIC || GetSpeciesType(species, 1) == TYPE_ELECTRIC)
+            {
+                return TRUE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+bool8 IsBugTypeInParty(void)
+{
+    u8 i;
+    enum Species species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gParties[B_TRAINER_PLAYER][i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        {
+            species = GetMonData(pokemon, MON_DATA_SPECIES);
+            if (GetSpeciesType(species, 0) == TYPE_BUG || GetSpeciesType(species, 1) == TYPE_BUG)
+            {
+                return TRUE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+bool8 IsSteelTypeInParty(void)
+{
+    u8 i;
+    enum Species species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gParties[B_TRAINER_PLAYER][i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        {
+            species = GetMonData(pokemon, MON_DATA_SPECIES);
+            if (GetSpeciesType(species, 0) == TYPE_STEEL || GetSpeciesType(species, 1) == TYPE_STEEL)
+            {
+                return TRUE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+bool8 IsNormalTypeInParty(void)
+{
+    u8 i;
+    enum Species species;
+    struct Pokemon *pokemon;
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        pokemon = &gParties[B_TRAINER_PLAYER][i];
+        if (GetMonData(pokemon, MON_DATA_SANITY_HAS_SPECIES) && !GetMonData(pokemon, MON_DATA_IS_EGG))
+        {
+            species = GetMonData(pokemon, MON_DATA_SPECIES);
+            if (GetSpeciesType(species, 0) == TYPE_NORMAL || GetSpeciesType(species, 1) == TYPE_NORMAL)
+            {
+                return TRUE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+bool8 ShouldAwakenGenesect(void)
+{
+    if (IsFireTypeInParty() == TRUE
+        && IsWaterTypeInParty() == TRUE
+        && IsIceTypeInParty() == TRUE
+        && IsElectricTypeInParty() == TRUE
+        && IsBugTypeInParty() == TRUE
+        && IsSteelTypeInParty() == TRUE
+        && IsNormalTypeInParty() == TRUE)
+        return TRUE;
+    else
+        return FALSE;
+}

@@ -9804,6 +9804,26 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/EmeraldVillaHouse/border.bin",
       "blockdata_filepath": "data/layouts/EmeraldVillaHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_TOMB_OUTSIDE",
+      "name": "PetalburgTombOutside_Layout",
+      "width": 31,
+      "height": 31,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Rustboro",
+      "border_filepath": "data/layouts/PetalburgTombOutside/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgTombOutside/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_TOMB_INSIDE",
+      "name": "PetalburgTombInside_Layout",
+      "width": 17,
+      "height": 33,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/PetalburgTombInside/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgTombInside/map.bin"
     }
   ]
 }

@@ -130,6 +130,21 @@ AncientTomb_Braille_ShineInTheMiddle:
 	.braille "WILL, SHINE\n"
 	.braille "IN THE MIDDLE.$"
 
+Petalburg_Tomb_Braille:
+	brailleformat 5, 0, 25, 19, 8, 3
+	.braille "TO AWAKEN THE\n"
+	.braille "ANCIENT INSECT\n"
+	.braille "FORGE AN IRON\n"
+	.braille "BOND WITH THE\n"
+	.braille "BUGS AND BRING\n"
+	.braille "EVERY ELEMENT.$"
+
+Select_Drive_Braille:
+	brailleformat 5, 0, 25, 19, 8, 3
+	.braille "CHOOSE ONE\n"
+	.braille "BURN, CHILL,\n"
+	.braille "DOUSE, SHOCK.$"
+
 @ FRLG
 Braille_Text_Up::
 	brailleformat 3, 0, 25, 19, 6, 3

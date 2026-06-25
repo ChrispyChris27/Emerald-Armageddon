@@ -11426,7 +11426,7 @@ Music: Intense
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Silvally @ Fighting Memory
+Silvally Fighting @ Fighting Memory
 Level: 51
 Ability: RKS System
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -11483,7 +11483,7 @@ Pic: Battle Girl
 Gender: Female
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Sawk @ Choice Band
 Level: 51
