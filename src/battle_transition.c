@@ -116,6 +116,8 @@ static void Task_Magma(u8);
 static void Task_Regice(u8);
 static void Task_Registeel(u8);
 static void Task_Regirock(u8);
+static void Task_Regieleki(u8);
+static void Task_Regidrago(u8);
 static void Task_Kyogre(u8);
 static void Task_Groudon(u8);
 static void Task_Rayquaza(u8);
@@ -170,9 +172,13 @@ static bool8 Cynthia_Init(struct Task *);
 static bool8 Cynthia_SetGfx(struct Task *);
 static bool8 FramesCountdown(struct Task *);
 static bool8 Regi_Init(struct Task *);
+static bool8 Regieleki_Init(struct Task *);
+static bool8 Regidrago_Init(struct Task *);
 static bool8 Regice_SetGfx(struct Task *);
 static bool8 Registeel_SetGfx(struct Task *);
 static bool8 Regirock_SetGfx(struct Task *);
+static bool8 Regieleki_SetGfx(struct Task *);
+static bool8 Regidrago_SetGfx(struct Task *);
 static bool8 WeatherTrio_BgFadeBlack(struct Task *);
 static bool8 WeatherTrio_WaitFade(struct Task *);
 static bool8 Kyogre_Init(struct Task *);
@@ -352,6 +358,12 @@ static const u32 sCyrus_Tilemap[] = INCBIN_U32("graphics/battle_transitions/cyru
 static const u16 sCynthia_Palette[] = INCBIN_U16("graphics/battle_transitions/cynthia.gbapal");
 static const u32 sCynthia_Tileset[] = INCBIN_U32("graphics/battle_transitions/cynthia.4bpp.lz");
 static const u32 sCynthia_Tilemap[] = INCBIN_U32("graphics/battle_transitions/cynthia.bin.lz");
+static const u32 sRegieleki_Tileset[] = INCGFX_U32("graphics/battle_transitions/regieleki.png", ".4bpp", "-num_tiles 14 -Wnum_tiles");
+static const u32 sRegieleki_Tilemap[] = INCBIN_U32("graphics/battle_transitions/regieleki.bin");
+static const u16 sRegieleki_Palette[] = INCGFX_U16("graphics/battle_transitions/regieleki.pal", ".gbapal");
+static const u32 sRegidrago_Tileset[] = INCGFX_U32("graphics/battle_transitions/regidrago.png", ".4bpp", "-num_tiles 14 -Wnum_tiles");
+static const u32 sRegidrago_Tilemap[] = INCBIN_U32("graphics/battle_transitions/regidrago.bin");
+static const u16 sRegidrago_Palette[] = INCGFX_U16("graphics/battle_transitions/regidrago.pal", ".gbapal");  
 
 // All battle transitions use the same intro
 static const TaskFunc sTasks_Intro[B_TRANSITION_COUNT] =
@@ -404,6 +416,8 @@ static const TaskFunc sTasks_Main[B_TRANSITION_COUNT] =
     [B_TRANSITION_ROCKET] = Task_Rocket,
     [B_TRANSITION_CYRUS] = Task_Cyrus,
     [B_TRANSITION_CYNTHIA] = Task_Cynthia,
+    [B_TRANSITION_REGIELEKI] = Task_Regieleki,
+    [B_TRANSITION_REGIDRAGO] = Task_Regidrago,
 };
 
 static const TransitionStateFunc sTaskHandlers[] =
@@ -485,6 +499,26 @@ static const TransitionStateFunc sCynthia_Funcs[] =
     PatternWeave_Blend2,
     PatternWeave_FinishAppear,
     FramesCountdown,
+    PatternWeave_CircularMask
+};
+
+static const TransitionStateFunc sRegieleki_Funcs[] =
+{
+    Regieleki_Init,
+    Regieleki_SetGfx,
+    PatternWeave_Blend1,
+    PatternWeave_Blend2,
+    PatternWeave_FinishAppear,
+    PatternWeave_CircularMask
+};
+
+static const TransitionStateFunc sRegidrago_Funcs[] =
+{
+    Regidrago_Init,
+    Regidrago_SetGfx,
+    PatternWeave_Blend1,
+    PatternWeave_Blend2,
+    PatternWeave_FinishAppear,
     PatternWeave_CircularMask
 };
 
@@ -1402,6 +1436,16 @@ static void Task_Cynthia(u8 taskId)
     while (sCynthia_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
 }
 
+static void Task_Regieleki(u8 taskId)
+{
+    while (sRegieleki_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
+}
+
+static void Task_Regidrago(u8 taskId)
+{
+    while (sRegidrago_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
+}
+
 static void Task_Regice(u8 taskId)
 {
     while (sRegice_Funcs[gTasks[taskId].tState](&gTasks[taskId]));
@@ -1536,6 +1580,34 @@ static bool8 Regi_Init(struct Task *task)
     return FALSE;
 }
 
+static bool8 Regieleki_Init(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    task->tEndDelay = 60;
+    InitPatternWeaveTransition(task);
+    GetBg0TilesDst(&tilemap, &tileset);
+    CpuFill16(0, tilemap, BG_SCREEN_SIZE);
+    CpuCopy16(sRegieleki_Tileset, tileset, 0x2000);
+
+    task->tState++;
+    return FALSE;
+}
+
+static bool8 Regidrago_Init(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    task->tEndDelay = 60;
+    InitPatternWeaveTransition(task);
+    GetBg0TilesDst(&tilemap, &tileset);
+    CpuFill16(0, tilemap, BG_SCREEN_SIZE);
+    CpuCopy16(sRegidrago_Tileset, tileset, 0x2000);
+
+    task->tState++;
+    return FALSE;
+}
+
 static bool8 BigPokeball_Init(struct Task *task)
 {
     u16 *tilemap, *tileset;
@@ -1624,6 +1696,32 @@ static bool8 Cynthia_SetGfx(struct Task *task)
 
     GetBg0TilesDst(&tilemap, &tileset);
     LZ77UnCompVram(sCynthia_Tilemap, tilemap);
+    SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
+
+    task->tState++;
+    return FALSE;
+}
+
+static bool8 Regieleki_SetGfx(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    GetBg0TilesDst(&tilemap, &tileset);
+    LoadPalette(sRegieleki_Palette, BG_PLTT_ID(15), sizeof(sRegieleki_Palette));
+    CpuCopy16(sRegieleki_Tilemap, tilemap, 0x500);
+    SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
+
+    task->tState++;
+    return FALSE;
+}
+
+static bool8 Regidrago_SetGfx(struct Task *task)
+{
+    u16 *tilemap, *tileset;
+
+    GetBg0TilesDst(&tilemap, &tileset);
+    LoadPalette(sRegidrago_Palette, BG_PLTT_ID(15), sizeof(sRegidrago_Palette));
+    CpuCopy16(sRegidrago_Tilemap, tilemap, 0x500);
     SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
 
     task->tState++;
