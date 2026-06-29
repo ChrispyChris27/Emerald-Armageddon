@@ -18078,7 +18078,7 @@
             .lvl = 54,
             .ball = POKEBALL_COUNT,
 #line 7206
-            .nature = NATURE_HASTY,
+            .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 7207

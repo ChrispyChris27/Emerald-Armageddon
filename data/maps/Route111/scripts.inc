@@ -598,9 +598,9 @@ Route111_Text_VictoriaPostBattle:
 	.string "This one's really strong!$"
 
 Route111_Text_ViviIntro:
-	.string "You're stronger than Mommy? Wow!\p"
-	.string "But I'm strong, too!\n"
-	.string "Really! Honestly!$"
+	.string "My name is Vivi Winstrate!\p"
+	.string "You beat my father!\n"
+	.string "Prepare to lose!$"
 
 Route111_Text_ViviDefeat:
 	.string "Huh? Did I just lose?$"

@@ -901,7 +901,7 @@ MagnezoneCalmedText:
 	.string "Now that you've calmed Magnezone\n"
 	.string "down, the energy surges are gone.\p"
 	.string "I've got something to give you once\n"
-	.string "you've rid New Mauville of Team Magma.\p"
+	.string "you rid New Mauville of Team Magma.\p"
 	.string "Once you've taken care of them I'll\n"
 	.string "meet you east of Mauville City.\p"
 	.string "Take care {PLAYER}{KUN}!\p"
@@ -931,7 +931,7 @@ MegaAbsol_Defeated::
 	clearflag FLAG_SMART_WILD
 	clearflag FLAG_NO_RUN_WILD
 	clearflag FLAG_NO_CATCH_WILD
-	setflag FLAG_TOTEM_MAGNEZONE
+	setflag FLAG_TOTEM_ABSOL_MEGA
 	setvar VAR_ROGUE_STATE, 2 
 	fadescreenswapbuffers FADE_TO_BLACK
 	removeobject LOCALID_ROGUE_ABSOL
