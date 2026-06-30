@@ -24580,26 +24580,41 @@ Nature: Hardy
 === TRAINER_MAUVILLE_GRUNT_1 ===
 Name: Grunt
 Class: Team Magma
-Pic: Magma Grunt M
-Gender: Male
+Pic: Magma Grunt F
+Gender: Female
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Skitty
-Level: 33
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Torkoal @ Quick Claw
+Level: 54
+Ability: White Smoke
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Quiet
+- Eruption
+- Explosion
+- Heat Wave
+- Body Press
 
-Mightyena
-Level: 33
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Claydol @ Weakness Policy
+Level: 54
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Lumina Crash
+- Explosion
+- Earth Power
+- Body Press
 
-Linoone
-Level: 33
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Skuntank @ Focus Band
+Level: 54
+Ability: Aftermath
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Gunk Shot
+- Explosion
+- Crunch
+- Pursuit
 
 === TRAINER_MAUVILLE_GRUNT_2 ===
 Name: Grunt
@@ -24608,22 +24623,37 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Electrike
-Level: 37
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Gengar @ Focus Sash
+Level: 54
+Ability: Cursed Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shadow Ball
+- Sludge Bomb
+- Thunderbolt
+- Destiny Bond
 
-Manectric
-Level: 37
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Ceruledge @ Scope Lens
+Level: 54
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Shadow Claw
+- Bitter Blade
+- Psycho Cut
+- X Scissor
 
-Loudred
-Level: 37
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Dusknoir @ Punching Glove
+Level: 54
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shadow Punch
+- Drain Punch
+- Ice Punch
+- Thunder Punch
 
 === TRAINER_MAUVILLE_GRUNT_3 ===
 Name: Grunt
