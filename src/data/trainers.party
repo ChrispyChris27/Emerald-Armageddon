@@ -24655,72 +24655,54 @@ Nature: Timid
 - Ice Punch
 - Thunder Punch
 
-=== TRAINER_MAUVILLE_GRUNT_3 ===
-Name: Grunt
-Class: Team Magma
-Pic: Magma Grunt M
-Gender: Male
-Music: Magma
-Battle Type: Singles
-AI: Check Bad Move
-
-Manectric
-Level: 39
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
-
-Manectric
-Level: 39
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
-
-Loudred
-Level: 39
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
-
-=== TRAINER_MAUVILLE_GRUNT_4 ===
-Name: Grunt
-Class: Team Magma
-Pic: Magma Grunt F
-Gender: Male
-Music: Magma
-Battle Type: Singles
-AI: Check Bad Move
-
-Manectric
-Level: 41
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
-
-Manectric
-Level: 41
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
-
-Exploud
-Level: 41
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
-
 === TRAINER_MAUVILLE_GRUNT_5 ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
-Gender: Male
+Gender: Female
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Geodude
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Camerupt @ Quick Claw
+Level: 54
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Quiet
+- Stealth Rock
+- Explosion
+- Heat Wave
+- Earth Power
 
-Numel
-Level: 26
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Golem @ Custap Berry
+Level: 54
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Explosion
+- Earthquake
+- Heat Crash
+
+Turtonator @ White Herb
+Level: 54
+Ability: Shell Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Shell Smash
+- Dragon Pulse
+- Flamethrower
+- Explosion
+
+Kleavor @ Scope Lens
+Level: 54
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Axe
+- X Scissor
+- Aqua Cutter
+- Swords Dance
 
 === TRAINER_MAUVILLE_GRUNT_6 ===
 Name: Grunt
@@ -24729,22 +24711,125 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+
+Arcanine @ Brightpowder
+Level: 54
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Flare Blitz
+- Wild Charge
+- Play Rough
+- Extremespeed
+
+Grimmsnarl @ Red Card
+Level: 54
+Ability: Pickpocket
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- False Surrender
+- Spirit Break
+- Drain Punch
+- Power Up Punch
+
+Armaldo @ Scope Lens
+Level: 54
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- X Scissor
+- Stone Edge
+- Aqua Cutter
+- Swords Dance
+
+Falinks @ Weakness Policy
+Level: 54
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- No Retreat
+- Drain Punch
+- Power Trip
+- Poison Jab
+
+Weezing @ Focus Band
+Level: 54
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Sludge Bomb
+- Dark Pulse
+- Misty Explosion
+- Flamethrower
+
+=== TRAINER_MAUVILLE_GRUNT_3 ===
+Name: Grunt
+Class: Team Magma
+Pic: Magma Grunt F
+Gender: Male
+Music: Magma
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+
+Torkoal @ Quick Claw
+Level: 54
+Ability: Drought
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Flare Blitz
+- Stone Edge
+- High Horsepower
+- Curse
+
+Victreebel @ Brightpowder
+Level: 54
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Solar Blade
+- Gunk Shot
+- Weather Ball
+- Growth
+
+Incineroar @ Assault Vest
+Level: 54
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Flare Blitz
+- Darkest Lariat
+- Fake Out
+- Thunderpunch
+
+=== TRAINER_MAUVILLE_GRUNT_4 ===
+Name: Grunt
+Class: Team Magma
+Pic: Magma Grunt M
+Gender: Male
+Music: Magma
+Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Machop
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Cherrim @ Focus sash
+Level: 54
+Ability: Flower Gift
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Weather Ball
+- Solar Blade
+- Pollen Puff
+- Helping Hand
 
-Numel
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
-
-Graveler
-Level: 28
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Stonjourner @ Assault Vest
+Level: 54
+Ability: Power Spot
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- High Horsepower
+- Heat Crash
+- Body Press
 
 === TRAINER_MAUVILLE_GRUNT_7 ===
 Name: Grunt
@@ -24794,7 +24879,7 @@ Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
-=== TRAINER_MAUVILLE_GRUNT_9 ===
+=== TRAINER_TRICK_HOUSE_PLACEHOLDER1 ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt F
@@ -24818,7 +24903,7 @@ Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
-=== TRAINER_MAUVILLE_GRUNT_10 ===
+=== TRAINER_TRICK_HOUSE_PLACEHOLDER2 ===
 Name: Grunt
 Class: Team Magma
 Pic: Magma Grunt M

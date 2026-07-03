@@ -333,28 +333,6 @@ NewMauville_Inside_Text_Grunt8Post:
 	.string "Get lost!\p"
 	.string "I have nothing to say to you!$"
 
-NewMauville_Inside_Text_Grunt9Intro:
-	.string "How'd you get all the way back here?$"
-
-NewMauville_Inside_Text_Grunt9Defeat:
-	.string "This isn't good!$"
-
-NewMauville_Inside_Text_Grunt9Post:
-	.string "You may have made it this far, but\n"
-	.string "you won't make it any further back!$"
-
-NewMauville_Inside_Text_Grunt10Intro:
-	.string "You must be strong to have made it\n"
-	.string "this far, but you won't be getting\l"
-	.string "any further!$"
-
-NewMauville_Inside_Text_Grunt10Defeat:
-	.string "You were stronger than I thought!$"
-
-NewMauville_Inside_Text_Grunt10Post:
-	.string "Your strength is impressive but not\n"
-	.string "enough to stop us all!$"
-
 NewMauville_Inside_Text_Grunt11Intro:
 	.string "We aren't done with the generator yet!$"
 
@@ -481,16 +459,6 @@ NewMauville_Inside_EventScript_Grunt7::
 NewMauville_Inside_EventScript_Grunt8::
 	trainerbattle_single TRAINER_MAUVILLE_GRUNT_8, NewMauville_Inside_Text_Grunt8Intro, NewMauville_Inside_Text_Grunt8Defeat
 	msgbox NewMauville_Inside_Text_Grunt8Post, MSGBOX_AUTOCLOSE
-	end
-
-NewMauville_Inside_EventScript_Grunt9::
-	trainerbattle_single TRAINER_MAUVILLE_GRUNT_9, NewMauville_Inside_Text_Grunt9Intro, NewMauville_Inside_Text_Grunt9Defeat
-	msgbox NewMauville_Inside_Text_Grunt9Post, MSGBOX_AUTOCLOSE
-	end
-
-NewMauville_Inside_EventScript_Grunt10::
-	trainerbattle_single TRAINER_MAUVILLE_GRUNT_10, NewMauville_Inside_Text_Grunt10Intro, NewMauville_Inside_Text_Grunt10Defeat
-	msgbox NewMauville_Inside_Text_Grunt10Post, MSGBOX_AUTOCLOSE
 	end
 
 NewMauville_Inside_EventScript_Grunt11::
