@@ -5212,13 +5212,13 @@
 #line 2147
         .trainerName = _("VINCENT"),
 #line 2148
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 2149
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
 #line 2150
         .gender = TRAINER_GENDER_MALE,
 #line 2151
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 2152
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 2153
@@ -5275,13 +5275,13 @@
 #line 2171
         .trainerName = _("LEROY"),
 #line 2172
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 2173
-        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
 #line 2174
         .gender = TRAINER_GENDER_MALE,
 #line 2175
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 2176
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 2177
@@ -6589,13 +6589,13 @@
 #line 2692
         .trainerName = _("KEIRA"),
 #line 2693
-        .trainerClass = TRAINER_CLASS_COOLTRAINER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 2694
-        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
+        .trainerPic = TRAINER_PIC_LASS,
 #line 2695
         .gender = TRAINER_GENDER_FEMALE,
 #line 2696
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 2697
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 2698
@@ -7322,13 +7322,13 @@
 #line 2975
         .trainerName = _("PATRICIA"),
 #line 2976
-        .trainerClass = TRAINER_CLASS_HEX_MANIAC,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 2977
-        .trainerPic = TRAINER_PIC_HEX_MANIAC,
+        .trainerPic = TRAINER_PIC_LASS,
 #line 2978
         .gender = TRAINER_GENDER_FEMALE,
 #line 2979
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 2980
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 2981
@@ -11830,13 +11830,13 @@
 #line 4726
         .trainerName = _("YUJI"),
 #line 4727
-        .trainerClass = TRAINER_CLASS_BLACK_BELT,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 4728
-        .trainerPic = TRAINER_PIC_BLACK_BELT,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
 #line 4729
         .gender = TRAINER_GENDER_MALE,
 #line 4730
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 4731
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 4732
@@ -14138,13 +14138,13 @@
 #line 5649
         .trainerName = _("JUSTIN"),
 #line 5650
-        .trainerClass = TRAINER_CLASS_CAMPER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 5651
-        .trainerPic = TRAINER_PIC_CAMPER,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
 #line 5652
         .gender = TRAINER_GENDER_MALE,
 #line 5653
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 5654
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 5655
@@ -15733,13 +15733,13 @@
 #line 6268
         .trainerName = _("JOSHUA"),
 #line 6269
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 6270
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
 #line 6271
         .gender = TRAINER_GENDER_MALE,
 #line 6272
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 6273
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 6274
@@ -16412,13 +16412,13 @@
 #line 6533
         .trainerName = _("ALEXIS"),
 #line 6534
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 6535
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
 #line 6536
         .gender = TRAINER_GENDER_FEMALE,
 #line 6537
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 6538
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 6539
@@ -19142,13 +19142,13 @@
 #line 7637
         .trainerName = _("TED"),
 #line 7638
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 7639
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
 #line 7640
         .gender = TRAINER_GENDER_MALE,
 #line 7641
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 7642
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 7643
@@ -19179,13 +19179,13 @@
 #line 7651
         .trainerName = _("PAUL"),
 #line 7652
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 7653
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
 #line 7654
         .gender = TRAINER_GENDER_MALE,
 #line 7655
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 7656
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 7657
@@ -19575,13 +19575,13 @@
 #line 7805
         .trainerName = _("GEORGIA"),
 #line 7806
-        .trainerClass = TRAINER_CLASS_SCHOOL_KID,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 7807
-        .trainerPic = TRAINER_PIC_SCHOOL_KID_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
 #line 7808
         .gender = TRAINER_GENDER_FEMALE,
 #line 7809
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 7810
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 7811
@@ -23068,9 +23068,9 @@
 #line 9185
         .trainerName = _("EDDIE"),
 #line 9186
-        .trainerClass = TRAINER_CLASS_YOUNGSTER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 9187
-        .trainerPic = TRAINER_PIC_YOUNGSTER,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
 #line 9188
         .gender = TRAINER_GENDER_MALE,
 #line 9189
@@ -27635,9 +27635,9 @@
 #line 10971
         .trainerName = _("BENNY"),
 #line 10972
-        .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 10973
-        .trainerPic = TRAINER_PIC_BIRD_KEEPER,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
 #line 10974
         .gender = TRAINER_GENDER_MALE,
 #line 10975
@@ -29117,13 +29117,13 @@
 #line 11558
         .trainerName = _("CORA"),
 #line 11559
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 11560
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_LASS,
 #line 11561
         .gender = TRAINER_GENDER_FEMALE,
 #line 11562
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 11563
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 11564
@@ -29154,13 +29154,13 @@
 #line 11572
         .trainerName = _("PAULA"),
 #line 11573
-        .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 11574
-        .trainerPic = TRAINER_PIC_BATTLE_GIRL,
+        .trainerPic = TRAINER_PIC_LASS,
 #line 11575
         .gender = TRAINER_GENDER_FEMALE,
 #line 11576
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 11577
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 11578
@@ -31798,13 +31798,13 @@
 #line 12614
         .trainerName = _("MARTHA"),
 #line 12615
-        .trainerClass = TRAINER_CLASS_PICNICKER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 12616
-        .trainerPic = TRAINER_PIC_PICNICKER,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
 #line 12617
         .gender = TRAINER_GENDER_FEMALE,
 #line 12618
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 12619
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 12620
@@ -38470,13 +38470,13 @@
 #line 15264
         .trainerName = _("SEBASTIAN"),
 #line 15265
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 15266
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_M,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
 #line 15267
         .gender = TRAINER_GENDER_MALE,
 #line 15268
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 15269
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 15270
@@ -38781,13 +38781,13 @@
 #line 15382
         .trainerName = _("SOPHIA"),
 #line 15383
-        .trainerClass = TRAINER_CLASS_PKMN_RANGER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 15384
-        .trainerPic = TRAINER_PIC_POKEMON_RANGER_F,
+        .trainerPic = TRAINER_PIC_LASS,
 #line 15385
         .gender = TRAINER_GENDER_FEMALE,
 #line 15386
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 15387
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 15388
@@ -43116,13 +43116,13 @@
 #line 17115
         .trainerName = _("SALLY"),
 #line 17116
-        .trainerClass = TRAINER_CLASS_LASS,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 17117
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
 #line 17118
         .gender = TRAINER_GENDER_FEMALE,
 #line 17119
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 17120
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17121
@@ -43153,13 +43153,13 @@
 #line 17129
         .trainerName = _("ROBIN"),
 #line 17130
-        .trainerClass = TRAINER_CLASS_LASS,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 17131
-        .trainerPic = TRAINER_PIC_LASS,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
 #line 17132
         .gender = TRAINER_GENDER_FEMALE,
 #line 17133
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 17134
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17135
@@ -44554,13 +44554,13 @@
 #line 17686
         .trainerName = _("ALAN"),
 #line 17687
-        .trainerClass = TRAINER_CLASS_HIKER,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 17688
-        .trainerPic = TRAINER_PIC_HIKER,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
 #line 17689
         .gender = TRAINER_GENDER_MALE,
 #line 17690
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 17691
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 17692
@@ -62482,18 +62482,18 @@
         },
     },
 #line 24882
-    [DIFFICULTY_NORMAL][TRAINER_TRICK_HOUSE_PLACEHOLDER1] =
+    [DIFFICULTY_NORMAL][TRAINER_EMILY] =
     {
 #line 24883
-        .trainerName = _("Grunt"),
+        .trainerName = _("Emily"),
 #line 24884
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 24885
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
 #line 24886
-        .gender = TRAINER_GENDER_MALE,
+        .gender = TRAINER_GENDER_FEMALE,
 #line 24887
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 24888
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 24889
@@ -62545,18 +62545,18 @@
         },
     },
 #line 24906
-    [DIFFICULTY_NORMAL][TRAINER_TRICK_HOUSE_PLACEHOLDER2] =
+    [DIFFICULTY_NORMAL][TRAINER_EMMA] =
     {
 #line 24907
-        .trainerName = _("Grunt"),
+        .trainerName = _("Emma"),
 #line 24908
-        .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 24909
-        .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_F,
 #line 24910
-        .gender = TRAINER_GENDER_MALE,
+        .gender = TRAINER_GENDER_FEMALE,
 #line 24911
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 24912
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 24913
@@ -63068,13 +63068,13 @@
 #line 25110
         .trainerName = _("MARIELA"),
 #line 25111
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 25112
-        .trainerPic = TRAINER_PIC_PSYCHIC_F,
+        .trainerPic = TRAINER_PIC_LASS,
 #line 25113
         .gender = TRAINER_GENDER_FEMALE,
 #line 25114
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
 #line 25115
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 0
@@ -63103,13 +63103,13 @@
 #line 25123
         .trainerName = _("ALVARO"),
 #line 25124
-        .trainerClass = TRAINER_CLASS_PSYCHIC,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 25125
-        .trainerPic = TRAINER_PIC_PSYCHIC_M,
+        .trainerPic = TRAINER_PIC_COOLTRAINER_M,
 #line 25126
         .gender = TRAINER_GENDER_MALE,
 #line 25127
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
 #line 25128
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 0
@@ -63151,13 +63151,13 @@
 #line 25141
         .trainerName = _("EVERETT"),
 #line 25142
-        .trainerClass = TRAINER_CLASS_GENTLEMAN,
+        .trainerClass = TRAINER_CLASS_QUIZZER,
 #line 25143
-        .trainerPic = TRAINER_PIC_GENTLEMAN,
+        .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
 #line 25144
         .gender = TRAINER_GENDER_MALE,
 #line 25145
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_RICH,
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
 #line 25146
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 0

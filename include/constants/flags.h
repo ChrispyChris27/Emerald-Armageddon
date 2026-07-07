@@ -1110,7 +1110,7 @@
 #define FLAG_ITEM_ROUTE_104_POKE_BALL                               0x421
 #define FLAG_ITEM_PETALBURG_WOODS_ETHER                             0x422
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE                    0x423
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_1_ORANGE_MAIL                  0x424
+#define FLAG_ITEM_UNUSED_FORMER_ORANGE_MAIL                                0x424
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_HARBOR_MAIL                  0x425
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_2_WAVE_MAIL                    0x426
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_3_SHADOW_MAIL                  0x427

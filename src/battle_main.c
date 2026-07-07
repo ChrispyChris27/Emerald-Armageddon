@@ -353,6 +353,7 @@ const struct TrainerClass gTrainerClasses[TRAINER_CLASS_COUNT] =
     [TRAINER_CLASS_LOREKEEPER_EMERALD] = { _("Lorekeeper"), 4, BALL_ULTRA},
     [TRAINER_CLASS_LOREKEEPER_RUBY] = { _("Lorekeeper"), 4, BALL_ULTRA},
     [TRAINER_CLASS_LOREKEEPER_SAPPHIRE] = { _("Lorekeeper"), 4, BALL_ULTRA},
+    [TRAINER_CLASS_QUIZZER] = {_("Quizzer"), 3},
     [TRAINER_CLASS_MAGMA_ADMIN] = { _("Magma Admin"), 10 },
     [TRAINER_CLASS_RIVAL] = { _("{PKMN} Trainer"), 15 },
     [TRAINER_CLASS_BUG_CATCHER] = { _("Bug Catcher"), 4 },

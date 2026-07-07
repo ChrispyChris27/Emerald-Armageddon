@@ -2145,10 +2145,10 @@ Nature: Hardy
 
 === TRAINER_VINCENT ===
 Name: VINCENT
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Quizzer
+Pic: School Kid M
 Gender: Male
-Music: Cool
+Music: Male
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -2169,10 +2169,10 @@ Nature: Hardy
 
 === TRAINER_LEROY ===
 Name: LEROY
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Quizzer
+Pic: School Kid M
 Gender: Male
-Music: Cool
+Music: Male
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -2690,10 +2690,10 @@ Nature: Hardy
 
 === TRAINER_KEIRA ===
 Name: KEIRA
-Class: Cooltrainer
-Pic: Cooltrainer F
+Class: Quizzer
+Pic: Lass
 Gender: Female
-Music: Cool
+Music: Female
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint
 
@@ -2973,10 +2973,10 @@ Nature: Hardy
 
 === TRAINER_PATRICIA ===
 Name: PATRICIA
-Class: Hex Maniac
-Pic: Hex Maniac
+Class: Quizzer
+Pic: Lass
 Gender: Female
-Music: Suspicious
+Music: Female
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -4724,10 +4724,10 @@ Nature: Hardy
 
 === TRAINER_YUJI ===
 Name: YUJI
-Class: Black Belt
-Pic: Black Belt
+Class: Quizzer
+Pic: School Kid M
 Gender: Male
-Music: Intense
+Music: Male
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -5647,10 +5647,10 @@ Nature: Timid
 
 === TRAINER_JUSTIN ===
 Name: JUSTIN
-Class: Camper
-Pic: Camper
+Class: Quizzer
+Pic: Cooltrainer M
 Gender: Male
-Music: Male
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -6266,10 +6266,10 @@ Nature: Hardy
 
 === TRAINER_JOSHUA ===
 Name: JOSHUA
-Class: Psychic
-Pic: Psychic M
+Class: Quizzer
+Pic: Cooltrainer M
 Gender: Male
-Music: Intense
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -6531,10 +6531,10 @@ Nature: Hardy
 
 === TRAINER_ALEXIS ===
 Name: ALEXIS
-Class: Psychic
-Pic: Psychic F
+Class: Quizzer
+Pic: Cooltrainer F
 Gender: Female
-Music: Intense
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -7635,10 +7635,10 @@ Nature: Jolly
 
 === TRAINER_TED ===
 Name: TED
-Class: School Kid
-Pic: School Kid M
+Class: Quizzer
+Pic: Cooltrainer M
 Gender: Male
-Music: Male
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -7649,10 +7649,10 @@ Nature: Hardy
 
 === TRAINER_PAUL ===
 Name: PAUL
-Class: School Kid
-Pic: School Kid M
+Class: Quizzer
+Pic: Cooltrainer M
 Gender: Male
-Music: Male
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -7803,10 +7803,10 @@ Nature: Timid
 
 === TRAINER_GEORGIA ===
 Name: GEORGIA
-Class: School Kid
-Pic: School Kid F
+Class: Quizzer
+Pic: Cooltrainer F
 Gender: Female
-Music: Girl
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -9183,8 +9183,8 @@ Nature: Hardy
 
 === TRAINER_EDDIE ===
 Name: EDDIE
-Class: Youngster
-Pic: Youngster
+Class: Quizzer
+Pic: School Kid M
 Gender: Male
 Music: Male
 Battle Type: Singles
@@ -10969,8 +10969,8 @@ Nature: Hardy
 
 === TRAINER_BENNY ===
 Name: BENNY
-Class: Bird Keeper
-Pic: Bird Keeper
+Class: Quizzer
+Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
@@ -11556,10 +11556,10 @@ Nature: Hardy
 
 === TRAINER_CORA ===
 Name: CORA
-Class: Battle Girl
-Pic: Battle Girl
+Class: Quizzer
+Pic: Lass
 Gender: Female
-Music: Intense
+Music: Female
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -11570,10 +11570,10 @@ Nature: Hardy
 
 === TRAINER_PAULA ===
 Name: PAULA
-Class: Battle Girl
-Pic: Battle Girl
+Class: Quizzer
+Pic: Lass
 Gender: Female
-Music: Intense
+Music: Female
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -12612,10 +12612,10 @@ Nature: Jolly
 
 === TRAINER_MARTHA ===
 Name: MARTHA
-Class: Picnicker
-Pic: Picnicker
+Class: Quizzer
+Pic: Cooltrainer F
 Gender: Female
-Music: Girl
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -15262,10 +15262,10 @@ Nature: Hardy
 
 === TRAINER_SEBASTIAN ===
 Name: SEBASTIAN
-Class: Pkmn Ranger
-Pic: Pokemon Ranger M
+Class: Quizzer
+Pic: School Kid M
 Gender: Male
-Music: Cool
+Music: Male
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -15380,10 +15380,10 @@ Nature: Hardy
 
 === TRAINER_SOPHIA ===
 Name: SOPHIA
-Class: Pkmn Ranger
-Pic: Pokemon Ranger F
+Class: Quizzer
+Pic: Lass
 Gender: Female
-Music: Cool
+Music: Female
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -17113,10 +17113,10 @@ Nature: Hardy
 
 === TRAINER_SALLY ===
 Name: SALLY
-Class: Lass
-Pic: Lass
+Class: Quizzer
+Pic: Cooltrainer F
 Gender: Female
-Music: Female
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -17127,10 +17127,10 @@ Nature: Hardy
 
 === TRAINER_ROBIN ===
 Name: ROBIN
-Class: Lass
-Pic: Lass
+Class: Quizzer
+Pic: Cooltrainer F
 Gender: Female
-Music: Female
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -17684,10 +17684,10 @@ Nature: Jolly
 
 === TRAINER_ALAN ===
 Name: ALAN
-Class: Hiker
-Pic: Hiker
+Class: Quizzer
+Pic: Cooltrainer M
 Gender: Male
-Music: Hiker
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -24879,12 +24879,12 @@ Level: 33
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
-=== TRAINER_TRICK_HOUSE_PLACEHOLDER1 ===
-Name: Grunt
-Class: Team Magma
-Pic: Magma Grunt F
-Gender: Male
-Music: Magma
+=== TRAINER_EMILY ===
+Name: Emily
+Class: Quizzer
+Pic: Cooltrainer F
+Gender: Female
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -24903,12 +24903,12 @@ Level: 31
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
-=== TRAINER_TRICK_HOUSE_PLACEHOLDER2 ===
-Name: Grunt
-Class: Team Magma
-Pic: Magma Grunt M
-Gender: Male
-Music: Magma
+=== TRAINER_EMMA ===
+Name: Emma
+Class: Quizzer
+Pic: Cooltrainer F
+Gender: Female
+Music: Cool
 Battle Type: Singles
 AI: Check Bad Move
 
@@ -25108,10 +25108,10 @@ Nature: Jolly
 
 === TRAINER_MARIELA ===
 Name: MARIELA
-Class: Psychic
-Pic: Psychic F
+Class: Quizzer
+Pic: Lass
 Gender: Female
-Music: Intense
+Music: Female
 Battle Type: Singles
 
 Chimecho
@@ -25121,10 +25121,10 @@ Nature: Hardy
 
 === TRAINER_ALVARO ===
 Name: ALVARO
-Class: Psychic
-Pic: Psychic M
+Class: Quizzer
+Pic: Cooltrainer M
 Gender: Male
-Music: Intense
+Music: Cool
 Battle Type: Singles
 
 Banette
@@ -25139,10 +25139,10 @@ Nature: Hardy
 
 === TRAINER_EVERETT ===
 Name: EVERETT
-Class: Gentleman
-Pic: Gentleman
+Class: Quizzer
+Pic: School Kid M
 Gender: Male
-Music: Rich
+Music: Male
 Battle Type: Singles
 
 Wobbuffet
