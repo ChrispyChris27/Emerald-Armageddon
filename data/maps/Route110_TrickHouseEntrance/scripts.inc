@@ -336,7 +336,7 @@ Route110_TrickHouseEntrance_EventScript_GiveReward::
 	end
 
 Route110_TrickHouseEntrance_EventScript_GivePuzzle1Reward::
-	giveitem ITEM_RARE_CANDY
+	giveitem ITEM_HEART_SCALE, 3
 	goto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward
 	call_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward, MSGBOX_DEFAULT
@@ -344,7 +344,7 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle1Reward::
 	end
 
 Route110_TrickHouseEntrance_EventScript_GivePuzzle2Reward::
-	giveitem ITEM_TIMER_BALL
+	giveitem ITEM_BOTTLE_CAP, 3
 	goto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward
 	call_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward, MSGBOX_DEFAULT
@@ -352,7 +352,7 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle2Reward::
 	end
 
 Route110_TrickHouseEntrance_EventScript_GivePuzzle3Reward::
-	giveitem ITEM_HARD_STONE
+	giveitem ITEM_ABILITY_CAPSULE, 3
 	goto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward
 	call_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward, MSGBOX_DEFAULT
@@ -360,7 +360,7 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle3Reward::
 	end
 
 Route110_TrickHouseEntrance_EventScript_GivePuzzle4Reward::
-	giveitem ITEM_SMOKE_BALL
+	giveitem ITEM_GOLURKITE
 	goto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward
 	call_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward, MSGBOX_DEFAULT
@@ -368,7 +368,7 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle4Reward::
 	end
 
 Route110_TrickHouseEntrance_EventScript_GivePuzzle5Reward::
-	giveitem ITEM_TM_TAUNT
+	giveitem ITEM_CHESNAUGHTITE
 	goto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward
 	call_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward, MSGBOX_DEFAULT
@@ -376,7 +376,7 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle5Reward::
 	end
 
 Route110_TrickHouseEntrance_EventScript_GivePuzzle6Reward::
-	giveitem ITEM_MAGNET
+	giveitem ITEM_DELPHOXITE
 	goto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward
 	call_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward, MSGBOX_DEFAULT
@@ -384,7 +384,7 @@ Route110_TrickHouseEntrance_EventScript_GivePuzzle6Reward::
 	end
 
 Route110_TrickHouseEntrance_EventScript_GivePuzzle7Reward::
-	giveitem ITEM_PP_MAX
+	giveitem ITEM_GRENINJITE
 	goto_if_eq VAR_RESULT, TRUE, Route110_TrickHouseEntrance_EventScript_GotReward
 	call_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward, MSGBOX_DEFAULT
@@ -417,11 +417,11 @@ Route110_TrickHouseEntrance_EventScript_ChooseTent::
 	goto Route110_TrickHouseEntrance_EventScript_GiveBlueTent
 
 Route110_TrickHouseEntrance_EventScript_GiveRedTent::
-	givedecoration DECOR_RED_TENT
+	giveitem ITEM_CHOICE_SPECS
 	return
 
 Route110_TrickHouseEntrance_EventScript_GiveBlueTent::
-	givedecoration DECOR_BLUE_TENT
+	giveitem ITEM_CHOICE_BAND
 	return
 
 Route110_TrickHouseEntrance_EventScript_ReceivedTent::
@@ -798,7 +798,7 @@ Route110_TrickHouseEntrance_Text_MechadollWhichTent:
 	.string "MECHADOLL 5 I AM!\n"
 	.string "IF REWARD IS NOT TAKEN BY YOU,\l"
 	.string "THEN QUIZ MASTER YOU CANNOT FOLLOW.\p"
-	.string "RED TENT OR BLUE TENT,\n"
+	.string "SUNGLASSES OR ARMBAND,\n"
 	.string "WHICH DO YOU PREFER?$"
 
 Route110_TrickHouseEntrance_Text_ThenFarewell:
@@ -842,7 +842,7 @@ Quiz_House_Continue_Text:
 	.string "later.$"
 
 Randomize_Quiz_House_Female_Battle_One::
-	subvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, 1
+	call_if_ne VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Reduce_Quiz_House_Prize_Amount
 	msgbox Quiz_House_Wrong_Answer_Text, MSGBOX_DEFAULT
 	random 6
 	switch VAR_RESULT
@@ -911,10 +911,12 @@ Quiz_House_Correct_Proceed::
 
 Quiz_House_Continue::
 	msgbox Quiz_House_Continue_Text, MSGBOX_NPC
+	applymovement VAR_LAST_TALKED, Common_Movement_FaceDown
+	waitmovement
 	end
 
 Randomize_Quiz_House_Male_Battle_One::
-	addvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, -1
+	call_if_ne VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Reduce_Quiz_House_Prize_Amount
 	msgbox Quiz_House_Wrong_Answer_Text, MSGBOX_DEFAULT
 	random 6
 	switch VAR_RESULT
@@ -974,4 +976,8 @@ Quiz_House_Battle_Sebastian::
 	waitmovement
 	releaseall
 	end
+
+Reduce_Quiz_House_Prize_Amount::
+	subvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, 1
+	return
 

@@ -475,8 +475,8 @@ static const struct MenuAction MultichoiceList_TourneyNoRecord[] =
 
 static const struct MenuAction MultichoiceList_Tent[] =
 {
-    {COMPOUND_STRING("RED TENT")},
-    {COMPOUND_STRING("BLUE TENT")},
+    {COMPOUND_STRING("Sunglasses")},
+    {COMPOUND_STRING("Arm Band")},
 };
 
 const u8 gText_TradeCenter[] = _("TRADE CENTER");

@@ -318,7 +318,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_RUBY_LK_OUTSIDE
 	setflag FLAG_EMERALD_LK_OUTSIDE
 	setflag FLAG_SAPPHIRE_LK_OUTSIDE
-	setvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, 12
+	setvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, 10
 	call EventScript_ResetAllBerries
 	end
 

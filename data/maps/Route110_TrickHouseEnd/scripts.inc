@@ -59,10 +59,14 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle1::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToPlantTrees, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_RARE_CANDY
+	giveitem ITEM_HEART_SCALE, 3
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
+	msgbox Quiz_House_Bonus_Prizes_Text, MSGBOX_DEFAULT
+	call_if_eq VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, NoBonus_Prize_Script
+	call_if_gt VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
+	
 	call Route110_TrickHouseEnd_EventScript_TrickMasterExit
 	release
 	end
@@ -71,7 +75,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle2::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToMakeMaze, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TIMER_BALL
+	giveitem ITEM_BOTTLE_CAP, 3
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -83,7 +87,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle3::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToPreparePanels, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_HARD_STONE
+	giveitem ITEM_ABILITY_CAPSULE, 3
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -95,7 +99,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle4::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToShoveBoulders, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_SMOKE_BALL
+	giveitem ITEM_GOLURKITE
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -107,7 +111,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle5::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_TM_TAUNT
+	giveitem ITEM_CHESNAUGHTITE
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -119,7 +123,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::
 	msgbox Route110_TrickHouseEnd_Text_AllNightToInstallDoors, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_MAGNET
+	giveitem ITEM_DELPHOXITE
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -131,7 +135,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle7::
 	msgbox Route110_TrickHouseEnd_Text_AllNightSettingUpArrows, MSGBOX_DEFAULT
 	msgbox Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward, MSGBOX_DEFAULT
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	giveitem ITEM_PP_MAX
+	giveitem ITEM_GRENINJITE
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
@@ -169,11 +173,11 @@ Route110_TrickHouseEnd_EventScript_ChooseTent::
 	goto Route110_TrickHouseEnd_EventScript_GiveBlueTent
 
 Route110_TrickHouseEnd_EventScript_GiveRedTent::
-	givedecoration DECOR_RED_TENT
+	giveitem ITEM_CHOICE_SPECS
 	return
 
 Route110_TrickHouseEnd_EventScript_GiveBlueTent::
-	givedecoration DECOR_BLUE_TENT
+	giveitem ITEM_CHOICE_BAND
 	return
 
 Route110_TrickHouseEnd_EventScript_TrickMasterExit::
@@ -184,6 +188,7 @@ Route110_TrickHouseEnd_EventScript_TrickMasterExit::
 	waitmovement 0
 	removeobject LOCALID_TRICK_MASTER_END
 	addvar VAR_TRICK_HOUSE_LEVEL, 1
+	setvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, 10
 	return
 
 Route110_TrickHouseEnd_EventScript_BagFull::
@@ -253,8 +258,6 @@ Route110_TrickHouseEnd_Text_YouveMadeItToMe:
 	.string "Hmmm… You're sharp!$"
 
 Route110_TrickHouseEnd_Text_AllNightToPlantTrees:
-	.string "It took me all night to plant all those\n"
-	.string "trees…\p"
 	.string "You're almost my equal in greatness by\n"
 	.string "one, two, three, four, five, six places!$"
 
@@ -315,7 +318,7 @@ Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent:
 	.string "that is myself, I demand that you take\l"
 	.string "this keepsake!\p"
 	.string "Actually there are two--\n"
-	.string "a RED TENT and a BLUE TENT.\l"
+	.string "sunglasses and an armband.\l"
 	.string "Which do you prefer?$"
 
 Route110_TrickHouseEnd_Text_NoRoomInPC:
@@ -353,4 +356,75 @@ Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou:
 Route110_TrickHouseEnd_Text_YoureIgnoringMe:
 	.string "Now, now! You're ignoring me now?\n"
 	.string "Now that, I consider heartbreaking!$"
+
+Quiz_House_Bonus_Prizes_Text:
+	.string "Let's see what bonus prizes you've\n"
+	.string "earned as well!$"
+
+No_Bonus_Prize_Text:
+	.string "Oh dear!\p"
+	.string "It seems you got too many questions\n"
+	.string "wrong to earn any bonus prizes.\p"
+	.string "Try to do better next time!$"
+
+NoBonus_Prize_Script::
+	msgbox No_Bonus_Prize_Text, MSGBOX_DEFAULT
+	return
+
+Give_Bonus_Prizes::
+	switch VAR_TRICK_HOUSE_LEVEL
+	case 0, GivePuzzle1Bonus
+	case 1, GivePuzzle2Bonus
+	case 2, GivePuzzle3Bonus
+	case 3, GivePuzzle4Bonus
+	case 4, GivePuzzle5Bonus
+	case 5, GivePuzzle6Bonus
+	case 6, GivePuzzle7Bonus
+	case 7, GivePuzzle8Bonus
+	return
+
+Reduce_Prize_Var_Amount::
+	subvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, 1
+	goto_if_ne VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
+	return
+
+GivePuzzle1Bonus::
+	randomelement ITEM_TM_POISON_JAB, ITEM_TM_X_SCISSOR, ITEM_TM_IRON_HEAD, ITEM_TM_SHADOW_CLAW
+	giveitem VAR_RESULT
+	goto Reduce_Prize_Var_Amount
+
+GivePuzzle2Bonus::
+	randomelement ITEM_TM_DISCHARGE, ITEM_TM_SCALD, ITEM_TM_SHADOW_BALL, ITEM_TM_LAVA_PLUME
+	giveitem VAR_RESULT
+	goto Reduce_Prize_Var_Amount
+
+GivePuzzle3Bonus::
+	randomelement ITEM_TM_DRILL_RUN, ITEM_TM_ROCK_SLIDE, ITEM_TM_EARTH_POWER, ITEM_TM_DRAGON_CLAW
+	giveitem VAR_RESULT
+	goto Reduce_Prize_Var_Amount
+
+GivePuzzle4Bonus::
+	randomelement ITEM_FIRE_GEM, ITEM_WATER_GEM, ITEM_GRASS_GEM, ITEM_ELECTRIC_GEM, ITEM_ICE_GEM
+	giveitem VAR_RESULT
+	goto Reduce_Prize_Var_Amount
+
+GivePuzzle5Bonus::
+	randomelement ITEM_GROUND_GEM, ITEM_ROCK_GEM, ITEM_STEEL_GEM, ITEM_FIGHTING_GEM, ITEM_FLYING_GEM, ITEM_POISON_GEM
+	giveitem VAR_RESULT
+	goto Reduce_Prize_Var_Amount
+
+GivePuzzle6Bonus::
+	randomelement ITEM_FAIRY_GEM, ITEM_DRAGON_GEM, ITEM_DARK_GEM, ITEM_PSYCHIC_GEM, ITEM_GHOST_GEM, ITEM_GHOST_GEM
+	giveitem VAR_RESULT
+	goto Reduce_Prize_Var_Amount
+
+GivePuzzle7Bonus::
+	randomelement ITEM_TM_FLIP_TURN, ITEM_TM_U_TURN, ITEM_TM_EARTHQUAKE, ITEM_TM_VOLT_SWITCH
+	giveitem VAR_RESULT
+	goto Reduce_Prize_Var_Amount
+
+GivePuzzle8Bonus::
+	randomelement ITEM_TM_WAVE_CRASH, ITEM_TM_LEAF_STORM, ITEM_TM_OVERHEAT, ITEM_TM_CLOSE_COMBAT
+	giveitem VAR_RESULT
+	goto Reduce_Prize_Var_Amount
 

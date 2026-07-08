@@ -230,7 +230,7 @@
       "elevation": 0,
       "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
       "var_value": "6",
-      "script": "First_Trick_House_Quiz_1"
+      "script": "First_Trick_House_Quiz_7"
     },
     {
       "type": "trigger",
@@ -239,7 +239,7 @@
       "elevation": 0,
       "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
       "var_value": "7",
-      "script": "First_Trick_House_Quiz_1"
+      "script": "First_Trick_House_Quiz_8"
     },
     {
       "type": "trigger",
@@ -248,7 +248,7 @@
       "elevation": 0,
       "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
       "var_value": "8",
-      "script": "First_Trick_House_Quiz_1"
+      "script": "First_Trick_House_Quiz_9"
     },
     {
       "type": "trigger",
@@ -257,7 +257,7 @@
       "elevation": 0,
       "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
       "var_value": "9",
-      "script": "First_Trick_House_Quiz_1"
+      "script": "First_Trick_House_Quiz_10"
     }
   ],
   "bg_events": [
