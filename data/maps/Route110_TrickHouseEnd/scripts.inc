@@ -77,6 +77,9 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle2::
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	giveitem ITEM_BOTTLE_CAP, 3
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
+	msgbox Quiz_House_Bonus_Prizes_Text, MSGBOX_DEFAULT
+	call_if_eq VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, NoBonus_Prize_Script
+	call_if_gt VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
 	call Route110_TrickHouseEnd_EventScript_TrickMasterExit
@@ -89,6 +92,9 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle3::
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	giveitem ITEM_ABILITY_CAPSULE, 3
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
+	msgbox Quiz_House_Bonus_Prizes_Text, MSGBOX_DEFAULT
+	call_if_eq VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, NoBonus_Prize_Script
+	call_if_gt VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
 	call Route110_TrickHouseEnd_EventScript_TrickMasterExit
@@ -101,6 +107,9 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle4::
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	giveitem ITEM_GOLURKITE
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
+	msgbox Quiz_House_Bonus_Prizes_Text, MSGBOX_DEFAULT
+	call_if_eq VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, NoBonus_Prize_Script
+	call_if_gt VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
 	call Route110_TrickHouseEnd_EventScript_TrickMasterExit
@@ -113,6 +122,9 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle5::
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	giveitem ITEM_CHESNAUGHTITE
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
+	msgbox Quiz_House_Bonus_Prizes_Text, MSGBOX_DEFAULT
+	call_if_eq VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, NoBonus_Prize_Script
+	call_if_gt VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
 	call Route110_TrickHouseEnd_EventScript_TrickMasterExit
@@ -125,6 +137,9 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle6::
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	giveitem ITEM_DELPHOXITE
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
+	msgbox Quiz_House_Bonus_Prizes_Text, MSGBOX_DEFAULT
+	call_if_eq VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, NoBonus_Prize_Script
+	call_if_gt VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
 	call Route110_TrickHouseEnd_EventScript_TrickMasterExit
@@ -137,6 +152,9 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle7::
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	giveitem ITEM_GRENINJITE
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_BagFull
+	msgbox Quiz_House_Bonus_Prizes_Text, MSGBOX_DEFAULT
+	call_if_eq VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, NoBonus_Prize_Script
+	call_if_gt VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
 	msgbox Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou, MSGBOX_DEFAULT
 	closemessage
 	call Route110_TrickHouseEnd_EventScript_TrickMasterExit
@@ -160,6 +178,9 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle8::
 	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
 	call Route110_TrickHouseEnd_EventScript_ChooseTent
 	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_NoRoomForTent
+	msgbox Quiz_House_Bonus_Prizes_Text, MSGBOX_DEFAULT
+	call_if_eq VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, NoBonus_Prize_Script
+	call_if_gt VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
 	msgbox Route110_TrickHouseEnd_Text_LeavingOnJourney, MSGBOX_DEFAULT
 	call Route110_TrickHouseEnd_EventScript_TrickMasterExit
 	special ResetTrickHouseNuggetFlag

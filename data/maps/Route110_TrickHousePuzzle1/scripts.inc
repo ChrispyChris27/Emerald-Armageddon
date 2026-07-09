@@ -36,7 +36,7 @@ First_TrickHousePuzzle1_Text:
 	.string "though, one of your prizes will be\l"
 	.string "taken away and you'll have to\l"
 	.string "fight a battle!\p"
-	.string "Todays theme is...\p"
+	.string "Today's theme is...\p"
 	.string "Basic Game Knowledge!\p"
 	.string "Here's your first question:\p"
 	.string "Which Regi is the first one\n"
