@@ -137,7 +137,7 @@ Second_TrickHousePuzzle3_Text:
 	.string "A gift from me!\n"
 	.string "Here's question three!\p"
 	.string "Which of these types is not\n"
-	.string "also an egg grooup?$"
+	.string "also an egg group?$"
 
 Quiz_2C_Option_1:
 	.string "Dragon$"
