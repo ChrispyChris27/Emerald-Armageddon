@@ -231,6 +231,96 @@
       "var": "VAR_TEMP_9",
       "var_value": "1",
       "script": "Route110_TrickHousePuzzle3_EventScript_Press_Button"
+    },
+    {
+      "type": "trigger",
+      "x": 7,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "20",
+      "script": "Third_Trick_House_Quiz_1"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "21",
+      "script": "Third_Trick_House_Quiz_2"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "22",
+      "script": "Third_Trick_House_Quiz_3"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 18,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "23",
+      "script": "Third_Trick_House_Quiz_4"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 15,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "24",
+      "script": "Third_Trick_House_Quiz_5"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "25",
+      "script": "Third_Trick_House_Quiz_6"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "26",
+      "script": "Third_Trick_House_Quiz_7"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "27",
+      "script": "Third_Trick_House_Quiz_8"
+    },
+    {
+      "type": "trigger",
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "28",
+      "script": "Third_Trick_House_Quiz_9"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 7,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "29",
+      "script": "Third_Trick_House_Quiz_10"
     }
   ],
   "bg_events": [
