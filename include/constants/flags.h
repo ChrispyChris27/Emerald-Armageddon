@@ -1115,7 +1115,7 @@
 #define FLAG_ITEM_UNUSED_FORMER_WAVE_MAIL                    0x426
 #define FLAG_ITEM_UNUSED_SHADOW_MAIL                  0x427
 #define FLAG_ITEM_UNUSED_WOOD_MAIL                    0x428
-#define FLAG_ITEM_TRICK_HOUSE_PUZZLE_4_MECH_MAIL                    0x429
+#define FLAG_ITEM_UNUSED_MECH_MAIL                    0x429
 #define FLAG_ITEM_ROUTE_124_YELLOW_SHARD                            0x42A
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_6_GLITTER_MAIL                 0x42B
 #define FLAG_ITEM_TRICK_HOUSE_PUZZLE_7_TROPIC_MAIL                  0x42C
