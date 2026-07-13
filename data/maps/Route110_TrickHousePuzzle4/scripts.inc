@@ -355,7 +355,7 @@ Quiz_4J_Option_1:
 	.string "Base PP of Splash$"
 
 Quiz_4J_Option_3:
-	.string "Damage of Hitmonchan's 'Special Punch'$"
+	.string "Damage of Hitmonchan's Special Punch$"
 
 Quiz_4J_Option_2:
 	.string "Catch rate of Reuniclus$"
