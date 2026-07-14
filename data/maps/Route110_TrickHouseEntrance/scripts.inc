@@ -981,3 +981,145 @@ Reduce_Quiz_House_Prize_Amount::
 	subvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, 1
 	return
 
+Randomize_Quiz_House_Female_Battle_Two::
+	call_if_ne VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Reduce_Quiz_House_Prize_Amount
+	msgbox Quiz_House_Wrong_Answer_Text, MSGBOX_DEFAULT
+	random 7
+	switch VAR_RESULT
+	case 0, Quiz_House_Battle_Alexis
+	case 1, Quiz_House_Battle_Georgia
+	case 2, Quiz_House_Battle_Martha
+	case 3, Quiz_House_Battle_Sally
+	case 4, Quiz_House_Battle_Robin
+	case 5, Quiz_House_Battle_Emma
+	case 6, Quiz_House_Battle_Emily
+	releaseall
+	end
+
+Randomize_Quiz_House_Male_Battle_Two::
+	call_if_ne VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Reduce_Quiz_House_Prize_Amount
+	msgbox Quiz_House_Wrong_Answer_Text, MSGBOX_DEFAULT
+	random 7
+	switch VAR_RESULT
+	case 0, Quiz_House_Battle_Justin
+	case 1, Quiz_House_Battle_Joshua
+	case 2, Quiz_House_Battle_Ted
+	case 3, Quiz_House_Battle_Paul
+	case 4, Quiz_House_Battle_Benny
+	case 5, Quiz_House_Battle_Alan
+	case 6, Quiz_House_Battle_Alvaro
+	releaseall
+	end
+
+Quiz_House_Battle_Justin::
+	cleartrainerflag TRAINER_JUSTIN
+	trainerbattle_no_intro TRAINER_JUSTIN, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Joshua::
+	cleartrainerflag TRAINER_JOSHUA
+	trainerbattle_no_intro TRAINER_JOSHUA, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Ted::
+	cleartrainerflag TRAINER_TED
+	trainerbattle_no_intro TRAINER_TED, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Paul::
+	cleartrainerflag TRAINER_PAUL
+	trainerbattle_no_intro TRAINER_PAUL, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Benny::
+	cleartrainerflag TRAINER_BENNY
+	trainerbattle_no_intro TRAINER_BENNY, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Alan::
+	cleartrainerflag TRAINER_ALAN
+	trainerbattle_no_intro TRAINER_ALAN, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Alvaro::
+	cleartrainerflag TRAINER_ALVARO
+	trainerbattle_no_intro TRAINER_ALVARO, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Alexis::
+	cleartrainerflag TRAINER_ALEXIS
+	trainerbattle_no_intro TRAINER_ALEXIS, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Georgia::
+	cleartrainerflag TRAINER_GEORGIA
+	trainerbattle_no_intro TRAINER_GEORGIA, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Martha::
+	cleartrainerflag TRAINER_MARTHA
+	trainerbattle_no_intro TRAINER_MARTHA, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Sally::
+	cleartrainerflag TRAINER_SALLY
+	trainerbattle_no_intro TRAINER_SALLY, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Robin::
+	cleartrainerflag TRAINER_ROBIN
+	trainerbattle_no_intro TRAINER_ROBIN, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Emma::
+	cleartrainerflag TRAINER_EMMA
+	trainerbattle_no_intro TRAINER_EMMA, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+	waitmovement
+	releaseall
+	end
+
+Quiz_House_Battle_Emily::
+	cleartrainerflag TRAINER_EMILY
+	trainerbattle_no_intro TRAINER_EMILY, Female_Quiz_Defeated
+	applymovement LOCALID_PLAYER, Common_Movement_WalkLeft
+	waitmovement
+	releaseall
+	end
+

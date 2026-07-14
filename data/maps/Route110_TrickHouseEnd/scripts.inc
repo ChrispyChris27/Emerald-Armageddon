@@ -294,14 +294,14 @@ Route110_TrickHouseEnd_Text_AllNightToPreparePanels:
 	.string "one, two, three, four places!$"
 
 Route110_TrickHouseEnd_Text_AllNightToShoveBoulders:
-	.string "It took me all night to shove in those\n"
-	.string "boulders…\p"
+	.string "It took me all night to make those\n"
+	.string "ledges…\p"
 	.string "You're almost my equal in greatness by\n"
 	.string "one, two, three places!$"
 
 Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls:
-	.string "It took me all night to make MECHADOLLS\n"
-	.string "and another to think up the quiz…\p"
+	.string "It took me all night to rip out\n"
+	.string "the floor…\p"
 	.string "You're almost my equal in greatness by\n"
 	.string "one, two places!$"
 
@@ -425,7 +425,7 @@ GivePuzzle3Bonus::
 	goto Reduce_Prize_Var_Amount
 
 GivePuzzle4Bonus::
-	randomelement ITEM_FIRE_GEM, ITEM_WATER_GEM, ITEM_GRASS_GEM, ITEM_ELECTRIC_GEM, ITEM_ICE_GEM
+	randomelement ITEM_FIRE_GEM, ITEM_WATER_GEM, ITEM_GRASS_GEM, ITEM_ELECTRIC_GEM, ITEM_ICE_GEM, ITEM_NORMAL_GEM
 	giveitem VAR_RESULT
 	goto Reduce_Prize_Var_Amount
 
@@ -435,7 +435,7 @@ GivePuzzle5Bonus::
 	goto Reduce_Prize_Var_Amount
 
 GivePuzzle6Bonus::
-	randomelement ITEM_FAIRY_GEM, ITEM_DRAGON_GEM, ITEM_DARK_GEM, ITEM_PSYCHIC_GEM, ITEM_GHOST_GEM, ITEM_GHOST_GEM
+	randomelement ITEM_FAIRY_GEM, ITEM_DRAGON_GEM, ITEM_DARK_GEM, ITEM_PSYCHIC_GEM, ITEM_GHOST_GEM, ITEM_BUG_GEM
 	giveitem VAR_RESULT
 	goto Reduce_Prize_Var_Amount
 
