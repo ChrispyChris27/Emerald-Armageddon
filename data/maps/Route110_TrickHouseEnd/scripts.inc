@@ -307,7 +307,7 @@ Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls:
 
 Route110_TrickHouseEnd_Text_AllNightToInstallDoors:
 	.string "It took me all night to install\n"
-	.string "the doors…\p"
+	.string "the gates…\p"
 	.string "You're almost my equal in greatness!$"
 
 Route110_TrickHouseEnd_Text_AllNightSettingUpArrows:
