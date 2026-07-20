@@ -6110,8 +6110,8 @@ bool32 ShouldFinalGambit(enum BattlerId battlerAtk, enum BattlerId battlerDef, b
 
 bool32 ShouldConsiderSelfSacrificeDamageEffect(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, bool32 aiIsFaster)
 {
-    if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_WILL_SUICIDE)
-        return TRUE;
+    if (!(gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_WILL_SUICIDE))
+        return FALSE;
     if (!IsDoubleBattle() && IsExplosionMove(move) && gAiLogicData->shouldConsiderExplosion)
         return TRUE;
     if (GetMoveEffect(move) == EFFECT_FINAL_GAMBIT)

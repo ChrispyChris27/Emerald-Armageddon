@@ -74,12 +74,12 @@
 #define SUCKER_PUNCH_CHANCE                                     50 // Chance for the AI to not use Sucker Punch if the player has a status move
 #define SUCKER_PUNCH_PREDICTION_CHANCE                          50 // Additional chance for the AI to not use Sucker Punch if actively predicting a status move if SUCKER_PUNCH_CHANCE fails
 #define PRIORITIZE_LAST_CHANCE_CHANCE                           50 // Chance the AI will prioritize Last Chance (priority move in the face of being outsped and KO'd) over Slow KO
-#define LAST_MON_PREFERS_NOT_SACRIFICE                          FALSE // Whether the AI will be hesitant to use self-sacrificing moves (Explosion, Final Gambit) with their last mon
-#define EXPLOSION_LOWER_HP_THRESHOLD                            10 // HP percentage at or beneath which the AI has a 90% chance to explode; otherwise scales between this and higher threshold
+#define LAST_MON_PREFERS_NOT_SACRIFICE                          TRUE // Whether the AI will be hesitant to use self-sacrificing moves (Explosion, Final Gambit) with their last mon
+#define EXPLOSION_LOWER_HP_THRESHOLD                            20 // HP percentage at or beneath which the AI has a 90% chance to explode; otherwise scales between this and higher threshold
 #define EXPLOSION_HIGHER_HP_THRESHOLD                           90 // HP percentage at or above which the AI has a 0% chance to explode; otherwise scales between this and lower threshold
-#define EXPLOSION_MINIMUM_CHANCE                                0 // Lowest possible percent chance of the AI using explosion based on its current HP
+#define EXPLOSION_MINIMUM_CHANCE                                5 // Lowest possible percent chance of the AI using explosion based on its current HP
 #define EXPLOSION_MAXIMUM_CHANCE                                90 // Highest possible percent chance of the AI using explosion based on its current HP
-#define FINAL_GAMBIT_CHANCE                                     50 // Chance for AI to consider using Final Gambit if it outspeeds the player and thinks it has more HP
+#define FINAL_GAMBIT_CHANCE                                     75 // Chance for AI to consider using Final Gambit if it outspeeds the player and thinks it has more HP
 #define SHOULD_PIVOT_BREAK_SASH_CHANCE                          50 // Chance for ShouldPivot to return true when trying to break Multiscale and Focus Sash type effects while having a good switchin
 #define FAKE_OUT_SAVE_ALLY_CHANCE                               50 // Chance for AI to Fake Out to save its ally when ally is fast KO'd by both opponents
 

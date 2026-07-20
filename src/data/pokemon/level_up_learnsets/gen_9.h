@@ -1184,6 +1184,7 @@ static const struct LevelUpMove sParasLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sParasectLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 0, MOVE_CRABHAMMER),
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_BUG_BITE),
     LEVEL_UP_MOVE( 1, MOVE_MEGA_DRAIN),

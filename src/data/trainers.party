@@ -24809,7 +24809,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Cherrim @ Focus sash
 Level: 54
@@ -24838,22 +24838,57 @@ Pic: Magma Grunt F
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Machop
-Level: 30
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Crustle @ Red Card
+Level: 54
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Earthquake
+- X-Scissor
+- Stealth Rock
 
-Numel
-Level: 30
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Zoroark @ Focus Band
+Level: 54
+Ability: Illusion
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Flamethrower
+- Night Daze
+- Nasty Plot
+- Focus Blast
 
-Graveler
-Level: 30
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Bewear @ Assault Vest
+Level: 54
+Ability: Fluffy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Drain Punch
+- Body Slam
+- Darkest Lariat
+- Rock Slide
+
+Garganacl @ Brightpowder
+Level: 54
+Ability: Purifying Salt
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Recover
+- Curse
+- Earthquake
+
+Delphox 
+Level: 54
+Ability: Magician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Flamethrower
+- Psyshock
+- Scorching Sands
+- Shadow Ball
 
 === TRAINER_MAUVILLE_GRUNT_8 ===
 Name: Grunt
@@ -24862,22 +24897,57 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Machoke
-Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Steelix @ Custap Berry
+Level: 54
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Iron Tail
+- Earthquake
+- Explosion
+- Stealth Rock
 
-Camerupt
-Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Mismagius @ Life Orb
+Level: 54
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shadow Ball
+- Dazzling Gleam
+- Nasty Plot
+- Destiny Bond
 
-Golem
-Level: 33
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Absol @ Scope Lens
+Level: 54
+Ability: Super Luck
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Night Slash
+- Psycho Cut
+- X Scissor
+- Swords Dance
+
+Heatmor @ Salac Berry
+Level: 54
+Ability: Gluttony
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Heat Wave
+- Giga Drain
+- Focus Blast
+- Scorching Sands
+
+Rhydon @ Quick Claw
+Level: 54
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Megahorn
+- Earthquake
+- Rock Slide
+- Double Edge
 
 === TRAINER_EMILY ===
 Name: Emily
