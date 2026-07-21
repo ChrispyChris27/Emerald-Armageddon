@@ -1142,7 +1142,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Collision Course
 - Flare Blitz
-- Dragon Rush
+- Dragon Claw
 - Iron Head
 
 Shiftry @ Focus Sash
@@ -1161,7 +1161,7 @@ Ability: Protosynthesis
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 - Crunch
-- Dragon Rush
+- Dragon Claw
 - Iron Head
 - Dragon Dance
 
@@ -1185,15 +1185,15 @@ Nature: Timid
 - Solarbeam
 - Earth Power
 
-Sceptile @ Sceptilite
+Emboar @ Emboarite
 Level: 58
-Ability: Overgrow
+Ability: Blaze
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Solarbeam
-- Dragon Pulse
-- Earth Power
-- Weather Ball
+Nature: Jolly
+- Drain Punch
+- Bulk Up
+- Flare Blitz
+- Thunderpunch
 
 === TRAINER_HIDEOUT_GRUNT_4 ===
 Name: Grunt
@@ -11863,7 +11863,7 @@ Nature: Jolly
 - Headlong Rush
 - Endeavor
 
-Heatran @ Air Balloon
+Heatran @ Heatranite
 Level: 73
 Ability: Flash Fire
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -17769,7 +17769,7 @@ Level: 43
 Ability: Shell Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
-- Wood Hammer
+- Seed Bomb
 - Earthquake
 - Stone Edge
 - Curse
@@ -25004,22 +25004,37 @@ Pic: Magma Grunt F
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Delcatty
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Camerupt @ Quick Claw
+Level: 54
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Heat Wave
+- Earthquake
+- Explosion
+- Stealth Rock
 
-Mightyena
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Claydol @ Quick Claw
+Level: 54
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Lumina Crash
+- Earthquake
+- Explosion
+- Recover
 
-Linoone
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Golem @ Quick Claw
+Level: 54
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Rock Slide
+- Earthquake
+- Explosion
+- Curse
 
 === TRAINER_MAUVILLE_GRUNT_12 ===
 Name: Grunt
@@ -25028,22 +25043,37 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Delcatty
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Drifblim @ Flame Orb
+Level: 54
+Ability: Flare Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Heat Wave
+- Ominous Wind
+- Air Slash
+- Tailwind
 
-Mightyena
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Beheeyem @ Life Orb
+Level: 54
+Ability: Telepathy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psyshock
+- Thunderbolt
+- Ally Switch
+- Shadow Ball
 
-Linoone
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Rotom @ Focus Sash
+Level: 54
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shadow Ball
+- Thunderbolt
+- Nasty Plot
+- Confuse Ray
 
 === TRAINER_MAUVILLE_GRUNT_13 ===
 Name: Grunt
@@ -25052,17 +25082,57 @@ Pic: Magma Grunt F
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wailmer
-Level: 34
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Drapion @ Air Balloon
+Level: 54
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Cross Poison
+- Night Slash
+- Toxic Spikes
+- Aqua Tail
 
-Horsea
-Level: 34
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Solrock @ Brightpowder
+Level: 54
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Explosion
+- Zen Headbutt
+- Earthquake
+
+Scovillain @ Focus Band
+Level: 54
+Ability: Moody
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Protect
+- Flamethrower
+- Energy Ball
+- Scorching Sands
+
+Runerigus @ Assault Vest
+Level: 54
+Ability: Wandering Spirit
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Spirit Shackle
+- Earthquake
+- Body Press
+- Stone Edge
+
+Scrafty @ Roseli Berry
+Level: 54
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Drain Punch
+- Crunch
+- Poison Jab
+- Dragon Dance
 
 === TRAINER_MAUVILLE_GRUNT_14 ===
 Name: Grunt
@@ -25071,22 +25141,57 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Luvdisc
-Level: 36
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Ninetales @ Life Orb
+Level: 54
+Ability: Drought
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Flamethrower
+- Solarbeam
+- Extrasensory
+- Scorching Sands
 
-Wailmer
-Level: 36
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Tangela @ Eviolite
+Level: 54
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Solarbeam
+- Ancientpower
+- Wring Out
 
-Seadra
-Level: 36
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Altaria @ Yache Berry
+Level: 54
+Ability: Natural Cure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Temper Flare
+- Dragon Dance
+- Dragon Claw
+- Dual Wingbeat
+
+Lunatone @ Focus Band
+Level: 54
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ancientpower
+- Solarbeam
+- Psychic
+- Weather Ball
+
+Honchkrow @ Scope Lens
+Level: 54
+Ability: Super Luck
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dark Pulse
+- Esper Wing
+- Heat Wave
+- Air Cutter
 
 === TRAINER_AQUA_PYRE_1 ===
 Name: Grunt
