@@ -3837,7 +3837,7 @@ const struct SpeciesInfo gSpeciesInfoGen7[] =
         )
         .levelUpLearnset = sSteeneeLevelUpLearnset,
         .teachableLearnset = sSteeneeTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_TSAREENA, CONDITIONS({IF_KNOWS_MOVE, MOVE_STOMP})}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 32, SPECIES_TSAREENA}),
     },
 
     [SPECIES_TSAREENA] =
