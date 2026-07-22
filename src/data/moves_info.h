@@ -3560,8 +3560,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Launches sharp spikes that\n"
             "strike 2 to 5 times."),
         .effect = EFFECT_HIT,
-        .power = 20,
-        .type = TYPE_NORMAL,
+        .power = 25,
+        .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 15,
         .target = TARGET_SELECTED,
@@ -3813,8 +3813,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Hurls round objects at the\n"
             "foe 2 to 5 times."),
         .effect = EFFECT_HIT,
-        .power = 15,
-        .type = TYPE_NORMAL,
+        .power = 25,
+        .type = TYPE_PSYCHIC,
         .accuracy = 100,
         .pp = 20,
         .target = TARGET_SELECTED,

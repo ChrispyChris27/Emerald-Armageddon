@@ -9688,37 +9688,102 @@ Nature: Jolly
 - Toxic
 
 === TRAINER_BARNY ===
-Name: BARNY
+Name: Barny
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Tentacool
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Omastar @ Rindo Berry
+Level: 57
+Ability: Weak Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Ice Beam
+- Earth Power
+- Shell Smash
 
-Carvanha
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Blastoise @ Wacan Berry
+Level: 57
+Ability: Shell Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Aqua Tail
+- Ice Spinner
+- Earthquake
+- Shell Smash
+
+Barbaracle @ Wide Lens
+Level: 57
+Ability: Tough Claws
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Liquidation
+- Stone Edge
+- Cross Chop
+- Shell Smash
+
+Cloyster @ King's Rock
+Level: 57
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Spear
+- Spike Cannon
+- Rock Blast
+- Shell Smash
 
 === TRAINER_WADE ===
-Name: WADE
+Name: Wade
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
 Music: Hiker
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Tentacool
-Level: 16
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Pelipper @ Wacan Berry
+Level: 57
+Ability: Drizzle
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Hurricane
+- Nature Power
+- Ice Beam
+
+Whimsicott @ Focus Sash
+Level: 57
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Energy Ball
+- Moonblast
+- Nature Power
+- Sleep Powder
+
+Lumineon @ Rindo Berry
+Level: 57
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Ice Beam
+- Nature Power
+- Silver Wind
+
+Ludicolo @ Life Orb
+Level: 57
+Ability: Storm Drain
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Ice Beam
+- Nature Power
+- Giga Drain
 
 === TRAINER_CARTER ===
 Name: CARTER
