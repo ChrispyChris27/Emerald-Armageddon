@@ -2710,9 +2710,9 @@
             .moves = {
 #line 1143
                 MOVE_COLLISION_COURSE,
-                MOVE_FLARE_BLITZ,
+                MOVE_TEMPER_FLARE,
                 MOVE_DRAGON_CLAW,
-                MOVE_IRON_HEAD,
+                MOVE_WILD_CHARGE,
             },
             },
             {
@@ -2753,7 +2753,7 @@
             .lvl = 58,
             .ball = POKEBALL_COUNT,
 #line 1162
-            .nature = NATURE_ADAMANT,
+            .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 1163
@@ -2765,26 +2765,26 @@
             },
             {
 #line 1168
-            .species = SPECIES_CINDERACE,
+            .species = SPECIES_SCREAM_TAIL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 1168
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_LEFTOVERS,
 #line 1171
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 1170
-            .ability = ABILITY_LIBERO,
+            .ability = ABILITY_PROTOSYNTHESIS,
 #line 1169
             .lvl = 58,
             .ball = POKEBALL_COUNT,
 #line 1172
-            .nature = NATURE_JOLLY,
+            .nature = NATURE_BOLD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 1173
-                MOVE_PYRO_BALL,
-                MOVE_SWORDS_DANCE,
-                MOVE_GUNK_SHOT,
-                MOVE_SOLAR_BLADE,
+                MOVE_FLAMETHROWER,
+                MOVE_CALM_MIND,
+                MOVE_SUBSTITUTE,
+                MOVE_DRAINING_KISS,
             },
             },
             {

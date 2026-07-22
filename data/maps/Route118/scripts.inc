@@ -281,7 +281,7 @@ Route118_Text_StevenMega:
 	.string "That Mega Ring allows certain species\n"
 	.string "of pokémon to transform into a more\l"
 	.string "powerful form in battle.\p"
-	.string "The pokémon you intend to mga evolve\n"
+	.string "The pokémon you intend to mega evolve\n"
 	.string "also needs to be holding its mega stone.\p"
 	.string "You will likely encounter some of these\n"
 	.string "stones throughout your travels, but\l"

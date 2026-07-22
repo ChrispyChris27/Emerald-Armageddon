@@ -1141,9 +1141,9 @@ Ability: Orichalcum Pulse
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Collision Course
-- Flare Blitz
+- Temper Flare
 - Dragon Claw
-- Iron Head
+- Wild Charge
 
 Shiftry @ Focus Sash
 Level: 58
@@ -1159,21 +1159,21 @@ Roaring Moon @ Life Orb
 Level: 58
 Ability: Protosynthesis
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
+Nature: Jolly
 - Crunch
 - Dragon Claw
 - Iron Head
 - Dragon Dance
 
-Cinderace @ Life Orb
+Scream Tail @ Leftovers
 Level: 58
-Ability: Libero
+Ability: Protosynthesis
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Jolly
-- Pyro Ball
-- Swords Dance
-- Gunk Shot
-- Solar Blade
+Nature: Bold
+- Flamethrower
+- Calm Mind
+- Substitute
+- Draining Kiss
 
 Heatran @ Air Balloon
 Level: 58
