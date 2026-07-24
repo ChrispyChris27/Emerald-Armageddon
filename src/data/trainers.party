@@ -10863,12 +10863,47 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wingull
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Talonflame @ Focus Sash
+Level: 57
+Ability: Gale Wings
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Air Slash
+- Heat Wave
+- Tailwind
+- U Turn
+
+Noivern @ Yache Berry
+Level: 57
+Ability: Aerilate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Boomburst
+- Heat Wave
+- Dragon Pulse
+- Focus Blast
+
+Unfezant @ Scope Lens
+Level: 57
+Ability: Super Luck
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Drill Peck
+- Aqua Cutter
+- Night Slash
+- Drill Run
+
+Decidueye @ Leftovers
+Level: 57
+Ability: Overgrow
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Leaf Blade
+- Spirit Shackle
+- Brave Bird
+- Substitute
 
 === TRAINER_HUGH ===
 Name: HUGH
@@ -11063,17 +11098,47 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Taillow
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Skarmory @ Custap Berry
+Level: 57
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Iron Head
+- Tailwind
+- Dual Wingbeat
 
-Swellow
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Dodrio @ Scope Lens
+Level: 57
+Ability: Tangled Feet
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Swords Dance
+- Drill Peck
+- Drill Run
+- Pursuit
+
+Beautifly @ Focus Sash
+Level: 57
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Quiver Dance
+- Bug Buzz
+- Hurricane
+- Ominous Wind
+
+Decidueye Hisui @ Coba Berry
+Level: 57
+Ability: Scrappy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Leaf Blade
+- Triple Arrows
+- Rock Slide
+- Brave Bird
 
 === TRAINER_ROBERT_2 ===
 Name: ROBERT
@@ -19845,27 +19910,47 @@ Pic: Fisherman
 Gender: Male
 Music: Hiker
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Magikarp
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Relicanth @ Rindo Berry
+Level: 57
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Head Smash
+- Wave Crash
+- Earthquake
 
-Tentacool
-Level: 20
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Lanturn @ Air Balloon
+Level: 57
+Ability: Volt Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Thunder
+- Ice Beam
+- Soak
 
-Feebas
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Poliwrath @ Life Orb
+Level: 57
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Liquidation
+- Belly Drum
+- Ice Punch
+- Drain Punch
 
-Carvanha
-Level: 23
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Wishiwashi @ Sitrus Berry
+Level: 57
+Ability: Schooling
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Aqua Tail
+- Earthquake
+- Ice Spinner
+- Aqua Ring
 
 === TRAINER_DAWSON ===
 Name: DAWSON

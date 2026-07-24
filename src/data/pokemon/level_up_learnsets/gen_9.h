@@ -18825,7 +18825,7 @@ static const struct LevelUpMove sInteleonLevelUpLearnset[] = {
 
 #if P_FAMILY_SKWOVET
 static const struct LevelUpMove sSkwovetLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_TAIL_SLAP),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 3, MOVE_BRUTAL_SWING),
     LEVEL_UP_MOVE( 6, MOVE_BULLET_SEED),
@@ -18843,7 +18843,7 @@ static const struct LevelUpMove sSkwovetLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sGreedentLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_TACKLE),
+    LEVEL_UP_MOVE( 1, MOVE_TAIL_SLAP),
     LEVEL_UP_MOVE( 1, MOVE_TAIL_WHIP),
     LEVEL_UP_MOVE( 3, MOVE_BRUTAL_SWING),
     LEVEL_UP_MOVE( 6, MOVE_BULLET_SEED),
