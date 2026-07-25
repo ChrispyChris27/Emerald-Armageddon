@@ -10906,37 +10906,92 @@ Nature: Jolly
 - Substitute
 
 === TRAINER_HUGH ===
-Name: HUGH
+Name: Hugh
 Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wingull
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Swanna @ Electric Seed
+Level: 57
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Scald
+- Ice Beam
+- Tailwind
 
-Tropius
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Gyarados @ Life Orb
+Level: 57
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Scald
+- Ice Beam
+- Thunder
+
+Mantine @ Wise Glasses
+Level: 57
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Hydro Pump
+- Ice Beam
+- Earth Power
 
 === TRAINER_PHIL ===
 Name: PHIL
-Class: Bird Keeper
-Pic: Bird Keeper
+Class: Kindler
+Pic: Kindler
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Swellow
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Crobat @ Flying Gem
+Level: 57
+Ability: Infiltrator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Hurricane
+- Sludge Bomb
+- U Turn
+- Weather Ball
+
+Veluza @ Scope Lens
+Level: 57
+Ability: Surge Surfer
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Aqua Cutter
+- Psycho Cut
+- Night Slash
+- Drill Run
+
+Bellibolt @ Electric Seed
+Level: 57
+Ability: Electromorphosis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Rising Voltage
+- Muddy Water
+- Soak
+- Slack Off
+
+Pelipper @ Wacan Berry
+Level: 57
+Ability: Rain Dish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Hurricane
+- Ice Beam
+- Roost
 
 === TRAINER_JARED ===
 Name: JARED
@@ -11270,17 +11325,47 @@ Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Ninjask
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Frosmoth @ Focus Sash
+Level: 57
+Ability: Ice Scales
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Bug Buzz
+- Ice Beam
+- Sticky Web
+- Hurricane
 
-Koffing
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Shiftry @ Tanga Berry
+Level: 57
+Ability: Leaf Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Dark Pulse
+- Weather Ball
+- Energy Ball
+
+Politoed @ Life Orb
+Level: 57
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Ice Beam
+- Earth Power
+- Perish Song
+
+Gothitelle @ Leftovers
+Level: 57
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Substitute
+- Calm Mind
+- Weather Ball
+- Psyshock
 
 === TRAINER_DIANNE ===
 Name: DIANNE
@@ -15353,18 +15438,33 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
 === TRAINER_JACKSON_1 ===
-Name: JACKSON
+Name: Jackson
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Breloom
-Level: 27
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Luxray @ Air Balloon
+Level: 57
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Howl
+- Wild Charge
+- Crunch
+- Ice Fang
+
+Lucario @ Focus Sash
+Level: 57
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Howl
+- Meteor Mash
+- Close Combat
+- Thunderpunch
 
 === TRAINER_LORENZO ===
 Name: LORENZO
@@ -15466,23 +15566,33 @@ IVs: 10 HP / 10 Atk / 10 Def / 10 SpA / 10 SpD / 10 Spe
 Nature: Hardy
 
 === TRAINER_CATHERINE_1 ===
-Name: CATHERINE
+Name: Catherine
 Class: Pkmn Ranger
 Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Gloom
-Level: 26
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Manectric @ Air Balloon
+Level: 57
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Howl
+- Wild Charge
+- Play Rough
+- Ice Fang
 
-Roselia
-Level: 26
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Boltund @ Air Balloon
+Level: 57
+Ability: Strong Jaw
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Psychic Fangs
+- Thunder Fang
+- Howl
+- Ice Fang
 
 === TRAINER_JENNA ===
 Name: JENNA
@@ -18414,58 +18524,89 @@ Nature: Jolly
 - Play Rough
 
 === TRAINER_HIDEO ===
-Name: HIDEO
+Name: Kiwi
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Koffing
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Tackle
-- Self Destruct
-- Sludge
-- Smokescreen
+Drifblim @ Electric Seed
+Level: 57
+Ability: Unburden
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Shadow Ball
+- Hurricane
+- Weather Ball
+- Thunder
 
-Koffing
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Tackle
-- Poison Gas
-- Sludge
-- Smokescreen
+Oranguru @ Leftovers
+Level: 57
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Calm Mind
+- Psyshock
+- Thunder
+- Hyper Voice
+
+Simipour @ Wacan Berry
+Level: 57
+Ability: Torrent
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Ice Punch
+- Thunderpunch
+- Rock Slide
+
+Wigglytuff @ Throat Spray
+Level: 57
+Ability: Cute Charm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hyper Voice
+- Alluring Voice
+- Psychic Noise
+- Thunder
 
 === TRAINER_KEIGO ===
-Name: KEIGO
+Name: Keigo
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
-Battle Type: Singles
-AI: Check Bad Move / Try To Faint
+Battle Type: Doubles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Koffing
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Poison Gas
-- Self Destruct
-- Sludge
-- Smokescreen
+Muk Alola @ Air Balloon
+Level: 57
+Ability: Power of Alchemy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Crunch
+- Poison Jab
+- Seed Bomb
+- Protect
 
-Ninjask
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Sand Attack
-- Double Team
-- Fury Cutter
-- Swords Dance
+Shedinja @ Sticky Barb
+Level: 57
+Ability: Wonder Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Final Gambit
+
+Passimian @ Leftovers
+Level: 57
+Ability: Receiver
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Coaching
+- Drain Punch
+- Darkest Lariat
+- Rock Slide
 
 === TRAINER_RILEY ===
 Name: RILEY
@@ -19924,7 +20065,7 @@ Nature: Jolly
 
 Lanturn @ Air Balloon
 Level: 57
-Ability: Volt Absorb
+Ability: Surge Surfer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Hydro Pump
@@ -21970,37 +22111,92 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_DAYTON ===
-Name: DAYTON
+Name: Dayton
 Class: Kindler
 Pic: Kindler
 Gender: Male
 Music: Hiker
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Slugma
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Pincurchin @ Air Balloon
+Level: 57
+Ability: Lightning Rod
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Zing Zap
+- Liquidation
+- Spikes
+- Sucker Punch
 
-Numel
-Level: 25
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Rhyperior @ Focus Sash
+Level: 57
+Ability: Lightning Rod
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Earthquake
+- Stone Edge
+- Megahorn
+- Thunderpunch
+
+Raichu Alola @ Electric Gem
+Level: 57
+Ability: Lightning Rod
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Rising Voltage
+- Psychic
+- Grass Knot
+- Focus Blast
 
 === TRAINER_RACHEL ===
-Name: RACHEL
+Name: Rachel
 Class: Parasol Lady
 Pic: Parasol Lady
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Goldeen
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Qwilfish @ Focus Sash
+Level: 57
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Aqua Tail
+- Poison Jab
+- Spikes
+- Explosion
+
+Electrode Hisui @ Petaya Berry
+Level: 57
+Ability: Aftermath
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Rising Voltage
+- Energy Ball
+- Weather Ball
+- Charge Beam
+
+Vanilluxe @ Assault Vest
+Level: 57
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Ice Beam
+- Freeze Dry
+- Weather Ball
+- Explosion
+
+Drampa @ Electric Seed
+Level: 57
+Ability: Surge Surfer
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dragon Pulse
+- Hurricane
+- Weather Ball
+- Thunder
 
 === TRAINER_LEONEL ===
 Name: LEONEL
