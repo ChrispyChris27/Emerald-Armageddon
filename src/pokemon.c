@@ -4374,6 +4374,10 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
             if (MonKnowsMove(mon, params[i].arg1))
                 currentCondition = TRUE;
             break;
+        case IF_ABILITY:
+            if (GetMonAbility(mon) == params[i].arg1)
+                currentCondition = TRUE;
+            break;
         // Gen 5
         case IF_TRADE_PARTNER_SPECIES:
             if (params[i].arg1 == partnerSpecies && partnerHoldEffect != HOLD_EFFECT_PREVENT_EVOLVE)

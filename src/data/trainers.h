@@ -24535,7 +24535,7 @@
 #line 9781
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 9780
-            .ability = ABILITY_STORM_DRAIN,
+            .ability = ABILITY_SWIFT_SWIM,
 #line 9779
             .lvl = 57,
             .ball = POKEBALL_COUNT,

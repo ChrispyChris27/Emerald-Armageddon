@@ -5444,7 +5444,7 @@
               {
                 "min_level": 75,
                 "max_level": 75,
-                "species": "SPECIES_WEEZING_GALAR"
+                "species": "SPECIES_WEEZING"
               },
               {
                 "min_level": 75,
@@ -6190,12 +6190,12 @@
               {
                 "min_level": 80,
                 "max_level": 80,
-                "species": "SPECIES_QUAGSIRE"
+                "species": "SPECIES_TOXAPEX"
               },
               {
                 "min_level": 80,
                 "max_level": 80,
-                "species": "SPECIES_CLODSIRE"
+                "species": "SPECIES_DRAGALGE"
               },
               {
                 "min_level": 80,
@@ -6220,7 +6220,7 @@
               {
                 "min_level": 80,
                 "max_level": 80,
-                "species": "SPECIES_WEEZING_GALAR"
+                "species": "SPECIES_CLODSIRE"
               },
               {
                 "min_level": 80,
@@ -14343,7 +14343,7 @@
               {
                 "min_level": 5,
                 "max_level": 5,
-                "species": "SPECIES_WEEZING_GALAR"
+                "species": "SPECIES_CLEFABLE"
               },
               {
                 "min_level": 5,

@@ -6669,6 +6669,9 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, enum Species species
                     StringAppend(gStringVar4, COMPOUND_STRING("knows "));
                     StringAppend(gStringVar4, GetMoveName(evolutions[i].params[j].arg1));
                     break;
+                case IF_ABILITY:
+                    StringAppend(gStringVar4, COMPOUND_STRING("has Levitate"));
+                    break;        
                 // Gen 5
                 case IF_TRADE_PARTNER_SPECIES:
                     StringAppend(gStringVar4, COMPOUND_STRING("traded with "));
