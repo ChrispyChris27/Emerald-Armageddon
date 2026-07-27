@@ -799,25 +799,15 @@ Music: Aqua
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Tapu Fini @ Leftovers
+Ninjask @ Focus Sash
 Level: 61
-Ability: Misty Surge
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Moonblast
-- Hydro Pump
-- Ice Beam
-- Grass Knot
-
-Xerneas @ Power Herb
-Level: 61
-Ability: Fairy Aura
+Ability: Speed Boost
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- Moonblast
-- Focus Blast
-- Psychic
-- Geomancy
+- Silver Wind
+- Air Slash
+- Baton Pass
+- Protect
 
 Shaymin Sky @ Yache Berry
 Level: 61
@@ -827,37 +817,47 @@ Nature: Timid
 - Seed Flare
 - Air Slash
 - Earth Power
-- Nature Power
+- Ominous Wind
 
-Drifblim @ Misty Seed
+Lapras @ Leftovers
 Level: 61
-Ability: Unburden
+Ability: Serene Grace
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Naughty
-- Acrobatics
-- Explosion
-- Shadow Ball
-- Heat Wave
+Nature: Timid
+- Muddy Water
+- Ice Beam
+- Tri Attack
+- Ancientpower
 
-Cetitan @ Life Orb
+Meloetta Aria @ Life Orb
 Level: 61
-Ability: Sheer Force
+Ability: Serene Grace
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Icicle Crash
-- Play Rough
-- Earthquake
+Nature: Timid
+- Tri Attack
+- Psychic
+- Ancientpower
+- Thunderbolt
+
+Togekiss @ Assault Vest
+Level: 61
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ancientpower
+- Tri Attack
+- Draining Kiss
+- Air Slash
+
+Starmie @ Starminite
+Level: 83
+Ability: Natural Cure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
 - Liquidation
-
-Blastoise @ Blastoisinite
-Level: 61
-Ability: Torrent
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Water Pulse
-- Terrain Pulse
-- Aura Sphere
-- Dark Pulse
+- Zen Headbutt
+- Meteor Mash
+- Selfdestruct
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
 Name: Shelly
@@ -868,7 +868,17 @@ Music: Aqua
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Lugia @ Leftovers
+Tapu Fini @ Leftovers
+Level: 61
+Ability: Misty Surge
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Moonblast
+- Muddy Water
+- Ice Beam
+- Mean Look
+
+Lugia @ Misty Seed
 Level: 83
 Ability: Multiscale
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -878,25 +888,15 @@ Nature: Modest
 - Psychic
 - Thunder
 
-Primarina @ Throat Spray
-Level: 83
+Blastoise @ Blastoisinite
+Level: 61
 Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Sparkling Aria
-- Ice Beam
-- Sing
-- Alluring Voice
-
-Starmie @ Starminite
-Level: 83
-Ability: Natural Cure
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hasty
-- Wave Crash
-- Zen Headbutt
-- Thunder
-- Ice Beam
+Nature: Modest
+- Water Pulse
+- Terrain Pulse
+- Shell Smash
+- Dark Pulse
 
 === TRAINER_ARCHIE ===
 Name: Archie
@@ -4022,9 +4022,9 @@ Nature: Adamant
 - Leech Life
 - Swords Dance
 
-Golisopod @ Life Orb
+Golisopod @ Golisopite
 Level: 83
-Ability: Swift Swim
+Ability: Emergency Exit
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 - Liquidation
@@ -7537,7 +7537,7 @@ Nature: Naive
 
 Lapras @ Throat Spray
 Level: 89
-Ability: Shell Armor
+Ability: Serene Grace
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
 - Sparkling Aria
@@ -20415,7 +20415,7 @@ AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide 
 
 Lapras @ Throat Spray
 Level: 31
-Ability: Shell Armor
+Ability: Serene Grace
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Sparkling Aria

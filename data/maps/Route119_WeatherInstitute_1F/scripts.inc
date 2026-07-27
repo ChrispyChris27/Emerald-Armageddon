@@ -1,8 +1,10 @@
 Route119_WeatherInstitute_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route119_WeatherInstitute_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, WeatherInstitute_Set_Rainbow
 	.byte 0
 
 Route119_WeatherInstitute_1F_OnTransition:
+	setstartingstatus STARTING_STATUS_RAINBOW_OPPONENT
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_SetLittleBoyPos
 	end
 

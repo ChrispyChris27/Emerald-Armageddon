@@ -1,11 +1,16 @@
 Route119_WeatherInstitute_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, Route119_WeatherInstitute_2F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, WeatherInstitute_Set_Rainbow
 	.byte 0
 
 Route119_WeatherInstitute_2F_OnTransition:
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaHere
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 1, Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaGone
 	call_if_set FLAG_SYS_GAME_CLEAR, Route119_WeatherInstitute_2F_EventScript_SetScientistPosGameClear
+	end
+
+WeatherInstitute_Set_Rainbow::
+	setstartingstatus STARTING_STATUS_RAINBOW_OPPONENT
 	end
 
 Route119_WeatherInstitute_2F_EventScript_SetScientistPosAquaHere::
