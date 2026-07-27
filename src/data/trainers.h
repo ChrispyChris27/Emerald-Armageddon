@@ -18181,7 +18181,7 @@
                 MOVE_ICE_PUNCH,
                 MOVE_THUNDER_PUNCH,
                 MOVE_EXPLOSION,
-                MOVE_STONE_EDGE,
+                MOVE_ROCK_SLIDE,
             },
             },
             {

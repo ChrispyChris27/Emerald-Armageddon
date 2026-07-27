@@ -824,6 +824,7 @@ enum FaintedActions
     F(STARTING_STATUS_SHARP_STEEL_PLAYER,             sharpSteelPlayer,           (u32, 1)) /* Sharp Steel Player */                       \
     F(STARTING_STATUS_SHARP_STEEL_OPPONENT,           sharpSteelOpponent,         (u32, 1)) /* Sharp Steel Opponent */                     \
     F(STARTING_STATUS_DELTA_STREAM,                   deltaStream,                (u32, 1))                                                \
+    F(STARTING_STATUS_GRAVITY,                        startGravity,               (u32, 1))                                                \
 
 #define UNPACK_STARTING_STATUS_ENUMS(_enum, ...) _enum,
 

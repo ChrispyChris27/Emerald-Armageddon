@@ -1,6 +1,7 @@
 MossdeepCity_SpaceCenter_2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MossdeepCity_SpaceCenter_2F_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, MossdeepCity_SpaceCenter_2F_OnFrame
+	map_script MAP_SCRIPT_ON_RESUME, SpaceCenterSetGravity
 	.byte 0
 
 MossdeepCity_SpaceCenter_2F_OnTransition:

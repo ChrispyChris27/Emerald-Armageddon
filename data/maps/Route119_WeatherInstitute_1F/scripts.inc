@@ -4,7 +4,6 @@ Route119_WeatherInstitute_1F_MapScripts::
 	.byte 0
 
 Route119_WeatherInstitute_1F_OnTransition:
-	setstartingstatus STARTING_STATUS_RAINBOW_OPPONENT
 	call_if_eq VAR_WEATHER_INSTITUTE_STATE, 0, Route119_WeatherInstitute_1F_EventScript_SetLittleBoyPos
 	end
 

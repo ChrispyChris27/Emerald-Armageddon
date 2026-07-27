@@ -2638,6 +2638,15 @@ bool32 TryFieldEffects(enum FieldEffectCases caseId)
                 effect=TRUE;
                 }
             }
+        else if (gStartingStatuses.startGravity)
+        {
+            effect = SetStartingFieldStatus(
+                        STATUS_FIELD_GRAVITY,
+                        B_MSG_SET_GRAVITY,
+                        B_ANIM_SET_GRAVITY,
+                        &gFieldTimers.gravityTimer , 0);
+            gStartingStatuses.startGravity = FALSE;
+        }
         // Hazards - Spikes
         else if (gStartingStatuses.spikesPlayerL1)
         {
