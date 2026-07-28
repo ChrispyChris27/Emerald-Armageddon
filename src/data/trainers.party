@@ -425,11 +425,11 @@ Nature: Adamant
 - Bite
 - Fire Fang
 
-=== TRAINER_GRUNT_WEATHER_INST_1 ===
+=== TRAINER_GRUNT_WEATHER_INST_4 ===
 Name: Grunt
 Class: Team Aqua
-Pic: Aqua Grunt M
-Gender: Male
+Pic: Aqua Grunt F
+Gender: Female
 Music: Aqua
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
@@ -484,7 +484,7 @@ Nature: Hasty
 - Ancientpower
 - Zen Headbutt
 
-=== TRAINER_GRUNT_WEATHER_INST_2 ===
+=== TRAINER_GRUNT_WEATHER_INST_1 ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -493,7 +493,7 @@ Music: Aqua
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Porygon 2 @ Eviolite
+Porygon2 @ Eviolite
 Level: 57
 Ability: Download
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -543,7 +543,7 @@ Nature: Timid
 - Sludge Bomb
 - Nasty Plot
 
-=== TRAINER_GRUNT_WEATHER_INST_3 ===
+=== TRAINER_GRUNT_WEATHER_INST_2 ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt M
@@ -732,7 +732,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
-=== TRAINER_GRUNT_WEATHER_INST_4 ===
+=== TRAINER_GRUNT_WEATHER_INST_5 ===
 Name: Grunt
 Class: Team Aqua
 Pic: Aqua Grunt F
@@ -16825,11 +16825,11 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
-=== TRAINER_GRUNT_WEATHER_INST_5 ===
+=== TRAINER_GRUNT_WEATHER_INST_3 ===
 Name: Grunt
 Class: Team Aqua
-Pic: Aqua Grunt F
-Gender: Female
+Pic: Aqua Grunt M
+Gender: Male
 Music: Aqua
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
