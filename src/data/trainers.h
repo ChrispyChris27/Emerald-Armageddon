@@ -2120,7 +2120,7 @@
 #line 901
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 902
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO | AI_FLAG_RISKY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
         .partySize = 6,
@@ -36339,7 +36339,7 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 14425
-                MOVE_FLARE_BLITZ,
+                MOVE_ROCK_SLIDE,
                 MOVE_CLOSE_COMBAT,
                 MOVE_THUNDER_PUNCH,
                 MOVE_SWORDS_DANCE,
@@ -37458,7 +37458,7 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 14881
-                MOVE_FLARE_BLITZ,
+                MOVE_ROCK_SLIDE,
                 MOVE_CLOSE_COMBAT,
                 MOVE_THUNDER_PUNCH,
                 MOVE_SWORDS_DANCE,

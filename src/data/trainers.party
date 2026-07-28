@@ -899,7 +899,7 @@ Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko / Risky
 
 Ninjask @ Focus Sash
 Level: 61
@@ -14422,7 +14422,7 @@ Level: 61
 Ability: Speed Boost
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
-- Flare Blitz
+- Rock Slide
 - Close Combat
 - Thunder Punch
 - Swords Dance
@@ -14878,7 +14878,7 @@ Level: 61
 Ability: Speed Boost
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
-- Flare Blitz
+- Rock Slide
 - Close Combat
 - Thunder Punch
 - Swords Dance
