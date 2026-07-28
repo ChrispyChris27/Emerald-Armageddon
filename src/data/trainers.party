@@ -432,17 +432,57 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zubat
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Golduck @ Life Orb
+Level: 57
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Tri Attack
+- Muddy Water
+- Ice Beam
+- Psychic
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Yanmega @ Focus Sash
+Level: 57
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Silver Wind
+- Air Slash
+- Ominous Wind
+- Ancientpower
+
+Medicham @ Assault Vest
+Level: 57
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Zen Headbutt
+- Rock Slide
+- Ice Punch
+- Drain Punch
+
+Honchkrow @ Scope Lens
+Level: 57
+Ability: Super Luck
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dark Pulse
+- Air Slash
+- Silver Wind
+- Roost
+
+Dudunsparce Three Segment @ Leftovers
+Level: 57
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Headbutt
+- Glare
+- Ancientpower
+- Zen Headbutt
 
 === TRAINER_GRUNT_WEATHER_INST_2 ===
 Name: Grunt
@@ -451,17 +491,57 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Porygon 2 @ Eviolite
+Level: 57
+Ability: Download
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Tri Attack
+- Ominous Wind
+- Recover
+- Ice Beam
 
-Carvanha
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Sawsbuck Summer @ Assault Vest
+Level: 57
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Zen Headbutt
+- Bounce
+- Horn Leech
+- Tri Attack
+
+Sharpedo @ Focus Band
+Level: 57
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dark Pulse
+- Muddy Water
+- Ancientpower
+- Ice Beam
+
+Masquerain @ Brightpowder
+Level: 57
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Silver Wind
+- Air Slash
+- Ice Beam
+- Stun Spore
+
+Gengar @ Colbur Berry
+Level: 57
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ominous Wind
+- Dark Pulse
+- Sludge Bomb
+- Nasty Plot
 
 === TRAINER_GRUNT_WEATHER_INST_3 ===
 Name: Grunt
@@ -470,22 +550,28 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Tauros Paldea Aqua @ Choice Scarf
+Level: 57
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Rock Slide
 
-Zubat
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Kabutops @ Choice Scarf
+Level: 57
+Ability: Battle Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Rock Slide
 
-Carvanha
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Lycanroc Midday @ Choice Scarf
+Level: 57
+Ability: Steadfast
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Rock Slide
 
 === TRAINER_GRUNT_MUSEUM_1 ===
 Name: Grunt
@@ -653,12 +739,28 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Inteleon @ Choice Scarf
+Level: 57
+Ability: Torrent
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Muddy Water
+
+Ludicolo @ Choice Scarf
+Level: 57
+Ability: Own Tempo
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Muddy Water
+
+Tentacruel @ Choice Scarf
+Level: 57
+Ability: Clear Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Muddy Water
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_5 ===
 Name: Grunt
@@ -850,7 +952,7 @@ Nature: Timid
 - Air Slash
 
 Starmie @ Starminite
-Level: 83
+Level: 61
 Ability: Natural Cure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -16730,17 +16832,47 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zubat
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Aurorus @ Focus Sash
+Level: 57
+Ability: Snow Warning
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ancientpower
+- Ice Beam
+- Aurora Veil
+- Dark Pulse
 
-Poochyena
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Arctovish @ Expert Belt
+Level: 57
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Liquidation
+- Iron Head
+- Rock Slide
+
+Frosmoth @ Brightpowder
+Level: 57
+Ability: Ice Scales
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Silver Wind
+- Air Slash
+- Quiver Dance
+
+Froslass @ Focus Band
+Level: 57
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Ominous Wind
+- Thunderbolt
+- Dark Pulse
 
 === TRAINER_TABITHA_MT_CHIMNEY ===
 Name: Courtney
