@@ -11407,18 +11407,53 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_YASU ===
-Name: YASU
+Name: Yasu
 Class: Ninja Boy
 Pic: Ninja Boy
 Gender: Male
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Ninjask
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Barraskewda @ Muscle Band
+Level: 59
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Flip Turn
+- Ice Fang
+- Liquidation
+- Poison Jab
+
+Accelgor @ Focus Sash
+Level: 59
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Bug Buzz
+- U Turn
+- Shadow Ball
+- Energy Ball
+
+Forretress @ Custap Berry
+Level: 59
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Brave
+- Earthquake
+- U Turn
+- Explosion
+- Gyro Ball
+
+Magnezone @ Air Balloon
+Level: 59
+Ability: Magnet Pull
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Volt Switch
+- Rising Voltage
+- Flash Cannon
 
 === TRAINER_TAKASHI ===
 Name: TAKASHI
@@ -18665,7 +18700,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Drifblim @ Electric Seed
-Level: 57
+Level: 59
 Ability: Unburden
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -18675,7 +18710,7 @@ Nature: Modest
 - Thunder
 
 Oranguru @ Leftovers
-Level: 57
+Level: 59
 Ability: Inner Focus
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Bold
@@ -18685,7 +18720,7 @@ Nature: Bold
 - Hyper Voice
 
 Simipour @ Wacan Berry
-Level: 57
+Level: 59
 Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -18695,7 +18730,7 @@ Nature: Jolly
 - Rock Slide
 
 Wigglytuff @ Throat Spray
-Level: 57
+Level: 59
 Ability: Cute Charm
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -22235,12 +22270,47 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Manectric
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Gorebyss @ Light Clay
+Level: 59
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Reflect
+- Light Screen
+- Ice Beam
+
+Toxtricity Low Key @ Air Balloon
+Level: 59
+Ability: Punk Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Overdrive
+- Boomburst
+- Sludge Wave
+- Psychic Noise
+
+Primarina @ Throat Spray
+Level: 59
+Ability: Torrent
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Sparkling Aria
+- Alluring Voice
+- Ice Beam
+- Nature Power
+
+Porygon Z @ Wise Glasses
+Level: 59
+Ability: Surge Surfer
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Rising Voltage
+- Boomburst
+- Ice Beam
+- Nasty Plot
 
 === TRAINER_DAYTON ===
 Name: Dayton
