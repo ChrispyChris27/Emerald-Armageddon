@@ -28781,7 +28781,7 @@
 #line 11431
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 11430
-            .ability = ABILITY_HYDRATION,
+            .ability = ABILITY_TINTED_LENS,
 #line 11429
             .lvl = 59,
             .ball = POKEBALL_COUNT,
@@ -47209,7 +47209,7 @@
 #line 18753
             .ability = ABILITY_POWER_OF_ALCHEMY,
 #line 18752
-            .lvl = 57,
+            .lvl = 60,
             .ball = POKEBALL_COUNT,
 #line 18755
             .nature = NATURE_ADAMANT,
@@ -47233,7 +47233,7 @@
 #line 18763
             .ability = ABILITY_WONDER_GUARD,
 #line 18762
-            .lvl = 57,
+            .lvl = 60,
             .ball = POKEBALL_COUNT,
 #line 18765
             .nature = NATURE_ADAMANT,
@@ -47254,7 +47254,7 @@
 #line 18770
             .ability = ABILITY_RECEIVER,
 #line 18769
-            .lvl = 57,
+            .lvl = 60,
             .ball = POKEBALL_COUNT,
 #line 18772
             .nature = NATURE_JOLLY,

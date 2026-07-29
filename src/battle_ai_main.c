@@ -4792,7 +4792,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         default: // protect
             if ((aiData->abilities[battlerAtk] == ABILITY_POWER_OF_ALCHEMY) && (aiData->abilities[BATTLE_PARTNER(battlerAtk)]== ABILITY_WONDER_GUARD))
             {
-                ADJUST_SCORE(FAST_KILL + 1);
+                ADJUST_SCORE(+20);
                 break;
             }
             ADJUST_SCORE(ProtectChecks(battlerAtk, battlerDef, move, incomingMove));
