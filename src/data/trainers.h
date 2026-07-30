@@ -18925,7 +18925,7 @@
             .species = SPECIES_YANMEGA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 7544
-            .heldItem = ITEM_CHOICE_SPECS,
+            .heldItem = ITEM_CHOICE_SCARF,
 #line 7547
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 7546
@@ -18962,7 +18962,7 @@
 #line 7557
                 MOVE_SUPERPOWER,
                 MOVE_SPRINGTIDE_STORM,
-                MOVE_ZEN_HEADBUTT,
+                MOVE_SKY_ATTACK,
                 MOVE_PLAY_ROUGH,
             },
             },
