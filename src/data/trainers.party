@@ -991,11 +991,11 @@ Nature: Modest
 - Thunder
 
 Blastoise @ Blastoisinite
-Level: 61
+Level: 83
 Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
-- Water Pulse
+- Origin Pulse
 - Terrain Pulse
 - Shell Smash
 - Dark Pulse
@@ -1024,7 +1024,7 @@ Level: 84
 Ability: Surge Surfer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
-- Thunder
+- Rising Voltage
 - Dazzling Gleam
 - Energy Ball
 - Tail Glow
@@ -7575,7 +7575,7 @@ Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Close Combat
-- Brave Bird
+- Sky Attack
 - Blaze Kick
 - Roost
 
@@ -11102,22 +11102,67 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Doduo
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Skarmory @ Red Card
+Level: 59
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Spikes
+- Stealth Rock
+- Iron Head
+- Dual Wingbeat
 
-Skarmory
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Bombirdier @ Red Card
+Level: 59
+Ability: Rocky Payload
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Brave Bird
+- Whirlwind
+- Knock Off
 
-Tropius
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Sigilyph @ Red Card
+Level: 59
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Cosmic Power
+- Roost
+- Whirlwind
+- Ancientpower
+
+Mandibuzz @ Red Card
+Level: 59
+Ability: Big Pecks
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Foul Play
+- Roost
+- Toxic
+- Whirlwind
+
+Pidgeot @ Red Card
+Level: 59
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Heat Wave
+- Whirlwind
+- Roost
+
+Dragonite @ Red Card
+Level: 59
+Ability: Multiscale
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dual Wingbeat
+- Dragon Claw
+- Dragon Dance
+- Fire Punch
 
 === TRAINER_HUMBERTO ===
 Name: HUMBERTO
@@ -11126,12 +11171,57 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Skarmory
-Level: 30
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-Nature: Hardy
+Gliscor @ Yache Berry
+Level: 59
+Ability: Hyper Cutter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Tailwind
+- Stealth Rock
+- Earthquake
+- Dual Wingbeat
+
+Vespiquen @ Charti Berry
+Level: 59
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Bug Buzz
+- Heal Order
+- Power Gem
+- Earth Power
+
+Swoobat @ Starf Berry
+Level: 59
+Ability: Simple
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Calm Mind
+- Stored Power
+- Roost
+- Dazzling Gleam
+
+Staraptor @ Shell Bell
+Level: 59
+Ability: Reckless
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Brave Bird
+- Close Combat
+- Double Edge
+- Swords Dance
+
+Salamence @ Yache Berry
+Level: 59
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Dual Wingbeat
+- Dragon Claw
+- Rock Slide
 
 === TRAINER_PRESLEY ===
 Name: PRESLEY
@@ -11162,7 +11252,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Oricorio Baile @ Focus Sash
-Level: 61
+Level: 59
 Ability: Dancer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -11172,7 +11262,7 @@ Nature: Timid
 - Icy Wind
 
 Oricorio Pom Pom @ Electric Gem
-Level: 61
+Level: 59
 Ability: Dancer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -11182,7 +11272,7 @@ Nature: Timid
 - Icy Wind
 
 Oricorio Pau @ Weakness Policy
-Level: 61
+Level: 59
 Ability: Dancer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -11211,18 +11301,53 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_ROBERT_1 ===
-Name: ROBERT
+Name: Robert
 Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Swablu
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Ribombee @ Focus Sash
+Level: 59
+Ability: Shield Dust
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Sticky Web
+- Bug Buzz
+- Moonblast
+- Shadow Ball
+
+Togekiss @ Misty Seed
+Level: 59
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Nasty Plot
+- Moonblast
+- Air Slash
+- Heat Wave
+
+Tropius @ Yache Berry
+Level: 59
+Ability: Harvest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Air Slash
+- Giga Drain
+- Nature Power
+- Earth Power
+
+Hydreigon @ Roseli Berry
+Level: 59
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dark Pulse
+- Nature Power
+- Nasty Plot
+- Heat Wave
 
 === TRAINER_BENNY ===
 Name: BENNY
@@ -11825,7 +11950,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Leaf Blade
 - Night Slash
-- Brave Bird
+- Sky Attack
 - Close Combat
 
 === TRAINER_LAURA ===
@@ -11882,7 +12007,7 @@ Level: 51
 Ability: Scrappy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Brave Bird
+- Sky Attack
 - Triple Axel
 - Close Combat
 - Lunge
@@ -14115,7 +14240,7 @@ Level: 95
 Ability: Gale Wings
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Brave Bird
+- Sky Attack
 - Flare Blitz
 - Tailwind
 - U Turn
@@ -15604,28 +15729,73 @@ Nature: Jolly
 - Thunderpunch
 
 === TRAINER_LORENZO ===
-Name: LORENZO
+Name: Lorenzo
 Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Seedot
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Grumpig @ Starf Berry
+Level: 66
+Ability: Gluttony
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psychic
+- Power Gem
+- Focus Blast
+- Hypnosis
 
-Nuzleaf
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Drapion @ Lansat Berry
+Level: 66
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Night Slash
+- Cross Poison
+- Aqua Cutter
+- Swords Dance
 
-Lombre
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Porygon Z @ Micle Berry
+Level: 66
+Ability: Adaptability
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Boomburst
+- Thunder
+- Blizzard
+- Focus Blast
+
+Metagross @ Starf Berry
+Level: 66
+Ability: Clear Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Meteor Mash
+- Psychic Fangs
+- Earthquake
+- Shift Gear
+
+Armaldo @ Lansat Berry
+Level: 66
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- X Scissor
+- Stone Edge
+- Aqua Cutter
+- Rock Polish
+
+Salamence @ Micle Berry
+Level: 66
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Dragon Rush
+- Fire Blast
+- Hurricane
+- Hydro Pump
 
 === TRAINER_SEBASTIAN ===
 Name: SEBASTIAN
@@ -18804,7 +18974,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Volcarona @ Charti Berry
-Level: 61
+Level: 59
 Ability: Flame Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -18814,7 +18984,7 @@ Nature: Timid
 - Energy Ball
 
 Lilligant @ Leftovers
-Level: 61
+Level: 59
 Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -18824,7 +18994,7 @@ Nature: Timid
 - Giga Drain
 
 Oricorio Sensu @ Custap Berry
-Level: 61
+Level: 59
 Ability: Dancer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -18840,22 +19010,57 @@ Pic: Picnicker
 Gender: Female
 Music: Girl
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Talonflame @ Focus Sash
+Level: 59
+Ability: Gale Wings
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Tailwind
+- Sky Attack
+- Flare Blitz
+- U Turn
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Flamigo @ Salac Berry
+Level: 59
+Ability: Scrappy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Sky Attack
+- Triple Kick
+- Swords Dance
+- Substitute
 
-Swablu
-Level: 27
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Cramorant @ Wacan Berry
+Level: 59
+Ability: Gulp Missile
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Surf
+- Ice Beam
+- Hurricane
+- Substitute
+
+Minior @ White Herb
+Level: 59
+Ability: Shields Down
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Shell Smash
+- Rock Slide
+- Acrobatics
+- Earthquake
+
+Corviknight @ Leftovers
+Level: 59
+Ability: Mirror Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Iron Defense
+- Body Press
+- Drill Peck
+- Roost
 
 === TRAINER_WALLY_MAUVILLE ===
 Name: WALLY
@@ -24101,7 +24306,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Stealth Rock
 - Rock Slide
-- Brave Bird
+- Sky Attack
 - Earthquake
 
 Muk Alola @ Liechi Berry
@@ -24470,12 +24675,57 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Tropius
-Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-Nature: Hardy
+Kilowattrel @ Focus Sash
+Level: 59
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Bolt Beak
+- Hurricane
+- Volt Switch
+- Endeavor
+
+Empoleon @ Red Card
+Level: 59
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Flash Cannon
+- Ice Beam
+- Metal Sound
+
+Toucannon @ King's Rock
+Level: 59
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Rock Blast
+- Bullet Seed
+- Fury Attack
+- Agility
+
+Honchkrow @ Salac Berry
+Level: 59
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Sucker Punch
+- Sky Attack
+- Substitute
+- Night Slash
+
+Gyarados @ Wacan Berry
+Level: 59
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Waterfall
+- Earthquake
+- Sky Attack
+- Dragon Dance
 
 === TRAINER_STEVEN ===
 Name: Chrispy

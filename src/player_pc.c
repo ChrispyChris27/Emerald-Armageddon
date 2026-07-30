@@ -221,7 +221,25 @@ static const struct MenuAction sItemStorage_MenuActions[] =
 
 static const u16 sNewGamePCItems[][2] =
 {
-    { ITEM_POTION, 1 },
+    { ITEM_MAX_REPEL, 10 },
+    { ITEM_FULL_RESTORE, 10},
+    { ITEM_BABIRI_BERRY, 1},
+    { ITEM_CHARTI_BERRY, 1},
+    { ITEM_CHILAN_BERRY, 1},
+    { ITEM_CHOPLE_BERRY, 1},
+    { ITEM_COBA_BERRY, 1},
+    { ITEM_HABAN_BERRY, 1},
+    { ITEM_KASIB_BERRY, 1},
+    { ITEM_KEBIA_BERRY, 1},
+    { ITEM_OCCA_BERRY, 1},
+    { ITEM_PASSHO_BERRY, 1},
+    { ITEM_PAYAPA_BERRY, 1},
+    { ITEM_RINDO_BERRY, 1},
+    { ITEM_ROSELI_BERRY, 1},
+    { ITEM_SHUCA_BERRY, 1},
+    { ITEM_TANGA_BERRY, 1},
+    { ITEM_WACAN_BERRY, 1},
+    { ITEM_YACHE_BERRY, 1},
     { ITEM_NONE, 0 }
 };
 
