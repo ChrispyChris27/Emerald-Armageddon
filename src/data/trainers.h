@@ -18985,7 +18985,7 @@
             .moves = {
 #line 7567
                 MOVE_SANDSEAR_STORM,
-                MOVE_HURRICANE,
+                MOVE_AIR_SLASH,
                 MOVE_PSYCHIC,
                 MOVE_NASTY_PLOT,
             },
