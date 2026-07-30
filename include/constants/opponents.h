@@ -740,7 +740,7 @@
 #define TRAINER_CYRUS_DOUBLE                733
 #define TRAINER_ARIANA_MOSSDEEP              734
 #define TRAINER_PETE                        735
-#define TRAINER_ISABELLE                    736
+#define TRAINER_PLACEHOLDER                    736
 #define TRAINER_ANDRES_1                    737
 #define TRAINER_JOSUE                       738
 #define TRAINER_CAMRON                      739

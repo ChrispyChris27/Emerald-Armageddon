@@ -21748,31 +21748,46 @@ Nature: Timid
 - Focus Blast
 
 === TRAINER_PETE ===
-Name: PETE
-Class: Swimmer M
-Pic: Swimmer M
+Name: Ena & Pete
+Class: Sis And Bro
+Pic: Sis And Bro
 Gender: Male
 Music: Swimmer
-Battle Type: Singles
-AI: Check Bad Move
+Battle Type: Doubles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Tentacool
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Tatsugiri Curly @ Wise Glasses
+Level: 57
+Ability: Commander
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Dragon Pulse
+- Ice Beam
+- Nasty Plot
 
-=== TRAINER_ISABELLE ===
-Name: ISABELLE
+Dondozo @ Leftovers
+Level: 57
+Ability: Oblivious
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Order Up
+- Aqua Tail
+- Earthquake
+- Ice Fang
+
+=== TRAINER_PLACEHOLDER ===
+Name: Isabelle
 Class: Swimmer F
 Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Marill
-Level: 15
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Sandshrew
+Level: 25
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Nature: Hardy
 
 === TRAINER_ANDRES_1 ===
