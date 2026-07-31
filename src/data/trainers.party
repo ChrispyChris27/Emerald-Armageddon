@@ -2875,12 +2875,57 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Sableye
-Level: 30
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-Nature: Hardy
+Bronzong @ Shuca Berry
+Level: 62
+Ability: Heatproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Brave
+- Stealth Rock
+- Gyro Ball
+- Body Press
+- Zen Headbutt
+
+Swoobat @ Life Orb
+Level: 62
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psyshock
+- Air Slash
+- Alluring Voice
+- Heat Wave
+
+Absol @ Scope Lens
+Level: 62
+Ability: Super Luck
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Night Slash
+- Psycho Cut
+- Swords Dance
+- Superpower
+
+Conkeldurr @ Punching Glove
+Level: 62
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Ice Punch
+- Mach Punch
+- Drain Punch
+- Thunder Punch
+
+Goodra Hisui @ Wise Glasses
+Level: 62
+Ability: Gooey
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dragon Pulse
+- Flash Cannon
+- Flamethrower
+- Earth Power
 
 === TRAINER_HOPE ===
 Name: HOPE
@@ -7541,7 +7586,7 @@ Nature: Hasty
 - Focus Blast
 - Grass Knot
 
-Yanmega @ Choice Scarf
+Yanmega @ Choice Specs
 Level: 63
 Ability: Tinted Lens
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -11288,17 +11333,47 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wingull
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Garganacl @ Custap Berry
+Level: 62
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Explosion
+- Stealth Rock
+- Earthquake
+- Stone Edge
 
-Natu
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Persian Alola @ Misty Seed
+Level: 62
+Ability: Fur Coat
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Nasty Plot
+- Dark Pulse
+- Alluring Voice
+- Power Gem
+
+Xatu @ Life Orb
+Level: 62
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psyshock
+- Heat Wave
+- Hurricane
+- Shadow Ball
+
+Slowking Galar @ Leftovers
+Level: 62
+Ability: Own Tempo
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Calm Mind
+- Fire Blast
+- Shell Side Arm
+- Zen Headbutt
 
 === TRAINER_ROBERT_1 ===
 Name: Robert
@@ -12142,7 +12217,7 @@ Pic: Parasol Lady
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Ninetales @ Expert Belt
 Level: 40
@@ -12191,17 +12266,57 @@ Pic: Parasol Lady
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Roselia
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Granbull @ Red Card
+Level: 62
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Play Rough
+- Earthquake
+- Stone Edge
 
-Wailmer
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Kingdra @ Assault Vest
+Level: 62
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Ice Beam
+- Sludge Wave
+- Terrain Pulse
+
+Mothim @ Focus Sash
+Level: 62
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Bug Buzz
+- Hurricane
+- Camouflage
+- Quiver Dance
+
+Grimmsnarl @ Weakness Policy
+Level: 62
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Nasty Plot
+- Nature Power
+- Dark Pulse
+- Focus Blast
+
+Houndstone @ Misty Seed
+Level: 62
+Ability: Fluffy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Last Respects
+- Play Rough
+- Work Up
+- Destiny Bond
 
 === TRAINER_ANGELICA ===
 Name: ANGELICA
@@ -12210,16 +12325,57 @@ Pic: Parasol Lady
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Castform
-Level: 30
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
-- Rain Dance
-- Weather Ball
-- Thunder
-- Water Pulse
+Bronzong @ Occa Berry
+Level: 62
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Brave
+- Stealth Rock
+- Gyro Ball
+- Body Press
+- Zen Headbutt
+
+Swoobat @ Misty Seed
+Level: 62
+Ability: Simple
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Calm Mind
+- Stored Power
+- Alluring Voice
+- Heat Wave
+
+Absol @ Life Orb
+Level: 62
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Night Slash
+- Psycho Cut
+- Swords Dance
+- X Scissor
+
+Conkeldurr @ Life Orb
+Level: 62
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Ice Punch
+- Rock Slide
+- Drain Punch
+- Thunder Punch
+
+Goodra Hisui @ Muscle Band
+Level: 62
+Ability: Gooey
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Claw
+- Iron Head
+- Fire Punch
+- Earthquake
 
 === TRAINER_MADELINE_2 ===
 Name: MADELINE
@@ -22627,15 +22783,47 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Manectric
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Thunder
-- Quick Attack
-- Thunder Wave
+Aggron @ Covert Cloak
+Level: 62
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Metal Burst
+- Stealth Rock
+- Iron Tail
+- Stone Edge
+
+Furfrou @ Misty Seed
+Level: 62
+Ability: Fur Coat
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Swords Dance
+- Play Rough
+- Double Edge
+- Crunch
+
+Espeon @ Life Orb
+Level: 62
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psyshock
+- Power Gem
+- Alluring Voice
+- Shadow Ball
+
+Slowbro Galar @ Quick Claw
+Level: 62
+Ability: Quick Draw
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Curse
+- Slack Off
+- Shell Side Arm
+- Zen Headbutt
 
 === TRAINER_CALLIE ===
 Name: CALLIE
@@ -22656,23 +22844,13 @@ Nature: Jolly
 - Entrainment
 - Drill Run
 
-Passimian @ Salac Berry
-Level: 64
-Ability: Receiver
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Jolly
-- Close Combat
-- Knock Off
-- Gunk Shot
-- Fling
-
 Flamigo @ Leftovers
 Level: 64
 Ability: Costar
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Brave Bird
-- Close Combat
+- Triple Kick
 - Throat Chop
 - Liquidation
 
