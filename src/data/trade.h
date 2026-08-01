@@ -1048,10 +1048,10 @@ static const struct InGameTrade sIngameTrades[] =
         .sheen = 10,
         .requestedSpecies = SPECIES_REGIGIGAS
     },
-    [INGAME_TRADE_MANTA] =
+    [INGAME_TRADE_EEVEE] =
     {
-        .nickname = _("Tampa Baby"),
-        .species = SPECIES_MANTYKE,
+        .nickname = _("Eon"),
+        .species = SPECIES_EEVEE,
         .ivs = {31, 31, 31, 31, 31, 31},
         .abilityNum = 2,
         .otId = 00042,
@@ -1059,8 +1059,8 @@ static const struct InGameTrade sIngameTrades[] =
         .personality = 0x8B,
         .heldItem = ITEM_BOTTLE_CAP,
         .mailNum = 2,
-        .otName = _("Gloria"),
-        .otGender = FEMALE,
+        .otName = _("Ian"),
+        .otGender = MALE,
         .sheen = 10,
         .requestedSpecies = SPECIES_MAGBY
     },

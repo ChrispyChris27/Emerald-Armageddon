@@ -4922,7 +4922,7 @@ Level: 38
 Ability: Reckless
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- High Jump Kick
+- Submission
 - Double Edge
 - Stone Edge
 - Substitute
@@ -6064,22 +6064,47 @@ Pic: Bug Maniac
 Gender: Male
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Surskit
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Larvesta @ Eviolite
+Level: 80
+Ability: Flame Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Flare Blitz
+- Leech Life
+- Wild Charge
+- Sticky Web
 
-Surskit
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Volcarona @ Focus Sash
+Level: 62
+Ability: Swarm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Fiery Dance
+- Giga Drain
+- Bug Buzz
+- Quiver Dance
 
-Surskit
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Slither Wing @ Booster Energy
+Level: 62
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Lunge
+- Stone Edge
+- Close Combat
+- Swords Dance
+
+Iron Moth @ Booster Energy
+Level: 62
+Ability: Quark Drive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Fiery Dance
+- Sludge Wave
+- Psychic
+- Quiver Dance
 
 === TRAINER_DEREK ===
 Name: DEREK
@@ -7434,15 +7459,15 @@ Music: Female
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Victini @ Eject Pack
+Arcanine Hisui @ Air Balloon
 Level: 46
-Ability: Victory Star
+Ability: Rock Head
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hasty
-- V Create
-- Zen Headbutt
-- Bolt Strike
-- Solarbeam
+Nature: Jolly
+- Flare Blitz
+- Head Smash
+- Wild Charge
+- Stealth Rock
 
 Darmanitan @ Choice Band
 Level: 46
@@ -7450,16 +7475,6 @@ Ability: Sheer Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 - Flare Blitz
-
-Arcanine Hisui @ Muscle Band
-Level: 46
-Ability: Rock Head
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Flare Blitz
-- Head Smash
-- Wild Charge
-- Extremespeed
 
 Volcarona @ Focus Sash
 Level: 46
@@ -7481,7 +7496,7 @@ Nature: Jolly
 - Solar Blade
 - Swords Dance
 
-Scovillain @ Scovillainite
+Scovillain @ Ground Gem
 Level: 46
 Ability: Chlorophyll
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -7490,6 +7505,16 @@ Nature: Mild
 - Flamethrower
 - Growth
 - Earthquake
+
+Charizard @ Charizardite X
+Level: 46
+Ability: Blaze
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Fire Punch
+- Dragon Claw
+- Thunderpunch
+- Dragon Dance
 
 === TRAINER_NORMAN_1 ===
 Name: Norman
@@ -11254,7 +11279,7 @@ Ability: Reckless
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Brave Bird
-- Close Combat
+- Submission
 - Double Edge
 - Swords Dance
 
@@ -16064,22 +16089,57 @@ Pic: Pokemon Ranger F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Lotad
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Tyranitar @ Chople Berry
+Level: 62
+Ability: Sand Stream
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Stealth Rock
+- Stone Edge
+- Crunch
+- Counter
 
-Lombre
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Armaldo @ Weakness Policy
+Level: 62
+Ability: Sand Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- X Scissor
+- Stone Edge
+- Swords Dance
+- Earthquake
 
-Nuzleaf
-Level: 28
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Cacturne @ Rock Gem
+Level: 62
+Ability: Sand Veil
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Energy Ball
+- Dark Pulse
+- Nasty Plot
+- Weather Ball
+
+Hippowdon @ Leftovers
+Level: 62
+Ability: Sand Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Earthquake
+- Stone Edge
+- Ice Fang
+- Shore Up
+
+Reuniclus @ Life Orb
+Level: 62
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Psyshock
+- Shadow Ball
+- Weather Ball
+- Calm Mind
 
 === TRAINER_SOPHIA ===
 Name: SOPHIA
@@ -19682,7 +19742,7 @@ Nature: Jolly
 
 Skeledirge @ Throat Spray
 Level: 66
-Ability: Blaze
+Ability: Simple
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Torch Song
@@ -19889,7 +19949,7 @@ Nature: Jolly
 
 Skeledirge @ Throat Spray
 Level: 66
-Ability: Blaze
+Ability: Simple
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Torch Song
