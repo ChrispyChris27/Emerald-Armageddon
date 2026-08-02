@@ -5001,6 +5001,8 @@ bool32 CanBattlerEscape(enum BattlerId battler) // no ability check
         return FALSE;
     else if (GetConfig(B_GHOSTS_ESCAPE) >= GEN_6 && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
         return TRUE;
+    else if (GetBattlerAbility(battler) == ABILITY_RUN_AWAY)
+        return TRUE;
     else if (gBattleMons[battler].volatiles.escapePrevention)
         return FALSE;
     else if (gBattleMons[battler].volatiles.wrapped)

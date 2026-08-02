@@ -648,7 +648,7 @@
     {
       "type": "weather",
       "x": 12,
-      "y": 64,
+      "y": 65,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_FOG_HORIZONTAL"
     },
@@ -682,29 +682,29 @@
     },
     {
       "type": "weather",
-      "x": 39,
-      "y": 86,
-      "elevation": 5,
-      "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
-    },
-    {
-      "type": "weather",
-      "x": 39,
+      "x": 37,
       "y": 87,
       "elevation": 5,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
     },
     {
       "type": "weather",
-      "x": 39,
-      "y": 88,
+      "x": 37,
+      "y": 89,
       "elevation": 5,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
     },
     {
       "type": "weather",
-      "x": 39,
-      "y": 89,
+      "x": 37,
+      "y": 90,
+      "elevation": 5,
+      "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "type": "weather",
+      "x": 37,
+      "y": 93,
       "elevation": 5,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
     },
@@ -738,29 +738,29 @@
     },
     {
       "type": "weather",
-      "x": 39,
-      "y": 90,
+      "x": 12,
+      "y": 85,
       "elevation": 5,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
     },
     {
       "type": "weather",
-      "x": 39,
-      "y": 91,
-      "elevation": 5,
-      "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
-    },
-    {
-      "type": "weather",
-      "x": 39,
+      "x": 37,
       "y": 92,
       "elevation": 5,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
     },
     {
       "type": "weather",
-      "x": 39,
-      "y": 93,
+      "x": 37,
+      "y": 91,
+      "elevation": 5,
+      "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
+    },
+    {
+      "type": "weather",
+      "x": 38,
+      "y": 88,
       "elevation": 5,
       "weather": "COORD_EVENT_WEATHER_SUNNY_CLOUDS"
     }
