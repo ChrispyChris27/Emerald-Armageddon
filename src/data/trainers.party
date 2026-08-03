@@ -3566,31 +3566,63 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_JESSICA_1 ===
-Name: JESSICA
+Name: Jessica
 Class: Beauty
 Pic: Beauty
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Kecleon
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Bind
-- Lick
-- Fury Swipes
-- Feint Attack
+Sylveon @ Life Orb
+Level: 62
+Ability: Cute Charm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Moonblast
+- Psyshock
+- Mystical Fire
+- Misty Explosion
 
-Seviper
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Poison Tail
-- Screech
-- Glare
-- Crunch
+Cinccino @ King's Rock
+Level: 62
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Tail Slap
+- Rock Blast
+- Bullet Seed
+- Doubleslap
+
+Milotic @ Flame Orb
+Level: 62
+Ability: Marvel Scale
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Scald
+- Ice Beam
+- Recover
+- Alluring Voice
+
+Golem Alola @ Air Balloon
+Level: 62
+Ability: Magnet Pull
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Fire Punch
+- Stone Edge
+- Wild Charge
+- Explosion
+
+Bellossom @ Focus Sash
+Level: 62
+Ability: Leaf Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Giga Drain
+- Quiver Dance
+- Moonblast
+- Sleep Powder
 
 === TRAINER_CONNIE ===
 Name: CONNIE
@@ -6826,18 +6858,63 @@ IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 Nature: Hardy
 
 === TRAINER_WALTER_1 ===
-Name: WALTER
+Name: Walter
 Class: Gentleman
 Pic: Gentleman
 Gender: Male
 Music: Rich
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Manectric
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Mr. Mime @ Focus sash
+Level: 62
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Psyshock
+- Focus Blast
+- Shadow Ball
+- Misty Explosion
+
+Gumshoos @ Choice Band
+Level: 62
+Ability: Stakeout
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Double Edge
+- Earthquake
+- Thunderpunch
+- Ice Punch
+
+Spidops @ Choice Band
+Level: 62
+Ability: Stakeout
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Rock Tomb
+- X Scissor
+- Sucker Punch
+- Ice Punch
+
+Mr. Rime @ Leftovers
+Level: 62
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Psyshock
+- Focus Blast
+- Ice Beam
+- Nasty Plot
+
+Alakazam @ Life Orb
+Level: 62
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Psyshock
+- Aura Sphere
+- Thunderbolt
+- Shadow Ball
 
 === TRAINER_MICAH ===
 Name: MICAH
@@ -8501,12 +8578,37 @@ Pic: Pokefan F
 Gender: Female
 Music: Twins
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Pikachu @ Oran Berry
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Tyranitar @ Chople Berry
+Level: 66
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Stealth Rock
+- Stone Edge
+- Crunch
+- Psychic Fangs
+
+Sharpedo @ Focus Sash
+Level: 66
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Crunch
+- Fishious Rend
+- Protect
+- Psychic Fangs
+
+Absol @ Absolite
+Level: 66
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Swords Dance
+- Knock Off
+- Play Rough
+- Pursuit
 
 === TRAINER_BETHANY ===
 Name: BETHANY
@@ -22960,37 +23062,57 @@ Pic: Pokemon Breeder M
 Gender: Male
 Music: Male
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Makuhita
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Clefable @ Life Orb
+Level: 62
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Psyshock
+- Moonblast
+- Flamethrower
+- Stealth Rock
 
-Wingull
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Sudowoodo @ Expert Belt
+Level: 62
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Head Smash
+- Wood Hammer
+- Submission
+- Rock Polish
 
-Tropius
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Jynx @ Focus Sash
+Level: 62
+Ability: Oblivious
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Ice Beam
+- Psyshock
+- Aura Sphere
+- Nasty Plot
 
-Zigzagoon
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Magmortar @ White Herb
+Level: 62
+Ability: Mega Launcher
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Armor Cannon
+- Dark Pulse
+- Aura Sphere
+- Substitute
 
-Electrike
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
-
-Numel
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Electivire @ Punching Glove
+Level: 62
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Thunderpunch
+- Ice Punch
+- Fire Punch
+- Screech
 
 === TRAINER_PAT ===
 Name: PAT
@@ -22999,37 +23121,37 @@ Pic: Pokemon Breeder F
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Poochyena
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Ribombee @ Focus Sash
+Level: 66
+Ability: Healer
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Sticky Web
+- Rage Powder
+- Silver Wind
+- Moonblast
 
-Shroomish
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Sinistcha Masterpiece @ Focus Sash
+Level: 66
+Ability: Hospitality
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Matcha Gotcha
+- Rage Powder
+- Pollen Puff
+- Shadow Ball
 
-Electrike
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
-
-Marill
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
-
-Sandshrew
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
-
-Gulpin
-Level: 25
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Scovillain @ Scovillainite
+Level: 66
+Ability: Moody
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Fire Blast
+- Energy Ball
+- Rage Powder
+- Scorching Sands
 
 === TRAINER_CRISTIN_1 ===
 Name: CRISTIN
@@ -24735,7 +24857,7 @@ Nature: Bold
 - Scald
 - Ice Beam
 - Recover
-- Alluring Voice
+- Calm Mind
 
 Manaphy @ Life Orb
 Level: 89
