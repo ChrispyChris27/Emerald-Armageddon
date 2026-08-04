@@ -1274,9 +1274,9 @@
 #define FLAG_TOTEM_DURALUDON                                           0x4C4 // Unused Flag
 #define FLAG_TOTEM_CHARIZARD_MEGA                                           0x4C5 // Unused Flag
 #define FLAG_ERRATIC_TOTEMS                                           0x4C6 // Unused Flag
-#define FLAG_MEGANIUMITE                                           0x4C7 // Unused Flag
-#define FLAG_FERALIGITE                                           0x4C8 // Unused Flag
-#define FLAG_EMBOARITE                                           0x4C9 // Unused Flag
+#define FLAG_ROTOM_CATALOG                                           0x4C7 // Unused Flag
+#define FLAG_UNUSED_1                                           0x4C8 // Unused Flag
+#define FLAG_UNUSED_2                                         0x4C9 // Unused Flag
 #define FLAG_BARBARACITE                                           0x4CA // Unused Flag
 #define FLAG_STARMINITE                                           0x4CB // Unused Flag
 #define FLAG_PYROARITE                                           0x4CC // Unused Flag

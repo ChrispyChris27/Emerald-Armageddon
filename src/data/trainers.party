@@ -19806,12 +19806,12 @@ Nature: Adamant
 - Bulk Up
 - Slack Off
 
-Sceptile @ White Herb
+Sceptile @ Sceptilite
 Level: 66
 Ability: Unburden
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
-- Leaf Storm
+- Energy Ball
 - Earth Power
 - Focus Blast
 - Dragon Pulse
@@ -19875,7 +19875,7 @@ Nature: Jolly
 - Drill Run
 - Swords Dance
 
-Blaziken @ Sitrus Berry
+Blaziken @ Blazikenite
 Level: 66
 Ability: Speed Boost
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -19944,15 +19944,15 @@ Nature: Timid
 - Mirror Coat
 - Synthesis
 
-Swampert @ Rindo Berry
+Swampert @ Swampertite
 Level: 66
-Ability: Torrent
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Wave Crash
-- Earthquake
+- Jet Punch
+- Headlong Rush
 - Stone Edge
-- Poison Jab
+- Ice Punch
 
 === TRAINER_MAY_LILYCOVE_MUDKIP ===
 Name: MAY
@@ -20013,12 +20013,12 @@ Nature: Adamant
 - Bulk Up
 - Slack Off
 
-Sceptile @ White Herb
+Sceptile @ Sceptilite
 Level: 66
 Ability: Unburden
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
-- Leaf Storm
+- Energy Ball
 - Earth Power
 - Focus Blast
 - Dragon Pulse
@@ -20082,7 +20082,7 @@ Nature: Jolly
 - Drill Run
 - Swords Dance
 
-Blaziken @ Sitrus Berry
+Blaziken @ Blazikenite
 Level: 66
 Ability: Speed Boost
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -20151,15 +20151,15 @@ Nature: Timid
 - Mirror Coat
 - Synthesis
 
-Swampert @ Rindo Berry
+Swampert @ Swampertite
 Level: 66
-Ability: Torrent
+Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Wave Crash
-- Earthquake
+- Jet Punch
+- Headlong Rush
 - Stone Edge
-- Poison Jab
+- Ice Punch
 
 === TRAINER_JONAH ===
 Name: JONAH

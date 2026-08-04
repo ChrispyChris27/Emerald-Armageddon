@@ -49717,7 +49717,7 @@
             .species = SPECIES_SCEPTILE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 19809
-            .heldItem = ITEM_WHITE_HERB,
+            .heldItem = ITEM_SCEPTILITE,
 #line 19812
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 19811
@@ -49730,7 +49730,7 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 19814
-                MOVE_LEAF_STORM,
+                MOVE_ENERGY_BALL,
                 MOVE_EARTH_POWER,
                 MOVE_FOCUS_BLAST,
                 MOVE_DRAGON_PULSE,
@@ -49885,7 +49885,7 @@
             .species = SPECIES_BLAZIKEN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 19878
-            .heldItem = ITEM_SITRUS_BERRY,
+            .heldItem = ITEM_BLAZIKENITE,
 #line 19881
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 19880
@@ -50053,11 +50053,11 @@
             .species = SPECIES_SWAMPERT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 19947
-            .heldItem = ITEM_RINDO_BERRY,
+            .heldItem = ITEM_SWAMPERTITE,
 #line 19950
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 19949
-            .ability = ABILITY_TORRENT,
+            .ability = ABILITY_SWIFT_SWIM,
 #line 19948
             .lvl = 66,
             .ball = POKEBALL_COUNT,
@@ -50066,10 +50066,10 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 19952
-                MOVE_WAVE_CRASH,
-                MOVE_EARTHQUAKE,
+                MOVE_JET_PUNCH,
+                MOVE_HEADLONG_RUSH,
                 MOVE_STONE_EDGE,
-                MOVE_POISON_JAB,
+                MOVE_ICE_PUNCH,
             },
             },
         },
@@ -50221,7 +50221,7 @@
             .species = SPECIES_SCEPTILE,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 20016
-            .heldItem = ITEM_WHITE_HERB,
+            .heldItem = ITEM_SCEPTILITE,
 #line 20019
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 20018
@@ -50234,7 +50234,7 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 20021
-                MOVE_LEAF_STORM,
+                MOVE_ENERGY_BALL,
                 MOVE_EARTH_POWER,
                 MOVE_FOCUS_BLAST,
                 MOVE_DRAGON_PULSE,
@@ -50389,7 +50389,7 @@
             .species = SPECIES_BLAZIKEN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 20085
-            .heldItem = ITEM_SITRUS_BERRY,
+            .heldItem = ITEM_BLAZIKENITE,
 #line 20088
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 20087
@@ -50557,11 +50557,11 @@
             .species = SPECIES_SWAMPERT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 20154
-            .heldItem = ITEM_RINDO_BERRY,
+            .heldItem = ITEM_SWAMPERTITE,
 #line 20157
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 20156
-            .ability = ABILITY_TORRENT,
+            .ability = ABILITY_SWIFT_SWIM,
 #line 20155
             .lvl = 66,
             .ball = POKEBALL_COUNT,
@@ -50570,10 +50570,10 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 20159
-                MOVE_WAVE_CRASH,
-                MOVE_EARTHQUAKE,
+                MOVE_JET_PUNCH,
+                MOVE_HEADLONG_RUSH,
                 MOVE_STONE_EDGE,
-                MOVE_POISON_JAB,
+                MOVE_ICE_PUNCH,
             },
             },
         },

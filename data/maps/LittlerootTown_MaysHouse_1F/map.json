@@ -3,7 +3,6 @@
   "name": "LittlerootTown_MaysHouse_1F",
   "layout": "LAYOUT_LITTLEROOT_TOWN_MAYS_HOUSE_1F",
   "music": "MUS_LITTLEROOT",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -13,7 +12,7 @@
   "allow_running": false,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_PLAYERS_HOUSE_1F_MOM",
@@ -172,7 +171,6 @@
       "script": "LittlerootTown_MaysHouse_1F_EventScript_MeetRival2"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }
