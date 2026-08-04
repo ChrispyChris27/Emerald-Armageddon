@@ -262,11 +262,15 @@ RivalsHouse_2F_EventScript_RivalPostLilycove::
 	end
 
 RivalsHouse_2F_EventScript_MayPostLilycove::
+	goto_if_unset FLAG_ARCHIE_PYRE, Rival_Take_Out_Aqua
+	goto_if_unset FLAG_RECEIVED_MEGA_STONES_RIVAL, GiveMegaStones
 	goto_if_set FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE, RivalsHouse_2F_EventScript_MayWhereShouldIGoNext
 	msgbox RivalsHouse_2F_Text_MayJustCheckingMyPokedex, MSGBOX_DEFAULT
 	return
 
 RivalsHouse_2F_EventScript_BrendanPostLilycove::
+	goto_if_unset FLAG_ARCHIE_PYRE, Rival_Take_Out_Aqua
+	goto_if_unset FLAG_RECEIVED_MEGA_STONES_RIVAL, GiveMegaStones
 	goto_if_set FLAG_MET_RIVAL_IN_HOUSE_AFTER_LILYCOVE, RivalsHouse_2F_EventScript_BrendanWhereShouldIGoNext
 	msgbox RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex, MSGBOX_DEFAULT
 	return
@@ -364,7 +368,6 @@ RivalsHouse_2F_Text_ItsRivalsPokeBall:
 	.string "Better leave it right where it is.$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
-	.string "MAY: {PLAYER}{KUN}!\p"
 	.string "I was just checking my POKéDEX.\p"
 	.string "There's still a lot of POKéMON that\n"
 	.string "I've seen but haven't caught.\p"
@@ -380,7 +383,6 @@ RivalsHouse_2F_Text_MayWhereShouldIGoNext:
 	.string "other, {PLAYER}{KUN}?$"
 
 RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
-	.string "BRENDAN: Hey, it's {PLAYER}.\p"
 	.string "I was just checking out my POKéDEX.\p"
 	.string "There are still many POKéMON that\n"
 	.string "I need to catch, I know, but this\l"
@@ -394,3 +396,37 @@ RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
 	.string "Hey, {PLAYER}, if I see you while I'm out\n"
 	.string "catching POKéMON, I can pitch you a\l"
 	.string "battle if you'd like.$"
+
+GiveMegaStones::
+	msgbox RivalGiveMegaStonesText, MSGBOX_NPC
+	giveitem ITEM_MEGANIUMITE
+	giveitem ITEM_EMBOARITE
+	giveitem ITEM_FERALIGITE
+	setflag FLAG_RECEIVED_MEGA_STONES_RIVAL
+	return
+
+RivalGiveMegaStonesText:
+	.string "Oh hi again {PLAYER}!\p"
+	.string "I trust Team Aqua's fled Mt. Pyre\n"
+	.string "for their next expedition.\p"
+	.string "Anyways, I have something for you.\p"
+	.string "At the start of your journey, you\n"
+	.string "had the choice between three\l"
+	.string "different pokémon.\p"
+	.string "Well each of those pokémon is able\n"
+	.string "to mega evolve in their final stage.\p"
+	.string "Please take these mega stones {PLAYER}.$"
+
+Rival_Take_Out_Aqua::
+	msgbox Rival_Beat_Aqua_Text, MSGBOX_NPC
+	releaseall
+	end
+
+Rival_Beat_Aqua_Text:
+	.string "Oh hi {PLAYER}!\p"
+	.string "I heard before Team Aqua showed\n"
+	.string "up at Mt. Pyre, Team Magma also\l"
+	.string "was seen in the area.\p"
+	.string "You better go see what's up!\p"
+	.string "I'll be waiting for you when\n"
+	.string "you're done with them!$"

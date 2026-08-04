@@ -3904,6 +3904,7 @@ static const struct LevelUpMove sElectivireLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_THUNDERBOLT),
     LEVEL_UP_MOVE(44, MOVE_CROSS_CHOP),
     LEVEL_UP_MOVE(50, MOVE_SUPERCELL_SLAM),
+    LEVEL_UP_MOVE(65, MOVE_VOLT_TACKLE),
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS
@@ -3965,6 +3966,7 @@ static const struct LevelUpMove sMagmortarLevelUpLearnset[] = {
     LEVEL_UP_MOVE(40, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(44, MOVE_CROSS_CHOP),
     LEVEL_UP_MOVE(55, MOVE_FLARE_BLITZ),
+    LEVEL_UP_MOVE(65, MOVE_ARMOR_CANNON),
     LEVEL_UP_END
 };
 #endif //P_GEN_4_CROSS_EVOS

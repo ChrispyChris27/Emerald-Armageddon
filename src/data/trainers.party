@@ -290,17 +290,57 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Manectric
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Squawkabilly Blue @ Focus Sash
+Level: 62
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Tailwind
+- Sky Attack
+- Reversal
+- Knock Off
 
-Shiftry
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Mienshao @ Sitrus Berry
+Level: 62
+Ability: Reckless
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Submission
+- Double Edge
+- Triple Axel
+- Knock Off
+
+Rampardos @ Liechi Berry
+Level: 62
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Head Smash
+- Double Edge
+- Submission
+- Rock Polish
+
+Galvantula @ Focus Sash
+Level: 62
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Sleep Powder
+- Bug Buzz
+- Thunderbolt
+- Energy Ball
+
+Druddigon @ Life Orb
+Level: 62
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Dragon Rush
+- Fire Punch
+- Iron Head
+- Dragon Dance
 
 === TRAINER_ALBERTO ===
 Name: ALBERTO
@@ -7731,8 +7771,8 @@ Level: 63
 Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Close Combat
-- Sky Attack
+- Brave Bird
+- Submission
 - Blaze Kick
 - Roost
 
@@ -8156,31 +8196,63 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Nature: Hardy
 
 === TRAINER_KATE_AND_JOY ===
-Name: KATE & JOY
+Name: Kate & Joy
 Class: Sr And Jr
 Pic: Sr And Jr
-Gender: Male
+Gender: Female
 Music: Twins
 Battle Type: Doubles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Spinda
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Hypnosis
-- Psybeam
-- Dizzy Punch
-- Teeter Dance
-
-Slaking
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Focus Punch
-- Yawn
+Wigglytuff @ Rocky Helmet
+Level: 62
+Ability: Friend Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Bold
+- Follow Me
+- Moonblast
+- Shadow Ball
 - Slack Off
-- Feint Attack
+
+Mismagius @ Life Orb
+Level: 62
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Shadow Ball
+- Moonblast
+- Thunderbolt
+- Destiny Bond
+
+Vivillon Marine @ Focus Sash
+Level: 62
+Ability: Friend Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Rage Powder
+- Pollen Puff
+- Hurricane
+- Powder
+
+Amoonguss @ Black Sludge
+Level: 62
+Ability: Effect Spore
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Rage Powder
+- Spore
+- Giga Drain
+- Sludge Bomb
+
+Kingambit @ Chople Berry
+Level: 62
+Ability: Supreme Overlord
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Kowtow Cleave
+- Iron Head
+- Zen Headbutt
+- Swords Dance
 
 === TRAINER_ANNA_AND_MEG_1 ===
 Name: Anna & Meg
@@ -19730,9 +19802,9 @@ Ability: Reckless
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 - Flare Blitz
-- Drain Punch
+- Submission
 - Bulk Up
-- Head Smash
+- Slack Off
 
 Sceptile @ White Herb
 Level: 66
@@ -19799,7 +19871,7 @@ Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Wave Crash
-- Megahorn
+- Ice Spinner
 - Drill Run
 - Swords Dance
 
@@ -19937,9 +20009,9 @@ Ability: Reckless
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
 - Flare Blitz
-- Drain Punch
+- Submission
 - Bulk Up
-- Head Smash
+- Slack Off
 
 Sceptile @ White Herb
 Level: 66
@@ -20006,7 +20078,7 @@ Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Wave Crash
-- Megahorn
+- Ice Spinner
 - Drill Run
 - Swords Dance
 
@@ -23154,23 +23226,62 @@ Nature: Timid
 - Scorching Sands
 
 === TRAINER_CRISTIN_1 ===
-Name: CRISTIN
+Name: Cristin
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Loudred
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Sawk @ Red Card
+Level: 62
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Close Combat
+- Stealth Rock
+- Stone Edge
+- Pursuit
 
-Vigoroth
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Leavanny @ Focus Sash
+Level: 62
+Ability: Swarm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Leaf Blade
+- X Scissor
+- Triple Axel
+- Swords Dance
+
+Kingler @ White Herb
+Level: 62
+Ability: Hyper Cutter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Crabhammer
+- Ice Hammer
+- Shell Smash
+- Earthquake
+
+Dugtrio @ Choice Band
+Level: 62
+Ability: Arena Trap
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Earthquake
+- Stone Edge
+- Pursuit
+
+Zebstrika @ Sitrus Berry
+Level: 62
+Ability: Sap Sipper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Volt Tackle
+- High Horsepower
+- Trailblaze
+- Flare Blitz
 
 === TRAINER_MAY_RUSTBORO_TREECKO ===
 Name: MAY
