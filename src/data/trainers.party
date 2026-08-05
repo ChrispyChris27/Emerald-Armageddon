@@ -212,37 +212,44 @@ Pic: Pokemon Breeder F
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Skitty
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Brambleghast @ Focus Sash
+Level: 65
+Ability: Wind Rider
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Tailwind
+- Spirit Shackle
+- Power Whip
+- Destiny Bond
 
-Poochyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Mightyena @ Life Orb
+Level: 65
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Crunch
+- Play Rough
+- Fire Fang
+- Swords Dance
 
-Zigzagoon
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Ditto @ Metal Powder
+Level: 65
+Ability: Imposter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Serious
+- Transform
 
-Lotad
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-
-Seedot
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-
-Taillow
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Marowak Alola @ Thick Club
+Level: 65
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Flare Blitz
+- Head Smash
+- Shadow Bone
+- Swords Dance
 
 === TRAINER_GRUNT_PETALBURG_WOODS ===
 Name: Grunt
@@ -3306,12 +3313,47 @@ Pic: Hex Maniac
 Gender: Female
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Shuppet
-Level: 32
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Mimikyu @ Red Card
+Level: 65
+Ability: Disguise
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Play Rough
+- Shadow Claw
+- Curse
+- Wood Hammer
+
+Spiritomb @ Sitrus Berry
+Level: 65
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Protect
+- Curse
+- Pursuit
+- Shadow Sneak
+
+Sinistea Antique @ Focus Sash
+Level: 65
+Ability: Weak Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shell Smash
+- Stored Power
+- Shadow Ball
+- Scald
+
+Wobbuffet @ Leftovers
+Level: 65
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Safeguard
+- Counter
+- Mirror Coat
+- Destiny Bond
 
 === TRAINER_VALERIE_2 ===
 Name: VALERIE
@@ -5096,12 +5138,47 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Hariyama
-Level: 32
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Granbull @ Assault Vest
+Level: 65
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Play Rough
+- Earthquake
+- Fire Punch
+- Stone Edge
+
+Falinks @ Red Card
+Level: 65
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Drain Punch
+- Stone Edge
+- No Retreat
+- Knock Off
+
+Golurk @ Punching Glove
+Level: 65
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Headlong Rush
+- Shadow Punch
+- Ice Punch
+- Thunderpunch
+
+Skuntank @ Air Balloon
+Level: 65
+Ability: Stench
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Gunk Shot
+- Pursuit
+- Explosion
+- Play Rough
 
 === TRAINER_KIRK ===
 Name: KIRK
@@ -19093,17 +19170,47 @@ Pic: Young Couple
 Gender: Male
 Music: Girl
 Battle Type: Doubles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Delcatty
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Clawitzer @ Water Gem
+Level: 65
+Ability: Mega Launcher
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Aura Sphere
+- Heal Pulse
+- Dark Pulse
+- Origin Pulse
 
-Manectric
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Blissey @ Leftovers
+Level: 65
+Ability: Healer
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Follow Me
+- Heal Pulse
+- Toxic
+- Focus Blast
+
+Magmortar @ Fire Gem
+Level: 65
+Ability: Mega Launcher
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Aura Sphere
+- Heal Pulse
+- Dark Pulse
+- Flamethrower
+
+Chansey @ Eviolite
+Level: 65
+Ability: Healer
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Follow Me
+- Heal Pulse
+- Toxic
+- Softboiled
 
 === TRAINER_LEA_AND_JED ===
 Name: LEA & JED
@@ -26617,17 +26724,17 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Liepard @ Focus Sash
-Level: 67
+Level: 65
 Ability: Prankster
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Assist
 - Play Rough
 - Thunder Wave
-- Throat Chop
+- Knock Off
 
 Huntail @ White Herb
-Level: 67
+Level: 65
 Ability: Water Veil
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -26637,7 +26744,7 @@ Nature: Jolly
 - Shell Smash
 
 Crawdaunt @ Life Orb
-Level: 67
+Level: 65
 Ability: Adaptability
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -26656,7 +26763,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Alomomola @ Leftovers
-Level: 67
+Level: 65
 Ability: Regenerator
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Careful
@@ -26666,7 +26773,7 @@ Nature: Careful
 - Wish
 
 Muk Alola @ Quick Claw
-Level: 67
+Level: 65
 Ability: Poison Touch
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -26676,7 +26783,7 @@ Nature: Adamant
 - Explosion
 
 Crabominable @ Assault Vest
-Level: 67
+Level: 65
 Ability: Iron Fist
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -26686,7 +26793,7 @@ Nature: Adamant
 - Crabhammer
 
 Wugtrio @ Life Orb
-Level: 67
+Level: 65
 Ability: Gooey
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
