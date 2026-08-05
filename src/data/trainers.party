@@ -925,12 +925,47 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Hariyama
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Golem @ Covert Cloak
+Level: 65
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Earthquake
+- Fire Punch
+- Stone Edge
+- Stealth Rock
+
+Annihilape @ Red Card
+Level: 65
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Drain Punch
+- Bulk Up
+- Slack Off
+- Rage Fist
+
+Weavile @ Focus Sash
+Level: 65
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Triple Axel
+- Pursuit
+- Ice Shard
+- Low Sweep
+
+Hariyama @ Flame Orb
+Level: 65
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Drain Punch
+- Pursuit
+- Swords Dance
+- Bullet Punch
 
 === TRAINER_SHELLY_WEATHER_INSTITUTE ===
 Name: Shelly
@@ -4071,12 +4106,57 @@ Pic: Pokemaniac
 Gender: Male
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Rhyhorn
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Avalugg @ Covert Cloak
+Level: 65
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Avalanche
+- Body Press
+- Stone Edge
+- Stealth Rock
+
+Rhyperior @ Blunder Policy
+Level: 65
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Megahorn
+- Fire Punch
+- Earthquake
+
+Spiritomb @ Red Card
+Level: 65
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Brave
+- Pursuit
+- Aura Sphere
+- Poltergeist
+- Shadow Ball
+
+Raticate @ Flame Orb
+Level: 65
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Pursuit
+- Facade
+- Swords Dance
+- Drill Run
+
+Dhelmise @ Assault Vest
+Level: 65
+Ability: Steelworker
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Power Whip
+- Spirit Shackle
+- Anchor Shot
+- Earthquake
 
 === TRAINER_GRUNT_MT_CHIMNEY_1 ===
 Name: Grunt
@@ -6501,22 +6581,37 @@ Pic: Psychic M
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Ralts
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Malamar @ Tanga Berry
+Level: 65
+Ability: Contrary
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Topsy Turvy
+- Knock Off
+- Superpower
+- Psycho Boost
 
-Ralts
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Grimmsnarl @ Leftovers
+Level: 65
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Topsy Turvy
+- Spirit Break
+- False Surrender
+- Bulk Up
 
-Kirlia
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Grapploct @ Sitrus Berry
+Level: 65
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Topsy Turvy
+- Triple Kick
+- Rock Tomb
+- Triple Axel
 
 === TRAINER_JOSHUA ===
 Name: JOSHUA
@@ -6766,22 +6861,37 @@ Pic: Psychic F
 Gender: Female
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wobbuffet
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Scovillain @ White Herb
+Level: 65
+Ability: Moody
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Overheat
+- Leaf Storm
+- Protect
+- Scorching Sands
 
-Natu
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Blaziken @ White Herb
+Level: 65
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Close Combat
+- Overheat
+- Fire Punch
+- Thunderpunch
 
-Kadabra
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Tropius @ Assault Vest
+Level: 65
+Ability: Harvest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Leaf Storm
+- Sky Attack
+- Earth Power
+- Giga Drain
 
 === TRAINER_ALEXIS ===
 Name: ALEXIS

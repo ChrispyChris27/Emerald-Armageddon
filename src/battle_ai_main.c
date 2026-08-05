@@ -3804,6 +3804,10 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 break;
             case EFFECT_SPEED_SWAP:
                 break;
+            case EFFECT_TOPSY_TURVY:
+                if (CountPositiveStatStages(battlerAtkPartner) < CountNegativeStatStages(battlerAtkPartner))
+                ADJUST_SCORE(GOOD_EFFECT);
+                break; 
             case EFFECT_GUARD_SPLIT:
             {
                 u32 atkDefense = gBattleMons[battlerAtk].defense;
