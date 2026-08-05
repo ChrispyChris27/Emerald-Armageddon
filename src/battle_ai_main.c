@@ -3152,12 +3152,16 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 u32 foe1Speed = aiData->speedStats[LEFT_FOE(battlerAtk)];
                 u32 foe2Speed = aiData->speedStats[RIGHT_FOE(battlerAtk)];
 
-                if ((speed < foe1Speed ) && (speed < foe2Speed))
+                if ((partnerSpeed > foe1Speed) && (partnerSpeed > foe2Speed))
                 ADJUST_SCORE(-10);
-                if ((partnerSpeed > foe1Speed) && (partnerSpeed < foe2Speed))
-                ADJUST_SCORE(-10);
-                if ((speed > foe1Speed) && (speed < foe2Speed) && (partnerSpeed < foe1Speed ) && (partnerSpeed < foe2Speed))
+                else if ((GetBattlerAbility(battlerAtk) == ABILITY_PRANKSTER))
                 ADJUST_SCORE(+6);
+                else if ((speed < foe1Speed ) && (speed < foe2Speed))
+                ADJUST_SCORE(-10);
+                else if ((speed > foe1Speed) && (speed > foe2Speed) && (partnerSpeed < foe1Speed ) && (partnerSpeed < foe2Speed))
+                ADJUST_SCORE(+6);
+                else
+                ADJUST_SCORE(+3);
             }
             break;
         case EFFECT_TRICK_ROOM:
