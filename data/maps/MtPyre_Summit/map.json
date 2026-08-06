@@ -153,8 +153,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 11,
-      "y": 33,
+      "x": 10,
+      "y": 22,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -166,8 +166,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BERRY_TREE",
-      "x": 35,
-      "y": 33,
+      "x": 10,
+      "y": 25,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_BERRY_TREE_GROWTH",
       "movement_range_x": 0,
@@ -260,8 +260,8 @@
   "bg_events": [
     {
       "type": "hidden_item",
-      "x": 9,
-      "y": 25,
+      "x": 35,
+      "y": 22,
       "elevation": 0,
       "item": "ITEM_HEART_SCALE",
       "flag": "FLAG_HIDDEN_ITEM_MT_PYRE_SUMMIT_ZINC"

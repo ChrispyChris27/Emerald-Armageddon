@@ -12861,7 +12861,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_AURA_SPHERE] =
     {
         .name = ITEM_NAME("TM51"),
-        .price = 3000,
+        .price = 5000,
         .description = COMPOUND_STRING(
             "Attacks with an\n"
             "aura blast that\n"
@@ -13015,7 +13015,7 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_TM_SMART_STRIKE] =
     {
         .name = ITEM_NAME("TM62"),
-        .price = 3000,
+        .price = 4000,
         .description = COMPOUND_STRING(
             "Hits with an\n"
             "accurate horn\n"

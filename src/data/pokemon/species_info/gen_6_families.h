@@ -4182,7 +4182,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .friendship = STANDARD_FRIENDSHIP,
         .growthRate = GROWTH_MEDIUM_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_1, EGG_GROUP_DRAGON),
-        .abilities = { ABILITY_REGENERATOR, ABILITY_REGENERATOR, ABILITY_REGENERATOR },
+        .abilities = { ABILITY_REGENERATOR, ABILITY_REGENERATOR, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("Dragalge"),
     #if P_MODIFIED_MEGA_CRIES

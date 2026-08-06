@@ -5009,6 +5009,8 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             enum Move predictedMoveOnPartner = aiData->lastUsedMove[BATTLE_PARTNER(battlerAtk)];
             if (predictedMoveOnPartner != MOVE_NONE && !IsBattleMoveStatus(predictedMoveOnPartner))
                 ADJUST_SCORE(GOOD_EFFECT);
+            if (CanTargetFaintAi(battlerDef, battlerAtkPartner)&& !CanTargetFaintAi(battlerDef, battlerAtk))
+                ADJUST_SCORE(BEST_EFFECT);
         }
         break;
     case EFFECT_TAUNT:
@@ -5016,6 +5018,12 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             ADJUST_SCORE(GOOD_EFFECT);
         else if (HasMoveWithCategory(battlerDef, DAMAGE_CATEGORY_STATUS))
             ADJUST_SCORE(DECENT_EFFECT);
+        break;
+    case EFFECT_ASSIST:
+        if (Random() % 100 < 50)
+        ADJUST_SCORE(2);
+        if (Random() % 100 < 50)
+        ADJUST_SCORE(2);
         break;
     case EFFECT_TRICK:
     case EFFECT_BESTOW:
@@ -5138,6 +5146,10 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
     case EFFECT_MAGIC_COAT:
         if (CanMoveBeBouncedBack(battlerDef, incomingMove))
             ADJUST_SCORE(GOOD_EFFECT);
+        if ((GetMonData(GetBattlerMon(battlerAtk), MON_DATA_SPECIES) == SPECIES_SHEDINJA) 
+            && (HasMove(battlerDef, MOVE_LEECH_SEED) || HasMove(battlerDef, MOVE_GASTRO_ACID) || HasMove(battlerDef, MOVE_WORRY_SEED) ||  HasMove(battlerDef, MOVE_ENTRAINMENT) || HasMove(battlerDef, MOVE_SIMPLE_BEAM) || HasMove(battlerDef, MOVE_CORROSIVE_GAS))
+            && (Random()% 100 < 80))
+            ADJUST_SCORE(SLOW_KILL);
         break;
     case EFFECT_RECYCLE:
         if (GetBattlerPartyState(battlerAtk)->usedHeldItem != ITEM_NONE)

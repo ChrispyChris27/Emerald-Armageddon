@@ -739,12 +739,57 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Relicanth @ Focus Band
+Level: 65
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Liquidation
+- Earthquake
+- Stone Edge
+
+Togekiss @ King's Rock
+Level: 65
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Aura Sphere
+- Disarming Voice
+- Nasty Plot
+- Air Slash
+
+Starmie @ Wise Glasses
+Level: 65
+Ability: Illuminate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psyshock
+- Scald
+- Ice Beam
+- Thunderbolt
+
+Muk @ Blunder Policy
+Level: 65
+Ability: Stench
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Gunk Shot
+- Stone Edge
+- Explosion
+- Fire Punch
+
+Kingambit @ Chople Berry
+Level: 65
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Kowtow Cleave
+- Smart Strike
+- Swords Dance
+- Retaliate
 
 === TRAINER_GRUNT_MT_PYRE_2 ===
 Name: Grunt
@@ -753,12 +798,57 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Sharpedo @ Focus Band
+Level: 65
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Fishious Rend
+- Crunch
+- Ice Fang
+- Psychic Fangs
+
+Metagross @ Weakness Policy
+Level: 65
+Ability: Battle Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Cosmic Power
+- Recover
+- Stored Power
+- Flash Cannon
+
+Krookodile @ Brightpowder
+Level: 65
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Hone Claws
+- Darkest Lariat
+- Earthquake
+- Stone Edge
+
+Porygon Z @ Blunder Policy
+Level: 65
+Ability: Download
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Boomburst
+- Zap Cannon
+- Blizzard
+- Focus Blast
+
+Beheeyem @ Zoom Lens
+Level: 65
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Quiet
+- Psychic
+- Shadow Ball
+- Aura Sphere
+- Thunderbolt
 
 === TRAINER_GRUNT_MT_PYRE_3 ===
 Name: Grunt
@@ -767,17 +857,27 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Poochyena
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Lanturn @ Rindo Berry
+Level: 65
+Ability: Volt Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Muddy Water
+- Ice Beam
+- Thunderbolt
+- Substitute
 
-Carvanha
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Golduck @ Focus Band
+Level: 65
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Muddy Water
+- Ice Beam
+- Psychic
+- Aura Sphere
 
 === TRAINER_GRUNT_WEATHER_INST_5 ===
 Name: Grunt
@@ -3335,7 +3435,7 @@ Nature: Adamant
 - Pursuit
 - Shadow Sneak
 
-Sinistea Antique @ Focus Sash
+Polteageist Antique @ Focus Sash
 Level: 65
 Ability: Weak Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -16716,17 +16816,37 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wailmer
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Feraligatr @ Life Orb
+Level: 65
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Hone Claws
+- Ice Punch
+- Liquidation
+- Thunderpunch
 
-Zubat
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Shiftry @ Tanga Berry
+Level: 65
+Ability: Leaf Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Aura Sphere
+- Magical Leaf
+- Feint Attack
+- Work Up
+
+Gardevoir @ Blunder Policy
+Level: 65
+Ability: Synchronize
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Aura Sphere
+- Psychic
+- Hypnosis
+- Disarming Voice
 
 === TRAINER_GRUNT_JAGGED_PASS ===
 Name: Grunt
@@ -19190,7 +19310,7 @@ Nature: Bold
 - Follow Me
 - Heal Pulse
 - Toxic
-- Focus Blast
+- Seismic Toss
 
 Magmortar @ Fire Gem
 Level: 65
@@ -19210,7 +19330,7 @@ Nature: Bold
 - Follow Me
 - Heal Pulse
 - Toxic
-- Softboiled
+- Seismic Toss
 
 === TRAINER_LEA_AND_JED ===
 Name: LEA & JED
@@ -26742,6 +26862,16 @@ Nature: Jolly
 - Ice Fang
 - Crunch
 - Shell Smash
+
+Toedscruel @ Yache Berry
+Level: 65
+Ability: Mycelium Might
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Spore
+- Earth Power
+- Energy Ball
+- Power Gem
 
 Crawdaunt @ Life Orb
 Level: 65

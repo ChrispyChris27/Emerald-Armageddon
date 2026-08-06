@@ -49,11 +49,13 @@ LilycoveCity_DepartmentStore_4F_EventScript_ClerkRight::
 
 	.align 2
 LilycoveCity_DepartmentStore_4F_Pokemart_DefenseTMs:
+	.2byte ITEM_TM_HIDDEN_POWER
+	.2byte ITEM_TM_NATURAL_GIFT
+	.2byte ITEM_TM_SECRET_POWER
 	.2byte ITEM_TM_SAFEGUARD
 	.2byte ITEM_TM_REFLECT
 	.2byte ITEM_TM_LIGHT_SCREEN
 	.2byte ITEM_TM_QUASH
-	.2byte ITEM_TM_EMBARGO
 	pokemartlistend
 
 LilycoveCity_DepartmentStore_4F_Text_AttackOrDefenseTM:
