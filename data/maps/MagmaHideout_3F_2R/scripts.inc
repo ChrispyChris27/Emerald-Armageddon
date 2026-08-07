@@ -1,4 +1,5 @@
 MagmaHideout_3F_2R_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, MagmaHideout_ClearStatuses
 	.byte 0
 
 MagmaHideout_3F_2R_EventScript_Grunt10::

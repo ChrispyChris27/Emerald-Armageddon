@@ -1,4 +1,5 @@
 MagmaHideout_4F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, MagmaHideout_Set_SeaOfFire
 	.byte 0
 
 MagmaHideout_4F_EventScript_Maxie::
@@ -279,3 +280,7 @@ MagmaHideout_4F_Text_RealTabithaPostBattle:
 	.string "You're too late!\p"
 	.string "Maxie has already reached Groudon!\p"
 	.string "By now it should be under his control.$"
+
+MagmaHideout_ClearStatuses::
+	callnative ResetStartingStatuses
+	end

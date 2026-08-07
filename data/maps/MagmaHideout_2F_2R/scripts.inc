@@ -1,4 +1,5 @@
 MagmaHideout_2F_2R_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, MagmaHideout_Set_SeaOfFire
 	.byte 0
 
 MagmaHideout_2F_2R_EventScript_Grunt15::
@@ -75,4 +76,9 @@ MagmaHideout_2F_2R_Text_Grunt8Defeat:
 MagmaHideout_2F_2R_Text_Grunt8PostBattle:
 	.string "I'm getting this feeling that our plan\n"
 	.string "is going to end in failure…$"
+
+MagmaHideout_Set_SeaOfFire::
+	callnative ResetStartingStatuses
+	setstartingstatus STARTING_STATUS_SEA_OF_FIRE_PLAYER
+	end
 

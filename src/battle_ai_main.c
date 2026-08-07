@@ -4626,9 +4626,14 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         IncreaseConfusionScore(battlerAtk, battlerDef, move, &score);
         break;
     case EFFECT_SUBSTITUTE:
-    case EFFECT_SHED_TAIL:
         ADJUST_SCORE(IncreaseSubstituteMoveScore(battlerAtk, battlerDef, move));
         break;
+    case EFFECT_SHED_TAIL:
+            if ((GetBattlerAbility(battlerAtk) == ABILITY_REGENERATOR))
+            ADJUST_SCORE(BEST_EFFECT);
+            else
+            ADJUST_SCORE(IncreaseSubstituteMoveScore(battlerAtk, battlerDef, move));
+            break;
     case EFFECT_MIMIC:
         if (AI_IsFaster(battlerAtk, battlerDef, move, predictedMove, CONSIDER_PRIORITY))
         {

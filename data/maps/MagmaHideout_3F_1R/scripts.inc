@@ -1,4 +1,5 @@
 MagmaHideout_3F_1R_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, MagmaHideout_Set_SeaOfFire
 	.byte 0
 
 MagmaHideout_3F_1R_EventScript_Grunt9::

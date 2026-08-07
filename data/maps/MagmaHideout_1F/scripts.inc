@@ -1,5 +1,6 @@
 MagmaHideout_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, MagmaHideout_1F_OnTransition
+	map_script MAP_SCRIPT_ON_RESUME, MagmaHideout_Set_Hazards
 	.byte 0
 
 MagmaHideout_1F_OnTransition:
@@ -50,4 +51,10 @@ MagmaHideout_1F_Text_Grunt2PostBattle:
 	.string "You'll find out when you get there!\p"
 	.string "It'd be better if you saved surprises\n"
 	.string "to the end, don't you think?$"
+
+MagmaHideout_Set_Hazards::
+	callnative ResetStartingStatuses
+	setstartingstatus STARTING_STATUS_STEALTH_ROCK_PLAYER
+	setstartingstatus STARTING_STATUS_SPIKES_PLAYER_L2
+	end
 

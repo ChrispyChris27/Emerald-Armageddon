@@ -106,10 +106,15 @@ Music: Aqua
 Battle Type: Singles
 AI: Check Bad Move
 
-Poochyena
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Barbaracle @ Brightpowder
+Level: 69
+Ability: Tough Claws
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Ice Spinner
+- Rock Slide
+- Shell Smash
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
 Name: Grunt
@@ -12972,18 +12977,18 @@ Music: Magma
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Walking Wake @ Chesto Berry
-Level: 73
+Walking Wake @ Life Orb
+Level: 72
 Ability: Protosynthesis
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
 - Hydro Steam
 - Weather Ball
 - Dragon Pulse
-- Leer
+- Flash Cannon
 
 Great Tusk @ Focus Sash
-Level: 73
+Level: 72
 Ability: Protosynthesis
 IVs: 31 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -12993,7 +12998,7 @@ Nature: Jolly
 - Endeavor
 
 Heatran @ Heatranite
-Level: 73
+Level: 72
 Ability: Flash Fire
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -13192,7 +13197,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 Nature: Quiet
 - Stealth Rock
 - Earth Power
-- Misty Explosion
+- Sky Attack
 - Springtide Storm
 
 Armaldo @ Shell Bell
@@ -22054,12 +22059,57 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zubat
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Forretress @ Red Card
+Level: 69
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Leech Life
+- Iron Head
+- Explosion
+- Earthquake
+
+Kommo-o @ Roseli Berry
+Level: 69
+Ability: Soundproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Tail
+- Circle Throw
+- Iron Head
+- Dragon Rush
+
+Hypno @ Blunder Policy 
+Level: 69
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Hypnosis
+- Zen Headbutt
+- Bulk Up
+- Drain Punch
+
+Avalugg @ Rowap Berry 
+Level: 69
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Curse
+- Recover
+- Mountain Gale
+- Earthquake
+
+Gliscor @ Toxic Orb
+Level: 69
+Ability: Poison Heal
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Earthquake
+- Stone Edge
+- Whirlwind
+- Dual Wingbeat
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_2 ===
 Name: Grunt
@@ -22068,12 +22118,47 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Poochyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Cyclizar @ Sitrus Berry
+Level: 70
+Ability: Regenerator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Shed Tail
+- Dragon Rush
+- Double Edge
+- Fire Punch
+
+Klawf @ White Herb
+Level: 70
+Ability: Anger Shell
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Shell Smash
+- Stone Edge
+- Earthquake
+- Crabhammer
+
+Volcarona @ Charti Berry
+Level: 70
+Ability: Flame Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Quiver Dance
+- Bug Buzz
+- Fiery Dance
+- Hurricane
+
+Lickilicky @ Toxic Orb
+Level: 70
+Ability: Poison Heal
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Belly Drum
+- Facade
+- Ice Punch
+- Earthquake
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_3 ===
 Name: Grunt
@@ -22082,12 +22167,57 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Numel
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Gengar @ Focus Sash
+Level: 69
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Sludge Bomb
+- Destiny Bond
+- Shadow Ball
+- Thunderbolt
+
+Delphox @ Focus Band
+Level: 69
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Heat Wave
+- Psyshock
+- Shadow Ball
+- Energy Ball
+
+Steelix @ Quick Claw
+Level: 69
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Iron Head
+- Curse
+- Explosion
+- Earthquake
+
+Cacturne @ Brightpowder
+Level: 69
+Ability: Adaptability
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Pursuit
+- Needle Arm
+- Thunderpunch
+- Destiny Bond
+
+Cradily @ Leftovers
+Level: 69
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Ancientpower
+- Stockpile
+- Giga Drain
+- Earth Power
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_4 ===
 Name: Grunt
@@ -22096,17 +22226,58 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Baltoy
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Tyranitar @ Chople Berry
+Level: 69
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Pursuit
+- Psychic Fangs
+- Earthquake
 
-Zubat
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Alakazam @ Focus Band
+Level: 69
+Ability: Synchronize
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psychic
+- Shadow Ball
+- Focus Blast
+- Thunderbolt
+
+Throh @ Brightpowder
+Level: 69
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Circle Throw
+- Bulk Up
+- Slack Off
+- Stone Edge
+
+Goodra Hisui @ Assault Vest
+Level: 69
+Ability: Gooey
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Tail
+- Iron Head
+- Power Whip
+- Earthquake
+
+Mabosstiff @ Red Card
+Level: 69
+Ability: Stakeout
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Roar
+- Pursuit
+- Play Rough
+- Fire Fang
+
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_5 ===
 Name: Grunt
@@ -22115,17 +22286,47 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Baltoy
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Rampardos @ Focus Band
+Level: 70
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Head Smash
+- Submission
+- Dragon Tail
+- Earthquake
 
-Numel
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Darmanitan Galar @ Sitrus Berry
+Level: 70
+Ability: Zen Mode
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Belly Drum
+- Flare Blitz
+- Icicle Crash
+- Thunderpunch
+
+Ursaluna Bloodmoon @ Brightpowder
+Level: 70
+Ability: Mind's Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Boomburst
+- Earth Power
+- Moonblast
+- Calm Mind
+
+Sirfetch'd @ Scope Lens
+Level: 70
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Cross Chop
+- Leaf Blade
+- Swords Dance
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_6 ===
 Name: Grunt
@@ -22134,12 +22335,57 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Mightyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Exeggutor Alola @ Focus Band
+Level: 69
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dragon Pulse
+- Solarbeam
+- Flamethrower
+- Extrasensory
+
+Camerupt @ Quick Claw
+Level: 69
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Flare Blitz
+- Earthquake
+- Explosion
+- Stone Edge
+
+Crustle @ Covert Cloak
+Level: 69
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Solar Blade
+- Rock Slide
+- X Scissor
+- Shell Smash
+
+Xatu @ Life Orb
+Level: 69
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Heat Wave
+- Air Slash
+- Psyshock
+
+Exploud @ Throat Spray
+Level: 69
+Ability: Scrappy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Flamethrower
+- Boomburst
+- Alluring Voice
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_7 ===
 Name: Grunt
@@ -22148,12 +22394,57 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zubat
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Jolteon @ Air Balloon
+Level: 69
+Ability: Static
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunderbolt
+- Shadow Ball
+- Weather Ball
+- Alluring Voice
+
+Umbreon @ Leftovers
+Level: 69
+Ability: Synchronize
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Pursuit
+- Moonlight
+- Toxic
+- Protect
+
+Leafeon @ Brightpowder
+Level: 69
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Solar Blade
+- Swords Dance
+- X Scissor
+- Night Slash
+
+Flareon @ Toxic Orb
+Level: 69
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Solar Blade
+- Flare Blitz
+- Facade
+- Play Rough
+
+Espeon @ Focus Band
+Level: 69
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psyshock
+- Morning Sun
+- Weather Ball
+- Shadow Ball
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_8 ===
 Name: Grunt
@@ -22162,12 +22453,47 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Poochyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Gigalith @ Custap Berry
+Level: 70
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Stone Edge
+- Earthquake
+- Explosion
+- Stealth Rock
+
+Yanmega @ Focus Band
+Level: 70
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Solarbeam
+- Heat Wave
+- Air Slash
+- Bug Buzz
+
+Meowscarada @ Brightpowder
+Level: 70
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Solar Blade
+- Knock Off
+- Triple Axel
+- Growth
+
+Heliolisk @ Shell Bell
+Level: 70
+Ability: Solar Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Weather Ball
+- Hyper Voice
+- Thunderbolt
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_9 ===
 Name: Grunt
@@ -22176,10 +22502,10 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Bruxish @ Bright Powder
-Level: 71
+Level: 69
 Ability: Dazzling
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -22188,6 +22514,26 @@ Nature: Jolly
 - Psychic Fangs
 - Super Fang
 
+Dragonite @ Yache Berry
+Level: 69
+Ability: Multiscale
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Claw
+- Aqua Jet
+- Dual Wingbeat
+- Fire Punch
+
+Carracosta @ Rindo Berry
+Level: 69
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Aqua Jet
+- Earth Power
+- Ancientpower
+
 === TRAINER_GRUNT_MAGMA_HIDEOUT_10 ===
 Name: Grunt
 Class: Team Magma
@@ -22195,17 +22541,58 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+
+Nidoqueen @ Life Orb
+Level: 70
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Flamethrower
+- Sludge Wave
+- Earth Power
+- Stealth Rock
+
+Tangrowth @ Brightpowder
+Level: 70
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Solarbeam
+- Weather Ball
+- Earth Power
+- Focus Blast
 
 Magcargo @ Air Balloon
-Level: 71
+Level: 70
 Ability: Magma Armor
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Bold
 - Stockpile
 - Recover
-- Fire Blast
+- Heat Wave
 - Solarbeam
+
+Appletun @ Yache Berry
+Level: 70
+Ability: Ripen
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Flamethrower
+- Dragon Pulse
+- Earth Power
+
+Castform @ Focus Band
+Level: 70
+Ability: Forecast
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Weather Ball
+- Ice Beam
+- Thunderbolt
+
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_11 ===
 Name: Grunt
@@ -22216,10 +22603,15 @@ Music: Magma
 Battle Type: Singles
 AI: Check Bad Move
 
-Baltoy
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Brute Bonnet @ Occa Berry
+Level: 72
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Solar Blade
+- Gunk Shot
+- Sucker Punch
+- Spore
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
 Name: Grunt
@@ -22297,12 +22689,47 @@ Pic: Magma Grunt F
 Gender: Female
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Mightyena
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Incineroar @ Red Card
+Level: 70
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Careful
+- Flare Blitz
+- Pursuit
+- U Turn
+- Thunderpunch
+
+Claydol @ Quick Claw
+Level: 70
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Lumina Crash
+- Earth Power
+- Ancientpower
+- Body Press
+
+Chandelure @ Brightpowder
+Level: 70
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shadow Ball
+- Heat Wave
+- Energy Ball
+- Calm Mind
+
+Venusaur @ Weakness Policy
+Level: 70
+Ability: Overgrow
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Giga Drain
+- Sludge Bomb
+- Ancientpower
+- Weather Ball
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_15 ===
 Name: Grunt
@@ -22313,10 +22740,25 @@ Music: Magma
 Battle Type: Singles
 AI: Check Bad Move
 
-Numel
-Level: 29
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Arcanine @ Quick Claw
+Level: 70
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Careful
+- Curse
+- Flare Blitz
+- Morning Sun
+- Extremespeed
+
+Exeggutor @ Life Orb
+Level: 70
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Solarbeam
+- Psychic
+- Weather Ball
+- Growth
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_16 ===
 Name: Grunt
@@ -22328,14 +22770,34 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
 
 Coalossal @ Weakness Policy
-Level: 71
+Level: 69
 Ability: Steam Engine
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
 - Heat Wave
 - Solar Beam
 - Power Gem
-- Fire Blast
+- Flamethrower
+
+Charizard @ Weakness Policy
+Level: 69
+Ability: Solar Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Heat Wave
+- Solar Beam
+- Flamethrower
+- Air Slash
+
+Arcanine Hisui @ Weakness Policy
+Level: 69
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Flare Blitz
+- Head Smash
+- Wild Charge
+- Extremespeed
 
 === TRAINER_TABITHA_MAGMA_HIDEOUT ===
 Name: Courtney
@@ -22347,27 +22809,27 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Ho-Oh @ Charti Berry
-Level: 73
+Level: 72
 Ability: Multiscale
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Naughty
 - Sacred Fire
 - Dual Wingbeat
 - Solarbeam
-- Earthquake
+- Earth Power
 
-Exeggutor @ Life Orb
-Level: 73
-Ability: Chlorophyll
+Victini @ White Herb
+Level: 72
+Ability: Victory Star
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
+Nature: Hasty
+- V Create
+- Bolt Strike
 - Solarbeam
 - Psychic
-- Weather Ball
-- Growth
 
 Chandelure @ Chandelurite
-Level: 73
+Level: 72
 Ability: Shadow Tag
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid

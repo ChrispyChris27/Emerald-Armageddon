@@ -28,6 +28,7 @@ JaggedPass_EventScript_SetWeatherAsh::
 	return
 
 JaggedPass_OnLoad:
+	callnative ResetStartingStatuses
 	goto_if_le VAR_JAGGED_PASS_STATE, 1, JaggedPass_EventScript_ConcealHideoutEntrance
 	end
 

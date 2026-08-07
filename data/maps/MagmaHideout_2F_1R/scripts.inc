@@ -1,4 +1,5 @@
 MagmaHideout_2F_1R_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, MagmaHideout_Set_Hazards
 	.byte 0
 
 MagmaHideout_2F_1R_EventScript_Grunt14::
