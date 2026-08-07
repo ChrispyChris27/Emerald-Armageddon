@@ -3145,24 +3145,6 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         case EFFECT_AFTER_YOU:
             if (effect == EFFECT_TRICK_ROOM && !(gFieldStatuses & STATUS_FIELD_TRICK_ROOM) && ShouldSetFieldStatus(battlerAtk, STATUS_FIELD_TRICK_ROOM))
                 ADJUST_SCORE(DECENT_EFFECT);
-            if (effect == EFFECT_POWER_BASED_ON_USER_HP)
-            {
-                u32 speed = aiData->speedStats[battlerAtk];
-                u32 partnerSpeed = aiData->speedStats[BATTLE_PARTNER(battlerAtk)];
-                u32 foe1Speed = aiData->speedStats[LEFT_FOE(battlerAtk)];
-                u32 foe2Speed = aiData->speedStats[RIGHT_FOE(battlerAtk)];
-
-                if ((partnerSpeed > foe1Speed) && (partnerSpeed > foe2Speed))
-                ADJUST_SCORE(-10);
-                else if ((GetBattlerAbility(battlerAtk) == ABILITY_PRANKSTER))
-                ADJUST_SCORE(+6);
-                else if ((speed < foe1Speed ) && (speed < foe2Speed))
-                ADJUST_SCORE(-10);
-                else if ((speed > foe1Speed) && (speed > foe2Speed) && (partnerSpeed < foe1Speed ) && (partnerSpeed < foe2Speed))
-                ADJUST_SCORE(+6);
-                else
-                ADJUST_SCORE(+3);
-            }
             break;
         case EFFECT_TRICK_ROOM:
             if (effect == EFFECT_AFTER_YOU && !(gFieldStatuses & STATUS_FIELD_TRICK_ROOM) && ShouldSetFieldStatus(battlerAtk, STATUS_FIELD_TRICK_ROOM))
@@ -3243,6 +3225,28 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
     case EFFECT_PERISH_SONG:
         if (aiData->partnerMove != 0 && HasTrappingMoveEffect(battlerAtkPartner))
             ADJUST_SCORE(WEAK_EFFECT);
+        break;
+    case EFFECT_AFTER_YOU:
+        if (partnerEffect == EFFECT_POWER_BASED_ON_USER_HP)
+            {
+                u32 speed = aiData->speedStats[battlerAtk];
+                u32 partnerSpeed = aiData->speedStats[BATTLE_PARTNER(battlerAtk)];
+                u32 foe1Speed = aiData->speedStats[LEFT_FOE(battlerAtk)];
+                u32 foe2Speed = aiData->speedStats[RIGHT_FOE(battlerAtk)];
+
+                if (((partnerSpeed > foe1Speed) && (partnerSpeed > foe2Speed)) || ((speed < foe1Speed ) && (speed < foe2Speed)))
+                {
+                    ADJUST_SCORE(-10);
+                    break;
+                }
+                if ((GetBattlerAbility(battlerAtk) == ABILITY_PRANKSTER) || ((speed > foe1Speed) && (speed > foe2Speed)))
+                ADJUST_SCORE(+3);
+                if ((partnerSpeed < foe1Speed) && (partnerSpeed < foe2Speed))
+                ADJUST_SCORE(+2);
+                if (CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), RIGHT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING)
+                || CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), LEFT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING))
+                ADJUST_SCORE(+3);
+            }
         break;
     case EFFECT_MAGNET_RISE:
         if (AI_IsBattlerGrounded(battlerAtk)
@@ -3544,7 +3548,10 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                     {
                         ADJUST_SCORE(DECENT_EFFECT);
                     }
-                    RETURN_SCORE_PLUS(WEAK_EFFECT);
+                    if (atkPartnerHoldEffect == HOLD_EFFECT_WEAKNESS_POLICY)
+                    ADJUST_SCORE(FAST_KILL);
+                    else 
+                    ADJUST_SCORE(GOOD_EFFECT);
                 }
                 else
                 {
@@ -3661,6 +3668,23 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 break;
             default:
                 break;
+            }
+
+            switch (atkPartnerHoldEffect)
+            {
+            case HOLD_EFFECT_WEAKNESS_POLICY:
+                if (!partnerProtecting
+                 && aiData->effectiveness[battlerAtk][battlerAtkPartner][gAiThinkingStruct->movesetIndex] >= UQ_4_12(2.0)
+                 && isFriendlyFireOK)
+                {
+                    if (GetMovePriority(move) > 0)
+                    ADJUST_SCORE(BEST_EFFECT);
+                    else
+                    ADJUST_SCORE(GOOD_EFFECT);
+                }
+                break;
+            default:
+            break;
             }
         } // ability checks
 
@@ -5025,9 +5049,22 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_ASSIST:
+        if ((GetFirstFaintedPartyIndex(battlerAtk) != PARTY_SIZE) && HasMoveWithEffect(battlerAtk, EFFECT_METRONOME))
+            {
+                ADJUST_SCORE(5);
+                break;
+            }
+        if ((GetFirstFaintedPartyIndex(battlerAtk) == PARTY_SIZE) && HasMoveWithEffect(battlerAtk, EFFECT_METRONOME))
+            {
+                ADJUST_SCORE(-10);
+                break;
+            }
         if (Random() % 100 < 50)
         ADJUST_SCORE(2);
         if (Random() % 100 < 50)
+        ADJUST_SCORE(2);
+        break;
+    case EFFECT_METRONOME:
         ADJUST_SCORE(2);
         break;
     case EFFECT_TRICK:

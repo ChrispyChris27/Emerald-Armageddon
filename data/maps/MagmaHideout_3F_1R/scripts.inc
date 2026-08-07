@@ -1,5 +1,5 @@
 MagmaHideout_3F_1R_MapScripts::
-	map_script MAP_SCRIPT_ON_RESUME, MagmaHideout_Set_SeaOfFire
+	map_script MAP_SCRIPT_ON_RESUME, MagmaHideout_Set_Fire_And_Hazards
 	.byte 0
 
 MagmaHideout_3F_1R_EventScript_Grunt9::
@@ -41,4 +41,11 @@ MagmaHideout_3F_1R_Text_Grunt16PostBattle:
 	.string "TEAM MAGMA is right!\p"
 	.string "Don't listen to TEAM AQUA.\n"
 	.string "Don't believe their lies!$"
+
+MagmaHideout_Set_Fire_And_Hazards::
+	callnative ResetStartingStatuses
+	setstartingstatus STARTING_STATUS_STEALTH_ROCK_PLAYER
+	setstartingstatus STARTING_STATUS_SEA_OF_FIRE_PLAYER
+	setstartingstatus STARTING_STATUS_SPIKES_PLAYER_L2
+	end
 
