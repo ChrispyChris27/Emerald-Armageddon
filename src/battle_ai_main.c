@@ -3240,12 +3240,28 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                     break;
                 }
                 if ((GetBattlerAbility(battlerAtk) == ABILITY_PRANKSTER) || ((speed > foe1Speed) && (speed > foe2Speed)))
-                ADJUST_SCORE(+3);
+                ADJUST_SCORE(+2);
                 if ((partnerSpeed < foe1Speed) && (partnerSpeed < foe2Speed))
                 ADJUST_SCORE(+2);
+                if (IsBattlerAtMaxHp(battlerAtkPartner))
+                ADJUST_SCORE(+2);
+                if (CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), RIGHT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING)
+                && CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), LEFT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING))
+                {
+                    ADJUST_SCORE(+6);
+                    break;
+                }
                 if (CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), RIGHT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING)
                 || CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), LEFT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING))
-                ADJUST_SCORE(+3);
+                {
+                    ADJUST_SCORE(+4);
+                    break;
+                }
+                if ((gBattleMons[battlerAtkPartner].hp < gBattleMons[battlerAtkPartner].maxHP / 2))
+                {
+                    ADJUST_SCORE(-4);
+                    break;
+                }
             }
         break;
     case EFFECT_MAGNET_RISE:

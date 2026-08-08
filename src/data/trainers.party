@@ -203,12 +203,37 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zubat
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Floatzel @ Covert Cloak
+Level: 71
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- After You
+- Wave Crash
+- Ice Punch
+- Thunderpunch
+
+Whimsicott @ Kebia Berry
+Level: 71
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- After You
+- Pollen Puff
+- Moonblast
+- Energy Ball
+
+Vaporeon @ Leftovers
+Level: 71
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- After You
+- Hydro Pump
+- Ice Beam
+- Life Dew
 
 === TRAINER_GABRIELLE_1 ===
 Name: GABRIELLE
@@ -399,12 +424,35 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Blastoise @ Choice Specs
+Level: 71
+Ability: Rain Dish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Water Spout
+
+Wailord @ Choice Specs
+Level: 71
+Ability: Oblivious
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Water Spout
+
+Octillery @ Choice Specs
+Level: 71
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Water Spout
+
+Jellicent @ Choice Specs
+Level: 71
+Ability: Water Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Water Spout
 
 === TRAINER_DECLAN ===
 Name: DECLAN
@@ -22655,7 +22703,7 @@ Pic: Magma Grunt M
 Gender: Male
 Music: Magma
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices 
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Jumpluff @ Covert Cloak
 Level: 71
