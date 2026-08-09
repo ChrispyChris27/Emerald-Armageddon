@@ -1476,13 +1476,15 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         if (GetConfig(B_PRANKSTER_DARK_TYPES) >= GEN_7 && IS_BATTLER_OF_TYPE(battlerDef, TYPE_DARK)
           && aiData->abilities[battlerAtk] == ABILITY_PRANKSTER && IsBattleMoveStatus(move)
           && moveTarget != TARGET_OPPONENTS_FIELD
-          && moveTarget != TARGET_USER)
+          && moveTarget != TARGET_USER
+          && moveEffect != EFFECT_ASSIST)
             RETURN_SCORE_MINUS(10);
 
         if (GetConfig(B_PRANKSTER_DARK_TYPES) >= GEN_7 && IS_BATTLER_OF_TYPE(battlerDef, TYPE_DARK)
           && aiData->abilities[battlerAtk] == ABILITY_AS_ONE_MEOWSTIC && IsBattleMoveStatus(move)
           && moveTarget != TARGET_OPPONENTS_FIELD
-          && moveTarget != TARGET_USER)
+          && moveTarget != TARGET_USER
+          && moveEffect != EFFECT_ASSIST)
             RETURN_SCORE_MINUS(10);
 
         // terrain & effect checks
