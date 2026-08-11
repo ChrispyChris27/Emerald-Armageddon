@@ -75,7 +75,7 @@ enum ItemEffect
     ITEM_STATS_CHANGE,
 };
 
-#define IS_WHOLE_SIDE_ALIVE(battler)    ((IsBattlerAlive(battler) && IsBattlerAlive(BATTLE_PARTNER(battler))))
+#define IS_WHOLE_SIDE_ALIVE(battler)    ((IsBattlerAlive(battler) && IsBattlerAlive(GetPartnerBattler(battler))))
 #define IS_ALIVE_AND_PRESENT(battler)   (IsBattlerAlive(battler) && IsBattlerSpritePresent(battler))
 
 // Lowest and highest percentages used for damage roll calculations
@@ -353,7 +353,7 @@ bool32 CanMonParticipateInSkyBattle(struct Pokemon *mon);
 void RemoveBattlerType(enum BattlerId battler, enum Type type);
 enum Type GetBattleMoveType(enum Move move);
 void TryActivateSleepClause(enum BattlerId battler, u32 indexInParty);
-void TryDeactivateSleepClause(enum BattleSide battlerSide, u32 indexInParty);
+void TryDeactivateSleepClause(enum BattlerId battler, u32 indexInParty);
 bool32 IsSleepClauseActiveForSide(enum BattleSide battlerSide);
 bool32 IsSleepClauseEnabled(void);
 bool32 AreMultiPartiesFullTeams(void);
