@@ -12,6 +12,7 @@ LilycoveCity_OnTransition:
 	end
 
 LilycoveCity_OnLoad:
+	callnative ResetStartingStatuses
 	call_if_unset FLAG_TEAM_AQUA_ESCAPED_IN_SUBMARINE, LilycoveCity_EventScript_SetWailmerMetatiles
 	end
 

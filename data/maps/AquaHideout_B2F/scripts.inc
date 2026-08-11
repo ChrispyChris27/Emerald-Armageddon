@@ -1,4 +1,5 @@
 AquaHideout_B2F_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, AquaHideoutSetWonderRoom
 	map_script MAP_SCRIPT_ON_TRANSITION, AquaHideout_B2F_OnTransition
 	.byte 0
 
@@ -158,3 +159,8 @@ AquaHideout_B2F_Text_Grunt8Defeat:
 AquaHideout_B2F_Text_Grunt8PostBattle:
 	.string "I'll have to learn about how I can\n"
 	.string "battle more effectively…$"
+
+AquaHideoutSetWonderRoom::
+	callnative ResetStartingStatuses
+	setstartingstatus STARTING_STATUS_WONDER_ROOM
+	end

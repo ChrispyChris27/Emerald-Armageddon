@@ -1,4 +1,5 @@
 AquaHideout_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, AquaHideoutSetWonderRoom
 	.byte 0
 
 @ The below two entrance guards give hints about what to do to progress the story

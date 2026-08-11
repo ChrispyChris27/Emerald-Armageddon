@@ -4,6 +4,7 @@ AquaHideout_B1F_MapScripts::
 	.byte 0
 
 AquaHideout_B1F_OnResume:
+	call AquaHideoutSetMagicRoom
 	call_if_set FLAG_SYS_CTRL_OBJ_DELETE, AquaHideout_B1F_EventScript_TryRemoveElectrode
 	end
 
@@ -158,3 +159,8 @@ AquaHideout_B1F_Text_Grunt7Defeat:
 AquaHideout_B1F_Text_Grunt7PostBattle:
 	.string "If you have a cool uniform, you look\n"
 	.string "good even in a loss, don't you think?$"
+
+AquaHideoutSetMagicRoom::
+	callnative ResetStartingStatuses
+	setstartingstatus STARTING_STATUS_MAGIC_ROOM
+	return

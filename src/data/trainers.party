@@ -104,10 +104,20 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+
+Overqwil @ Focus Band
+Level: 73
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Toxic Spikes
+- Knock Off
+- Gunk Shot
+- Explosion
 
 Barbaracle @ Brightpowder
-Level: 69
+Level: 73
 Ability: Tough Claws
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -116,6 +126,36 @@ Nature: Jolly
 - Rock Slide
 - Shell Smash
 
+Florges @ Assault Vest
+Level: 73
+Ability: Flower Veil
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Moonblast
+- Giga Drain
+- Ominous Wind
+- Chilling Water
+
+Kingler @ Life Orb
+Level: 73
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Liquidation
+- Icicle Crash
+- Rock Slide
+- Swords Dance
+
+Palossand @ Quick Claw
+Level: 73
+Ability: Water Compaction
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Earth Power
+- Ancientpower
+- Ominous Wind
+- Shore Up
+
 === TRAINER_GRUNT_AQUA_HIDEOUT_2 ===
 Name: Grunt
 Class: Team Aqua
@@ -123,22 +163,34 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Chatot
+Level: 73
+Ability: Own Tempo
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Chatter
 
-Kabutops @ Scope Lens
-Level: 75
-Ability: Sharpness
-IVs: 30 HP / 31 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Smeargle
+Level: 73
+Ability: Own Tempo
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Aqua Cutter
-- Stone Edge
-- Psycho Cut
-- X Scissor
+- Dark Void
+- Rock Slide
+- Revival Blessing
+- Mean Look
+
+Quaquaval
+Level: 73
+Ability: Own Tempo
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Triple Axel
+- Drain Punch
+- Swords Dance
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_3 ===
 Name: Grunt
@@ -147,12 +199,57 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Pelipper
+Level: 73
+Ability: Drizzle
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Ice Beam
+- Hurricane
+- Supersonic
+
+Lapras
+Level: 73
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Muddy Water
+- Ice Beam
+- Thunder
+- Confuse Ray
+
+Ludicolo
+Level: 73
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Ice Beam
+- Teeter Dance
+- Energy Ball
+
+Tentacruel
+Level: 73
+Ability: Rain Dish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Ice Beam
+- Confuse Ray
+- Sludge Bomb
+
+Kingdra
+Level: 73
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Dragon Pulse
+- Scald
+- Ice Beam
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_4 ===
 Name: Grunt
@@ -161,12 +258,57 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Crustle @ Quick Claw
+Level: 73
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Rock Slide
+- X Scissor
+- Earthquake
+
+Cryogonal @ Assault Vest
+Level: 73
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Earth Power
+- Freeze Dry
+- Ancientpower
+
+Archaludon @ Power Herb
+Level: 73
+Ability: Stamina
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+- Aura Sphere
+
+Gyarados @ Brightpowder
+Level: 73
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Earthquake
+- Dragon Dance
+- Sky Attack
+
+Kabutops @ Scope Lens
+Level: 73
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Aqua Cutter
+- Stone Edge
+- Psycho Cut
+- X Scissor
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_1 ===
 Name: Grunt
@@ -969,12 +1111,55 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Crobat
+Level: 73
+Ability: Infiltrator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- U Turn
+- Confuse Ray
+- Hypnosis
+- Hurricane
+
+Gourgeist Super
+Level: 73
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Spirit Shackle
+- Confuse Ray
+- Power Whip
+- Fire Lash
+
+Oricorio Sensu
+Level: 73
+Ability: Dancer
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Revelation Dance
+- Hurricane
+- Heat Wave
+- Quiver Dance
+
+Klefki
+Level: 73
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Thunder Wave
+- Confuse Ray
+- Iron Head
+- Play Rough
+
+Noctowl
+Level: 73
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Confuse Ray
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_6 ===
 Name: Grunt
@@ -983,12 +1168,57 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zubat
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Dragalge @ Assault Vest
+Level: 73
+Ability: Regenerator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Flip Turn
+- Draco Meteor
+- Sludge Wave
+- Flamethrower
+
+Steelix @ Quick Claw
+Level: 73
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Head Smash
+- Earthquake
+- Iron Tail
+- Explosion
+
+Carracosta @ Brightpowder
+Level: 73
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Earthquake
+- Rock Slide
+- Shell Smash
+
+Lunatone @ Focus Band
+Level: 73
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Calm Mind
+- Ancientpower
+- Stored Power
+- Moonlight
+
+Donphan @ Quick Claw
+Level: 73
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Earthquake
+- Rock Slide
+- Curse 
+- Shore Up
 
 === TRAINER_FREDRICK ===
 Name: FREDRICK
@@ -1068,15 +1298,15 @@ Nature: Adamant
 - Close Combat
 - Swords Dance
 
-Slowbro @ Slowbronite
+Zeraora @ Zeraorite
 Level: 77
-Ability: Regenerator
+Ability: Volt Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Bold
-- Scald
-- Slack Off
-- Stored Power
-- Calm Mind
+Nature: Jolly
+- Plasma Fists
+- Ice Punch
+- Fire Punch
+- Swords Dance
 
 === TRAINER_ZANDER ===
 Name: ZANDER
@@ -5399,17 +5629,37 @@ Pic: Aqua Grunt F
 Gender: Female
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Poochyena
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Mr. Rime
+Level: 73
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Teeter Dance
+- Ice Beam
+- Psychic
+- Thunderbolt
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Tsareena
+Level: 73
+Ability: Queenly Majesty
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Teeter Dance
+- Triple Axel
+- Power Whip
+- Acrobatics
+
+Lopunny
+Level: 73
+Ability: Scrappy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Teeter Dance
+- Triple Kick
+- Double Edge
+- Acrobatics
 
 === TRAINER_GRUNT_AQUA_HIDEOUT_8 ===
 Name: Grunt
@@ -5418,12 +5668,57 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Qwilfish @ Focus Band
+Level: 73
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Explosion
+- Gunk Shot
+- Liquidation
+- Spikes
+
+Salamence @ Yache Berry
+Level: 73
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Sky Attack
+- Dragon Claw
+- Earthquake
+
+Weezing @ Focus Band
+Level: 73
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Gunk Shot
+- Explosion
+- Flamethrower
+- Ominous Wind
+
+Pinsir @ Brightpowder
+Level: 73
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Bulk Up
+- Leech Life
+- Earthquake
+- Stone Edge
+
+Hitmonchan @ Assault Vest
+Level: 73
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Drain Punch
+- Comet Punch
+- Ice Punch
+- Power Up Punch
 
 === TRAINER_SHAWN ===
 Name: SHAWN
@@ -21971,7 +22266,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Liquidation
 - Rock Slide
-- Ice Hammer
+- Icicle Crash
 - Swords Dance
 
 Hypno @ Blunder Policy
@@ -22636,15 +22931,25 @@ Music: Magma
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Brute Bonnet @ Occa Berry
+Tauros Paldea Blaze @ Focus Band
 Level: 70
-Ability: Protosynthesis
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
+Nature: Jolly
+- Raging Bull
+- Close Combat
+- Stone Edge
 - Solar Blade
-- Gunk Shot
-- Sucker Punch
-- Spore
+
+Sunflora @ Quick Claw
+Level: 70
+Ability: Solar Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Weather Ball
+- Earth Power
+- Sleep Powder
 
 Arcanine @ Quick Claw
 Level: 70
@@ -22665,6 +22970,16 @@ Nature: Modest
 - Psychic
 - Weather Ball
 - Growth
+
+Brute Bonnet @ Occa Berry
+Level: 70
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Solar Blade
+- Gunk Shot
+- Sucker Punch
+- Spore
 
 === TRAINER_GRUNT_MAGMA_HIDEOUT_12 ===
 Name: Grunt
@@ -22713,7 +23028,7 @@ Nature: Timid
 - After You
 - Solar Beam
 - Synthesis
-- Weather Ball
+- Pollen Puff
 
 Lilligant Hisui @ Focus Sash
 Level: 71
@@ -22776,7 +23091,7 @@ Nature: Timid
 
 Venusaur @ Weakness Policy
 Level: 70
-Ability: Overgrow
+Ability: Chlorophyll
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Giga Drain
@@ -22891,15 +23206,15 @@ Nature: Naughty
 - Solarbeam
 - Earth Power
 
-Victini @ White Herb
+Ogerpon Hearthflame @ Hearthflame Mask
 Level: 72
-Ability: Victory Star
+Ability: Mold Breaker
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hasty
-- V Create
-- Bolt Strike
-- Solarbeam
-- Psychic
+Nature: Jolly
+- Ivy Cudgel
+- Solar Blade
+- Play Rough
+- Swords Dance
 
 Chandelure @ Chandelurite
 Level: 72

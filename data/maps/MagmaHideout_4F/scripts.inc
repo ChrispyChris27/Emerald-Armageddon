@@ -1,5 +1,5 @@
 MagmaHideout_4F_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, MagmaHideout_Set_SeaOfFire
+	map_script MAP_SCRIPT_ON_RESUME, MagmaHideout_Set_SeaOfFire
 	.byte 0
 
 MagmaHideout_4F_EventScript_Maxie::
