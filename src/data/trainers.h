@@ -268,7 +268,7 @@
 #line 180
                 MOVE_DARK_VOID,
                 MOVE_ROCK_SLIDE,
-                MOVE_REVIVAL_BLESSING,
+                MOVE_POLLEN_PUFF,
                 MOVE_MEAN_LOOK,
             },
             },
