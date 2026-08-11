@@ -3233,11 +3233,11 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         if (partnerEffect == EFFECT_POWER_BASED_ON_USER_HP)
             {
                 u32 speed = aiData->speedStats[battlerAtk];
-                u32 partnerSpeed = aiData->speedStats[BATTLE_PARTNER(battlerAtk)];
-                u32 foe1Speed = aiData->speedStats[LEFT_FOE(battlerAtk)];
-                u32 foe2Speed = aiData->speedStats[RIGHT_FOE(battlerAtk)];
+                u32 partnerSpeed = aiData->speedStats[GetPartnerBattler(battlerAtk)];
+                u32 foe1Speed = aiData->speedStats[GetBattlerLeftFoe(battlerAtk)];
+                u32 foe2Speed = aiData->speedStats[GetBattlerRightFoe(battlerAtk)];
 
-                if (((partnerSpeed > foe1Speed) && (partnerSpeed > foe2Speed)) || ((speed < foe1Speed ) && (speed < foe2Speed)))
+                if (((partnerSpeed > foe1Speed) && (partnerSpeed > foe2Speed)) || ((speed < foe1Speed ) && (speed < foe2Speed) && (GetBattlerAbility(battlerAtk) != ABILITY_PRANKSTER)))
                 {
                     ADJUST_SCORE(-10);
                     break;
@@ -3248,14 +3248,14 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 ADJUST_SCORE(+2);
                 if (IsBattlerAtMaxHp(battlerAtkPartner))
                 ADJUST_SCORE(+2);
-                if (CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), RIGHT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING)
-                && CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), LEFT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING))
+                if (CanIndexMoveFaintTarget(GetPartnerBattler(battlerAtk), GetBattlerRightFoe(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING)
+                && CanIndexMoveFaintTarget(GetPartnerBattler(battlerAtk), GetBattlerLeftFoe(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING))
                 {
                     ADJUST_SCORE(+6);
                     break;
                 }
-                if (CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), RIGHT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING)
-                || CanIndexMoveFaintTarget(BATTLE_PARTNER(battlerAtk), LEFT_FOE(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING))
+                if (CanIndexMoveFaintTarget(GetPartnerBattler(battlerAtk), GetBattlerRightFoe(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING)
+                || CanIndexMoveFaintTarget(GetPartnerBattler(battlerAtk), GetBattlerLeftFoe(battlerAtk), gAiThinkingStruct->movesetIndex, AI_ATTACKING))
                 {
                     ADJUST_SCORE(+4);
                     break;
@@ -4848,7 +4848,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             }
             //fallthrough
         default: // protect
-            if ((aiData->abilities[battlerAtk] == ABILITY_POWER_OF_ALCHEMY) && (aiData->abilities[BATTLE_PARTNER(battlerAtk)]== ABILITY_WONDER_GUARD))
+            if ((aiData->abilities[battlerAtk] == ABILITY_POWER_OF_ALCHEMY) && (aiData->abilities[GetPartnerBattler(battlerAtk)]== ABILITY_WONDER_GUARD))
             {
                 ADJUST_SCORE(+20);
                 break;
