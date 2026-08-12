@@ -603,12 +603,37 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Gyarados
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Aurorus @ Light Clay
+Level: 76
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Earth Power
+- Power Gem
+- Aurora Veil
+
+Froslass @ Life Orb
+Level: 76
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Shadow Ball
+- Thunderbolt
+- Nasty Plot
+
+Castform @ Expert Belt
+Level: 76
+Ability: Forecast
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Flamethrower
+- Thunderbolt
+- Energy Ball
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: Grunt
@@ -1258,15 +1283,15 @@ Nature: Adamant
 - Stone Edge
 - High Horsepower
 
-Hydrapple @ Eject Button
+Wo Chien @ Leftovers
 Level: 77
-Ability: Regenerator
+Ability: Tablets of Ruin
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Fickle Beam
-- Energy Ball
-- Hydro Pump
-- Fire Blast
+Nature: Bold
+- Knock Off
+- Ruination
+- Leech Seed
+- Giga Drain
 
 Volcanion @ Life Orb
 Level: 77
@@ -4877,17 +4902,57 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Tentacool
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Cryogonal @ Light Clay
+Level: 76
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Earth Power
+- Freeze Dry
+- Aurora Veil
 
-Wingull
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Eiscue @ Assault Vest
+Level: 76
+Ability: Ice Face
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Flip Turn
+- Head Smash
+- Liquidation
+
+Beartic @ Life Orb
+Level: 76
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Earthquake
+- Swords Dance
+- Liquidation
+
+Mamoswine @ Focus Sash
+Level: 76
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Earthquake
+- Rock Slide
+- Trailblaze
+
+Walrein @ Leftovers
+Level: 76
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Hydro Pump
+- Super Fang
+- Slack Off
 
 === TRAINER_ROLAND ===
 Name: ROLAND
@@ -4896,12 +4961,37 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Frosmoth @ Light Clay
+Level: 76
+Ability: Ice Scales
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Rage Powder
+- Bug Buzz
+- Aurora Veil
+
+Wigglytuff @ Leftovers
+Level: 76
+Ability: Friend Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Dazzling Gleam
+- Follow Me
+- Helping Hand
+
+Clefable @ Leftovers
+Level: 76
+Ability: Cute Charm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Dazzling Gleam
+- Follow Me
+- Helping Hand
 
 === TRAINER_NOLEN ===
 Name: NOLEN
@@ -5167,17 +5257,47 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Tentacool
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Mr. Rime @ Light Clay
+Level: 76
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Psychic
+- Mystical Fire
+- Aurora Veil
 
-Wailmer
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Baxcalibur @ Weakness Policy
+Level: 76
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Claw
+- Icicle Crash
+- Earthquake
+- Dragon Dance
+
+Glaceon @ Leftovers
+Level: 76
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Freeze Dry
+- Earth Power
+- Calm Mind
+
+Sandslash Alola @ Focus Sash
+Level: 76
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Iron Head
+- Earthquake
+- Swords Dance
 
 === TRAINER_TONY_2 ===
 Name: TONY
@@ -6992,7 +7112,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Flutter Mane @ Focus Sash
-Level: 78
+Level: 76
 Ability: Protosynthesis
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -7002,7 +7122,7 @@ Nature: Timid
 - Energy Ball
 
 Gengar @ Focus Sash
-Level: 78
+Level: 76
 Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -7012,7 +7132,7 @@ Nature: Timid
 - Nasty Plot
 
 Alakazam @ Focus Sash
-Level: 78
+Level: 76
 Ability: Magic Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -7031,7 +7151,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Farigiraf @ Life Orb
-Level: 78
+Level: 76
 Ability: Armor Tail
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -7041,7 +7161,7 @@ Nature: Timid
 - Thunderbolt
 
 Bruxish @ Life Orb
-Level: 78
+Level: 76
 Ability: Dazzling
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -7051,7 +7171,7 @@ Nature: Jolly
 - Crunch
 
 Tsareena @ Life Orb
-Level: 78
+Level: 76
 Ability: Queenly Majesty
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -7070,7 +7190,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Purugly @ Berserk Gene
-Level: 78
+Level: 76
 Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -7080,7 +7200,7 @@ Nature: Jolly
 - Flatter
 
 Tinkaton @ Berserk Gene
-Level: 78
+Level: 76
 Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -7090,7 +7210,7 @@ Nature: Jolly
 - Flatter
 
 Slowbro Galar @ Berserk Gene
-Level: 78
+Level: 76
 Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -7272,7 +7392,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Luxray @ Flame Orb
-Level: 78
+Level: 76
 Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -7282,7 +7402,7 @@ Nature: Jolly
 - Bulk Up
 
 Machamp @ Flame Orb
-Level: 78
+Level: 76
 Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -7292,7 +7412,7 @@ Nature: Jolly
 - Bulk Up
 
 Ursaluna @ Flame Orb
-Level: 78
+Level: 76
 Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -7311,7 +7431,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Florges White @ Leftovers
-Level: 78
+Level: 76
 Ability: Healer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -7321,7 +7441,7 @@ Nature: Timid
 - Calm Mind
 
 Ribombee @ Focus Sash
-Level: 78
+Level: 76
 Ability: Healer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -7331,7 +7451,7 @@ Nature: Modest
 - Quiver Dance
 
 Comfey @ Leftovers
-Level: 78
+Level: 76
 Ability: Healer
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -7350,7 +7470,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Froslass @ Focus Sash
-Level: 78
+Level: 76
 Ability: Snow Cloak
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -7360,7 +7480,7 @@ Nature: Timid
 - Aurora Veil
 
 Cryogonal @ Light Clay
-Level: 78
+Level: 76
 Ability: Filter
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -7370,7 +7490,7 @@ Nature: Timid
 - Aurora Veil
 
 Jynx @ Light Clay
-Level: 78
+Level: 76
 Ability: Oblivious
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -13475,12 +13595,57 @@ Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wailmer
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Vanilluxe @ Light Clay
+Level: 76
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Blizzard
+- Earth Power
+- Explosion
+- Aurora Veil
+
+Arctozolt @ Life Orb
+Level: 76
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Bolt Beak
+- Icicle Crash
+- Earthquake
+- Substitute
+
+Avalugg @ Leftovers
+Level: 76
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Recover
+- Curse
+- Earthquake
+- Ice Shard
+
+Frosmoth @ Focus Sash
+Level: 76
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Quiver Dance
+- Bug Buzz
+- Blizzard
+- Air Slash
+
+Cetitan @ Sitrus Berry
+Level: 76
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Earthquake
+- Play Rough
+- Belly Drum
 
 === TRAINER_GRACE ===
 Name: GRACE
@@ -13489,12 +13654,37 @@ Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Marill
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Ninetales Alola @ Focus Sash
+Level: 76
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Freeze Dry
+- Dazzling Gleam
+- Aurora Veil
+
+Lapras @ Ice Gem
+Level: 76
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Freeze Dry
+- Muddy Water
+- Hydro Pump
+
+Rotom Frost @ Wise Glasses
+Level: 76
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Thunderbolt
+- Shadow Ball
+- Nasty Plot
 
 === TRAINER_TANYA ===
 Name: TANYA
@@ -17401,7 +17591,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Gardevoir @ Blunder Policy
-Level: 78
+Level: 76
 Ability: Telepathy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -17411,7 +17601,7 @@ Nature: Modest
 - Hypnosis
 
 Noivern @ White Herb
-Level: 78
+Level: 76
 Ability: Telepathy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -17421,7 +17611,7 @@ Nature: Timid
 - Flamethrower
 
 Rabsca @ Life Orb
-Level: 78
+Level: 76
 Ability: Telepathy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -17579,7 +17769,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Crobat @ Leftovers
-Level: 78
+Level: 76
 Ability: Wind Rider
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -17589,7 +17779,7 @@ Nature: Jolly
 - Tailwind
 
 Drifblim @ Flying Gem
-Level: 78
+Level: 76
 Ability: Wind Rider
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -17599,7 +17789,7 @@ Nature: Adamant
 - Tailwind
 
 Staraptor @ Leftovers
-Level: 78
+Level: 76
 Ability: Wind Rider
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -17618,7 +17808,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Overqwil @ Life Orb
-Level: 78
+Level: 76
 Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -17628,7 +17818,7 @@ Nature: Jolly
 - Explosion
 
 Primarina @ Throat Spray
-Level: 78
+Level: 76
 Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -17638,7 +17828,7 @@ Nature: Timid
 - Misty Explosion
 
 Metagross @ Weakness Policy
-Level: 78
+Level: 76
 Ability: Clear Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -17657,7 +17847,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Flygon @ Yache Berry
-Level: 78
+Level: 76
 Ability: Wind Rider
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -17667,7 +17857,7 @@ Nature: Jolly
 - Tailwind
 
 Shiftry @ Focus Sash
-Level: 78
+Level: 76
 Ability: Wind Rider
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -17677,7 +17867,7 @@ Nature: Adamant
 - Tailwind
 
 Brambleghast @ Ghost Gem
-Level: 78
+Level: 76
 Ability: Wind Rider
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -17696,7 +17886,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Grumpig @ Leftovers
-Level: 78
+Level: 76
 Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -17706,7 +17896,7 @@ Nature: Timid
 - Swagger
 
 Slowking @ Weakness Policy
-Level: 78
+Level: 76
 Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -17716,7 +17906,7 @@ Nature: Modest
 - Swagger
 
 Slowking Galar @ Life Orb
-Level: 78
+Level: 76
 Ability: Own Tempo
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -17885,7 +18075,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Tauros Paldea Blaze @ White Herb
-Level: 78
+Level: 76
 Ability: Anger Point
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -17895,7 +18085,7 @@ Nature: Jolly
 - High Horsepower
 
 Tauros Paldea Aqua @ White Herb
-Level: 78
+Level: 76
 Ability: Anger Point
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -17905,7 +18095,7 @@ Nature: Jolly
 - High Horsepower
 
 Annihilape @ Assault Vest
-Level: 78
+Level: 76
 Ability: Anger Point
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -18078,12 +18268,37 @@ Pic: Swimming Triathlete F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Staryu
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Starmie @ Life Orb
+Level: 76
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Muddy Water
+- Thunderbolt
+- Psychic
+
+Porygon Z @ Life Orb
+Level: 76
+Ability: Download
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Boomburst
+- Thunderbolt
+- Nasty Plot
+
+Darmanitan Galar @ Sitrus Berry
+Level: 76
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Belly Drum
+- Flare Blitz
+- Thunderpunch
 
 === TRAINER_GRUNT_WEATHER_INST_3 ===
 Name: Grunt
@@ -21117,25 +21332,57 @@ Pic: Sr And Jr
 Gender: Male
 Music: Twins
 Battle Type: Doubles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Swablu
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Sing
-- Fury Attack
-- Safeguard
-- Aerial Ace
+Silvally @ Ice Memory
+Level: 76
+Ability: RKS System
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Earth Power
+- Thunderbolt
+- Icy Wind
 
-Numel
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Flamethrower
-- Take Down
-- Rest
-- Earthquake
+Glalie @ Leftovers
+Level: 76
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Spikes
+- Helping Hand
+- Aurora Veil
+
+Jynx @ Focus Sash
+Level: 76
+Ability: Oblivious
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Psyshock
+- Focus Blast
+- Nasty Plot
+
+Weavile @ Focus Sash
+Level: 76
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Triple Axel
+- Pursuit
+- Triple Kick
+- Swords Dance
+
+Abomasnow @ Abomasite
+Level: 76
+Ability: Leaf Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Quiet
+- Blizzard
+- Wood Hammer
+- Earth Power
+- Giga Drain
 
 === TRAINER_TYRA_AND_IVY ===
 Name: TYRA & IVY
@@ -21394,17 +21641,57 @@ Pic: Sis And Bro
 Gender: Male
 Music: Swimmer
 Battle Type: Doubles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Chinchou
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Arctovish @ Wise Glasses
+Level: 76
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Muddy Water
+- Super Fang
+- Icy Wind
 
-Carvanha
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Froslass @ Focus Sash
+Level: 76
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Shadow Ball
+- Freeze Dry
+- Icy Wind
+
+Dewgong @ Leftovers
+Level: 76
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Muddy Water
+- Signal Beam
+- Icy Wind
+
+Vanilluxe @ Ice Gem
+Level: 76
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Earth Power
+- Freeze Dry
+- Icy Wind
+
+Glaceon @ Life Orb
+Level: 76
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Earth Power
+- Freeze Dry
+- Icy Wind
 
 === TRAINER_LILA_AND_ROY_2 ===
 Name: LILA & ROY
