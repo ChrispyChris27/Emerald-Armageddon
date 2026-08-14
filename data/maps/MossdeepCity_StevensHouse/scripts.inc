@@ -37,6 +37,8 @@ MossdeepCity_StevensHouse_EventScript_StevenGivesDive::
 	applymovement LOCALID_STEVENS_HOUSE_STEVEN, MossdeepCity_StevensHouse_Movement_StevenApproachPlayer
 	waitmovement 0
 	msgbox MossdeepCity_StevensHouse_Text_YouveEarnedHMDive, MSGBOX_DEFAULT
+	giveitem ITEM_SKARMORITE
+	msgbox MossdeepCity_GiveDive_Text, MSGBOX_DEFAULT
 	giveitem ITEM_HM_DIVE
 	setflag FLAG_RECEIVED_HM_DIVE
 	setflag FLAG_OMIT_DIVE_FROM_STEVEN_LETTER
@@ -152,7 +154,17 @@ MossdeepCity_StevensHouse_Text_YouveEarnedHMDive:
 	.string "As you can see, there's not much here,\n"
 	.string "but this is my home.\p"
 	.string "Thank you for all that you've done.\p"
-	.string "This is my token of appreciation.\n"
+	.string "These are tokens of my appreciation.\p"
+	.string "First, the mega stone for one of my\n"
+	.string "favorite steel pokémon: Skarmory.\p"
+	.string "Just like the TM I gave you back in\n"
+	.string "Granite Cave, this mega stone will\l"
+	.string "help you unlock the true power of\l"
+	.string "steel type pokémon.$"
+
+MossdeepCity_GiveDive_Text:
+	.string "Second, in order to explore more\n"
+	.string "of Hoenn, you'll need this.\p"
 	.string "It's the hidden machine dive.\p"
 	.string "No need to be shy--you've earned\n"
 	.string "this HM.$"
@@ -177,12 +189,12 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "continue my research here and let\l"
 	.string "you know if I learn more about Team\l"
 	.string "Rocket or Team Aqua's whereabouts.\p"
-	.string "{PLAYER}{KUN}, there's something else\n"
-	.string "I would like you to have as well.\p"
+	.string "{PLAYER}{KUN}, there's one other\n"
+	.string "thing I would like you to have.\p"
 	.string "As you face more and more difficult\n"
 	.string "challenges, you'll need to be as\l"
 	.string "strong as possible.\p"
-	.string "To that end, there are two POKé BALLS\n"
+	.string "To that end, there are two pokéballs\n"
 	.string "On my table over there.\p"
 	.string "Both contain mythical steel type\n"
 	.string "pokémon.\p"
@@ -193,27 +205,27 @@ MossdeepCity_StevensHouse_Text_ExplainDive:
 	.string "for your assistance.$"
 
 MossdeepCity_StevensHouse_Text_UnderwateCavernBetweenMossdeepSootopolis:
-	.string "STEVEN: Apparently, there's an\n"
+	.string "Steven: Apparently, there's an\n"
 	.string "underwater cavern between\l"
-	.string "MOSSDEEP and SOOTOPOLIS.\p"
-	.string "You know, the one that CAPT. STERN\n"
+	.string "Mossdeep and Sootopolis.\p"
+	.string "You know, the one that Capt. Stern\n"
 	.string "found in his submarine.$"
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingBeldum:
-	.string "{PLAYER} checked the POKé BALL.\p"
-	.string "It contained the POKéMON\n"
-	.string "GIMMIGHOUL.\p"
-	.string "Take the POKé BALL?$"
+	.string "{PLAYER} checked the pokéball.\p"
+	.string "It contained the pokémon\n"
+	.string "Gimmighoul.\p"
+	.string "Take the pokéball?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedBeldum:
-	.string "{PLAYER} obtained a GIMMIGHOUL.$"
+	.string "{PLAYER} obtained a Gimmighoul.$"
 
 @ Unused
 MossdeepCity_StevensHouse_Text_NoSpaceForAnotherMon:
-	.string "There is no space for another POKéMON.$"
+	.string "There is no space for another pokémon.$"
 
 MossdeepCity_StevensHouse_Text_LeftPokeBallWhereItWas:
-	.string "{PLAYER} left the POKé BALL where\n"
+	.string "{PLAYER} left the pokéball where\n"
 	.string "it was.$"
 
 MossdeepCity_StevensHouse_Text_LetterFromSteven:
@@ -304,10 +316,10 @@ MossdeepCity_StevensHouse_EventScript_ReceivedMeltan::
 	end
 
 MossdeepCity_StevensHouse_Text_TakeBallContainingMeltan:
-	.string "{PLAYER} checked the POKé BALL.\p"
-	.string "It contained the POKéMON\n"
-	.string "MELTAN.\p"
-	.string "Take the POKé BALL?$"
+	.string "{PLAYER} checked the pokéball.\p"
+	.string "It contained the pokémon\n"
+	.string "Meltan.\p"
+	.string "Take the pokéball?$"
 
 MossdeepCity_StevensHouse_Text_ObtainedMeltan:
-	.string "{PLAYER} obtained a MELTAN.$"
+	.string "{PLAYER} obtained a Meltan.$"

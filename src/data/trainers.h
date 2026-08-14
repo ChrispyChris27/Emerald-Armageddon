@@ -38584,14 +38584,14 @@
             },
             {
 #line 15401
-            .species = SPECIES_BARBARACLE,
+            .species = SPECIES_GOLURK,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 15401
-            .heldItem = ITEM_BARBARACITE,
+            .heldItem = ITEM_GOLURKITE,
 #line 15404
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 15403
-            .ability = ABILITY_TOUGH_CLAWS,
+            .ability = ABILITY_NO_GUARD,
 #line 15402
             .lvl = 82,
             .ball = POKEBALL_COUNT,
@@ -38600,10 +38600,10 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 15406
-                MOVE_CROSS_CHOP,
-                MOVE_STONE_EDGE,
-                MOVE_SHELL_SMASH,
                 MOVE_HIGH_HORSEPOWER,
+                MOVE_STONE_EDGE,
+                MOVE_SPIRIT_SHACKLE,
+                MOVE_ROCK_POLISH,
             },
             },
         },

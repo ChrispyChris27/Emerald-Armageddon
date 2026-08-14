@@ -15398,15 +15398,15 @@ Nature: Jolly
 - Stone Edge
 - High Horsepower
 
-Barbaracle @ Barbaracite
+Golurk @ Golurkite
 Level: 82
-Ability: Tough Claws
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Cross Chop
-- Stone Edge
-- Shell Smash
 - High Horsepower
+- Stone Edge
+- Spirit Shackle
+- Rock Polish
 
 === TRAINER_EDWIN_2 ===
 Name: EDWIN

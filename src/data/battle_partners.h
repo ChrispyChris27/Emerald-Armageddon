@@ -107,7 +107,7 @@
                 MOVE_METEOR_MASH,
                 MOVE_PSYCHIC_FANGS,
                 MOVE_STONE_EDGE,
-                MOVE_BULLET_PUNCH,
+                MOVE_ICE_PUNCH,
             },
             },
         },

@@ -17,6 +17,7 @@ Melmetal @ Punching Glove
 Level: 82
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
+Ability: Iron Fist
 - Double Iron Bash
 - Thunder Punch
 - High Horsepower
@@ -38,7 +39,7 @@ Nature: Jolly
 - Meteor Mash
 - Psychic Fangs
 - Stone Edge
-- Bullet Punch
+- Ice Punch
 
 === PARTNER_STEVEN2 ===
 Name: STEVEN
