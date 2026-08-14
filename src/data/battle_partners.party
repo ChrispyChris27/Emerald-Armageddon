@@ -13,23 +13,23 @@ Gender: Male
 Music: Male
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Magearna @ White Herb
+Melmetal @ Punching Glove
 Level: 82
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Fleur Cannon
-- Aura Sphere
-- Flash Cannon
-- Thunderbolt
+Nature: Jolly
+- Double Iron Bash
+- Thunder Punch
+- High Horsepower
+- Bullet Punch
 
-Jirachi @ Leftovers
+Iron Crown @ Leftovers
 Level: 82
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Hasty
-- Meteor Mash
-- Zen Headbutt
-- Icy Wind
-- Thunderbolt
+Nature: Timid
+- Psyshock
+- Focus Blast
+- Tachyon Cutter
+- Thunder
 
 Metagross @ Metagrossite
 Level: 82
@@ -37,7 +37,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Meteor Mash
 - Psychic Fangs
-- Ice Punch
+- Stone Edge
 - Bullet Punch
 
 === PARTNER_STEVEN2 ===
@@ -52,6 +52,7 @@ Genesect-Chill @ Chill Drive
 Level: 91
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
+Ability: Download
 - Techno Blast
 - Psychic
 - Flash Cannon

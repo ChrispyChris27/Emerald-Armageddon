@@ -939,18 +939,61 @@ Nature: Jolly
 - Aqua Tail
 
 === TRAINER_GRUNT_SPACE_CENTER_1 ===
-Name: BROTHER
+Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: start Gravity
 
-Numel
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Clodsire @ Focus Band
+Level: 78
+Ability: Water Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Spikes
+- Earthquake
+- Megahorn
+- Stone Edge
+
+Garchomp @ Yache Berry
+Level: 78
+Ability: Rough Skin
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Earthquake
+- Dragon Rush
+- Stone Edge
+
+Charizard @ Brightpowder
+Level: 78
+Ability: Blaze
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Fire Blast
+- Hurricane
+- Earth Power
+- Focus Blast
+
+Dugtrio @ Choice Band
+Level: 78
+Ability: Arena Trap
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Earthquake
+
+Porygon Z @ Life Orb
+Level: 78
+Ability: Download
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Boomburst
+- Nasty Plot
+- Zap Cannon
+- Focus Blast
 
 === TRAINER_GRUNT_MT_PYRE_1 ===
 Name: Grunt
@@ -3921,28 +3964,61 @@ Nature: Hardy
 - Water Pulse
 
 === TRAINER_GRUNT_SPACE_CENTER_2 ===
-Name: BROTHER
+Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: start Gravity
 
-Mightyena
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Glimmora @ Focus Band
+Level: 78
+Ability: Toxic Debris
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Spikes
+- Earth Power
+- Sludge Wave
+- Power Gem
 
-Mightyena
-Level: 28
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Conkeldurr @ Quick Claw
+Level: 78
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dynamic Punch
+- Stone Edge
+- Bulk Up
+- Slack Off
 
-Numel
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Trapinch @ Choice Band
+Level: 100
+Ability: Arena Trap
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Earthquake
+
+Electrode Hisui @ Brightpowder
+Level: 78
+Ability: Aftermath
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Zap Cannon
+- Energy Ball
+- Explosion
+- Metal Sound
+
+Gengar @ Expert Belt
+Level: 78
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Zap Cannon
+- Sludge Bomb
+- Shadow Ball
+- Focus Blast
 
 === TRAINER_CINDY_2 ===
 Name: CINDY
@@ -15292,43 +15368,45 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
 === TRAINER_ARCHER_MOSSDEEP ===
-Name: ARCHER
+Name: Archer
 Class: Rocket Admin
 Pic: Archer
 Gender: Male
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Multi Party: Half
+Starting Status: start Gravity
 
-Zekrom @ Electric Gem
+Ogerpon Cornerstone @ Cornerstone Mask
 Level: 82
-Ability: Teravolt
+Ability: Sturdy
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Fusion Bolt
-- Dragon Rush
 - Stone Edge
-- Fire Punch
+- Power Whip
+- Spikes
+- Play Rough
 
-Terrakion @ Assault Vest
+Okidogi @ Payapa Berry
 Level: 82
-Ability: Justified
+Ability: Toxic Chain
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Sacred Sword
+- Cross Chop
+- Gunk Shot
 - Stone Edge
 - High Horsepower
-- Poison Jab
 
-Gallade @ Galladite
+Barbaracle @ Barbaracite
 Level: 82
-Ability: Sharpness
+Ability: Tough Claws
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Sacred Sword
-- Psycho Cut
-- Leaf Blade
-- X Scissor
+- Cross Chop
+- Stone Edge
+- Shell Smash
+- High Horsepower
 
 === TRAINER_EDWIN_2 ===
 Name: EDWIN
@@ -17916,37 +17994,124 @@ Nature: Modest
 - Swagger
 
 === TRAINER_GRUNT_SPACE_CENTER_3 ===
-Name: BROTHER
+Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: start Gravity
 
-Zubat
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Forretress @ Red Card
+Level: 78
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Brave
+- Spikes
+- Earthquake
+- Zap Cannon
+- Stone Edge
 
-Poochyena
-Level: 31
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Alakazam @ Focus Band
+Level: 78
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Focus Blast
+- Zap Cannon
+- Psyshock
+- Nasty Plot
+
+Golem @ Quick Claw
+Level: 78
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Stone Edge
+- Earthquake
+- Explosion
+- Curse
+
+Machamp @ Flame Orb
+Level: 78
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Dynamic Punch
+- Bulk Up
+- Earthquake
+
+Pikachu @ Light Ball
+Level: 90
+Ability: Static
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Zap Cannon
+- Focus Blast
+- Dynamic Punch
+- Iron Tail
 
 === TRAINER_GRUNT_SPACE_CENTER_4 ===
-Name: BROTHER
+Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: start Gravity
 
-Baltoy
-Level: 32
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Scolipede @ Focus Sash
+Level: 78
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Spikes
+- Gunk Shot
+- Megahorn
+- Earthquake
+
+Starmie @ Brightpowder
+Level: 78
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Thunder
+- Hydro Pump
+- Psyshock
+
+Heracross @ Focus Band
+Level: 78
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Megahorn
+- Dynamic Punch
+- Stone Edge
+- Earthquake
+
+Clamperl @ Deep Sea Tooth
+Level: 100
+Ability: Dazzling
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Shell Smash
+- Hydro Pump
+- Earth Power
+
+Kingdra @ Scope Lens
+Level: 78
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Blizzard
+- Dragon Rush
+- Hydro Pump
+- Hurricane
 
 === TRAINER_GRUNT_SPACE_CENTER_5 ===
 Name: Sister
@@ -17956,26 +18121,27 @@ Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: start Gravity
 
-Weezing Galar @ Focus Band
-Level: 79
-Ability: Misty Surge
+Rillaboom @ Focus Band
+Level: 78
+Ability: Grassy Surge
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Strange Steam
-- Sludge Bomb
-- Flamethrower
-- Misty Explosion
+Nature: Jolly
+- Power Whip
+- Earthquake
+- Stone Edge
+- Endeavor
 
-Hitmonlee @ Misty Seed
-Level: 79
+Hitmonlee @ Grassy Seed
+Level: 78
 Ability: Unburden
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
-- Close Combat
+- Dynamic Punch
 - Stone Edge
 - Earthquake
-- Poison Jab
+- Swords Dance
 
 === TRAINER_GRUNT_SPACE_CENTER_6 ===
 Name: Sister
@@ -17985,36 +18151,34 @@ Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: start Gravity
 
-Lokix @ Life Orb
-Level: 79
-Ability: Tinted Lens
+Golurk @ Choice Scarf
+Level: 82
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Leech Life
-- Throat Chop
-- Triple Axel
-- Axe Kick
+- Fissure
 
-Bewear @ Assault Vest
-Level: 79
-Ability: Fluffy
+Nidoqueen @ Life Orb
+Level: 78
+Ability: Sheer Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Drain Punch
-- Double Edge
-- Darkest Lariat
-- Ice Punch
+Nature: Hasty
+- Earth Power
+- Gunk Shot
+- Stone Edge
+- Blizzard
 
-Drapion @ Scope Lens
-Level: 79
+Barbaracle @ Scope Lens
+Level: 78
 Ability: Sniper
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Cross Poison
-- Night Slash
-- Aqua Cutter
-- Psycho Cut
+- Stone Edge
+- X Scissor
+- Razor Shell
+- Earthquake
 
 === TRAINER_GRUNT_SPACE_CENTER_7 ===
 Name: Sister
@@ -18024,46 +18188,47 @@ Gender: Female
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: start Gravity
 
-Gourgeist Super @ Quick Claw
-Level: 79
-Ability: Insomnia
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Power Whip
-- Spirit Shackle
-- Fire Lash
-- Explosion
-
-Slowking Galar @ Eject Button
-Level: 79
-Ability: Regenerator
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Modest
-- Sludge Bomb
-- Psychic
-- Focus Blast
-- Flamethrower
-
-Skuntank @ Air Balloon
-Level: 79
-Ability: Aftermath
+Tyranitar @ Chople Berry
+Level: 78
+Ability: Intimidate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Hasty
-- Gunk Shot
-- Play Rough
-- Crunch
+- Pursuit
+- Stone Edge
+- Earthquake
 - Fire Blast
 
-Grapploct @ Bright Powder
-Level: 79
-Ability: Technician
+Gorebyss @ Life Orb
+Level: 78
+Ability: Magic Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Power Up Punch
-- Brutal Swing
-- Storm Throw
-- Shadow Punch
+Nature: Timid
+- Shell Smash
+- Hydro Pump
+- Blizzard
+- Fire Blast
+
+Slowbro @ Expert Belt
+Level: 78
+Ability: Own Tempo
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Blizzard
+- Psyshock
+- Hydro Pump
+- Fire Blast
+
+Toxicroak @ Bright Powder
+Level: 78
+Ability: Poison Touch
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Cross Chop
+- Gunk Shot
+- Earthquake
 
 === TRAINER_MACEY ===
 Name: MACEY
@@ -23521,12 +23686,13 @@ Gender: Male
 Music: Male
 Battle Type: Doubles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Multi Party: Half
 
 Sneasler @ Focus Sash
 Level: 91
-Ability: Unburden
+Ability: Poison Touch
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
+Nature: Jolly
 - Close Combat
 - Dire Claw
 - Fake Out
@@ -23590,36 +23756,38 @@ Gender: Male
 Music: Rocket
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Multi Party: Half
+Starting Status: start Gravity
 
-Reshiram @ Fire Gem
+Moltres @ Focus Sash
 Level: 82
-Ability: Turboblaze
+Ability: Flame Body
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- Fusion Flare
-- Dragon Pulse
+- Fire Blast
+- Hurricane
+- Tailwind
 - Earth Power
-- Focus Blast
 
-Cobalion @ Life Orb
+Keldeo @ Life Orb
 Level: 82
 Ability: Justified
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
+- Hydro Pump
+- Blizzard
+- Calm Mind
 - Focus Blast
-- Flash Cannon
-- Thunderbolt
-- Coaching
 
-Gardevoir @ Gardevoirite
+Excadrill @ Excadrite
 Level: 82
-Ability: Trace
+Ability: Sand Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- Moonblast
-- Psychic
-- Shadow Ball
-- Focus Blast
+Nature: Jolly
+- High Horsepower
+- Stone Edge
+- Iron Tail
+- Swords Dance
 
 === TRAINER_PETE ===
 Name: Ena & Pete

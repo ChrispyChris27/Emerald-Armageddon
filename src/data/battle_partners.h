@@ -46,29 +46,29 @@
         {
             {
 #line 16
-            .species = SPECIES_MAGEARNA,
+            .species = SPECIES_MELMETAL,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 16
-            .heldItem = ITEM_WHITE_HERB,
+            .heldItem = ITEM_PUNCHING_GLOVE,
 #line 18
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 17
             .lvl = 82,
             .ball = POKEBALL_COUNT,
 #line 19
-            .nature = NATURE_MODEST,
+            .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 20
-                MOVE_FLEUR_CANNON,
-                MOVE_AURA_SPHERE,
-                MOVE_FLASH_CANNON,
-                MOVE_THUNDERBOLT,
+                MOVE_DOUBLE_IRON_BASH,
+                MOVE_THUNDER_PUNCH,
+                MOVE_HIGH_HORSEPOWER,
+                MOVE_BULLET_PUNCH,
             },
             },
             {
 #line 25
-            .species = SPECIES_JIRACHI,
+            .species = SPECIES_IRON_CROWN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 25
             .heldItem = ITEM_LEFTOVERS,
@@ -78,14 +78,14 @@
             .lvl = 82,
             .ball = POKEBALL_COUNT,
 #line 28
-            .nature = NATURE_HASTY,
+            .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 29
-                MOVE_METEOR_MASH,
-                MOVE_ZEN_HEADBUTT,
-                MOVE_ICY_WIND,
-                MOVE_THUNDERBOLT,
+                MOVE_PSYSHOCK,
+                MOVE_FOCUS_BLAST,
+                MOVE_TACHYON_CUTTER,
+                MOVE_THUNDER,
             },
             },
             {
@@ -106,7 +106,7 @@
 #line 38
                 MOVE_METEOR_MASH,
                 MOVE_PSYCHIC_FANGS,
-                MOVE_ICE_PUNCH,
+                MOVE_STONE_EDGE,
                 MOVE_BULLET_PUNCH,
             },
             },
@@ -140,6 +140,8 @@
             .heldItem = ITEM_CHILL_DRIVE,
 #line 53
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 55
+            .ability = ABILITY_DOWNLOAD,
 #line 52
             .lvl = 91,
             .ball = POKEBALL_COUNT,
@@ -147,7 +149,7 @@
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 55
+#line 56
                 MOVE_TECHNO_BLAST,
                 MOVE_PSYCHIC,
                 MOVE_FLASH_CANNON,
@@ -155,21 +157,21 @@
             },
             },
             {
-#line 60
+#line 61
             .species = SPECIES_MAGEARNA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 60
-            .heldItem = ITEM_WHITE_HERB,
-#line 62
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 61
+            .heldItem = ITEM_WHITE_HERB,
+#line 63
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 62
             .lvl = 91,
             .ball = POKEBALL_COUNT,
-#line 63
+#line 64
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 64
+#line 65
                 MOVE_FLEUR_CANNON,
                 MOVE_AURA_SPHERE,
                 MOVE_FLASH_CANNON,
@@ -177,21 +179,21 @@
             },
             },
             {
-#line 69
+#line 70
             .species = SPECIES_METAGROSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 69
-            .heldItem = ITEM_METAGROSSITE,
-#line 71
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 70
+            .heldItem = ITEM_METAGROSSITE,
+#line 72
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 71
             .lvl = 91,
             .ball = POKEBALL_COUNT,
-#line 72
+#line 73
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 73
+#line 74
                 MOVE_METEOR_MASH,
                 MOVE_PSYCHIC_FANGS,
                 MOVE_ICE_PUNCH,
