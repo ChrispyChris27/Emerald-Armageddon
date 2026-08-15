@@ -1,4 +1,5 @@
 SeafloorCavern_Room8_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, SeafloorCavern_ClearSwamp
 	.byte 0
 
 SeafloorCavern_Room8_EventScript_Matt::
@@ -24,3 +25,7 @@ SeafloorCavern_Room8_Text_MattPostBattle:
 	.string "match for the true power of Kyogre!\p"
 	.string "Tread forward carefully or you'll\n"
 	.string "be sucked into the depths of the sea!$"
+
+SeafloorCavern_ClearSwamp::
+	callnative ResetStartingStatuses
+	end

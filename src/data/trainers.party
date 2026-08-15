@@ -317,12 +317,57 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Poochyena
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Greninja @ Focus Band
+Level: 80
+Ability: Protean
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Dark Pulse
+- Toxic Spikes
+- Spikes
+- Hydro Pump
+
+Cloyster @ King's Rock
+Level: 80
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Icicle Spear
+- Spike Cannon
+- Rock Blast
+- Pin Missile
+
+Scizor @ Occa Berry
+Level: 80
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Aerial Ace
+- Magnet Bomb
+- Swords Dance
+- Bug Bite
+
+Slaking @ Brightpowder
+Level: 80
+Ability: Truant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naughty
+- Crush Claw
+- Earthquake
+- Thunder
+- Play Rough
+
+Kommo O @ Leftovers
+Level: 80
+Ability: Bulletproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Aura Sphere
+- Dragon Pulse
+- Flash Cannon
+- Clangorous Soul
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_2 ===
 Name: Grunt
@@ -331,12 +376,57 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 36
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Quagsire @ Focus Band
+Level: 80
+Ability: Water Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Stealth Rock
+- Toxic Spikes
+- Earthquake
+- Aqua Tail
+
+Mr. Mime @ Life Orb
+Level: 80
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Disarming Voice
+- Magical Leaf
+- Aura Sphere
+- Nasty Plot
+
+Toucannon @ King's Rock
+Level: 80
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Bullet Seed
+- Rock Blast
+- Fury Attack
+- Swords Dance
+
+Inteleon @ Scope Lens
+Level: 80
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Snipe Shot
+- Air Cutter
+- Ice Beam
+- Tearful Look
+
+Mienshao @ Brightpowder
+Level: 80
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Hone Claws
+- Triple Kick
+- Triple Axel
+- Rock Slide
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_3 ===
 Name: Grunt
@@ -347,33 +437,33 @@ Music: Aqua
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Floatzel @ Covert Cloak
-Level: 71
-Ability: Swift Swim
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Jolly
-- After You
-- Wave Crash
-- Ice Punch
-- Thunderpunch
-
-Whimsicott @ Kebia Berry
-Level: 71
-Ability: Prankster
+Pachirisu @ Covert Cloak
+Level: 80
+Ability: Volt Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- After You
-- Pollen Puff
+- Helping Hand
+- Follow Me
+- Super Fang
+- Thunder
+
+Comfey @ Sitrus Berry
+Level: 71
+Ability: Triage
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Helping Hand
+- Floral Healing
 - Moonblast
-- Energy Ball
+- Follow Me
 
-Vaporeon @ Leftovers
+Milotic @ Leftovers
 Level: 71
-Ability: Swift Swim
+Ability: Competitive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
-- After You
-- Hydro Pump
+Nature: Bold
+- Helping Hand
+- Scald
 - Ice Beam
 - Life Dew
 
@@ -569,28 +659,28 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Blastoise @ Choice Specs
-Level: 71
+Level: 80
 Ability: Rain Dish
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
 - Water Spout
 
 Wailord @ Choice Specs
-Level: 71
+Level: 80
 Ability: Oblivious
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
 - Water Spout
 
 Octillery @ Choice Specs
-Level: 71
+Level: 80
 Ability: Sniper
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
 - Water Spout
 
 Jellicent @ Choice Specs
-Level: 71
+Level: 80
 Ability: Water Absorb
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -1504,7 +1594,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Tapu Fini @ Leftovers
-Level: 61
+Level: 82
 Ability: Misty Surge
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -1514,7 +1604,7 @@ Nature: Modest
 - Mean Look
 
 Lugia @ Misty Seed
-Level: 83
+Level: 82
 Ability: Multiscale
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -1524,7 +1614,7 @@ Nature: Modest
 - Roost
 
 Blastoise @ Blastoisinite
-Level: 83
+Level: 82
 Ability: Torrent
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -1572,7 +1662,7 @@ Nature: Timid
 - Weather Ball
 - Roost
 
-Iron Bundle @ Life Orb
+Iron Bundle @ Assault Vest
 Level: 84
 Ability: Quark Drive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -4838,7 +4928,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Overqwil @ Focus Sash
-Level: 83
+Level: 82
 Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -4848,7 +4938,7 @@ Nature: Adamant
 - Destiny Bond
 
 Kabutops @ Life Orb
-Level: 83
+Level: 82
 Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -4858,11 +4948,11 @@ Nature: Adamant
 - Swords Dance
 
 Golisopod @ Golisopite
-Level: 83
+Level: 82
 Ability: Emergency Exit
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
-- Liquidation
+- Wave Crash
 - Iron Head
 - Leech Life
 - Swords Dance
@@ -13040,7 +13130,7 @@ Nature: Jolly
 
 Kommo-o @ Throat Spray
 Level: 51
-Ability: Soundproof
+Ability: Bulletproof
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Clangorous Soul
@@ -17369,18 +17459,53 @@ Pic: Aqua Grunt M
 Gender: Male
 Music: Aqua
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Mightyena
-Level: 35
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Omastar @ Focus Band
+Level: 80
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ancientpower
+- Stealth Rock
+- Spikes
+- Hydro Pump
+
+Victreebel @ Liechi Berry
+Level: 80
+Ability: Gluttony
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naughty
+- Sleep Powder
+- Weather Ball
+- Power Whip
+- Gunk Shot
+
+Bruxish @ Life Orb
+Level: 80
+Ability: Strong Jaw
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Fishious Rend
+- Psychic Fangs
+- Ice Fang
+- Thunder Fang
+
+Goodra @ Leftovers
+Level: 80
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Rest
+- Aqua Tail
+- Dragon Claw
+- Dragon Dance
 
 Jolteon @ Wise Glasses
 Level: 80
 Ability: Static
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Timid
+Nature: Modest
 - Thunder
 - Weather Ball
 - Shadow Ball

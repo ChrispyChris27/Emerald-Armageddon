@@ -3,6 +3,7 @@ SeafloorCavern_Entrance_MapScripts::
 	.byte 0
 
 SeafloorCavern_Entrance_OnResume:
+	callnative ResetStartingStatuses
 	setdivewarp MAP_UNDERWATER_SEAFLOOR_CAVERN, 6, 5
 	setescapewarp MAP_UNDERWATER_SEAFLOOR_CAVERN, 6, 5
 	end

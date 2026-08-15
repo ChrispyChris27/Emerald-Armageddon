@@ -15475,6 +15475,74 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_UNDERWATER_ROUTE127",
+          "base_label": "gUnderwater_Route127",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_DRAGALGE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_PHIONE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_MANAPHY"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_UNDERWATER_ROUTE128",
+          "base_label": "gUnderwater_Route128",
+          "water_mons": {
+            "encounter_rate": 4,
+            "mons": [
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_RELICANTH"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_WAILORD"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_BARBARACLE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_PHIONE"
+              },
+              {
+                "min_level": 75,
+                "max_level": 75,
+                "species": "SPECIES_MANAPHY"
+              }
+            ]
+          }
         }
       ]
     },

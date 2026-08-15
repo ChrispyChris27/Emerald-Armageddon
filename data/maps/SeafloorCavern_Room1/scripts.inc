@@ -1,4 +1,5 @@
 SeafloorCavern_Room1_MapScripts::
+	map_script MAP_SCRIPT_ON_RESUME, SeafloorCavern_SetSwamp
 	.byte 0
 
 SeafloorCavern_Room1_EventScript_Grunt1::
@@ -33,4 +34,8 @@ SeafloorCavern_Room1_Text_Grunt2PostBattle:
 	.string "That submarine we jacked, man,\n"
 	.string "it's brutal as a ride.\l"
 	.string "It's way too tight in there!$"
+
+SeafloorCavern_SetSwamp::
+	setstartingstatus STARTING_STATUS_SWAMP_PLAYER
+	end
 
