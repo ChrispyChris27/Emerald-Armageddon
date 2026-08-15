@@ -560,7 +560,7 @@ bool32 MovesWithCategoryUnusable(u32 attacker, u32 target, enum DamageCategory c
         if (GetBattleMoveCategory(moves[moveIndex]) == category)
         {
             SetTypeBeforeUsingMove(moves[moveIndex], attacker);
-            ctx.move = ctx.chosenMove = moves[moveIndex];
+            ctx.move = ctx.chosenMove = ctx.baseMove = moves[moveIndex];
             ctx.moveType = GetBattleMoveType(moves[moveIndex]);
 
             if (CalcTypeEffectivenessMultiplier(&ctx))
@@ -894,6 +894,7 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
     bool32 toggledGimmickDef = FALSE;
     struct AiLogicData *aiData = gAiLogicData;
     gAiLogicData->aiCalcInProgress = TRUE;
+    enum Move baseMove = move;
 
     if (moveEffect == EFFECT_HIT_ENEMY_HEAL_ALLY
      && battlerDef == GetPartnerBattler(battlerAtk))
@@ -903,7 +904,10 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
     }
 
     if (moveEffect == EFFECT_NATURE_POWER)
-        move = GetNaturePowerMove();
+    {
+        move = baseMove = GetNaturePowerMove();
+        moveEffect = GetMoveEffect(move);
+    }
 
     // Temporarily enable gimmicks for damage calcs if planned
     if (gBattleStruct->gimmick.usableGimmick[battlerAtk] && GetActiveGimmick(battlerAtk) == GIMMICK_NONE
@@ -936,6 +940,7 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
     ctx.battlerAtk = battlerAtk;
     ctx.battlerDef = battlerDef;
     ctx.move = ctx.chosenMove = move;
+    ctx.baseMove = baseMove;
     ctx.moveType = GetBattleMoveType(move);
     ctx.fieldStatuses = fieldStatuses;
     ctx.randomFactor = FALSE;
@@ -1383,7 +1388,7 @@ uq4_12_t AI_GetMoveEffectiveness(enum Move move, enum BattlerId battlerAtk, enum
     struct DamageContext ctx = {0};
     ctx.battlerAtk = battlerAtk;
     ctx.battlerDef = battlerDef;
-    ctx.move = ctx.chosenMove = move;
+    ctx.move = ctx.chosenMove = ctx.baseMove = move;
     ctx.moveType = GetBattleMoveType(move);
     ctx.updateFlags = FALSE;
     ctx.abilities[ctx.battlerAtk] = gAiLogicData->abilities[battlerAtk];
