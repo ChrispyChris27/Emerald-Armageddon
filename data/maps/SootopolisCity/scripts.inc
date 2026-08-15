@@ -873,6 +873,8 @@ SootopolisCity_EventScript_Steven::
 	lockall
 	applymovement LOCALID_SOOTOPOLIS_STEVEN, Common_Movement_FacePlayer
 	waitmovement 0
+	call_if_unset FLAG_UNLOCK_R_S_VILLAS, StevenTellPlayerAboutVillas
+	call_if_unset FLAG_EMERALD_LEGEND, StevenTellPlayerGoToVillas
 	call_if_unset FLAG_STEVEN_GUIDES_TO_CAVE_OF_ORIGIN, SootopolisCity_EventScript_StevenLeadPlayerCaveOfOrigin
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 2, SootopolisCity_EventScript_StevenHelpWallace
 	goto_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SootopolisCity_EventScript_StevenHelpedWallace
@@ -1614,35 +1616,34 @@ SootopolisCity_Text_Sharpedoite:
 	.string "I hope this will suffice.$"
 
 SootopolisCity_Text_InvolvedWithCrisisComeWithMe:
-	.string "STEVEN: Those POKéMON fighting…\n"
-	.string "GROUDON… And KYOGRE…\p"
-	.string "The two super-ancient POKéMON\n"
-	.string "were awakened from a long sleep…\p"
-	.string "And now they are smashing each other\n"
-	.string "with their uncontrollable energy…\p"
-	.string "…{PLAYER}{KUN}.\p"
-	.string "You being here now I'll take to mean\n"
-	.string "that you're prepared to become\l"
-	.string "further involved in this crisis.\p"
-	.string "Well, then, there's someone that\n"
-	.string "I'd like you to meet.\p"
+	.string "{PLAYER}, were you able to find the\n"
+	.string "lorekeepers and learn the wherabouts\l"
+	.string "of Rayquaza?\p"
+	.string "I see…\p"
+	.string "So Rayquaza inhabits the highest\n"
+	.string "point in all of Hoenn…\p"
+	.string "Well, then, there's someone else\n"
+	.string "that I'd like you to meet.\p"
 	.string "Come with me, please.$"
 
 SootopolisCity_Text_DoesThisMakeYourFearPokemon:
-	.string "STEVEN: Listen, {PLAYER}{KUN}.\p"
-	.string "Does seeing GROUDON and KYOGRE make\n"
-	.string "you think POKéMON are to be feared?\p"
-	.string "But that's not true.\n"
-	.string "POKéMON are really more…\p"
-	.string "…Why am I asking you this?\n"
-	.string "You already know.$"
+	.string "Steven: Listen, {PLAYER}{KUN}.\p"
+	.string "If what you tell me about this\n"
+	.string "pokémon from another dimension\l"
+	.string "is true, then it could be the\l"
+	.string "cause of the energy surges we've\l"
+	.string "been seeing throughout Hoenn.\p"
+	.string "If this pokémon nearly destroyed\n"
+	.string "Hoenn once already…\p"
+	.string "…Why am I telling you this?\n"
+	.string "You already know…$"
 
 SootopolisCity_Text_HereWereAreHelpWallace:
-	.string "STEVEN: Okay, here we are!\p"
+	.string "Steven: Okay, here we are!\p"
 	.string "Inside here you'll find someone named\n"
-	.string "WALLACE.\p"
-	.string "I think you have what's needed to\n"
-	.string "help him.\p"
+	.string "Wallace.\p"
+	.string "I think he may be able to help you\n"
+	.string "locate Rayquaza.\p"
 	.string "I also think he may be able to help\n"
 	.string "us solve the mystery of Meteor Falls.\p"
 	.string "Please go speak with him inside.$"
@@ -1652,8 +1653,9 @@ SootopolisCity_Text_KnowWhatsNeededToHelpHim:
 	.string "needed to help him…$"
 
 SootopolisCity_Text_NeverBeenToSkyPillar:
-	.string "STEVEN: The SKY PILLAR…\p"
-	.string "I've never been there.\n"
+	.string "Steven: The Sky Pillar…\p"
+	.string "I've heard of it but I've never\n"
+	.string "been there.\p"
 	.string "I wonder where it could be?$"
 
 SootopolisCity_Text_SoThatsRayquaza:
@@ -1813,34 +1815,16 @@ SootopolisCity_Text_Steven_MeteorFalls:
 	.string "the energy readings in Meteor Falls\l"
 	.string "continued to grow stronger.\p"
 	.string "The energy readings are out of this\n"
-	.string "world, and I mean that literally.\p"
-	.string "You see, during my research I\n"
-	.string "discovered records of powerful\l"
-	.string "pokémon from other dimensions that\l"
-	.string "came to earth in ancient times.\p"
-	.string "This was the reason that the Meteor\n"
-	.string "Castle was built all those years ago.\p"
-	.string "You see, these pokémon caused chaos\n"
-	.string "and disorder, nearly destroying all\l"
-	.string "of Hoenn.\p"
-	.string "The one area that remained free of\n"
-	.string "this chaos and destruction was the\l"
-	.string "castle deep within Meteor Falls.\p"
-	.string "At some point, the inhabitants of\n"
-	.string "the castle decided to fight back.\p"
-	.string "They managed to seal the pokémon\n"
-	.string "from another dimension inside the\l"
-	.string "castle to prevent them from causing\l"
-	.string "any more destruction.\p"
-	.string "With the help of the super-ancient\n"
-	.string "pokémon, the pokémon from another\l"
-	.string "world were sent back and the process\l"
-	.string "of rebuilding Hoenn began.$"
+	.string "world, and I mean that literally.$"
+	
 
 SootopolisCity_Text_Steven_MeteorFalls2:
 	.string "I'm worried that the pokémon\n"
 	.string "from another world may be trying\l"
 	.string "to get back into Hoenn.\p"
+	.string "Through my research, I've discovered\n"
+	.string "that these pokémon are called Ultra\l"
+	.string "beasts.\p"
 	.string "I believe you may have fought some of\n"
 	.string "these pokémon on your journey already,\l"
 	.string "but the most powerful of them, Ultra\l"
@@ -1872,3 +1856,65 @@ SootopolisCity_Text_Steven_MeteorFalls3:
 	.string "possible, I suggest you join me.\p"
 	.string "It's time we put a stop to these\n"
 	.string "energy surges once and for all.$"
+
+StevenExplainVillas_1:
+	.string "Steven: Those pokémon fighting…\n"
+	.string "Groudon… And Kyogre…\p"
+	.string "The two super-ancient pokémon\n"
+	.string "were awakened from a long sleep…\p"
+	.string "And now they are smashing each other\n"
+	.string "with their uncontrollable energy…\p"
+	.string "…{PLAYER}{KUN}.\p"
+	.string "You being here now I'll take to mean\n"
+	.string "that you're prepared to become\l"
+	.string "further involved in this crisis.\p"
+	.string "While researching the castle within\n"
+	.string "Meteor Falls, I stumbled upon\l"
+	.string "another legend that I need you to\l"
+	.string "look into.\p"
+	.string "It would appear that this is not the\n"
+	.string "first time that Groudon and Kyogre\l"
+	.string "have fought with one another.\p"
+	.string "They also fought long ago as humans\n"
+	.string "were just beginning to travel out\l"
+	.string "of Meteor Falls to other parts\l"
+	.string "of the Hoenn region.\p"
+	.string "Just like now, the two caused the\n"
+	.string "weather to go into chaos, however\l"
+	.string "a third super-ancient pokémon was\l"
+	.string "able to calm Groudon and Kyogre.\p"
+	.string "That pokémon was called Rayquaza.\p"
+	.string "{PLAYER}{KUN}, we need to find Rayquaza\n"
+	.string "so it can calm Groudon and Kyogre\l"
+	.string "once again.\p"
+	.string "Unfortunately, Rayquaza hasn't been\n"
+	.string "seen in thousands of years.\p"
+	.string "Nobody knows where it currently lives.\p"
+	.string "The only clue I have is yet another\n"
+	.string "legend of three lorekeepers residing\l"
+	.string "deep within the Cave of Legends on\l"
+	.string "Route 103.\p"
+	.string "If we have any hope of finding\n"
+	.string "Rayquaza, I need you to find the\l"
+	.string "lorekeepers and hear what they have\l"
+	.string "to say.\n"
+	.string "While you do that, I'll try my best\n"
+	.string "to handle the situaion here.$"
+
+StevenTellPlayerToLeave:
+	.string "Please {PLAYER}, I can handle things\n"
+	.string "in Sootopolis.\p"
+	.string "You must visit the lorekeepers so\n"
+	.string "we can find Rayquaza!$"
+
+StevenTellPlayerAboutVillas::
+	msgbox StevenExplainVillas_1, MSGBOX_DEFAULT
+	closemessage
+	setflag FLAG_UNLOCK_R_S_VILLAS
+	releaseall
+	end
+
+StevenTellPlayerGoToVillas::
+	msgbox StevenTellPlayerToLeave, MSGBOX_AUTOCLOSE
+	releaseall
+	end

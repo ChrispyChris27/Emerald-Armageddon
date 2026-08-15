@@ -486,8 +486,8 @@ const u16 gFieldEffectObjectPalette_CaveDust[] = INCGFX_U16("graphics/field_effe
 
 const u32 gObjectEventPic_ApricornTree[] = INCGFX_U32("graphics/object_events/pics/misc/apricorn_tree.png", ".4bpp", "-mwidth 2 -mheight 2");
 
-const u16 gObjectEventPic_OldMan1[] = INCBIN_U16("graphics/object_events/pics/people/old_man_1.4bpp");
-const u16 gObjectEventPic_OldWomanFrlg[] = INCBIN_U16("graphics/object_events/pics/people/old_woman_frlg.4bpp");
+const u16 gObjectEventPic_OldMan1[] = INCGFX_U16("graphics/object_events/pics/people/old_man_1.png", ".4bpp", "-mwidth 2 -mheight 4");
+const u16 gObjectEventPic_OldWomanFrlg[] = INCGFX_U16("graphics/object_events/pics/people/old_woman_frlg.png", ".4bpp", "-mwidth 2 -mheight 4");
 const u32 gFieldEffectObjectPic_ShinySparkle[] = INCGFX_U32("graphics/field_effects/pics/shiny_sparkle.png", ".4bpp", "-mwidth 2 -mheight 4");
 
 #if IS_FRLG

@@ -34768,14 +34768,14 @@
             },
             {
 #line 13902
-            .species = SPECIES_ARMALDO,
+            .species = SPECIES_RELICANTH,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 13902
-            .heldItem = ITEM_SHELL_BELL,
+            .heldItem = ITEM_ROOM_SERVICE,
 #line 13905
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
 #line 13904
-            .ability = ABILITY_BATTLE_ARMOR,
+            .ability = ABILITY_ROCK_HEAD,
 #line 13903
             .lvl = 87,
             .ball = POKEBALL_COUNT,
@@ -34784,9 +34784,9 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 13907
-                MOVE_LEECH_LIFE,
-                MOVE_ROCK_SLIDE,
-                MOVE_EARTHQUAKE,
+                MOVE_HEAD_SMASH,
+                MOVE_WAVE_CRASH,
+                MOVE_SUBMISSION,
                 MOVE_SWORDS_DANCE,
             },
             },

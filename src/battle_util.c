@@ -318,7 +318,7 @@ bool32 EndOrContinueWeather(void)
             }
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CHANGE_ERRATIC;
             gBattleScripting.animArg1 = sBattleWeatherInfo[currBattleWeather].animation;
-            BattleScriptExecute(BattleScript_WeatherContinues);
+            BattleScriptCall(BattleScript_WeatherContinues);
             return TRUE;
         }
         

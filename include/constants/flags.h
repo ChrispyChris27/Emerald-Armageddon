@@ -1111,7 +1111,7 @@
 #define FLAG_ITEM_PETALBURG_WOODS_ETHER                             0x422
 #define FLAG_ITEM_MAGMA_HIDEOUT_3F_3R_ECAPE_ROPE                    0x423
 #define FLAG_RECEIVED_MEGA_STONES_RIVAL                                0x424
-#define FLAG_ITEM_UNUSED_FORMER_HARBOR_MAIL                  0x425
+#define FLAG_UNLOCK_R_S_VILLAS                  0x425
 #define FLAG_ITEM_UNUSED_FORMER_WAVE_MAIL                    0x426
 #define FLAG_ITEM_UNUSED_SHADOW_MAIL                  0x427
 #define FLAG_ITEM_UNUSED_WOOD_MAIL                    0x428
@@ -1300,7 +1300,7 @@
 #define FLAG_SKARMORITE                                           0x4DE // Unused Flag
 #define FLAG_RUBY_LEGEND                                           0x4DF // Unused Flag
 #define FLAG_SAPPHIRE_LEGEND                                           0x4E0 // Unused Flag
-#define FLAG_UNLOCK_EMERALD_VILLA                                           0x4E1 // Unused Flag
+#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
 #define FLAG_EMERALD_LEGEND                                           0x4E2 // Unused Flag
 #define FLAG_INVERSE_BATTLES                                           0x4E3 // Unused Flag
 #define FLAG_SKY_BATTLES                                           0x4E4 // Unused Flag

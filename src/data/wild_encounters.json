@@ -5213,63 +5213,63 @@
             "encounter_rate": 10,
             "mons": [
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_MEGANIUM"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_VENUSAUR"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_SCEPTILE"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_CHESNAUGHT"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_RILLABOOM"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_MEOWSCARADA"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_LUDICOLO"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_ELECTRODE_HISUI"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_LILLIGANT_HISUI"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_SIMISEAR"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_SIMISAGE"
               },
               {
-                "min_level": 70,
-                "max_level": 70,
+                "min_level": 80,
+                "max_level": 80,
                 "species": "SPECIES_SIMIPOUR"
               }
             ]

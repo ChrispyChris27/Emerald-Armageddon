@@ -3,7 +3,8 @@ CaveOfLegendsEmeraldRoom_MapScripts::
 	.byte 0
 
 EmeraldCaveOnLoad::
-	call_if_unset FLAG_UNLOCK_EMERALD_VILLA, EmeraldCaveCloseDoor
+	call_if_unset FLAG_RUBY_LEGEND, EmeraldCaveCloseDoor
+	call_if_unset FLAG_SAPPHIRE_LEGEND, EmeraldCaveCloseDoor
 	end
 
 EmeraldCaveCloseDoor::

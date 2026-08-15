@@ -3,7 +3,7 @@ CaveOfLegendsSapphireRoom_MapScripts::
 	.byte 0
 
 SapphireCaveOnLoad::
-	call_if_unset FLAG_CAVERN_ARCHIE, SapphireCaveCloseDoor
+	call_if_unset FLAG_UNLOCK_R_S_VILLAS, SapphireCaveCloseDoor
 	end
 
 SapphireCaveCloseDoor::
