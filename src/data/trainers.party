@@ -5277,12 +5277,57 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Gyarados
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Greninja @ Focus Sash
+Level: 83
+Ability: Protean
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Spikes
+- Weather Ball
+- Dark Pulse
+- Toxic Spikes
+
+Victreebel @ Life Orb
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naive
+- Solar Blade
+- Weather Ball
+- Gunk Shot
+- Sleep Powder
+
+Poliwrath @ Shell Bell
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Submission
+- Weather Ball
+- Ice Punch
+- Hypnosis
+
+Bellibolt @ Assault Vest
+Level: 83
+Ability: Electromorphosis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunder
+- Weather Ball
+- Scald
+- Parabolic Charge
+
+Ninetales @ Life Orb
+Level: 83
+Ability: Illuminate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Weather Ball
+- Nasty Plot
+- Hypnosis
 
 === TRAINER_RICHARD ===
 Name: RICHARD
@@ -5291,12 +5336,57 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Pelipper
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Frosmoth @ Focus Sash
+Level: 83
+Ability: Ice Scales
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Ice Beam
+- Bug Buzz
+- Tailwind
+
+Electrode Hisui @ Electric Gem
+Level: 83
+Ability: Aftermath
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Charge Beam
+- Solarbeam
+- Thunder
+
+Wormadam Plant @ Focus Sash
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Bug Buzz
+- Solarbeam
+- Quiver Dance
+
+Whiscash @ Rindo Berry
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Earth Power
+- Ice Beam
+- Scald
+
+Charizard @ Leftovers
+Level: 83
+Ability: Solar Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Hurricane
+- Solarbeam
+- Scorching Sands
 
 === TRAINER_HERMAN ===
 Name: HERMAN
@@ -5305,17 +5395,57 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wingull
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Swanna @ Focus Sash
+Level: 83
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Hurricane
+- Tailwind
+- Ice Beam
 
-Tentacruel
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Archaludon @ Expert Belt
+Level: 83
+Ability: Stamina
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Electro Shot
+- Flash Cannon
+- Dragon Pulse
+
+Slowbro @ Leftovers
+Level: 83
+Ability: Regenerator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Psychic
+- Ice Beam
+- Nasty Plot
+
+Maractus @ Life Orb
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Solarbeam
+- Giga Drain
+- Acupressure
+
+Slowking Galar @ Leftovers
+Level: 83
+Ability: Regenerator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Psychic
+- Shell Side Arm
+- Nasty Plot
 
 === TRAINER_SANTIAGO ===
 Name: SANTIAGO
@@ -5324,17 +5454,57 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Tentacruel
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Pelipper @ Wacan Berry
+Level: 83
+Ability: Drizzle
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Weather Ball
+- Ice Beam
+- Tailwind
 
-Wailmer
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Shiinotic @ Kebia Berry
+Level: 83
+Ability: Rain Dish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Moonblast
+- Weather Ball
+- Solarbeam
+- Spore
+
+Gorebyss @ White Herb
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Weather Ball
+- Shell Smash
+- Giga Drain
+
+Scovillain @ Ground Gem
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Weather Ball
+- Nasty Plot
+- Scorching Sands
+
+Dewgong @ Leftovers
+Level: 83
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Weather Ball
+- Stockpile
+- Rest
 
 === TRAINER_GILBERT ===
 Name: GILBERT
@@ -5371,12 +5541,37 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Spheal
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Politoed @ Life Orb
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Weather Ball
+- Protect
+- Ice Beam
+
+Kabutops @ Rindo Berry
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Wave Crash
+- Protect
+- Swords Dance
+
+Vaporeon @ Leftovers
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Weather Ball
+- Life Dew
+- Ice Beam
 
 === TRAINER_JACK ===
 Name: JACK
@@ -11806,17 +12001,57 @@ Pic: Swimming Triathlete M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wingull
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Froslass @ Focus Sash
+Level: 83
+Ability: Cursed Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Spikes
+- Weather Ball
+- Ice Beam
+- Shadow Ball
 
-Staryu
-Level: 34
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-Nature: Hardy
+Tropius @ Yache Berry
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Weather Ball
+- Solarbeam
+- Earth Power
+
+Seismitoad @ Rindo Berry
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Weather Ball
+- Ice Beam
+- Scald
+
+Drifblim @ Flying Gem
+Level: 83
+Ability: Unburden
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Misty Explosion
+- Weather Ball
+- Hurricane
+- Shadow Ball
+
+Masquerain @ Charti Berry
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Weather Ball
+- Hurricane
+- Quiver Dance
 
 === TRAINER_ISAIAH_2 ===
 Name: ISAIAH
@@ -11914,12 +12149,37 @@ Pic: Swimming Triathlete F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Staryu
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Leavanny @ Focus Sash
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Solar Blade
+- X Scissor
+- Protect
+- Sticky Web
+
+Exeggutor Alola @ Yache Berry
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Weather Ball
+- Protect
+- Dragon Pulse
+
+Bellossom @ Leftovers
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Weather Ball
+- Protect
+- Rage Powder
 
 === TRAINER_KATELYN_1 ===
 Name: KATELYN
@@ -11942,17 +12202,57 @@ Pic: Swimming Triathlete F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wingull
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Glimmora @ Air Balloon
+Level: 83
+Ability: Toxic Debris
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Weather Ball
+- Sludge Bomb
+- Power Gem
 
-Staryu
-Level: 33
-IVs: 29 HP / 29 Atk / 29 Def / 29 SpA / 29 SpD / 29 Spe
-Nature: Hardy
+Kingdra @ White Herb
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Draco Meteor
+- Ice Beam
+- Weather Ball
+- Hurricane
+
+Castform @ Expert Belt
+Level: 83
+Ability: Forecast
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Ice Beam
+- Weather Ball
+- Solarbeam
+
+Exeggutor @ Life Orb
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psychic
+- Ancientpower
+- Weather Ball
+- Solarbeam
+
+Milotic @ Red Card
+Level: 83
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Weather Ball
+- Calm Mind
+- Recover
 
 === TRAINER_KATELYN_2 ===
 Name: KATELYN
@@ -14023,17 +14323,57 @@ Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Goldeen
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Torkoal @ Air Balloon
+Level: 83
+Ability: Drought
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Stealth Rock
+- Weather Ball
+- Solarbeam
+- Earth Power
 
-Spheal
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Arboliva @ Sitrus Berry
+Level: 83
+Ability: Harvest
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Weather Ball
+- Solarbeam
+- Giga Drain
+
+Lilligant @ Leftovers
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Alluring Voice
+- Weather Ball
+- Solarbeam
+- Quiver Dance
+
+Ninetales Alola @ Focus Sash
+Level: 83
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Weather Ball
+- Moonblast
+- Nasty Plot
+
+Golduck @ Life Orb
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Weather Ball
+- Scald
+- Nasty Plot
 
 === TRAINER_SUSIE ===
 Name: SUSIE
@@ -14042,12 +14382,57 @@ Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Luvdisc
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Galvantula @ Focus Sash
+Level: 83
+Ability: Swarm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Sticky Web
+- Bug Buzz
+- Solarbeam
+- Thunder
+
+Whimsicott @ Kebia Berry
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Moonblast
+- Solarbeam
+- Sleep Powder
+
+Basculegion F @ Water Gem
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Ice Beam
+- Shadow Ball
+- Scald
+
+Swampert @ Rindo Berry
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Weather Ball
+- Earthquake
+- Work Up
+- Ice Punch
+
+Dudunsparce Two Segment @ Wise Glasses
+Level: 83
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Hurricane
+- Solarbeam
+- Boomburst
 
 === TRAINER_KARA ===
 Name: KARA
@@ -14056,12 +14441,57 @@ Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Seaking
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Jumpluff @ Focus Sash
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Hurricane
+- Tailwind
+- Solarbeam
+
+Drampa @ Sitrus Berry
+Level: 83
+Ability: Berserk
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Hurricane
+- Dragon Pulse
+- Solarbeam
+
+Slowbro Galar @ Quick Claw
+Level: 83
+Ability: Quick Draw
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Weather Ball
+- Psychic
+- Shell Side Arm
+- Nasty Plot
+
+Carracosta @ White Herb
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Weather Ball
+- Shell Smash
+- Stone Edge
+- Earthquake
+
+Slowking @ Life Orb
+Level: 83
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Weather Ball
+- Psychic
+- Ice Beam
+- Nasty Plot
 
 === TRAINER_DANA ===
 Name: DANA
@@ -17941,12 +18371,47 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Sharpedo
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Empoleon @ Red Card
+Level: 83
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Weather Ball
+- Ice Beam
+- Flash Cannon
+
+Tangrowth @ Life Orb
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Solarbeam
+- Weather Ball
+- Focus Blast
+- Earth Power
+
+Omastar @ Rindo Berry
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shell Smash
+- Weather Ball
+- Power Gem
+- Ice Beam
+
+Glaceon @ Leftovers
+Level: 83
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Weather Ball
+- Earth Power
+- Calm Mind
 
 === TRAINER_TERRY ===
 Name: TERRY
@@ -21520,17 +21985,57 @@ Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Spheal
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Glalie @ Focus Sash
+Level: 83
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Weather Ball
+- Spikes
+- Explosion
 
-Sharpedo
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Venusaur @ Weakness Policy
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Weather Ball
+- Solarbeam
+- Sludge Bomb
+
+Mantine @ Wacan Berry
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Weather Ball
+- Hurricane
+- Ice Beam
+
+Goodra @ Life Orb
+Level: 83
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Weather Ball
+- Dragon Pulse
+- Ice Beam
+
+Tentacruel @ Black Sludge
+Level: 83
+Ability: Rain Dish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Scald
+- Weather Ball
+- Sludge Bomb
+- Ice Beam
 
 === TRAINER_TISHA ===
 Name: TISHA
@@ -21539,12 +22044,47 @@ Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Chinchou
-Level: 34
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Bronzong @ Red Card
+Level: 83
+Ability: Heatproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Flash Cannon
+- Weather Ball
+- Stealth Rock
+- Psyshock
+
+Heliolisk @ Shell Bell
+Level: 83
+Ability: Solar Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunder
+- Weather Ball
+- Thunderbolt
+- Focus Blast
+
+Primarina @ Life Orb
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Moonblast
+- Weather Ball
+- Ice Beam
+- Calm Mind
+
+Vileplume @ Wise Glasses
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Moonblast
+- Weather Ball
+- Sludge Bomb
+- Solarbeam
 
 === TRAINER_TORI_AND_TIA ===
 Name: TORI & TIA
@@ -21912,17 +22452,57 @@ Pic: Sis And Bro
 Gender: Male
 Music: Swimmer
 Battle Type: Doubles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Azumarill
-Level: 35
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Vivillon Elegant @ Focus Sash
+Level: 83
+Ability: Friend Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Rage Powder
+- Hurricane
+- Solarbeam
+- Tailwind
 
-Wingull
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Relicanth @ Rindo Berry
+Level: 83
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Head Smash
+- Wave Crash
+- Protect
+- Stealth Rock
+
+Wigglytuff @ Sitrus Berry
+Level: 83
+Ability: Friend Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunder
+- Follow Me
+- Moonblast
+- Solarbeam
+
+Meowscarada @ Expert Belt
+Level: 83
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Solar Blade
+- Knock Off
+- Weather Ball
+- Triple Axel
+
+Blastoise @ Leftovers
+Level: 83
+Ability: Rain Dish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Helping Hand
+- Ice Beam
+- Scald
 
 === TRAINER_LILA_AND_ROY_1 ===
 Name: LILA & ROY

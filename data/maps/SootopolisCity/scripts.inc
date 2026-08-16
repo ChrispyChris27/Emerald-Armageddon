@@ -510,6 +510,7 @@ SootopolisCity_EventScript_RayquazaSceneFromPokeCenter::
 	clearflag FLAG_SYS_WEATHER_CTRL
 	setvar VAR_SKY_PILLAR_STATE, 3
 	clearflag FLAG_LEGENDARIES_IN_SOOTOPOLIS
+	setvar VAR_ROUTE132_STATE, 1
 	fadenewbgm MUS_SOOTOPOLIS
 	delay 120
 	clearflag FLAG_HIDE_MAP_NAME_POPUP
@@ -561,6 +562,7 @@ SootopolisCity_EventScript_RayquazaSceneFromDive::
 	clearflag FLAG_SYS_WEATHER_CTRL
 	setvar VAR_SKY_PILLAR_STATE, 2
 	clearflag FLAG_LEGENDARIES_IN_SOOTOPOLIS
+	setvar VAR_ROUTE132_STATE, 1
 	fadenewbgm MUS_SURF
 	delay 120
 	clearflag FLAG_HIDE_MAP_NAME_POPUP

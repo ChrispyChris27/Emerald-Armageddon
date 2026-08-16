@@ -1,4 +1,5 @@
 Route132_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, Route132_MapScript_OnTransition
 	.byte 0
 
 Route132_EventScript_Gilbert::
@@ -35,4 +36,23 @@ Route132_EventScript_Makayla::
 	trainerbattle_single TRAINER_MAKAYLA, Route132_Text_MakaylaIntro, Route132_Text_MakaylaDefeat
 	msgbox Route132_Text_MakaylaPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route132_MapScript_OnTransition::
+	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+	end
+
+CannotEnterRoute132::
+	lockall
+	msgbox DangerousToContinue, MSGBOX_AUTOCLOSE
+	closemessage
+	applymovement LOCALID_PLAYER, Common_Movement_WalkRight
+	waitmovement
+	releaseall
+	end
+
+DangerousToContinue:
+	.string "The current is incredibly rough\n"
+	.string "ahead!\p"
+	.string "It's too dangerous to keep going\n"
+	.string "in this weather!$"
 
