@@ -76,3 +76,71 @@ Nature: Jolly
 - Psychic Fangs
 - Ice Punch
 - Bullet Punch
+
+=== PARTNER_WALLY ===
+Name: Wally
+Class: Rival
+Pic: Wally
+Gender: Male
+Music: Male
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+
+Drifblim @ Flame Orb
+Level: 87
+Ability: Flare Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shadow Ball
+- Weather Ball
+- Hurricane
+- Tailwind
+
+Talonflame @ Passho Berry
+Level: 87
+Ability: Gale Wings 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Hurricane
+- Solarbeam
+- Tailwind
+
+Roserade @ Grass Gem
+Level: 87
+Ability: Natural Cure 
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Sludge Bomb
+- Solarbeam
+- Giga Drain
+
+Altaria @ Yache Berry
+Level: 87
+Ability: Natural Cure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Hurricane
+- Solarbeam
+- Dragon Pulse
+
+Yanmega @ Focus Sash
+Level: 87
+Ability: Speed Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Hurricane
+- Bug Buzz
+- Solarbeam
+- Detect
+
+Gallade @ Galladite
+Level: 87
+Ability: Sharpness
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Aqua Cutter
+- Solar Blade
+- Sacred Sword
+- Psycho Cut

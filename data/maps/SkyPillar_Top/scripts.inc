@@ -18,6 +18,7 @@ SkyPillar_Top_OnTransition:
 	call_if_lt VAR_SKY_PILLAR_STATE, 2, SkyPillar_Top_EventScript_SetCleanLayout
 	call_if_ge VAR_SKY_PILLAR_STATE, 2, SkyPillar_Top_EventScript_TryShowRayquaza
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+	call_if_set FLAG_SYS_WEATHER_CTRL, SkyPillarChangeMusic
 	end
 
 SkyPillar_Top_EventScript_SetCleanLayout::
@@ -126,7 +127,7 @@ SkyPillar_Top_EventScript_AwakenRayquaza::
 	special RemoveCameraObject
 	setvar VAR_SOOTOPOLIS_CITY_STATE, 5
 	setvar VAR_SKY_PILLAR_STATE, 1
-	setvar VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 1
+	setvar VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 2
 	releaseall
 	end
 
@@ -134,7 +135,7 @@ SkyPillar_Top_EventScript_AwakenRayquaza::
 @ See comments, or sAnimTable_Rayquaza
 SkyPillar_Top_Movement_RayquazaStir:
 	delay_16
-	walk_in_place_fast_left  @ Coiled, awake
+	walk_in_place_left  @ Coiled, awake
 	delay_16
 	delay_16
 	delay_16
@@ -180,4 +181,229 @@ SkyPillar_Top_Movement_CameraPanDown:
 
 SkyPillar_Top_Text_RayquazaFlewOff:
 	.string "The awakened RAYQUAZA flew off…$"
+
+StevenErraticEmergency:
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "Steven: Hey, {PLAYER}{KUN}!\p"
+	.string "You may have an emergency on your\n"
+	.string "hands pretty quick!\p"
+	.string "Archie and Maxie have left\n"
+	.string "Sootopolis City!\p"
+	.string "I overheard them talking about\n"
+	.string "putting a stop to this themselves\l"
+	.string "before they left shortly after\l"
+	.string "Wallace did.\p"
+	.string "I'm busy handling things here in\n"
+	.string "Sootopolis but I called one of\l"
+	.string "your friends who should be\l"
+	.string "arriving as backup shortly!\p"
+	.string "{PLAYER}{KUN} you have to stop\n"
+	.string "Archie and Maxie and awaken\l"
+	.string "Rayquaza at any cost!\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
+
+ArchieSkyPillarMovement:
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	face_left
+	step_end
+
+MaxieSkyPillarMovement:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	step_end
+
+WallySkyPillarMovement:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_up
+	walk_up
+	walk_up
+	walk_right
+	walk_right
+	face_up
+	step_end
+
+ArchiePillar1:
+	.string "Archie: {PLAYER}, thank you very\n"
+	.string "much for leading us to Rayquaza!\p"
+	.string "Unfortunately for you it's crucial\n"
+	.string "that Maxie and I are the ones who\l"
+	.string "awaken Rayquaza and save the day!\p"
+	.string "To repay Hoenn for all the trouble\n"
+	.string "we've caused we'll be the ones to\l"
+	.string "take it from here!\p"
+	.string "Please step out of the way!$"
+
+MaxiePillar1:
+	.string "Maxie: I must confess I wasn't sold\n"
+	.string "on Archie's plan, and I hate the\l"
+	.string "idea of teaming up with him.\p"
+	.string "That being said, it would be fitting\n"
+	.string "for us to be the ones to save the\l"
+	.string "day after all the damage we've done.\p"
+	.string "Unfortunately, I don't imagine you'll\n"
+	.string "be letting us do this willingly, so I\l"
+	.string "hope you're ready for a fight!$"
+
+ArchiePillar2:
+	.string "Archie: It's two against one!\p"
+	.string "Why don't you just move aside\n"
+	.string "and let us handle this!$"
+
+WallyPillar1:
+	.string "{PLAYER}!\n"
+	.string "I'm here!$"
+
+WallyPillar2:
+	.string "Wally: {PLAYER}, I came here as soon\n"
+	.string "as I got word from Steven!\p"
+	.string "He said you might need some assitance.\p"
+	.string "I hope I've grown strong enough to be\n"
+	.string "of some actual help, but I'll try\l"
+	.string "my absolute hardest!$"
+
+MaxiePillar2:
+	.string "Maxie: So it's two on two afterall.\p"
+	.string "I'd call that a fair fight.\p"
+	.string "Prepare to step aside and let us\n"
+	.string "right our wrongs!$"
+
+MaxieDoubleDefeated:
+	.string "Very well, you shall right\n"
+	.string "our wrongs once again.$"
+
+ArchieDoubleDefeated:
+	.string "This is all Maxie's fault!\n"
+	.string "I could have taken you down!$"
+
+ArchiePillar3:
+	.string "Archie: ………\p"
+	.string "We really have caused irreperable\n"
+	.string "harm to Hoenn…\p"
+	.string "I think it's time to hang it up…$"
+
+MaxiePillar3:
+	.string "Maxie: {PLAYER}, please awaken\n"
+	.string "Rayquaza and undo our mistakes.\p"
+	.string "We will return to Sootopolis and\n"
+	.string "do what we can to make amends there.$"
+
+WallyPillar3:
+	.string "Wally: We did it {PLAYER}!\p"
+	.string "I knew you were strong but I wasn't\n"
+	.string "sure I really had what it takes.\p"
+	.string "I'm headed back home to my family,\n"
+	.string "please awaken Rayquaza and save Hoenn!$"
+
+WallyPostWhiteOut:
+	.string "I'm ready when you are {PLAYER}!\n"
+	.string "We have to stop Archie and Maxie!$"
+
+SkyPillar_Top_EventScript_DoubleBattle::
+	lockall
+	pokenavcall StevenErraticEmergency
+	waitmessage
+	playse SE_DOOR
+	playbgm MUS_ENCOUNTER_AQUA, FALSE
+	addobject LOCALID_PILLAR_ARCHIE
+	delay 16
+	applymovement LOCALID_PILLAR_ARCHIE, Common_Movement_WalkLeft
+	waitmovement
+	playse SE_DOOR
+	addobject LOCALID_PILLAR_MAXIE
+	delay 16
+	applymovement LOCALID_PILLAR_ARCHIE, ArchieSkyPillarMovement
+	applymovement LOCALID_PILLAR_MAXIE, MaxieSkyPillarMovement
+	waitmovement
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement
+	msgbox ArchiePillar1, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement
+	msgbox MaxiePillar1, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement
+	msgbox ArchiePillar2, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+	waitmovement
+	msgbox WallyPillar1, MSGBOX_AUTOCLOSE
+	waitmessage
+	playse SE_DOOR
+	addobject LOCALID_PILLAR_WALLY
+	applymovement LOCALID_PILLAR_WALLY, WallySkyPillarMovement
+	waitmovement
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+	msgbox WallyPillar2, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement
+	msgbox MaxiePillar2, MSGBOX_AUTOCLOSE
+	closemessage
+	multi_2_vs_2 TRAINER_MAXIE_DOUBLE, MaxieDoubleDefeated, TRAINER_ARCHIE_DOUBLE, ArchieDoubleDefeated, PARTNER_WALLY
+	switch VAR_RESULT
+	case 1, SkyPillarVictoryDouble
+	fadescreen FADE_TO_BLACK
+	special SetCB2WhiteOut
+
+SkyPillarVictoryDouble::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement
+	msgbox ArchiePillar3, MSGBOX_DEFAULT
+	waitmessage
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement
+	msgbox MaxiePillar3, MSGBOX_DEFAULT
+	closemessage
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_PILLAR_MAXIE
+	removeobject LOCALID_PILLAR_ARCHIE
+	setflag FLAG_ERRATIC_12V12
+	setvar VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 1
+	fadescreenswapbuffers FADE_FROM_BLACK
+	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
+	waitmovement
+	msgbox WallyPillar3, MSGBOX_AUTOCLOSE
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_PILLAR_WALLY
+	fadescreenswapbuffers FADE_FROM_BLACK
+	releaseall
+	end
+
+SkyPillarChangeMusic::
+	playbgm MUS_ABNORMAL_WEATHER, TRUE 
+	return
+
+SkyPillarMaxieScriptAfterWhiteOut::
+	lockall
+	msgbox MaxiePillar2, MSGBOX_NPC
+	closemessage
+	multi_2_vs_2 TRAINER_MAXIE_DOUBLE, MaxieDoubleDefeated, TRAINER_ARCHIE_DOUBLE, ArchieDoubleDefeated, PARTNER_WALLY
+	switch VAR_RESULT
+	case 1, SkyPillarVictoryDouble
+	fadescreen FADE_TO_BLACK
+	special SetCB2WhiteOut
+
+SkyPillarWallyScriptAfterWhiteOut::
+	msgbox WallyPostWhiteOut, MSGBOX_NPC
+	end
 

@@ -1300,7 +1300,7 @@
 #define FLAG_SKARMORITE                                           0x4DE // Unused Flag
 #define FLAG_RUBY_LEGEND                                           0x4DF // Unused Flag
 #define FLAG_SAPPHIRE_LEGEND                                           0x4E0 // Unused Flag
-#define FLAG_UNUSED_0x4E1                                           0x4E1 // Unused Flag
+#define FLAG_ERRATIC_12V12                                           0x4E1 // Unused Flag
 #define FLAG_EMERALD_LEGEND                                           0x4E2 // Unused Flag
 #define FLAG_INVERSE_BATTLES                                           0x4E3 // Unused Flag
 #define FLAG_SKY_BATTLES                                           0x4E4 // Unused Flag
@@ -1313,8 +1313,8 @@
 #define FLAG_DEFEATED_GENESECT                                           0x4EB // Unused Flag
 #define FLAG_HIDE_GENESECT                                           0x4EC // Unused Flag
 #define FLAG_DRIVE                                           0x4ED // Unused Flag
-#define FLAG_UNUSED_0x4EE                                           0x4EE // Unused Flag
-#define FLAG_UNUSED_0x4EF                                           0x4EF // Unused Flag
+#define FLAG_PILLAR_BOSSES                                           0x4EE // Unused Flag
+#define FLAG_PILLAR_WALLY                                           0x4EF // Unused Flag
 
 #define FLAG_DEFEATED_RUSTBORO_GYM                                  0x4F0
 #define FLAG_DEFEATED_DEWFORD_GYM                                   0x4F1

@@ -12033,15 +12033,15 @@ Nature: Timid
 - Ice Beam
 - Scald
 
-Drifblim @ Flying Gem
+Kilowattrel @ Electric Gem
 Level: 83
-Ability: Unburden
+Ability: Competitive
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- Misty Explosion
-- Weather Ball
 - Hurricane
-- Shadow Ball
+- Weather Ball
+- Thunder
+- Thunderbolt
 
 Masquerain @ Charti Berry
 Level: 83
@@ -29012,16 +29012,141 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 Nature: Hardy
 
-=== TRAINER_BRENDAN_PLACEHOLDER ===
-Name: BRENDAN
-Class: RS Protag
-Pic: RS Brendan
+=== TRAINER_MAXIE_DOUBLE ===
+Name: Maxie
+Class: Magma Leader
+Pic: Magma Leader Maxie
 Gender: Male
-Music: Male
+Music: Magma
 Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Groudon
-Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Claydol @ Light Clay
+Level: 87
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Earth Power
+- Solarbeam
+- Weather Ball
+- Reflect
+
+Celebi @ Leftovers
+Level: 87
+Ability: Natural Cure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Psychic
+- Weather Ball
+- Solarbeam
+- Nasty Plot
+
+Magmortar @ Passho Berry
+Level: 87
+Ability: Flame Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunder
+- Weather Ball
+- Solarbeam
+- Earth Power
+
+Shiftry @ Tanga Berry
+Level: 87
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Dark Pulse
+- Solarbeam
+- Hurricane
+
+Volcarona @ Charti Berry
+Level: 87
+Ability: Swarm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Hurricane
+- Solarbeam
+- Bug Buzz
+
+Victreebel @ Victreebelite
+Level: 87
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Sludge Bomb
+- Solarbeam
+- Giga Drain
+
+=== TRAINER_ARCHIE_DOUBLE ===
+Name: Archie
+Class: Aqua Leader
+Pic: Aqua Leader Archie
+Gender: Male
+Music: Aqua
+Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+
+Bronzong @ Light Clay
+Level: 87
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Thunder
+- Lumina Crash
+- Weather Ball
+- Light Screen
+
+Manaphy @ Leftovers
+Level: 87
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Ice Beam
+- Tail Glow
+- Scald
+
+Electivire @ Shuca Berry
+Level: 87
+Ability: Static
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Volt Tackle
+- Weather Ball
+- Ice Punch
+- High Horsepower
+
+Ludicolo @ Tanga Berry
+Level: 87
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Ice Beam
+- Solarbeam
+- Giga Drain
+
+Vikavolt @ Charti Berry
+Level: 87
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Thunder
+- Solarbeam
+- Bug Buzz
+
+Eelektross @ Eelektrossite
+Level: 87
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Thunder
+- Charge Beam
+- Giga Drain
 

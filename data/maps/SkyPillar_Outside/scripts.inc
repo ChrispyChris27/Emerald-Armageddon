@@ -7,6 +7,7 @@ SkyPillar_Outside_MapScripts::
 SkyPillar_Outside_OnTransition:
 	call_if_eq VAR_SOOTOPOLIS_CITY_STATE, 3, SkyPillar_Outside_EventScript_HideMapNamePopup
 	call_if_set FLAG_SYS_WEATHER_CTRL, Common_EventScript_SetAbnormalWeather
+	call_if_set FLAG_SYS_WEATHER_CTRL, SkyPillarChangeMusic
 	end
 
 SkyPillar_Outside_EventScript_HideMapNamePopup::

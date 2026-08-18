@@ -32,10 +32,11 @@ u32 GetCurrentLevelCap(void)
         {FLAG_BADGE07_GET, 80},
         {FLAG_ROCKET_TAG, 82},
         {FLAG_CAVERN_ARCHIE, 84},
-        {FLAG_HIDEOUT_GIOVANNI, 87},
-        {FLAG_BADGE08_GET, 89},
-        {FLAG_CYRUS_FALLS, 91},
-        {FLAG_CYNTHIA_VR, 96},
+        {FLAG_ERRATIC_12V12, 87},
+        {FLAG_HIDEOUT_GIOVANNI, 90},
+        {FLAG_BADGE08_GET, 92},
+        {FLAG_CYRUS_FALLS, 95},
+        {FLAG_CYNTHIA_VR, 97},
         {FLAG_IS_CHAMPION, 100},
     };
 

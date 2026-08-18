@@ -36,11 +36,11 @@ PacifidlogTown_House3_Text_WillingToTradeIt:
 	.string "yesterday to celebrate my birthday!\p"
 	.string "Oh, I can see that you want it!\n"
 	.string "After all, it's priceless!\p"
-	.string "I'll tell you what. I might be willing\n"
-	.string "to trade it for a {STR_VAR_1}.$"
+	.string "I'll tell you what. I'm in a generous\n"
+	.string "mood. I'll trade it to you!$"
 
 PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou:
-	.string "Oh, so this is a {STR_VAR_1}?\p"
+	.string "Your POKéMON is quite nice!\p"
 	.string "It's sort of like a {STR_VAR_2},\n"
 	.string "and yet it's subtly different.\p"
 	.string "Thank you!$"
@@ -56,9 +56,9 @@ PacifidlogTown_House3_Text_NotDesperateOrAnything:
 	.string "a trade or anything.$"
 
 PacifidlogTown_House3_Text_ReallyWantedToGetBagon:
-	.string "I know I could go looking for one\n"
+	.string "I know I could go looking for more\n"
 	.string "on my own, but…\p"
-	.string "But I really wanted to get a BAGON\n"
+	.string "But I really wanted to get a POKéMON\n"
 	.string "that another TRAINER caught…$"
 
 PacifidlogTown_House3_Text_IsThatAPokedex:
