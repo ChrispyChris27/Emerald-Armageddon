@@ -2,6 +2,7 @@ SkyPillar_Top_MapScripts::
 	map_script MAP_SCRIPT_ON_RESUME, SkyPillar_Top_OnResume
 	map_script MAP_SCRIPT_ON_TRANSITION, SkyPillar_Top_OnTransition
 	map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, SkyPillar_Top_OnWarp
+	map_script MAP_SCRIPT_ON_LOAD, SkyPillarTopOnLoad
 	.byte 0
 
 SkyPillar_Top_OnResume:
@@ -350,6 +351,9 @@ SkyPillar_Top_EventScript_DoubleBattle::
 	waitmessage
 	playse SE_DOOR
 	addobject LOCALID_PILLAR_WALLY
+	clearflag FLAG_PILLAR_BOSSES
+	clearflag FLAG_PILLAR_WALLY
+	setvar VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 1
 	applymovement LOCALID_PILLAR_WALLY, WallySkyPillarMovement
 	waitmovement
 	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
@@ -360,8 +364,8 @@ SkyPillar_Top_EventScript_DoubleBattle::
 	msgbox MaxiePillar2, MSGBOX_AUTOCLOSE
 	closemessage
 	multi_2_vs_2 TRAINER_MAXIE_DOUBLE, MaxieDoubleDefeated, TRAINER_ARCHIE_DOUBLE, ArchieDoubleDefeated, PARTNER_WALLY
-	switch VAR_RESULT
-	case 1, SkyPillarVictoryDouble
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, SkyPillarVictoryDouble
 	fadescreen FADE_TO_BLACK
 	special SetCB2WhiteOut
 
@@ -378,7 +382,6 @@ SkyPillarVictoryDouble::
 	removeobject LOCALID_PILLAR_MAXIE
 	removeobject LOCALID_PILLAR_ARCHIE
 	setflag FLAG_ERRATIC_12V12
-	setvar VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 1
 	fadescreenswapbuffers FADE_FROM_BLACK
 	applymovement LOCALID_PLAYER, Common_Movement_FaceDown
 	waitmovement
@@ -398,12 +401,47 @@ SkyPillarMaxieScriptAfterWhiteOut::
 	msgbox MaxiePillar2, MSGBOX_NPC
 	closemessage
 	multi_2_vs_2 TRAINER_MAXIE_DOUBLE, MaxieDoubleDefeated, TRAINER_ARCHIE_DOUBLE, ArchieDoubleDefeated, PARTNER_WALLY
-	switch VAR_RESULT
-	case 1, SkyPillarVictoryDouble
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, SkyPillarVictoryDoubleAfterWhiteOut
 	fadescreen FADE_TO_BLACK
 	special SetCB2WhiteOut
 
 SkyPillarWallyScriptAfterWhiteOut::
 	msgbox WallyPostWhiteOut, MSGBOX_NPC
 	end
+
+SkyPillarTopSetPositionsForBattle::
+	setobjectxyperm LOCALID_PILLAR_WALLY, 15, 12
+	setobjectmovementtype LOCALID_PILLAR_WALLY, MOVEMENT_TYPE_FACE_UP
+	setobjectxyperm LOCALID_PILLAR_ARCHIE, 15, 11
+	setobjectxyperm LOCALID_PILLAR_MAXIE, 14, 11
+	end
+
+SkyPillarVictoryDoubleAfterWhiteOut::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement
+	msgbox ArchiePillar3, MSGBOX_DEFAULT
+	waitmessage
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement
+	msgbox MaxiePillar3, MSGBOX_DEFAULT
+	closemessage
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_PILLAR_MAXIE
+	removeobject LOCALID_PILLAR_ARCHIE
+	setflag FLAG_ERRATIC_12V12
+	fadescreenswapbuffers FADE_FROM_BLACK
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	applymovement LOCALID_PILLAR_WALLY, Common_Movement_FaceLeft
+	waitmovement
+	msgbox WallyPillar3, MSGBOX_AUTOCLOSE
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_PILLAR_WALLY
+	fadescreenswapbuffers FADE_FROM_BLACK
+	releaseall
+	end
+
+SkyPillarTopOnLoad::
+call_if_eq VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 1, SkyPillarTopSetPositionsForBattle
+end
 

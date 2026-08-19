@@ -72387,14 +72387,14 @@
             },
             {
 #line 29044
-            .species = SPECIES_MAGMORTAR,
+            .species = SPECIES_RESHIRAM,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 29044
-            .heldItem = ITEM_PASSHO_BERRY,
+            .heldItem = ITEM_LIFE_ORB,
 #line 29047
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 29046
-            .ability = ABILITY_FLAME_BODY,
+            .ability = ABILITY_TURBOBLAZE,
 #line 29045
             .lvl = 87,
             .ball = POKEBALL_COUNT,
@@ -72403,10 +72403,10 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 29049
-                MOVE_THUNDER,
+                MOVE_DRAGON_PULSE,
                 MOVE_WEATHER_BALL,
                 MOVE_SOLARBEAM,
-                MOVE_EARTH_POWER,
+                MOVE_BLUE_FLARE,
             },
             },
             {
@@ -72459,14 +72459,14 @@
             },
             {
 #line 29074
-            .species = SPECIES_VICTREEBEL,
+            .species = SPECIES_DELPHOX,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 29074
-            .heldItem = ITEM_VICTREEBELITE,
+            .heldItem = ITEM_DELPHOXITE,
 #line 29077
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 29076
-            .ability = ABILITY_CHLOROPHYLL,
+            .ability = ABILITY_MAGIC_GUARD,
 #line 29075
             .lvl = 87,
             .ball = POKEBALL_COUNT,
@@ -72476,9 +72476,9 @@
             .moves = {
 #line 29079
                 MOVE_WEATHER_BALL,
-                MOVE_SLUDGE_BOMB,
+                MOVE_PSYSHOCK,
                 MOVE_SOLARBEAM,
-                MOVE_GIGA_DRAIN,
+                MOVE_NASTY_PLOT,
             },
             },
         },
@@ -72555,14 +72555,14 @@
             },
             {
 #line 29113
-            .species = SPECIES_ELECTIVIRE,
+            .species = SPECIES_ZEKROM,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 29113
-            .heldItem = ITEM_SHUCA_BERRY,
+            .heldItem = ITEM_LIFE_ORB,
 #line 29116
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 29115
-            .ability = ABILITY_STATIC,
+            .ability = ABILITY_TERAVOLT,
 #line 29114
             .lvl = 87,
             .ball = POKEBALL_COUNT,
@@ -72571,10 +72571,10 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 29118
-                MOVE_VOLT_TACKLE,
+                MOVE_BOLT_STRIKE,
+                MOVE_DRAGON_RUSH,
                 MOVE_WEATHER_BALL,
-                MOVE_ICE_PUNCH,
-                MOVE_HIGH_HORSEPOWER,
+                MOVE_STONE_EDGE,
             },
             },
             {
@@ -72627,14 +72627,14 @@
             },
             {
 #line 29143
-            .species = SPECIES_EELEKTROSS,
+            .species = SPECIES_GRENINJA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 29143
-            .heldItem = ITEM_EELEKTROSSITE,
+            .heldItem = ITEM_GRENINJITE,
 #line 29146
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 29145
-            .ability = ABILITY_LEVITATE,
+            .ability = ABILITY_PROTEAN,
 #line 29144
             .lvl = 87,
             .ball = POKEBALL_COUNT,
@@ -72644,9 +72644,9 @@
             .moves = {
 #line 29148
                 MOVE_WEATHER_BALL,
-                MOVE_THUNDER,
-                MOVE_CHARGE_BEAM,
-                MOVE_GIGA_DRAIN,
+                MOVE_DARK_PULSE,
+                MOVE_ICE_BEAM,
+                MOVE_NASTY_PLOT,
             },
             },
         },

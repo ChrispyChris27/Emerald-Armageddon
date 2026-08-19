@@ -3068,7 +3068,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .friendship = 35,
         .growthRate = GROWTH_SLOW,
         .eggGroups = RALTS_FAMILY_EGG_GROUPS,
-        .abilities = { ABILITY_SHARPNESS, ABILITY_SHARPNESS, ABILITY_SHARPNESS },
+        .abilities = { ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS, ABILITY_INNER_FOCUS },
         .bodyColor = BODY_COLOR_WHITE,
         .speciesName = _("Gallade"),
     #if P_MODIFIED_MEGA_CRIES

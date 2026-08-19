@@ -29041,15 +29041,15 @@ Nature: Hasty
 - Solarbeam
 - Nasty Plot
 
-Magmortar @ Passho Berry
+Reshiram @ Life Orb
 Level: 87
-Ability: Flame Body
+Ability: Turboblaze
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
-- Thunder
+- Dragon Pulse
 - Weather Ball
 - Solarbeam
-- Earth Power
+- Blue Flare
 
 Shiftry @ Tanga Berry
 Level: 87
@@ -29071,15 +29071,15 @@ Nature: Timid
 - Solarbeam
 - Bug Buzz
 
-Victreebel @ Victreebelite
+Delphox @ Delphoxite
 Level: 87
-Ability: Chlorophyll
+Ability: Magic Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Weather Ball
-- Sludge Bomb
+- Psyshock
 - Solarbeam
-- Giga Drain
+- Nasty Plot
 
 === TRAINER_ARCHIE_DOUBLE ===
 Name: Archie
@@ -29110,15 +29110,15 @@ Nature: Timid
 - Tail Glow
 - Scald
 
-Electivire @ Shuca Berry
+Zekrom @ Life Orb
 Level: 87
-Ability: Static
+Ability: Teravolt
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Hasty
-- Volt Tackle
+- Bolt Strike
+- Dragon Rush
 - Weather Ball
-- Ice Punch
-- High Horsepower
+- Stone Edge
 
 Ludicolo @ Tanga Berry
 Level: 87
@@ -29140,13 +29140,13 @@ Nature: Timid
 - Solarbeam
 - Bug Buzz
 
-Eelektross @ Eelektrossite
+Greninja @ Greninjite
 Level: 87
-Ability: Levitate
+Ability: Protean
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Weather Ball
-- Thunder
-- Charge Beam
-- Giga Drain
+- Dark Pulse
+- Ice Beam
+- Nasty Plot
 
