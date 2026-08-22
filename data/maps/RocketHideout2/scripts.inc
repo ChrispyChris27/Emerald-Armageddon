@@ -1,10 +1,5 @@
 RocketHideout2_MapScripts::
-	map_script MAP_SCRIPT_ON_RESUME, RocketHideout2_OnLoad
 	.byte 0
-
-RocketHideout2_OnLoad::
-	setstartingstatus STARTING_STATUS_ELECTRIC_TERRAIN
-	end
 
 RocketHideout_Grunt1_Script::
 	trainerbattle_single TRAINER_HIDEOUT_GRUNT_1, RocketHideoutGrunt1Intro, RocketHideoutGrunt1Defeat
@@ -41,7 +36,8 @@ RocketHideoutGrunt1Intro:
 	.string "warned us about!$"
 
 RocketHideoutGrunt2Intro:
-	.string "Prepare for a severe beatdown!$"
+	.string "Get ready to be shocked!\n"
+	.string "Our hideout is electric!$"
 
 RocketHideoutGrunt3Intro:
 	.string "Welcome to our base of operations!\p"
@@ -78,7 +74,7 @@ RocketHideoutGrunt1Defeat:
 	.string "number one!$"
 
 RocketHideoutGrunt2Defeat:
-	.string "You beat me down!$"
+	.string "A shocking defeat!$"
 
 RocketHideoutGrunt3Defeat:
 	.string "I didn't operate my team well.$"
@@ -92,8 +88,10 @@ RocketHideoutGrunt6Defeat:
 	.string "a lesson.$"
 
 RocketHideoutGrunt1PostBattle:
-	.string "You think you're some big shot\n"
-	.string "just because you beat me?$"
+	.string "Our hideout has lots of state of\n"
+	.string "the art technology.\p"
+	.string "A powerful electric generator\n"
+	.string "under this room powers it all!$"
 
 RocketHideoutGrunt2PostBattle:
 	.string "I'm not worried!\p"

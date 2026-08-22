@@ -73,7 +73,7 @@ Sixth_Trick_House_Quiz_1::
 Sixth_TrickHousePuzzle2_Text:
 	.string "Let me welcome you with\n"
 	.string "question two!\p"
-	.string "Which of these is not a type of\p"
+	.string "Which of these is not a type of\n"
 	.string "card in the TCG?$"
 
 Quiz_6B_Option_1:
@@ -107,7 +107,7 @@ Sixth_Trick_House_Quiz_2::
 Sixth_TrickHousePuzzle3_Text:
 	.string "A gift from me, it's\n"
 	.string "question three!\p"
-	.string "Which of these can Magikarp\p"
+	.string "Which of these can Magikarp\n"
 	.string "not push?$"
 
 Quiz_6C_Option_1:

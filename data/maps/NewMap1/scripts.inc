@@ -1,12 +1,7 @@
 NewMap1_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, NewMap1_OnLoad
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, NewMap1_OnFrame
 	map_script MAP_SCRIPT_ON_TRANSITION, NewMap1_OnTransition
 	.byte 0
-
-NewMap1_OnLoad::
-	callnative ResetStartingStatuses
-	end
 
 NewMap1_OnTransition::
 	goto_if_eq VAR_ROCKET_HIDEOUT_STATE, 2, NewMap1_Move_Sister

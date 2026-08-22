@@ -1,10 +1,5 @@
 RocketHideout3_MapScripts::
-map_script MAP_SCRIPT_ON_RESUME, RocketHideout3_OnLoad
 	.byte 0
-
-RocketHideout3_OnLoad::
-	setstartingstatus STARTING_STATUS_ELECTRIC_TERRAIN
-	end
 
 RocketHideout_Grunt7_Script::
 	trainerbattle_single TRAINER_HIDEOUT_GRUNT_7, RocketHideoutGrunt7Intro, RocketHideoutGrunt7Defeat

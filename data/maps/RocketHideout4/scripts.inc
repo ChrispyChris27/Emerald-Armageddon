@@ -1,11 +1,6 @@
 RocketHideout4_MapScripts::
-	map_script MAP_SCRIPT_ON_RESUME, RocketHideout4_OnLoad
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, RocketHideout4_OnFrame
 	.byte 0
-
-RocketHideout4_OnLoad::
-	setstartingstatus STARTING_STATUS_ELECTRIC_TERRAIN
-	end
 
 RocketHideout4_OnFrame::
 	map_script_2 VAR_ROCKET_HIDEOUT_STATE, 0, RocketHideout4_Brother_Battles
