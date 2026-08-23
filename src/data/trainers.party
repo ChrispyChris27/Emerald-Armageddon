@@ -15502,7 +15502,7 @@ Nature: Timid
 - Ancientpower
 - Ice Beam
 
-Tatsugiri Curly @ Leftovers
+Tatsugiri Stretchy @ Leftovers
 Level: 26
 Ability: Storm Drain
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
@@ -27106,12 +27106,12 @@ Nature: Hasty
 
 Dusclops @ Eviolite
 Level: 46
-Ability: Pressure
+Ability: Shadow Tag
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Impish
 - Pain Split
 - Will O Wisp
-- Mean Look
+- Confuse Ray
 - Night Shade
 
 Runerigus @ Chesto Berry
@@ -27868,17 +27868,37 @@ Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Sandshrew
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Aerodactyl @ Focus Sash
+Level: 86
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Tailwind
+- Stealth Rock
+- Rock Slide
+- Sky Attack
 
-Sandshrew
-Level: 31
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Ursaluna @ Leftovers
+Level: 86
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- High Horsepower
+- Double Edge
+- Play Rough
+- Ice Punch
+
+Houndoom @ Life Orb
+Level: 86
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dark Pulse
+- Flamethrower
+- Nasty Plot
+- Scorching Sands
 
 === TRAINER_HIDEOUT_GRUNT_8 ===
 Name: Grunt
@@ -27887,22 +27907,37 @@ Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Nosepass
-Level: 33
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Froslass @ Brightpowder
+Level: 86
+Ability: Cursed Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Confuse Ray
+- Shadow Ball
+- Freeze Dry
+- Spikes
 
-Sandshrew
-Level: 33
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Parasect @ Quick Claw
+Level: 86
+Ability: Effect Spore
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Spore
+- X Scissor
+- Seed Bomb
+- Crabhammer
 
-Sandshrew
-Level: 33
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Breloom @ Focus Band
+Level: 86
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Spore
+- Arm Thrust
+- Bullet Seed
+- Rock Blast
 
 === TRAINER_HIDEOUT_GRUNT_9 ===
 Name: Grunt
@@ -27911,22 +27946,57 @@ Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Nosepass
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Wigglytuff @ Focus Band
+Level: 86
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Stealth Rock
+- Misty Explosion
+- Flamethrower
+- Moonblast
 
-Sandshrew
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Braviary @ Eject Pack
+Level: 86
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Tailwind
+- Close Combat
+- U Turn
+- Sky Attack
 
-Sandshrew
-Level: 35
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Whiscash @ Brightpowder
+Level: 86
+Ability: Oblivious
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Wave Crash
+- Earthquake
+- Ice Spinner
+
+Metagross @ King's Rock
+Level: 86
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Shift Gear
+- Comet Punch
+- Barrage
+- Substitute
+
+Lokix @ Dark Gem
+Level: 86
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Pursuit
+- X Scissor
+- Knock Off
+- Swords Dance
 
 === TRAINER_HIDEOUT_GRUNT_10 ===
 Name: Grunt
@@ -27935,22 +28005,57 @@ Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Nosepass
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Donphan @ Quick Claw
+Level: 86
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Stealth Rock
+- Headlong Rush
+- Stone Edge
+- Ice Spinner
 
-Sandslash
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Dragapult @ Brightpowder
+Level: 86
+Ability: Infiltrator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Dragon Darts
+- Spirit Shackle
+- Fire Blast
+- Hydro Pump
 
-Sandslash
-Level: 37
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Sigilyph @ Focus Band
+Level: 86
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Lumina Crash
+- Air Slash
+- Heat Wave
+- Dazzling Gleam
+
+Venomoth @ Brightpowder
+Level: 86
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Quiver Dance
+- Bug Buzz
+- Sludge Bomb
+- Roost
+
+Obstagoon @ Flame Orb
+Level: 86
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Pursuit
+- Facade
+- Cross Chop
+- Obstruct
 
 === TRAINER_HIDEOUT_GRUNT_11 ===
 Name: Grunt
@@ -27959,22 +28064,37 @@ Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Wingull
-Level: 30
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Camerupt @ Quick Claw
+Level: 86
+Ability: Solid Rock
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- High Horsepower
+- Rock Slide
+- Stealth Rock
+- Flare Blitz
 
-Machop
-Level: 30
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Magcargo @ Brightpowder
+Level: 86
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Fire Blast
+- Power Gem
+- Shell Smash
 
-Tentacool
-Level: 30
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Arcanine Hisui @ Focus Band
+Level: 86
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Head Smash
+- Flare Blitz
+- Wild Charge
+- Extremespeed
 
 === TRAINER_HIDEOUT_GRUNT_12 ===
 Name: Grunt
@@ -27983,22 +28103,47 @@ Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Pelipper
-Level: 32
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Cradily @ Leftovers
+Level: 86
+Ability: Storm Drain
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Stealth Rock
+- Giga Drain
+- Ancientpower
+- Earth Power
 
-Machop
-Level: 32
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Lumineon @ Wacan Berry
+Level: 86
+Ability: Storm Drain
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Hurricane
+- Ice Beam
+- Tailwind
 
-Tentacool
-Level: 32
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Tatsugiri Droopy @ Roseli Berry
+Level: 86
+Ability: Storm Drain
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Dragon Pulse
+- Ice Beam
+- Nasty Plot
+
+Gastrodon East @ Rindo Berry
+Level: 86
+Ability: Storm Drain
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Earth Power
+- Ice Beam
+- Recover
 
 === TRAINER_HIDEOUT_GRUNT_13 ===
 Name: Grunt
@@ -28007,22 +28152,52 @@ Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: Misty Terrain 
 
-Pelipper
-Level: 34
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Clefable @ Focus Band
+Level: 86
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Stealth Rock
+- Misty Explosion
+- Flamethrower
+- Moonblast
 
-Machop
-Level: 34
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Grafaiai @ Misty Seed
+Level: 86
+Ability: Unburden
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Gunk Shot
+- Super Fang
+- Low Kick
+- Swords Dance
 
-Tentacruel
-Level: 34
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Hatterene @ Choice Specs
+Level: 86
+Ability: Magic Bounce
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Misty Explosion
+
+Whimsicott @ Brightpowder
+Level: 86
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Energy Ball
+- Nature Power
+- Substitute
+- Hurricane
+
+Gardevoir @ Choice Scarf
+Level: 86
+Ability: Trace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Misty Explosion
 
 === TRAINER_HIDEOUT_GRUNT_14 ===
 Name: Grunt
@@ -28031,32 +28206,58 @@ Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: Psychic Terrain 
 
-Pelipper
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Gigalith @ Custap Berry
+Level: 86
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Stealth Rock
+- Explosion
+- Stone Edge
+- Earthquake
 
-Machoke
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Rapidash Galar @ Focus Band
+Level: 86
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Psycho Cut
+- Play Rough
+- Swords Dance
+- High Horsepower
 
-Tentacruel
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Orbeetle @ Brightpowder
+Level: 86
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Expanding Force
+- Bug Buzz
+- Quiver Dance
+- Recover
 
-Staryu
-Level: 37
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Malamar @ Leftovers
+Level: 86
+Ability: Contrary
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Psycho Boost
+- Superpower
+- Knock Off
+- Substitute
 
-Staryu
-Level: 37
-IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-Nature: Hardy
+Slowbro Galar @ Quick Claw
+Level: 86
+Ability: Quick Draw
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Expanding Force
+- Sludge Bomb
+- Slack Off
+- Flamethrower
 
 === TRAINER_HIDEOUT_GRUNT_15 ===
 Name: Grunt
@@ -28065,12 +28266,58 @@ Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: Grassy Terrain 
 
-Pelipper
-Level: 36
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Torterra @ Brightpowder
+Level: 86
+Ability: Thick Fat
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Stealth Rock
+- Grassy Glide
+- Stone Edge
+- High Horsepower
+
+Dhelmise @ Focus Band
+Level: 86
+Ability: Steelworker
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Spirit Shackle
+- Grassy Glide
+- Anchor Shot
+- Swords Dance
+
+Luxray @ Flame Orb
+Level: 86
+Ability: Guts
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Volt Tackle
+- Facade
+- Ice Fang
+- Fire Fang
+
+Sceptile @ Grassy Seed
+Level: 86
+Ability: Unburden
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Swords Dance
+- Leaf Blade
+- Drain Punch
+- Rock Slide
+
+Muk Alola @ Black Sludge
+Level: 86
+Ability: Poison Touch
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Curse
+- Gunk Shot
+- Knock Off
+- Protect
 
 === TRAINER_HIDEOUT_GRUNT_16 ===
 Name: Grunt
@@ -28079,22 +28326,56 @@ Pic: Rocket Grunt F
 Gender: Female
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+Starting Status: Electric Terrain 
 
-Wingull
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Slurpuff @ Electric Seed
+Level: 86
+Ability: Unburden
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Sticky Web
+- Misty Explosion
 
-Staryu
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Toxtricity Low Key @ Focus Band
+Level: 86
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Rising Voltage
+- Sludge Bomb
+- Snarl
+- Endeavor
 
-Staryu
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Gholdengo @ Life Orb
+Level: 86
+Ability: Surge Surfer
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Shadow Ball
+- Flash Cannon
+- Thunderbolt
+- Dazzling Gleam
+
+Haxorus @ Brightpowder
+Level: 86
+Ability: Mold Breaker
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Swords Dance
+- Dual Chop
+- Thunderpunch
+- Earthquake
+
+Rotom Frost @ Wise Glasses
+Level: 86
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Rising Voltage
+- Nasty Plot
+- Shadow Ball
 
 === TRAINER_HIDEOUT_GRUNT_17 ===
 Name: Grunt
@@ -28164,95 +28445,160 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 Nature: Hardy
 
 === TRAINER_HIDEOUT_GRUNT_20 ===
-Name: BROTHER
+Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Makuhita
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Runerigus @ Custap Berry
+Level: 86
+Ability: Wandering Spirit
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Spirit Shackle
+- Stealth Rock
+- Earthquake
+- Confuse Ray
 
-Machoke
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Machamp @ Quick Claw
+Level: 86
+Ability: No Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Dynamic Punch
+- Stone Edge
+- Ice Punch
+- Bulk Up
 
-Machoke
-Level: 39
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-Nature: Hardy
+Starmie @ Wise Glasses
+Level: 86
+Ability: Analytic
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Ice Beam
+- Thunderbolt
+- Psyshock
 
 === TRAINER_HIDEOUT_GRUNT_21 ===
-Name: BROTHER
+Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Hariyama
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Frosmoth @ Brightpowder
+Level: 86
+Ability: Ice Scales
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Tailwind
+- Hurricane
+- Ice Beam
+- Bug Buzz
 
-Machoke
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Sudowoodo @ Quick Claw
+Level: 86
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Head Smash
+- Submission
+- Wood Hammer
+- Sucker Punch
 
-Machoke
-Level: 41
-IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
-Nature: Hardy
+Gothitelle @ Wise Glasses
+Level: 86
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Psyshock
+- Nasty Plot
+- Thunderbolt
+- Focus Blast
 
 === TRAINER_HIDEOUT_GRUNT_22 ===
-Name: BROTHER
+Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Hariyama
-Level: 43
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Skarmory @ Covert Cloak
+Level: 86
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Spikes
+- Drill Run
+- Drill Peck
+- Iron Tail
 
-Machamp
-Level: 43
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Dusclops @ Eviolite
+Level: 86
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Confuse Ray
+- Pain Split
+- Night Shade
+- Will O Wisp
 
-Machamp
-Level: 43
-IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
-Nature: Hardy
+Mr. Mime @ Focus Band
+Level: 86
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Confusion
+- Nasty Plot
+- Magical Leaf
+- Disarming Voice
 
 === TRAINER_HIDEOUT_GRUNT_23 ===
-Name: BROTHER
+Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Rocket
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Loudred
-Level: 35
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-Nature: Hardy
+Ariados @ Quick Claw
+Level: 86
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Sticky Web
+- Cross Poison
+- Megahorn
+- Pursuit
 
-Vigoroth
-Level: 35
-IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
-Nature: Hardy
+Trevenant @ Sitrus Berry
+Level: 86
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Confuse Ray
+- Shadow Claw
+- Wood Hammer
+- Pursuit
+
+Honchkrow @ Dark Gem
+Level: 86
+Ability: Super Luck
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Naughty
+- Hurricane
+- Heat Wave
+- Esper Wing
+- Pursuit
 
 === TRAINER_HIDEOUT_GRUNT_24 ===
 Name: Sister
@@ -28411,7 +28757,7 @@ Nature: Jolly
 
 Dusknoir @ Punching Glove
 Level: 54
-Ability: Levitate
+Ability: Iron Fist
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Shadow Punch

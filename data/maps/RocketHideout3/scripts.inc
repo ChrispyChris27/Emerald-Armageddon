@@ -131,29 +131,29 @@ RocketHideoutGrunt10Intro:
 	.string "packing to the entrance!$"
 
 RocketHideoutGrunt12Intro:
-	.string "Now that we have the rocket fuel\n"
-	.string "TEAM ROCKET is unstoppable!$"
+	.string "I used to work for Team Aqua!\n"
+	.string "Team Rocket is even stronger!$"
 
 RocketHideoutGrunt11Intro:
-	.string "TEAM ROCKET will soon complete its\n"
-	.string "master plan!$"
+	.string "I used to work for Team Magma!\n"
+	.string "Team Rocket's plans are even better!$"
 
 RocketHideoutGrunt13Intro:
-	.string "You've gone through the control\n"
-	.string "room so you know our plan now.\p"
-	.string "For that reason I'll have to stop\n"
-	.string "you!$"
+	.string "Our scientists can chance the\n"
+	.string "terrain in here at will.\p"
+	.string "Don't believe me?\n"
+	.string "See for yourself!$"
 
 RocketHideoutGrunt14Intro:
-	.string "As awesome as it would be I have\n"
-	.string "no intention of letting you see\l"
-	.string "the rocket launch!\p"
-	.string "Your reign of terror ends here!$"
+	.string "Most of our scientists are getting\n"
+	.string "ready for the rocket launch, but a\l"
+	.string "few are still working to make sure\l"
+	.string "your reign of terror ends here!$"
 
 RocketHideoutGrunt15Intro:
 	.string "We've had scientists and engineers\n"
 	.string "working here while we traversed\l"
-	.string "HOENN doing research and collecting\l"
+	.string "Hoenn doing research and collecting\l"
 	.string "resources.\p"
 	.string "Everything is coming together now and\n"
 	.string "I won't let you get in the way!$"
@@ -177,12 +177,12 @@ RocketHideoutGrunt10Defeat:
 	.string "You sent me packing!$"
 
 RocketHideoutGrunt12Defeat:
-	.string "We on the other hand are not\n"
-	.string "unstoppable.$"
+	.string "No matter what team I'm on my\n"
+	.string "partner always lets me down.$"
 
 RocketHideoutGrunt11Defeat:
-	.string "I guess this is why we don't\n"
-	.string "get to go on the rocket.$"
+	.string "No matter what team I'm on you\n"
+	.string "always beat me.$"
 
 RocketHideoutGrunt13Defeat:
 	.string "Don't go blabbing about the plan!$"

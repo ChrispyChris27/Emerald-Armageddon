@@ -17,24 +17,28 @@ RocketHideout4_Brother_Battles::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
 	waitmovement 0
 	msgbox Brother1Intro, MSGBOX_DEFAULT
+	call RandomizeFieldEffectRocketHideout
 	trainerbattle_no_intro TRAINER_HIDEOUT_GRUNT_20, Brother1Defeat
 	msgbox Brother1Exit, MSGBOX_DEFAULT
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
 	waitmovement 0
 	playbgm MUS_RG_ENCOUNTER_ROCKET, FALSE
 	msgbox Brother2Intro, MSGBOX_DEFAULT
+	call RandomizeFieldEffectRocketHideout
 	trainerbattle_no_intro TRAINER_HIDEOUT_GRUNT_21, Brother2Defeat
 	msgbox Brother2Exit, MSGBOX_DEFAULT
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 	waitmovement 0
 	playbgm MUS_RG_ENCOUNTER_ROCKET, FALSE
 	msgbox Brother3Intro, MSGBOX_DEFAULT
+	call RandomizeFieldEffectRocketHideout
 	trainerbattle_no_intro TRAINER_HIDEOUT_GRUNT_22, Brother3Defeat
 	msgbox Brother3Exit, MSGBOX_DEFAULT
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	waitmovement 0
 	playbgm MUS_RG_ENCOUNTER_ROCKET, FALSE
 	msgbox Brother4Intro, MSGBOX_DEFAULT
+	call RandomizeFieldEffectRocketHideout
 	trainerbattle_no_intro TRAINER_HIDEOUT_GRUNT_23, Brother4Defeat
 	msgbox Brother4Exit, MSGBOX_AUTOCLOSE
 	fadescreenswapbuffers FADE_TO_BLACK
@@ -50,14 +54,17 @@ RocketHideout4_Brother_Battles::
 
 Brother1Intro:
 	.string "Hold it right there intruder!\p"
-	.string "The TEAM ROCKET BROTHERS were warned\n"
+	.string "The Team Rocket Brothers were warned\n"
 	.string "that someone was coming to try and put\l"
 	.string "an end to the boss' plan!\p"
 	.string "You're going to have to go through the\n"
 	.string "four of us first!\p"
 	.string "We've been itching for the chance at\n"
 	.string "revenge after the defeat you handed us\l"
-	.string "at the SPACE CENTER!\p"
+	.string "at the Space Center!\p"
+	.string "We run constant experiments in this\n"
+	.string "room, so there's no telling what\l"
+	.string "our battle field will look like!\p"
 	.string "Ready or not, here we come!$"
 
 Brother1Defeat:
@@ -100,8 +107,8 @@ Brother4Defeat:
 Brother4Exit:
 	.string "Impossible! We've been defeated again!\p"
 	.string "No matter! By now the boss should be\n"
-	.string "nearly finished preparing to launch!\p"
-	.string "We better go warn him that trouble is\n"
+	.string "nearly finished prepared to launch!\p"
+	.string "We better warn him that trouble is\n"
 	.string "coming!\p"
 	.string "Out of the way!$"
 
@@ -160,3 +167,24 @@ RocketHideoutGrunt19Defeat:
 RocketHideoutGrunt19PostBattle:
 	.string "You may still be too late!\p"
 	.string "The boss will be boarding any moment!$"
+
+RandomizeFieldEffectRocketHideout::
+	callnative ResetStartingStatuses
+	random 3
+	switch VAR_RESULT
+	case 0, RandomizeTrickRoom
+	case 1, RandomizeWonderRoom
+	case 2, RandomizeMagicRoom
+	return 
+
+RandomizeTrickRoom::
+	setstartingstatus STARTING_STATUS_TRICK_ROOM
+	return
+
+RandomizeWonderRoom::
+	setstartingstatus STARTING_STATUS_WONDER_ROOM
+	return
+
+RandomizeMagicRoom::
+	setstartingstatus STARTING_STATUS_MAGIC_ROOM
+	return
