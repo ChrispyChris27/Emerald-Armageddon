@@ -141,7 +141,7 @@ NewMap1_EventScript_Giovanni::
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
 	setvar VAR_ROCKET_HIDEOUT_STATE, 3
-	setwildbattle SPECIES_RAYQUAZA_MEGA, 89, ITEM_METEORITE
+	setwildbattle SPECIES_RAYQUAZA_MEGA, 90, ITEM_WHITE_HERB
 	special BattleSetup_StartRogueWildBattle
 	waitstate
 	playmoncry SPECIES_RAYQUAZA_MEGA, CRY_MODE_NORMAL
@@ -182,6 +182,7 @@ NewMap1_EventScript_Giovanni::
 	setvar VAR_ROCKET_HIDEOUT_STATE, 4
 	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall StevenCalmedRayquazaText
+	waitmessage
 	releaseall
 	end
 
@@ -254,6 +255,7 @@ RayquazaBattle::
 	setvar VAR_ROCKET_HIDEOUT_STATE, 4
 	fadescreenswapbuffers FADE_FROM_BLACK
 	pokenavcall StevenCalmedRayquazaText
+	waitmessage
 	releaseall
 	end
 

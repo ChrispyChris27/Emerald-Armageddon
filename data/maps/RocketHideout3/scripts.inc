@@ -139,7 +139,7 @@ RocketHideoutGrunt11Intro:
 	.string "Team Rocket's plans are even better!$"
 
 RocketHideoutGrunt13Intro:
-	.string "Our scientists can chance the\n"
+	.string "Our scientists can change the\n"
 	.string "terrain in here at will.\p"
 	.string "Don't believe me?\n"
 	.string "See for yourself!$"
