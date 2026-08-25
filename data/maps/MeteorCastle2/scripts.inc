@@ -113,7 +113,7 @@ MeteorCastleAeroBattle::
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
 	settotemboost B_POSITION_OPPONENT_LEFT, 1, 2, 1, 0, 2
-	setwildbattle SPECIES_AERODACTYL_MEGA, 90, ITEM_MUSCLE_BAND
+	setwildbattle SPECIES_AERODACTYL_MEGA, 94, ITEM_MUSCLE_BAND
 	waitse
 	playmoncry SPECIES_AERODACTYL_MEGA, CRY_MODE_ENCOUNTER
 	delay 40

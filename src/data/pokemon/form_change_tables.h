@@ -1668,7 +1668,6 @@ static const struct FormChange sNecrozmaDawnWingsFormChangeTable[] =
 };
 static const struct FormChange sNecrozmaUltraFormChangeTable[] =
 {
-    {FORM_CHANGE_FAINT},
     {FORM_CHANGE_END_BATTLE},
     {FORM_CHANGE_TERMINATOR},
 };

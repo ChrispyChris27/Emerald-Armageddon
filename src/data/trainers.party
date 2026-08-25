@@ -24786,7 +24786,7 @@ AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide 
 Multi Party: Half
 
 Sneasler @ Focus Sash
-Level: 91
+Level: 94
 Ability: Poison Touch
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -24796,7 +24796,7 @@ Nature: Jolly
 - Throat Chop
 
 Ursaluna @ Flame Orb
-Level: 91
+Level: 94
 Ability: Guts
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -24806,7 +24806,7 @@ Nature: Jolly
 - Swords Dance
 
 Dialga-Origin @ Adamant Crystal
-Level: 91
+Level: 94
 Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -24816,7 +24816,7 @@ Nature: Timid
 - Earth Power
 
 Palkia-Origin @ Lustrous Globe
-Level: 91
+Level: 94
 Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -24826,7 +24826,7 @@ Nature: Timid
 - Thunderbolt
 
 Giratina-Origin @ Griseous Core
-Level: 91
+Level: 94
 Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -24836,7 +24836,7 @@ Nature: Adamant
 - Aqua Tail
 
 Darkrai @ Darkranite
-Level: 91
+Level: 94
 Ability: Bad Dreams
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -26485,7 +26485,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Hippowdon @ Leftovers
-Level: 96
+Level: 97
 Ability: Sand Stream
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Careful
@@ -26495,7 +26495,7 @@ Nature: Careful
 - Protect
 
 Roserade @ Safety Goggles
-Level: 96
+Level: 97
 Ability: Technician
 IVs: 31 HP / 30 Atk / 31 Def / 31 SpA / 30 SpD / 30 Spe
 Nature: Timid
@@ -26505,7 +26505,7 @@ Nature: Timid
 - Hidden Power
 
 Gastrodon East @ Rindo Berry
-Level: 96
+Level: 97
 Ability: Sand Force
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -26515,7 +26515,7 @@ Nature: Modest
 - Muddy Water
 
 Lucario @ Focus Sash
-Level: 96
+Level: 97
 Ability: Inner Focus
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -26525,7 +26525,7 @@ Nature: Jolly
 - Swords Dance
 
 Rhyperior @ Weakness Policy
-Level: 96
+Level: 97
 Ability: Solid Rock
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -26534,9 +26534,9 @@ Nature: Jolly
 - Rock Polish
 - Fire Punch
 
-Garchomp @ Garchompite
-Level: 96
-Ability: Pressure
+Garchomp @ Garchompite Z
+Level: 97
+Ability: Sand Veil
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Earthquake

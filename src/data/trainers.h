@@ -61772,7 +61772,7 @@
 #line 24790
             .ability = ABILITY_POISON_TOUCH,
 #line 24789
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 24792
             .nature = NATURE_JOLLY,
@@ -61796,7 +61796,7 @@
 #line 24800
             .ability = ABILITY_GUTS,
 #line 24799
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 24802
             .nature = NATURE_JOLLY,
@@ -61820,7 +61820,7 @@
 #line 24810
             .ability = ABILITY_PRESSURE,
 #line 24809
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 24812
             .nature = NATURE_TIMID,
@@ -61844,7 +61844,7 @@
 #line 24820
             .ability = ABILITY_PRESSURE,
 #line 24819
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 24822
             .nature = NATURE_TIMID,
@@ -61868,7 +61868,7 @@
 #line 24830
             .ability = ABILITY_LEVITATE,
 #line 24829
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 24832
             .nature = NATURE_ADAMANT,
@@ -61892,7 +61892,7 @@
 #line 24840
             .ability = ABILITY_BAD_DREAMS,
 #line 24839
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 24842
             .nature = NATURE_TIMID,
@@ -65975,7 +65975,7 @@
 #line 26489
             .ability = ABILITY_SAND_STREAM,
 #line 26488
-            .lvl = 96,
+            .lvl = 97,
             .ball = POKEBALL_COUNT,
 #line 26491
             .nature = NATURE_CAREFUL,
@@ -65999,7 +65999,7 @@
 #line 26499
             .ability = ABILITY_TECHNICIAN,
 #line 26498
-            .lvl = 96,
+            .lvl = 97,
             .ball = POKEBALL_COUNT,
 #line 26501
             .nature = NATURE_TIMID,
@@ -66023,7 +66023,7 @@
 #line 26509
             .ability = ABILITY_SAND_FORCE,
 #line 26508
-            .lvl = 96,
+            .lvl = 97,
             .ball = POKEBALL_COUNT,
 #line 26511
             .nature = NATURE_MODEST,
@@ -66047,7 +66047,7 @@
 #line 26519
             .ability = ABILITY_INNER_FOCUS,
 #line 26518
-            .lvl = 96,
+            .lvl = 97,
             .ball = POKEBALL_COUNT,
 #line 26521
             .nature = NATURE_JOLLY,
@@ -66071,7 +66071,7 @@
 #line 26529
             .ability = ABILITY_SOLID_ROCK,
 #line 26528
-            .lvl = 96,
+            .lvl = 97,
             .ball = POKEBALL_COUNT,
 #line 26531
             .nature = NATURE_JOLLY,
@@ -66089,13 +66089,13 @@
             .species = SPECIES_GARCHOMP,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 26537
-            .heldItem = ITEM_GARCHOMPITE,
+            .heldItem = ITEM_GARCHOMPITE_Z,
 #line 26540
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 26539
-            .ability = ABILITY_PRESSURE,
+            .ability = ABILITY_SAND_VEIL,
 #line 26538
-            .lvl = 96,
+            .lvl = 97,
             .ball = POKEBALL_COUNT,
 #line 26541
             .nature = NATURE_JOLLY,
