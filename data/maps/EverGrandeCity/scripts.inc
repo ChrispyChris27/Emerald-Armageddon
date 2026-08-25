@@ -114,3 +114,11 @@ Zard_Movement2:
 	walk_left
 	step_end
 
+MagikarpBlockWaterfall::
+	playmoncry SPECIES_MAGIKARP, CRY_MODE_NORMAL
+	msgbox HelpStevenMagikarps, MSGBOX_AUTOCLOSE
+	end
+
+HelpStevenMagikarps:
+	.string "The Magikarp are blocking the way.$"
+

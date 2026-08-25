@@ -28,6 +28,7 @@ SkyPillar_Top_EventScript_SetCleanLayout::
 	return
 
 SkyPillar_Top_EventScript_TryShowRayquaza::
+	call_if_unset FLAG_SYS_GAME_CLEAR, DoNotShowRayquaza
 	call_if_unset FLAG_DEFEATED_RAYQUAZA, SkyPillar_Top_EventScript_ShowRayquaza
 	return
 
@@ -444,4 +445,7 @@ SkyPillarVictoryDoubleAfterWhiteOut::
 SkyPillarTopOnLoad::
 call_if_eq VAR_SKY_PILLAR_RAYQUAZA_CRY_DONE, 1, SkyPillarTopSetPositionsForBattle
 end
+
+DoNotShowRayquaza::
+	end
 

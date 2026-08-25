@@ -4135,31 +4135,33 @@ Nature: Naive
 - Endeavor
 
 === TRAINER_DAPHNE ===
-Name: DAPHNE
+Name: Daphne
 Class: Lady
 Pic: Lady
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Luvdisc @ Nugget
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Attract
-- Sweet Kiss
-- Flail
-- Water Pulse
+Walrein @ Leftovers
+Level: 88
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Surf
+- Super Fang
+- Freeze Dry
 
-Luvdisc @ Nugget
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Attract
-- Safeguard
-- Take Down
-- Water Pulse
+Dewgong @ Leftovers
+Level: 88
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Surf
+- Fake Out
+- Freeze Dry
 
 === TRAINER_GRUNT_SPACE_CENTER_2 ===
 Name: Brother
@@ -4235,18 +4237,33 @@ Nature: Hardy
 - Tail Whip
 
 === TRAINER_BRIANNA ===
-Name: BRIANNA
+Name: Brianna
 Class: Lady
 Pic: Lady
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Seaking @ Nugget
-Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Hardy
+Jynx @ Focus Sash
+Level: 88
+Ability: Dry Skin
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Ice Beam
+- Psyshock
+- Focus Blast
+
+Heliolisk @ Life Orb
+Level: 88
+Ability: Dry Skin
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Thunderbolt
+- Hyper Voice
+- Focus Blast
 
 === TRAINER_NAOMI ===
 Name: NAOMI
@@ -4424,86 +4441,160 @@ Nature: Timid
 - Sleep Powder
 
 === TRAINER_CONNIE ===
-Name: CONNIE
+Name: Connie
 Class: Beauty
 Pic: Beauty
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Goldeen
-Level: 40
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Raichu @ Shuca Berry
+Level: 88
+Ability: Lightning Rod
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Surf
+- Thunder
+- Focus Blast
+- Alluring Voice
+
+Raichu Alola @ Focus Sash
+Level: 88
+Ability: Lightning Rod
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Surf
+- Psychic
+- Thunder
+- Focus Blast
 
 === TRAINER_BRIDGET ===
-Name: BRIDGET
+Name: Bridget
 Class: Beauty
 Pic: Beauty
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Azumarill
-Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-Nature: Hardy
+Jellicent @ Rindo Berry
+Level: 88
+Ability: Water Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Water Spout
+- Ice Beam
+- Hydro Pump
+- Shadow Ball
+
+Mantine @ Wacan Berry
+Level: 88
+Ability: Water Absorb
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Ice Beam
+- Hydro Pump
+- Hurricane
+- Earth Power
 
 === TRAINER_OLIVIA ===
-Name: OLIVIA
+Name: Olivia
 Class: Beauty
 Pic: Beauty
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Clamperl
-Level: 35
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Iron Defense
-- Whirlpool
-- Rain Dance
-- Water Pulse
+Carracosta @ Rindo Berry
+Level: 88
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Wave Crash
+- Stone Edge
+- Earthquake
 
-Corphish
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Taunt
-- Crabhammer
-- Water Pulse
+Lapras @ Leftovers
+Level: 88
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Calm Mind
+- Hydro Pump
+- Freeze Dry
+- Rest
 
-Lombre
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Uproar
-- Fury Swipes
-- Fake Out
-- Water Pulse
+Blastoise @ White Herb
+Level: 88
+Ability: Rain Dish
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Shell Smash
+- Hydro Pump
+- Ice Beam
+- Aura Sphere
+
+Feraligatr @ Life Orb
+Level: 88
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Liquidation
+- Ice Punch
+- Dragon Dance
+- Thunder Fang
 
 === TRAINER_TIFFANY ===
-Name: TIFFANY
+Name: Tiffany
 Class: Beauty
 Pic: Beauty
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Carvanha
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Delibird @ Focus Sash
+Level: 100
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Aurora Veil
+- Tailwind
+- Air Slash
 
-Sharpedo
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Bellibolt @ Shuca Berry
+Level: 88
+Ability: Electromorphosis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Thunderbolt
+- Muddy Water
+- Soak
+
+Glaceon @ Sitrus Berry
+Level: 88
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Earth Power
+- Freeze Dry
+- Calm Mind
+
+Castform @ Expert Belt
+Level: 88
+Ability: Forecast
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Thunderbolt
+- Flamethrower
+- Hydro Pump
 
 === TRAINER_JESSICA_2 ===
 Name: JESSICA
@@ -9049,7 +9140,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Vanilluxe @ Light Clay
-Level: 89
+Level: 92
 Ability: Snow Warning
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Naive
@@ -9059,7 +9150,7 @@ Nature: Naive
 - Aurora Veil
 
 Lapras @ Throat Spray
-Level: 89
+Level: 92
 Ability: Serene Grace
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Modest
@@ -9069,7 +9160,7 @@ Nature: Modest
 - Freeze Dry
 
 Arctovish @ Life Orb
-Level: 89
+Level: 92
 Ability: Slush Rush
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -9079,17 +9170,17 @@ Nature: Jolly
 - Zen Headbutt
 
 Mamoswine @ Focus Sash
-Level: 89
+Level: 92
 Ability: Snow Cloak
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
+Nature: Jolly
 - Icicle Crash
 - Earthquake
 - Stone Edge
 - Ice Shard
 
 Glastrier @ Leftovers
-Level: 89
+Level: 92
 Ability: Chilling Neigh
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -9099,7 +9190,7 @@ Nature: Adamant
 - Swords Dance
 
 Baxcalibur @ Baxcalibrite
-Level: 89
+Level: 92
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Icicle Crash
@@ -9907,28 +9998,63 @@ Nature: Jolly
 - Pursuit
 
 === TRAINER_BETHANY ===
-Name: BETHANY
+Name: Bethany
 Class: Pokefan
 Pic: Pokefan F
 Gender: Female
 Music: Twins
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Azurill @ Oran Berry
-Level: 35
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Aurorus @ Focus Sash
+Level: 88
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Power Gem
+- Stealth Rock
+- Aurora Veil
 
-Marill @ Oran Berry
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Ninetales @ Wise Glasses
+Level: 88
+Ability: Flame Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Flamethrower
+- Energy Ball
+- Nasty Plot
 
-Azumarill @ Oran Berry
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Ninetales Alola @ Leftovers
+Level: 88
+Ability: Ice Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Moonblast
+- Substitute
+- Calm Mind
+
+Espeon @ Life Orb
+Level: 88
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psyshock
+- Weather Ball
+- Aura Sphere
+- Calm Mind
+
+Mr. Rime @ Assault Vest
+Level: 88
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Focus Blast
+- Psyshock
+- Dazzling Gleam
 
 === TRAINER_ISABEL_1 ===
 Name: ISABEL
@@ -12425,17 +12551,67 @@ Pic: Dragon Tamer
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Altaria
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Goodra Hisui @ Chople Berry
+Level: 90
+Ability: Gooey
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Iron Tail
+- Dragon Rush
+- Stealth Rock
+- Aqua Tail
 
-Altaria
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Dragapult @ Life Orb
+Level: 90
+Ability: Infiltrator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Dragon Darts
+- Shadow Ball
+- Fire Blast
+- Draco Meteor
+
+Hydreigon @ Roseli Berry
+Level: 90
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dragon Pulse
+- Dark Pulse
+- Flash Cannon
+- Nasty Plot
+
+Kommo O @ Roseli Berry
+Level: 90
+Ability: Bulletproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dragon Pulse
+- Focus Blast
+- Flash Cannon
+- Clanging Scales
+
+Guzzlord @ Roseli Berry
+Level: 90
+Ability: Beast Boost
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Iron Tail
+- Dragon Rush
+- Earthquake
+- Dragon Dance
+
+Feraligatr @ Feraligite
+Level: 90
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Return
+- Wave Crash
+- Earthquake
+- Dragon Dance
 
 === TRAINER_NICOLAS_2 ===
 Name: NICOLAS
@@ -15753,31 +15929,63 @@ Nature: Jolly
 - Wild Charge
 
 === TRAINER_ANNIKA ===
-Name: ANNIKA
+Name: Annika
 Class: Pokefan
 Pic: Pokefan F
 Gender: Female
 Music: Twins
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Feebas @ Oran Berry
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Flail
-- Water Pulse
-- Return
-- Attract
+Araquanid @ Focus Sash
+Level: 88
+Ability: Water Bubble
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Leech Life
+- Sticky Web
+- Mirror Coat
 
-Feebas @ Oran Berry
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Flail
-- Water Pulse
-- Return
-- Attract
+Palafin @ Eject Button
+Level: 88
+Ability: Zero To Hero
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Flip Turn
+- Ice Punch
+- Drain Punch
+
+Basculegion F @ Leftovers
+Level: 88
+Ability: Adaptability
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Ice Beam
+- Shadow Ball
+- Substitute
+
+Primarina @ Throat Spray
+Level: 88
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Sparkling Aria
+- Ice Beam
+- Energy Ball
+- Alluring Voice
+
+Masquerain @ Charti Berry
+Level: 88
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hydro Pump
+- Bug Buzz
+- Hurricane
+- Quiver Dance
 
 === TRAINER_JAZMYN ===
 Name: JAZMYN
@@ -19866,12 +20074,47 @@ Pic: Lass
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Luvdisc
-Level: 40
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Avalugg Hisui @ Chople Berry
+Level: 88
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Mountain Gale
+- Stone Edge
+- Earthquake
+
+Cloyster @ White Herb
+Level: 88
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Shell Smash
+- Spike Cannon
+- Icicle Spear
+- Rock Blast
+
+Vanilluxe @ Life Orb
+Level: 88
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Recover
+- Blizzard
+- Freeze Dry
+- Earth Power
+
+Cetitan @ Muscle Band
+Level: 88
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Earthquake
+- Play Rough
+- Knock Off
 
 === TRAINER_CRISSY ===
 Name: CRISSY
@@ -19880,17 +20123,58 @@ Pic: Lass
 Gender: Female
 Music: Female
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Goldeen
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Froslass @ Focus Sash
+Level: 88
+Ability: Cursed Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Aurora Veil
+- Blizzard
+- Spikes
+- Shadow Ball
 
-Wailmer
-Level: 39
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Jolteon @ Throat Spray
+Level: 88
+Ability: Static
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Thunderbolt
+- Alluring Voice
+- Shadow Ball
+
+Beartic @ Assault Vest
+Level: 88
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Drain Punch
+- Liquidation
+- Thunderpunch
+
+Piloswine @ Eviolite
+Level: 88
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Icicle Crash
+- Stone Edge
+- Earthquake
+- Ice Shard
+
+Magmortar @ Life Orb
+Level: 88
+Ability: Flame Body
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Heat Wave
+- Thunderbolt
+- Weather Ball
+- Scorching Sands
+
 
 === TRAINER_RICK ===
 Name: RICK
@@ -27389,7 +27673,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Barraskewda @ Focus Sash
-Level: 89
+Level: 92
 Ability: Swift Swim
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Adamant
@@ -27399,7 +27683,7 @@ Nature: Adamant
 - Close Combat
 
 Urshifu Rapid Strike @ White Herb
-Level: 89
+Level: 92
 Ability: Unseen Fist
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -27409,14 +27693,14 @@ Nature: Jolly
 - Thunderpunch
 
 Dracovish @ Choice Scarf
-Level: 89
+Level: 92
 Ability: Strong Jaw
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Fishious Rend
 
 Milotic @ Flame Orb
-Level: 89
+Level: 92
 Ability: Marvel Scale
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Bold
@@ -27425,25 +27709,25 @@ Nature: Bold
 - Recover
 - Calm Mind
 
-Manaphy @ Life Orb
-Level: 89
-Ability: Hydration
+Crawdaunt @ Water Gem
+Level: 92
+Ability: Adaptability
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Crabhammer
+- Crunch
+- Close Combat
+
+Tatsugiri Stretchy @ Tatsugirinite
+Level: 92
+Ability: Storm Drain
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Hydro Pump
 - Ice Beam
-- Energy Ball
-- Tail Glow
-
-Gyarados @ Gyaradosite
-Level: 89
-Ability: Intimidate
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Adamant
-- Wave Crash
-- Crunch
-- Stone Edge
-- Dragon Dance
+- Nasty Plot
+- Dragon Pulse
 
 === TRAINER_HIDEOUT_GRUNT_1 ===
 Name: Grunt
