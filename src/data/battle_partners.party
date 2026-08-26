@@ -144,3 +144,67 @@ Nature: Jolly
 - Solar Blade
 - Sacred Sword
 - Psycho Cut
+
+=== PARTNER_STEVEN3 ===
+Name: STEVEN
+Class: Rival
+Pic: Steven
+Gender: Male
+Music: Male
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
+
+Genesect-Chill @ Chill Drive
+Level: 91
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+Ability: Download
+- Techno Blast
+- Psychic
+- Flash Cannon
+- Bug Buzz
+
+Melmetal @ Choice Band
+Level: 82
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+Ability: Iron Fist
+- Double Iron Bash
+- Thunder Punch
+- High Horsepower
+- Bullet Punch
+
+Gholdengo @ Choice Specs
+Level: 91
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Make It Rain
+- Dazzling Gleam
+- Shadow Ball
+- Power Gem
+
+Iron Crown @ Choice Scarf
+Level: 82
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psyshock
+- Aura Sphere
+- Tachyon Cutter
+- Thunderbolt
+
+Magearna @ White Herb
+Level: 91
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Fleur Cannon
+- Aura Sphere
+- Flash Cannon
+- Moonblast
+
+Metagross @ Metagrossite
+Level: 91
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Meteor Mash
+- Psychic Fangs
+- Ice Punch
+- Bullet Punch

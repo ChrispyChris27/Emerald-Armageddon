@@ -1835,3 +1835,23 @@ Common_EventScript_SetSnow:
 	.include "data/maps/PetalburgTombOutside/scripts.inc"
 
 	.include "data/maps/PetalburgTombInside/scripts.inc"
+
+	.include "data/maps/DistortionWorldEntrance/scripts.inc"
+
+	.include "data/maps/DistortionWorldRoom1/scripts.inc"
+
+	.include "data/maps/DistortionWorldRoom2/scripts.inc"
+
+	.include "data/maps/DistortionWorldRoom3/scripts.inc"
+
+	.include "data/maps/DistortionWorldRoom4/scripts.inc"
+
+	.include "data/maps/DistortionWorldRoom5/scripts.inc"
+
+	.include "data/maps/DistortionWorldRoom6/scripts.inc"
+
+	.include "data/maps/DistortionWorldRoom7/scripts.inc"
+
+	.include "data/maps/DistortionWorldRoom8/scripts.inc"
+
+	.include "data/maps/DistortionWorldArceusRoom/scripts.inc"

@@ -154,7 +154,17 @@
     "SapphireVillaHouse",
     "EmeraldVillaHouse",
     "PetalburgTombOutside",
-    "PetalburgTombInside"
+    "PetalburgTombInside",
+    "DistortionWorldEntrance",
+    "DistortionWorldRoom1",
+    "DistortionWorldRoom2",
+    "DistortionWorldRoom3",
+    "DistortionWorldRoom4",
+    "DistortionWorldRoom5",
+    "DistortionWorldRoom6",
+    "DistortionWorldRoom7",
+    "DistortionWorldRoom8",
+    "DistortionWorldArceusRoom"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

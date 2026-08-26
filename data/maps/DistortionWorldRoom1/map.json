@@ -1,0 +1,30 @@
+{
+  "id": "MAP_DISTORTION_WORLD_ROOM1",
+  "name": "DistortionWorldRoom1",
+  "layout": "LAYOUT_DISTORTION_WORLD_ROOM1",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_DISTORTION_WORLD",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNKNOWN",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_LINK",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 0,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_DISTORTION_WORLD_STATE",
+      "var_value": "1",
+      "script": "Distortion_World_Teleport_2"
+    }
+  ],
+  "bg_events": []
+}

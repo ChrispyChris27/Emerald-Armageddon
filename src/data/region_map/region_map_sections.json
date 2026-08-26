@@ -1730,6 +1730,14 @@
       "y": 8,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_DISTORTION_WORLD",
+      "name": "DISTORTION WORLD",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }

@@ -32,6 +32,7 @@ enum MapPopUp_Themes
     MAPPOPUP_THEME_MARBLE,
     MAPPOPUP_THEME_RUBY,
     MAPPOPUP_THEME_SAPPHIRE,
+    MAPPOPUP_THEME_DISTORTION,
     MAPPOPUP_THEME_STONE,
     MAPPOPUP_THEME_BRICK,
     MAPPOPUP_THEME_UNDERWATER,
@@ -63,6 +64,7 @@ static const u8 sMapPopUp_Table[][960] =
     [MAPPOPUP_THEME_STONE2]     = INCGFX_U8("graphics/map_popup/stone2.png", ".4bpp"),
     [MAPPOPUP_THEME_RUBY]     = INCGFX_U8("graphics/map_popup/marble.png", ".4bpp"),
     [MAPPOPUP_THEME_SAPPHIRE]     = INCGFX_U8("graphics/map_popup/marble.png", ".4bpp"),
+    [MAPPOPUP_THEME_DISTORTION] = INCGFX_U8("graphics/map_popup/marble.png", ".4bpp"),
 };
 
 static const u8 sMapPopUp_OutlineTable[][960] =
@@ -75,6 +77,7 @@ static const u8 sMapPopUp_OutlineTable[][960] =
     [MAPPOPUP_THEME_STONE2]     = INCGFX_U8("graphics/map_popup/stone2_outline.png", ".4bpp"),
     [MAPPOPUP_THEME_RUBY]     = INCGFX_U8("graphics/map_popup/marble_outline.png", ".4bpp"),
     [MAPPOPUP_THEME_SAPPHIRE]     = INCGFX_U8("graphics/map_popup/marble_outline.png", ".4bpp"),
+    [MAPPOPUP_THEME_DISTORTION] = INCGFX_U8("graphics/map_popup/marble_outline.png", ".4bpp"),
 };
 
 static const u16 sMapPopUp_PaletteTable[][16] =
@@ -87,6 +90,7 @@ static const u16 sMapPopUp_PaletteTable[][16] =
     [MAPPOPUP_THEME_STONE2]     = INCGFX_U16("graphics/map_popup/stone2_outline.png", ".gbapal"),
     [MAPPOPUP_THEME_RUBY]     = INCBIN_U16("graphics/map_popup/rubypopup.gbapal"),
     [MAPPOPUP_THEME_SAPPHIRE]     = INCBIN_U16("graphics/map_popup/sapphirepopup.gbapal"),
+    [MAPPOPUP_THEME_DISTORTION]     = INCBIN_U16("graphics/map_popup/distortion_world.gbapal"),
 };
 
 static const u16 sMapPopUp_Palette_Underwater[16] = INCGFX_U16("graphics/map_popup/underwater.pal", ".gbapal");
@@ -212,7 +216,8 @@ static const u8 sMapSectionToThemeId[MAPSEC_COUNT - KANTO_MAPSEC_COUNT - 1] =
     [MAPSEC_SAPPHIRE_VILLA - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_SAPPHIRE,
     [MAPSEC_EMERALD_VILLA - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_MARBLE,
     [MAPSEC_CAVE_OF_LEGENDS - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_STONE,
-    [MAPSEC_PETALBURG_TOMB - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD
+    [MAPSEC_PETALBURG_TOMB - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD,
+    [MAPSEC_DISTORTION_WORLD - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_DISTORTION
 };
 
 #if OW_POPUP_GENERATION == GEN_5

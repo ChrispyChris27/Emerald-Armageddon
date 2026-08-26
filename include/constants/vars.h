@@ -266,7 +266,7 @@
 #define VAR_ROXANNE_CALL_STEP_COUNTER                    0x40F4
 #define VAR_SCOTT_BF_CALL_STEP_COUNTER                   0x40F5
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
-#define VAR_BATTLE_START                                 0x40F7 // Now unused
+#define VAR_DISTORTION_WORLD_STATE                       0x40F7 // 
 #define VAR_STEVEN_MF_STATE                              0x40F8 // Unused Var
 #define VAR_CYNTHIA_STATE                                0x40F9 // Unused Var
 #define VAR_ROGUE_STATE                                  0x40FA // Unused Var

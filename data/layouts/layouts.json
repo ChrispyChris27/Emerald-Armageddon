@@ -9824,6 +9824,106 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/PetalburgTombInside/border.bin",
       "blockdata_filepath": "data/layouts/PetalburgTombInside/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ENTRANCE",
+      "name": "DistortionWorldEntrance_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/DistortionWorldEntrance/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ROOM1",
+      "name": "DistortionWorldRoom1_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SecretBaseBlueCave",
+      "border_filepath": "data/layouts/DistortionWorldRoom1/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldRoom1/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ROOM2",
+      "name": "DistortionWorldRoom2_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_OceanicMuseum",
+      "border_filepath": "data/layouts/DistortionWorldRoom2/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldRoom2/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ROOM3",
+      "name": "DistortionWorldRoom3_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_SecretBaseYellowCave",
+      "border_filepath": "data/layouts/DistortionWorldRoom3/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldRoom3/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ROOM4",
+      "name": "DistortionWorldRoom4_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/DistortionWorldRoom4/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldRoom4/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ROOM5",
+      "name": "DistortionWorldRoom5_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/DistortionWorldRoom5/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldRoom5/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ROOM6",
+      "name": "DistortionWorldRoom6_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/DistortionWorldRoom6/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldRoom6/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ROOM7",
+      "name": "DistortionWorldRoom7_Layout",
+      "width": 40,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/DistortionWorldRoom7/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldRoom7/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ROOM8",
+      "name": "DistortionWorldRoom8_Layout",
+      "width": 40,
+      "height": 17,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/DistortionWorldRoom8/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldRoom8/map.bin"
+    },
+    {
+      "id": "LAYOUT_DISTORTION_WORLD_ARCEUS_ROOM",
+      "name": "DistortionWorldArceusRoom_Layout",
+      "width": 27,
+      "height": 27,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/DistortionWorldArceusRoom/border.bin",
+      "blockdata_filepath": "data/layouts/DistortionWorldArceusRoom/map.bin"
     }
   ]
 }

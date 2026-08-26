@@ -99,6 +99,12 @@ CyrusDefeated::
 	waitmoncry
 	msgbox Steven_Throne_Text1, MSGBOX_DEFAULT
 	closemessage
+	warpteleport MAP_DISTORTION_WORLD_ENTRANCE, 0, 18
+	waitstate
+	end
+
+ArceusRescue::
+	lockall
 	applymovement OBJ_EVENT_ID_PLAYER, Player_run
 	applymovement LOCALID_MF_STEVEN5, Steven_run
 	waitmovement 0

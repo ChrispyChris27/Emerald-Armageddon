@@ -15543,6 +15543,282 @@
               }
             ]
           }
+        },
+        {
+          "map": "MAP_DISTORTION_WORLD_ROOM4",
+          "base_label": "gDistortionWorldRoom4",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BUZZWOLE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_PHEROMOSA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_XURKITREE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_CELESTEELA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_KARTANA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BLACEPHALON"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NAGANADEL"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DISTORTION_WORLD_ROOM5",
+          "base_label": "gDistortionWorldRoom5",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BUZZWOLE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_PHEROMOSA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_XURKITREE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_CELESTEELA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_KARTANA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BLACEPHALON"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NAGANADEL"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DISTORTION_WORLD_ROOM7",
+          "base_label": "gDistortionWorldRoom7",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BUZZWOLE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_PHEROMOSA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_XURKITREE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_CELESTEELA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_KARTANA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BLACEPHALON"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NAGANADEL"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_DISTORTION_WORLD_ROOM8",
+          "base_label": "gDistortionWorldRoom8",
+          "land_mons": {
+            "encounter_rate": 10,
+            "mons": [
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NIHILEGO"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BUZZWOLE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_PHEROMOSA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_XURKITREE"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_CELESTEELA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_KARTANA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_BLACEPHALON"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_NAGANADEL"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_STAKATAKA"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              },
+              {
+                "min_level": 90,
+                "max_level": 90,
+                "species": "SPECIES_GUZZLORD"
+              }
+            ]
+          }
         }
       ]
     },

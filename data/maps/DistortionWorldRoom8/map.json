@@ -1,0 +1,35 @@
+{
+  "id": "MAP_DISTORTION_WORLD_ROOM8",
+  "name": "DistortionWorldRoom8",
+  "layout": "LAYOUT_DISTORTION_WORLD_ROOM8",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_DISTORTION_WORLD",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNKNOWN",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_LINK",
+  "connections": null,
+  "object_events": [],
+  "warp_events": [
+    {
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_DISTORTION_WORLD_ROOM7",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 28,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_DISTORTION_WORLD_ARCEUS_ROOM",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [],
+  "bg_events": []
+}

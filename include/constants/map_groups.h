@@ -90,6 +90,16 @@ enum
     MAP_EMERALD_VILLA_HOUSE                = (75 | (0 << 8)),
     MAP_PETALBURG_TOMB_OUTSIDE             = (76 | (0 << 8)),
     MAP_PETALBURG_TOMB_INSIDE              = (77 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ENTRANCE          = (78 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ROOM1             = (79 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ROOM2             = (80 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ROOM3             = (81 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ROOM4             = (82 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ROOM5             = (83 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ROOM6             = (84 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ROOM7             = (85 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ROOM8             = (86 | (0 << 8)),
+    MAP_DISTORTION_WORLD_ARCEUS_ROOM       = (87 | (0 << 8)),
 
     // gMapGroup_IndoorLittleroot
     MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    = (0 | (1 << 8)),
