@@ -347,6 +347,12 @@
       "y": 12,
       "respawn_map": "MAP_SIX_ISLAND_POKEMON_CENTER_1F",
       "respawn_npc": "LOCALID_SIX_ISLAND_NURSE"
+    },
+    {
+      "id": "HEAL_LOCATION_DISTORTION_WORLD_ROOM4",
+      "map": "MAP_DISTORTION_WORLD_ROOM4",
+      "x": 9,
+      "y": 5
     }
   ]
 }

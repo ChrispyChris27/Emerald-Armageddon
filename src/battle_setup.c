@@ -482,6 +482,10 @@ void BattleSetup_StartScriptedDoubleWildBattle(void)
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_DOUBLE;
+    if (IsNPCFollowerWildBattle())
+    {
+        gBattleTypeFlags |= BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_DOUBLE;
+    }
     CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_RG_VS_LEGEND);
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);

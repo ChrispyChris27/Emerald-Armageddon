@@ -145,7 +145,7 @@
 #line 56
             .ability = ABILITY_DOWNLOAD,
 #line 53
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 55
             .nature = NATURE_TIMID,
@@ -167,7 +167,7 @@
 #line 64
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 63
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 65
             .nature = NATURE_MODEST,
@@ -189,7 +189,7 @@
 #line 73
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 72
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 74
             .nature = NATURE_JOLLY,
@@ -401,7 +401,7 @@
 #line 160
             .ability = ABILITY_DOWNLOAD,
 #line 157
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 159
             .nature = NATURE_TIMID,
@@ -425,7 +425,7 @@
 #line 170
             .ability = ABILITY_IRON_FIST,
 #line 167
-            .lvl = 82,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 169
             .nature = NATURE_JOLLY,
@@ -447,7 +447,7 @@
 #line 178
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 177
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 179
             .nature = NATURE_TIMID,
@@ -469,7 +469,7 @@
 #line 187
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 186
-            .lvl = 82,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 188
             .nature = NATURE_TIMID,
@@ -491,7 +491,7 @@
 #line 196
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 195
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 197
             .nature = NATURE_MODEST,
@@ -513,7 +513,7 @@
 #line 205
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 204
-            .lvl = 91,
+            .lvl = 94,
             .ball = POKEBALL_COUNT,
 #line 206
             .nature = NATURE_JOLLY,

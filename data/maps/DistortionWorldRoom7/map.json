@@ -13,7 +13,36 @@
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_LINK",
   "connections": null,
-  "object_events": [],
+  "object_events": [
+    {
+      "local_id": "LOCALID_KARTANA",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(KARTANA)",
+      "x": 22,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ROGUE_ULTRA_BEAST1"
+    },
+    {
+      "local_id": "LOCALID_BUZZWOLE",
+      "graphics_id": "OBJ_EVENT_GFX_SPECIES(BUZZWOLE)",
+      "x": 38,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_ROGUE_ULTRA_BEAST2"
+    }
+  ],
   "warp_events": [
     {
       "x": 8,
@@ -30,6 +59,16 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_DISTORTION_WORLD_STATE",
+      "var_value": "7",
+      "script": "RogueUltraBeastsScript4"
+    }
+  ],
   "bg_events": []
 }

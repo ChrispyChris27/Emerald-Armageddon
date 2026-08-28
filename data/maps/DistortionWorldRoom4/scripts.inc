@@ -8,6 +8,7 @@ DistortionWorldRoom4_OnFrame::
 
 DistortionWorldRoom4_StartStevenFollower::
 	lockall
+	setrespawn HEAL_LOCATION_DISTORTION_WORLD_ROOM4
 	applymovement LOCALID_STEVEN_DIST1, Common_Movement_ExclamationMark
 	waitmovement
 	applymovement LOCALID_STEVEN_DIST1, Common_Movement_FaceUp
@@ -46,4 +47,66 @@ StevenDistortionHeal::
 
 DistortionStevenHealText:
 	.string "Here, let me heal your pokémon.$"
+
+RogueUltraBeastsScript1::
+	lockall
+	clearflag FLAG_ROGUE_ULTRA_BEAST1
+	clearflag FLAG_ROGUE_ULTRA_BEAST2
+	addobject LOCALID_XURKITREE
+	addobject LOCALID_GUZZLORD
+	playmoncry SPECIES_XURKITREE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_GUZZLORD, CRY_MODE_ENCOUNTER
+	applymovement LOCALID_XURKITREE, XurkitreeMovement
+	applymovement LOCALID_GUZZLORD, GuzzlordMovement
+	setflag FLAG_SMART_WILD
+	setflag FLAG_NO_RUN_WILD
+	setflag FLAG_NO_CATCH_WILD
+	setrespawn HEAL_LOCATION_DISTORTION_WORLD_ROOM4
+	settotemboost B_POSITION_OPPONENT_RIGHT, 2, 2, 2, 2, 2
+	settotemboost B_POSITION_OPPONENT_LEFT, 2, 2, 2, 2, 2
+	setwildbattle SPECIES_XURKITREE, 94, ITEM_SHUCA_BERRY, SPECIES_GUZZLORD, 94, ITEM_ROSELI_BERRY
+	waitse
+	playmoncry SPECIES_XURKITREE, CRY_MODE_ENCOUNTER
+	playmoncry SPECIES_GUZZLORD, CRY_MODE_ENCOUNTER
+	delay 40
+	waitmoncry
+	setflag FLAG_SYS_CTRL_OBJ_DELETE
+	dowildbattle
+	clearflag FLAG_SYS_CTRL_OBJ_DELETE
+	specialvar VAR_RESULT, GetBattleOutcome
+	goto_if_eq VAR_RESULT, B_OUTCOME_WON, RougeUltraBeastDefeated1
+	releaseall
+	end
+
+RougeUltraBeastDefeated1::
+	fadescreenswapbuffers FADE_TO_BLACK
+	removeobject LOCALID_GUZZLORD
+	removeobject LOCALID_XURKITREE
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_NO_CATCH_WILD
+	addvar VAR_DISTORTION_WORLD_STATE, 1
+	fadescreenswapbuffers FADE_FROM_BLACK
+	releaseall
+	end
+
+XurkitreeMovement:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+GuzzlordMovement:
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
 
