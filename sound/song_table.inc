@@ -364,7 +364,7 @@ gSongTable::
 	song mus_victory_league, MUSIC_PLAYER_BGM, 0
 	song mus_cynthia_encounter, MUSIC_PLAYER_BGM, 0
 	song mus_gsc_pewter, MUSIC_PLAYER_BGM, 0
-	song mus_c_vs_legend_beast, MUSIC_PLAYER_BGM, 0
+	song mus_emotions, MUSIC_PLAYER_BGM, 0
 	song mus_route101, MUSIC_PLAYER_BGM, 0
 	song mus_route110, MUSIC_PLAYER_BGM, 0
 	song mus_route120, MUSIC_PLAYER_BGM, 0
@@ -616,6 +616,8 @@ gSongTable::
 	song ph_nurse_blend, MUSIC_PLAYER_SE2, 2
 	song ph_nurse_held, MUSIC_PLAYER_SE2, 2
 	song ph_nurse_solo, MUSIC_PLAYER_SE2, 2
+	song mus_farewell, MUSIC_PLAYER_BGM, 0
+	song mus_cyrus, MUSIC_PLAYER_BGM, 0
 
 	.align 2
 dummy_song_header:

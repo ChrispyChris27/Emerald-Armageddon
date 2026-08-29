@@ -286,7 +286,7 @@
 #define MUS_VICTORY_LEAGUE          355 // MUS_KACHI5
 #define MUS_CYNTHIA_ENCOUNTER       356 // MUS_PCC              // Unused, likely a test track.
 #define MUS_GSC_PEWTER              357 // MUS_NIBI             // Used in unused Contest Halls.
-#define MUS_C_VS_LEGEND_BEAST       358 // MUS_SUIKUN           // Unused, likely a test track.
+#define MUS_EMOTIONS                358 // MUS_SUIKUN           // Unused, likely a test track.
 #define MUS_ROUTE101                359 // MUS_DOORO1           // Also used in Routes 102 and 103.
 #define MUS_ROUTE110                360 // MUS_DOORO_X1         // Also used in Routes 112, 114, 117, 111's non-desert section and 118's west half.
 #define MUS_ROUTE120                361 // MUS_DOORO_X3         // Also used in Routes 121, 124, 125, 126, 127 and 128.
@@ -542,6 +542,8 @@
 #define PH_NURSE_BLEND              607
 #define PH_NURSE_HELD               608
 #define PH_NURSE_SOLO               609
+#define MUS_FAREWELL                610
+#define MUS_CYRUS                   611
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

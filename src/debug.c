@@ -4067,7 +4067,7 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_VICTORY_LEAGUE)           \
     X(MUS_CYNTHIA_ENCOUNTER)        \
     X(MUS_GSC_PEWTER)               \
-    X(MUS_C_VS_LEGEND_BEAST)        \
+    X(MUS_EMOTIONS)                 \
     X(MUS_ROUTE101)                 \
     X(MUS_ROUTE110)                 \
     X(MUS_ROUTE120)                 \
@@ -4267,7 +4267,9 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_RG_ENCOUNTER_DEOXYS)      \
     X(MUS_RG_TRAINER_TOWER)         \
     X(MUS_RG_SLOW_PALLET)           \
-    X(MUS_RG_TEACHY_TV_MENU)
+    X(MUS_RG_TEACHY_TV_MENU)        \
+    X(MUS_FAREWELL)                 \
+    X(MUS_CYRUS)
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

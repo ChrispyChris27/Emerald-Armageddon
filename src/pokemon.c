@@ -5220,7 +5220,7 @@ u16 GetBattleBGM(void)
         case TRAINER_CLASS_LEADER:
             return MUS_VS_GYM_LEADER;
         case TRAINER_CLASS_TEAM_GALACTIC:
-            return MUS_RG_VS_DEOXYS;
+            return MUS_CYRUS;
         case TRAINER_CLASS_LOREKEEPER_EMERALD:
         case TRAINER_CLASS_LOREKEEPER_RUBY:
         case TRAINER_CLASS_LOREKEEPER_SAPPHIRE:

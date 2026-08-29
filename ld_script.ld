@@ -1012,7 +1012,7 @@ SECTIONS {
         sound/songs/midi/mus_victory_league.o(.rodata);
         sound/songs/midi/mus_cynthia_encounter.o(.rodata);
         sound/songs/midi/mus_gsc_pewter.o(.rodata);
-        sound/songs/midi/mus_c_vs_legend_beast.o(.rodata);
+        sound/songs/midi/mus_emotions.o(.rodata);
         sound/songs/midi/mus_route101.o(.rodata);
         sound/songs/midi/mus_route110.o(.rodata);
         sound/songs/midi/mus_route120.o(.rodata);
@@ -1264,6 +1264,8 @@ SECTIONS {
         sound/songs/midi/ph_nurse_blend.o(.rodata);
         sound/songs/midi/ph_nurse_held.o(.rodata);
         sound/songs/midi/ph_nurse_solo.o(.rodata);
+        sound/songs/midi/mus_farewell.o(.rodata);
+        sound/songs/midi/mus_cyrus.o(.rodata);
     } > ROM =0
 
     lib_rodata :
