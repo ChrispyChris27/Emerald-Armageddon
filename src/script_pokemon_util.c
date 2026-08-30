@@ -441,7 +441,7 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
 
     if(species == SPECIES_ARCEUS)
     {
-        u16 move1 = MOVE_JUDGEMENT;
+        u16 move1 = MOVE_JUDGMENT;
         u16 move2 = MOVE_SPACIAL_REND;
         u16 move3 = MOVE_SHADOW_FORCE;
         u16 move4 = MOVE_EXTREMESPEED;
@@ -869,7 +869,7 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
     {
         u16 move1 = MOVE_DARKEST_LARIAT;
         u16 move2 = MOVE_LEECH_LIFE;
-        u16 move3 = MOVE_DRAINPUNCH;
+        u16 move3 = MOVE_DRAIN_PUNCH;
         u16 move4 = MOVE_STONE_EDGE;
         u8 nature = NATURE_JOLLY;
         u8 ability = 0;
