@@ -1024,8 +1024,8 @@
 #define METATILE_Underwater_RockWall     0x21E
 
 // gTileset_Unused1
-#define METATILE_Unused1_PC_Off  0x2A0
-#define METATILE_Unused1_PC_On   0x2A1
+#define METATILE_Unused1_Distortion_World_PC_Off  0x2A0
+#define METATILE_Unused1_Distortion_World_PC_On   0x2A1
 
 // gTileset_VermilionCity
 #define METATILE_VermilionCity_Door        0x29E

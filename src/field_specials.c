@@ -1143,7 +1143,9 @@ static void PCTurnOnEffect_SetMetatile(s16 isScreenOn, s8 dx, s8 dy)
     if (isScreenOn)
     {
         // Screen is on, set it off
-        if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
+        if (gMapHeader.regionMapSectionId == MAPSEC_DISTORTION_WORLD)
+            metatileId = METATILE_Unused1_Distortion_World_PC_Off;
+        else if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
             metatileId = IS_FRLG ? METATILE_BuildingFrlg_PCOff : METATILE_Building_PC_Off;
         else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
             metatileId = METATILE_BrendansMaysHouse_BrendanPC_Off;
@@ -1155,7 +1157,9 @@ static void PCTurnOnEffect_SetMetatile(s16 isScreenOn, s8 dx, s8 dy)
     else
     {
         // Screen is off, set it on
-        if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
+        if (gMapHeader.regionMapSectionId == MAPSEC_DISTORTION_WORLD)
+            metatileId = METATILE_Unused1_Distortion_World_PC_On;
+        else if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
             metatileId = IS_FRLG ? METATILE_BuildingFrlg_PCOn : METATILE_Building_PC_On;
         else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
             metatileId = METATILE_BrendansMaysHouse_BrendanPC_On;
@@ -1202,7 +1206,9 @@ static void PCTurnOffEffect(void)
         break;
     }
 
-    if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
+    if (gMapHeader.regionMapSectionId == MAPSEC_DISTORTION_WORLD)
+            metatileId = METATILE_Unused1_Distortion_World_PC_Off;
+    else if (gSpecialVar_0x8004 == PC_LOCATION_OTHER)
         metatileId = IS_FRLG ? METATILE_BuildingFrlg_PCOff : METATILE_Building_PC_Off;
     else if (gSpecialVar_0x8004 == PC_LOCATION_BRENDANS_HOUSE)
         metatileId = METATILE_BrendansMaysHouse_BrendanPC_Off;

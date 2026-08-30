@@ -39,6 +39,7 @@ RougeUltraBeastDefeated2::
 	clearflag FLAG_NO_CATCH_WILD
 	addvar VAR_DISTORTION_WORLD_STATE, 1
 	fadescreenswapbuffers FADE_FROM_BLACK
+	special HealPlayerParty
 	releaseall
 	end
 

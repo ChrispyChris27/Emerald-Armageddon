@@ -544,6 +544,7 @@
 #define PH_NURSE_SOLO               609
 #define MUS_FAREWELL                610
 #define MUS_CYRUS                   611
+#define MUS_DISTORTION_WORLD        612
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

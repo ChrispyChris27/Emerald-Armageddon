@@ -2,7 +2,7 @@
   "id": "MAP_DISTORTION_WORLD_ARCEUS_ROOM",
   "name": "DistortionWorldArceusRoom",
   "layout": "LAYOUT_DISTORTION_WORLD_ARCEUS_ROOM",
-  "music": "MUS_DUMMY",
+  "music": "MUS_DISTORTION_WORLD",
   "region_map_section": "MAPSEC_DISTORTION_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -25,7 +25,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "RogueUltraBeastsScript6",
       "flag": "0"
     },
     {
@@ -39,7 +39,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "RogueUltraBeastsScript6",
       "flag": "0"
     },
     {

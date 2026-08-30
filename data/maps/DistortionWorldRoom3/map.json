@@ -2,7 +2,7 @@
   "id": "MAP_DISTORTION_WORLD_ROOM3",
   "name": "DistortionWorldRoom3",
   "layout": "LAYOUT_DISTORTION_WORLD_ROOM3",
-  "music": "MUS_DUMMY",
+  "music": "MUS_DISTORTION_WORLD",
   "region_map_section": "MAPSEC_DISTORTION_WORLD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

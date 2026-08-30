@@ -206,3 +206,6 @@
 .include "sound/voicegroups/cynithia_encounter.inc"
 .include "sound/voicegroups/mus_farewell.inc"
 .include "sound/voicegroups/cyrus.inc"
+.include "sound/voicegroups/cynthia.inc"
+.include "sound/voicegroups/mus_distortion_world.inc"
+.include "sound/voicegroups/distortion_world.inc"
