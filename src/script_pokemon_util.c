@@ -439,6 +439,21 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
+    if(species == SPECIES_ARCEUS)
+    {
+        u16 move1 = MOVE_JUDGEMENT;
+        u16 move2 = MOVE_SPACIAL_REND;
+        u16 move3 = MOVE_SHADOW_FORCE;
+        u16 move4 = MOVE_EXTREMESPEED;
+        u8 nature = NATURE_SERIOUS;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+    }
+
 }
 void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item item1, enum Species species2, u8 level2, enum Item item2)
 {
@@ -690,6 +705,294 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u16 move4 = MOVE_ICE_BEAM;
         u8 nature = NATURE_MODEST;
         u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species1 == SPECIES_NECROZMA_DUSK_MANE)
+    {
+        u16 move1 = MOVE_SUNSTEEL_STRIKE;
+        u16 move2 = MOVE_PHOTON_GEYSER;
+        u16 move3 = MOVE_STONE_EDGE;
+        u16 move4 = MOVE_MORNING_SUN;
+        u8 nature = NATURE_JOLLY;
+        u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species2 == SPECIES_NECROZMA_DAWN_WINGS)
+    {
+        u16 move1 = MOVE_MOONGEIST_BEAM;
+        u16 move2 = MOVE_PHOTON_GEYSER;
+        u16 move3 = MOVE_MOONBLAST;
+        u16 move4 = MOVE_MOONLIGHT;
+        u8 nature = NATURE_TIMID;
+        u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species2 == SPECIES_NIHILEGO)
+    {
+        u16 move1 = MOVE_POWER_GEM;
+        u16 move2 = MOVE_SLUDGE_BOMB;
+        u16 move3 = MOVE_EARTH_POWER;
+        u16 move4 = MOVE_THUNDERBOLT;
+        u8 nature = NATURE_TIMID;
+        u8 ability = 2;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species1 == SPECIES_NAGANADEL)
+    {
+        u16 move1 = MOVE_DRAGON_PULSE;
+        u16 move2 = MOVE_SLUDGE_BOMB;
+        u16 move3 = MOVE_FLAMETHROWER;
+        u16 move4 = MOVE_THUNDERBOLT;
+        u8 nature = NATURE_TIMID;
+        u8 ability = 2;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species1 == SPECIES_PHEROMOSA)
+    {
+        u16 move1 = MOVE_TRIPLE_KICK;
+        u16 move2 = MOVE_TRIPLE_AXEL;
+        u16 move3 = MOVE_LEECH_LIFE;
+        u16 move4 = MOVE_STONE_EDGE;
+        u8 nature = NATURE_JOLLY;
+        u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species2 == SPECIES_CELESTEELA)
+    {
+        u16 move1 = MOVE_HIGH_HORSEPOWER;
+        u16 move2 = MOVE_DUAL_WINGBEAT;
+        u16 move3 = MOVE_IRON_HEAD;
+        u16 move4 = MOVE_STONE_EDGE;
+        u8 nature = NATURE_JOLLY;
+        u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species2 == SPECIES_BUZZWOLE)
+    {
+        u16 move1 = MOVE_DARKEST_LARIAT;
+        u16 move2 = MOVE_LEECH_LIFE;
+        u16 move3 = MOVE_DRAINPUNCH;
+        u16 move4 = MOVE_STONE_EDGE;
+        u8 nature = NATURE_JOLLY;
+        u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species1 == SPECIES_KARTANA)
+    {
+        u16 move1 = MOVE_AQUA_CUTTER;
+        u16 move2 = MOVE_LEAF_BLADE;
+        u16 move3 = MOVE_BEHEMOTH_BLADE;
+        u16 move4 = MOVE_BITTER_BLADE;
+        u8 nature = NATURE_JOLLY;
+        u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species1 == SPECIES_STAKATAKA)
+    {
+        u16 move1 = MOVE_STONE_EDGE;
+        u16 move2 = MOVE_IRON_HEAD;
+        u16 move3 = MOVE_HEAT_CRASH;
+        u16 move4 = MOVE_HIGH_HORSEPOWER;
+        u8 nature = NATURE_JOLLY;
+        u8 ability = 0;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species1 == SPECIES_BLACEPHALON)
+    {
+        u16 move1 = MOVE_SHADOW_BALL;
+        u16 move2 = MOVE_ENERGY_BALL;
+        u16 move3 = MOVE_FIRE_BLAST;
+        u16 move4 = MOVE_MIND_BLOWN;
+        u8 nature = NATURE_TIMID;
+        u8 ability = 2;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species1 == SPECIES_XURKITREE)
+    {
+        u16 move1 = MOVE_THUNDERBOLT;
+        u16 move2 = MOVE_ENERGY_BALL;
+        u16 move3 = MOVE_DAZZLING_GLEAM;
+        u16 move4 = MOVE_TAIL_GLOW;
+        u8 nature = NATURE_TIMID;
+        u8 ability = 2;
+        u8 ivs = 31;
+
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+    }
+
+    if(species2 == SPECIES_GUZZLORD)
+    {
+        u16 move1 = MOVE_DRAGON_RUSH;
+        u16 move2 = MOVE_GUNK_SHOT;
+        u16 move3 = MOVE_HEAT_CRASH;
+        u16 move4 = MOVE_THROAT_CHOP;
+        u8 nature = NATURE_JOLLY;
+        u8 ability = 2;
         u8 ivs = 31;
 
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
