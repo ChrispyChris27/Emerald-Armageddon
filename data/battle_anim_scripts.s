@@ -3640,11 +3640,6 @@ OminousWindHit:
 	end
 
 gBattleAnimMove_ShadowForce::
-	choosetwoturnanim ShadowForcePrep ShadowForceAttack
-ShadowForceWaitEnd:
-	waitforvisualfinish
-	end
-ShadowForcePrep:
 	monbg ANIM_ATTACKER
 	playsewithpan SE_M_FAINT_ATTACK, SOUND_PAN_ATTACKER
 	simple_palette_blend selector=F_PAL_BG, delay=3, initial_blend_y=0, target_blend_y=16, color=RGB_BLACK
@@ -3655,19 +3650,6 @@ ShadowForcePrep:
 	createvisualtask AnimTask_TranslateMonEllipticalRespectSide, 2, ANIM_ATTACKER, 18, 6, 1, 3
 	attacker_fade_to_invisible step_delay=1
 	delay 80
-	simple_palette_blend selector=F_PAL_BG, delay=3, initial_blend_y=16, target_blend_y=0, color=RGB_BLACK
-	set_original_pal battler=ANIM_TARGET
-	set_original_pal battler=ANIM_ATTACKER
-	set_original_pal battler=ANIM_ATK_PARTNER
-	set_original_pal battler=ANIM_DEF_PARTNER
-	waitforvisualfinish
-	clearmonbg ANIM_ATTACKER
-	invisible ANIM_ATTACKER
-	delay 1
-	goto ShadowForceWaitEnd
-ShadowForceAttack:
-	monbg ANIM_ATTACKER
-	splitbgprio ANIM_ATTACKER
 	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
 	call ShadowForceBg
 	waitbgfadein
@@ -3677,12 +3659,19 @@ ShadowForceAttack:
 	delay 70
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 12, 1
 	blend_color_cycle selector=F_PAL_TARGET, delay=0, num_blends=2, initial_blend_y=0, target_blend_y=13, color=RGB_BLACK
+	set_original_pal battler=ANIM_TARGET
+	set_original_pal battler=ANIM_ATTACKER
+	set_original_pal battler=ANIM_ATK_PARTNER
+	set_original_pal battler=ANIM_DEF_PARTNER
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
 	delay 1
 	call UnsetPsychicBg
 	waitbgfadein
-	goto ShadowForceWaitEnd
+	simple_palette_blend selector=F_PAL_BG, delay=3, initial_blend_y=16, target_blend_y=0, color=RGB_BLACK
+	delay 1
+	waitforvisualfinish
+	end
 ShadowForceBg:
 	fadetobg BG_DARK
 	waitbgfadeout

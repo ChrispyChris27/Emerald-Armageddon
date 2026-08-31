@@ -439,7 +439,7 @@ void CreateScriptedWildMon(enum Species species, u8 level, enum Item item)
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
-    if(species == SPECIES_ARCEUS)
+    if(GET_BASE_SPECIES_ID(species) == SPECIES_ARCEUS)
     {
         u16 move1 = MOVE_JUDGMENT;
         u16 move2 = MOVE_SPACIAL_REND;

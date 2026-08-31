@@ -2183,6 +2183,9 @@ void BattleSetup_StartRogueWildBattle(void)
     if (GetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPECIES)==SPECIES_RAYQUAZA_MEGA)
     CreateBattleStartTask(B_TRANSITION_RAYQUAZA, MUS_VS_RAYQUAZA);
 
+    if (gMapHeader.regionMapSectionId == MAPSEC_DISTORTION_WORLD)
+    CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_RG_VS_DEOXYS);
+
     else
     CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_RG_VS_LEGEND);
     
