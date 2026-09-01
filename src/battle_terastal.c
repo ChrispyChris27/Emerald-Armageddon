@@ -110,7 +110,7 @@ bool32 CanTerastallize(enum BattlerId battler)
         return FALSE;
 
     // Every check passed!
-    return TRUE;
+    return FALSE;
 }
 
 // Returns a battler's Tera type.

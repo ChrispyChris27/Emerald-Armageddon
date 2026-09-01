@@ -119,7 +119,7 @@ bool32 CanDynamax(enum BattlerId battler)
     //    return FALSE;
 
     // No checks failed, all set!
-    return TRUE;
+    return FALSE;
 }
 
 // Returns whether a battler is transformed into a Gigantamax form.

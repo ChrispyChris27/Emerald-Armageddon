@@ -238,7 +238,7 @@ ArceusText1:
 
 StevenArceusRoomText2:
 	.string "Steven: {PLAYER}, did you\n"
-	.string "something?\p"
+	.string "say something?\p"
 	.string "… … …\p"
 	.string "But if you didn't say anything…\n"
 	.string "it must have been this pokemon.\p"
@@ -263,11 +263,11 @@ ArceusText3:
 	.string "Where… have you taken it?\p"
 	.string "Why… have you taken it?$"
 
-StevenArceusRoomText3:
+StevenArceusRoomText4:
 	.string "Steven: We didn't do anything\n"
 	.string "to Giratina, it sent us here!$"
 
-ArceusText3:
+ArceusText4:
 	.string "???: You… have taken Giratina!?!\p"
 	.string "You… are responsible!?!\p"
 	.string "Ultra Space… is closing in…\p"
@@ -276,7 +276,7 @@ ArceusText3:
 	.string "Time itself may soon collapse.\p"
 	.string "Because of you… chaos is coming…$"
 
-StevenArceusRoomText4:
+StevenArceusRoomText5:
 	.string "Steven: {PLAYER} if what this pokemon\n"
 	.string "is saying is true, Cyrus has taken\l"
 	.string "the Creation Trio from out their\l"
@@ -286,7 +286,7 @@ StevenArceusRoomText4:
 	.string "We have to get this pokemon to\n"
 	.string "understand!$"
 
-ArceusText4:
+ArceusText5:
 	.string "???: I understand…\p"
 	.string "I… understand the damage you\n"
 	.string "have caused!\p"

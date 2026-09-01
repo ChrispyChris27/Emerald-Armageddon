@@ -5522,7 +5522,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
             "An attack that steals half\n"
             "the damage inflicted."),
-        .effect = EFFECT_ABSORB,
+        .effect = EFFECT_HIT,
         .power = 75,
         .type = TYPE_GRASS,
         .accuracy = 100,
@@ -12357,7 +12357,6 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Roar of Time"),
         .description = COMPOUND_STRING(
-        #if B_SKIP_RECHARGE != GEN_1
             "Powerful, but leaves the\n"
             "user immobile the next turn."),
         .effect = EFFECT_RECOIL,

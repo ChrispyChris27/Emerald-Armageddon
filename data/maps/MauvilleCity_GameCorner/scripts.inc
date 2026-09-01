@@ -810,7 +810,7 @@ MauvilleCity_GameCorner_EventScript_BuyTMPowerGem::
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
 	removecoins TM_POWER_GEM_COINS
 	additem ITEM_TM_POWER_GEM
-	updatecoinsbox 1, 1
+	updatecoinsbox
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT
 	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseTMPrize
@@ -823,7 +823,7 @@ MauvilleCity_GameCorner_EventScript_BuyTMDazzlingGleam::
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
 	removecoins TM_DAZZLING_GLEAM_COINS
 	additem ITEM_TM_DAZZLING_GLEAM
-	updatecoinsbox 1, 1
+	updatecoinsbox
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT
 	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseTMPrize
@@ -836,7 +836,7 @@ MauvilleCity_GameCorner_EventScript_BuyTMFlashCannon::
 	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForTM
 	removecoins TM_FLASH_CANNON_COINS
 	additem ITEM_TM_FLASH_CANNON
-	updatecoinsbox 1, 1
+	updatecoinsbox
 	playse SE_SHOP
 	msgbox MauvilleCity_GameCorner_Text_HereYouGo, MSGBOX_DEFAULT
 	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseTMPrize

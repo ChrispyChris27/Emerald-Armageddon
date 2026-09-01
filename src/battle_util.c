@@ -382,7 +382,7 @@ bool32 EndOrContinueWeather(void)
                 currBattleWeather = BATTLE_WEATHER_RAIN;
             }
             gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_CHANGE_ERRATIC;
-            gBattleScripting.animArg1 = sBattleWeatherInfo[currBattleWeather].animation;
+            gBattleScripting.animArg1 = gBattleWeatherInfo[currBattleWeather].animation;
             BattleScriptCall(BattleScript_WeatherContinues);
             return TRUE;
         }
@@ -5109,7 +5109,7 @@ bool32 IsBattlerTerrainAffected(enum BattlerId battler, enum Ability ability, en
     if (currTerrain != terrain)
         return FALSE;
 
-    if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
+    if (gFieldStatuses & B_TERRAIN_MISTY)
     return TRUE;
 
     if (IsSemiInvulnerable(battler, CHECK_ALL))
@@ -11205,15 +11205,13 @@ void SetValuesOnFaint(enum BattlerId battler)
 
 bool32 IsVictoryCatch(void)
 {
-    return gBattleTypeFlags & BATTLE_TYPE_RAID
-        || FlagGet(B_FLAG_VICTORY_CATCH_RANDOM)
+    return FlagGet(B_FLAG_VICTORY_CATCH_RANDOM)
         || FlagGet(B_FLAG_VICTORY_CATCH_GUARANTEED);
 }
 
 bool32 IsVictoryCatchGuaranteed(void)
 {
-    return gBattleTypeFlags & BATTLE_TYPE_RAID
-        || FlagGet(B_FLAG_VICTORY_CATCH_GUARANTEED);
+    return FlagGet(B_FLAG_VICTORY_CATCH_GUARANTEED);
 }
 
 bool32 IsBattlerInvolvedInSkyDrop(enum BattlerId battler)

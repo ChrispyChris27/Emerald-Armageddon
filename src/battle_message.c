@@ -2554,10 +2554,6 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
                     else
                         stringPtr = sText_InGamePartnerSentOutNGoZ; // Partner on left
                 }
-                else if (gBattleTypeFlags & BATTLE_TYPE_RAID)
-                {
-                    stringPtr = sText_BeCarefulPkmn;
-                }
                 else
                 {
                     stringPtr = sText_GoTwoPkmn;
