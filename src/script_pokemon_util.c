@@ -654,7 +654,7 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species2 == SPECIES_GYARADOS_MEGA)
@@ -689,12 +689,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 0;
         u8 ivs = 31;
 
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
@@ -719,12 +719,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species1 == SPECIES_NECROZMA_DUSK_MANE)
@@ -734,21 +734,19 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u16 move3 = MOVE_STONE_EDGE;
         u16 move4 = MOVE_MORNING_SUN;
         u8 nature = NATURE_JOLLY;
-        u8 ability = 0;
         u8 ivs = 31;
 
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species2 == SPECIES_NECROZMA_DAWN_WINGS)
@@ -767,12 +765,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species2 == SPECIES_NIHILEGO)
@@ -791,12 +789,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species1 == SPECIES_NAGANADEL)
@@ -809,18 +807,18 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 2;
         u8 ivs = 31;
 
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_B][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species1 == SPECIES_PHEROMOSA)
@@ -833,12 +831,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 0;
         u8 ivs = 31;
 
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
@@ -863,12 +861,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species2 == SPECIES_BUZZWOLE)
@@ -887,12 +885,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species1 == SPECIES_KARTANA)
@@ -905,12 +903,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 0;
         u8 ivs = 31;
 
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
@@ -929,12 +927,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 0;
         u8 ivs = 31;
 
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
@@ -943,7 +941,7 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
     }
 
-    if(species1 == SPECIES_BLACEPHALON)
+    if(species2 == SPECIES_BLACEPHALON)
     {
         u16 move1 = MOVE_SHADOW_BALL;
         u16 move2 = MOVE_ENERGY_BALL;
@@ -959,12 +957,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 
     if(species1 == SPECIES_XURKITREE)
@@ -977,12 +975,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         u8 ability = 2;
         u8 ivs = 31;
 
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_DEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPATK_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_DEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPATK_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPDEF_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_SPEED_IV, &ivs);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HP_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
@@ -1007,12 +1005,12 @@ void CreateScriptedDoubleWildMon(enum Species species1, u8 level1, enum Item ite
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPDEF_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_SPEED_IV, &ivs);
         SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HP_IV, &ivs);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE1, &move1);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE2, &move2);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE3, &move3);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_MOVE4, &move4);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_HIDDEN_NATURE, &nature);
-        SetMonData(&gParties[B_TRAINER_OPPONENT_A][0], MON_DATA_ABILITY_NUM, &ability);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE1, &move1);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE2, &move2);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE3, &move3);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_MOVE4, &move4);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_HIDDEN_NATURE, &nature);
+        SetMonData(&gParties[B_TRAINER_OPPONENT_A][1], MON_DATA_ABILITY_NUM, &ability);
     }
 }
 

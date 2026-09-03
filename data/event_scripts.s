@@ -1855,3 +1855,5 @@ Common_EventScript_SetSnow:
 	.include "data/maps/DistortionWorldRoom8/scripts.inc"
 
 	.include "data/maps/DistortionWorldArceusRoom/scripts.inc"
+
+	.include "data/maps/UltraSpace/scripts.inc"

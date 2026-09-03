@@ -9924,6 +9924,16 @@
       "secondary_tileset": "gTileset_Unused1",
       "border_filepath": "data/layouts/DistortionWorldArceusRoom/border.bin",
       "blockdata_filepath": "data/layouts/DistortionWorldArceusRoom/map.bin"
+    },
+    {
+      "id": "LAYOUT_ULTRA_SPACE",
+      "name": "UltraSpace_Layout",
+      "width": 21,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Unused1",
+      "border_filepath": "data/layouts/UltraSpace/border.bin",
+      "blockdata_filepath": "data/layouts/UltraSpace/map.bin"
     }
   ]
 }

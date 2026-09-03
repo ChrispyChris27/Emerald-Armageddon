@@ -34,11 +34,79 @@ RougeUltraBeastDefeated6::
 	addvar VAR_DISTORTION_WORLD_STATE, 1
 	fadescreenswapbuffers FADE_FROM_BLACK
 	special HealPlayerParty
-	msgbox StevenArceusRoomText1, MSGBOX_AUTOCLOSE
-	releaseall
+	facefollowernpc
+	waitmovement
+	msgbox StevenArceusRoomText1, MSGBOX_NPC
+	msgbox ArceusText1, MSGBOX_AUTOCLOSE
+	waitmessage
+	delay 45
+	playse SE_PIN
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_ExclamationMark
+	waitmovement
+	delay 45
+	msgbox StevenArceusRoomText2, MSGBOX_AUTOCLOSE
+	waitmessage
+	special SpawnCameraObject
+	applymovement LOCALID_CAMERA, CameraPantoArceus
+	waitmovement
+	msgbox ArceusText2, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement LOCALID_CAMERA, CameraPanFromArceus
+	waitmovement
+	waitmessage
+	msgbox StevenArceusRoomText3, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement
+	applymovement LOCALID_CAMERA, CameraPantoArceus
+	waitmovement
+	msgbox ArceusText3, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement LOCALID_CAMERA, CameraPanFromArceus
+	waitmovement
+	applymovement OBJ_EVENT_ID_NPC_FOLLOWER, Common_Movement_FaceUp
+	waitmovement
+	msgbox StevenArceusRoomText4, MSGBOX_AUTOCLOSE
+	applymovement LOCALID_CAMERA, CameraPantoArceus
+	waitmovement
+	msgbox ArceusText4, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement LOCALID_CAMERA, CameraPanFromArceus
+	waitmovement
+	facefollowernpc
+	waitmessage
+	msgbox StevenArceusRoomText5, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	waitmovement
+	applymovement LOCALID_CAMERA, CameraPantoArceus
+	waitmovement
+	msgbox ArceusText5, MSGBOX_AUTOCLOSE
+	waitmessage
+	applymovement LOCALID_ARCEUS_DISTORTION, ArceusDistortionMovement
+	waitmovement
+	special RemoveCameraObject
+	call ArceusRogueFight1
+	special SpawnCameraObject
+	applymovement LOCALID_CAMERA, CameraPanFromArceus
+	waitmovement
+	msgbox ArceusDefeatText1, MSGBOX_AUTOCLOSE
+	waitmessage
+	call ArceusRogueFight2
+	msgbox ArceusDefeatText2, MSGBOX_AUTOCLOSE
+	waitmessage
+	call ArceusRogueFight3
+	msgbox ArceusDefeatText3, MSGBOX_AUTOCLOSE
+	msgbox StevenPostArceusBattleText1, MSGBOX_AUTOCLOSE
+	msgbox ArceusDefeatText4, MSGBOX_AUTOCLOSE
+	msgbox StevenPostArceusBattleText2, MSGBOX_AUTOCLOSE
+	msgbox ArceusDefeatText5, MSGBOX_AUTOCLOSE
+	warp MAP_ULTRA_SPACE, 10, 20
+	waitstate
 	end
 
-ArceusRogueFight::
+
+ArceusRogueFight1::
 	setflag FLAG_SMART_WILD
 	setflag FLAG_NO_RUN_WILD
 	setflag FLAG_NO_CATCH_WILD
@@ -219,16 +287,58 @@ ArceusBattleSteel::
 	end
 
 ArceusCalmedDown::
-	removeobject LOCALID_ARCEUS_DISTORTION
-	clearflag FLAG_SMART_WILD
-	clearflag FLAG_NO_RUN_WILD
-	clearflag FLAG_NO_CATCH_WILD
+	return
+
+ArceusRogueFight2::
+	settotemboost B_POSITION_OPPONENT_LEFT, 1, 1, 1, 1, 1
+	random 17
+	switch VAR_RESULT
+	case 0, ArceusNormalBattle
+	case 1, ArceusBattleFighting
+	case 2, ArceusBattlePoison
+	case 3, ArceusBattleGround
+	case 4, ArceusBattleRock
+	case 5, ArceusBattleBug
+	case 6, ArceusBattleGhost
+	case 7, ArceusBattleSteel
+	case 8, ArceusBattleFire
+	case 9, ArceusBattleWater
+	case 10, ArceusBattleGrass
+	case 11, ArceusBattleElectric
+	case 12, ArceusBattleIce
+	case 13, ArceusBattlePsychic
+	case 14, ArceusBattleDark
+	case 15, ArceusBattleDragon
+	case 16, ArceusBattleFairy
+	releaseall
+	end
+
+ArceusRogueFight3::
+	random 17
+	switch VAR_RESULT
+	case 0, ArceusNormalBattle
+	case 1, ArceusBattleFighting
+	case 2, ArceusBattlePoison
+	case 3, ArceusBattleGround
+	case 4, ArceusBattleRock
+	case 5, ArceusBattleBug
+	case 6, ArceusBattleGhost
+	case 7, ArceusBattleSteel
+	case 8, ArceusBattleFire
+	case 9, ArceusBattleWater
+	case 10, ArceusBattleGrass
+	case 11, ArceusBattleElectric
+	case 12, ArceusBattleIce
+	case 13, ArceusBattlePsychic
+	case 14, ArceusBattleDark
+	case 15, ArceusBattleDragon
+	case 16, ArceusBattleFairy
 	releaseall
 	end
 
 StevenArceusRoomText1:
-	.string "Necrozma seems to have guarding\n"
-	.string "another pokemon.\p"
+	.string "Steven: Necrozma seems to have been\n"
+	.string "guarding another pokemon.\p"
 	.string "I've never seen it before so we\n"
 	.string "better be careful.$"
 
@@ -255,7 +365,9 @@ StevenArceusRoomText3:
 	.string "Steven: Giratina was one of the\n"
 	.string "pokemon Cyrus battled us with.\p"
 	.string "That's the pokemon that sent us\n"
-	.string "here.$"
+	.string "here.\p"
+	.string "I wonder what this pokemon wants\n"
+	.string "with it?$"
 
 ArceusText3:
 	.string "???: Giratina…\n"
@@ -290,7 +402,129 @@ ArceusText5:
 	.string "???: I understand…\p"
 	.string "I… understand the damage you\n"
 	.string "have caused!\p"
-	.string "You must… pay!\p"
+	.string "You must understand…\n"
+	.string "I am Arceus… creator of all…\p"
+	.string "For disrupting the world…\n"
+	.string "You… shall pay!\p"
 	.string "The time… has come…\n"
 	.string "Prepare for justice!$"
 
+ArceusDefeatText1:
+	.string "Arceus: You… have much… power\p"
+	.string "I can feel… energy weakening…\p"
+	.string "What… have you done with the\n"
+	.string "creation trio…\p"
+	.string "You must… tell me…\p"
+	.string "There must be… Justice!$"
+
+ArceusDefeatText2:
+	.string "Arceus: You… do not harbor evil\n"
+	.string "within you…\p"
+	.string "Yet you take the creation trio\n"
+	.string "and throw the universe into chaos.\p"
+	.string "Why…\p"
+	.string "Why do you do this?\p"
+	.string "Explain this to me!\p"
+	.string "Allow me to deliver… true justice!$"
+
+ArceusDistortionMovement:
+	walk_fast_down
+	walk_fast_down
+	walk_fast_down
+	step_end
+
+ArceusTextIfPlayerKOd:
+	.string "The time… has come…\n"
+	.string "Prepare for justice!$"
+
+ArceusRogueFight::
+	lockall
+	msgbox ArceusTextIfPlayerKOd, MSGBOX_AUTOCLOSE
+	waitmessage
+	call ArceusRogueFight1
+	msgbox ArceusDefeatText1, MSGBOX_AUTOCLOSE
+	waitmessage
+	call ArceusRogueFight2
+	msgbox ArceusDefeatText2, MSGBOX_AUTOCLOSE
+	waitmessage
+	call ArceusRogueFight3
+	msgbox ArceusDefeatText3, MSGBOX_AUTOCLOSE
+	msgbox StevenPostArceusBattleText1, MSGBOX_AUTOCLOSE
+	msgbox ArceusDefeatText4, MSGBOX_AUTOCLOSE
+	msgbox StevenPostArceusBattleText2, MSGBOX_AUTOCLOSE
+	msgbox ArceusDefeatText5, MSGBOX_AUTOCLOSE
+	warp MAP_ULTRA_SPACE, 10, 20
+	waitstate
+	end
+
+CameraPantoArceus:
+	walk_slow_up
+	walk_slow_up
+	walk_slow_up
+	step_end
+
+CameraPanFromArceus:
+	walk_slow_down
+	walk_slow_down
+	walk_slow_down
+	step_end
+
+ArceusDefeatText3:
+	.string "Arceus: You… are not the ones\n"
+	.string "responsible for this.\p"
+	.string "I remember now.\n"
+	.string "It was the blue haired man…\p"
+	.string "He trapped me here… with the\n"
+	.string "red chain…\p"
+	.string "He captured Giratina in the\n"
+	.string "same way…\p"
+	.string "Presumably he has taken Dialga\n"
+	.string "and Palkia as well…\p"
+	.string "Normally the Distortion World\n"
+	.string "is held stable by Giratina…\p"
+	.string "Without it… this location may\n"
+	.string "soon cease to exist.\p"
+	.string "Ultra Space… is colliding with\n"
+	.string "this world and yours…\p"
+	.string "Palkia cannot control space from\n"
+	.string "where it is right now…\p"
+	.string "Next to go will be time…\p"
+	.string "Pokemon will begin to disappear\n"
+	.string "as if they had never been born…\p"
+	.string "Eventually, the universe will\n"
+	.string "collapse…$"
+
+StevenPostArceusBattleText1:
+	.string "Steven: Surely there's something\n"
+	.string "we can do about this?\p"
+	.string "If we could get back to our world\n"
+	.string "we could free the creation trio\l"
+	.string "from under Cyrus's control.\p"
+	.string "Unfortunately as far as I can tell\n"
+	.string "our journey here was one way only.$"
+
+ArceusDefeatText4:
+	.string "Arceus: Steven…\n"
+	.string "{PLAYER}…\p"
+	.string "Ultra Space has invaded both this\n"
+	.string "world and yours.\p"
+	.string "However this means they also must\n"
+	.string "be linked together.\p"
+	.string "I shall follow the flow of energy\n"
+	.string "of Ultra Space and return you to\l"
+	.string "Hoenn.\p"
+	.string "Then we shall free the creation trio.$"
+
+StevenPostArceusBattleText2:
+	.string "Steven: Can you actually do that?\p"
+	.string "What if we end up trapped in\n"
+	.string "here or Ultra Space?$"
+
+ArceusDefeatText5:
+	.string "Arceus: If we do nothing…\n"
+	.string "the universe will collapse…\p"
+	.string "The winds of time will not\n"
+	.string "blow for much longer.\p"
+	.string "We must act quickly…\p"
+	.string "Let us begin our journey…$"
+	

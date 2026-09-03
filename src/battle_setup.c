@@ -528,7 +528,13 @@ void BattleSetup_StartScriptedDoubleWildBattle(void)
     {
         gBattleTypeFlags |= BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_DOUBLE;
     }
+    
+    if (gMapHeader.regionMapSectionId == MAPSEC_ULTRA_SPACE)
+    CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_RG_VS_DEOXYS);
+
+    else
     CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_RG_VS_LEGEND);
+
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);
     IncrementDailyWildBattles();
