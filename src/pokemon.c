@@ -6946,6 +6946,8 @@ void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *mo
     u8 level = ResolveLevel(monTemplate->level);
     u32 personality = ResolvePersonality(species, monTemplate->gender, monTemplate->nature, monTemplate->origin);
     CreateMon(mon, species, level, personality, OTID_STRUCT_PLAYER_ID);
+    u8 value = METLOC_FATEFUL_ENCOUNTER;
+    SetMonData(mon, MON_DATA_MET_LOCATION, &value);
 
     enum Item heldItem = ResolveHeldItem(monTemplate->heldItem);
     SetMonData(mon, MON_DATA_HELD_ITEM, &heldItem);
