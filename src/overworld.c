@@ -1219,7 +1219,7 @@ static bool16 IsInfiltratedSpaceCenter(struct WarpData *warp)
 
 static bool16 IsCyrusDefeated(struct WarpData *warp)
 {
-    if (VarGet(VAR_STEVEN_MF_STATE) < 5)
+    if (VarGet(VAR_STEVEN_MF_STATE) < 6)
         return FALSE;
     else if (warp->mapNum == MAP_NUM(MAP_METEOR_CASTLE_THRONE_ROOM))
         return TRUE;

@@ -322,6 +322,12 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_PILLAR_BOSSES
 	setflag FLAG_ROGUE_ULTRA_BEAST1
 	setflag FLAG_ROGUE_ULTRA_BEAST2
+	setflag FLAG_ORIGIN_FORMS
+	setflag FLAG_ARCEUS
+	setflag FLAG_STEVEN_CASTLE_DIST
+	setflag FLAG_CASTLE_MALE_PLAYER
+	setflag FLAG_CASTLE_FEMALE_PLAYER
+	setflag FLAG_NECROZMA_CASTLE
 	setvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, 10
 	call EventScript_ResetAllBerries
 	end

@@ -37,6 +37,7 @@ RougeUltraBeastDefeated6::
 	facefollowernpc
 	waitmovement
 	msgbox StevenArceusRoomText1, MSGBOX_NPC
+	delay 30
 	msgbox ArceusText1, MSGBOX_AUTOCLOSE
 	waitmessage
 	delay 45
@@ -97,9 +98,13 @@ RougeUltraBeastDefeated6::
 	waitmessage
 	call ArceusRogueFight3
 	msgbox ArceusDefeatText3, MSGBOX_AUTOCLOSE
+	delay 30
 	msgbox StevenPostArceusBattleText1, MSGBOX_AUTOCLOSE
+	delay 30
 	msgbox ArceusDefeatText4, MSGBOX_AUTOCLOSE
+	delay 30
 	msgbox StevenPostArceusBattleText2, MSGBOX_AUTOCLOSE
+	delay 30
 	msgbox ArceusDefeatText5, MSGBOX_AUTOCLOSE
 	warp MAP_ULTRA_SPACE, 10, 20
 	waitstate

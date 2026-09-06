@@ -13,12 +13,15 @@ UltraSpaceEventScript::
 	waitmovement
 	delay 60
 	msgbox StevenUltraSpace1, MSGBOX_AUTOCLOSE
+	delay 30
 	msgbox ArceusUltraSpace1, MSGBOX_AUTOCLOSE
-	applymovement LOCALID_PLAYER, WalkToDeoxys
 	applymovement LOCALID_ARCEUS_SPACE, WalkToDeoxys
 	applymovement LOCALID_STEVEN_SPACE, WalkToDeoxys
+	delay 15
+	applymovement LOCALID_PLAYER, WalkToDeoxys
 	waitmovement
 	msgbox StevenUltraSpace2, MSGBOX_AUTOCLOSE
+	delay 30
 	msgbox ArceusUltraSpace2, MSGBOX_AUTOCLOSE
 	playmoncry SPECIES_DEOXYS_SPEED, CRY_MODE_ENCOUNTER
 	playmoncry SPECIES_DEOXYS_DEFENSE, CRY_MODE_ENCOUNTER
@@ -33,11 +36,11 @@ UltraSpaceEventScript::
 	applymovement LOCALID_DEOS, DeoxysSMovement
 	waitmovementall
 	clearflag FLAG_NO_CATCH_WILD
+	setflag FLAG_NO_WHITE_OUT
 	addvar VAR_DISTORTION_WORLD_STATE, 1
 	settotemboost B_POSITION_OPPONENT_RIGHT, 2, 2, 2, 2, 2
 	settotemboost B_POSITION_OPPONENT_LEFT, 2, 2, 2, 2, 2
 	setwildbattle SPECIES_DEOXYS_DEFENSE, 94, ITEM_NONE, SPECIES_DEOXYS_SPEED, 94, ITEM_NONE
-	waitse
 	playmoncry SPECIES_DEOXYS_SPEED, CRY_MODE_ENCOUNTER
 	playmoncry SPECIES_DEOXYS_DEFENSE, CRY_MODE_ENCOUNTER
 	delay 40
@@ -50,7 +53,28 @@ UltraSpaceEventScript::
 	removeobject LOCALID_DEOS
 	removeobject LOCALID_DEOD
 	removeobject LOCALID_DEON
+	special HealPlayerParty
+	clearflag FLAG_NO_WHITE_OUT
+	clearflag FLAG_SMART_WILD
+	clearflag FLAG_NO_RUN_WILD
+	clearflag FLAG_ARCEUS
+	clearflag FLAG_STEVEN_CASTLE_DIST
+	call ShowPlayerCastleClone
+	addvar VAR_STEVEN_MF_STATE, 1
 	fadescreenswapbuffers FADE_FROM_BLACK
+	applymovement LOCALID_STEVEN_SPACE, Common_Movement_FaceRight
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement
+	msgbox PostDeoxysSteven1, MSGBOX_AUTOCLOSE
+	delay 30
+	applymovement LOCALID_ARCEUS_SPACE, Common_Movement_FaceLeft
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement
+	msgbox PostDeoxysArceus1, MSGBOX_AUTOCLOSE
+	waitmessage
+	delay 60
+	warp MAP_METEOR_CASTLE_THRONE_ROOM, 15, 20
+	waitstate
 	releaseall
 	end
 
@@ -131,3 +155,31 @@ StevenUltraSpace3:
 	.string "happy to see us!\p"
 	.string "{PLAYER}!\n"
 	.string "Look out!$"
+
+PostDeoxysSteven1:
+	.string "Steven: It seems that the Deoxys\n"
+	.string "calmed down after we battled them.\p"
+	.string "They just needed to release some\n"
+	.string "of that excess energy.$"
+
+PostDeoxysArceus1:
+	.string "Arceus: The path is clear from here.\p"
+	.string "We can make our way back to your\n"
+	.string "world by continuing along this path.\p"
+	.string "There's no time to waste.\p"
+	.string "If we do, there might never be\n"
+	.string "time to waste again.$"
+
+ShowPlayerCastleClone::
+	checkplayergender
+	goto_if_eq VAR_RESULT, MALE, CastleShowMale
+	goto_if_eq VAR_RESULT, FEMALE, CastleShowFemale
+	return
+
+CastleShowMale::
+	clearflag FLAG_CASTLE_MALE_PLAYER
+	return
+
+CastleShowFemale::
+	clearflag FLAG_CASTLE_FEMALE_PLAYER
+	return
