@@ -284,36 +284,6 @@ Route110_TrickHousePuzzle7_EventScript_RedButton::
 	freerotatingtilepuzzle
 	end
 
-Route110_TrickHousePuzzle7_EventScript_Joshua::
-	trainerbattle_single TRAINER_JOSHUA, Route110_TrickHousePuzzle7_Text_JoshuaIntro, Route110_TrickHousePuzzle7_Text_JoshuaDefeat
-	msgbox Route110_TrickHousePuzzle7_Text_JoshuaPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route110_TrickHousePuzzle7_EventScript_Patricia::
-	trainerbattle_single TRAINER_PATRICIA, Route110_TrickHousePuzzle7_Text_PatriciaIntro, Route110_TrickHousePuzzle7_Text_PatriciaDefeat
-	msgbox Route110_TrickHousePuzzle7_Text_PatriciaPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route110_TrickHousePuzzle7_EventScript_Alexis::
-	trainerbattle_single TRAINER_ALEXIS, Route110_TrickHousePuzzle7_Text_AlexisIntro, Route110_TrickHousePuzzle7_Text_AlexisDefeat
-	msgbox Route110_TrickHousePuzzle7_Text_AlexisPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route110_TrickHousePuzzle7_EventScript_Mariela::
-	trainerbattle_single TRAINER_MARIELA, Route110_TrickHousePuzzle7_Text_MarielaIntro, Route110_TrickHousePuzzle7_Text_MarielaDefeat
-	msgbox Route110_TrickHousePuzzle7_Text_MarielaPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route110_TrickHousePuzzle7_EventScript_Alvaro::
-	trainerbattle_single TRAINER_ALVARO, Route110_TrickHousePuzzle7_Text_AlvaroIntro, Route110_TrickHousePuzzle7_Text_AlvaroDefeat
-	msgbox Route110_TrickHousePuzzle7_Text_AlvaroPostBattle, MSGBOX_AUTOCLOSE
-	end
-
-Route110_TrickHousePuzzle7_EventScript_Everett::
-	trainerbattle_single TRAINER_EVERETT, Route110_TrickHousePuzzle7_Text_EverettIntro, Route110_TrickHousePuzzle7_Text_EverettDefeat
-	msgbox Route110_TrickHousePuzzle7_Text_EverettPostBattle, MSGBOX_AUTOCLOSE
-	end
-
 Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened::
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
@@ -321,72 +291,362 @@ Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened::
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
-Route110_TrickHousePuzzle7_Text_JoshuaIntro:
-	.string "The TRICK MASTER always vanishes\n"
-	.string "like smoke. How does he do it?$"
+Seventh_TrickHousePuzzle1_Text:
+	.string "Welcome to the Trick House!\p"
+	.string "Answer all of our questions\n"
+	.string "and earn some fabulous prizes!\p"
+	.string "Each time you get a question wrong\n"
+	.string "though, one of your prizes will be\l"
+	.string "taken away and you'll have to\l"
+	.string "fight a battle!\p"
+	.string "Today's theme is...\p"
+	.string "Pokemath!\n"
+	.string "Time to get out a calculator!\p"
+	.string "Here's your first question:\p"
+	.string "Subtract Porygon-Z's defense stat\n"
+	.string "from Porygon-2's to get the\l"
+	.string "pokedex number of which pokemon?$"
 
-Route110_TrickHousePuzzle7_Text_JoshuaDefeat:
-	.string "Aiyeeeh! You're much too strong!\n"
-	.string "How do you do it?$"
+Quiz_7A_Option_1:
+	.string "Beedrill$"
 
-Route110_TrickHousePuzzle7_Text_JoshuaPostBattle:
-	.string "I wish I could appear and disappear as\n"
-	.string "if I were smoke, too.$"
+Quiz_7A_Option_2:
+	.string "Caterpie$"
 
-Route110_TrickHousePuzzle7_Text_PatriciaIntro:
-	.string "Going around the same spot…\n"
-	.string "It begets ill fortune…$"
+Quiz_7A_Option_3:
+	.string "Charmeleon$"
 
-Route110_TrickHousePuzzle7_Text_PatriciaDefeat:
-	.string "Defeated!\n"
-	.string "It's a bad sign…$"
+Quiz_7A_Option_4:
+	.string "Raticate$"
 
-Route110_TrickHousePuzzle7_Text_PatriciaPostBattle:
-	.string "I've circled the same spot over ten\n"
-	.string "times now… It's ill fortune…$"
+Seventh_Trick_House_Quiz_1::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle1_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7A_Option_1, 0
+	dynmultipush Quiz_7A_Option_2, 1
+	dynmultipush Quiz_7A_Option_3, 2
+	dynmultipush Quiz_7A_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Randomize_Quiz_House_Female_Battle_Two
+	case 1, Randomize_Quiz_House_Female_Battle_Two
+	case 2, Randomize_Quiz_House_Female_Battle_Two
+	case 3, Quiz_House_Correct_Proceed
+	releaseall
+	end
 
-Route110_TrickHousePuzzle7_Text_AlexisIntro:
-	.string "Whoever wins will get through here\n"
-	.string "first. That's the feeling I get.$"
+Seventh_TrickHousePuzzle2_Text:
+	.string "Question two is about square roots!\p"
+	.string "What is the square root of the\n"
+	.string "lowest base experience yield?$"
 
-Route110_TrickHousePuzzle7_Text_AlexisDefeat:
-	.string "Oh!\n"
-	.string "Well, go ahead, then!$"
+Quiz_7B_Option_1:
+	.string "4$"
 
-Route110_TrickHousePuzzle7_Text_AlexisPostBattle:
-	.string "You're solving all the puzzles in the\n"
-	.string "TRICK HOUSE. That's the feeling I get.$"
+Quiz_7B_Option_2:
+	.string "5$"
 
-Route110_TrickHousePuzzle7_Text_MarielaIntro:
-	.string "Nufufufu, here at last!\n"
-	.string "Let's get right with it!$"
+Quiz_7B_Option_3:
+	.string "6$"
 
-Route110_TrickHousePuzzle7_Text_MarielaDefeat:
-	.string "You're so casual about winning!$"
+Quiz_7B_Option_4:
+	.string "7$"
 
-Route110_TrickHousePuzzle7_Text_MarielaPostBattle:
-	.string "Humph! I'm not upset!\n"
-	.string "Not me!$"
+Seventh_Trick_House_Quiz_2::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle2_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7B_Option_1, 0
+	dynmultipush Quiz_7B_Option_2, 1
+	dynmultipush Quiz_7B_Option_3, 2
+	dynmultipush Quiz_7B_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Randomize_Quiz_House_Female_Battle_Two
+	case 1, Randomize_Quiz_House_Female_Battle_Two
+	case 2, Quiz_House_Correct_Proceed
+	case 3, Randomize_Quiz_House_Female_Battle_Two
+	releaseall
+	end
 
-Route110_TrickHousePuzzle7_Text_AlvaroIntro:
-	.string "I ever so closely watched you coming!$"
+Seventh_TrickHousePuzzle3_Text:
+	.string "For question three you'll round\n"
+	.string "just like me!\p"
+	.string "Rounded to three decimal points,\n"
+	.string "what is the standard deviation of\l"
+	.string "Fickle Beam's damage?$"
 
-Route110_TrickHousePuzzle7_Text_AlvaroDefeat:
-	.string "This outcome I didn't see coming…$"
+Quiz_7C_Option_1:
+	.string "8.944$"
 
-Route110_TrickHousePuzzle7_Text_AlvaroPostBattle:
-	.string "Well, anyway, we both picked a weird\n"
-	.string "place to get acquainted.\p"
-	.string "As one weirdo to another,\n"
-	.string "let's do our best!$"
+Quiz_7C_Option_2:
+	.string "10.198$"
 
-Route110_TrickHousePuzzle7_Text_EverettIntro:
-	.string "It's awfully cramped in here…$"
+Quiz_7C_Option_3:
+	.string "36.661$"
 
-Route110_TrickHousePuzzle7_Text_EverettDefeat:
-	.string "Oh, yes, strong you are.$"
+Quiz_7C_Option_4:
+	.string "60.926$"
 
-Route110_TrickHousePuzzle7_Text_EverettPostBattle:
-	.string "I was hoping to switch places with you\n"
-	.string "when I beat you, but…$"
+Seventh_Trick_House_Quiz_3::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle3_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7C_Option_1, 0
+	dynmultipush Quiz_7C_Option_2, 1
+	dynmultipush Quiz_7C_Option_3, 2
+	dynmultipush Quiz_7C_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Randomize_Quiz_House_Female_Battle_Two
+	case 1, Randomize_Quiz_House_Female_Battle_Two
+	case 2, Quiz_House_Correct_Proceed
+	case 3, Randomize_Quiz_House_Female_Battle_Two
+	releaseall
+	end
+
+Seventh_TrickHousePuzzle4_Text:
+	.string "For question four you'll add some more!\p"
+	.string "Add the catch rate of Kabutops to the\n"
+	.string "catch rate of Wimpod.\p"
+	.string "This is the TM number of which move in\n"
+	.string "Scarlet and Violet?$"
+
+Quiz_7D_Option_1:
+	.string "Flamethrower$"
+
+Quiz_7D_Option_2:
+	.string "Ice Beam$"
+
+Quiz_7D_Option_3:
+	.string "Surf$"
+
+Quiz_7D_Option_4:
+	.string "Thunderbolt$"
+
+Seventh_Trick_House_Quiz_4::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle4_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7D_Option_1, 0
+	dynmultipush Quiz_7D_Option_2, 1
+	dynmultipush Quiz_7D_Option_3, 2
+	dynmultipush Quiz_7D_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Randomize_Quiz_House_Female_Battle_Two
+	case 1, Quiz_House_Correct_Proceed
+	case 2, Randomize_Quiz_House_Female_Battle_Two
+	case 3, Randomize_Quiz_House_Female_Battle_Two
+	releaseall
+	end
+
+Seventh_TrickHousePuzzle5_Text:
+	.string "For question five you'll have to\n"
+	.string "derive!\p"
+	.string "Take the derivative of the medium\n"
+	.string "slow experience function and\l"
+	.string "evaluate it at Cleffa's speed stat.\p"
+	.string "What is the only generation five\n"
+	.string "pokemon with that base stat total?$"
+
+Quiz_7E_Option_1:
+	.string "Alomomola$"
+
+Quiz_7E_Option_2:
+	.string "Audino$"
+
+Quiz_7E_Option_3:
+	.string "Basculin$"
+
+Quiz_7E_Option_4:
+	.string "Emolga$"
+
+Seventh_Trick_House_Quiz_5::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle5_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7E_Option_1, 0
+	dynmultipush Quiz_7E_Option_2, 1
+	dynmultipush Quiz_7E_Option_3, 2
+	dynmultipush Quiz_7E_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Randomize_Quiz_House_Female_Battle_Two
+	case 1, Randomize_Quiz_House_Female_Battle_Two
+	case 2, Quiz_House_Correct_Proceed
+	case 3, Randomize_Quiz_House_Female_Battle_Two
+	releaseall
+	end
+
+Seventh_TrickHousePuzzle6_Text:
+	.string "The probability you get question\n"
+	.string "six is probably slim!\p"
+	.string "Which of the following is least likely?$"
+
+Quiz_7F_Option_1:
+	.string "42 speed mon runs from 56 speed mon$"
+
+Quiz_7F_Option_2:
+	.string "Catch full HP Avalugg in a Quick Ball$"
+
+Quiz_7F_Option_3:
+	.string "Land two Focus Blasts in a row$"
+
+Quiz_7F_Option_4:
+	.string "Skill Link King's Rock 5 hit flinch$"
+
+Seventh_Trick_House_Quiz_6::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle6_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7F_Option_1, 0
+	dynmultipush Quiz_7F_Option_2, 1
+	dynmultipush Quiz_7F_Option_3, 2
+	dynmultipush Quiz_7F_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Randomize_Quiz_House_Male_Battle_Two
+	case 1, Randomize_Quiz_House_Male_Battle_Two
+	case 2, Randomize_Quiz_House_Male_Battle_Two
+	case 3, Quiz_House_Correct_Proceed
+	releaseall
+	end
+
+Seventh_TrickHousePuzzle7_Text:
+	.string "Question seven might be unexpected!\p"
+	.string "What is the expected damage of Steelix\n"
+	.string "from Stormfront's Iron Tail attack?$"
+
+Quiz_7G_Option_1:
+	.string "50$"
+
+Quiz_7G_Option_2:
+	.string "75$"
+
+Quiz_7G_Option_3:
+	.string "100$"
+
+Quiz_7G_Option_4:
+	.string "150$"
+
+Seventh_Trick_House_Quiz_7::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle7_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7G_Option_1, 0
+	dynmultipush Quiz_7G_Option_2, 1
+	dynmultipush Quiz_7G_Option_3, 2
+	dynmultipush Quiz_7G_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Randomize_Quiz_House_Male_Battle_Two
+	case 1, Randomize_Quiz_House_Male_Battle_Two
+	case 2, Quiz_House_Correct_Proceed
+	case 3, Randomize_Quiz_House_Male_Battle_Two
+	releaseall
+	end
+
+Seventh_TrickHousePuzzle8_Text:
+	.string "Let's integrate for question eight!\p"
+	.string "What number do you get when you\n"
+	.string "integrate 2x with respect to x from\l"
+	.string "a lower bound of the amount of pokemon\l"
+	.string "that have a speed stat of five to the\l"
+	.string "upper bound of the amount of dots on\l"
+	.string "each Regi's face?$"
+
+Quiz_7H_Option_1:
+	.string "4$"
+
+Quiz_7H_Option_2:
+	.string "8$"
+
+Quiz_7H_Option_3:
+	.string "40$"
+
+Quiz_7H_Option_4:
+	.string "80$"
+
+Seventh_Trick_House_Quiz_8::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle8_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7H_Option_1, 0
+	dynmultipush Quiz_7H_Option_2, 1
+	dynmultipush Quiz_7H_Option_3, 2
+	dynmultipush Quiz_7H_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Randomize_Quiz_House_Female_Battle_Two
+	case 1, Randomize_Quiz_House_Female_Battle_Two
+	case 2, Quiz_House_Correct_Proceed
+	case 3, Randomize_Quiz_House_Female_Battle_Two
+	releaseall
+	end
+
+Seventh_TrickHousePuzzle9_Text:
+	.string "For question nine it's odd stat time!\p"
+	.string "Add Parasect's pokedex number to the\n"
+	.string "level Deino evolves at.\p"
+	.string "What is the only pokemon whose base\n"
+	.string "attack is equal to that number?$"
+
+Quiz_7I_Option_1:
+	.string "Durant$"
+
+Quiz_7I_Option_2:
+	.string "Exploud$"
+
+Quiz_7I_Option_3:
+	.string "Heatmor$"
+
+Quiz_7I_Option_4:
+	.string "Toxicroak$"
+
+Seventh_Trick_House_Quiz_9::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle9_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7I_Option_1, 0
+	dynmultipush Quiz_7I_Option_2, 1
+	dynmultipush Quiz_7I_Option_3, 2
+	dynmultipush Quiz_7I_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Randomize_Quiz_House_Male_Battle_Two
+	case 1, Randomize_Quiz_House_Male_Battle_Two
+	case 2, Quiz_House_Correct_Proceed
+	case 3, Randomize_Quiz_House_Male_Battle_Two
+	releaseall
+	end
+
+Seventh_TrickHousePuzzle10_Text:
+	.string "I hope you're confident you can\n"
+	.string "answer question ten!\p"
+	.string "Which of the following is a 95%\n"
+	.string "confidence interval for the percentage\l"
+	.string "of Clemont's inventions that prove to\l"
+	.string "be successful based on the sample size\l"
+	.string "of the 70 inventions shown in the anime?$"
+
+Quiz_7J_Option_1:
+	.string "(.2449, .4694)$"
+
+Quiz_7J_Option_2:
+	.string "(.2571, .4571)$"
+
+Quiz_7J_Option_3:
+	.string "(.2661, .4481)$"
+
+Quiz_7J_Option_4:
+	.string "(.2901, .4241)$"
+
+Seventh_Trick_House_Quiz_10::
+	applymovement LOCALID_PLAYER, Common_Movement_FaceUp
+	msgbox Seventh_TrickHousePuzzle10_Text, MSGBOX_DEFAULT
+	dynmultipush Quiz_7J_Option_1, 0
+	dynmultipush Quiz_7J_Option_2, 1
+	dynmultipush Quiz_7J_Option_3, 2
+	dynmultipush Quiz_7J_Option_4, 3
+	dynmultistack 0, 0, TRUE, 7, FALSE, 0, NULL
+	switch VAR_RESULT
+	case 0, Quiz_House_Correct_Proceed
+	case 1, Randomize_Quiz_House_Male_Battle_Two
+	case 2, Randomize_Quiz_House_Male_Battle_Two
+	case 3, Randomize_Quiz_House_Male_Battle_Two
+	releaseall
+	end
 
