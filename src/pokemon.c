@@ -6812,6 +6812,21 @@ static void ResolveIVs(enum Species species, const u16 *ivsTemplate, u8 *ivs)
             ivs[selectedIvs[i]] = MAX_PER_STAT_IVS;
         }
     }
+
+    if ((gMapHeader.mapLayoutId == LAYOUT_ROUTE119_WEATHER_INSTITUTE_2F) || (gMapHeader.mapLayoutId == LAYOUT_RUSTBORO_CITY_DEVON_CORP_2F))
+    {
+        // Select the IVs that will be perfected.
+        for (i = 0; i < nonFixedIvCount && i < 3; i++)
+        {
+            u8 index = Random() % (nonFixedIvCount - i);
+            selectedIvs[i] = availableIVs[index];
+            RemoveIVIndexFromList(availableIVs, index);
+        }
+        for (i = 0; i < nonFixedIvCount && i < 3; i++)
+        {
+            ivs[selectedIvs[i]] = MAX_PER_STAT_IVS;
+        }
+    }
 }
 
 void ResolveEVs(const u16 *evsTemplate, u8 *evs, bool32 ignoreTotalEvCheck)
