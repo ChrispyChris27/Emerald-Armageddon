@@ -3,7 +3,6 @@
   "name": "SafariZone_Southwest",
   "layout": "LAYOUT_SAFARI_ZONE_SOUTHWEST",
   "music": "MUS_SAFARI_ZONE",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_SAFARI_ZONE",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -51,6 +50,19 @@
       "trainer_sight_or_berry_tree_id": "ITEM_TM_SOLAR_BLADE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_SAFARI_ZONE_SOUTH_WEST_MAX_REVIVE"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 33,
+      "y": 16,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "ITEM_GLIMMORANITE",
+      "script": "Common_EventScript_FindItem",
+      "flag": "FLAG_GLIMMROANITE"
     }
   ],
   "warp_events": [
@@ -72,5 +84,6 @@
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "SafariZone_Southwest_EventScript_RestHouseSign"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

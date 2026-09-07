@@ -3,7 +3,6 @@
   "name": "VictoryRoad_B2F",
   "layout": "LAYOUT_VICTORY_ROAD_B2F",
   "music": "MUS_VICTORY_ROAD",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_VICTORY_ROAD",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -76,7 +75,7 @@
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_GENGARITE",
+      "trainer_sight_or_berry_tree_id": "ITEM_STARAPTITE",
       "script": "Common_EventScript_FindItem",
       "flag": "FLAG_ITEM_VICTORY_ROAD_B2F_FULL_HEAL"
     },
@@ -155,5 +154,6 @@
       "item": "ITEM_MAX_REPEL",
       "flag": "FLAG_HIDDEN_ITEM_VICTORY_ROAD_B2F_MAX_REPEL"
     }
-  ]
+  ],
+  "region": "REGION_HOENN"
 }

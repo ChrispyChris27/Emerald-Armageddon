@@ -1175,7 +1175,7 @@
 #define FLAG_ITEM_NEW_MAUVILLE_FULL_HEAL                            0x462
 #define FLAG_ITEM_NEW_MAUVILLE_PARALYZE_HEAL                        0x463
 #define FLAG_ITEM_AQUA_HIDEOUT_B1F_MASTER_BALL                      0x464
-#define FLAG_ITEM_OLD_MAGMA_HIDEOUT_B1F_MASTER_BALL                 0x465 
+#define FLAG_ITEM_BEEDRILLITE                 0x465 
 #define FLAG_ITEM_SCALE_SHOT_TM                                     0x466 
 #define FLAG_ITEM_TAILWIND_TM                                       0x467 
 #define FLAG_LEAF_STORM_TM                                          0x468 
@@ -1292,10 +1292,10 @@
 #define FLAG_HAWLUCHANITE                                           0x4D6 // Unused Flag
 #define FLAG_SCRAFTINITE                                           0x4D7 // Unused Flag
 #define FLAG_CHANDELURITE                                           0x4D8 // Unused Flag
-#define FLAG_GRENINJITE                                          0x4D9 // Unused Flag
+#define FLAG_GENGARITE                                          0x4D9 // Unused Flag
 #define FLAG_FALINKSITE                                           0x4DA // Unused Flag
 #define FLAG_CHESNAUGHTITE                                           0x4DB // Unused Flag
-#define FLAG_DELPHOXITE                                           0x4DC // Unused Flag
+#define FLAG_GARDEVOIRITE                                           0x4DC // Unused Flag
 #define FLAG_DRAMPANITE                                           0x4DD // Unused Flag
 #define FLAG_SKARMORITE                                           0x4DE // Unused Flag
 #define FLAG_RUBY_LEGEND                                           0x4DF // Unused Flag
@@ -1514,11 +1514,11 @@
 #define FLAG_CASTLE_MALE_PLAYER                           (SYSTEM_FLAGS + 0x89) // Unused Flag
 #define FLAG_CASTLE_FEMALE_PLAYER                           (SYSTEM_FLAGS + 0x8A) // Unused Flag
 #define FLAG_NECROZMA_CASTLE                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
-#define FLAG_UNUSED_0x8EC                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
-#define FLAG_UNUSED_0x8ED                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
+#define FLAG_CRABOMINITE                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
+#define FLAG_MEOWSTICITE                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
 #define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
-#define FLAG_UNUSED_0x8EF                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
-#define FLAG_UNUSED_0x8F0                           (SYSTEM_FLAGS + 0x90) // Unused Flag
+#define FLAG_TATSUGIRINITE                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
+#define FLAG_GLIMMORANITE                           (SYSTEM_FLAGS + 0x90) // Unused Flag
 #define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
 #define FLAG_UNUSED_0x8F2                           (SYSTEM_FLAGS + 0x92) // Unused Flag
 #define FLAG_UNUSED_0x8F3                           (SYSTEM_FLAGS + 0x93) // Unused Flag
