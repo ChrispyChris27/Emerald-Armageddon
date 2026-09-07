@@ -3,7 +3,7 @@ MythicalMountain_MapScripts::
 	.byte 0
 
 MythicalMountainOnFrame::
-	map_script_2 VAR_STEVEN_MF_STATE, 5, MythicalMountainArrival
+	map_script_2 VAR_STEVEN_MF_STATE, 6, MythicalMountainArrival
 	.2byte 0
 
 StevenExplainMountainText:
@@ -30,7 +30,7 @@ MythicalMountainArrival::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
 	waitmovement 0
 	msgbox StevenExplainMountainText, MSGBOX_AUTOCLOSE
-	setvar VAR_STEVEN_MF_STATE, 6
+	setvar VAR_STEVEN_MF_STATE, 7
 	releaseall
 	end
 
@@ -74,6 +74,7 @@ MythicalMountainGo::
 	setvar VAR_0x8004, LOCALID_MOUNTAIN_BOAT
 	call Common_EventScript_FerryDepart
 	warp MAP_LILYCOVE_CITY_HARBOR, 7, 10
+	waitstate
 	releaseall
 	end
 

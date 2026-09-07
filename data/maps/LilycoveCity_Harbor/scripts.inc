@@ -586,7 +586,7 @@ LilycoveCity_Harbor_Text_SailorFerryAvailable:
 
 
 HarborSteven_Text1:
-	.string "{PLAYER}, thanks again\n"
+	.string "Steven: {PLAYER}, thanks again\n"
 	.string "for all your help.\p"
 	.string "I have something I would like\n"
 	.string "to show you.\p"
@@ -603,6 +603,7 @@ step_end
 
 LilycoveCity_Harbor_Steven::
 	lockall
+	goto_if_unset FLAG_RECEIVED_STEEL, GetGiftMythicalFirst
 	msgbox HarborSteven_Text1, MSGBOX_AUTOCLOSE
 	applymovement LOCALID_HARBOR_STEVEN, Common_Movement_FaceUp
 	waitmovement 0
@@ -618,6 +619,25 @@ LilycoveCity_Harbor_Steven::
 	warp MAP_MYTHICAL_MOUNTAIN, 11, 16
 	waitstate
 	end
-	
 
+GetGiftMythicalFirst::
+	msgbox HarborStevenGetMythicalText, MSGBOX_DEFAULT
+	releaseall
+	end
+	
+HarborStevenGetMythicalText:
+	.string "Steven: {PLAYER}, thanks again\n"
+	.string "for all your help.\p"
+	.string "I have something I would like\n"
+	.string "to show you.\p"
+	.string "Well, it's more like some place\n"
+	.string "I want to show you.\p"
+	.string "Before I do that though, you should\n"
+	.string "really choose one of the steel types\l"
+	.string "I left for you in my house in Mossdeep.\p"
+	.string "There are very strong pokemon where\n"
+	.string "we are going and you could use\l"
+	.string "one of them to help you out.\p"
+	.string "I'll be waiting here for you\n"
+	.string "after you choose one {PLAYER}.$"
 
