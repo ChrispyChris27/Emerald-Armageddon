@@ -4163,7 +4163,8 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_FAREWELL)                 \
     X(MUS_CYRUS)                    \
     X(MUS_DISTORTION_WORLD)         \
-    X(MUS_VS_ARCEUS)
+    X(MUS_VS_ARCEUS)                \
+    X(MUS_DP_VS_ELITE_FOUR)
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \
