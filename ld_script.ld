@@ -1267,6 +1267,7 @@ SECTIONS {
         sound/songs/midi/mus_farewell.o(.rodata);
         sound/songs/midi/mus_cyrus.o(.rodata);
         sound/songs/midi/mus_distortion_world.o(.rodata);
+        sound/songs/midi/mus_vs_arceus.o(.rodata);
     } > ROM =0
 
     lib_rodata :

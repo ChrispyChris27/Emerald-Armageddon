@@ -2283,7 +2283,7 @@ void BattleSetup_StartRogueWildBattle(void)
     CreateBattleStartTask(B_TRANSITION_RAYQUAZA, MUS_VS_RAYQUAZA);
 
     if (gMapHeader.regionMapSectionId == MAPSEC_DISTORTION_WORLD)
-    CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_RG_VS_DEOXYS);
+    CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_VS_ARCEUS);
 
     else
     CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_RG_VS_LEGEND);

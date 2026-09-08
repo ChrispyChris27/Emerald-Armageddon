@@ -209,3 +209,4 @@
 .include "sound/voicegroups/cynthia.inc"
 .include "sound/voicegroups/mus_distortion_world.inc"
 .include "sound/voicegroups/distortion_world.inc"
+.include "sound/voicegroups/mus_vs_arceus.inc"
