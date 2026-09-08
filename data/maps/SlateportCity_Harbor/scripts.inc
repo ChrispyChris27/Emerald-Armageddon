@@ -327,6 +327,7 @@ SlateportCity_Harbor_EventScript_FerryFinished::
 	end
 
 SlateportCity_Harbor_EventScript_AskToTradeScanner::
+	goto_if_unset FLAG_CYNTHIA_VR, ScannerNothingGoodEnoughToTradeYet
 	message SlateportCity_Harbor_Text_WouldYouTradeScanner
 	waitmessage
 	goto SlateportCity_Harbor_EventScript_ChooseScannerTrade
@@ -344,7 +345,7 @@ SlateportCity_Harbor_EventScript_ChooseScannerTrade::
 SlateportCity_Harbor_EventScript_DeepSeaTooth::
 	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaTooth, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
-	giveitem ITEM_DEEP_SEA_TOOTH
+	giveitem ITEM_LATIASITE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	removeitem ITEM_SCANNER
 	msgbox SlateportCity_Harbor_Text_HandedScannerToStern, MSGBOX_DEFAULT
@@ -355,7 +356,7 @@ SlateportCity_Harbor_EventScript_DeepSeaTooth::
 SlateportCity_Harbor_EventScript_DeepSeaScale::
 	msgbox SlateportCity_Harbor_Text_TradeForDeepSeaScale, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, SlateportCity_Harbor_EventScript_ChooseDifferentTrade
-	giveitem ITEM_DEEP_SEA_SCALE
+	giveitem ITEM_LATIOSITE
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	removeitem ITEM_SCANNER
 	msgbox SlateportCity_Harbor_Text_HandedScannerToStern, MSGBOX_DEFAULT
@@ -511,8 +512,8 @@ SlateportCity_Harbor_Text_WouldYouTradeScanner:
 	.string "help us on our explorations.\p"
 	.string "{PLAYER}{KUN}, would you trade your\n"
 	.string "SCANNER for something?\p"
-	.string "Like, say, a DEEPSEATOOTH or\n"
-	.string "a DEEPSEASCALE that I have?$"
+	.string "Like, say, a Latiasite or\n"
+	.string "a Latiosite that I have?$"
 
 SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
 	.string "CAPT. STERN: Are you certain?\n"
@@ -522,11 +523,11 @@ SlateportCity_Harbor_Text_IfYouWantToTradeLetMeKnow:
 
 SlateportCity_Harbor_Text_TradeForDeepSeaTooth:
 	.string "CAPT. STERN: So you'll trade it for\n"
-	.string "my DEEPSEATOOTH?$"
+	.string "my Latiasite?$"
 
 SlateportCity_Harbor_Text_TradeForDeepSeaScale:
 	.string "CAPT. STERN: So you'll trade it for\n"
-	.string "my DEEPSEASCALE?$"
+	.string "my Latiosite?$"
 
 SlateportCity_Harbor_Text_WhichOneDoYouWant:
 	.string "CAPT. STERN: Which one do you want?$"
@@ -538,3 +539,19 @@ SlateportCity_Harbor_Text_HandedScannerToStern:
 SlateportCity_Harbor_Text_ThisWillHelpResearch:
 	.string "CAPT. STERN: Thanks, {PLAYER}{KUN}!\n"
 	.string "This will help our research a lot!$"
+
+ScannerNothingGoodEnoughToTradeYet::
+	msgbox ScannerNothingToTradeText, MSGBOX_DEFAULT
+	release
+	end
+
+ScannerNothingToTradeText:
+	.string "CAPT. STERN: Oh?\n"
+	.string "{PLAYER}{KUN}, that item you have…\p"
+	.string "That's a SCANNER! That would sure\n"
+	.string "help us on our explorations.\p"
+	.string "Some of the crew are out on an\n"
+	.string "expedition right now but once they\l"
+	.string "return perhaps they can offer you a\l"
+	.string "newfound treasure for it?\p"
+	.string "Please hold onto it for us until then!$"

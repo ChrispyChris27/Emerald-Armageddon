@@ -612,23 +612,53 @@ Nature: Jolly
 - Dragon Dance
 
 === TRAINER_ALBERTO ===
-Name: ALBERTO
+Name: Alberto
 Class: Bird Keeper
 Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Pelipper
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Ursaluna @ Red Card
+Level: 96
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Earthquake
+- Return
+- Stealth Rock
+- Ice Punch
 
-Xatu
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Landorus Therian @ Life Orb
+Level: 96
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Earthquake
+- Stone Edge
+- Tailwind
+- Sky Attack
+
+Mamoswine @ Focus Sash
+Level: 96
+Ability: Thick Fat
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Earthquake
+- Stone Edge
+- Icicle Crash
+- Endeavor
+
+Pinsir @ Pinsirite
+Level: 96
+Ability: Hyper Cutter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Leech Life
+- Earthquake
+- Return
+- Swords Dance
 
 === TRAINER_ED ===
 Name: ED
@@ -637,17 +667,47 @@ Pic: Collector
 Gender: Male
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Zangoose
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Indeedee M @ Focus Sash
+Level: 96
+Ability: Psychic Surge
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Expanding Force
+- Follow Me
+- Helping Hand
+- Aura Sphere
 
-Seviper
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Metagross @ Weakness Policy
+Level: 96
+Ability: Skill Link
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Meteor Mash
+- Barrage
+- High Horsepower
+- Shift Gear
+
+Articuno Galar @ Life Orb
+Level: 96
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Expanding Force
+- Hurricane
+- Freezing Glare
+- Shadow Ball
+
+Malamar @ Malamarite
+Level: 96
+Ability: Contrary
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Hasty
+- Psycho Boost
+- Superpower
+- Knock Off
+- Recover
 
 === TRAINER_GRUNT_SEAFLOOR_CAVERN_4 ===
 Name: Grunt
@@ -1385,17 +1445,47 @@ Pic: Expert M
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Makuhita
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Luxray @ Shuca Berry
+Level: 96
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Bulk Up
+- Ice Fang
+- Volt Tackle
+- Psychic Fangs
 
-Machoke
-Level: 30
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Incineroar @ Sitrus Berry
+Level: 96
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Bulk Up
+- Flare Blitz
+- Power Trip
+- Drain Punch
+
+Staraptor @ Leftovers
+Level: 96
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Bulk Up
+- Brave Bird
+- Triple Kick
+- Blaze Kick
+
+Scrafty @ Scraftinite
+Level: 96
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Bulk Up
+- Crunch
+- Drain Punch
+- Poison Jab
 
 === TRAINER_MATT ===
 Name: Matt
@@ -2929,52 +3019,47 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Swellow
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Focus Energy
-- Quick Attack
-- Wing Attack
-- Endeavor
+Pelipper @ Focus Sash
+Level: 96
+Ability: Drizzle
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Tailwind
+- Hydro Pump
+- Hurricane
+- Ice Beam
 
-Trapinch
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Bite
-- Dig
-- Feint Attack
-- Sand Tomb
+Celesteela @ Weakness Policy
+Level: 96
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Hurricane
+- Weather Ball
+- Flash Cannon
+- Autotomize
 
-Wailmer
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Rollout
-- Whirlpool
-- Astonish
-- Water Pulse
+Huntail @ White Herb
+Level: 96
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Wave Crash
+- Ice Fang
+- Shell Smash
+- Psychic Fangs
 
-Magneton
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Thunderbolt
-- Supersonic
-- Thunder Wave
-- Sonic Boom
-
-Shiftry
-Level: 28
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Giga Drain
-- Feint Attack
-- Double Team
-- Swagger
+Skarmory @ Skarmorite
+Level: 96
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Brave Bird
+- Iron Head
+- Drill Run
+- Roost
 
 === TRAINER_VINCENT ===
 Name: VINCENT
@@ -3492,34 +3577,47 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Mawile
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Baton Pass
-- Feint Attack
-- Fake Tears
-- Bite
+Barraskewda @ Covert Cloak
+Level: 96
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Wave Crash
+- Flip Turn
+- Close Combat
+- Ice Fang
 
-Roselia
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Mega Drain
-- Magical Leaf
-- Grass Whistle
-- Leech Seed
+Thundurus Incarnate @ Petaya Berry
+Level: 96
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Substitute
+- Weather Ball
+- Hurricane
+- Thunder
 
-Pelipper
-Level: 29
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Fly
-- Water Gun
-- Mist
-- Protect
+Manectric @ Focus Sash
+Level: 96
+Ability: Lightning Rod
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Thunder
+- Weather Ball
+- Signal Beam
+- Swagger
+
+Sceptile @ Sceptilite
+Level: 96
+Ability: Overgrow
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Weather Ball
+- Dragon Pulse
+- Giga Drain
+- Earth Power
 
 === TRAINER_KEIRA ===
 Name: KEIRA
@@ -3875,17 +3973,47 @@ Pic: Hex Maniac
 Gender: Female
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Duskull
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Mesprit @ Sitrus Berry
+Level: 96
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Ice Beam
+- Mystical Power
+- Stealth Rock
+- Thunderbolt
 
-Shuppet
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Gothitelle @ Leftovers
+Level: 96
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Expanding Force
+- Focus Blast
+- Thunderbolt
+- Nasty Plot
+
+Munkidori @ Petaya Berry
+Level: 96
+Ability: Toxic Chain
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Expanding Force
+- Sludge Bomb
+- Focus Blast
+- Substitute
+
+Alakazam @ Alakazite
+Level: 96
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Expanding Force
+- Focus Blast
+- Dazzling Gleam
+- Nasty Plot
 
 === TRAINER_TAMMY ===
 Name: TAMMY
@@ -6407,7 +6535,7 @@ Pic: Guitarist
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Pincurchin @ Air Balloon
 Level: 34
@@ -6460,23 +6588,53 @@ Nature: Jolly
 - Reversal
 
 === TRAINER_FERNANDO_1 ===
-Name: FERNANDO
+Name: Fernando
 Class: Guitarist
 Pic: Guitarist
 Gender: Male
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Electrike
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Tornadus Incarnate @ Focus Sash
+Level: 96
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Hasty
+- Tailwind
+- Bleakwind Storm
+- Heat Wave
+- Focus Blast
 
-Loudred
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Silvally @ Flying Memory
+Level: 96
+Ability: RKS System
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Hasty
+- Multi Attack
+- Flamethrower
+- Work Up
+- Ice Beam
+
+Hydreigon @ Roseli Berry
+Level: 96
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Dragon Pulse
+- Dark Pulse
+- Flash Cannon
+- Nasty Plot
+
+Eelektross @ Eelektrossite
+Level: 96
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Thunderbolt
+- Hydro Pump
+- Flamethrower
+- Giga Drain
 
 === TRAINER_DALTON_1 ===
 Name: DALTON
@@ -8124,17 +8282,47 @@ Pic: Psychic F
 Gender: Female
 Music: Intense
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Kadabra
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Ursaluna Bloodmoon @ Red Card
+Level: 96
+Ability: Mind's Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Blood Moon
+- Earth Power
+- Calm Mind
+- Moonblast
 
-Lunatone
-Level: 30
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Braviary Hisui @ Life Orb
+Level: 96
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Calm Mind
+- Hurricane
+- Psychic
+- Roost
+
+Latias @ Soul Dew
+Level: 96
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Calm Mind
+- Stored Power
+- Recover
+- Dragon Pulse
+
+Gengar @ Gengarite
+Level: 96
+Ability: Shadow Tag
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Nasty Plot
+- Sludge Bomb
+- Shadow Ball
+- Focus Blast
 
 === TRAINER_JACKI_2 ===
 Name: JACKI
@@ -9989,7 +10177,7 @@ Nature: Jolly
 
 Absol @ Absolite
 Level: 66
-Ability: Intimidate
+Ability: Pressure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 Nature: Jolly
 - Swords Dance
@@ -15994,12 +16182,47 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Absol
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Scream Tail @ Booster Energy
+Level: 96
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Follow Me
+- Recover
+- Stealth Rock
+- Play Rough
+
+Fezandipiti @ Leftovers
+Level: 96
+Ability: Toxic Chain
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Gunk Shot
+- Play Rough
+- Swords Dance
+- Shadow Claw
+
+Flutter Mane @ Life Orb
+Level: 96
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Shadow Ball
+- Moonblast
+- Calm Mind
+- Mystical Fire
+
+Gardevoir @ Gardevoirite
+Level: 96
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Frustration
+- Psyshock
+- Focus Blast
+- Calm Mind
 
 === TRAINER_JONAS ===
 Name: JONAS
@@ -17365,12 +17588,47 @@ Pic: Bug Catcher
 Gender: Male
 Music: Male
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Pinsir
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Whimsicott @ Covert Cloak
+Level: 96
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Tailwind
+- Moonblast
+- Energy Ball
+- Leech Seed
+
+Iron Valiant @ Booster Energy
+Level: 96
+Ability: Quark Drive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Jolly
+- Spirit Break
+- Close Combat
+- Destiny Bond
+- Helping Hand
+
+Sylveon @ Leftovers
+Level: 96
+Ability: Fairy Aura
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Dazzling Gleam
+- Moonblast
+- Shadow Ball
+- Helping Hand
+
+Floette Eternal @ Floettite
+Level: 96
+Ability: Healer
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
+Nature: Timid
+- Light Of Ruin
+- Dazzling Gleam
+- Calm Mind
+- Draining Kiss
 
 === TRAINER_MITCHELL ===
 Name: MITCHELL

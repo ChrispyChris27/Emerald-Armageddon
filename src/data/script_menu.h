@@ -246,8 +246,8 @@ static const struct MenuAction MultichoiceList_Satisfaction[] =
 
 static const struct MenuAction MultichoiceList_SternDeepSea[] =
 {
-    {COMPOUND_STRING("DEEPSEATOOTH")},
-    {COMPOUND_STRING("DEEPSEASCALE")},
+    {COMPOUND_STRING("Latiasite")},
+    {COMPOUND_STRING("Latiosite")},
     {gText_Exit},
 };
 
