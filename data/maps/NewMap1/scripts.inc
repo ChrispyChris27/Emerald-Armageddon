@@ -77,7 +77,7 @@ NewMap1_EventScript_Giovanni::
 	closemessage
 	delay 20
 	playse SE_M_DETECT
-	playfanfare MUS_AWAKEN_LEGEND
+	playbgm MUS_RAYQUAZA_EVOLVES, FALSE
 	playse SE_ORB
 	fadescreenswapbuffers FADE_TO_WHITE
 	setflag FLAG_HIDEOUT_RAY
