@@ -1921,10 +1921,10 @@ Nature: Jolly
 
 === TRAINER_FELIX ===
 Name: FELIX
-Class: Cooltrainer
-Pic: Cooltrainer M
+Class: Swimmer M
+Pic: Swimmer M
 Gender: Male
-Music: Cool
+Music: Swimmer
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -3757,18 +3757,73 @@ Nature: Timid
 - Earth Power
 
 === TRAINER_HOPE ===
-Name: HOPE
+Name: Hope
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Roselia
-Level: 45
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Aggron @ Covert Cloak
+Level: 94
+Ability: Sturdy
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Iron Tail
+- Stone Edge
+- Metal Burst
+- Stealth Rock
+
+Zapdos Galar @ Sitrus Berry
+Level: 94
+Ability: Defiant
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Brave Bird
+- Thunderous Kick
+- Swords Dance
+- Roost
+
+Sandy Shocks @ Booster Energy
+Level: 94
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Thunderbolt
+- Flash Cannon
+- Power Gem
+
+Medicham @ Life Orb
+Level: 94
+Ability: Pure Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Drain Punch
+- Zen Headbutt
+- Ice Punch
+- Swords Dance
+
+Inteleon @ Scope Lens
+Level: 94
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Snipe Shot
+- Ice Beam
+- Nasty Plot
+- Dark Pulse
+
+Clefable @ Clefablite
+Level: 94
+Ability: Magic Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Hurricane
+- Moonblast
+- Calm Mind
+- Heat Wave
 
 === TRAINER_SHANNON ===
 Name: SHANNON
@@ -3810,10 +3865,10 @@ Nature: Hardy
 
 === TRAINER_CAROLINE ===
 Name: CAROLINE
-Class: Cooltrainer
-Pic: Cooltrainer F
+Class: Swimmer F
+Pic: Swimmer F
 Gender: Female
-Music: Cool
+Music: Swimmer
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -16653,7 +16708,7 @@ Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
 Cresselia @ Light Clay
-Level: 95
+Level: 96
 Ability: Levitate
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Bold
@@ -16663,7 +16718,7 @@ Nature: Bold
 - Light Screen
 
 Talonflame @ Heavy Duty Boots
-Level: 95
+Level: 96
 Ability: Gale Wings
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -16673,7 +16728,7 @@ Nature: Jolly
 - U Turn
 
 Pheromosa @ Focus Sash
-Level: 95
+Level: 96
 Ability: Tinted Lens
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
@@ -16683,7 +16738,7 @@ Nature: Timid
 - Quiver Dance
 
 Palafin @ Assault Vest
-Level: 95
+Level: 96
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Flip Turn
@@ -16691,8 +16746,18 @@ Nature: Jolly
 - Ice Punch
 - Drain Punch
 
-Gallade @ Scope Lens
-Level: 95
+Meloetta Pirouette @ Life Orb
+Level: 96
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Close Combat
+- Triple Axel
+- Swords Dance
+- Knock Off
+
+Gallade @ Galladite
+Level: 96
 Ability: Sharpness
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
@@ -16700,15 +16765,6 @@ Nature: Jolly
 - Psycho Cut
 - Aqua Cutter
 - Leaf Blade
-
-Altaria @ Altarianite
-Level: 95
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-Nature: Jolly
-- Return
-- Dragon Rush
-- Earthquake
-- Dragon Dance
 
 === TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
 Name: BRENDAN
@@ -17731,7 +17787,7 @@ Nature: Timid
 - Draining Kiss
 
 === TRAINER_MITCHELL ===
-Name: MITCHELL
+Name: Peter
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
@@ -25204,7 +25260,7 @@ Nature: Timid
 - Psychic
 
 === TRAINER_ARIANA_MOSSDEEP ===
-Name: ARIANA
+Name: Ariana
 Class: Rocket Admin
 Pic: Ariana
 Gender: Male
@@ -26892,14 +26948,14 @@ Nature: Jolly
 - Rock Polish
 - Fire Punch
 
-Garchomp @ Garchompite Z
+Garchomp @ Garchompite
 Level: 97
 Ability: Sand Veil
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Earthquake
 - Dual Chop
-- Stone Edge
+- Rock Slide
 - Dragon Dance
 
 === TRAINER_ARCHER_2 ===

@@ -1,7 +1,7 @@
 voice_group mus_farewell
 	voice_keysplit voicegroup_piano_keysplit, keysplit_piano
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
-	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
+	voice_directsound 60, 0, DirectSoundWaveData_trinity_cymbal_crash, 255, 231, 0, 188
+	voice_directsound 60, 0, DirectSoundWaveData_sc88pro_string_ensemble_84, 255, 0, 255, 196
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
 	voice_square_1 60, 0, 0, 2, 0, 0, 15, 0
