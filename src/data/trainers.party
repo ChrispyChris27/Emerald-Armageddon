@@ -1920,26 +1920,73 @@ Nature: Jolly
 - Spore
 
 === TRAINER_FELIX ===
-Name: FELIX
+Name: Felix
 Class: Swimmer M
 Pic: Swimmer M
 Gender: Male
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Medicham
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Psychic
+Empoleon @ Red Card
+Level: 94
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Flash Cannon
+- Ice Beam
+- Hydro Pump
+- Stealth Rock
 
-Claydol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Skill Swap
-- Earthquake
+Dragalge @ Choice Specs
+Level: 94
+Ability: Regenerator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Draco Meteor
+- Sludge Wave
+- Hydro Pump
+- Ice Beam
+
+Grapploct @ Leftovers
+Level: 94
+Ability: Technician
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- No Retreat
+- Storm Throw
+- Bullet Punch
+- Wave Crash
+
+Azelf @ Life Orb
+Level: 94
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Mystical Power
+- Fire Blast
+- Focus Blast
+- Nasty Plot
+
+Dragonite @ Yache Berry
+Level: 94
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Rush
+- Sky Attack
+- Aqua Tail
+- Dragon Dance
+
+Feraligatr @ Feraligite
+Level: 94
+Ability: Sheer Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Return
+- Thunderpunch
+- Dragon Dance
 
 === TRAINER_TABITHA_NM ===
 Name: Tabitha
@@ -3202,28 +3249,73 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Nature: Hardy
 
 === TRAINER_SAMUEL ===
-Name: SAMUEL
+Name: Samuel
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Swellow
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Uxie @ Light Clay
+Level: 94
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Reflect
+- Light Screen
+- Mystical Power
+- Ice Beam
 
-Mawile
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Entei @ Fire Gem
+Level: 97
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Sacred Fire
+- Extremespeed
+- Swords Dance
+- Stone Edge
 
-Kadabra
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Florges @ Leftovers
+Level: 97
+Ability: Symbiosis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Bold
+- Calm Mind
+- Moonblast
+- Synthesis
+- Stored Power
+
+Kingdra @ Shell Bell
+Level: 97
+Ability: Sniper
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Dragon Rush
+- Dragon Dance
+- Iron Head
+
+Sigilyph @ Choice Specs
+Level: 97
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Lumina Crash
+- Hurricane
+- Heat Wave
+- Ice Beam
+
+Barbaracle @ Barbaracite
+Level: 94
+Ability: Tough Claws
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Shell Smash
+- Close Combat
+- Head Smash
+- Wave Crash
 
 === TRAINER_VITO ===
 Name: VITO
@@ -3261,22 +3353,67 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Kecleon
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Thundurus Incarnate @ Wise Glasses
+Level: 96
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Tailwind
+- Wildbolt Storm
+- Hurricane
+- Heat Wave
 
-Graveler
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Flygon @ Life Orb
+Level: 96
+Ability: Wind Rider
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Tailwind
+- Dragon Rush
+- Earthquake
+- Rock Slide
 
-Wailord
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Dudunsparce Two Segment @ King's Rock
+Level: 96
+Ability: Serene Grace
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Tailwind
+- Scale Shot
+- Tail Slap
+- Double Slap
+
+Shiftry @ Focus Sash
+Level: 96
+Ability: Wind Rider
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Tailwind
+- Leaf Blade
+- Throat Chop
+- Explosion
+
+Drampa @ Petaya Berry
+Level: 96
+Ability: Berserk
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Tailwind
+- Dragon Pulse
+- Boomburst
+- Flamethrower
+
+Staraptor @ Staraptite
+Level: 96
+Ability: Wind Rider
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Sky Attack
+- Superpower
+- Blaze Kick
+- Roost
 
 === TRAINER_WILTON_2 ===
 Name: WILTON
@@ -3832,12 +3969,37 @@ Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Claydol
-Level: 45
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Lycanroc Midnight @ Focus Sash
+Level: 94
+Ability: No Guard
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Stone Edge
+- Entrainment
+- Dynamic Punch
+
+Pangoro @ Roseli Berry
+Level: 94
+Ability: Mold Breaker
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Darkest Lariat
+- Stone Edge
+- Entrainment
+- Dynamic Punch
+
+Hawlucha @ Hawluchanite
+Level: 94
+Ability: Mold Breaker
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Sky Attack
+- Stone Edge
+- Entrainment
+- Dynamic Punch
 
 === TRAINER_MICHELLE ===
 Name: MICHELLE
@@ -3870,41 +4032,135 @@ Pic: Swimmer F
 Gender: Female
 Music: Swimmer
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Skarmory
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Politoed @ Light Clay
+Level: 94
+Ability: Drizzle
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Light Screen
+- Reflect
+- Scald
+- Earth Power
 
-Sableye
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Regieleki @ Focus Sash
+Level: 94
+Ability: Transistor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Thunder
+- Weather Ball
+- Focus Blast
+- Explosion
+
+Overqwil @ Air Balloon
+Level: 94
+Ability: Swift Swim
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Knock Off
+- Gunk Shot
+- Wave Crash
+- Explosion
+
+Manaphy @ Leftovers
+Level: 94
+Ability: Hydration
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Tail Glow
+- Hydro Pump
+- Rest
+- Ice Beam
+
+Walking Wake @ Booster Energy
+Level: 94
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dragon Pulse
+- Hydro Steam
+- Hurricane
+- Ice Beam
+
+Swampert @ Swampertite
+Level: 94
+Ability: Torrent
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Wave Crash
+- Earthquake
+- Ice Punch
+- Swords Dance
 
 === TRAINER_JULIE ===
-Name: JULIE
+Name: Julie
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Sandslash
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Vanilluxe @ Light Clay
+Level: 94
+Ability: Snow Warning
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Aurora Veil
+- Blizzard
+- Freeze Dry
+- Earth Power
 
-Ninetales
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Arctovish @ Choice Band
+Level: 94
+Ability: Slush Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Fishious Rend
+- Icicle Crash
+- Flip Turn
 
-Tropius
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Iron Bundle @ Booster Energy
+Level: 94
+Ability: Quark Drive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Hydro Pump
+- Blizzard
+- Freeze Dry
+- Agility
+
+Articuno @ Leftovers
+Level: 94
+Ability: Snow Cloak
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hurricane
+- Blizzard
+- Freeze Dry
+- Ancientpower
+
+Cryogonal @ Assault Vest
+Level: 94
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Earth Power
+- Blizzard
+- Freeze Dry
+- Power Gem
+
+Abomasnow @ Abomasite
+Level: 94
+Ability: Soundproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Brave
+- Wood Hammer
+- Blizzard
+- Earthquake
+- Ice Shard
 
 === TRAINER_BROOKE_2 ===
 Name: BROOKE
@@ -12896,13 +13152,13 @@ Nature: Jolly
 - Earthquake
 - Dragon Dance
 
-Feraligatr @ Feraligite
+Altaria @ Altarianite
 Level: 90
-Ability: Sheer Force
+Ability: Natural Cure
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Return
-- Wave Crash
+- Dragon Rush
 - Earthquake
 - Dragon Dance
 
@@ -13712,26 +13968,72 @@ Nature: Bold
 - Psyshock
 
 === TRAINER_DIANNE ===
-Name: DIANNE
+Name: Dianne
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
-Battle Type: Singles
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Claydol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Skill Swap
+Klefki @ Light Clay
+Level: 94
+Ability: Prankster
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Reflect
+- Light Screen
+- Draining Kiss
+- Stealth Rock
+
+Brambleghast @ Grass Gem
+Level: 94
+Ability: Wind Rider
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Tailwind
+- Power Whip
+- Spirit Shackle
+- Substitute
+
+Haxorus @ Focus Sash
+Level: 94
+Ability: Mold Breaker
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Dual Chop
+- Aqua Tail
 - Earthquake
 
-Lanturn
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Raikou @ Shuca Berry
+Level: 94
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Calm Mind
 - Thunderbolt
-- Earthquake
+- Scald
+- Shadow Ball
+
+Iron Moth @ Booster Energy
+Level: 94
+Ability: Quark Drive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Quiver Dance
+- Sludge Wave
+- Fiery Dance
+- Energy Ball
+
+Lucario @ Lucarionite
+Level: 94
+Ability: Inner Focus
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Swords Dance
+- Meteor Mash
+- Close Combat
+- Rock Slide
 
 === TRAINER_JANI ===
 Name: JANI
@@ -17793,25 +18095,47 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Lunatone
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Explosion
-- Reflect
-- Light Screen
-- Psychic
+Lapras @ Assault Vest
+Level: 97
+Ability: Shell Armor
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Sheer Cold
+- Thunder
+- Hydro Pump
 
-Solrock
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
-- Explosion
-- Reflect
-- Light Screen
-- Shadow Ball
+Cryogonal @ Leftovers
+Level: 97
+Ability: Filter
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Blizzard
+- Sheer Cold
+- Recover
+- Earth Power
+
+Crabominable @ Muscle Band
+Level: 97
+Ability: Iron Fist
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dynamic Punch
+- Sheer Cold
+- Stone Edge
+- Icicle Crash
+
+Glalie @ Glalitite
+Level: 97
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Blizzard
+- Sheer Cold
+- Spikes
+- Earthquake
 
 === TRAINER_ISAAC_2 ===
 Name: ISAAC
