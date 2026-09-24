@@ -3230,23 +3230,72 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 Nature: Hardy
 
 === TRAINER_ALBERT ===
-Name: ALBERT
+Name: Albert
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Magneton
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Iron Boulder @ Booster Energy
+Level: 94
+Ability: Quark Drive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Mighty Cleave
+- Zen Headbutt
+- Earthquake
 
-Muk
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Kommo O @ Throat Spray
+Level: 94
+Ability: Bulletproof
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Clanging Scales
+- Clangorus Soul
+- Flash Cannon
+- Focus Blast
+
+Bruxish @ Choice Scarf
+Level: 94
+Ability: Strong Jaw
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Fishious Rend
+- Flip Turn
+- Psychic Fangs
+
+Tyrantrum @ Life Orb
+Level: 94
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Head Smash
+- Dragon Claw
+- Dragon Dance
+- Earthquake
+
+Kingambit @ Chople Berry
+Level: 94
+Ability: Supreme Overlord
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Kowtow Cleave
+- Iron Head
+- Swords Dance
+- Zen Headbutt
+
+Lopunny @ Lopunnite
+Level: 94
+Ability: Limber
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Return
+- Triple Kick
+- Triple Axel
+- Swords Dance
 
 === TRAINER_SAMUEL ===
 Name: Samuel
@@ -4002,28 +4051,73 @@ Nature: Jolly
 - Dynamic Punch
 
 === TRAINER_MICHELLE ===
-Name: MICHELLE
+Name: Michelle
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Torkoal
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Gigalith @ Custap Berry
+Level: 94
+Ability: Sand Stream
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Stealth Rock
+- Stone Edge
+- Earthquake
+- Explosion
 
-Medicham
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Armaldo @ White Herb
+Level: 94
+Ability: Sand Rush
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Shell Smash
+- Rock Slide
+- Leech Life
+- Earthquake
 
-Ludicolo
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Heliolisk @ Throat Spray
+Level: 94
+Ability: Sand Veil
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Boomburst
+- Weather Ball
+- Thunderbolt
+- Alluring Voice
+
+Iron Thorns @ Booster Energy
+Level: 94
+Ability: Quark Drive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Rock Slide
+- Thunderpunch
+- Ice Punch
+
+Excadrill @ Life Orb
+Level: 94
+Ability: Sand Force
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Swords Dance
+- Earthquake
+- Rock Slide
+- Iron Head
+
+Tyranitar @ Tyranitarite
+Level: 94
+Ability: Intimidate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Stone Edge
+- Crunch
+- Psychic Fangs
 
 === TRAINER_CAROLINE ===
 Name: CAROLINE
@@ -11154,58 +11248,102 @@ Nature: Modest
 - Hidden Power
 
 === TRAINER_QUINCY ===
-Name: QUINCY
+Name: Quincy
 Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Slaking
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Attract
-- Ice Beam
-- Thunderbolt
-- Flamethrower
+Sandaconda @ Red Card
+Level: 94
+Ability: Sand Spit
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Earthquake
+- Stone Edge
+- Dual Wingbeat
 
-Dusclops
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Skill Swap
-- Protect
-- Will O Wisp
-- Toxic
+Gliscor @ Yache Berry
+Level: 94
+Ability: Sand Veil
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Swords Dance
+- Earthquake
+- Roost
+- Dual Wingbeat
+
+Gyarados @ Wacan Berry
+Level: 94
+Ability: Moxie
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Earthquake
+- Wave Crash
+- Sky Attack
+
+Garchomp @ Garchompite Z
+Level: 94
+Ability: Rough Skin
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Earthquake
+- Draco Meteor
+- Rock Slide
+- Dragon Rush
 
 === TRAINER_KATELYNN ===
-Name: KATELYNN
+Name: Katelynn
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Gardevoir
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-- Skill Swap
-- Psychic
-- Thunderbolt
-- Calm Mind
+Corviknight @ Rocky Helmet
+Level: 94
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stealth Rock
+- Tailwind
+- Body Press
+- Dual Wingbeat
 
-Slaking
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Orthworm @ Leftovers
+Level: 94
+Ability: Earth Eater
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Iron Tail
+- Substitute
+- Body Press
+- Spikes
+
+Flygon @ Yache Berry
+Level: 94
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
 - Earthquake
-- Shadow Ball
-- Aerial Ace
-- Brick Break
+- Rock Slide
+- Dragon Rush
+- Dragon Dance
+
+Chimecho @ Chimechite
+Level: 94
+Ability: Levitate
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Cosmic Power
+- Recover
+- Flash Cannon
+- Stored Power
 
 === TRAINER_JAYLEN ===
 Name: JAYLEN
@@ -18353,23 +18491,73 @@ Nature: Jolly
 - Trailblaze
 
 === TRAINER_HALLE ===
-Name: HALLE
+Name: Halle
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Sableye
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Ninetales @ Choice Specs
+Level: 94
+Ability: Drought
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Overheat
+- Solarbeam
+- Scorching Sands
+- Extrasensory
 
-Absol
-Level: 43
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-Nature: Hardy
+Victreebel @ Focus Sash
+Level: 94
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Hasty
+- Weather Ball
+- Solar Blade
+- Gunk Shot
+- Growth
+
+Gouging Fire @ Shell Bell
+Level: 94
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Dance
+- Flare Blitz
+- Stone Edge
+- Dragon Rush
+
+Heliolisk @ Leftovers
+Level: 94
+Ability: Solar Power
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Boomburst
+- Weather Ball
+- Thunderbolt
+- Morning Sun
+
+Exeggutor @ Life Orb
+Level: 94
+Ability: Chlorophyll
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Weather Ball
+- Solarbeam
+- Psychic
+- Growth
+
+Houndoom @ Houndoominite
+Level: 94
+Ability: Unnerve
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Heat Wave
+- Solarbeam
+- Dark Pulse
+- Nasty Plot
 
 === TRAINER_GARRISON ===
 Name: GARRISON
@@ -21768,7 +21956,7 @@ Nature: Timid
 - Aura Sphere
 - Heal Pulse
 - Dark Pulse
-- Flamethrower
+- Armor Cannon
 
 Chansey @ Eviolite
 Level: 65
