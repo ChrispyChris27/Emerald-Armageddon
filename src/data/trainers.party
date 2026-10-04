@@ -3217,17 +3217,67 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Cacturne
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Terrakion @ Focus Sash
+Level: 94
+Ability: Justified
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Stone Edge
+- Close Combat
+- Earthquake
+- Stealth Rock
 
-Pelipper
-Level: 43
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Archeops @ Choice Band
+Level: 94
+Ability: Rock Head
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Head Smash
+- Brave Bird
+- Earthquake
+- U Turn
+
+Orbeetle @ Choice Specs
+Level: 94
+Ability: Tinted Lens
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Bug Buzz
+- Psyshock
+- Dazzling Gleam
+- Focus Blast
+
+Mimikyu @ Custap Berry
+Level: 94
+Ability: Disguise
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Play Rough
+- Spirit Shackle
+- Swords Dance
+- Destiny Bond
+
+Raging Bolt @ Booster Energy
+Level: 94
+Ability: Protosynthesis
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Dragon Pulse
+- Thunderbolt
+- Calm Mind
+- Flamethrower
+
+Beedrill @ Beedrillite
+Level: 94
+Ability: Swarm
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Leech Life
+- Gunk Shot
+- Drill Run
+- Swords Dance
 
 === TRAINER_ALBERT ===
 Name: Albert
@@ -3254,7 +3304,7 @@ Ability: Bulletproof
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Clanging Scales
-- Clangorus Soul
+- Clangorous Soul
 - Flash Cannon
 - Focus Blast
 
@@ -3373,27 +3423,17 @@ Pic: Cooltrainer M
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Dodrio
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-
-Kadabra
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-
-Electrode
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
-
-Shiftry
-Level: 42
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-Nature: Hardy
+Mewtwo @ Mewtwonite X
+Level: 96
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Bulk Up
+- Drain Punch
+- Zen Headbutt
+- Knock Off
 
 === TRAINER_OWEN ===
 Name: OWEN
@@ -4012,7 +4052,7 @@ Nature: Bold
 - Heat Wave
 
 === TRAINER_SHANNON ===
-Name: SHANNON
+Name: Shannon
 Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Female
@@ -4032,7 +4072,7 @@ Nature: Jolly
 
 Pangoro @ Roseli Berry
 Level: 94
-Ability: Mold Breaker
+Ability: No Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
 - Darkest Lariat
@@ -18267,7 +18307,7 @@ Nature: Jolly
 
 Glalie @ Glalitite
 Level: 97
-Ability: Intimidate
+Ability: Inner Focus
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Hasty
 - Blizzard

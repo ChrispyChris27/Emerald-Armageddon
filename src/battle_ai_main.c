@@ -3787,6 +3787,10 @@ static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef,
                 {
                     RETURN_SCORE_PLUS(20);
                 }
+            if (HasMoveWithEffect(battlerAtkPartner, EFFECT_OHKO) && GetBattlerAbility(battlerAtk) == ABILITY_NO_GUARD && atkPartnerAbility != ABILITY_NO_GUARD)
+                {
+                    RETURN_SCORE_PLUS(4);
+                }
             else
                 AbilityChangeScore(battlerAtk, battlerAtkPartner, move, &score, aiData);
                 return score;
