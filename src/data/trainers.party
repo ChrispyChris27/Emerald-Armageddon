@@ -3425,6 +3425,56 @@ Music: Cool
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
+Hatterene @ Custap Berry
+Level: 96
+Ability: Psychic Surge
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psyshock
+- Mystical Fire
+- Misty Explosion
+- Moonblast
+
+Deoxys Normal @ Focus Sash
+Level: 96
+Ability: Pressure
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Psycho Boost
+- Ice Beam
+- Focus Blast
+- Volt Switch
+
+Sceptile @ Psychic Seed
+Level: 96
+Ability: Unburden
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Psycho Cut
+- Leaf Blade
+- Swords Dance
+- Thunderpunch
+
+Rabsca @ Life Orb
+Level: 96
+Ability: Synchronize
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Revival Blessing
+- Bug Buzz
+- Earth Power
+- Psychic
+
+Dragapult @ Muscle Band
+Level: 96
+Ability: Infiltrator
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Dragon Darts
+- Psychic Fangs
+- Spirit Shackle
+- Aqua Tail
+
 Mewtwo @ Mewtwonite X
 Level: 96
 Ability: Pressure
