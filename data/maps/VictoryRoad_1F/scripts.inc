@@ -262,10 +262,6 @@ CynthiaText1:
 	.string "Looks like I was almost too late.\p"
 	.string "You made quick work of the other\n"
 	.string "trainers here.\p"
-	.string "Now, you stand on the precipice of\n"
-	.string "Pokémon League!\p"
-	.string "Just beyond the exit here is the\n"
-	.string "entrance to the Pokémon League!\p"
 	.string "I suppose now that I'm here though, I\n"
 	.string "might as well see your strength myself!\p"
 	.string "I never hold back, so let's see if\n"
@@ -289,7 +285,7 @@ CynthiaText3:
 	.string "I suppose I ought to be returning\n"
 	.string "to Sinnoh soon.\p"
 	.string "I wish you luck in your quest to\n"
-	.string "defeat the Pokémon League.$"
+	.string "defeat the Pokémon League!$"
 
 CynthiaApproach:
 	walk_right
