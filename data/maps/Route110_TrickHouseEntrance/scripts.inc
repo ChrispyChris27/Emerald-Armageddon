@@ -742,7 +742,7 @@ Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster:
 	.string "For I am the greatest living mystery\n"
 	.string "of a man in all of Hoenn!\l"
 	.string "They call me…\p"
-	.string "The Quiz Master!\n"
+	.string "The Trick Master!\n"
 	.string "Wahahaha! Glad to meet you!$"
 
 Route110_TrickHouseEntrance_Text_ComeToChallengeTrickHouse:
@@ -765,7 +765,7 @@ Route110_TrickHouseEntrance_Text_GoInHoleBehindScroll:
 Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote:
 	.string "There is a note affixed to the scroll…\p"
 	.string "“I am leaving on a journey.\n"
-	.string "Don't look for me. Quiz Master”$"
+	.string "Don't look for me. Trick Master”$"
 
 Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick:
 	.string "For the next time, I'll use this trick,\n"
@@ -797,7 +797,7 @@ Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward:
 Route110_TrickHouseEntrance_Text_MechadollWhichTent:
 	.string "MECHADOLL 5 I AM!\n"
 	.string "IF REWARD IS NOT TAKEN BY YOU,\l"
-	.string "THEN QUIZ MASTER YOU CANNOT FOLLOW.\p"
+	.string "THEN TRICK MASTER YOU CANNOT FOLLOW.\p"
 	.string "SUNGLASSES OR ARMBAND,\n"
 	.string "WHICH DO YOU PREFER?$"
 

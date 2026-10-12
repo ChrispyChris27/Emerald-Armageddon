@@ -762,3 +762,91 @@ u8 GetContestLadyCategory(void)
     sContestLadyPtr = &gSaveBlock1Ptr->lilycoveLady.contest;
     return sContestLadyPtr->category;
 }
+
+bool8 IsTrickHouseAnswer1Correct(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON_NATIONAL_2(WAILMER));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer2Correct(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON_NATIONAL_2(WISHIWASHI));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer3Correct(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON_NATIONAL(MACHOP));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer4ACorrect(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON(DEOXYS));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer4BCorrect(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON(ARCEUS));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer5Correct(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON_NATIONAL(NUZLEAF));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer6Correct(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON(CYCLIZAR));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer7Correct(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON(DARKRAI));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer8Correct(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON_NATIONAL(HO_OH));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer9Correct(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON_NATIONAL(MAKUHITA));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}
+
+bool8 IsTrickHouseAnswer10Correct(void)
+{
+    sQuizLadyPtr = &gSaveBlock1Ptr->lilycoveLady.quiz;
+    CopyEasyChatWord(gStringVar2, sQuizLadyPtr->playerAnswer);
+    CopyEasyChatWord(gStringVar1, EC_POKEMON_NATIONAL(MAGIKARP));
+    return StringCompare(gStringVar1, gStringVar2) ? FALSE : TRUE;
+}

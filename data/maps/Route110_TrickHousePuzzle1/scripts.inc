@@ -24,7 +24,7 @@ Route110_TrickHousePuzzle1_EventScript_FoundScroll::
 Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened::
 	.string "{PLAYER} wrote down the secret code\n"
 	.string "on the door.\p"
-	.string "“Quiz Master is fabulous.”\n"
+	.string "“Trick Master is fabulous.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 

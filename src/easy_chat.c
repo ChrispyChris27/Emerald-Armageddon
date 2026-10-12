@@ -352,6 +352,7 @@ enum {
     FRAMEID_QUIZ_ANSWER,
     FRAMEID_QUIZ_QUESTION,
     FRAMEID_QUIZ_SET_QUESTION,
+    FRAMEID_TRICK_HOUSE_ANSWER,
 };
 
 // IDs for the footer row of buttons on the main screen
@@ -552,7 +553,7 @@ static const struct EasyChatScreenTemplate sEasyChatScreenTemplates[] = {
         .numColumns = 1,
         .numRows = 1,
         .frameId = FRAMEID_QUIZ_ANSWER,
-        .fourFooterOptions = TRUE,
+        .fourFooterOptions = FALSE,
         .titleText = gText_TheQuizAnswerIs,
         .instructionsText1 = gText_OutOfTheListedChoices,
         .instructionsText2 = gText_SelectTheAnswerToTheQuiz,
@@ -679,6 +680,18 @@ static const struct EasyChatScreenTemplate sEasyChatScreenTemplates[] = {
         .confirmText1 = gText_TheAnswer,
         .confirmText2 = gText_IsAsShownOkay,
     },
+    {
+        .type = EASY_CHAT_TYPE_TRICK_HOUSE,
+        .numColumns = 1,
+        .numRows = 1,
+        .frameId = FRAMEID_TRICK_HOUSE_ANSWER,
+        .fourFooterOptions = FALSE,
+        .titleText = gText_TheQuizAnswerIs,
+        .instructionsText1 = gText_OutOfTheListedChoices,
+        .instructionsText2 = gText_SelectTheAnswerToTheQuiz,
+        .confirmText1 = gText_TheAnswerColon,
+        .confirmText2 = gText_IsAsShownOkay,
+    },
 };
 
 // IDs are used indirectly as indexes into gEasyChatWordsByLetterPointers
@@ -784,6 +797,13 @@ static const struct EasyChatPhraseFrameDimensions sPhraseFrameDimensions[] = {
         .width = 24,
         .height = 10,
         .footerId = FOOTER_ANSWER,
+    },
+    [FRAMEID_TRICK_HOUSE_ANSWER] = {
+        .left = 9,
+        .top = 4,
+        .width = 12,
+        .height = 2,
+        .footerId = FOOTER_NORMAL,
     },
 };
 
@@ -1481,6 +1501,7 @@ void ShowEasyChatScreen(void)
         displayedPersonType = EASY_CHAT_PERSON_BOY;
         break;
     case EASY_CHAT_TYPE_QUIZ_ANSWER:
+    case EASY_CHAT_TYPE_TRICK_HOUSE:
         words = &gSaveBlock1Ptr->lilycoveLady.quiz.playerAnswer;
         break;
     case EASY_CHAT_TYPE_QUIZ_QUESTION:

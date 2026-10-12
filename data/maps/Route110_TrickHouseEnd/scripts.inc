@@ -175,9 +175,11 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle8::
 	waitmovement 0
 	delay 30
 	msgbox Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent, MSGBOX_DEFAULT
-	setvar VAR_TRICK_HOUSE_PRIZE_PICKUP, 0
-	call Route110_TrickHouseEnd_EventScript_ChooseTent
-	call_if_eq VAR_RESULT, FALSE, Route110_TrickHouseEnd_EventScript_NoRoomForTent
+	givemon SPECIES_HOOPA_CONFINED, 100
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, SendHoopaParty
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, SendHoopaPC
+
+ReceivedHoopa::
 	msgbox Quiz_House_Bonus_Prizes_Text, MSGBOX_DEFAULT
 	call_if_eq VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, NoBonus_Prize_Script
 	call_if_gt VAR_TRICK_HOUSE_PRIZE_AMOUNT, 0, Give_Bonus_Prizes
@@ -337,10 +339,9 @@ Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent:
 	.string "In recognition of the friendship\n"
 	.string "between you, the driven, and the genius\l"
 	.string "that is myself, I demand that you take\l"
-	.string "this keepsake!\p"
-	.string "Actually there are two--\n"
-	.string "sunglasses and an armband.\l"
-	.string "Which do you prefer?$"
+	.string "this pokemon!\p"
+	.string "I learned many tricks from Hoopa, and\n"
+	.string "it is time that you should as well!$"
 
 Route110_TrickHouseEnd_Text_NoRoomInPC:
 	.string "What? No room in your PC?\n"
@@ -354,6 +355,8 @@ Route110_TrickHouseEnd_Text_LeavingOnJourney:
 	.string "A quest in search of new tricks.\p"
 	.string "I wish that you will one day visit and\n"
 	.string "entertain me again.\p"
+	.string "In the meantime, please entertain\n"
+	.string "Hoopa for me!\p"
 	.string "And now, farewell!$"
 
 Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward:
@@ -448,4 +451,40 @@ GivePuzzle8Bonus::
 	randomelement ITEM_TM_WAVE_CRASH, ITEM_TM_LEAF_STORM, ITEM_TM_OVERHEAT, ITEM_TM_CLOSE_COMBAT
 	giveitem VAR_RESULT
 	goto Reduce_Prize_Var_Amount
+
+SendHoopaParty::
+	call ReceivedHoopaFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, ReceivedHoopa
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto ReceivedHoopa
+	end
+
+ReceivedHoopaFanfare::
+	bufferspeciesname STR_VAR_2, SPECIES_HOOPA
+	playfanfare MUS_OBTAIN_ITEM
+	message HoopaJoinsTeam
+	waitmessage
+	waitfanfare
+	bufferspeciesname STR_VAR_1, SPECIES_HOOPA
+	return
+
+SendHoopaPC::
+	call ReceivedHoopaFanfare
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, HoopaTransferredToPC
+	call Common_EventScript_NameReceivedBoxMon
+	goto HoopaTransferredToPC
+	end
+
+HoopaTransferredToPC::
+	setvar VAR_TEMP_TRANSFERRED_SPECIES, SPECIES_HOOPA
+	call Common_EventScript_TransferredToPC
+	goto ReceivedHoopa
+	end
+
+HoopaJoinsTeam:
+	.string "{PLAYER} received Hoopa from the\n"
+	.string "Trick Master!$"
 

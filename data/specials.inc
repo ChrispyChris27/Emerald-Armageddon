@@ -654,3 +654,14 @@ gSpecials::
 	def_special StickerManGetBragFlags
 	def_special CheckAddCoins
 	def_special ShouldAwakenGenesect
+	def_special IsTrickHouseAnswer1Correct
+	def_special IsTrickHouseAnswer2Correct
+	def_special IsTrickHouseAnswer3Correct
+	def_special IsTrickHouseAnswer4ACorrect
+	def_special IsTrickHouseAnswer5Correct
+	def_special IsTrickHouseAnswer6Correct
+	def_special IsTrickHouseAnswer7Correct
+	def_special IsTrickHouseAnswer8Correct
+	def_special IsTrickHouseAnswer9Correct
+	def_special IsTrickHouseAnswer10Correct
+	def_special IsTrickHouseAnswer4BCorrect

@@ -15,56 +15,135 @@
   "connections": null,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 1,
-      "y": 10,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_UP",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route110_TrickHousePuzzle8_EventScript_Vincent",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
-      "x": 4,
-      "y": 2,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route110_TrickHousePuzzle8_EventScript_Leroy",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_WOMAN_5",
-      "x": 8,
-      "y": 17,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
-      "movement_range_x": 0,
-      "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "1",
-      "script": "Route110_TrickHousePuzzle8_EventScript_Keira",
-      "flag": "0"
-    },
-    {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
       "x": 2,
-      "y": 2,
-      "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "ITEM_BEAD_MAIL",
-      "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_ITEM_TRICK_HOUSE_PUZZLE_8_BEAD_MAIL"
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 8,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 13,
+      "y": 20,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 5,
+      "y": 7,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "x": 2,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
+    },
+    {
+      "local_id": "LOCALID_TRICK_HOUSE_LAST_TRAINER",
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 13,
+      "y": 2,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 1,
+      "y": 10,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 2,
+      "y": 13,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 2,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_MAN_3",
+      "x": 8,
+      "y": 18,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Quiz_House_Continue",
+      "flag": "0"
     }
   ],
   "warp_events": [
@@ -90,12 +169,103 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "70",
+      "script": "Final_Trick_House_Quiz_1"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "71",
+      "script": "Final_Trick_House_Quiz_2"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "72",
+      "script": "Final_Trick_House_Quiz_3"
+    },
+    {
+      "type": "trigger",
+      "x": 8,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "73",
+      "script": "Final_Trick_House_Quiz_4"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "74",
+      "script": "Final_Trick_House_Quiz_5"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "75",
+      "script": "Final_Trick_House_Quiz_6"
+    },
+    {
+      "type": "trigger",
+      "x": 1,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "76",
+      "script": "Final_Trick_House_Quiz_7"
+    },
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "77",
+      "script": "Final_Trick_House_Quiz_8"
+    },
+    {
+      "type": "trigger",
+      "x": 2,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "78",
+      "script": "Final_Trick_House_Quiz_9"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TRICK_HOUSE_QUIZ_STATUS",
+      "var_value": "79",
+      "script": "Final_Trick_House_Quiz_10"
+    }
+  ],
   "bg_events": [
     {
       "type": "sign",
       "x": 3,
-      "y": 21,
+      "y": 3,
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route110_TrickHousePuzzle8_EventScript_Scroll"
