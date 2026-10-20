@@ -790,7 +790,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices
 
@@ -1093,7 +1093,7 @@ Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: start Gravity
@@ -2062,7 +2062,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Electric Terrain
@@ -2122,7 +2122,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Electric Terrain
@@ -2182,7 +2182,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Electric Terrain
@@ -4791,7 +4791,7 @@ Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: start Gravity
@@ -9150,10 +9150,10 @@ Nature: Adamant
 
 Absol @ Absolite Z
 Level: 100
-Ability: Pressure
+Ability: Sharpness
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Jolly
-- Knock Off
+- Night Slash
 - Shadow Claw
 - Play Rough
 - Swords Dance
@@ -10672,7 +10672,7 @@ Nature: Jolly
 
 Absol @ Absolite
 Level: 66
-Ability: Pressure
+Ability: Sharpness
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 0 Spe
 Nature: Jolly
 - Swords Dance
@@ -17116,7 +17116,7 @@ Name: Archer
 Class: Rocket Admin
 Pic: Archer
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Multi Party: Half
@@ -19920,7 +19920,7 @@ Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: start Gravity
@@ -19980,7 +19980,7 @@ Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: start Gravity
@@ -20040,7 +20040,7 @@ Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: start Gravity
@@ -20070,7 +20070,7 @@ Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: start Gravity
@@ -20107,7 +20107,7 @@ Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: start Gravity
@@ -25866,7 +25866,7 @@ Name: Ariana
 Class: Rocket Admin
 Pic: Ariana
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Multi Party: Half
@@ -27181,7 +27181,7 @@ Name: Giovanni
 Class: Rocket Leader
 Pic: Giovanni
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27250,7 +27250,7 @@ Name: Giovanni
 Class: Rocket Leader
 Pic: Giovanni
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27319,7 +27319,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27378,7 +27378,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27496,7 +27496,7 @@ Name: Cynthia
 Class: Sinnoh Champ
 Pic: Cynthia
 Gender: Male
-Music: Cynthia
+Music: Female
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27565,7 +27565,7 @@ Name: Archer
 Class: Rocket Admin
 Pic: Archer
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27604,7 +27604,7 @@ Name: Ariana
 Class: Rocket Admin
 Pic: Ariana
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27643,7 +27643,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27703,7 +27703,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27762,7 +27762,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27811,7 +27811,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27860,7 +27860,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27899,7 +27899,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27958,7 +27958,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -27997,7 +27997,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -28262,7 +28262,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -28321,7 +28321,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -28370,7 +28370,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -28429,7 +28429,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -28497,7 +28497,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -28556,7 +28556,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -28750,7 +28750,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Electric Terrain
@@ -28790,7 +28790,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Electric Terrain
@@ -28830,7 +28830,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Electric Terrain
@@ -29166,7 +29166,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -29205,7 +29205,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -29244,7 +29244,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -29303,7 +29303,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -29362,7 +29362,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -29401,7 +29401,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -29450,7 +29450,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Misty Terrain 
@@ -29504,7 +29504,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Psychic Terrain 
@@ -29564,7 +29564,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Grassy Terrain 
@@ -29624,7 +29624,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Electric Terrain 
@@ -29682,7 +29682,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Wonder Room
@@ -29742,7 +29742,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Magic Room
@@ -29802,7 +29802,7 @@ Name: Grunt
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 Starting Status: Trick Room
@@ -29862,7 +29862,7 @@ Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -29901,7 +29901,7 @@ Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -29940,7 +29940,7 @@ Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -29979,7 +29979,7 @@ Name: Brother
 Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -30018,7 +30018,7 @@ Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -30057,7 +30057,7 @@ Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
@@ -30096,7 +30096,7 @@ Name: Sister
 Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Female
-Music: Rocket
+Music: Dangerous
 Battle Type: Singles
 AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
