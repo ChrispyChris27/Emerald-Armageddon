@@ -537,7 +537,7 @@ void BattleSetup_StartScriptedDoubleWildBattle(void)
     CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_RG_VS_DEOXYS);
 
     else
-    CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_RG_VS_LEGEND);
+    CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_ROGUE_BATTLE);
 
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);
@@ -2207,7 +2207,7 @@ void BattleSetup_StartGigantamaxWildBattle(void)
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_ROGUE_GMAX;
-    CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_RG_VS_LEGEND);
+    CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_ROGUE_BATTLE);
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);
     IncrementDailyWildBattles();
@@ -2219,7 +2219,7 @@ void BattleSetup_StartTeraWildBattle(void)
     LockPlayerFieldControls();
     gMain.savedCallback = CB2_EndScriptedWildBattle;
     gBattleTypeFlags = BATTLE_TYPE_ROGUE_TERA;
-    CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_RG_VS_LEGEND);
+    CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_ROGUE_BATTLE);
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);
     IncrementDailyWildBattles();
@@ -2239,7 +2239,7 @@ void BattleSetup_StartRogueWildBattle(void)
     CreateBattleStartTask(B_TRANSITION_RIPPLE, MUS_VS_ARCEUS);
 
     else
-    CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_RG_VS_LEGEND);
+    CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_ROGUE_BATTLE);
     
     IncrementGameStat(GAME_STAT_TOTAL_BATTLES);
     IncrementGameStat(GAME_STAT_WILD_BATTLES);

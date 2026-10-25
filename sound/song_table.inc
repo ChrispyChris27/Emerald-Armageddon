@@ -571,6 +571,7 @@ gSongTable::
 	song mus_vs_arceus, MUSIC_PLAYER_BGM, 0
 	song mus_dp_vs_elite_four, MUSIC_PLAYER_BGM, 0
 	song mus_rayquaza_evolves, MUSIC_PLAYER_BGM, 0
+	song mus_rogue_battle, MUSIC_PLAYER_BGM, 0
 	song ph_trap_blend, MUSIC_PLAYER_SE2, 2
 	song ph_trap_held, MUSIC_PLAYER_SE2, 2
 	song ph_trap_solo, MUSIC_PLAYER_SE2, 2

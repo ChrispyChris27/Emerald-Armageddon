@@ -1270,6 +1270,7 @@ SECTIONS {
         sound/songs/midi/mus_vs_arceus.o(.rodata);
         sound/songs/midi/mus_dp_vs_elite_four.o(.rodata);
         sound/songs/midi/mus_rayquaza_evolves.o(.rodata);
+        sound/songs/midi/mus_rogue_battle.o(.rodata);
     } > ROM =0
 
     lib_rodata :
