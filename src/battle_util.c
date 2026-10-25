@@ -5490,14 +5490,14 @@ bool32 CanSetNonVolatileStatus(enum BattlerId battlerAtk, enum BattlerId battler
         abilityAffected = TRUE;
         battleScript = BattleScript_AbilityProtectsDoesntAffect;
     }
-    else if ((sideBattler = IsFlowerVeilProtected(battlerDef)))
+    else if (!gBattleStruct->ignoreOrbFailure && (sideBattler = IsFlowerVeilProtected(battlerDef)))
     {
         abilityAffected = TRUE;
         battlerDef = sideBattler - 1;
         abilityDef = ABILITY_FLOWER_VEIL;
         battleScript = BattleScript_FlowerVeilProtects;
     }
-    else if (IsSafeguardProtected(battlerAtk, battlerDef, abilityAtk))
+    else if (!gBattleStruct->ignoreOrbFailure && IsSafeguardProtected(battlerAtk, battlerDef, abilityAtk))
     {
         battleScript = BattleScript_SafeguardProtected;
     }
@@ -9391,16 +9391,20 @@ void TryRestoreHeldItems(void)
 void RestoreCaughtWildMonHeldItem(struct Pokemon *mon, enum BattlerId battler)
 {
     struct LostItem *lostItem = GetLostItemState(GetBattlerTrainer(battler), gBattlerPartyIndexes[battler]);
+    enum Item itemToRestore = lostItem->originalItem;
 
-    if (GetMonData(mon, MON_DATA_HELD_ITEM) != lostItem->originalItem)
+    if (GetMonData(mon, MON_DATA_HELD_ITEM) != itemToRestore)
     {
-        enum Item itemToRestore = ITEM_NONE;
-        SetMonData(mon, MON_DATA_HELD_ITEM, &itemToRestore);
+        enum Item item = ITEM_NONE;
+        SetMonData(mon, MON_DATA_HELD_ITEM, &item);
     }
 
-    if (lostItem->wildItemPending)
+    bool32 shouldRestoreBattleItem = B_RESTORE_HELD_BATTLE_ITEMS >= GEN_9
+                                  && itemToRestore != ITEM_NONE
+                                  && GetItemPocket(itemToRestore) != POCKET_BERRIES;
+
+    if (lostItem->wildItemPending || shouldRestoreBattleItem)
     {
-        enum Item itemToRestore = lostItem->originalItem;
         SetMonData(mon, MON_DATA_HELD_ITEM, &itemToRestore);
         lostItem->wildItemPending = FALSE;
     }
