@@ -13300,13 +13300,14 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
     },
 
-    [ITEM_TM_COVET] =
+    [ITEM_TM_MOONBLAST] =
     {
         .name = ITEM_NAME("TM70"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Cutely damages\n"
-            "the foe."),
+            "Attacks with the\n"
+            "power of the moon.\n"
+            "May lower Sp. Atk."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

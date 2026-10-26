@@ -71,7 +71,7 @@
     F(SUPERCELL_SLAM) \
     F(DOUBLE_EDGE) \
     F(DRILL_RUN) \
-    F(COVET) \
+    F(MOONBLAST) \
     F(EARTH_POWER) \
     F(ZEN_HEADBUTT) \
     F(WAVE_CRASH) \

@@ -2543,6 +2543,7 @@ static const struct LevelUpMove sGrimerLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sMukLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_MOONBLAST),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),
     LEVEL_UP_MOVE( 4, MOVE_HARDEN),
@@ -2584,6 +2585,7 @@ static const struct LevelUpMove sGrimerAlolaLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sMukAlolaLevelUpLearnset[] = {
+    LEVEL_UP_MOVE( 1, MOVE_MOONBLAST),
     LEVEL_UP_MOVE( 1, MOVE_POUND),
     LEVEL_UP_MOVE( 1, MOVE_POISON_GAS),
     LEVEL_UP_MOVE( 4, MOVE_BITE),
@@ -22126,9 +22128,9 @@ static const struct LevelUpMove sFlutterManeLevelUpLearnset[] = {
     LEVEL_UP_MOVE(48, MOVE_MYSTICAL_FIRE),
     LEVEL_UP_MOVE(54, MOVE_ENERGY_BALL),
     LEVEL_UP_MOVE(60, MOVE_PSYSHOCK),
-    LEVEL_UP_MOVE(66, MOVE_SHADOW_BALL),
+    LEVEL_UP_MOVE(66, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE(72, MOVE_THUNDERBOLT),
-    LEVEL_UP_MOVE(78, MOVE_MOONBLAST),
+    LEVEL_UP_MOVE(78, MOVE_SHADOW_BALL),
     LEVEL_UP_END
 };
 #endif //P_FAMILY_FLUTTER_MANE

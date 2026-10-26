@@ -23121,7 +23121,7 @@
             },
             {
 #line 9341
-            .species = SPECIES_ZYGARDE_50,
+            .species = SPECIES_ZYGARDE_50_POWER_CONSTRUCT,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 9341
             .heldItem = ITEM_LEFTOVERS,
@@ -29172,7 +29172,7 @@
 #line 11757
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 11756
-            .ability = ABILITY_PRESSURE,
+            .ability = ABILITY_PRISM_ARMOR,
 #line 11755
             .lvl = 100,
             .ball = POKEBALL_COUNT,
