@@ -1273,6 +1273,8 @@ SECTIONS {
         sound/songs/midi/mus_rogue_battle.o(.rodata);
         sound/songs/midi/mus_opelucid_city.o(.rodata);
         sound/songs/midi/mus_castle_throne.o(.rodata);
+        sound/songs/midi/mus_palkias_onslaught.o(.rodata);
+        sound/songs/midi/mus_lament_of_falling_stars.o(.rodata);
     } > ROM =0
 
     lib_rodata :

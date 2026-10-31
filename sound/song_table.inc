@@ -574,6 +574,8 @@ gSongTable::
 	song mus_rogue_battle, MUSIC_PLAYER_BGM, 0
 	song mus_opelucid_city, MUSIC_PLAYER_BGM, 0
 	song mus_castle_throne, MUSIC_PLAYER_BGM, 0
+	song mus_palkias_onslaught, MUSIC_PLAYER_BGM, 0
+	song mus_lament_of_falling_stars, MUSIC_PLAYER_BGM, 0
 	song ph_trap_blend, MUSIC_PLAYER_SE2, 2
 	song ph_trap_held, MUSIC_PLAYER_SE2, 2
 	song ph_trap_solo, MUSIC_PLAYER_SE2, 2
