@@ -4170,7 +4170,8 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_OPELUCID_CITY)            \
     X(MUS_CASTLE_THRONE)            \
     X(MUS_PALKIAS_ONSLAUGHT)        \
-    X(MUS_LAMENT_OF_FALLING_STARS)
+    X(MUS_LAMENT_OF_FALLING_STARS)  \
+    X(MUS_DONT_EVER_FORGET)
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

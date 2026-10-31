@@ -212,3 +212,4 @@
 .include "sound/voicegroups/mus_vs_arceus.inc"
 .include "sound/voicegroups/mus_rogue_battle.inc"
 .include "sound/voicegroups/mus_opelucid_city.inc"
+.include "sound/voicegroups/mus_dont_ever_forget.inc"
