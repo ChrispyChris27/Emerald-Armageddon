@@ -4167,7 +4167,8 @@ static void DebugAction_DestroyFollowerNPC(u8 taskId)
     X(MUS_DP_VS_ELITE_FOUR)         \
     X(MUS_RAYQUAZA_EVOLVES)         \
     X(MUS_ROGUE_BATTLE)             \
-    X(MUS_OPELUCID_CITY)
+    X(MUS_OPELUCID_CITY)            \
+    X(MUS_CASTLE_THRONE)
 
 #define SOUND_LIST_SE               \
     X(SE_USE_ITEM)                  \

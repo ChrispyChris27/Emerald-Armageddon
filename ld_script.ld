@@ -1272,6 +1272,7 @@ SECTIONS {
         sound/songs/midi/mus_rayquaza_evolves.o(.rodata);
         sound/songs/midi/mus_rogue_battle.o(.rodata);
         sound/songs/midi/mus_opelucid_city.o(.rodata);
+        sound/songs/midi/mus_castle_throne.o(.rodata);
     } > ROM =0
 
     lib_rodata :
