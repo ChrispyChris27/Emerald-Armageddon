@@ -211,3 +211,4 @@
 .include "sound/voicegroups/distortion_world.inc"
 .include "sound/voicegroups/mus_vs_arceus.inc"
 .include "sound/voicegroups/mus_rogue_battle.inc"
+.include "sound/voicegroups/mus_opelucid_city.inc"

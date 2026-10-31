@@ -1271,6 +1271,7 @@ SECTIONS {
         sound/songs/midi/mus_dp_vs_elite_four.o(.rodata);
         sound/songs/midi/mus_rayquaza_evolves.o(.rodata);
         sound/songs/midi/mus_rogue_battle.o(.rodata);
+        sound/songs/midi/mus_opelucid_city.o(.rodata);
     } > ROM =0
 
     lib_rodata :
