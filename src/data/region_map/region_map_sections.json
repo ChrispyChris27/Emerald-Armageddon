@@ -1746,6 +1746,22 @@
       "y": 0,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_BIGROOT_BEACH",
+      "name": "BIGROOT BEACH",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_BIGROOT_BAY",
+      "name": "BIGROOT BAY",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
     }
   ]
 }

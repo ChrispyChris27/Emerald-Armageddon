@@ -165,7 +165,9 @@
     "DistortionWorldRoom7",
     "DistortionWorldRoom8",
     "DistortionWorldArceusRoom",
-    "UltraSpace"
+    "UltraSpace",
+    "BigrootBeach",
+    "BigrootBay"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

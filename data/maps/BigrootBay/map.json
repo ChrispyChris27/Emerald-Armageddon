@@ -1,0 +1,26 @@
+{
+  "id": "MAP_BIGROOT_BAY",
+  "name": "BigrootBay",
+  "layout": "LAYOUT_BIGROOT_BAY",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_BIGROOT_BAY",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_NONE",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": false,
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": [
+    {
+      "map": "MAP_BIGROOT_BEACH",
+      "offset": -3,
+      "direction": "up"
+    }
+  ],
+  "object_events": [],
+  "warp_events": [],
+  "coord_events": [],
+  "bg_events": []
+}

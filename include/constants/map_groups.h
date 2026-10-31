@@ -101,6 +101,8 @@ enum
     MAP_DISTORTION_WORLD_ROOM8             = (86 | (0 << 8)),
     MAP_DISTORTION_WORLD_ARCEUS_ROOM       = (87 | (0 << 8)),
     MAP_ULTRA_SPACE                        = (88 | (0 << 8)),
+    MAP_BIGROOT_BEACH                      = (89 | (0 << 8)),
+    MAP_BIGROOT_BAY                        = (90 | (0 << 8)),
 
     // gMapGroup_IndoorLittleroot
     MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    = (0 | (1 << 8)),
