@@ -30,7 +30,7 @@ Cyrus_Event_Script::
 	waitmovement 0
 	msgbox Cyrus_Text2, MSGBOX_DEFAULT
 	trainerbattle_no_intro TRAINER_CYRUS, CyrusDeffeat1
-	playbgm MUS_NCASTLE, FALSE
+	playbgm MUS_CASTLE_THRONE, FALSE
 	msgbox Cyrus_Text3, MSGBOX_DEFAULT
 	closemessage
 	delay 20
