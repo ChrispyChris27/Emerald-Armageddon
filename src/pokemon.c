@@ -4592,6 +4592,7 @@ enum Species GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode m
                 break;
             }
         }
+        break;
     case EVO_MODE_OVERWORLD_SPIN_EVO_CHECK://unused
         for (i = 0; evolutions[i].method != EVOLUTIONS_END; i++)
         {
