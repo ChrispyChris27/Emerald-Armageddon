@@ -612,7 +612,7 @@ void BattleSetup_StartLegendaryBattle(void)
         break;
     case SPECIES_NECROZMA_ULTRA:
         gBattleTypeFlags = BATTLE_TYPE_NECROZMA;
-        CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_RG_VS_DEOXYS);
+        CreateBattleStartTask(B_TRANSITION_BLACKHOLE_PULSATE, MUS_PALKIAS_ONSLAUGHT);
         break;
     }
 
