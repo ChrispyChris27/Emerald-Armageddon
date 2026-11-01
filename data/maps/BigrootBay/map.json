@@ -2,7 +2,7 @@
   "id": "MAP_BIGROOT_BAY",
   "name": "BigrootBay",
   "layout": "LAYOUT_BIGROOT_BAY",
-  "music": "MUS_DUMMY",
+  "music": "MUS_UNDELLA",
   "region_map_section": "MAPSEC_BIGROOT_BAY",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
