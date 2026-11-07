@@ -6,6 +6,7 @@
 #include "string_util.h"
 #include "trainer_util.h"
 #include "text.h"
+#include "caps.h"
 
 #include "constants/battle_ai.h"
 #include "constants/pokeball.h"
@@ -122,6 +123,7 @@ void MakePartnerGenerator(struct TrainerGenerator *trainerGen, const struct Trai
 
 void GenerateMonFromTrainerMon(struct Pokemon *mon, const struct TrainerMon *trainerMon, struct TrainerGenerator *trainer)
 {
+    u8 levelCap = GetCurrentLevelCap();
     u32 data;
     u32 personality = (LocalRandom32(&trainer->localRngState) & 0xFFFFDF00) + 0x1000;
     u32 genderValue = LocalRandom32(&trainer->localRngState);
@@ -135,6 +137,9 @@ void GenerateMonFromTrainerMon(struct Pokemon *mon, const struct TrainerMon *tra
         errorf("Unkwown trainer mon gender value %d", trainerMon->gender);
     personality |= genderValue;
     ModifyPersonalityForNature(&personality, trainerMon->nature);
+    if(trainer->trainerClass == TRAINER_CLASS_QUIZZER)
+    CreateMon(mon, trainerMon->species, levelCap, personality, trainer->otID);
+    else
     CreateMon(mon, trainerMon->species, trainerMon->lvl, personality, trainer->otID);
     if (trainerMon->nickname != NULL)
         SetMonData(mon, MON_DATA_NICKNAME, trainerMon->nickname);
