@@ -2561,7 +2561,6 @@ static const struct LevelUpMove sMagnetonLevelUpLearnset[] = {
 
 #if P_GEN_4_CROSS_EVOS
 static const struct LevelUpMove sMagnezoneLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 0, MOVE_MIRROR_COAT),
     LEVEL_UP_MOVE( 0, MOVE_MAGNETIC_FLUX),
     LEVEL_UP_MOVE( 1, MOVE_EXPLOSION),
     LEVEL_UP_MOVE( 1, MOVE_TRI_ATTACK),
