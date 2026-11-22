@@ -324,12 +324,8 @@ LavaridgeTown_Gym_1F_Text_ReceivedHeatBadge:
 	.string "from Flannery.$"
 
 LavaridgeTown_Gym_1F_Text_ExplainHeatBadgeTakeThis:
-	.string "If you have a Heat Badge, all Pokémon\n"
-	.string "up to Level 50, even those you get in\l"
-	.string "trades from other people, will obey\l"
-	.string "you completely.\p"
-	.string "And, it lets Pokémon use the HM move\n"
-	.string "strength outside of battle.\p"
+	.string "If you have a Heat Badge, Pokémon can\n"
+	.string "use strength outside of battle.\p"
 	.string "This is a token of my appreciation.\n"
 	.string "Don't be shy about taking it!$"
 
