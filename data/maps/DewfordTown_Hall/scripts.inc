@@ -438,3 +438,45 @@ DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
 	.string "“{STR_VAR_1}”\l"
 	.string "are in, too.$"
 
+Dewford_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_EEVEE_TRADE, Route111_EventScript_TradeCompleted
+	ingame_trade INGAME_TRADE_EEVEE, Dewford_Text_IllTradeIfYouWant, Dewford_EventScript_DeclineTrade, RustboroCity_House1_EventScript_NotRequestedMon, Dewford_Text_PleaseBeGoodToMyPokemon
+	setflag FLAG_EEVEE_TRADE
+	release
+	end
+
+Dewford_Text_IllTradeIfYouWant:
+	.string "I have this Eevee but I just can't\n"
+	.string "decide what to evolve it into.\p"
+	.string "It's just too hard to make a decision!\p"
+	.string "I have an idea. Why don't I trade\n"
+	.string "my Eevee to you and then you decide?\p"
+	.string "I'll let you trade me whatever you\n"
+	.string "want, what do you say?$"
+
+Dewford_Text_PleaseBeGoodToMyPokemon:
+	.string "I hope you have an easier time\n"
+	.string "deciding what to evolve Eevee into\l"
+	.string "than I did!$"
+
+Dewford_Text_YouDontWantToThatsOkay:
+	.string "Please let me know if you change\n"
+	.string "your mind, I can't make mine up!$"
+
+Dewford_Text_WinTheLeagueForMe:
+	.string "It's so hard to make decisions\n"
+	.string "as big as evolution.\p"
+	.string "I'm happy it's your problem now.$"
+
+Dewford_EventScript_DeclineTrade::
+	msgbox Dewford_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+Dewford_EventScript_TradeCompleted::
+	msgbox Dewford_Text_WinTheLeagueForMe, MSGBOX_DEFAULT
+	release
+	end
+

@@ -989,3 +989,51 @@ SandacondaCalmedText:
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
+Route110_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_KARRABLAST_TRADE, Route111_EventScript_TradeCompleted
+	ingame_trade INGAME_TRADE_KARRABLAST, Route111_Text_IllTradeIfYouWant, Route111_EventScript_DeclineTrade, RustboroCity_House1_EventScript_NotRequestedMon, Route111_Text_PleaseBeGoodToMyPokemon
+	setflag FLAG_KARRABLAST_TRADE
+	release
+	end
+
+Route111_Text_IllTradeIfYouWant:
+	.string "I am Arthur!\n"
+	.string "King of the Britons!\p"
+	.string "I seek the bravest and the finest\n"
+	.string "in the land who will join me in\l"
+	.string "their love of Pokémon!\p"
+	.string "You have proved yourself worthy!\p"
+	.string "I shall allow you to take my\n"
+	.string "Excalibur if you would like to\l"
+	.string "trade with me!\p"
+	.string "What say you to this?$"
+
+Route111_Text_PleaseBeGoodToMyPokemon:
+	.string "Take care of Excalibur!\p"
+	.string "With it under your command now\n"
+	.string "I can continue my quest for the\l"
+	.string "Holy Grail!$"
+
+Route111_Text_YouDontWantToThatsOkay:
+	.string "Your mother was a hamster and your\n"
+	.string "father smells of elderberries!\p"
+	.string "You make me so sad!\n"
+	.string "So be it!$"
+
+Route111_Text_WinTheLeagueForMe:
+	.string "The Holy Grail is nowhere to be\n"
+	.string "found yet it is supposedly here!\p"
+	.string "I shall keep looking and waiting!$"
+
+Route111_EventScript_DeclineTrade::
+	msgbox Route111_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+Route111_EventScript_TradeCompleted::
+	msgbox Route111_Text_WinTheLeagueForMe, MSGBOX_DEFAULT
+	release
+	end
+

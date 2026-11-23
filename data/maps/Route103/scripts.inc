@@ -381,3 +381,53 @@ Rt103RogueText:
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
+Route103_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_PACHIRISU_TRADE, Route103_EventScript_TradeCompleted
+	ingame_trade INGAME_TRADE_PACHIRISU, Route103_Text_IllTradeIfYouWant, Route103_EventScript_DeclineTrade, RustboroCity_House1_EventScript_NotRequestedMon, Route103_Text_PleaseBeGoodToMyPokemon
+	setflag FLAG_PACHIRISU_TRADE
+	release
+	end
+
+Route103_Text_IllTradeIfYouWant:
+	.string "Did you know that my Pachirisu is a\n"
+	.string "world champion?\p"
+	.string "I'd love it if Pachirisu could win\n"
+	.string "the Pokémon League too but I fear\l"
+	.string "I'm holding it back.\p"
+	.string "I'm no good at single battles, only\n"
+	.string "doubles!\p"
+	.string "Say, you have a gym badge already!\p"
+	.string "If I trade you my Pachirisu do you\n"
+	.string "think you could win the Pokémon\l"
+	.string "League with it's help?\p"
+	.string "What do you say to that?$"
+
+Route103_Text_PleaseBeGoodToMyPokemon:
+	.string "Take care of Pachirisu!\p"
+	.string "I hope you can make it a league\n"
+	.string "champ as well as a world champ!$"
+
+Route103_Text_YouDontWantToThatsOkay:
+	.string "You don't want to have the world\n"
+	.string "champ difference?\p"
+	.string "That's okay, let me know if you\n"
+	.string "change your mind.$"
+
+Route103_Text_WinTheLeagueForMe:
+	.string "How's your Pokémon League\n"
+	.string "challenge coming?\p"
+	.string "I hope Pachirisu can help you on\n"
+	.string "your quest!$"
+
+Route103_EventScript_DeclineTrade::
+	msgbox Route103_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+Route103_EventScript_TradeCompleted::
+	msgbox Route103_Text_WinTheLeagueForMe, MSGBOX_DEFAULT
+	release
+	end
+

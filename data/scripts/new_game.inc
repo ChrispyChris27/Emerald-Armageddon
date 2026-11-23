@@ -328,6 +328,7 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_CASTLE_MALE_PLAYER
 	setflag FLAG_CASTLE_FEMALE_PLAYER
 	setflag FLAG_NECROZMA_CASTLE
+	setflag FLAG_HIDE_EEVEE_TRADE
 	setvar VAR_TRICK_HOUSE_PRIZE_AMOUNT, 10
 	call EventScript_ResetAllBerries
 	end

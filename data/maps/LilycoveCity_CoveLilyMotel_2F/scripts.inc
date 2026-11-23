@@ -133,3 +133,45 @@ LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy:
 	.string "Devising CONTEST strategies is one way\n"
 	.string "of becoming a better TRAINER, I'd say.$"
 
+Lilycove_EventScript_Trader::
+	lock
+	faceplayer
+	goto_if_set FLAG_VELUZA_TRADE, Route111_EventScript_TradeCompleted
+	ingame_trade INGAME_TRADE_VELUZA, Lilycove_Text_IllTradeIfYouWant, Lilycove_EventScript_DeclineTrade, RustboroCity_House1_EventScript_NotRequestedMon, Lilycove_Text_PleaseBeGoodToMyPokemon
+	setflag FLAG_VELUZA_TRADE
+	release
+	end
+
+Lilycove_Text_IllTradeIfYouWant:
+	.string "Vaultin' Veluza!\p"
+	.string "That's what my grandfather Kofu\n"
+	.string "says to trainers at his restaurant\l"
+	.string "in the Paldea region.\p"
+	.string "I'd love to trade you your own\n"
+	.string "Vaultin' Veluza for a Hoenn Pokémon\l"
+	.string "I could bring home to Paldea.\p"
+	.string "What do you think of that?$"
+
+Lilycove_Text_PleaseBeGoodToMyPokemon:
+	.string "Vaultin' Veluza!\p"
+	.string "Have fun with your new friend!$"
+
+Lilycove_Text_YouDontWantToThatsOkay:
+	.string "I hope you might change your mind.\p"
+	.string "I'd love a souvenir to take back\n"
+	.string "to Paldea with me.$"
+
+Lilycove_Text_WinTheLeagueForMe:
+	.string "I can't wait to show grandpa\n"
+	.string "the Pokémon you traded me!$"
+
+Lilycove_EventScript_DeclineTrade::
+	msgbox Lilycove_Text_YouDontWantToThatsOkay, MSGBOX_DEFAULT
+	release
+	end
+
+Lilycove_EventScript_TradeCompleted::
+	msgbox Lilycove_Text_WinTheLeagueForMe, MSGBOX_DEFAULT
+	release
+	end
+

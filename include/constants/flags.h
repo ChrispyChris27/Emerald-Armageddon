@@ -524,10 +524,10 @@
 #define FLAG_DEFEATED_HO_OH                  0x1DC
 #define FLAG_DEFEATED_LUGIA                  0x1DD
 
-#define FLAG_UNUSED_0x1DE                    0x1DE // Unused Flag
-#define FLAG_UNUSED_0x1DF                    0x1DF // Unused Flag
-#define FLAG_UNUSED_0x1E0                    0x1E0 // Unused Flag
-#define FLAG_UNUSED_0x1E1                    0x1E1 // Unused Flag
+#define FLAG_PACHIRISU_TRADE                    0x1DE // Unused Flag
+#define FLAG_KARRABLAST_TRADE                    0x1DF // Unused Flag
+#define FLAG_VELUZA_TRADE                    0x1E0 // Unused Flag
+#define FLAG_EEVEE_TRADE                    0x1E1 // Unused Flag
 #define FLAG_UNUSED_0x1E2                    0x1E2 // Unused Flag
 #define FLAG_UNUSED_0x1E3                    0x1E3 // Unused Flag
 
@@ -1516,7 +1516,7 @@
 #define FLAG_NECROZMA_CASTLE                           (SYSTEM_FLAGS + 0x8B) // Unused Flag
 #define FLAG_CRABOMINITE                           (SYSTEM_FLAGS + 0x8C) // Unused Flag
 #define FLAG_MEOWSTICITE                           (SYSTEM_FLAGS + 0x8D) // Unused Flag
-#define FLAG_UNUSED_0x8EE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
+#define FLAG_HIDE_EEVEE_TRADE                           (SYSTEM_FLAGS + 0x8E) // Unused Flag
 #define FLAG_TATSUGIRINITE                           (SYSTEM_FLAGS + 0x8F) // Unused Flag
 #define FLAG_GLIMMORANITE                           (SYSTEM_FLAGS + 0x90) // Unused Flag
 #define FLAG_UNUSED_0x8F1                           (SYSTEM_FLAGS + 0x91) // Unused Flag
