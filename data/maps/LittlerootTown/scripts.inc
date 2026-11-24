@@ -1034,16 +1034,18 @@ BigRootBoy_Script::
 	end
 
 BigRootText:
-	.string "So this is LITTLEROOT TOWN?\p"
-	.string "With a name like that I can't be\n"
-	.string "carrying something like this around.\p"
-	.string "Since you seem to be traveling, why\n"
-	.string "don't you take it off my hands?\p"
-	.string "It belongs anywhere besides here.$"
+	.string "So this is Bigroot Beach?\p"
+	.string "I like this place much more than\n"
+	.string "Littleroot Town.\p"
+	.string "I felt like such a fool carrying\n"
+	.string "around this item but it feels right\l"
+	.string "at home here.\p"
+	.string "I can tell you love this place too,\n"
+	.string "let me share a Big Root with you.$"
 
 BigRootText2:
-	.string "That BIG ROOT makes draining moves\n"
+	.string "That Big Root makes draining moves\n"
 	.string "heal more HP from the foe.\p"
-	.string "A BIG ROOT in LITTLEROOT TOWN just\n"
-	.string "isn't right though.$"
+	.string "They wash ashore all the time, so\n"
+	.string "I'll find some more soon.$"
 
