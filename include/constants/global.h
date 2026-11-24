@@ -96,7 +96,7 @@ enum Language
 #define MAIL_COUNT (10 + PARTY_SIZE)
 #define SECRET_BASES_COUNT 3
 #define POKE_NEWS_COUNT 16
-#define PC_ITEMS_COUNT 50
+#define PC_ITEMS_COUNT 100
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define DECOR_MAX_SECRET_BASE 16
 #define DECOR_MAX_PLAYERS_HOUSE 12
@@ -110,11 +110,11 @@ enum Language
 #define ROAMER_COUNT 11
 
 // Bag constants
-#define BAG_ITEMS_COUNT 100
-#define BAG_KEYITEMS_COUNT 36
-#define BAG_POKEBALLS_COUNT 20
-#define BAG_TMHM_COUNT 80
-#define BAG_BERRIES_COUNT 64
+#define BAG_ITEMS_COUNT 200
+#define BAG_KEYITEMS_COUNT 40
+#define BAG_POKEBALLS_COUNT 28
+#define BAG_TMHM_COUNT 108
+#define BAG_BERRIES_COUNT 68
 
 // Number of facilities for Ranking Hall.
 // 7 facilities for single mode + tower double mode + tower multi mode.
