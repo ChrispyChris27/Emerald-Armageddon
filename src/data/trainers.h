@@ -51878,7 +51878,7 @@
 #line 20836
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 20835
-            .ability = ABILITY_SERENE_GRACE,
+            .ability = ABILITY_CUTE_CHARM,
 #line 20834
             .lvl = 8,
             .ball = POKEBALL_COUNT,
@@ -52631,7 +52631,7 @@
 #line 21130
                 MOVE_ICICLE_CRASH,
                 MOVE_EARTHQUAKE,
-                MOVE_PLAY_ROUGH,
+                MOVE_WAVE_CRASH,
                 MOVE_KNOCK_OFF,
             },
             },

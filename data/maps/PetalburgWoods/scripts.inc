@@ -90,9 +90,12 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 	applymovement LOCALID_PLAYER, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT
-	giveitem ITEM_GREAT_BALL
-	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_BagFull
-	goto PetalburgWoods_EventScript_DevonResearcherFinish
+	randomelement SPECIES_CHARMANDER, SPECIES_CYNDAQUIL, SPECIES_TORCHIC, SPECIES_CHIMCHAR, SPECIES_FENNEKIN, SPECIES_LITTEN, SPECIES_SCORBUNNY, SPECIES_FUECOCO
+	bufferspeciesname STR_VAR_2, VAR_RESULT
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	copyvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	goto DevonResearcherGiveMonFanFare1
 	end
 
 PetalburgWoods_EventScript_BagFull::
@@ -366,8 +369,11 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "That was awfully close!\p"
 	.string "Thanks to you, he didn't rob me of\n"
 	.string "these important papers.\p"
-	.string "I know, I'll give you a GREAT BALL as\n"
-	.string "my thanks!$"
+	.string "I know, I'll give you a Pokémon as\n"
+	.string "my thanks!\p"
+	.string "It's too weak to battle with right\n"
+	.string "now but you ought to be able to\l"
+	.string "train it to be big and strong!$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
 	.string "Didn't that TEAM MAGMA thug say\n"
@@ -472,4 +478,37 @@ PetalburgWoods_Text_TrainerTipsPP:
 	.string "make moves during battle.\p"
 	.string "If a POKéMON runs out of PP, it must be\n"
 	.string "taken to a POKéMON CENTER.$"
+
+DevonResearcherGiveMonFanFare1::
+	playfanfare MUS_OBTAIN_ITEM
+	message Starter1JoinsTeam
+	waitmessage
+	waitfanfare
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, ReceiveDevonStarterParty1
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, ReceiveDevonStarterPC1
+	goto PetalburgWoods_EventScript_DevonResearcherFinish
+
+
+Starter1JoinsTeam:
+	.string "{PLAYER} received a {STR_VAR_1}!$"
+
+ReceiveDevonStarterParty1::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, PetalburgWoods_EventScript_DevonResearcherFinish
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto PetalburgWoods_EventScript_DevonResearcherFinish
+	end
+
+ReceiveDevonStarterPC1::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, DevonResearcherSendMontoPC1
+	call Common_EventScript_NameReceivedBoxMon
+	goto DevonResearcherSendMontoPC1
+	end
+
+DevonResearcherSendMontoPC1::
+	call Common_EventScript_TransferredToPC
+	goto PetalburgWoods_EventScript_DevonResearcherFinish
+	end
 

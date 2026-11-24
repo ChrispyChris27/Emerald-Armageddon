@@ -175,7 +175,7 @@ Route110_TrickHouseEnd_EventScript_CompletedPuzzle8::
 	waitmovement 0
 	delay 30
 	msgbox Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent, MSGBOX_DEFAULT
-	givemon SPECIES_HOOPA_CONFINED, 100
+	givemon SPECIES_HOOPA_CONFINED, 80
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, SendHoopaParty
 	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, SendHoopaPC
 
