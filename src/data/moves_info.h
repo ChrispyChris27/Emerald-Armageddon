@@ -20844,7 +20844,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
             "Hits target with splashes\n"
             "of water 3 times in a row."),
         .effect = EFFECT_HIT,
-        .power = B_UPDATED_MOVE_DATA >= GEN_CHAMPIONS ? 35 : 30,
+        .power = 40,
         .type = TYPE_WATER,
         .accuracy = 100,
         .pp = 10,
