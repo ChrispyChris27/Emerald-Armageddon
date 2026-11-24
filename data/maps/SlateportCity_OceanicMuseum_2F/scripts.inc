@@ -68,6 +68,15 @@ SlateportCity_OceanicMuseum_2F_EventScript_CaptStern::
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs, MSGBOX_DEFAULT
 	setvar VAR_0x8004, ITEM_DEVON_PARTS
 	call Common_EventScript_PlayerHandedOverTheItem
+	randomelement SPECIES_SQUIRTLE, SPECIES_MUDKIP, SPECIES_PIPLUP, SPECIES_OSHAWOTT, SPECIES_FROAKIE, SPECIES_POPPLIO, SPECIES_SOBBLE, SPECIES_QUAXLY
+	bufferspeciesname STR_VAR_2, VAR_RESULT
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	copyvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	goto DevonResearcherGiveMonFanFare3
+	end
+
+Slateport_Stern_Depart::
 	msgbox SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo, MSGBOX_DEFAULT
 	closemessage
 	fadescreen FADE_TO_BLACK
@@ -346,7 +355,9 @@ SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs:
 	.string "Anyway, that was a tense situation!\n"
 	.string "Thank you for saving us!\p"
 	.string "Oh, yes, I almost forgot that you\n"
-	.string "even brought the parts from DEVON!$"
+	.string "even brought the parts from DEVON!\p"
+	.string "In exchange, let me give you a water\n"
+	.string "type pokémon!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo:
 	.string "CAPT. STERN: Whoops!\n"
@@ -430,3 +441,37 @@ SlateportCity_OceanicMuseum_2F_Text_SSAnneReplica:
 	.string "“S.S. ANNE\p"
 	.string "“A replica of the luxury liner that\n"
 	.string "circles the globe.”$"
+
+DevonResearcherGiveMonFanFare3::
+	playfanfare MUS_OBTAIN_ITEM
+	message Starter3JoinsTeam
+	waitmessage
+	waitfanfare
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, ReceiveDevonStarterParty3
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, ReceiveDevonStarterPC3
+	goto Slateport_Stern_Depart
+
+
+Starter3JoinsTeam:
+	.string "{PLAYER} received a {STR_VAR_1} in\n"
+	.string "exchange for the Devon Parts!$"
+
+ReceiveDevonStarterParty3::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, Slateport_Stern_Depart
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto Slateport_Stern_Depart
+	end
+
+ReceiveDevonStarterPC3::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, DevonResearcherSendMontoPC3
+	call Common_EventScript_NameReceivedBoxMon
+	goto DevonResearcherSendMontoPC3
+	end
+
+DevonResearcherSendMontoPC3::
+	call Common_EventScript_TransferredToPC
+	goto Slateport_Stern_Depart
+	end

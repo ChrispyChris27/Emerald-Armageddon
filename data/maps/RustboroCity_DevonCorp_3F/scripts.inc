@@ -57,7 +57,15 @@ RustboroCity_DevonCorp_3F_EventScript_MeetPresident::
 	setflag FLAG_HIDE_RUSTBORO_CITY_POKEMON_SCHOOL_SCOTT
 	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp, MSGBOX_DEFAULT
 	closemessage
-	call Common_EventScript_OutOfCenterPartyHeal
+	randomelement SPECIES_BULBASAUR, SPECIES_TREECKO, SPECIES_TURTWIG, SPECIES_SNIVY, SPECIES_CHESPIN, SPECIES_ROWLET, SPECIES_GROOKEY, SPECIES_SPRIGATITO
+	bufferspeciesname STR_VAR_2, VAR_RESULT
+	bufferspeciesname STR_VAR_1, VAR_RESULT
+	copyvar VAR_TEMP_TRANSFERRED_SPECIES, VAR_RESULT
+	givemon VAR_RESULT, 5
+	goto DevonResearcherGiveMonFanFare2
+	end
+
+DevonCorpSendPlayerToSlateport::
 	msgbox RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare, MSGBOX_DEFAULT
 	setvar VAR_BRINEY_LOCATION, 3
 	setflag FLAG_HIDE_RUSTURF_TUNNEL_ROCK_1
@@ -232,8 +240,9 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "third team may also be on the loose.\p"
 	.string "I heard they are trying to acquire\n"
 	.string "that package so you best watch out.\p"
-	.string "I think it would be best if you rested\n"
-	.string "up before you go on your way.$"
+	.string "I hear that they tend to use water\n"
+	.string "type pokémon, so perhaps a grass\l"
+	.string "type pokémon may be of some help.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare:
 	.string "MR. STONE: Well, then, {PLAYER}{KUN},\n"
@@ -311,4 +320,36 @@ RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular:
 RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 	.string "It's a collection of rare rocks and\n"
 	.string "stones assembled by the PRESIDENT.$"
+
+DevonResearcherGiveMonFanFare2::
+	playfanfare MUS_OBTAIN_ITEM
+	message Starter2JoinsTeam
+	waitmessage
+	waitfanfare
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PARTY, ReceiveDevonStarterParty2
+	goto_if_eq VAR_RESULT, MON_GIVEN_TO_PC, ReceiveDevonStarterPC2
+	goto DevonCorpSendPlayerToSlateport
+
+Starter2JoinsTeam:
+	.string "{PLAYER} received a {STR_VAR_1}!$"
+
+ReceiveDevonStarterParty2::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, DevonCorpSendPlayerToSlateport
+	call Common_EventScript_GetGiftMonPartySlot
+	call Common_EventScript_NameReceivedPartyMon
+	goto DevonCorpSendPlayerToSlateport
+	end
+
+ReceiveDevonStarterPC2::
+	msgbox gText_NicknameThisPokemon, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, DevonResearcherSendMontoPC2
+	call Common_EventScript_NameReceivedBoxMon
+	goto DevonResearcherSendMontoPC2
+	end
+
+DevonResearcherSendMontoPC2::
+	call Common_EventScript_TransferredToPC
+	goto DevonCorpSendPlayerToSlateport
+	end
 
