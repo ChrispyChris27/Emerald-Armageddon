@@ -398,8 +398,8 @@
       "x": 65,
       "y": 10,
       "elevation": 0,
-      "dest_map": "MAP_RUSTURF_TUNNEL",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_VERDANBORO_PATH",
+      "dest_warp_id": "1"
     },
     {
       "x": 59,

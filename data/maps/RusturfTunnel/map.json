@@ -3,7 +3,6 @@
   "name": "RusturfTunnel",
   "layout": "LAYOUT_RUSTURF_TUNNEL",
   "music": "MUS_PETALBURG_WOODS",
-  "region": "REGION_HOENN",
   "region_map_section": "MAPSEC_RUSTURF_TUNNEL",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
@@ -170,8 +169,8 @@
       "x": 18,
       "y": 20,
       "elevation": 3,
-      "dest_map": "MAP_ROUTE116",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_VERDANBORO_PATH",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -221,5 +220,6 @@
       "script": "RusturfTunnel_EventScript_TunnelBlockagePos3"
     }
   ],
-  "bg_events": []
+  "bg_events": [],
+  "region": "REGION_HOENN"
 }

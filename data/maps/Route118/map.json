@@ -24,8 +24,8 @@
       "direction": "left"
     },
     {
-      "map": "MAP_ROUTE123",
-      "offset": 0,
+      "map": "MAP_OLD_MAUVILLE",
+      "offset": -5,
       "direction": "right"
     }
   ],

@@ -103,6 +103,13 @@ enum
     MAP_ULTRA_SPACE                        = (88 | (0 << 8)),
     MAP_BIGROOT_BEACH                      = (89 | (0 << 8)),
     MAP_BIGROOT_BAY                        = (90 | (0 << 8)),
+    MAP_VERDANBORO_PATH                    = (91 | (0 << 8)),
+    MAP_OLD_MAUVILLE                       = (92 | (0 << 8)),
+    MAP_OLD_MAUVILLE_HOUSE1                = (93 | (0 << 8)),
+    MAP_OLD_MAUVILLE_HOUSE2                = (94 | (0 << 8)),
+    MAP_OLD_MAUVILLE_POKEMON_CENTER1F      = (95 | (0 << 8)),
+    MAP_OLD_MAUVILLE_POKEMON_CENTER2F      = (96 | (0 << 8)),
+    MAP_OLD_MAUVILLE_MUSEUM                = (97 | (0 << 8)),
 
     // gMapGroup_IndoorLittleroot
     MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    = (0 | (1 << 8)),

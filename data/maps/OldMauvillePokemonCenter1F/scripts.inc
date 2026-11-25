@@ -1,0 +1,7 @@
+OldMauvillePokemonCenter1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, OldMauvillePokemonCenter1F_OnTransition
+	.byte 0
+
+OldMauvillePokemonCenter1F_OnTransition:
+	setrespawn HEAL_LOCATION_OLD_MAUVILLE
+	end

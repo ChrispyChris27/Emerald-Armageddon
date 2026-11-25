@@ -16,7 +16,6 @@ LavaridgeTown_Mart_Pokemart:
 	.2byte ITEM_FAST_BALL
 	.2byte ITEM_LEVEL_BALL
 	.2byte ITEM_HEAVY_BALL
-	.2byte ITEM_OVAL_STONE
 	.2byte ITEM_DUSK_STONE
 	.2byte ITEM_DAWN_STONE
 	.2byte ITEM_SHINY_STONE

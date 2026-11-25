@@ -1861,3 +1861,17 @@ Common_EventScript_SetSnow:
 	.include "data/maps/BigrootBeach/scripts.inc"
 
 	.include "data/maps/BigrootBay/scripts.inc"
+
+	.include "data/maps/VerdanboroPath/scripts.inc"
+
+	.include "data/maps/OldMauville/scripts.inc"
+
+	.include "data/maps/OldMauvilleHouse1/scripts.inc"
+
+	.include "data/maps/OldMauvilleHouse2/scripts.inc"
+
+	.include "data/maps/OldMauvillePokemonCenter1F/scripts.inc"
+
+	.include "data/maps/OldMauvillePokemonCenter2F/scripts.inc"
+
+	.include "data/maps/OldMauvilleMuseum/scripts.inc"

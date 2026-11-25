@@ -167,7 +167,14 @@
     "DistortionWorldArceusRoom",
     "UltraSpace",
     "BigrootBeach",
-    "BigrootBay"
+    "BigrootBay",
+    "VerdanboroPath",
+    "OldMauville",
+    "OldMauvilleHouse1",
+    "OldMauvilleHouse2",
+    "OldMauvillePokemonCenter1F",
+    "OldMauvillePokemonCenter2F",
+    "OldMauvilleMuseum"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

@@ -1762,6 +1762,22 @@
       "y": 0,
       "width": 1,
       "height": 1
+    },
+    {
+      "id": "MAPSEC_VERDANBORO_PATH",
+      "name": "VERDANBORO_PATH",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
+      "id": "MAPSEC_OLD_MAUVILLE",
+      "name": "OLD MAUVILLE",
+      "x": 12,
+      "y": 6,
+      "width": 1,
+      "height": 1
     }
   ]
 }

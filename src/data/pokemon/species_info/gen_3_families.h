@@ -3513,7 +3513,7 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .levelUpLearnset = sSlakothLevelUpLearnset,
         .teachableLearnset = sSlakothTeachableLearnset,
         .eggMoveLearnset = sSlakothEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 24, SPECIES_VIGOROTH}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_VIGOROTH}),
     },
 
     [SPECIES_VIGOROTH] =

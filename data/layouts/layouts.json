@@ -9954,6 +9954,76 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/BigrootBay/border.bin",
       "blockdata_filepath": "data/layouts/BigrootBay/map.bin"
+    },
+    {
+      "id": "LAYOUT_VERDANBORO_PATH",
+      "name": "VerdanboroPath_Layout",
+      "width": 27,
+      "height": 27,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_RusturfTunnel",
+      "border_filepath": "data/layouts/VerdanboroPath/border.bin",
+      "blockdata_filepath": "data/layouts/VerdanboroPath/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_MAUVILLE",
+      "name": "OldMauville_Layout",
+      "width": 21,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/OldMauville/border.bin",
+      "blockdata_filepath": "data/layouts/OldMauville/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_MAUVILLE_HOUSE2",
+      "name": "OldMauvilleHouse2_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OldMauvilleHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/OldMauvilleHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_MAUVILLE_HOUSE1",
+      "name": "OldMauvilleHouse1_Layout",
+      "width": 10,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OldMauvilleHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/OldMauvilleHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_MAUVILLE_POKEMON_CENTER1F",
+      "name": "OldMauvillePokemonCenter1F_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/OldMauvillePokemonCenter1F/border.bin",
+      "blockdata_filepath": "data/layouts/OldMauvillePokemonCenter1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_MAUVILLE_POKEMON_CENTER2F",
+      "name": "OldMauvillePokemonCenter2F_Layout",
+      "width": 14,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/OldMauvillePokemonCenter2F/border.bin",
+      "blockdata_filepath": "data/layouts/OldMauvillePokemonCenter2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_OLD_MAUVILLE_MUSEUM",
+      "name": "OldMauvilleMuseum_Layout",
+      "width": 22,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_LilycoveMuseum",
+      "border_filepath": "data/layouts/OldMauvilleMuseum/border.bin",
+      "blockdata_filepath": "data/layouts/OldMauvilleMuseum/map.bin"
     }
   ]
 }

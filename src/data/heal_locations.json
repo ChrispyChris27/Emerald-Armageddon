@@ -353,6 +353,12 @@
       "map": "MAP_DISTORTION_WORLD_ROOM4",
       "x": 9,
       "y": 5
+    },
+    {
+      "id": "HEAL_LOCATION_OLD_MAUVILLE",
+      "map": "MAP_OLD_MAUVILLE",
+      "x": 2,
+      "y": 14
     }
   ]
 }
