@@ -69,7 +69,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sGrookeyLevelUpLearnset,
         .teachableLearnset = sGrookeyTeachableLearnset,
         .eggMoveLearnset = sGrookeyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_THWACKEY}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_THWACKEY}),
     },
 
     [SPECIES_THWACKEY] =
@@ -135,7 +135,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sThwackeyLevelUpLearnset,
         .teachableLearnset = sThwackeyTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_RILLABOOM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_RILLABOOM}),
     },
 
     [SPECIES_RILLABOOM] =
@@ -336,7 +336,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sScorbunnyLevelUpLearnset,
         .teachableLearnset = sScorbunnyTeachableLearnset,
         .eggMoveLearnset = sScorbunnyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_RABOOT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_RABOOT}),
     },
 
     [SPECIES_RABOOT] =
@@ -403,7 +403,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sRabootLevelUpLearnset,
         .teachableLearnset = sRabootTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_CINDERACE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_CINDERACE}),
     },
 
     [SPECIES_CINDERACE] =
@@ -601,7 +601,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         .levelUpLearnset = sSobbleLevelUpLearnset,
         .teachableLearnset = sSobbleTeachableLearnset,
         .eggMoveLearnset = sSobbleEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_DRIZZILE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_DRIZZILE}),
     },
 
     [SPECIES_DRIZZILE] =
@@ -667,7 +667,7 @@ const struct SpeciesInfo gSpeciesInfoGen8[] =
         )
         .levelUpLearnset = sDrizzileLevelUpLearnset,
         .teachableLearnset = sDrizzileTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_INTELEON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_INTELEON}),
     },
 
     [SPECIES_INTELEON] =

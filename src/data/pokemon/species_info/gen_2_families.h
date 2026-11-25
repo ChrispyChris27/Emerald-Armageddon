@@ -72,7 +72,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sChikoritaLevelUpLearnset,
         .teachableLearnset = sChikoritaTeachableLearnset,
         .eggMoveLearnset = sChikoritaEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_BAYLEEF}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_BAYLEEF}),
     },
 
     [SPECIES_BAYLEEF] =
@@ -140,7 +140,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sBayleefLevelUpLearnset,
         .teachableLearnset = sBayleefTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MEGANIUM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MEGANIUM}),
     },
 
     [SPECIES_MEGANIUM] =
@@ -360,7 +360,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sCyndaquilLevelUpLearnset,
         .teachableLearnset = sCyndaquilTeachableLearnset,
         .eggMoveLearnset = sCyndaquilEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_QUILAVA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_QUILAVA}),
     },
 
     [SPECIES_QUILAVA] =
@@ -428,8 +428,8 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sQuilavaLevelUpLearnset,
         .teachableLearnset = sQuilavaTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TYPHLOSION},
-                                {EVO_NONE, 0, SPECIES_TYPHLOSION_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_TYPHLOSION_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_OLD_MAUVILLE})},
+                                {EVO_LEVEL, 40, SPECIES_TYPHLOSION}),
     },
 
     [SPECIES_TYPHLOSION] =
@@ -646,7 +646,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         .levelUpLearnset = sTotodileLevelUpLearnset,
         .teachableLearnset = sTotodileTeachableLearnset,
         .eggMoveLearnset = sTotodileEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_CROCONAW}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_CROCONAW}),
     },
 
     [SPECIES_CROCONAW] =
@@ -715,7 +715,7 @@ const struct SpeciesInfo gSpeciesInfoGen2[] =
         )
         .levelUpLearnset = sCroconawLevelUpLearnset,
         .teachableLearnset = sCroconawTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_FERALIGATR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_FERALIGATR}),
     },
 
     [SPECIES_FERALIGATR] =

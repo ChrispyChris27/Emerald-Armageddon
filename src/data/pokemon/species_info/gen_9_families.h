@@ -66,7 +66,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sSprigatitoLevelUpLearnset,
         .teachableLearnset = sSprigatitoTeachableLearnset,
         .eggMoveLearnset = sSprigatitoEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_FLORAGATO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_FLORAGATO}),
     },
 
     [SPECIES_FLORAGATO] =
@@ -130,7 +130,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sFloragatoLevelUpLearnset,
         .teachableLearnset = sFloragatoTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_MEOWSCARADA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_MEOWSCARADA}),
     },
 
     [SPECIES_MEOWSCARADA] =
@@ -260,7 +260,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sFuecocoLevelUpLearnset,
         .teachableLearnset = sFuecocoTeachableLearnset,
         .eggMoveLearnset = sFuecocoEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_CROCALOR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_CROCALOR}),
     },
 
     [SPECIES_CROCALOR] =
@@ -324,7 +324,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sCrocalorLevelUpLearnset,
         .teachableLearnset = sCrocalorTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SKELEDIRGE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SKELEDIRGE}),
     },
 
     [SPECIES_SKELEDIRGE] =
@@ -454,7 +454,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .levelUpLearnset = sQuaxlyLevelUpLearnset,
         .teachableLearnset = sQuaxlyTeachableLearnset,
         .eggMoveLearnset = sQuaxlyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_QUAXWELL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_QUAXWELL}),
     },
 
     [SPECIES_QUAXWELL] =
@@ -518,7 +518,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         )
         .levelUpLearnset = sQuaxwellLevelUpLearnset,
         .teachableLearnset = sQuaxwellTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_QUAQUAVAL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_QUAQUAVAL}),
     },
 
     [SPECIES_QUAQUAVAL] =

@@ -70,7 +70,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sTurtwigLevelUpLearnset,
         .teachableLearnset = sTurtwigTeachableLearnset,
         .eggMoveLearnset = sTurtwigEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_GROTLE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GROTLE}),
     },
 
     [SPECIES_GROTLE] =
@@ -139,7 +139,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sGrotleLevelUpLearnset,
         .teachableLearnset = sGrotleTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_TORTERRA}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_TORTERRA}),
     },
 
     [SPECIES_TORTERRA] =
@@ -288,7 +288,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sChimcharLevelUpLearnset,
         .teachableLearnset = sChimcharTeachableLearnset,
         .eggMoveLearnset = sChimcharEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_MONFERNO}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_MONFERNO}),
     },
 
     [SPECIES_MONFERNO] =
@@ -360,7 +360,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sMonfernoLevelUpLearnset,
         .teachableLearnset = sMonfernoTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_INFERNAPE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_INFERNAPE}),
     },
 
     [SPECIES_INFERNAPE] =
@@ -510,7 +510,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         .levelUpLearnset = sPiplupLevelUpLearnset,
         .teachableLearnset = sPiplupTeachableLearnset,
         .eggMoveLearnset = sPiplupEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PRINPLUP}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_PRINPLUP}),
     },
 
     [SPECIES_PRINPLUP] =
@@ -588,7 +588,7 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
         )
         .levelUpLearnset = sPrinplupLevelUpLearnset,
         .teachableLearnset = sPrinplupTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_EMPOLEON}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_EMPOLEON}),
     },
 
     [SPECIES_EMPOLEON] =

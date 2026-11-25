@@ -142,7 +142,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sSnivyLevelUpLearnset,
         .teachableLearnset = sSnivyTeachableLearnset,
         .eggMoveLearnset = sSnivyEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_SERVINE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_SERVINE}),
     },
 
     [SPECIES_SERVINE] =
@@ -214,7 +214,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sServineLevelUpLearnset,
         .teachableLearnset = sServineTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SERPERIOR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_SERPERIOR}),
     },
 
     [SPECIES_SERPERIOR] =
@@ -358,7 +358,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sTepigLevelUpLearnset,
         .teachableLearnset = sTepigTeachableLearnset,
         .eggMoveLearnset = sTepigEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_PIGNITE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_PIGNITE}),
     },
 
     [SPECIES_PIGNITE] =
@@ -426,7 +426,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sPigniteLevelUpLearnset,
         .teachableLearnset = sPigniteTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_EMBOAR}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_EMBOAR}),
     },
 
     [SPECIES_EMBOAR] =
@@ -650,7 +650,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sOshawottLevelUpLearnset,
         .teachableLearnset = sOshawottTeachableLearnset,
         .eggMoveLearnset = sOshawottEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 16, SPECIES_DEWOTT}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_DEWOTT}),
     },
 
     [SPECIES_DEWOTT] =
@@ -720,8 +720,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sDewottLevelUpLearnset,
         .teachableLearnset = sDewottTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_SAMUROTT},
-                                {EVO_NONE, 0, SPECIES_SAMUROTT_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_SAMUROTT_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_OLD_MAUVILLE})},
+                                {EVO_LEVEL, 40, SPECIES_SAMUROTT}),
     },
 
     [SPECIES_SAMUROTT] =
@@ -2761,7 +2761,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .levelUpLearnset = sDrilburLevelUpLearnset,
         .teachableLearnset = sDrilburTeachableLearnset,
         .eggMoveLearnset = sDrilburEggMoveLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_EXCADRILL}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 45, SPECIES_EXCADRILL}),
     },
 
     [SPECIES_EXCADRILL] =
@@ -4347,7 +4347,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .teachableLearnset = sPetililTeachableLearnset,
         .eggMoveLearnset = sPetililEggMoveLearnset,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_SUN_STONE, SPECIES_LILLIGANT},
-                                {EVO_ITEM, ITEM_LEAF_STONE, SPECIES_LILLIGANT_HISUI}),
+                                {EVO_LEVEL, 0, SPECIES_LILLIGANT_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_OLD_MAUVILLE})}),
     },
 
     [SPECIES_LILLIGANT] =
@@ -9526,7 +9526,7 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         )
         .levelUpLearnset = sKlangLevelUpLearnset,
         .teachableLearnset = sKlangTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 36, SPECIES_KLINKLANG}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 40, SPECIES_KLINKLANG}),
     },
 
     [SPECIES_KLINKLANG] =
@@ -11789,8 +11789,8 @@ const struct SpeciesInfo gSpeciesInfoGen5[] =
         .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
         .levelUpLearnset = sRuffletLevelUpLearnset,
         .teachableLearnset = sRuffletTeachableLearnset,
-        .evolutions = EVOLUTION({EVO_LEVEL, 30, SPECIES_BRAVIARY},
-                                {EVO_ITEM, ITEM_DAWN_STONE, SPECIES_BRAVIARY_HISUI}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_BRAVIARY_HISUI, CONDITIONS({IF_IN_MAPSEC, MAPSEC_OLD_MAUVILLE})},
+                                {EVO_LEVEL, 30, SPECIES_BRAVIARY}),
     },
 
     [SPECIES_BRAVIARY] =
