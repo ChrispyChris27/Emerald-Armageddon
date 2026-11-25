@@ -25971,17 +25971,67 @@ Pic: Bird Keeper
 Gender: Male
 Music: Cool
 Battle Type: Singles
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try To 2Hko
 
-Taillow
-Level: 25
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Pidgey @ Berry Juice
+Level: 8
+Ability: Big Pecks
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Twister
+- Air Cutter
+- Heat Wave
+- Ominous Wind
 
-Wingull
-Level: 25
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-Nature: Hardy
+Hoothoot @ Berry Juice
+Level: 8
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hypnosis
+- Air Cutter
+- Psybeam
+- Ominous Wind
+
+Hoothoot @ Berry Juice
+Level: 8
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Timid
+- Hypnosis
+- Air Cutter
+- Psybeam
+- Ominous Wind
+
+Fletchling @ Berry Juice
+Level: 8
+Ability: Gale Wings
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Adamant
+- Pluck
+- Flame Charge
+- Steel Wing
+- Roost
+
+Rookidee @ Berry Juice
+Level: 8
+Ability: Keen Eye
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Jolly
+- Pluck
+- Rock Smash
+- Pursuit
+- Roost
+
+Wattrel @ Berry Juice
+Level: 8
+Ability: Competitive
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Nature: Modest
+- Air Cutter
+- Charge Beam
+- Thunder Wave
+- Roost
 
 === TRAINER_CAMRON ===
 Name: CAMRON

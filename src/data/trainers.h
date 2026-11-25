@@ -64595,56 +64595,174 @@
 #line 25973
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 25974
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
-        .partySize = 2,
+        .partySize = 6,
         .party = (const struct TrainerMon[])
         {
             {
 #line 25976
-            .species = SPECIES_TAILLOW,
+            .species = SPECIES_PIDGEY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 25978
-            .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-#line 25977
-            .lvl = 25,
-            .ball = POKEBALL_COUNT,
+#line 25976
+            .heldItem = ITEM_BERRY_JUICE,
 #line 25979
-            .nature = NATURE_HARDY,
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 25978
+            .ability = ABILITY_BIG_PECKS,
+#line 25977
+            .lvl = 8,
+            .ball = POKEBALL_COUNT,
+#line 25980
+            .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 25981
+                MOVE_TWISTER,
+                MOVE_AIR_CUTTER,
+                MOVE_HEAT_WAVE,
+                MOVE_OMINOUS_WIND,
+            },
             },
             {
-#line 25981
-            .species = SPECIES_WINGULL,
+#line 25986
+            .species = SPECIES_HOOTHOOT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 25983
-            .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-#line 25982
-            .lvl = 25,
+#line 25986
+            .heldItem = ITEM_BERRY_JUICE,
+#line 25989
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 25988
+            .ability = ABILITY_KEEN_EYE,
+#line 25987
+            .lvl = 8,
             .ball = POKEBALL_COUNT,
-#line 25984
-            .nature = NATURE_HARDY,
+#line 25990
+            .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 25991
+                MOVE_HYPNOSIS,
+                MOVE_AIR_CUTTER,
+                MOVE_PSYBEAM,
+                MOVE_OMINOUS_WIND,
+            },
+            },
+            {
+#line 25996
+            .species = SPECIES_HOOTHOOT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 25996
+            .heldItem = ITEM_BERRY_JUICE,
+#line 25999
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 25998
+            .ability = ABILITY_KEEN_EYE,
+#line 25997
+            .lvl = 8,
+            .ball = POKEBALL_COUNT,
+#line 26000
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 26001
+                MOVE_HYPNOSIS,
+                MOVE_AIR_CUTTER,
+                MOVE_PSYBEAM,
+                MOVE_OMINOUS_WIND,
+            },
+            },
+            {
+#line 26006
+            .species = SPECIES_FLETCHLING,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 26006
+            .heldItem = ITEM_BERRY_JUICE,
+#line 26009
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 26008
+            .ability = ABILITY_GALE_WINGS,
+#line 26007
+            .lvl = 8,
+            .ball = POKEBALL_COUNT,
+#line 26010
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 26011
+                MOVE_PLUCK,
+                MOVE_FLAME_CHARGE,
+                MOVE_STEEL_WING,
+                MOVE_ROOST,
+            },
+            },
+            {
+#line 26016
+            .species = SPECIES_ROOKIDEE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 26016
+            .heldItem = ITEM_BERRY_JUICE,
+#line 26019
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 26018
+            .ability = ABILITY_KEEN_EYE,
+#line 26017
+            .lvl = 8,
+            .ball = POKEBALL_COUNT,
+#line 26020
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 26021
+                MOVE_PLUCK,
+                MOVE_ROCK_SMASH,
+                MOVE_PURSUIT,
+                MOVE_ROOST,
+            },
+            },
+            {
+#line 26026
+            .species = SPECIES_WATTREL,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 26026
+            .heldItem = ITEM_BERRY_JUICE,
+#line 26029
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 26028
+            .ability = ABILITY_COMPETITIVE,
+#line 26027
+            .lvl = 8,
+            .ball = POKEBALL_COUNT,
+#line 26030
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 26031
+                MOVE_AIR_CUTTER,
+                MOVE_CHARGE_BEAM,
+                MOVE_THUNDER_WAVE,
+                MOVE_ROOST,
+            },
             },
         },
     },
-#line 25986
+#line 26036
     [DIFFICULTY_NORMAL][TRAINER_CAMRON] =
     {
-#line 25987
+#line 26037
         .trainerName = _("CAMRON"),
-#line 25988
+#line 26038
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
-#line 25989
+#line 26039
         .trainerPic = TRAINER_PIC_SWIMMING_TRIATHLETE_M,
-#line 25990
+#line 26040
         .gender = TRAINER_GENDER_MALE,
-#line 25991
+#line 26041
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SWIMMER,
-#line 25992
+#line 26042
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 25993
+#line 26043
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -64652,36 +64770,36 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 25995
+#line 26045
             .species = SPECIES_STARYU,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 25997
+#line 26047
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 25996
+#line 26046
             .lvl = 26,
             .ball = POKEBALL_COUNT,
-#line 25998
+#line 26048
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26000
+#line 26050
     [DIFFICULTY_NORMAL][TRAINER_CORY_1] =
     {
-#line 26001
+#line 26051
         .trainerName = _("CORY"),
-#line 26002
+#line 26052
         .trainerClass = TRAINER_CLASS_SAILOR,
-#line 26003
+#line 26053
         .trainerPic = TRAINER_PIC_SAILOR,
-#line 26004
+#line 26054
         .gender = TRAINER_GENDER_MALE,
-#line 26005
+#line 26055
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 26006
+#line 26056
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26007
+#line 26057
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -64689,62 +64807,62 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26009
+#line 26059
             .species = SPECIES_WINGULL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26011
+#line 26061
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26010
+#line 26060
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 26012
+#line 26062
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26014
+#line 26064
             .species = SPECIES_MACHOP,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26016
+#line 26066
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26015
+#line 26065
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 26017
+#line 26067
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26019
+#line 26069
             .species = SPECIES_TENTACOOL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26021
+#line 26071
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26020
+#line 26070
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 26022
+#line 26072
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26024
+#line 26074
     [DIFFICULTY_NORMAL][TRAINER_CAROLINA] =
     {
-#line 26025
+#line 26075
         .trainerName = _("CAROLINA"),
-#line 26026
+#line 26076
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
-#line 26027
+#line 26077
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-#line 26028
+#line 26078
         .gender = TRAINER_GENDER_FEMALE,
-#line 26029
+#line 26079
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-#line 26030
+#line 26080
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26031
+#line 26081
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -64752,62 +64870,62 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26033
+#line 26083
             .species = SPECIES_MANECTRIC,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26035
+#line 26085
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-#line 26034
+#line 26084
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 26036
+#line 26086
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26038
+#line 26088
             .species = SPECIES_SWELLOW,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26040
+#line 26090
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-#line 26039
+#line 26089
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 26041
+#line 26091
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26043
+#line 26093
             .species = SPECIES_MANECTRIC,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26045
+#line 26095
             .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-#line 26044
+#line 26094
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 26046
+#line 26096
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26048
+#line 26098
     [DIFFICULTY_NORMAL][TRAINER_ELIJAH] =
     {
-#line 26049
+#line 26099
         .trainerName = _("ELIJAH"),
-#line 26050
+#line 26100
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-#line 26051
+#line 26101
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-#line 26052
+#line 26102
         .gender = TRAINER_GENDER_MALE,
-#line 26053
+#line 26103
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-#line 26054
+#line 26104
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26055
+#line 26105
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -64815,49 +64933,49 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26057
+#line 26107
             .species = SPECIES_SKARMORY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26059
+#line 26109
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26058
+#line 26108
             .lvl = 25,
             .ball = POKEBALL_COUNT,
-#line 26060
+#line 26110
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26062
+#line 26112
             .species = SPECIES_SKARMORY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26064
+#line 26114
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26063
+#line 26113
             .lvl = 25,
             .ball = POKEBALL_COUNT,
-#line 26065
+#line 26115
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26067
+#line 26117
     [DIFFICULTY_NORMAL][TRAINER_CELIA] =
     {
-#line 26068
+#line 26118
         .trainerName = _("CELIA"),
-#line 26069
+#line 26119
         .trainerClass = TRAINER_CLASS_PICNICKER,
-#line 26070
+#line 26120
         .trainerPic = TRAINER_PIC_PICNICKER,
-#line 26071
+#line 26121
         .gender = TRAINER_GENDER_FEMALE,
-#line 26072
+#line 26122
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_GIRL,
-#line 26073
+#line 26123
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26074
+#line 26124
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -64865,23 +64983,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26076
+#line 26126
             .species = SPECIES_STUNFISK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26076
+#line 26126
             .heldItem = ITEM_EXPERT_BELT,
-#line 26079
+#line 26129
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26078
+#line 26128
             .ability = ABILITY_SAND_VEIL,
-#line 26077
+#line 26127
             .lvl = 48,
             .ball = POKEBALL_COUNT,
-#line 26080
+#line 26130
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26081
+#line 26131
                 MOVE_EARTH_POWER,
                 MOVE_DISCHARGE,
                 MOVE_MUDDY_WATER,
@@ -64889,23 +65007,23 @@
             },
             },
             {
-#line 26086
+#line 26136
             .species = SPECIES_BASTIODON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26086
+#line 26136
             .heldItem = ITEM_CHOPLE_BERRY,
-#line 26089
+#line 26139
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26088
+#line 26138
             .ability = ABILITY_STURDY,
-#line 26087
+#line 26137
             .lvl = 48,
             .ball = POKEBALL_COUNT,
-#line 26090
+#line 26140
             .nature = NATURE_CAREFUL,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26091
+#line 26141
                 MOVE_BODY_PRESS,
                 MOVE_STONE_EDGE,
                 MOVE_SHORE_UP,
@@ -64913,23 +65031,23 @@
             },
             },
             {
-#line 26096
+#line 26146
             .species = SPECIES_EXCADRILL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26096
+#line 26146
             .heldItem = ITEM_ASSAULT_VEST,
-#line 26099
+#line 26149
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26098
+#line 26148
             .ability = ABILITY_SAND_FORCE,
-#line 26097
+#line 26147
             .lvl = 48,
             .ball = POKEBALL_COUNT,
-#line 26100
+#line 26150
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26101
+#line 26151
                 MOVE_EARTHQUAKE,
                 MOVE_STONE_EDGE,
                 MOVE_IRON_HEAD,
@@ -64937,23 +65055,23 @@
             },
             },
             {
-#line 26106
+#line 26156
             .species = SPECIES_SANDACONDA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26106
+#line 26156
             .heldItem = ITEM_LOADED_DICE,
-#line 26109
+#line 26159
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26108
+#line 26158
             .ability = ABILITY_SAND_VEIL,
-#line 26107
+#line 26157
             .lvl = 48,
             .ball = POKEBALL_COUNT,
-#line 26110
+#line 26160
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26111
+#line 26161
                 MOVE_EARTHQUAKE,
                 MOVE_STONE_EDGE,
                 MOVE_COIL,
@@ -64961,23 +65079,23 @@
             },
             },
             {
-#line 26116
+#line 26166
             .species = SPECIES_SANDSLASH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26116
+#line 26166
             .heldItem = ITEM_SCOPE_LENS,
-#line 26119
+#line 26169
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26118
+#line 26168
             .ability = ABILITY_SAND_RUSH,
-#line 26117
+#line 26167
             .lvl = 48,
             .ball = POKEBALL_COUNT,
-#line 26120
+#line 26170
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26121
+#line 26171
                 MOVE_DRILL_RUN,
                 MOVE_STONE_EDGE,
                 MOVE_X_SCISSOR,
@@ -64986,22 +65104,22 @@
             },
         },
     },
-#line 26126
+#line 26176
     [DIFFICULTY_NORMAL][TRAINER_BRYAN] =
     {
-#line 26127
+#line 26177
         .trainerName = _("BRYAN"),
-#line 26128
+#line 26178
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-#line 26129
+#line 26179
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-#line 26130
+#line 26180
         .gender = TRAINER_GENDER_MALE,
-#line 26131
+#line 26181
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-#line 26132
+#line 26182
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26133
+#line 26183
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65009,23 +65127,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26135
+#line 26185
             .species = SPECIES_RELICANTH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26135
+#line 26185
             .heldItem = ITEM_RINDO_BERRY,
-#line 26138
+#line 26188
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26137
+#line 26187
             .ability = ABILITY_ROCK_HEAD,
-#line 26136
+#line 26186
             .lvl = 48,
             .ball = POKEBALL_COUNT,
-#line 26139
+#line 26189
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26140
+#line 26190
                 MOVE_HEAD_SMASH,
                 MOVE_WAVE_CRASH,
                 MOVE_EARTHQUAKE,
@@ -65033,23 +65151,23 @@
             },
             },
             {
-#line 26145
+#line 26195
             .species = SPECIES_RAMPARDOS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26145
+#line 26195
             .heldItem = ITEM_LIFE_ORB,
-#line 26148
+#line 26198
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26147
+#line 26197
             .ability = ABILITY_SHEER_FORCE,
-#line 26146
+#line 26196
             .lvl = 48,
             .ball = POKEBALL_COUNT,
-#line 26149
+#line 26199
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26150
+#line 26200
                 MOVE_HEAD_SMASH,
                 MOVE_ZEN_HEADBUTT,
                 MOVE_ICE_PUNCH,
@@ -65057,23 +65175,23 @@
             },
             },
             {
-#line 26155
+#line 26205
             .species = SPECIES_DRACOZOLT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26155
+#line 26205
             .heldItem = ITEM_ELECTRIC_GEM,
-#line 26158
+#line 26208
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26157
+#line 26207
             .ability = ABILITY_SAND_RUSH,
-#line 26156
+#line 26206
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 26159
+#line 26209
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26160
+#line 26210
                 MOVE_BOLT_BEAK,
                 MOVE_DRAGON_RUSH,
                 MOVE_EARTHQUAKE,
@@ -65081,23 +65199,23 @@
             },
             },
             {
-#line 26165
+#line 26215
             .species = SPECIES_PALOSSAND,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26165
+#line 26215
             .heldItem = ITEM_LEFTOVERS,
-#line 26168
+#line 26218
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26167
+#line 26217
             .ability = ABILITY_SAND_VEIL,
-#line 26166
+#line 26216
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 26169
+#line 26219
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26170
+#line 26220
                 MOVE_EARTH_POWER,
                 MOVE_SHADOW_BALL,
                 MOVE_SHORE_UP,
@@ -65105,23 +65223,23 @@
             },
             },
             {
-#line 26175
+#line 26225
             .species = SPECIES_SIGILYPH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26175
+#line 26225
             .heldItem = ITEM_LIFE_ORB,
-#line 26178
+#line 26228
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26177
+#line 26227
             .ability = ABILITY_MAGIC_GUARD,
-#line 26176
+#line 26226
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 26179
+#line 26229
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26180
+#line 26230
                 MOVE_LUMINA_CRASH,
                 MOVE_WEATHER_BALL,
                 MOVE_AIR_SLASH,
@@ -65130,22 +65248,22 @@
             },
         },
     },
-#line 26185
+#line 26235
     [DIFFICULTY_NORMAL][TRAINER_BRANDEN] =
     {
-#line 26186
+#line 26236
         .trainerName = _("BRANDEN"),
-#line 26187
+#line 26237
         .trainerClass = TRAINER_CLASS_CAMPER,
-#line 26188
+#line 26238
         .trainerPic = TRAINER_PIC_CAMPER,
-#line 26189
+#line 26239
         .gender = TRAINER_GENDER_MALE,
-#line 26190
+#line 26240
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 26191
+#line 26241
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26192
+#line 26242
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65153,23 +65271,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26194
+#line 26244
             .species = SPECIES_HELIOLISK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26194
+#line 26244
             .heldItem = ITEM_WISE_GLASSES,
-#line 26197
+#line 26247
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26196
+#line 26246
             .ability = ABILITY_SAND_VEIL,
-#line 26195
+#line 26245
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 26198
+#line 26248
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26199
+#line 26249
                 MOVE_THUNDERBOLT,
                 MOVE_HYPER_VOICE,
                 MOVE_WEATHER_BALL,
@@ -65177,23 +65295,23 @@
             },
             },
             {
-#line 26204
+#line 26254
             .species = SPECIES_DRACOVISH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26204
+#line 26254
             .heldItem = ITEM_WATER_GEM,
-#line 26207
+#line 26257
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26206
+#line 26256
             .ability = ABILITY_SAND_RUSH,
-#line 26205
+#line 26255
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 26208
+#line 26258
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26209
+#line 26259
                 MOVE_FISHIOUS_REND,
                 MOVE_DRAGON_CLAW,
                 MOVE_STONE_EDGE,
@@ -65201,23 +65319,23 @@
             },
             },
             {
-#line 26214
+#line 26264
             .species = SPECIES_PROBOPASS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26214
+#line 26264
             .heldItem = ITEM_WISE_GLASSES,
-#line 26217
+#line 26267
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26216
+#line 26266
             .ability = ABILITY_SAND_FORCE,
-#line 26215
+#line 26265
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 26218
+#line 26268
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26219
+#line 26269
                 MOVE_FLASH_CANNON,
                 MOVE_POWER_GEM,
                 MOVE_EARTH_POWER,
@@ -65225,23 +65343,23 @@
             },
             },
             {
-#line 26224
+#line 26274
             .species = SPECIES_HOUNDSTONE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26224
+#line 26274
             .heldItem = ITEM_LEFTOVERS,
-#line 26227
+#line 26277
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26226
+#line 26276
             .ability = ABILITY_SAND_RUSH,
-#line 26225
+#line 26275
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 26228
+#line 26278
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26229
+#line 26279
                 MOVE_LAST_RESPECTS,
                 MOVE_PLAY_ROUGH,
                 MOVE_BODY_PRESS,
@@ -65250,22 +65368,22 @@
             },
         },
     },
-#line 26234
+#line 26284
     [DIFFICULTY_NORMAL][TRAINER_BRYANT] =
     {
-#line 26235
+#line 26285
         .trainerName = _("BRYANT"),
-#line 26236
+#line 26286
         .trainerClass = TRAINER_CLASS_KINDLER,
-#line 26237
+#line 26287
         .trainerPic = TRAINER_PIC_KINDLER,
-#line 26238
+#line 26288
         .gender = TRAINER_GENDER_MALE,
-#line 26239
+#line 26289
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-#line 26240
+#line 26290
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26241
+#line 26291
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65273,23 +65391,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26243
+#line 26293
             .species = SPECIES_LANTURN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26243
+#line 26293
             .heldItem = ITEM_LEFTOVERS,
-#line 26246
+#line 26296
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26245
+#line 26295
             .ability = ABILITY_VOLT_ABSORB,
-#line 26244
+#line 26294
             .lvl = 36,
             .ball = POKEBALL_COUNT,
-#line 26247
+#line 26297
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26248
+#line 26298
                 MOVE_DISCHARGE,
                 MOVE_SURF,
                 MOVE_ICE_BEAM,
@@ -65297,23 +65415,23 @@
             },
             },
             {
-#line 26253
+#line 26303
             .species = SPECIES_RAICHU,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26253
+#line 26303
             .heldItem = ITEM_AIR_BALLOON,
-#line 26256
+#line 26306
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26255
+#line 26305
             .ability = ABILITY_LIGHTNING_ROD,
-#line 26254
+#line 26304
             .lvl = 36,
             .ball = POKEBALL_COUNT,
-#line 26257
+#line 26307
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26258
+#line 26308
                 MOVE_DISCHARGE,
                 MOVE_SURF,
                 MOVE_THUNDERBOLT,
@@ -65321,23 +65439,23 @@
             },
             },
             {
-#line 26263
+#line 26313
             .species = SPECIES_RAICHU_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26263
+#line 26313
             .heldItem = ITEM_FOCUS_SASH,
-#line 26266
+#line 26316
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26265
+#line 26315
             .ability = ABILITY_LIGHTNING_ROD,
-#line 26264
+#line 26314
             .lvl = 36,
             .ball = POKEBALL_COUNT,
-#line 26267
+#line 26317
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26268
+#line 26318
                 MOVE_DISCHARGE,
                 MOVE_SURF,
                 MOVE_PSYCHIC,
@@ -65346,22 +65464,22 @@
             },
         },
     },
-#line 26273
+#line 26323
     [DIFFICULTY_NORMAL][TRAINER_SHAYLA] =
     {
-#line 26274
+#line 26324
         .trainerName = _("SHAYLA"),
-#line 26275
+#line 26325
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
-#line 26276
+#line 26326
         .trainerPic = TRAINER_PIC_AROMA_LADY,
-#line 26277
+#line 26327
         .gender = TRAINER_GENDER_FEMALE,
-#line 26278
+#line 26328
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 26279
+#line 26329
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26280
+#line 26330
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65369,23 +65487,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26282
+#line 26332
             .species = SPECIES_ELECTIVIRE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26282
+#line 26332
             .heldItem = ITEM_CELL_BATTERY,
-#line 26285
+#line 26335
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26284
+#line 26334
             .ability = ABILITY_VITAL_SPIRIT,
-#line 26283
+#line 26333
             .lvl = 36,
             .ball = POKEBALL_COUNT,
-#line 26286
+#line 26336
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26287
+#line 26337
                 MOVE_THUNDER_PUNCH,
                 MOVE_ICE_PUNCH,
                 MOVE_FIRE_PUNCH,
@@ -65393,23 +65511,23 @@
             },
             },
             {
-#line 26292
+#line 26342
             .species = SPECIES_STARMIE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26292
+#line 26342
             .heldItem = ITEM_ABSORB_BULB,
-#line 26295
+#line 26345
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26294
+#line 26344
             .ability = ABILITY_ANALYTIC,
-#line 26293
+#line 26343
             .lvl = 36,
             .ball = POKEBALL_COUNT,
-#line 26296
+#line 26346
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26297
+#line 26347
                 MOVE_SCALD,
                 MOVE_ICE_BEAM,
                 MOVE_PSYCHIC,
@@ -65417,23 +65535,23 @@
             },
             },
             {
-#line 26302
+#line 26352
             .species = SPECIES_LUDICOLO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26302
+#line 26352
             .heldItem = ITEM_ABSORB_BULB,
-#line 26305
+#line 26355
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26304
+#line 26354
             .ability = ABILITY_OWN_TEMPO,
-#line 26303
+#line 26353
             .lvl = 36,
             .ball = POKEBALL_COUNT,
-#line 26306
+#line 26356
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26307
+#line 26357
                 MOVE_SCALD,
                 MOVE_ICE_BEAM,
                 MOVE_FAKE_OUT,
@@ -65442,22 +65560,22 @@
             },
         },
     },
-#line 26312
+#line 26362
     [DIFFICULTY_NORMAL][TRAINER_KYRA] =
     {
-#line 26313
+#line 26363
         .trainerName = _("KYRA"),
-#line 26314
+#line 26364
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
-#line 26315
+#line 26365
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
-#line 26316
+#line 26366
         .gender = TRAINER_GENDER_FEMALE,
-#line 26317
+#line 26367
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 26318
+#line 26368
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26319
+#line 26369
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65465,49 +65583,49 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26321
+#line 26371
             .species = SPECIES_DODUO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26323
+#line 26373
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26322
+#line 26372
             .lvl = 26,
             .ball = POKEBALL_COUNT,
-#line 26324
+#line 26374
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26326
+#line 26376
             .species = SPECIES_DODRIO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26328
+#line 26378
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26327
+#line 26377
             .lvl = 26,
             .ball = POKEBALL_COUNT,
-#line 26329
+#line 26379
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26331
+#line 26381
     [DIFFICULTY_NORMAL][TRAINER_JAIDEN] =
     {
-#line 26332
+#line 26382
         .trainerName = _("JAIDEN"),
-#line 26333
+#line 26383
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
-#line 26334
+#line 26384
         .trainerPic = TRAINER_PIC_NINJA_BOY,
-#line 26335
+#line 26385
         .gender = TRAINER_GENDER_MALE,
-#line 26336
+#line 26386
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-#line 26337
+#line 26387
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26338
+#line 26388
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65515,49 +65633,49 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26340
+#line 26390
             .species = SPECIES_NINJASK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26342
+#line 26392
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26341
+#line 26391
             .lvl = 26,
             .ball = POKEBALL_COUNT,
-#line 26343
+#line 26393
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26345
+#line 26395
             .species = SPECIES_GULPIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26347
+#line 26397
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26346
+#line 26396
             .lvl = 26,
             .ball = POKEBALL_COUNT,
-#line 26348
+#line 26398
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26350
+#line 26400
     [DIFFICULTY_NORMAL][TRAINER_ALIX] =
     {
-#line 26351
+#line 26401
         .trainerName = _("ALIX"),
-#line 26352
+#line 26402
         .trainerClass = TRAINER_CLASS_PSYCHIC,
-#line 26353
+#line 26403
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-#line 26354
+#line 26404
         .gender = TRAINER_GENDER_FEMALE,
-#line 26355
+#line 26405
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-#line 26356
+#line 26406
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26357
+#line 26407
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65565,49 +65683,49 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26359
+#line 26409
             .species = SPECIES_KADABRA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26361
+#line 26411
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26360
+#line 26410
             .lvl = 26,
             .ball = POKEBALL_COUNT,
-#line 26362
+#line 26412
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26364
+#line 26414
             .species = SPECIES_KIRLIA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26366
+#line 26416
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26365
+#line 26415
             .lvl = 26,
             .ball = POKEBALL_COUNT,
-#line 26367
+#line 26417
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26369
+#line 26419
     [DIFFICULTY_NORMAL][TRAINER_HELENE] =
     {
-#line 26370
+#line 26420
         .trainerName = _("HELENE"),
-#line 26371
+#line 26421
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-#line 26372
+#line 26422
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-#line 26373
+#line 26423
         .gender = TRAINER_GENDER_FEMALE,
-#line 26374
+#line 26424
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-#line 26375
+#line 26425
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26376
+#line 26426
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65615,49 +65733,49 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26378
+#line 26428
             .species = SPECIES_MEDITITE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26380
+#line 26430
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26379
+#line 26429
             .lvl = 26,
             .ball = POKEBALL_COUNT,
-#line 26381
+#line 26431
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26383
+#line 26433
             .species = SPECIES_MAKUHITA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26385
+#line 26435
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26384
+#line 26434
             .lvl = 26,
             .ball = POKEBALL_COUNT,
-#line 26386
+#line 26436
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26388
+#line 26438
     [DIFFICULTY_NORMAL][TRAINER_MARLENE] =
     {
-#line 26389
+#line 26439
         .trainerName = _("MARLENE"),
-#line 26390
+#line 26440
         .trainerClass = TRAINER_CLASS_PSYCHIC,
-#line 26391
+#line 26441
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-#line 26392
+#line 26442
         .gender = TRAINER_GENDER_FEMALE,
-#line 26393
+#line 26443
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-#line 26394
+#line 26444
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26395
+#line 26445
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65665,49 +65783,49 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26397
+#line 26447
             .species = SPECIES_MEDITITE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26399
+#line 26449
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26398
+#line 26448
             .lvl = 18,
             .ball = POKEBALL_COUNT,
-#line 26400
+#line 26450
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26402
+#line 26452
             .species = SPECIES_SPOINK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26404
+#line 26454
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26403
+#line 26453
             .lvl = 18,
             .ball = POKEBALL_COUNT,
-#line 26405
+#line 26455
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26407
+#line 26457
     [DIFFICULTY_NORMAL][TRAINER_DEVAN] =
     {
-#line 26408
+#line 26458
         .trainerName = _("DEVAN"),
-#line 26409
+#line 26459
         .trainerClass = TRAINER_CLASS_HIKER,
-#line 26410
+#line 26460
         .trainerPic = TRAINER_PIC_HIKER,
-#line 26411
+#line 26461
         .gender = TRAINER_GENDER_MALE,
-#line 26412
+#line 26462
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-#line 26413
+#line 26463
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26414
+#line 26464
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65715,23 +65833,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26416
+#line 26466
             .species = SPECIES_TYRUNT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26416
+#line 26466
             .heldItem = ITEM_EXPERT_BELT,
-#line 26419
+#line 26469
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26418
+#line 26468
             .ability = ABILITY_STRONG_JAW,
-#line 26417
+#line 26467
             .lvl = 15,
             .ball = POKEBALL_COUNT,
-#line 26420
+#line 26470
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26421
+#line 26471
                 MOVE_BREAKING_SWIPE,
                 MOVE_ROCK_THROW,
                 MOVE_POISON_FANG,
@@ -65739,23 +65857,23 @@
             },
             },
             {
-#line 26426
+#line 26476
             .species = SPECIES_LILEEP,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26426
+#line 26476
             .heldItem = ITEM_LEFTOVERS,
-#line 26429
+#line 26479
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26428
+#line 26478
             .ability = ABILITY_STORM_DRAIN,
-#line 26427
+#line 26477
             .lvl = 15,
             .ball = POKEBALL_COUNT,
-#line 26430
+#line 26480
             .nature = NATURE_BOLD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26431
+#line 26481
                 MOVE_ANCIENTPOWER,
                 MOVE_MEGA_DRAIN,
                 MOVE_LEECH_SEED,
@@ -65763,23 +65881,23 @@
             },
             },
             {
-#line 26436
+#line 26486
             .species = SPECIES_TIRTOUGA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26436
+#line 26486
             .heldItem = ITEM_RINDO_BERRY,
-#line 26439
+#line 26489
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26438
+#line 26488
             .ability = ABILITY_SOLID_ROCK,
-#line 26437
+#line 26487
             .lvl = 15,
             .ball = POKEBALL_COUNT,
-#line 26440
+#line 26490
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26441
+#line 26491
                 MOVE_AQUA_JET,
                 MOVE_ROCK_BLAST,
                 MOVE_ICE_FANG,
@@ -65787,23 +65905,23 @@
             },
             },
             {
-#line 26446
+#line 26496
             .species = SPECIES_OMANYTE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26446
+#line 26496
             .heldItem = ITEM_ICE_GEM,
-#line 26449
+#line 26499
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26448
+#line 26498
             .ability = ABILITY_WEAK_ARMOR,
-#line 26447
+#line 26497
             .lvl = 15,
             .ball = POKEBALL_COUNT,
-#line 26450
+#line 26500
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26451
+#line 26501
                 MOVE_ANCIENTPOWER,
                 MOVE_BUBBLE_BEAM,
                 MOVE_AURORA_BEAM,
@@ -65812,22 +65930,22 @@
             },
         },
     },
-#line 26456
+#line 26506
     [DIFFICULTY_NORMAL][TRAINER_JOHNSON] =
     {
-#line 26457
+#line 26507
         .trainerName = _("JOHNSON"),
-#line 26458
+#line 26508
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
-#line 26459
+#line 26509
         .trainerPic = TRAINER_PIC_YOUNGSTER,
-#line 26460
+#line 26510
         .gender = TRAINER_GENDER_MALE,
-#line 26461
+#line 26511
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 26462
+#line 26512
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26463
+#line 26513
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65835,23 +65953,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26465
+#line 26515
             .species = SPECIES_NIDORINO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26465
+#line 26515
             .heldItem = ITEM_BLACK_SLUDGE,
-#line 26468
+#line 26518
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26467
+#line 26517
             .ability = ABILITY_HUSTLE,
-#line 26466
+#line 26516
             .lvl = 15,
             .ball = POKEBALL_COUNT,
-#line 26469
+#line 26519
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26470
+#line 26520
                 MOVE_POISON_FANG,
                 MOVE_SHADOW_CLAW,
                 MOVE_SMART_STRIKE,
@@ -65859,23 +65977,23 @@
             },
             },
             {
-#line 26475
+#line 26525
             .species = SPECIES_LOMBRE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26475
+#line 26525
             .heldItem = ITEM_BERRY_JUICE,
-#line 26478
+#line 26528
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26477
+#line 26527
             .ability = ABILITY_OWN_TEMPO,
-#line 26476
+#line 26526
             .lvl = 15,
             .ball = POKEBALL_COUNT,
-#line 26479
+#line 26529
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26480
+#line 26530
                 MOVE_BUBBLE_BEAM,
                 MOVE_MEGA_DRAIN,
                 MOVE_AURORA_BEAM,
@@ -65883,23 +66001,23 @@
             },
             },
             {
-#line 26485
+#line 26535
             .species = SPECIES_HOUNDOUR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26485
+#line 26535
             .heldItem = ITEM_CHARTI_BERRY,
-#line 26488
+#line 26538
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26487
+#line 26537
             .ability = ABILITY_UNNERVE,
-#line 26486
+#line 26536
             .lvl = 15,
             .ball = POKEBALL_COUNT,
-#line 26489
+#line 26539
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26490
+#line 26540
                 MOVE_BURNING_JEALOUSY,
                 MOVE_SNARL,
                 MOVE_MUD_SHOT,
@@ -65908,22 +66026,22 @@
             },
         },
     },
-#line 26495
+#line 26545
     [DIFFICULTY_NORMAL][TRAINER_MELINA] =
     {
-#line 26496
+#line 26546
         .trainerName = _("MELINA"),
-#line 26497
+#line 26547
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
-#line 26498
+#line 26548
         .trainerPic = TRAINER_PIC_RUNNING_TRIATHLETE_F,
-#line 26499
+#line 26549
         .gender = TRAINER_GENDER_FEMALE,
-#line 26500
+#line 26550
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 26501
+#line 26551
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26502
+#line 26552
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -65931,23 +66049,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26504
+#line 26554
             .species = SPECIES_FEAROW,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26504
+#line 26554
             .heldItem = ITEM_SCOPE_LENS,
-#line 26507
+#line 26557
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26506
+#line 26556
             .ability = ABILITY_SNIPER,
-#line 26505
+#line 26555
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26508
+#line 26558
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26509
+#line 26559
                 MOVE_DRILL_PECK,
                 MOVE_DRILL_RUN,
                 MOVE_U_TURN,
@@ -65955,23 +66073,23 @@
             },
             },
             {
-#line 26514
+#line 26564
             .species = SPECIES_EMOLGA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26514
+#line 26564
             .heldItem = ITEM_BERRY_JUICE,
-#line 26517
+#line 26567
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26516
+#line 26566
             .ability = ABILITY_MOTOR_DRIVE,
-#line 26515
+#line 26565
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26518
+#line 26568
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26519
+#line 26569
                 MOVE_VOLT_SWITCH,
                 MOVE_AIR_SLASH,
                 MOVE_ENERGY_BALL,
@@ -65979,23 +66097,23 @@
             },
             },
             {
-#line 26524
+#line 26574
             .species = SPECIES_GLIGAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26524
+#line 26574
             .heldItem = ITEM_YACHE_BERRY,
-#line 26527
+#line 26577
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26526
+#line 26576
             .ability = ABILITY_HYPER_CUTTER,
-#line 26525
+#line 26575
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26528
+#line 26578
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26529
+#line 26579
                 MOVE_ACROBATICS,
                 MOVE_BULLDOZE,
                 MOVE_ROCK_SLIDE,
@@ -66004,22 +66122,22 @@
             },
         },
     },
-#line 26534
+#line 26584
     [DIFFICULTY_NORMAL][TRAINER_BRANDI] =
     {
-#line 26535
+#line 26585
         .trainerName = _("BRANDI"),
-#line 26536
+#line 26586
         .trainerClass = TRAINER_CLASS_PSYCHIC,
-#line 26537
+#line 26587
         .trainerPic = TRAINER_PIC_PSYCHIC_F,
-#line 26538
+#line 26588
         .gender = TRAINER_GENDER_FEMALE,
-#line 26539
+#line 26589
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-#line 26540
+#line 26590
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26541
+#line 26591
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66027,23 +66145,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26543
+#line 26593
             .species = SPECIES_KADABRA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26543
+#line 26593
             .heldItem = ITEM_EXPERT_BELT,
-#line 26546
+#line 26596
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26545
+#line 26595
             .ability = ABILITY_MAGIC_GUARD,
-#line 26544
+#line 26594
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26547
+#line 26597
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26548
+#line 26598
                 MOVE_PSYBEAM,
                 MOVE_DAZZLING_GLEAM,
                 MOVE_SHADOW_BALL,
@@ -66051,23 +66169,23 @@
             },
             },
             {
-#line 26553
+#line 26603
             .species = SPECIES_METANG,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26553
+#line 26603
             .heldItem = ITEM_SALAC_BERRY,
-#line 26556
+#line 26606
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26555
+#line 26605
             .ability = ABILITY_CLEAR_BODY,
-#line 26554
+#line 26604
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26557
+#line 26607
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26558
+#line 26608
                 MOVE_PSYCHO_CUT,
                 MOVE_IRON_HEAD,
                 MOVE_ICE_PUNCH,
@@ -66075,23 +66193,23 @@
             },
             },
             {
-#line 26563
+#line 26613
             .species = SPECIES_GOTHORITA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26563
+#line 26613
             .heldItem = ITEM_BERRY_JUICE,
-#line 26566
+#line 26616
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26565
+#line 26615
             .ability = ABILITY_SHADOW_TAG,
-#line 26564
+#line 26614
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26567
+#line 26617
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26568
+#line 26618
                 MOVE_PSYBEAM,
                 MOVE_THUNDERBOLT,
                 MOVE_CALM_MIND,
@@ -66099,23 +66217,23 @@
             },
             },
             {
-#line 26573
+#line 26623
             .species = SPECIES_SOLROCK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26573
+#line 26623
             .heldItem = ITEM_LEFTOVERS,
-#line 26576
+#line 26626
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26575
+#line 26625
             .ability = ABILITY_LEVITATE,
-#line 26574
+#line 26624
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26577
+#line 26627
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26578
+#line 26628
                 MOVE_PSYCHO_CUT,
                 MOVE_ROCK_SLIDE,
                 MOVE_HYPNOSIS,
@@ -66124,22 +66242,22 @@
             },
         },
     },
-#line 26583
+#line 26633
     [DIFFICULTY_NORMAL][TRAINER_AISHA] =
     {
-#line 26584
+#line 26634
         .trainerName = _("AISHA"),
-#line 26585
+#line 26635
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-#line 26586
+#line 26636
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-#line 26587
+#line 26637
         .gender = TRAINER_GENDER_FEMALE,
-#line 26588
+#line 26638
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-#line 26589
+#line 26639
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26590
+#line 26640
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66147,23 +66265,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26592
+#line 26642
             .species = SPECIES_HITMONTOP,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26592
+#line 26642
             .heldItem = ITEM_PUNCHING_GLOVE,
-#line 26595
+#line 26645
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26594
+#line 26644
             .ability = ABILITY_TECHNICIAN,
-#line 26593
+#line 26643
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26596
+#line 26646
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26597
+#line 26647
                 MOVE_MACH_PUNCH,
                 MOVE_ROCK_TOMB,
                 MOVE_BULLET_PUNCH,
@@ -66171,23 +66289,23 @@
             },
             },
             {
-#line 26602
+#line 26652
             .species = SPECIES_FARFETCHD_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26602
+#line 26652
             .heldItem = ITEM_STICK,
-#line 26605
+#line 26655
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26604
+#line 26654
             .ability = ABILITY_SNIPER,
-#line 26603
+#line 26653
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26606
+#line 26656
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26607
+#line 26657
                 MOVE_DRAIN_PUNCH,
                 MOVE_NIGHT_SLASH,
                 MOVE_LEAF_BLADE,
@@ -66195,23 +66313,23 @@
             },
             },
             {
-#line 26612
+#line 26662
             .species = SPECIES_PAWMO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26612
+#line 26662
             .heldItem = ITEM_AIR_BALLOON,
-#line 26615
+#line 26665
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26614
+#line 26664
             .ability = ABILITY_IRON_FIST,
-#line 26613
+#line 26663
             .lvl = 21,
             .ball = POKEBALL_COUNT,
-#line 26616
+#line 26666
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26617
+#line 26667
                 MOVE_MACH_PUNCH,
                 MOVE_DIZZY_PUNCH,
                 MOVE_FIRE_PUNCH,
@@ -66220,22 +66338,22 @@
             },
         },
     },
-#line 26622
+#line 26672
     [DIFFICULTY_NORMAL][TRAINER_MAKAYLA] =
     {
-#line 26623
+#line 26673
         .trainerName = _("MAKAYLA"),
-#line 26624
+#line 26674
         .trainerClass = TRAINER_CLASS_EXPERT,
-#line 26625
+#line 26675
         .trainerPic = TRAINER_PIC_EXPERT_F,
-#line 26626
+#line 26676
         .gender = TRAINER_GENDER_FEMALE,
-#line 26627
+#line 26677
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-#line 26628
+#line 26678
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26629
+#line 26679
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66243,49 +66361,49 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26631
+#line 26681
             .species = SPECIES_ROSELIA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26633
+#line 26683
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26632
+#line 26682
             .lvl = 33,
             .ball = POKEBALL_COUNT,
-#line 26634
+#line 26684
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 26636
+#line 26686
             .species = SPECIES_MEDICHAM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26638
+#line 26688
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 26637
+#line 26687
             .lvl = 33,
             .ball = POKEBALL_COUNT,
-#line 26639
+#line 26689
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 26641
+#line 26691
     [DIFFICULTY_NORMAL][TRAINER_FABIAN] =
     {
-#line 26642
+#line 26692
         .trainerName = _("FABIAN"),
-#line 26643
+#line 26693
         .trainerClass = TRAINER_CLASS_GUITARIST,
-#line 26644
+#line 26694
         .trainerPic = TRAINER_PIC_GUITARIST,
-#line 26645
+#line 26695
         .gender = TRAINER_GENDER_MALE,
-#line 26646
+#line 26696
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-#line 26647
+#line 26697
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26648
+#line 26698
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66293,23 +66411,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26650
+#line 26700
             .species = SPECIES_GOREBYSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26650
+#line 26700
             .heldItem = ITEM_LIGHT_CLAY,
-#line 26653
+#line 26703
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26652
+#line 26702
             .ability = ABILITY_SWIFT_SWIM,
-#line 26651
+#line 26701
             .lvl = 59,
             .ball = POKEBALL_COUNT,
-#line 26654
+#line 26704
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26655
+#line 26705
                 MOVE_HYDRO_PUMP,
                 MOVE_REFLECT,
                 MOVE_LIGHT_SCREEN,
@@ -66317,23 +66435,23 @@
             },
             },
             {
-#line 26660
+#line 26710
             .species = SPECIES_TOXTRICITY_LOW_KEY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26660
+#line 26710
             .heldItem = ITEM_AIR_BALLOON,
-#line 26663
+#line 26713
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26662
+#line 26712
             .ability = ABILITY_PUNK_ROCK,
-#line 26661
+#line 26711
             .lvl = 59,
             .ball = POKEBALL_COUNT,
-#line 26664
+#line 26714
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26665
+#line 26715
                 MOVE_OVERDRIVE,
                 MOVE_BOOMBURST,
                 MOVE_SLUDGE_WAVE,
@@ -66341,23 +66459,23 @@
             },
             },
             {
-#line 26670
+#line 26720
             .species = SPECIES_PRIMARINA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26670
+#line 26720
             .heldItem = ITEM_THROAT_SPRAY,
-#line 26673
+#line 26723
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26672
+#line 26722
             .ability = ABILITY_SWIFT_SWIM,
-#line 26671
+#line 26721
             .lvl = 59,
             .ball = POKEBALL_COUNT,
-#line 26674
+#line 26724
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26675
+#line 26725
                 MOVE_SPARKLING_ARIA,
                 MOVE_ALLURING_VOICE,
                 MOVE_ICE_BEAM,
@@ -66365,23 +66483,23 @@
             },
             },
             {
-#line 26680
+#line 26730
             .species = SPECIES_PORYGON_Z,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26680
+#line 26730
             .heldItem = ITEM_WISE_GLASSES,
-#line 26683
+#line 26733
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26682
+#line 26732
             .ability = ABILITY_SURGE_SURFER,
-#line 26681
+#line 26731
             .lvl = 59,
             .ball = POKEBALL_COUNT,
-#line 26684
+#line 26734
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26685
+#line 26735
                 MOVE_RISING_VOLTAGE,
                 MOVE_BOOMBURST,
                 MOVE_ICE_BEAM,
@@ -66390,22 +66508,22 @@
             },
         },
     },
-#line 26690
+#line 26740
     [DIFFICULTY_NORMAL][TRAINER_DAYTON] =
     {
-#line 26691
+#line 26741
         .trainerName = _("Dayton"),
-#line 26692
+#line 26742
         .trainerClass = TRAINER_CLASS_KINDLER,
-#line 26693
+#line 26743
         .trainerPic = TRAINER_PIC_KINDLER,
-#line 26694
+#line 26744
         .gender = TRAINER_GENDER_MALE,
-#line 26695
+#line 26745
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_HIKER,
-#line 26696
+#line 26746
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26697
+#line 26747
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66413,23 +66531,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26699
+#line 26749
             .species = SPECIES_PINCURCHIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26699
+#line 26749
             .heldItem = ITEM_AIR_BALLOON,
-#line 26702
+#line 26752
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26701
+#line 26751
             .ability = ABILITY_LIGHTNING_ROD,
-#line 26700
+#line 26750
             .lvl = 57,
             .ball = POKEBALL_COUNT,
-#line 26703
+#line 26753
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26704
+#line 26754
                 MOVE_ZING_ZAP,
                 MOVE_LIQUIDATION,
                 MOVE_SPIKES,
@@ -66437,23 +66555,23 @@
             },
             },
             {
-#line 26709
+#line 26759
             .species = SPECIES_RHYPERIOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26709
+#line 26759
             .heldItem = ITEM_FOCUS_SASH,
-#line 26712
+#line 26762
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26711
+#line 26761
             .ability = ABILITY_LIGHTNING_ROD,
-#line 26710
+#line 26760
             .lvl = 57,
             .ball = POKEBALL_COUNT,
-#line 26713
+#line 26763
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26714
+#line 26764
                 MOVE_EARTHQUAKE,
                 MOVE_STONE_EDGE,
                 MOVE_MEGAHORN,
@@ -66461,23 +66579,23 @@
             },
             },
             {
-#line 26719
+#line 26769
             .species = SPECIES_RAICHU_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26719
+#line 26769
             .heldItem = ITEM_ELECTRIC_GEM,
-#line 26722
+#line 26772
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26721
+#line 26771
             .ability = ABILITY_LIGHTNING_ROD,
-#line 26720
+#line 26770
             .lvl = 57,
             .ball = POKEBALL_COUNT,
-#line 26723
+#line 26773
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26724
+#line 26774
                 MOVE_RISING_VOLTAGE,
                 MOVE_PSYCHIC,
                 MOVE_GRASS_KNOT,
@@ -66486,22 +66604,22 @@
             },
         },
     },
-#line 26729
+#line 26779
     [DIFFICULTY_NORMAL][TRAINER_RACHEL] =
     {
-#line 26730
+#line 26780
         .trainerName = _("Rachel"),
-#line 26731
+#line 26781
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
-#line 26732
+#line 26782
         .trainerPic = TRAINER_PIC_PARASOL_LADY,
-#line 26733
+#line 26783
         .gender = TRAINER_GENDER_FEMALE,
-#line 26734
+#line 26784
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 26735
+#line 26785
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26736
+#line 26786
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66509,23 +66627,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26738
+#line 26788
             .species = SPECIES_QWILFISH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26738
+#line 26788
             .heldItem = ITEM_FOCUS_SASH,
-#line 26741
+#line 26791
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26740
+#line 26790
             .ability = ABILITY_SWIFT_SWIM,
-#line 26739
+#line 26789
             .lvl = 57,
             .ball = POKEBALL_COUNT,
-#line 26742
+#line 26792
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26743
+#line 26793
                 MOVE_AQUA_TAIL,
                 MOVE_POISON_JAB,
                 MOVE_SPIKES,
@@ -66533,23 +66651,23 @@
             },
             },
             {
-#line 26748
+#line 26798
             .species = SPECIES_ELECTRODE_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26748
+#line 26798
             .heldItem = ITEM_PETAYA_BERRY,
-#line 26751
+#line 26801
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26750
+#line 26800
             .ability = ABILITY_AFTERMATH,
-#line 26749
+#line 26799
             .lvl = 57,
             .ball = POKEBALL_COUNT,
-#line 26752
+#line 26802
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26753
+#line 26803
                 MOVE_RISING_VOLTAGE,
                 MOVE_ENERGY_BALL,
                 MOVE_WEATHER_BALL,
@@ -66557,23 +66675,23 @@
             },
             },
             {
-#line 26758
+#line 26808
             .species = SPECIES_VANILLUXE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26758
+#line 26808
             .heldItem = ITEM_ASSAULT_VEST,
-#line 26761
+#line 26811
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26760
+#line 26810
             .ability = ABILITY_FILTER,
-#line 26759
+#line 26809
             .lvl = 57,
             .ball = POKEBALL_COUNT,
-#line 26762
+#line 26812
             .nature = NATURE_NAIVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26763
+#line 26813
                 MOVE_ICE_BEAM,
                 MOVE_FREEZE_DRY,
                 MOVE_WEATHER_BALL,
@@ -66581,23 +66699,23 @@
             },
             },
             {
-#line 26768
+#line 26818
             .species = SPECIES_DRAMPA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26768
+#line 26818
             .heldItem = ITEM_ELECTRIC_SEED,
-#line 26771
+#line 26821
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26770
+#line 26820
             .ability = ABILITY_SURGE_SURFER,
-#line 26769
+#line 26819
             .lvl = 57,
             .ball = POKEBALL_COUNT,
-#line 26772
+#line 26822
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26773
+#line 26823
                 MOVE_DRAGON_PULSE,
                 MOVE_HURRICANE,
                 MOVE_WEATHER_BALL,
@@ -66606,22 +66724,22 @@
             },
         },
     },
-#line 26778
+#line 26828
     [DIFFICULTY_NORMAL][TRAINER_LEONEL] =
     {
-#line 26779
+#line 26829
         .trainerName = _("LEONEL"),
-#line 26780
+#line 26830
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
-#line 26781
+#line 26831
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-#line 26782
+#line 26832
         .gender = TRAINER_GENDER_MALE,
-#line 26783
+#line 26833
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-#line 26784
+#line 26834
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26785
+#line 26835
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66629,23 +66747,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26787
+#line 26837
             .species = SPECIES_AGGRON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26787
+#line 26837
             .heldItem = ITEM_COVERT_CLOAK,
-#line 26790
+#line 26840
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26789
+#line 26839
             .ability = ABILITY_STURDY,
-#line 26788
+#line 26838
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26791
+#line 26841
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26792
+#line 26842
                 MOVE_METAL_BURST,
                 MOVE_STEALTH_ROCK,
                 MOVE_IRON_TAIL,
@@ -66653,23 +66771,23 @@
             },
             },
             {
-#line 26797
+#line 26847
             .species = SPECIES_FURFROU,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26797
+#line 26847
             .heldItem = ITEM_MISTY_SEED,
-#line 26800
+#line 26850
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26799
+#line 26849
             .ability = ABILITY_FUR_COAT,
-#line 26798
+#line 26848
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26801
+#line 26851
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26802
+#line 26852
                 MOVE_SWORDS_DANCE,
                 MOVE_PLAY_ROUGH,
                 MOVE_DOUBLE_EDGE,
@@ -66677,23 +66795,23 @@
             },
             },
             {
-#line 26807
+#line 26857
             .species = SPECIES_ESPEON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26807
+#line 26857
             .heldItem = ITEM_LIFE_ORB,
-#line 26810
+#line 26860
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26809
+#line 26859
             .ability = ABILITY_MAGIC_GUARD,
-#line 26808
+#line 26858
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26811
+#line 26861
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26812
+#line 26862
                 MOVE_PSYSHOCK,
                 MOVE_POWER_GEM,
                 MOVE_ALLURING_VOICE,
@@ -66701,23 +66819,23 @@
             },
             },
             {
-#line 26817
+#line 26867
             .species = SPECIES_SLOWBRO_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26817
+#line 26867
             .heldItem = ITEM_QUICK_CLAW,
-#line 26820
+#line 26870
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26819
+#line 26869
             .ability = ABILITY_QUICK_DRAW,
-#line 26818
+#line 26868
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26821
+#line 26871
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26822
+#line 26872
                 MOVE_CURSE,
                 MOVE_SLACK_OFF,
                 MOVE_SHELL_SIDE_ARM,
@@ -66726,22 +66844,22 @@
             },
         },
     },
-#line 26827
+#line 26877
     [DIFFICULTY_NORMAL][TRAINER_CALLIE] =
     {
-#line 26828
+#line 26878
         .trainerName = _("CALLIE"),
-#line 26829
+#line 26879
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
-#line 26830
+#line 26880
         .trainerPic = TRAINER_PIC_BATTLE_GIRL,
-#line 26831
+#line 26881
         .gender = TRAINER_GENDER_FEMALE,
-#line 26832
+#line 26882
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_INTENSE,
-#line 26833
+#line 26883
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26834
+#line 26884
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66749,23 +66867,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26836
+#line 26886
             .species = SPECIES_DURANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26836
+#line 26886
             .heldItem = ITEM_COVERT_CLOAK,
-#line 26839
+#line 26889
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26838
+#line 26888
             .ability = ABILITY_STURDY,
-#line 26837
+#line 26887
             .lvl = 64,
             .ball = POKEBALL_COUNT,
-#line 26840
+#line 26890
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26841
+#line 26891
                 MOVE_X_SCISSOR,
                 MOVE_IRON_HEAD,
                 MOVE_ENTRAINMENT,
@@ -66773,23 +66891,23 @@
             },
             },
             {
-#line 26846
+#line 26896
             .species = SPECIES_FLAMIGO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26846
+#line 26896
             .heldItem = ITEM_LEFTOVERS,
-#line 26849
+#line 26899
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 26848
+#line 26898
             .ability = ABILITY_COSTAR,
-#line 26847
+#line 26897
             .lvl = 64,
             .ball = POKEBALL_COUNT,
-#line 26850
+#line 26900
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26851
+#line 26901
                 MOVE_BRAVE_BIRD,
                 MOVE_TRIPLE_KICK,
                 MOVE_THROAT_CHOP,
@@ -66798,22 +66916,22 @@
             },
         },
     },
-#line 26856
+#line 26906
     [DIFFICULTY_NORMAL][TRAINER_CALE] =
     {
-#line 26857
+#line 26907
         .trainerName = _("CALE"),
-#line 26858
+#line 26908
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-#line 26859
+#line 26909
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-#line 26860
+#line 26910
         .gender = TRAINER_GENDER_MALE,
-#line 26861
+#line 26911
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-#line 26862
+#line 26912
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26863
+#line 26913
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66821,23 +66939,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26865
+#line 26915
             .species = SPECIES_CHANDELURE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26865
+#line 26915
             .heldItem = ITEM_FOCUS_SASH,
-#line 26868
+#line 26918
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26867
+#line 26917
             .ability = ABILITY_SHADOW_TAG,
-#line 26866
+#line 26916
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26869
+#line 26919
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26870
+#line 26920
                 MOVE_SHADOW_BALL,
                 MOVE_FLAMETHROWER,
                 MOVE_ENERGY_BALL,
@@ -66845,23 +66963,23 @@
             },
             },
             {
-#line 26875
+#line 26925
             .species = SPECIES_GENGAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26875
+#line 26925
             .heldItem = ITEM_FOCUS_SASH,
-#line 26878
+#line 26928
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26877
+#line 26927
             .ability = ABILITY_SHADOW_TAG,
-#line 26876
+#line 26926
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26879
+#line 26929
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26880
+#line 26930
                 MOVE_SHADOW_BALL,
                 MOVE_MYSTICAL_FIRE,
                 MOVE_SLUDGE_BOMB,
@@ -66870,22 +66988,22 @@
             },
         },
     },
-#line 26885
+#line 26935
     [DIFFICULTY_NORMAL][TRAINER_MYLES] =
     {
-#line 26886
+#line 26936
         .trainerName = _("MYLES"),
-#line 26887
+#line 26937
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-#line 26888
+#line 26938
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_M,
-#line 26889
+#line 26939
         .gender = TRAINER_GENDER_MALE,
-#line 26890
+#line 26940
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 26891
+#line 26941
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26892
+#line 26942
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -66893,23 +67011,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26894
+#line 26944
             .species = SPECIES_CLEFABLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26894
+#line 26944
             .heldItem = ITEM_LIFE_ORB,
-#line 26897
+#line 26947
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26896
+#line 26946
             .ability = ABILITY_MAGIC_GUARD,
-#line 26895
+#line 26945
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26898
+#line 26948
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26899
+#line 26949
                 MOVE_PSYSHOCK,
                 MOVE_MOONBLAST,
                 MOVE_FLAMETHROWER,
@@ -66917,23 +67035,23 @@
             },
             },
             {
-#line 26904
+#line 26954
             .species = SPECIES_SUDOWOODO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26904
+#line 26954
             .heldItem = ITEM_EXPERT_BELT,
-#line 26907
+#line 26957
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26906
+#line 26956
             .ability = ABILITY_ROCK_HEAD,
-#line 26905
+#line 26955
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26908
+#line 26958
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26909
+#line 26959
                 MOVE_HEAD_SMASH,
                 MOVE_WOOD_HAMMER,
                 MOVE_SUBMISSION,
@@ -66941,23 +67059,23 @@
             },
             },
             {
-#line 26914
+#line 26964
             .species = SPECIES_JYNX,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26914
+#line 26964
             .heldItem = ITEM_FOCUS_SASH,
-#line 26917
+#line 26967
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26916
+#line 26966
             .ability = ABILITY_OBLIVIOUS,
-#line 26915
+#line 26965
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26918
+#line 26968
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26919
+#line 26969
                 MOVE_ICE_BEAM,
                 MOVE_PSYSHOCK,
                 MOVE_AURA_SPHERE,
@@ -66965,23 +67083,23 @@
             },
             },
             {
-#line 26924
+#line 26974
             .species = SPECIES_MAGMORTAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26924
+#line 26974
             .heldItem = ITEM_WHITE_HERB,
-#line 26927
+#line 26977
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26926
+#line 26976
             .ability = ABILITY_MEGA_LAUNCHER,
-#line 26925
+#line 26975
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26928
+#line 26978
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26929
+#line 26979
                 MOVE_ARMOR_CANNON,
                 MOVE_DARK_PULSE,
                 MOVE_AURA_SPHERE,
@@ -66989,23 +67107,23 @@
             },
             },
             {
-#line 26934
+#line 26984
             .species = SPECIES_ELECTIVIRE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26934
+#line 26984
             .heldItem = ITEM_PUNCHING_GLOVE,
-#line 26937
+#line 26987
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26936
+#line 26986
             .ability = ABILITY_IRON_FIST,
-#line 26935
+#line 26985
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26938
+#line 26988
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26939
+#line 26989
                 MOVE_THUNDERPUNCH,
                 MOVE_ICE_PUNCH,
                 MOVE_FIRE_PUNCH,
@@ -67014,22 +67132,22 @@
             },
         },
     },
-#line 26944
+#line 26994
     [DIFFICULTY_NORMAL][TRAINER_PAT] =
     {
-#line 26945
+#line 26995
         .trainerName = _("PAT"),
-#line 26946
+#line 26996
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
-#line 26947
+#line 26997
         .trainerPic = TRAINER_PIC_POKEMON_BREEDER_F,
-#line 26948
+#line 26998
         .gender = TRAINER_GENDER_FEMALE,
-#line 26949
+#line 26999
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 26950
+#line 27000
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26951
+#line 27001
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -67037,23 +67155,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26953
+#line 27003
             .species = SPECIES_RIBOMBEE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26953
+#line 27003
             .heldItem = ITEM_FOCUS_SASH,
-#line 26956
+#line 27006
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26955
+#line 27005
             .ability = ABILITY_HEALER,
-#line 26954
+#line 27004
             .lvl = 66,
             .ball = POKEBALL_COUNT,
-#line 26957
+#line 27007
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26958
+#line 27008
                 MOVE_STICKY_WEB,
                 MOVE_RAGE_POWDER,
                 MOVE_SILVER_WIND,
@@ -67061,23 +67179,23 @@
             },
             },
             {
-#line 26963
+#line 27013
             .species = SPECIES_SINISTCHA_MASTERPIECE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26963
+#line 27013
             .heldItem = ITEM_FOCUS_SASH,
-#line 26966
+#line 27016
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26965
+#line 27015
             .ability = ABILITY_HOSPITALITY,
-#line 26964
+#line 27014
             .lvl = 66,
             .ball = POKEBALL_COUNT,
-#line 26967
+#line 27017
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26968
+#line 27018
                 MOVE_MATCHA_GOTCHA,
                 MOVE_RAGE_POWDER,
                 MOVE_POLLEN_PUFF,
@@ -67085,23 +67203,23 @@
             },
             },
             {
-#line 26973
+#line 27023
             .species = SPECIES_SCOVILLAIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26973
+#line 27023
             .heldItem = ITEM_SCOVILLAINITE,
-#line 26976
+#line 27026
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26975
+#line 27025
             .ability = ABILITY_MOODY,
-#line 26974
+#line 27024
             .lvl = 66,
             .ball = POKEBALL_COUNT,
-#line 26977
+#line 27027
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26978
+#line 27028
                 MOVE_FIRE_BLAST,
                 MOVE_ENERGY_BALL,
                 MOVE_RAGE_POWDER,
@@ -67110,22 +67228,22 @@
             },
         },
     },
-#line 26983
+#line 27033
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_1] =
     {
-#line 26984
+#line 27034
         .trainerName = _("Cristin"),
-#line 26985
+#line 27035
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
-#line 26986
+#line 27036
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-#line 26987
+#line 27037
         .gender = TRAINER_GENDER_FEMALE,
-#line 26988
+#line 27038
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-#line 26989
+#line 27039
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 26990
+#line 27040
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -67133,23 +67251,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 26992
+#line 27042
             .species = SPECIES_SAWK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 26992
+#line 27042
             .heldItem = ITEM_RED_CARD,
-#line 26995
+#line 27045
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 26994
+#line 27044
             .ability = ABILITY_STURDY,
-#line 26993
+#line 27043
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 26996
+#line 27046
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 26997
+#line 27047
                 MOVE_CLOSE_COMBAT,
                 MOVE_STEALTH_ROCK,
                 MOVE_STONE_EDGE,
@@ -67157,23 +67275,23 @@
             },
             },
             {
-#line 27002
+#line 27052
             .species = SPECIES_LEAVANNY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27002
+#line 27052
             .heldItem = ITEM_FOCUS_SASH,
-#line 27005
+#line 27055
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 27004
+#line 27054
             .ability = ABILITY_SWARM,
-#line 27003
+#line 27053
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 27006
+#line 27056
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27007
+#line 27057
                 MOVE_LEAF_BLADE,
                 MOVE_X_SCISSOR,
                 MOVE_TRIPLE_AXEL,
@@ -67181,23 +67299,23 @@
             },
             },
             {
-#line 27012
+#line 27062
             .species = SPECIES_KINGLER,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27012
+#line 27062
             .heldItem = ITEM_WHITE_HERB,
-#line 27015
+#line 27065
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 27014
+#line 27064
             .ability = ABILITY_HYPER_CUTTER,
-#line 27013
+#line 27063
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 27016
+#line 27066
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27017
+#line 27067
                 MOVE_CRABHAMMER,
                 MOVE_ICE_HAMMER,
                 MOVE_SHELL_SMASH,
@@ -67205,46 +67323,46 @@
             },
             },
             {
-#line 27022
+#line 27072
             .species = SPECIES_DUGTRIO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27022
+#line 27072
             .heldItem = ITEM_CHOICE_BAND,
-#line 27025
+#line 27075
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 27024
+#line 27074
             .ability = ABILITY_ARENA_TRAP,
-#line 27023
+#line 27073
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 27026
+#line 27076
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27027
+#line 27077
                 MOVE_EARTHQUAKE,
                 MOVE_STONE_EDGE,
                 MOVE_PURSUIT,
             },
             },
             {
-#line 27031
+#line 27081
             .species = SPECIES_ZEBSTRIKA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27031
+#line 27081
             .heldItem = ITEM_SITRUS_BERRY,
-#line 27034
+#line 27084
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 27033
+#line 27083
             .ability = ABILITY_SAP_SIPPER,
-#line 27032
+#line 27082
             .lvl = 62,
             .ball = POKEBALL_COUNT,
-#line 27035
+#line 27085
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27036
+#line 27086
                 MOVE_VOLT_TACKLE,
                 MOVE_HIGH_HORSEPOWER,
                 MOVE_TRAILBLAZE,
@@ -67253,22 +67371,22 @@
             },
         },
     },
-#line 27041
+#line 27091
     [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_TREECKO] =
     {
-#line 27042
+#line 27092
         .trainerName = _("MAY"),
-#line 27043
+#line 27093
         .trainerClass = TRAINER_CLASS_RIVAL,
-#line 27044
+#line 27094
         .trainerPic = TRAINER_PIC_MAY,
-#line 27045
+#line 27095
         .gender = TRAINER_GENDER_FEMALE,
-#line 27046
+#line 27096
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 27047
+#line 27097
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27048
+#line 27098
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -67276,23 +67394,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27050
+#line 27100
             .species = SPECIES_SABLEYE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27050
+#line 27100
             .heldItem = ITEM_ROSELI_BERRY,
-#line 27053
+#line 27103
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27052
+#line 27102
             .ability = ABILITY_PRANKSTER,
-#line 27051
+#line 27101
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 27054
+#line 27104
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27055
+#line 27105
                 MOVE_SHADOW_CLAW,
                 MOVE_BRICK_BREAK,
                 MOVE_RECOVER,
@@ -67300,23 +67418,23 @@
             },
             },
             {
-#line 27060
+#line 27110
             .species = SPECIES_BEAUTIFLY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27060
+#line 27110
             .heldItem = ITEM_FOCUS_SASH,
-#line 27063
+#line 27113
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27062
+#line 27112
             .ability = ABILITY_SWARM,
-#line 27061
+#line 27111
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 27064
+#line 27114
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27065
+#line 27115
                 MOVE_QUIVER_DANCE,
                 MOVE_AIR_CUTTER,
                 MOVE_SILVER_WIND,
@@ -67324,23 +67442,23 @@
             },
             },
             {
-#line 27070
+#line 27120
             .species = SPECIES_QUAGSIRE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27070
+#line 27120
             .heldItem = ITEM_RINDO_BERRY,
-#line 27073
+#line 27123
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27072
+#line 27122
             .ability = ABILITY_WATER_ABSORB,
-#line 27071
+#line 27121
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 27074
+#line 27124
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27075
+#line 27125
                 MOVE_ROCK_SLIDE,
                 MOVE_STOMPING_TANTRUM,
                 MOVE_ICE_PUNCH,
@@ -67348,23 +67466,23 @@
             },
             },
             {
-#line 27080
+#line 27130
             .species = SPECIES_MAWILE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27080
+#line 27130
             .heldItem = ITEM_LIFE_ORB,
-#line 27083
+#line 27133
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27082
+#line 27132
             .ability = ABILITY_SHEER_FORCE,
-#line 27081
+#line 27131
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 27084
+#line 27134
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27085
+#line 27135
                 MOVE_ICE_FANG,
                 MOVE_ROCK_TOMB,
                 MOVE_COVET,
@@ -67372,23 +67490,23 @@
             },
             },
             {
-#line 27090
+#line 27140
             .species = SPECIES_CHERRIM_OVERCAST,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27090
+#line 27140
             .heldItem = ITEM_BIG_ROOT,
-#line 27093
+#line 27143
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 30, 30, 31),
-#line 27092
+#line 27142
             .ability = ABILITY_FLOWER_GIFT,
-#line 27091
+#line 27141
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 27094
+#line 27144
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27095
+#line 27145
                 MOVE_GIGA_DRAIN,
                 MOVE_DAZZLING_GLEAM,
                 MOVE_POLLEN_PUFF,
@@ -67396,23 +67514,23 @@
             },
             },
             {
-#line 27100
+#line 27150
             .species = SPECIES_COMBUSKEN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27100
+#line 27150
             .heldItem = ITEM_SITRUS_BERRY,
-#line 27103
+#line 27153
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27102
+#line 27152
             .ability = ABILITY_SPEED_BOOST,
-#line 27101
+#line 27151
             .lvl = 24,
             .ball = POKEBALL_COUNT,
-#line 27104
+#line 27154
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27105
+#line 27155
                 MOVE_THUNDERPUNCH,
                 MOVE_FIRE_PUNCH,
                 MOVE_SWORDS_DANCE,
@@ -67421,22 +67539,22 @@
             },
         },
     },
-#line 27110
+#line 27160
     [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_TORCHIC] =
     {
-#line 27111
+#line 27161
         .trainerName = _("MAY"),
-#line 27112
+#line 27162
         .trainerClass = TRAINER_CLASS_RIVAL,
-#line 27113
+#line 27163
         .trainerPic = TRAINER_PIC_MAY,
-#line 27114
+#line 27164
         .gender = TRAINER_GENDER_FEMALE,
-#line 27115
+#line 27165
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 27116
+#line 27166
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27117
+#line 27167
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -67444,135 +67562,15 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27119
+#line 27169
             .species = SPECIES_SABLEYE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27119
+#line 27169
             .heldItem = ITEM_ROSELI_BERRY,
-#line 27122
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27121
-            .ability = ABILITY_PRANKSTER,
-#line 27120
-            .lvl = 24,
-            .ball = POKEBALL_COUNT,
-#line 27123
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27124
-                MOVE_SHADOW_CLAW,
-                MOVE_BRICK_BREAK,
-                MOVE_RECOVER,
-                MOVE_WILL_O_WISP,
-            },
-            },
-            {
-#line 27129
-            .species = SPECIES_BEAUTIFLY,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27129
-            .heldItem = ITEM_FOCUS_SASH,
-#line 27132
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27131
-            .ability = ABILITY_SWARM,
-#line 27130
-            .lvl = 24,
-            .ball = POKEBALL_COUNT,
-#line 27133
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27134
-                MOVE_QUIVER_DANCE,
-                MOVE_AIR_CUTTER,
-                MOVE_SILVER_WIND,
-                MOVE_GIGA_DRAIN,
-            },
-            },
-            {
-#line 27139
-            .species = SPECIES_MAGCARGO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27139
-            .heldItem = ITEM_WEAKNESS_POLICY,
-#line 27142
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27141
-            .ability = ABILITY_STURDY,
-#line 27140
-            .lvl = 24,
-            .ball = POKEBALL_COUNT,
-#line 27143
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27144
-                MOVE_ANCIENTPOWER,
-                MOVE_BURNING_JEALOUSY,
-                MOVE_SCORCHING_SANDS,
-                MOVE_SHELL_SMASH,
-            },
-            },
-            {
-#line 27149
-            .species = SPECIES_MAWILE,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27149
-            .heldItem = ITEM_LIFE_ORB,
-#line 27152
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27151
-            .ability = ABILITY_SHEER_FORCE,
-#line 27150
-            .lvl = 24,
-            .ball = POKEBALL_COUNT,
-#line 27153
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27154
-                MOVE_ICE_FANG,
-                MOVE_ROCK_TOMB,
-                MOVE_COVET,
-                MOVE_METAL_CLAW,
-            },
-            },
-            {
-#line 27159
-            .species = SPECIES_CHERRIM_OVERCAST,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27159
-            .heldItem = ITEM_BIG_ROOT,
-#line 27162
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 30, 30, 31),
-#line 27161
-            .ability = ABILITY_FLOWER_GIFT,
-#line 27160
-            .lvl = 24,
-            .ball = POKEBALL_COUNT,
-#line 27163
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27164
-                MOVE_GIGA_DRAIN,
-                MOVE_DAZZLING_GLEAM,
-                MOVE_POLLEN_PUFF,
-                MOVE_HIDDEN_POWER,
-            },
-            },
-            {
-#line 27169
-            .species = SPECIES_MARSHTOMP,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27169
-            .heldItem = ITEM_RINDO_BERRY,
 #line 27172
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 27171
-            .ability = ABILITY_TORRENT,
+            .ability = ABILITY_PRANKSTER,
 #line 27170
             .lvl = 24,
             .ball = POKEBALL_COUNT,
@@ -67581,6 +67579,126 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 27174
+                MOVE_SHADOW_CLAW,
+                MOVE_BRICK_BREAK,
+                MOVE_RECOVER,
+                MOVE_WILL_O_WISP,
+            },
+            },
+            {
+#line 27179
+            .species = SPECIES_BEAUTIFLY,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27179
+            .heldItem = ITEM_FOCUS_SASH,
+#line 27182
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27181
+            .ability = ABILITY_SWARM,
+#line 27180
+            .lvl = 24,
+            .ball = POKEBALL_COUNT,
+#line 27183
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27184
+                MOVE_QUIVER_DANCE,
+                MOVE_AIR_CUTTER,
+                MOVE_SILVER_WIND,
+                MOVE_GIGA_DRAIN,
+            },
+            },
+            {
+#line 27189
+            .species = SPECIES_MAGCARGO,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27189
+            .heldItem = ITEM_WEAKNESS_POLICY,
+#line 27192
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27191
+            .ability = ABILITY_STURDY,
+#line 27190
+            .lvl = 24,
+            .ball = POKEBALL_COUNT,
+#line 27193
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27194
+                MOVE_ANCIENTPOWER,
+                MOVE_BURNING_JEALOUSY,
+                MOVE_SCORCHING_SANDS,
+                MOVE_SHELL_SMASH,
+            },
+            },
+            {
+#line 27199
+            .species = SPECIES_MAWILE,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27199
+            .heldItem = ITEM_LIFE_ORB,
+#line 27202
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27201
+            .ability = ABILITY_SHEER_FORCE,
+#line 27200
+            .lvl = 24,
+            .ball = POKEBALL_COUNT,
+#line 27203
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27204
+                MOVE_ICE_FANG,
+                MOVE_ROCK_TOMB,
+                MOVE_COVET,
+                MOVE_METAL_CLAW,
+            },
+            },
+            {
+#line 27209
+            .species = SPECIES_CHERRIM_OVERCAST,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27209
+            .heldItem = ITEM_BIG_ROOT,
+#line 27212
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 30, 30, 31),
+#line 27211
+            .ability = ABILITY_FLOWER_GIFT,
+#line 27210
+            .lvl = 24,
+            .ball = POKEBALL_COUNT,
+#line 27213
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27214
+                MOVE_GIGA_DRAIN,
+                MOVE_DAZZLING_GLEAM,
+                MOVE_POLLEN_PUFF,
+                MOVE_HIDDEN_POWER,
+            },
+            },
+            {
+#line 27219
+            .species = SPECIES_MARSHTOMP,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27219
+            .heldItem = ITEM_RINDO_BERRY,
+#line 27222
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27221
+            .ability = ABILITY_TORRENT,
+#line 27220
+            .lvl = 24,
+            .ball = POKEBALL_COUNT,
+#line 27223
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27224
                 MOVE_ICE_PUNCH,
                 MOVE_ROCK_SLIDE,
                 MOVE_BULLDOZE,
@@ -67589,22 +67707,22 @@
             },
         },
     },
-#line 27179
+#line 27229
     [DIFFICULTY_NORMAL][TRAINER_GIOVANNI_1] =
     {
-#line 27180
+#line 27230
         .trainerName = _("Giovanni"),
-#line 27181
+#line 27231
         .trainerClass = TRAINER_CLASS_ROCKET_LEADER,
-#line 27182
+#line 27232
         .trainerPic = TRAINER_PIC_GIOVANNI,
-#line 27183
+#line 27233
         .gender = TRAINER_GENDER_MALE,
-#line 27184
+#line 27234
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27185
+#line 27235
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27186
+#line 27236
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -67612,23 +67730,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27188
+#line 27238
             .species = SPECIES_MEWTWO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27188
+#line 27238
             .heldItem = ITEM_EXPERT_BELT,
-#line 27191
+#line 27241
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27190
+#line 27240
             .ability = ABILITY_PRESSURE,
-#line 27189
+#line 27239
             .lvl = 50,
             .ball = POKEBALL_COUNT,
-#line 27192
+#line 27242
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27193
+#line 27243
                 MOVE_PSYSTRIKE,
                 MOVE_AURA_SPHERE,
                 MOVE_ICE_BEAM,
@@ -67636,23 +67754,23 @@
             },
             },
             {
-#line 27198
+#line 27248
             .species = SPECIES_NIDOKING,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27198
+#line 27248
             .heldItem = ITEM_LIFE_ORB,
-#line 27201
+#line 27251
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27200
+#line 27250
             .ability = ABILITY_SHEER_FORCE,
-#line 27199
+#line 27249
             .lvl = 50,
             .ball = POKEBALL_COUNT,
-#line 27202
+#line 27252
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27203
+#line 27253
                 MOVE_EARTH_POWER,
                 MOVE_ICE_BEAM,
                 MOVE_SLUDGE_WAVE,
@@ -67660,23 +67778,23 @@
             },
             },
             {
-#line 27208
+#line 27258
             .species = SPECIES_RHYPERIOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27208
+#line 27258
             .heldItem = ITEM_ASSAULT_VEST,
-#line 27211
+#line 27261
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27210
+#line 27260
             .ability = ABILITY_SOLID_ROCK,
-#line 27209
+#line 27259
             .lvl = 50,
             .ball = POKEBALL_COUNT,
-#line 27212
+#line 27262
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27213
+#line 27263
                 MOVE_STONE_EDGE,
                 MOVE_EARTHQUAKE,
                 MOVE_MEGAHORN,
@@ -67684,23 +67802,23 @@
             },
             },
             {
-#line 27218
+#line 27268
             .species = SPECIES_HONCHKROW,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27218
+#line 27268
             .heldItem = ITEM_SCOPE_LENS,
-#line 27221
+#line 27271
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27220
+#line 27270
             .ability = ABILITY_SUPER_LUCK,
-#line 27219
+#line 27269
             .lvl = 50,
             .ball = POKEBALL_COUNT,
-#line 27222
+#line 27272
             .nature = NATURE_NAIVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27223
+#line 27273
                 MOVE_NIGHT_SLASH,
                 MOVE_DRILL_PECK,
                 MOVE_HEAT_WAVE,
@@ -67708,23 +67826,23 @@
             },
             },
             {
-#line 27228
+#line 27278
             .species = SPECIES_PERRSERKER,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27228
+#line 27278
             .heldItem = ITEM_FOCUS_SASH,
-#line 27231
+#line 27281
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27230
+#line 27280
             .ability = ABILITY_TOUGH_CLAWS,
-#line 27229
+#line 27279
             .lvl = 50,
             .ball = POKEBALL_COUNT,
-#line 27232
+#line 27282
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27233
+#line 27283
                 MOVE_IRON_TAIL,
                 MOVE_TRAILBLAZE,
                 MOVE_PLAY_ROUGH,
@@ -67732,23 +67850,23 @@
             },
             },
             {
-#line 27238
+#line 27288
             .species = SPECIES_KANGASKHAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27238
+#line 27288
             .heldItem = ITEM_KANGASKHANITE,
-#line 27241
+#line 27291
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27240
+#line 27290
             .ability = ABILITY_INNER_FOCUS,
-#line 27239
+#line 27289
             .lvl = 50,
             .ball = POKEBALL_COUNT,
-#line 27242
+#line 27292
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27243
+#line 27293
                 MOVE_POWER_UP_PUNCH,
                 MOVE_CRUSH_CLAW,
                 MOVE_EARTHQUAKE,
@@ -67757,22 +67875,22 @@
             },
         },
     },
-#line 27248
+#line 27298
     [DIFFICULTY_NORMAL][TRAINER_GIOVANNI_2] =
     {
-#line 27249
+#line 27299
         .trainerName = _("Giovanni"),
-#line 27250
+#line 27300
         .trainerClass = TRAINER_CLASS_ROCKET_LEADER,
-#line 27251
+#line 27301
         .trainerPic = TRAINER_PIC_GIOVANNI,
-#line 27252
+#line 27302
         .gender = TRAINER_GENDER_MALE,
-#line 27253
+#line 27303
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27254
+#line 27304
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27255
+#line 27305
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -67780,135 +67898,15 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27257
+#line 27307
             .species = SPECIES_MIRAIDON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27257
+#line 27307
             .heldItem = ITEM_WHITE_HERB,
-#line 27260
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27259
-            .ability = ABILITY_HADRON_ENGINE,
-#line 27258
-            .lvl = 90,
-            .ball = POKEBALL_COUNT,
-#line 27261
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27262
-                MOVE_ELECTRO_DRIFT,
-                MOVE_DRACO_METEOR,
-                MOVE_OVERHEAT,
-                MOVE_FLASH_CANNON,
-            },
-            },
-            {
-#line 27267
-            .species = SPECIES_IRON_TREADS,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27267
-            .heldItem = ITEM_WIDE_LENS,
-#line 27270
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27269
-            .ability = ABILITY_QUARK_DRIVE,
-#line 27268
-            .lvl = 90,
-            .ball = POKEBALL_COUNT,
-#line 27271
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27272
-                MOVE_MEGAHORN,
-                MOVE_EARTHQUAKE,
-                MOVE_IRON_TAIL,
-                MOVE_SUPERCELL_SLAM,
-            },
-            },
-            {
-#line 27277
-            .species = SPECIES_IRON_BOULDER,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27277
-            .heldItem = ITEM_LIFE_ORB,
-#line 27280
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27279
-            .ability = ABILITY_QUARK_DRIVE,
-#line 27278
-            .lvl = 90,
-            .ball = POKEBALL_COUNT,
-#line 27281
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27282
-                MOVE_MIGHTY_CLEAVE,
-                MOVE_ZEN_HEADBUTT,
-                MOVE_EARTHQUAKE,
-                MOVE_SWORDS_DANCE,
-            },
-            },
-            {
-#line 27287
-            .species = SPECIES_IRON_VALIANT,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27287
-            .heldItem = ITEM_FOCUS_SASH,
-#line 27290
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27289
-            .ability = ABILITY_QUARK_DRIVE,
-#line 27288
-            .lvl = 90,
-            .ball = POKEBALL_COUNT,
-#line 27291
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27292
-                MOVE_SPIRIT_BREAK,
-                MOVE_CLOSE_COMBAT,
-                MOVE_THUNDERPUNCH,
-                MOVE_ZEN_HEADBUTT,
-            },
-            },
-            {
-#line 27297
-            .species = SPECIES_ETERNATUS,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27297
-            .heldItem = ITEM_ASSAULT_VEST,
-#line 27300
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27299
-            .ability = ABILITY_PRESSURE,
-#line 27298
-            .lvl = 90,
-            .ball = POKEBALL_COUNT,
-#line 27301
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27302
-                MOVE_DYNAMAX_CANNON,
-                MOVE_SLUDGE_WAVE,
-                MOVE_TERRAIN_PULSE,
-                MOVE_FLAMETHROWER,
-            },
-            },
-            {
-#line 27307
-            .species = SPECIES_MEWTWO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27307
-            .heldItem = ITEM_MEWTWONITE_Y,
 #line 27310
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 27309
-            .ability = ABILITY_PRESSURE,
+            .ability = ABILITY_HADRON_ENGINE,
 #line 27308
             .lvl = 90,
             .ball = POKEBALL_COUNT,
@@ -67917,6 +67915,126 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 27312
+                MOVE_ELECTRO_DRIFT,
+                MOVE_DRACO_METEOR,
+                MOVE_OVERHEAT,
+                MOVE_FLASH_CANNON,
+            },
+            },
+            {
+#line 27317
+            .species = SPECIES_IRON_TREADS,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27317
+            .heldItem = ITEM_WIDE_LENS,
+#line 27320
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27319
+            .ability = ABILITY_QUARK_DRIVE,
+#line 27318
+            .lvl = 90,
+            .ball = POKEBALL_COUNT,
+#line 27321
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27322
+                MOVE_MEGAHORN,
+                MOVE_EARTHQUAKE,
+                MOVE_IRON_TAIL,
+                MOVE_SUPERCELL_SLAM,
+            },
+            },
+            {
+#line 27327
+            .species = SPECIES_IRON_BOULDER,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27327
+            .heldItem = ITEM_LIFE_ORB,
+#line 27330
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27329
+            .ability = ABILITY_QUARK_DRIVE,
+#line 27328
+            .lvl = 90,
+            .ball = POKEBALL_COUNT,
+#line 27331
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27332
+                MOVE_MIGHTY_CLEAVE,
+                MOVE_ZEN_HEADBUTT,
+                MOVE_EARTHQUAKE,
+                MOVE_SWORDS_DANCE,
+            },
+            },
+            {
+#line 27337
+            .species = SPECIES_IRON_VALIANT,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27337
+            .heldItem = ITEM_FOCUS_SASH,
+#line 27340
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27339
+            .ability = ABILITY_QUARK_DRIVE,
+#line 27338
+            .lvl = 90,
+            .ball = POKEBALL_COUNT,
+#line 27341
+            .nature = NATURE_ADAMANT,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27342
+                MOVE_SPIRIT_BREAK,
+                MOVE_CLOSE_COMBAT,
+                MOVE_THUNDERPUNCH,
+                MOVE_ZEN_HEADBUTT,
+            },
+            },
+            {
+#line 27347
+            .species = SPECIES_ETERNATUS,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27347
+            .heldItem = ITEM_ASSAULT_VEST,
+#line 27350
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27349
+            .ability = ABILITY_PRESSURE,
+#line 27348
+            .lvl = 90,
+            .ball = POKEBALL_COUNT,
+#line 27351
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27352
+                MOVE_DYNAMAX_CANNON,
+                MOVE_SLUDGE_WAVE,
+                MOVE_TERRAIN_PULSE,
+                MOVE_FLAMETHROWER,
+            },
+            },
+            {
+#line 27357
+            .species = SPECIES_MEWTWO,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27357
+            .heldItem = ITEM_MEWTWONITE_Y,
+#line 27360
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27359
+            .ability = ABILITY_PRESSURE,
+#line 27358
+            .lvl = 90,
+            .ball = POKEBALL_COUNT,
+#line 27361
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27362
                 MOVE_PSYSTRIKE,
                 MOVE_AURA_SPHERE,
                 MOVE_NASTY_PLOT,
@@ -67925,22 +68043,22 @@
             },
         },
     },
-#line 27317
+#line 27367
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_1] =
     {
-#line 27318
+#line 27368
         .trainerName = _("Grunt"),
-#line 27319
+#line 27369
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27320
+#line 27370
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 27321
+#line 27371
         .gender = TRAINER_GENDER_MALE,
-#line 27322
+#line 27372
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27323
+#line 27373
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27324
+#line 27374
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -67948,23 +68066,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27326
+#line 27376
             .species = SPECIES_GLIMMORA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27326
+#line 27376
             .heldItem = ITEM_AIR_BALLOON,
-#line 27329
+#line 27379
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27328
+#line 27378
             .ability = ABILITY_TOXIC_DEBRIS,
-#line 27327
+#line 27377
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27330
+#line 27380
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27331
+#line 27381
                 MOVE_POWER_GEM,
                 MOVE_EARTH_POWER,
                 MOVE_STEALTH_ROCK,
@@ -67972,23 +68090,23 @@
             },
             },
             {
-#line 27336
+#line 27386
             .species = SPECIES_BUTTERFREE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27336
+#line 27386
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 27339
+#line 27389
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27338
+#line 27388
             .ability = ABILITY_COMPOUND_EYES,
-#line 27337
+#line 27387
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27340
+#line 27390
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27341
+#line 27391
                 MOVE_SLEEP_POWDER,
                 MOVE_BUG_BUZZ,
                 MOVE_HURRICANE,
@@ -67996,23 +68114,23 @@
             },
             },
             {
-#line 27346
+#line 27396
             .species = SPECIES_PANGORO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27346
+#line 27396
             .heldItem = ITEM_ASSAULT_VEST,
-#line 27349
+#line 27399
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27348
+#line 27398
             .ability = ABILITY_IRON_FIST,
-#line 27347
+#line 27397
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27350
+#line 27400
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27351
+#line 27401
                 MOVE_POWER_UP_PUNCH,
                 MOVE_DRAIN_PUNCH,
                 MOVE_WICKED_BLOW,
@@ -68020,23 +68138,23 @@
             },
             },
             {
-#line 27356
+#line 27406
             .species = SPECIES_POLTEAGEIST,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27356
+#line 27406
             .heldItem = ITEM_FOCUS_SASH,
-#line 27359
+#line 27409
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27358
+#line 27408
             .ability = ABILITY_WEAK_ARMOR,
-#line 27357
+#line 27407
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27360
+#line 27410
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27361
+#line 27411
                 MOVE_SHADOW_BALL,
                 MOVE_STORED_POWER,
                 MOVE_SHELL_SMASH,
@@ -68044,23 +68162,23 @@
             },
             },
             {
-#line 27366
+#line 27416
             .species = SPECIES_GARBODOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27366
+#line 27416
             .heldItem = ITEM_LIECHI_BERRY,
-#line 27369
+#line 27419
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27368
+#line 27418
             .ability = ABILITY_WEAK_ARMOR,
-#line 27367
+#line 27417
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27370
+#line 27420
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27371
+#line 27421
                 MOVE_GUNK_SHOT,
                 MOVE_EXPLOSION,
                 MOVE_SEED_BOMB,
@@ -68069,22 +68187,22 @@
             },
         },
     },
-#line 27376
+#line 27426
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_2] =
     {
-#line 27377
+#line 27427
         .trainerName = _("Grunt"),
-#line 27378
+#line 27428
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27379
+#line 27429
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 27380
+#line 27430
         .gender = TRAINER_GENDER_FEMALE,
-#line 27381
+#line 27431
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27382
+#line 27432
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27383
+#line 27433
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -68092,23 +68210,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27385
+#line 27435
             .species = SPECIES_OMASTAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27385
+#line 27435
             .heldItem = ITEM_FOCUS_BAND,
-#line 27388
+#line 27438
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27387
+#line 27437
             .ability = ABILITY_WEAK_ARMOR,
-#line 27386
+#line 27436
             .lvl = 47,
             .ball = POKEBALL_COUNT,
-#line 27389
+#line 27439
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27390
+#line 27440
                 MOVE_STEALTH_ROCK,
                 MOVE_SPIKES,
                 MOVE_ICE_BEAM,
@@ -68116,23 +68234,23 @@
             },
             },
             {
-#line 27395
+#line 27445
             .species = SPECIES_MANDIBUZZ,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27395
+#line 27445
             .heldItem = ITEM_LEFTOVERS,
-#line 27398
+#line 27448
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27397
+#line 27447
             .ability = ABILITY_BIG_PECKS,
-#line 27396
+#line 27446
             .lvl = 47,
             .ball = POKEBALL_COUNT,
-#line 27399
+#line 27449
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27400
+#line 27450
                 MOVE_ROOST,
                 MOVE_FOUL_PLAY,
                 MOVE_TOXIC,
@@ -68140,23 +68258,23 @@
             },
             },
             {
-#line 27405
+#line 27455
             .species = SPECIES_BOUFFALANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27405
+#line 27455
             .heldItem = ITEM_SITRUS_BERRY,
-#line 27408
+#line 27458
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27407
+#line 27457
             .ability = ABILITY_RECKLESS,
-#line 27406
+#line 27456
             .lvl = 47,
             .ball = POKEBALL_COUNT,
-#line 27409
+#line 27459
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27410
+#line 27460
                 MOVE_HEAD_CHARGE,
                 MOVE_HIGH_HORSEPOWER,
                 MOVE_MEGAHORN,
@@ -68164,23 +68282,23 @@
             },
             },
             {
-#line 27415
+#line 27465
             .species = SPECIES_KLINKLANG,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27415
+#line 27465
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 27418
+#line 27468
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27417
+#line 27467
             .ability = ABILITY_FILTER,
-#line 27416
+#line 27466
             .lvl = 47,
             .ball = POKEBALL_COUNT,
-#line 27419
+#line 27469
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27420
+#line 27470
                 MOVE_SUBSTITUTE,
                 MOVE_SHIFT_GEAR,
                 MOVE_GEAR_GRIND,
@@ -68189,22 +68307,22 @@
             },
         },
     },
-#line 27425
+#line 27475
     [DIFFICULTY_NORMAL][TRAINER_CYRUS] =
     {
-#line 27426
+#line 27476
         .trainerName = _("Cyrus"),
-#line 27427
+#line 27477
         .trainerClass = TRAINER_CLASS_TEAM_GALACTIC,
-#line 27428
+#line 27478
         .trainerPic = TRAINER_PIC_CYRUS,
-#line 27429
+#line 27479
         .gender = TRAINER_GENDER_MALE,
-#line 27430
+#line 27480
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 27431
+#line 27481
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27432
+#line 27482
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -68212,23 +68330,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27434
+#line 27484
             .species = SPECIES_WEAVILE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27434
+#line 27484
             .heldItem = ITEM_FOCUS_SASH,
-#line 27437
+#line 27487
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27436
+#line 27486
             .ability = ABILITY_INNER_FOCUS,
-#line 27435
+#line 27485
             .lvl = 94,
             .ball = POKEBALL_COUNT,
-#line 27438
+#line 27488
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27439
+#line 27489
                 MOVE_TRIPLE_AXEL,
                 MOVE_THROAT_CHOP,
                 MOVE_POISON_JAB,
@@ -68236,23 +68354,23 @@
             },
             },
             {
-#line 27444
+#line 27494
             .species = SPECIES_DARKRAI,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27444
+#line 27494
             .heldItem = ITEM_LIFE_ORB,
-#line 27447
+#line 27497
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27446
+#line 27496
             .ability = ABILITY_BAD_DREAMS,
-#line 27445
+#line 27495
             .lvl = 94,
             .ball = POKEBALL_COUNT,
-#line 27448
+#line 27498
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27449
+#line 27499
                 MOVE_DARK_PULSE,
                 MOVE_PSYCHIC,
                 MOVE_NASTY_PLOT,
@@ -68260,23 +68378,23 @@
             },
             },
             {
-#line 27454
+#line 27504
             .species = SPECIES_REGIGIGAS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27454
+#line 27504
             .heldItem = ITEM_FLAME_ORB,
-#line 27457
+#line 27507
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27456
+#line 27506
             .ability = ABILITY_GUTS,
-#line 27455
+#line 27505
             .lvl = 94,
             .ball = POKEBALL_COUNT,
-#line 27458
+#line 27508
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27459
+#line 27509
                 MOVE_FACADE,
                 MOVE_ZEN_HEADBUTT,
                 MOVE_ICE_PUNCH,
@@ -68284,23 +68402,23 @@
             },
             },
             {
-#line 27464
+#line 27514
             .species = SPECIES_DIALGA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27464
+#line 27514
             .heldItem = ITEM_ADAMANT_ORB,
-#line 27467
+#line 27517
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27466
+#line 27516
             .ability = ABILITY_PRESSURE,
-#line 27465
+#line 27515
             .lvl = 94,
             .ball = POKEBALL_COUNT,
-#line 27468
+#line 27518
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27469
+#line 27519
                 MOVE_ROAR_OF_TIME,
                 MOVE_FLASH_CANNON,
                 MOVE_ICE_BEAM,
@@ -68308,23 +68426,23 @@
             },
             },
             {
-#line 27474
+#line 27524
             .species = SPECIES_PALKIA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27474
+#line 27524
             .heldItem = ITEM_LUSTROUS_ORB,
-#line 27477
+#line 27527
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27476
+#line 27526
             .ability = ABILITY_PRESSURE,
-#line 27475
+#line 27525
             .lvl = 94,
             .ball = POKEBALL_COUNT,
-#line 27478
+#line 27528
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27479
+#line 27529
                 MOVE_SPACIAL_REND,
                 MOVE_HYDRO_PUMP,
                 MOVE_AURA_SPHERE,
@@ -68332,23 +68450,23 @@
             },
             },
             {
-#line 27484
+#line 27534
             .species = SPECIES_GIRATINA_ALTERED,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27484
+#line 27534
             .heldItem = ITEM_GRISEOUS_ORB,
-#line 27487
+#line 27537
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27486
+#line 27536
             .ability = ABILITY_PRESSURE,
-#line 27485
+#line 27535
             .lvl = 94,
             .ball = POKEBALL_COUNT,
-#line 27488
+#line 27538
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27489
+#line 27539
                 MOVE_SHADOW_FORCE,
                 MOVE_DRAGON_RUSH,
                 MOVE_DRAGON_DANCE,
@@ -68357,22 +68475,22 @@
             },
         },
     },
-#line 27494
+#line 27544
     [DIFFICULTY_NORMAL][TRAINER_CYNTHIA] =
     {
-#line 27495
+#line 27545
         .trainerName = _("Cynthia"),
-#line 27496
+#line 27546
         .trainerClass = TRAINER_CLASS_SINNOH_CHAMP,
-#line 27497
+#line 27547
         .trainerPic = TRAINER_PIC_CYNTHIA,
-#line 27498
+#line 27548
         .gender = TRAINER_GENDER_MALE,
-#line 27499
+#line 27549
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 27500
+#line 27550
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27501
+#line 27551
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -68380,23 +68498,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27503
+#line 27553
             .species = SPECIES_HIPPOWDON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27503
+#line 27553
             .heldItem = ITEM_LEFTOVERS,
-#line 27506
+#line 27556
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27505
+#line 27555
             .ability = ABILITY_SAND_STREAM,
-#line 27504
+#line 27554
             .lvl = 97,
             .ball = POKEBALL_COUNT,
-#line 27507
+#line 27557
             .nature = NATURE_CAREFUL,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27508
+#line 27558
                 MOVE_EARTHQUAKE,
                 MOVE_STONE_EDGE,
                 MOVE_TOXIC,
@@ -68404,23 +68522,23 @@
             },
             },
             {
-#line 27513
+#line 27563
             .species = SPECIES_ROSERADE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27513
+#line 27563
             .heldItem = ITEM_SAFETY_GOGGLES,
-#line 27516
+#line 27566
             .iv = TRAINER_PARTY_IVS(31, 30, 31, 30, 31, 30),
-#line 27515
+#line 27565
             .ability = ABILITY_TECHNICIAN,
-#line 27514
+#line 27564
             .lvl = 97,
             .ball = POKEBALL_COUNT,
-#line 27517
+#line 27567
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27518
+#line 27568
                 MOVE_MEGA_DRAIN,
                 MOVE_WEATHER_BALL,
                 MOVE_SLUDGE_BOMB,
@@ -68428,23 +68546,23 @@
             },
             },
             {
-#line 27523
+#line 27573
             .species = SPECIES_GASTRODON_EAST,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27523
+#line 27573
             .heldItem = ITEM_RINDO_BERRY,
-#line 27526
+#line 27576
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27525
+#line 27575
             .ability = ABILITY_SAND_FORCE,
-#line 27524
+#line 27574
             .lvl = 97,
             .ball = POKEBALL_COUNT,
-#line 27527
+#line 27577
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27528
+#line 27578
                 MOVE_EARTH_POWER,
                 MOVE_WEATHER_BALL,
                 MOVE_ICE_BEAM,
@@ -68452,23 +68570,23 @@
             },
             },
             {
-#line 27533
+#line 27583
             .species = SPECIES_LUCARIO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27533
+#line 27583
             .heldItem = ITEM_FOCUS_SASH,
-#line 27536
+#line 27586
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27535
+#line 27585
             .ability = ABILITY_INNER_FOCUS,
-#line 27534
+#line 27584
             .lvl = 97,
             .ball = POKEBALL_COUNT,
-#line 27537
+#line 27587
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27538
+#line 27588
                 MOVE_CLOSE_COMBAT,
                 MOVE_METEOR_MASH,
                 MOVE_STONE_EDGE,
@@ -68476,23 +68594,23 @@
             },
             },
             {
-#line 27543
+#line 27593
             .species = SPECIES_RHYPERIOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27543
+#line 27593
             .heldItem = ITEM_WEAKNESS_POLICY,
-#line 27546
+#line 27596
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27545
+#line 27595
             .ability = ABILITY_SOLID_ROCK,
-#line 27544
+#line 27594
             .lvl = 97,
             .ball = POKEBALL_COUNT,
-#line 27547
+#line 27597
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27548
+#line 27598
                 MOVE_STONE_EDGE,
                 MOVE_EARTHQUAKE,
                 MOVE_ROCK_POLISH,
@@ -68500,23 +68618,23 @@
             },
             },
             {
-#line 27553
+#line 27603
             .species = SPECIES_GARCHOMP,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27553
+#line 27603
             .heldItem = ITEM_GARCHOMPITE,
-#line 27556
+#line 27606
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27555
+#line 27605
             .ability = ABILITY_SAND_VEIL,
-#line 27554
+#line 27604
             .lvl = 97,
             .ball = POKEBALL_COUNT,
-#line 27557
+#line 27607
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27558
+#line 27608
                 MOVE_EARTHQUAKE,
                 MOVE_DUAL_CHOP,
                 MOVE_ROCK_SLIDE,
@@ -68525,22 +68643,22 @@
             },
         },
     },
-#line 27563
+#line 27613
     [DIFFICULTY_NORMAL][TRAINER_ARCHER_2] =
     {
-#line 27564
+#line 27614
         .trainerName = _("Archer"),
-#line 27565
+#line 27615
         .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
-#line 27566
+#line 27616
         .trainerPic = TRAINER_PIC_ARCHER,
-#line 27567
+#line 27617
         .gender = TRAINER_GENDER_MALE,
-#line 27568
+#line 27618
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27569
+#line 27619
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27570
+#line 27620
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -68548,23 +68666,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27572
+#line 27622
             .species = SPECIES_TAPU_KOKO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27572
+#line 27622
             .heldItem = ITEM_FOCUS_SASH,
-#line 27575
+#line 27625
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27574
+#line 27624
             .ability = ABILITY_ELECTRIC_SURGE,
-#line 27573
+#line 27623
             .lvl = 88,
             .ball = POKEBALL_COUNT,
-#line 27576
+#line 27626
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27577
+#line 27627
                 MOVE_PLAY_ROUGH,
                 MOVE_GRASS_KNOT,
                 MOVE_BOLT_BEAK,
@@ -68572,23 +68690,23 @@
             },
             },
             {
-#line 27582
+#line 27632
             .species = SPECIES_IRON_LEAVES,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27582
+#line 27632
             .heldItem = ITEM_LIFE_ORB,
-#line 27585
+#line 27635
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27584
+#line 27634
             .ability = ABILITY_QUARK_DRIVE,
-#line 27583
+#line 27633
             .lvl = 88,
             .ball = POKEBALL_COUNT,
-#line 27586
+#line 27636
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27587
+#line 27637
                 MOVE_PSYBLADE,
                 MOVE_LEAF_BLADE,
                 MOVE_SACRED_SWORD,
@@ -68596,23 +68714,23 @@
             },
             },
             {
-#line 27592
+#line 27642
             .species = SPECIES_ALAKAZAM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27592
+#line 27642
             .heldItem = ITEM_ALAKAZITE,
-#line 27595
+#line 27645
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27594
+#line 27644
             .ability = ABILITY_SYNCHRONIZE,
-#line 27593
+#line 27643
             .lvl = 88,
             .ball = POKEBALL_COUNT,
-#line 27596
+#line 27646
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27597
+#line 27647
                 MOVE_PSYCHIC,
                 MOVE_FOCUS_BLAST,
                 MOVE_TERRAIN_PULSE,
@@ -68621,22 +68739,22 @@
             },
         },
     },
-#line 27602
+#line 27652
     [DIFFICULTY_NORMAL][TRAINER_ARIANA_2] =
     {
-#line 27603
+#line 27653
         .trainerName = _("Ariana"),
-#line 27604
+#line 27654
         .trainerClass = TRAINER_CLASS_ROCKET_ADMIN,
-#line 27605
+#line 27655
         .trainerPic = TRAINER_PIC_ARIANA,
-#line 27606
+#line 27656
         .gender = TRAINER_GENDER_MALE,
-#line 27607
+#line 27657
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27608
+#line 27658
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27609
+#line 27659
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -68644,23 +68762,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27611
+#line 27661
             .species = SPECIES_IRON_MOTH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27611
+#line 27661
             .heldItem = ITEM_AIR_BALLOON,
-#line 27614
+#line 27664
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27613
+#line 27663
             .ability = ABILITY_QUARK_DRIVE,
-#line 27612
+#line 27662
             .lvl = 88,
             .ball = POKEBALL_COUNT,
-#line 27615
+#line 27665
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27616
+#line 27666
                 MOVE_FIERY_DANCE,
                 MOVE_SLUDGE_BOMB,
                 MOVE_BUG_BUZZ,
@@ -68668,23 +68786,23 @@
             },
             },
             {
-#line 27621
+#line 27671
             .species = SPECIES_IRON_CROWN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27621
+#line 27671
             .heldItem = ITEM_LIFE_ORB,
-#line 27624
+#line 27674
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27623
+#line 27673
             .ability = ABILITY_QUARK_DRIVE,
-#line 27622
+#line 27672
             .lvl = 88,
             .ball = POKEBALL_COUNT,
-#line 27625
+#line 27675
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27626
+#line 27676
                 MOVE_TACHYON_CUTTER,
                 MOVE_FOCUS_BLAST,
                 MOVE_PSYCHIC,
@@ -68692,23 +68810,23 @@
             },
             },
             {
-#line 27631
+#line 27681
             .species = SPECIES_GENGAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27631
+#line 27681
             .heldItem = ITEM_GENGARITE,
-#line 27634
+#line 27684
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27633
+#line 27683
             .ability = ABILITY_SHADOW_TAG,
-#line 27632
+#line 27682
             .lvl = 88,
             .ball = POKEBALL_COUNT,
-#line 27635
+#line 27685
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27636
+#line 27686
                 MOVE_SLUDGE_BOMB,
                 MOVE_SHADOW_BALL,
                 MOVE_THUNDERBOLT,
@@ -68717,22 +68835,22 @@
             },
         },
     },
-#line 27641
+#line 27691
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_3] =
     {
-#line 27642
+#line 27692
         .trainerName = _("Grunt"),
-#line 27643
+#line 27693
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27644
+#line 27694
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 27645
+#line 27695
         .gender = TRAINER_GENDER_MALE,
-#line 27646
+#line 27696
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27647
+#line 27697
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27648
+#line 27698
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -68740,23 +68858,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27650
+#line 27700
             .species = SPECIES_SKARMORY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27650
+#line 27700
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 27653
+#line 27703
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27652
+#line 27702
             .ability = ABILITY_STURDY,
-#line 27651
+#line 27701
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27654
+#line 27704
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27655
+#line 27705
                 MOVE_STEALTH_ROCK,
                 MOVE_SPIKES,
                 MOVE_WHIRLWIND,
@@ -68764,23 +68882,23 @@
             },
             },
             {
-#line 27660
+#line 27710
             .species = SPECIES_THROH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27660
+#line 27710
             .heldItem = ITEM_RED_CARD,
-#line 27663
+#line 27713
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27662
+#line 27712
             .ability = ABILITY_MOLD_BREAKER,
-#line 27661
+#line 27711
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27664
+#line 27714
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27665
+#line 27715
                 MOVE_STONE_EDGE,
                 MOVE_EARTHQUAKE,
                 MOVE_CIRCLE_THROW,
@@ -68788,23 +68906,23 @@
             },
             },
             {
-#line 27670
+#line 27720
             .species = SPECIES_EELEKTROSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27670
+#line 27720
             .heldItem = ITEM_RED_CARD,
-#line 27673
+#line 27723
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27672
+#line 27722
             .ability = ABILITY_LEVITATE,
-#line 27671
+#line 27721
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27674
+#line 27724
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27675
+#line 27725
                 MOVE_DRAGON_TAIL,
                 MOVE_REST,
                 MOVE_SLEEP_TALK,
@@ -68812,135 +68930,15 @@
             },
             },
             {
-#line 27680
+#line 27730
             .species = SPECIES_GRUMPIG,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27680
-            .heldItem = ITEM_RED_CARD,
-#line 27683
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27682
-            .ability = ABILITY_OWN_TEMPO,
-#line 27681
-            .lvl = 46,
-            .ball = POKEBALL_COUNT,
-#line 27684
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27685
-                MOVE_PSYSHOCK,
-                MOVE_SHADOW_BALL,
-                MOVE_WHIRLWIND,
-                MOVE_FOCUS_BLAST,
-            },
-            },
-            {
-#line 27690
-            .species = SPECIES_MABOSSTIFF,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27690
-            .heldItem = ITEM_RED_CARD,
-#line 27693
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27692
-            .ability = ABILITY_STAKEOUT,
-#line 27691
-            .lvl = 46,
-            .ball = POKEBALL_COUNT,
-#line 27694
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27695
-                MOVE_ROAR,
-                MOVE_KNOCK_OFF,
-                MOVE_PLAY_ROUGH,
-                MOVE_DOUBLE_EDGE,
-            },
-            },
-        },
-    },
-#line 27701
-    [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_4] =
-    {
-#line 27702
-        .trainerName = _("Grunt"),
-#line 27703
-        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27704
-        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 27705
-        .gender = TRAINER_GENDER_FEMALE,
-#line 27706
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27707
-        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27708
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 0
-        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
-        .partySize = 5,
-        .party = (const struct TrainerMon[])
-        {
-            {
-#line 27710
-            .species = SPECIES_KLEFKI,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27710
-            .heldItem = ITEM_FOCUS_BAND,
-#line 27713
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27712
-            .ability = ABILITY_PRANKSTER,
-#line 27711
-            .lvl = 46,
-            .ball = POKEBALL_COUNT,
-#line 27714
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27715
-                MOVE_STEALTH_ROCK,
-                MOVE_SPIKES,
-                MOVE_DRAINING_KISS,
-                MOVE_FLASH_CANNON,
-            },
-            },
-            {
-#line 27720
-            .species = SPECIES_LANTURN,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27720
-            .heldItem = ITEM_BRIGHTPOWDER,
-#line 27723
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27722
-            .ability = ABILITY_VOLT_ABSORB,
-#line 27721
-            .lvl = 46,
-            .ball = POKEBALL_COUNT,
-#line 27724
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 27725
-                MOVE_ICE_BEAM,
-                MOVE_SCALD,
-                MOVE_DISCHARGE,
-                MOVE_CONFUSE_RAY,
-            },
-            },
-            {
 #line 27730
-            .species = SPECIES_ZOROARK_HISUI,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27730
-            .heldItem = ITEM_LIFE_ORB,
+            .heldItem = ITEM_RED_CARD,
 #line 27733
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 27732
-            .ability = ABILITY_ILLUSION,
+            .ability = ABILITY_OWN_TEMPO,
 #line 27731
             .lvl = 46,
             .ball = POKEBALL_COUNT,
@@ -68949,22 +68947,22 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 27735
-                MOVE_HYPER_VOICE,
-                MOVE_BITTER_MALICE,
-                MOVE_FLAMETHROWER,
-                MOVE_NASTY_PLOT,
+                MOVE_PSYSHOCK,
+                MOVE_SHADOW_BALL,
+                MOVE_WHIRLWIND,
+                MOVE_FOCUS_BLAST,
             },
             },
             {
 #line 27740
-            .species = SPECIES_MIENSHAO,
+            .species = SPECIES_MABOSSTIFF,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 27740
-            .heldItem = ITEM_SITRUS_BERRY,
+            .heldItem = ITEM_RED_CARD,
 #line 27743
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 27742
-            .ability = ABILITY_RECKLESS,
+            .ability = ABILITY_STAKEOUT,
 #line 27741
             .lvl = 46,
             .ball = POKEBALL_COUNT,
@@ -68973,6 +68971,126 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 27745
+                MOVE_ROAR,
+                MOVE_KNOCK_OFF,
+                MOVE_PLAY_ROUGH,
+                MOVE_DOUBLE_EDGE,
+            },
+            },
+        },
+    },
+#line 27751
+    [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_4] =
+    {
+#line 27752
+        .trainerName = _("Grunt"),
+#line 27753
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+#line 27754
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
+#line 27755
+        .gender = TRAINER_GENDER_FEMALE,
+#line 27756
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
+#line 27757
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+#line 27758
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
+#line 0
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
+        .partySize = 5,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 27760
+            .species = SPECIES_KLEFKI,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27760
+            .heldItem = ITEM_FOCUS_BAND,
+#line 27763
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27762
+            .ability = ABILITY_PRANKSTER,
+#line 27761
+            .lvl = 46,
+            .ball = POKEBALL_COUNT,
+#line 27764
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27765
+                MOVE_STEALTH_ROCK,
+                MOVE_SPIKES,
+                MOVE_DRAINING_KISS,
+                MOVE_FLASH_CANNON,
+            },
+            },
+            {
+#line 27770
+            .species = SPECIES_LANTURN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27770
+            .heldItem = ITEM_BRIGHTPOWDER,
+#line 27773
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27772
+            .ability = ABILITY_VOLT_ABSORB,
+#line 27771
+            .lvl = 46,
+            .ball = POKEBALL_COUNT,
+#line 27774
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27775
+                MOVE_ICE_BEAM,
+                MOVE_SCALD,
+                MOVE_DISCHARGE,
+                MOVE_CONFUSE_RAY,
+            },
+            },
+            {
+#line 27780
+            .species = SPECIES_ZOROARK_HISUI,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27780
+            .heldItem = ITEM_LIFE_ORB,
+#line 27783
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27782
+            .ability = ABILITY_ILLUSION,
+#line 27781
+            .lvl = 46,
+            .ball = POKEBALL_COUNT,
+#line 27784
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27785
+                MOVE_HYPER_VOICE,
+                MOVE_BITTER_MALICE,
+                MOVE_FLAMETHROWER,
+                MOVE_NASTY_PLOT,
+            },
+            },
+            {
+#line 27790
+            .species = SPECIES_MIENSHAO,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 27790
+            .heldItem = ITEM_SITRUS_BERRY,
+#line 27793
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 27792
+            .ability = ABILITY_RECKLESS,
+#line 27791
+            .lvl = 46,
+            .ball = POKEBALL_COUNT,
+#line 27794
+            .nature = NATURE_JOLLY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 27795
                 MOVE_HONE_CLAWS,
                 MOVE_HI_JUMP_KICK,
                 MOVE_STONE_EDGE,
@@ -68980,23 +69098,23 @@
             },
             },
             {
-#line 27750
+#line 27800
             .species = SPECIES_CLAYDOL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27750
+#line 27800
             .heldItem = ITEM_LEFTOVERS,
-#line 27753
+#line 27803
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27752
+#line 27802
             .ability = ABILITY_LEVITATE,
-#line 27751
+#line 27801
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27754
+#line 27804
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27755
+#line 27805
                 MOVE_COSMIC_POWER,
                 MOVE_RECOVER,
                 MOVE_STORED_POWER,
@@ -69005,22 +69123,22 @@
             },
         },
     },
-#line 27760
+#line 27810
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_5] =
     {
-#line 27761
+#line 27811
         .trainerName = _("Grunt"),
-#line 27762
+#line 27812
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27763
+#line 27813
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 27764
+#line 27814
         .gender = TRAINER_GENDER_MALE,
-#line 27765
+#line 27815
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27766
+#line 27816
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27767
+#line 27817
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -69028,23 +69146,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27769
+#line 27819
             .species = SPECIES_GOURGEIST_SUPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27769
+#line 27819
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 27772
+#line 27822
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27771
+#line 27821
             .ability = ABILITY_PRANKSTER,
-#line 27770
+#line 27820
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27773
+#line 27823
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27774
+#line 27824
                 MOVE_TRICK_OR_TREAT,
                 MOVE_POWER_WHIP,
                 MOVE_SPIRIT_SHACKLE,
@@ -69052,23 +69170,23 @@
             },
             },
             {
-#line 27779
+#line 27829
             .species = SPECIES_WEAVILE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27779
+#line 27829
             .heldItem = ITEM_DARK_GEM,
-#line 27782
+#line 27832
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27781
+#line 27831
             .ability = ABILITY_TECHNICIAN,
-#line 27780
+#line 27830
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27783
+#line 27833
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27784
+#line 27834
                 MOVE_PURSUIT,
                 MOVE_ICE_SHARD,
                 MOVE_TRIPLE_AXEL,
@@ -69076,23 +69194,23 @@
             },
             },
             {
-#line 27789
+#line 27839
             .species = SPECIES_SPIDOPS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27789
+#line 27839
             .heldItem = ITEM_QUICK_CLAW,
-#line 27792
+#line 27842
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27791
+#line 27841
             .ability = ABILITY_STAKEOUT,
-#line 27790
+#line 27840
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27793
+#line 27843
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27794
+#line 27844
                 MOVE_LUNGE,
                 MOVE_SKITTER_SMACK,
                 MOVE_BULLDOZE,
@@ -69100,23 +69218,23 @@
             },
             },
             {
-#line 27799
+#line 27849
             .species = SPECIES_STUNFISK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27799
+#line 27849
             .heldItem = ITEM_QUICK_CLAW,
-#line 27802
+#line 27852
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27801
+#line 27851
             .ability = ABILITY_STATIC,
-#line 27800
+#line 27850
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27803
+#line 27853
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27804
+#line 27854
                 MOVE_EARTH_POWER,
                 MOVE_MUDDY_WATER,
                 MOVE_SLUDGE_WAVE,
@@ -69125,22 +69243,22 @@
             },
         },
     },
-#line 27809
+#line 27859
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_6] =
     {
-#line 27810
+#line 27860
         .trainerName = _("Grunt"),
-#line 27811
+#line 27861
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27812
+#line 27862
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 27813
+#line 27863
         .gender = TRAINER_GENDER_FEMALE,
-#line 27814
+#line 27864
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27815
+#line 27865
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27816
+#line 27866
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -69148,23 +69266,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27818
+#line 27868
             .species = SPECIES_SLOWKING_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27818
+#line 27868
             .heldItem = ITEM_FOCUS_BAND,
-#line 27821
+#line 27871
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27820
+#line 27870
             .ability = ABILITY_REGENERATOR,
-#line 27819
+#line 27869
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27822
+#line 27872
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27823
+#line 27873
                 MOVE_TELEPORT,
                 MOVE_EERIE_SPELL,
                 MOVE_SLUDGE_WAVE,
@@ -69172,23 +69290,23 @@
             },
             },
             {
-#line 27828
+#line 27878
             .species = SPECIES_GENGAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27828
+#line 27878
             .heldItem = ITEM_CHOICE_SPECS,
-#line 27831
+#line 27881
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27830
+#line 27880
             .ability = ABILITY_SHADOW_TAG,
-#line 27829
+#line 27879
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27832
+#line 27882
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27833
+#line 27883
                 MOVE_SHADOW_BALL,
                 MOVE_SLUDGE_BOMB,
                 MOVE_THUNDERBOLT,
@@ -69196,23 +69314,23 @@
             },
             },
             {
-#line 27838
+#line 27888
             .species = SPECIES_NINJASK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27838
+#line 27888
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 27841
+#line 27891
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27840
+#line 27890
             .ability = ABILITY_SPEED_BOOST,
-#line 27839
+#line 27889
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27842
+#line 27892
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27843
+#line 27893
                 MOVE_DRILL_RUN,
                 MOVE_DUAL_WINGBEAT,
                 MOVE_U_TURN,
@@ -69220,23 +69338,23 @@
             },
             },
             {
-#line 27848
+#line 27898
             .species = SPECIES_DUGTRIO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27848
+#line 27898
             .heldItem = ITEM_CHOICE_BAND,
-#line 27851
+#line 27901
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27850
+#line 27900
             .ability = ABILITY_ARENA_TRAP,
-#line 27849
+#line 27899
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27852
+#line 27902
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27853
+#line 27903
                 MOVE_EARTHQUAKE,
                 MOVE_THROAT_CHOP,
                 MOVE_STONE_EDGE,
@@ -69245,22 +69363,22 @@
             },
         },
     },
-#line 27858
+#line 27908
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_11] =
     {
-#line 27859
+#line 27909
         .trainerName = _("Grunt"),
-#line 27860
+#line 27910
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27861
+#line 27911
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 27862
+#line 27912
         .gender = TRAINER_GENDER_MALE,
-#line 27863
+#line 27913
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27864
+#line 27914
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27865
+#line 27915
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -69268,23 +69386,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27867
+#line 27917
             .species = SPECIES_WEEZING,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27867
+#line 27917
             .heldItem = ITEM_PAYAPA_BERRY,
-#line 27870
+#line 27920
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27869
+#line 27919
             .ability = ABILITY_LEVITATE,
-#line 27868
+#line 27918
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27871
+#line 27921
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27872
+#line 27922
                 MOVE_VENOSHOCK,
                 MOVE_POISON_GAS,
                 MOVE_INCINERATE,
@@ -69292,23 +69410,23 @@
             },
             },
             {
-#line 27877
+#line 27927
             .species = SPECIES_SMEARGLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27877
+#line 27927
             .heldItem = ITEM_FOCUS_SASH,
-#line 27880
+#line 27930
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27879
+#line 27929
             .ability = ABILITY_TECHNICIAN,
-#line 27878
+#line 27928
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27881
+#line 27931
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27882
+#line 27932
                 MOVE_ICY_WIND,
                 MOVE_SNARL,
                 MOVE_DARK_VOID,
@@ -69316,23 +69434,23 @@
             },
             },
             {
-#line 27887
+#line 27937
             .species = SPECIES_TURTONATOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27887
+#line 27937
             .heldItem = ITEM_ROWAP_BERRY,
-#line 27890
+#line 27940
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27889
+#line 27939
             .ability = ABILITY_SHELL_ARMOR,
-#line 27888
+#line 27938
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27891
+#line 27941
             .nature = NATURE_QUIET,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27892
+#line 27942
                 MOVE_SHELL_TRAP,
                 MOVE_EXPLOSION,
                 MOVE_DRAGON_PULSE,
@@ -69341,22 +69459,22 @@
             },
         },
     },
-#line 27897
+#line 27947
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_12] =
     {
-#line 27898
+#line 27948
         .trainerName = _("Grunt"),
-#line 27899
+#line 27949
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27900
+#line 27950
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 27901
+#line 27951
         .gender = TRAINER_GENDER_FEMALE,
-#line 27902
+#line 27952
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27903
+#line 27953
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27904
+#line 27954
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -69364,23 +69482,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27906
+#line 27956
             .species = SPECIES_ELECTRODE_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27906
+#line 27956
             .heldItem = ITEM_LIGHT_CLAY,
-#line 27909
+#line 27959
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27908
+#line 27958
             .ability = ABILITY_AFTERMATH,
-#line 27907
+#line 27957
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27910
+#line 27960
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27911
+#line 27961
                 MOVE_REFLECT,
                 MOVE_LIGHT_SCREEN,
                 MOVE_LEAF_STORM,
@@ -69388,23 +69506,23 @@
             },
             },
             {
-#line 27916
+#line 27966
             .species = SPECIES_CACTURNE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27916
+#line 27966
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 27919
+#line 27969
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27918
+#line 27968
             .ability = ABILITY_ADAPTABILITY,
-#line 27917
+#line 27967
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27920
+#line 27970
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27921
+#line 27971
                 MOVE_GROWTH,
                 MOVE_POWER_TRIP,
                 MOVE_NEEDLE_ARM,
@@ -69412,23 +69530,23 @@
             },
             },
             {
-#line 27926
+#line 27976
             .species = SPECIES_ARIADOS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27926
+#line 27976
             .heldItem = ITEM_FOCUS_BAND,
-#line 27929
+#line 27979
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27928
+#line 27978
             .ability = ABILITY_SNIPER,
-#line 27927
+#line 27977
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27930
+#line 27980
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27931
+#line 27981
                 MOVE_SWORDS_DANCE,
                 MOVE_LEECH_LIFE,
                 MOVE_CROSS_POISON,
@@ -69436,23 +69554,23 @@
             },
             },
             {
-#line 27936
+#line 27986
             .species = SPECIES_ORTHWORM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27936
+#line 27986
             .heldItem = ITEM_QUICK_CLAW,
-#line 27939
+#line 27989
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27938
+#line 27988
             .ability = ABILITY_EARTH_EATER,
-#line 27937
+#line 27987
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27940
+#line 27990
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27941
+#line 27991
                 MOVE_COIL,
                 MOVE_IRON_TAIL,
                 MOVE_STONE_EDGE,
@@ -69460,23 +69578,23 @@
             },
             },
             {
-#line 27946
+#line 27996
             .species = SPECIES_CHATOT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27946
+#line 27996
             .heldItem = ITEM_KINGS_ROCK,
-#line 27949
+#line 27999
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27948
+#line 27998
             .ability = ABILITY_KEEN_EYE,
-#line 27947
+#line 27997
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27950
+#line 28000
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27951
+#line 28001
                 MOVE_NASTY_PLOT,
                 MOVE_CHATTER,
                 MOVE_HEAT_WAVE,
@@ -69485,22 +69603,22 @@
             },
         },
     },
-#line 27956
+#line 28006
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_13] =
     {
-#line 27957
+#line 28007
         .trainerName = _("Grunt"),
-#line 27958
+#line 28008
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27959
+#line 28009
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 27960
+#line 28010
         .gender = TRAINER_GENDER_MALE,
-#line 27961
+#line 28011
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 27962
+#line 28012
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 27963
+#line 28013
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -69508,23 +69626,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 27965
+#line 28015
             .species = SPECIES_INDEEDEE_F,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27965
+#line 28015
             .heldItem = ITEM_LIGHT_CLAY,
-#line 27968
+#line 28018
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27967
+#line 28017
             .ability = ABILITY_PSYCHIC_SURGE,
-#line 27966
+#line 28016
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27969
+#line 28019
             .nature = NATURE_NAIVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27970
+#line 28020
                 MOVE_FOLLOW_ME,
                 MOVE_EXPANDING_FORCE,
                 MOVE_LIGHT_SCREEN,
@@ -69532,23 +69650,23 @@
             },
             },
             {
-#line 27975
+#line 28025
             .species = SPECIES_BRONZONG,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27975
+#line 28025
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 27978
+#line 28028
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27977
+#line 28027
             .ability = ABILITY_HEATPROOF,
-#line 27976
+#line 28026
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27979
+#line 28029
             .nature = NATURE_BOLD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27980
+#line 28030
                 MOVE_FOLLOW_ME,
                 MOVE_EXPANDING_FORCE,
                 MOVE_FLASH_CANNON,
@@ -69556,23 +69674,23 @@
             },
             },
             {
-#line 27985
+#line 28035
             .species = SPECIES_MUSHARNA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 27985
+#line 28035
             .heldItem = ITEM_FOCUS_BAND,
-#line 27988
+#line 28038
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 27987
+#line 28037
             .ability = ABILITY_HEALER,
-#line 27986
+#line 28036
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 27989
+#line 28039
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 27990
+#line 28040
                 MOVE_MOONBLAST,
                 MOVE_EXPANDING_FORCE,
                 MOVE_ALLY_SWITCH,
@@ -69581,22 +69699,22 @@
             },
         },
     },
-#line 27995
+#line 28045
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_14] =
     {
-#line 27996
+#line 28046
         .trainerName = _("Grunt"),
-#line 27997
+#line 28047
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 27998
+#line 28048
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 27999
+#line 28049
         .gender = TRAINER_GENDER_FEMALE,
-#line 28000
+#line 28050
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28001
+#line 28051
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28002
+#line 28052
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -69604,23 +69722,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28004
+#line 28054
             .species = SPECIES_XATU,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28004
+#line 28054
             .heldItem = ITEM_IRON_BALL,
-#line 28007
+#line 28057
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28006
+#line 28056
             .ability = ABILITY_MAGIC_BOUNCE,
-#line 28005
+#line 28055
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28008
+#line 28058
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28009
+#line 28059
                 MOVE_HURRICANE,
                 MOVE_EXPANDING_FORCE,
                 MOVE_ALLY_SWITCH,
@@ -69628,23 +69746,23 @@
             },
             },
             {
-#line 28014
+#line 28064
             .species = SPECIES_HATTERENE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28014
+#line 28064
             .heldItem = ITEM_QUICK_CLAW,
-#line 28017
+#line 28067
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28016
+#line 28066
             .ability = ABILITY_HEALER,
-#line 28015
+#line 28065
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28018
+#line 28068
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28019
+#line 28069
                 MOVE_MYSTICAL_FIRE,
                 MOVE_EXPANDING_FORCE,
                 MOVE_DAZZLING_GLEAM,
@@ -69653,22 +69771,22 @@
             },
         },
     },
-#line 28024
+#line 28074
     [DIFFICULTY_NORMAL][TRAINER_SANDY] =
     {
-#line 28025
+#line 28075
         .trainerName = _("Sandy"),
-#line 28026
+#line 28076
         .trainerClass = TRAINER_CLASS_EXPERT,
-#line 28027
+#line 28077
         .trainerPic = TRAINER_PIC_EXPERT_F,
-#line 28028
+#line 28078
         .gender = TRAINER_GENDER_MALE,
-#line 28029
+#line 28079
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 28030
+#line 28080
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28031
+#line 28081
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -69676,23 +69794,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28033
+#line 28083
             .species = SPECIES_SHUCKLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28033
+#line 28083
             .heldItem = ITEM_LEFTOVERS,
-#line 28036
+#line 28086
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28035
+#line 28085
             .ability = ABILITY_STURDY,
-#line 28034
+#line 28084
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28037
+#line 28087
             .nature = NATURE_CAREFUL,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28038
+#line 28088
                 MOVE_STICKY_WEB,
                 MOVE_TOXIC,
                 MOVE_PROTECT,
@@ -69700,23 +69818,23 @@
             },
             },
             {
-#line 28043
+#line 28093
             .species = SPECIES_MAROWAK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28043
+#line 28093
             .heldItem = ITEM_THICK_CLUB,
-#line 28046
+#line 28096
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28045
+#line 28095
             .ability = ABILITY_BATTLE_ARMOR,
-#line 28044
+#line 28094
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28047
+#line 28097
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28048
+#line 28098
                 MOVE_BONEMERANG,
                 MOVE_STONE_EDGE,
                 MOVE_FIRE_PUNCH,
@@ -69724,23 +69842,23 @@
             },
             },
             {
-#line 28053
+#line 28103
             .species = SPECIES_COPPERAJAH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28053
+#line 28103
             .heldItem = ITEM_LIFE_ORB,
-#line 28056
+#line 28106
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28055
+#line 28105
             .ability = ABILITY_SHEER_FORCE,
-#line 28054
+#line 28104
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28057
+#line 28107
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28058
+#line 28108
                 MOVE_IRON_HEAD,
                 MOVE_HIGH_HORSEPOWER,
                 MOVE_PLAY_ROUGH,
@@ -69748,23 +69866,23 @@
             },
             },
             {
-#line 28063
+#line 28113
             .species = SPECIES_KLAWF,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28063
+#line 28113
             .heldItem = ITEM_FOCUS_SASH,
-#line 28066
+#line 28116
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28065
+#line 28115
             .ability = ABILITY_ANGER_SHELL,
-#line 28064
+#line 28114
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28067
+#line 28117
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28068
+#line 28118
                 MOVE_STONE_EDGE,
                 MOVE_HIGH_HORSEPOWER,
                 MOVE_TEMPER_FLARE,
@@ -69772,23 +69890,23 @@
             },
             },
             {
-#line 28073
+#line 28123
             .species = SPECIES_RUNERIGUS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28073
+#line 28123
             .heldItem = ITEM_LEFTOVERS,
-#line 28076
+#line 28126
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28075
+#line 28125
             .ability = ABILITY_WANDERING_SPIRIT,
-#line 28074
+#line 28124
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28077
+#line 28127
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28078
+#line 28128
                 MOVE_SPIRIT_SHACKLE,
                 MOVE_EARTHQUAKE,
                 MOVE_WILL_O_WISP,
@@ -69797,22 +69915,22 @@
             },
         },
     },
-#line 28083
+#line 28133
     [DIFFICULTY_NORMAL][TRAINER_ROCKY] =
     {
-#line 28084
+#line 28134
         .trainerName = _("Rocky"),
-#line 28085
+#line 28135
         .trainerClass = TRAINER_CLASS_EXPERT,
-#line 28086
+#line 28136
         .trainerPic = TRAINER_PIC_EXPERT_M,
-#line 28087
+#line 28137
         .gender = TRAINER_GENDER_MALE,
-#line 28088
+#line 28138
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 28089
+#line 28139
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28090
+#line 28140
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -69820,23 +69938,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28092
+#line 28142
             .species = SPECIES_ORTHWORM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28092
+#line 28142
             .heldItem = ITEM_SITRUS_BERRY,
-#line 28095
+#line 28145
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28094
+#line 28144
             .ability = ABILITY_SAND_VEIL,
-#line 28093
+#line 28143
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28096
+#line 28146
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28097
+#line 28147
                 MOVE_IRON_TAIL,
                 MOVE_BODY_PRESS,
                 MOVE_STEALTH_ROCK,
@@ -69844,23 +69962,23 @@
             },
             },
             {
-#line 28102
+#line 28152
             .species = SPECIES_CAMERUPT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28102
+#line 28152
             .heldItem = ITEM_PASSHO_BERRY,
-#line 28105
+#line 28155
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28104
+#line 28154
             .ability = ABILITY_SOLID_ROCK,
-#line 28103
+#line 28153
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28106
+#line 28156
             .nature = NATURE_QUIET,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28107
+#line 28157
                 MOVE_HEAT_WAVE,
                 MOVE_EARTH_POWER,
                 MOVE_FLARE_BLITZ,
@@ -69868,23 +69986,23 @@
             },
             },
             {
-#line 28112
+#line 28162
             .species = SPECIES_DUGTRIO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28112
+#line 28162
             .heldItem = ITEM_CHOICE_BAND,
-#line 28115
+#line 28165
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28114
+#line 28164
             .ability = ABILITY_ARENA_TRAP,
-#line 28113
+#line 28163
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28116
+#line 28166
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28117
+#line 28167
                 MOVE_EARTHQUAKE,
                 MOVE_STONE_EDGE,
                 MOVE_FINAL_GAMBIT,
@@ -69892,23 +70010,23 @@
             },
             },
             {
-#line 28122
+#line 28172
             .species = SPECIES_CRADILY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28122
+#line 28172
             .heldItem = ITEM_LEFTOVERS,
-#line 28125
+#line 28175
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28124
+#line 28174
             .ability = ABILITY_SUCTION_CUPS,
-#line 28123
+#line 28173
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28126
+#line 28176
             .nature = NATURE_CAREFUL,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28127
+#line 28177
                 MOVE_STONE_EDGE,
                 MOVE_EARTHQUAKE,
                 MOVE_CURSE,
@@ -69916,23 +70034,23 @@
             },
             },
             {
-#line 28132
+#line 28182
             .species = SPECIES_AGGRON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28132
+#line 28182
             .heldItem = ITEM_ASSAULT_VEST,
-#line 28135
+#line 28185
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 28134
+#line 28184
             .ability = ABILITY_STURDY,
-#line 28133
+#line 28183
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28136
+#line 28186
             .nature = NATURE_BRAVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28137
+#line 28187
                 MOVE_STONE_EDGE,
                 MOVE_EARTHQUAKE,
                 MOVE_IRON_TAIL,
@@ -69941,22 +70059,22 @@
             },
         },
     },
-#line 28142
+#line 28192
     [DIFFICULTY_NORMAL][TRAINER_RUSTY] =
     {
-#line 28143
+#line 28193
         .trainerName = _("Rusty"),
-#line 28144
+#line 28194
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
-#line 28145
+#line 28195
         .trainerPic = TRAINER_PIC_RUIN_MANIAC,
-#line 28146
+#line 28196
         .gender = TRAINER_GENDER_MALE,
-#line 28147
+#line 28197
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 28148
+#line 28198
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28149
+#line 28199
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -69964,23 +70082,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28151
+#line 28201
             .species = SPECIES_GARCHOMP,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28151
+#line 28201
             .heldItem = ITEM_YACHE_BERRY,
-#line 28154
+#line 28204
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28153
+#line 28203
             .ability = ABILITY_SAND_VEIL,
-#line 28152
+#line 28202
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28155
+#line 28205
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28156
+#line 28206
                 MOVE_STEALTH_ROCK,
                 MOVE_EARTHQUAKE,
                 MOVE_DUAL_CHOP,
@@ -69988,23 +70106,23 @@
             },
             },
             {
-#line 28161
+#line 28211
             .species = SPECIES_KROOKODILE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28161
+#line 28211
             .heldItem = ITEM_EXPERT_BELT,
-#line 28164
+#line 28214
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28163
+#line 28213
             .ability = ABILITY_MOXIE,
-#line 28162
+#line 28212
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28165
+#line 28215
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28166
+#line 28216
                 MOVE_EARTHQUAKE,
                 MOVE_KNOCK_OFF,
                 MOVE_STONE_EDGE,
@@ -70012,23 +70130,23 @@
             },
             },
             {
-#line 28171
+#line 28221
             .species = SPECIES_URSALUNA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28171
+#line 28221
             .heldItem = ITEM_FLAME_ORB,
-#line 28174
+#line 28224
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28173
+#line 28223
             .ability = ABILITY_GUTS,
-#line 28172
+#line 28222
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28175
+#line 28225
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28176
+#line 28226
                 MOVE_FACADE,
                 MOVE_HEADLONG_RUSH,
                 MOVE_PLAY_ROUGH,
@@ -70036,23 +70154,23 @@
             },
             },
             {
-#line 28181
+#line 28231
             .species = SPECIES_EXCADRILL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28181
+#line 28231
             .heldItem = ITEM_LIFE_ORB,
-#line 28184
+#line 28234
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28183
+#line 28233
             .ability = ABILITY_SAND_RUSH,
-#line 28182
+#line 28232
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28185
+#line 28235
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28186
+#line 28236
                 MOVE_EARTHQUAKE,
                 MOVE_IRON_HEAD,
                 MOVE_ROCK_SLIDE,
@@ -70060,23 +70178,23 @@
             },
             },
             {
-#line 28191
+#line 28241
             .species = SPECIES_STEELIX,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28191
+#line 28241
             .heldItem = ITEM_STEELIXITE,
-#line 28194
+#line 28244
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28193
+#line 28243
             .ability = ABILITY_STURDY,
-#line 28192
+#line 28242
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28195
+#line 28245
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28196
+#line 28246
                 MOVE_EARTHQUAKE,
                 MOVE_IRON_TAIL,
                 MOVE_STONE_EDGE,
@@ -70085,22 +70203,22 @@
             },
         },
     },
-#line 28201
+#line 28251
     [DIFFICULTY_NORMAL][TRAINER_GLORIA] =
     {
-#line 28202
+#line 28252
         .trainerName = _("Gloria"),
-#line 28203
+#line 28253
         .trainerClass = TRAINER_CLASS_BEAUTY,
-#line 28204
+#line 28254
         .trainerPic = TRAINER_PIC_BEAUTY,
-#line 28205
+#line 28255
         .gender = TRAINER_GENDER_MALE,
-#line 28206
+#line 28256
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 28207
+#line 28257
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28208
+#line 28258
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -70108,23 +70226,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28210
+#line 28260
             .species = SPECIES_DONPHAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28210
+#line 28260
             .heldItem = ITEM_SITRUS_BERRY,
-#line 28213
+#line 28263
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28212
+#line 28262
             .ability = ABILITY_SAND_VEIL,
-#line 28211
+#line 28261
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28214
+#line 28264
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28215
+#line 28265
                 MOVE_EARTHQUAKE,
                 MOVE_HEAD_SMASH,
                 MOVE_ICE_SPINNER,
@@ -70132,23 +70250,23 @@
             },
             },
             {
-#line 28220
+#line 28270
             .species = SPECIES_LUNATONE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28220
+#line 28270
             .heldItem = ITEM_LIFE_ORB,
-#line 28223
+#line 28273
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28222
+#line 28272
             .ability = ABILITY_LEVITATE,
-#line 28221
+#line 28271
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28224
+#line 28274
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28225
+#line 28275
                 MOVE_LUMINA_CRASH,
                 MOVE_POWER_GEM,
                 MOVE_EARTH_POWER,
@@ -70156,23 +70274,23 @@
             },
             },
             {
-#line 28230
+#line 28280
             .species = SPECIES_GARGANACL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28230
+#line 28280
             .heldItem = ITEM_LEFTOVERS,
-#line 28233
+#line 28283
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28232
+#line 28282
             .ability = ABILITY_PURIFYING_SALT,
-#line 28231
+#line 28281
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28234
+#line 28284
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28235
+#line 28285
                 MOVE_STONE_EDGE,
                 MOVE_EARTHQUAKE,
                 MOVE_RECOVER,
@@ -70180,23 +70298,23 @@
             },
             },
             {
-#line 28240
+#line 28290
             .species = SPECIES_EMPOLEON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28240
+#line 28290
             .heldItem = ITEM_ASSAULT_VEST,
-#line 28243
+#line 28293
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28242
+#line 28292
             .ability = ABILITY_COMPETITIVE,
-#line 28241
+#line 28291
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28244
+#line 28294
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28245
+#line 28295
                 MOVE_FLASH_CANNON,
                 MOVE_SURF,
                 MOVE_ICE_BEAM,
@@ -70204,23 +70322,23 @@
             },
             },
             {
-#line 28250
+#line 28300
             .species = SPECIES_BARBARACLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28250
+#line 28300
             .heldItem = ITEM_SCOPE_LENS,
-#line 28253
+#line 28303
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28252
+#line 28302
             .ability = ABILITY_SNIPER,
-#line 28251
+#line 28301
             .lvl = 49,
             .ball = POKEBALL_COUNT,
-#line 28254
+#line 28304
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28255
+#line 28305
                 MOVE_STONE_EDGE,
                 MOVE_AQUA_CUTTER,
                 MOVE_X_SCISSOR,
@@ -70229,22 +70347,22 @@
             },
         },
     },
-#line 28260
+#line 28310
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_7] =
     {
-#line 28261
+#line 28311
         .trainerName = _("Grunt"),
-#line 28262
+#line 28312
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 28263
+#line 28313
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 28264
+#line 28314
         .gender = TRAINER_GENDER_MALE,
-#line 28265
+#line 28315
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28266
+#line 28316
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28267
+#line 28317
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -70252,23 +70370,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28269
+#line 28319
             .species = SPECIES_DONPHAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28269
+#line 28319
             .heldItem = ITEM_RED_CARD,
-#line 28272
+#line 28322
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28271
+#line 28321
             .ability = ABILITY_STURDY,
-#line 28270
+#line 28320
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28273
+#line 28323
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28274
+#line 28324
                 MOVE_EARTHQUAKE,
                 MOVE_ICE_SPINNER,
                 MOVE_STEALTH_ROCK,
@@ -70276,23 +70394,23 @@
             },
             },
             {
-#line 28279
+#line 28329
             .species = SPECIES_PORYGON2,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28279
+#line 28329
             .heldItem = ITEM_EVIOLITE,
-#line 28282
+#line 28332
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28281
+#line 28331
             .ability = ABILITY_ANALYTIC,
-#line 28280
+#line 28330
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28283
+#line 28333
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28284
+#line 28334
                 MOVE_TRI_ATTACK,
                 MOVE_ICE_BEAM,
                 MOVE_THUNDERBOLT,
@@ -70300,23 +70418,23 @@
             },
             },
             {
-#line 28289
+#line 28339
             .species = SPECIES_SALAZZLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28289
+#line 28339
             .heldItem = ITEM_FOCUS_BAND,
-#line 28292
+#line 28342
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28291
+#line 28341
             .ability = ABILITY_CORROSION,
-#line 28290
+#line 28340
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28293
+#line 28343
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28294
+#line 28344
                 MOVE_TOXIC,
                 MOVE_FLAMETHROWER,
                 MOVE_VENOSHOCK,
@@ -70324,23 +70442,23 @@
             },
             },
             {
-#line 28299
+#line 28349
             .species = SPECIES_COMFEY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28299
+#line 28349
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 28302
+#line 28352
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28301
+#line 28351
             .ability = ABILITY_TRIAGE,
-#line 28300
+#line 28350
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28303
+#line 28353
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28304
+#line 28354
                 MOVE_DRAINING_KISS,
                 MOVE_PSYCHIC,
                 MOVE_SYNTHESIS,
@@ -70348,23 +70466,23 @@
             },
             },
             {
-#line 28309
+#line 28359
             .species = SPECIES_BOLTUND,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28309
+#line 28359
             .heldItem = ITEM_LIFE_ORB,
-#line 28312
+#line 28362
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28311
+#line 28361
             .ability = ABILITY_STRONG_JAW,
-#line 28310
+#line 28360
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28313
+#line 28363
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28314
+#line 28364
                 MOVE_THUNDER_FANG,
                 MOVE_ICE_FANG,
                 MOVE_CRUNCH,
@@ -70373,22 +70491,22 @@
             },
         },
     },
-#line 28319
+#line 28369
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_8] =
     {
-#line 28320
+#line 28370
         .trainerName = _("Grunt"),
-#line 28321
+#line 28371
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 28322
+#line 28372
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 28323
+#line 28373
         .gender = TRAINER_GENDER_FEMALE,
-#line 28324
+#line 28374
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28325
+#line 28375
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28326
+#line 28376
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -70396,23 +70514,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28328
+#line 28378
             .species = SPECIES_DRACOVISH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28328
+#line 28378
             .heldItem = ITEM_RED_CARD,
-#line 28331
+#line 28381
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28330
+#line 28380
             .ability = ABILITY_STRONG_JAW,
-#line 28329
+#line 28379
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28332
+#line 28382
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28333
+#line 28383
                 MOVE_FISHIOUS_REND,
                 MOVE_DRAGON_CLAW,
                 MOVE_PSYCHIC_FANGS,
@@ -70420,23 +70538,23 @@
             },
             },
             {
-#line 28338
+#line 28388
             .species = SPECIES_CARRACOSTA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28338
+#line 28388
             .heldItem = ITEM_FOCUS_BAND,
-#line 28341
+#line 28391
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28340
+#line 28390
             .ability = ABILITY_SOLID_ROCK,
-#line 28339
+#line 28389
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28342
+#line 28392
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28343
+#line 28393
                 MOVE_SHELL_SMASH,
                 MOVE_LIQUIDATION,
                 MOVE_ROCK_SLIDE,
@@ -70444,23 +70562,23 @@
             },
             },
             {
-#line 28348
+#line 28398
             .species = SPECIES_ARCTOZOLT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28348
+#line 28398
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 28351
+#line 28401
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28350
+#line 28400
             .ability = ABILITY_STATIC,
-#line 28349
+#line 28399
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28352
+#line 28402
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28353
+#line 28403
                 MOVE_BOLT_BEAK,
                 MOVE_ICICLE_CRASH,
                 MOVE_EARTHQUAKE,
@@ -70468,23 +70586,23 @@
             },
             },
             {
-#line 28358
+#line 28408
             .species = SPECIES_TYRANTRUM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28358
+#line 28408
             .heldItem = ITEM_ROCK_GEM,
-#line 28361
+#line 28411
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28360
+#line 28410
             .ability = ABILITY_ROCK_HEAD,
-#line 28359
+#line 28409
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28362
+#line 28412
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28363
+#line 28413
                 MOVE_HEAD_SMASH,
                 MOVE_DRAGON_CLAW,
                 MOVE_PLAY_ROUGH,
@@ -70493,22 +70611,22 @@
             },
         },
     },
-#line 28368
+#line 28418
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_9] =
     {
-#line 28369
+#line 28419
         .trainerName = _("Grunt"),
-#line 28370
+#line 28420
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 28371
+#line 28421
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 28372
+#line 28422
         .gender = TRAINER_GENDER_MALE,
-#line 28373
+#line 28423
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28374
+#line 28424
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28375
+#line 28425
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -70516,23 +70634,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28377
+#line 28427
             .species = SPECIES_CROBAT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28377
+#line 28427
             .heldItem = ITEM_LEFTOVERS,
-#line 28380
+#line 28430
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28379
+#line 28429
             .ability = ABILITY_INFILTRATOR,
-#line 28378
+#line 28428
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28381
+#line 28431
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28382
+#line 28432
                 MOVE_HYPNOSIS,
                 MOVE_CROSS_POISON,
                 MOVE_U_TURN,
@@ -70540,23 +70658,23 @@
             },
             },
             {
-#line 28387
+#line 28437
             .species = SPECIES_REUNICLUS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28387
+#line 28437
             .heldItem = ITEM_LIFE_ORB,
-#line 28390
+#line 28440
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28389
+#line 28439
             .ability = ABILITY_MAGIC_GUARD,
-#line 28388
+#line 28438
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28391
+#line 28441
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28392
+#line 28442
                 MOVE_PSYSHOCK,
                 MOVE_SHADOW_BALL,
                 MOVE_DAZZLING_GLEAM,
@@ -70564,23 +70682,23 @@
             },
             },
             {
-#line 28397
+#line 28447
             .species = SPECIES_SHIFTRY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28397
+#line 28447
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 28400
+#line 28450
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28399
+#line 28449
             .ability = ABILITY_WIND_RIDER,
-#line 28398
+#line 28448
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28401
+#line 28451
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28402
+#line 28452
                 MOVE_SILVER_WIND,
                 MOVE_OMINOUS_WIND,
                 MOVE_HEAT_WAVE,
@@ -70588,23 +70706,23 @@
             },
             },
             {
-#line 28407
+#line 28457
             .species = SPECIES_DUSCLOPS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28407
+#line 28457
             .heldItem = ITEM_EVIOLITE,
-#line 28410
+#line 28460
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28409
+#line 28459
             .ability = ABILITY_SHADOW_TAG,
-#line 28408
+#line 28458
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28411
+#line 28461
             .nature = NATURE_IMPISH,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28412
+#line 28462
                 MOVE_PAIN_SPLIT,
                 MOVE_WILL_O_WISP,
                 MOVE_CONFUSE_RAY,
@@ -70612,23 +70730,23 @@
             },
             },
             {
-#line 28417
+#line 28467
             .species = SPECIES_RUNERIGUS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28417
+#line 28467
             .heldItem = ITEM_CHESTO_BERRY,
-#line 28420
+#line 28470
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28419
+#line 28469
             .ability = ABILITY_WANDERING_SPIRIT,
-#line 28418
+#line 28468
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28421
+#line 28471
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28422
+#line 28472
                 MOVE_AMNESIA,
                 MOVE_IRON_DEFENSE,
                 MOVE_POWER_TRIP,
@@ -70637,22 +70755,22 @@
             },
         },
     },
-#line 28427
+#line 28477
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_10] =
     {
-#line 28428
+#line 28478
         .trainerName = _("Grunt"),
-#line 28429
+#line 28479
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 28430
+#line 28480
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 28431
+#line 28481
         .gender = TRAINER_GENDER_FEMALE,
-#line 28432
+#line 28482
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28433
+#line 28483
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28434
+#line 28484
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -70660,23 +70778,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28436
+#line 28486
             .species = SPECIES_GENGAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28436
+#line 28486
             .heldItem = ITEM_FOCUS_SASH,
-#line 28439
+#line 28489
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28438
+#line 28488
             .ability = ABILITY_SHADOW_TAG,
-#line 28437
+#line 28487
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28440
+#line 28490
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28441
+#line 28491
                 MOVE_POISON_GAS,
                 MOVE_VENOM_DRENCH,
                 MOVE_HEX,
@@ -70684,23 +70802,23 @@
             },
             },
             {
-#line 28446
+#line 28496
             .species = SPECIES_TREVENANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28446
+#line 28496
             .heldItem = ITEM_SCOPE_LENS,
-#line 28449
+#line 28499
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28448
+#line 28498
             .ability = ABILITY_SHADOW_TAG,
-#line 28447
+#line 28497
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28450
+#line 28500
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28451
+#line 28501
                 MOVE_LEAF_BLADE,
                 MOVE_SHADOW_CLAW,
                 MOVE_FORESTS_CURSE,
@@ -70709,22 +70827,22 @@
             },
         },
     },
-#line 28456
+#line 28506
     [DIFFICULTY_NORMAL][TRAINER_LIZA] =
     {
-#line 28457
+#line 28507
         .trainerName = _("Liza"),
-#line 28458
+#line 28508
         .trainerClass = TRAINER_CLASS_LEADER,
-#line 28459
+#line 28509
         .trainerPic = TRAINER_PIC_LIZA,
-#line 28460
+#line 28510
         .gender = TRAINER_GENDER_MALE,
-#line 28461
+#line 28511
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 28462
+#line 28512
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28463
+#line 28513
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -70732,23 +70850,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28465
+#line 28515
             .species = SPECIES_TAPU_LELE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28465
+#line 28515
             .heldItem = ITEM_LIFE_ORB,
-#line 28468
+#line 28518
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28467
+#line 28517
             .ability = ABILITY_PSYCHIC_SURGE,
-#line 28466
+#line 28516
             .lvl = 80,
             .ball = POKEBALL_COUNT,
-#line 28469
+#line 28519
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28470
+#line 28520
                 MOVE_MOONBLAST,
                 MOVE_PSYCHIC,
                 MOVE_ENERGY_BALL,
@@ -70756,23 +70874,23 @@
             },
             },
             {
-#line 28475
+#line 28525
             .species = SPECIES_LUNALA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28475
+#line 28525
             .heldItem = ITEM_POWER_HERB,
-#line 28478
+#line 28528
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28477
+#line 28527
             .ability = ABILITY_SHADOW_SHIELD,
-#line 28476
+#line 28526
             .lvl = 80,
             .ball = POKEBALL_COUNT,
-#line 28479
+#line 28529
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28480
+#line 28530
                 MOVE_PSYCHIC,
                 MOVE_MOONGEIST_BEAM,
                 MOVE_MOONBLAST,
@@ -70780,23 +70898,23 @@
             },
             },
             {
-#line 28485
+#line 28535
             .species = SPECIES_LATIAS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28485
+#line 28535
             .heldItem = ITEM_LATIASITE,
-#line 28488
+#line 28538
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28487
+#line 28537
             .ability = ABILITY_LEVITATE,
-#line 28486
+#line 28536
             .lvl = 80,
             .ball = POKEBALL_COUNT,
-#line 28489
+#line 28539
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28490
+#line 28540
                 MOVE_DRAGON_PULSE,
                 MOVE_MYSTICAL_FIRE,
                 MOVE_MIST_BALL,
@@ -70805,22 +70923,22 @@
             },
         },
     },
-#line 28495
+#line 28545
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_15] =
     {
-#line 28496
+#line 28546
         .trainerName = _("Grunt"),
-#line 28497
+#line 28547
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 28498
+#line 28548
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 28499
+#line 28549
         .gender = TRAINER_GENDER_MALE,
-#line 28500
+#line 28550
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28501
+#line 28551
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28502
+#line 28552
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -70828,23 +70946,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28504
+#line 28554
             .species = SPECIES_AGGRON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28504
+#line 28554
             .heldItem = ITEM_COVERT_CLOAK,
-#line 28507
+#line 28557
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 28506
+#line 28556
             .ability = ABILITY_STURDY,
-#line 28505
+#line 28555
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28508
+#line 28558
             .nature = NATURE_BRAVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28509
+#line 28559
                 MOVE_METAL_BURST,
                 MOVE_IRON_TAIL,
                 MOVE_STEALTH_ROCK,
@@ -70852,23 +70970,23 @@
             },
             },
             {
-#line 28514
+#line 28564
             .species = SPECIES_ORBEETLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28514
+#line 28564
             .heldItem = ITEM_LEFTOVERS,
-#line 28517
+#line 28567
             .iv = TRAINER_PARTY_IVS(31, 0, 31, 31, 31, 31),
-#line 28516
+#line 28566
             .ability = ABILITY_TINTED_LENS,
-#line 28515
+#line 28565
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28518
+#line 28568
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28519
+#line 28569
                 MOVE_COSMIC_POWER,
                 MOVE_STORED_POWER,
                 MOVE_BUG_BUZZ,
@@ -70876,23 +70994,23 @@
             },
             },
             {
-#line 28524
+#line 28574
             .species = SPECIES_SKUNTANK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28524
+#line 28574
             .heldItem = ITEM_ROWAP_BERRY,
-#line 28527
+#line 28577
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28526
+#line 28576
             .ability = ABILITY_AFTERMATH,
-#line 28525
+#line 28575
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28528
+#line 28578
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28529
+#line 28579
                 MOVE_EXPLOSION,
                 MOVE_KNOCK_OFF,
                 MOVE_POISON_JAB,
@@ -70900,23 +71018,23 @@
             },
             },
             {
-#line 28534
+#line 28584
             .species = SPECIES_THIEVUL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28534
+#line 28584
             .heldItem = ITEM_LIFE_ORB,
-#line 28537
+#line 28587
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28536
+#line 28586
             .ability = ABILITY_STAKEOUT,
-#line 28535
+#line 28585
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28538
+#line 28588
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28539
+#line 28589
                 MOVE_DARK_PULSE,
                 MOVE_PSYCHIC,
                 MOVE_ALLURING_VOICE,
@@ -70924,23 +71042,23 @@
             },
             },
             {
-#line 28544
+#line 28594
             .species = SPECIES_HITMONLEE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28544
+#line 28594
             .heldItem = ITEM_WHITE_HERB,
-#line 28547
+#line 28597
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28546
+#line 28596
             .ability = ABILITY_UNBURDEN,
-#line 28545
+#line 28595
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28548
+#line 28598
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28549
+#line 28599
                 MOVE_CLOSE_COMBAT,
                 MOVE_STONE_EDGE,
                 MOVE_BLAZE_KICK,
@@ -70949,22 +71067,22 @@
             },
         },
     },
-#line 28554
+#line 28604
     [DIFFICULTY_NORMAL][TRAINER_FALLS_GRUNT_16] =
     {
-#line 28555
+#line 28605
         .trainerName = _("Grunt"),
-#line 28556
+#line 28606
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 28557
+#line 28607
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 28558
+#line 28608
         .gender = TRAINER_GENDER_FEMALE,
-#line 28559
+#line 28609
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28560
+#line 28610
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28561
+#line 28611
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -70972,23 +71090,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28563
+#line 28613
             .species = SPECIES_AERODACTYL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28563
+#line 28613
             .heldItem = ITEM_FOCUS_SASH,
-#line 28566
+#line 28616
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28565
+#line 28615
             .ability = ABILITY_ROCK_HEAD,
-#line 28564
+#line 28614
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28567
+#line 28617
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28568
+#line 28618
                 MOVE_STEALTH_ROCK,
                 MOVE_ROCK_SLIDE,
                 MOVE_SKY_ATTACK,
@@ -70996,23 +71114,23 @@
             },
             },
             {
-#line 28573
+#line 28623
             .species = SPECIES_MUK_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28573
+#line 28623
             .heldItem = ITEM_LIECHI_BERRY,
-#line 28576
+#line 28626
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28575
+#line 28625
             .ability = ABILITY_GLUTTONY,
-#line 28574
+#line 28624
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28577
+#line 28627
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28578
+#line 28628
                 MOVE_GUNK_SHOT,
                 MOVE_KNOCK_OFF,
                 MOVE_EXPLOSION,
@@ -71020,23 +71138,23 @@
             },
             },
             {
-#line 28583
+#line 28633
             .species = SPECIES_LURANTIS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28583
+#line 28633
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 28586
+#line 28636
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28585
+#line 28635
             .ability = ABILITY_CONTRARY,
-#line 28584
+#line 28634
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28587
+#line 28637
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28588
+#line 28638
                 MOVE_SUPERPOWER,
                 MOVE_LEAF_STORM,
                 MOVE_PSYCHO_CUT,
@@ -71044,23 +71162,23 @@
             },
             },
             {
-#line 28593
+#line 28643
             .species = SPECIES_GOLURK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28593
+#line 28643
             .heldItem = ITEM_FOCUS_BAND,
-#line 28596
+#line 28646
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28595
+#line 28645
             .ability = ABILITY_NO_GUARD,
-#line 28594
+#line 28644
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28597
+#line 28647
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28598
+#line 28648
                 MOVE_DYNAMIC_PUNCH,
                 MOVE_SPIRIT_SHACKLE,
                 MOVE_STONE_EDGE,
@@ -71068,23 +71186,23 @@
             },
             },
             {
-#line 28603
+#line 28653
             .species = SPECIES_LICKILICKY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28603
+#line 28653
             .heldItem = ITEM_BERSERK_GENE,
-#line 28606
+#line 28656
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28605
+#line 28655
             .ability = ABILITY_OWN_TEMPO,
-#line 28604
+#line 28654
             .lvl = 46,
             .ball = POKEBALL_COUNT,
-#line 28607
+#line 28657
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28608
+#line 28658
                 MOVE_BODY_SLAM,
                 MOVE_ZEN_HEADBUTT,
                 MOVE_AQUA_TAIL,
@@ -71093,22 +71211,22 @@
             },
         },
     },
-#line 28613
+#line 28663
     [DIFFICULTY_NORMAL][TRAINER_ARCHIE_PYRE] =
     {
-#line 28614
+#line 28664
         .trainerName = _("Archie"),
-#line 28615
+#line 28665
         .trainerClass = TRAINER_CLASS_AQUA_LEADER,
-#line 28616
+#line 28666
         .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,
-#line 28617
+#line 28667
         .gender = TRAINER_GENDER_MALE,
-#line 28618
+#line 28668
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-#line 28619
+#line 28669
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28620
+#line 28670
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -71116,23 +71234,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28622
+#line 28672
             .species = SPECIES_KINGDRA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28622
+#line 28672
             .heldItem = ITEM_WHITE_HERB,
-#line 28625
+#line 28675
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28624
+#line 28674
             .ability = ABILITY_SWIFT_SWIM,
-#line 28623
+#line 28673
             .lvl = 69,
             .ball = POKEBALL_COUNT,
-#line 28626
+#line 28676
             .nature = NATURE_MILD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28627
+#line 28677
                 MOVE_DRACO_METEOR,
                 MOVE_WAVE_CRASH,
                 MOVE_HURRICANE,
@@ -71140,23 +71258,23 @@
             },
             },
             {
-#line 28632
+#line 28682
             .species = SPECIES_KARTANA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28632
+#line 28682
             .heldItem = ITEM_SCOPE_LENS,
-#line 28635
+#line 28685
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28634
+#line 28684
             .ability = ABILITY_SHARPNESS,
-#line 28633
+#line 28683
             .lvl = 69,
             .ball = POKEBALL_COUNT,
-#line 28636
+#line 28686
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28637
+#line 28687
                 MOVE_LEAF_BLADE,
                 MOVE_SACRED_SWORD,
                 MOVE_BEHEMOTH_BLADE,
@@ -71164,23 +71282,23 @@
             },
             },
             {
-#line 28642
+#line 28692
             .species = SPECIES_RAIKOU,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28642
+#line 28692
             .heldItem = ITEM_LIFE_ORB,
-#line 28645
+#line 28695
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28644
+#line 28694
             .ability = ABILITY_INNER_FOCUS,
-#line 28643
+#line 28693
             .lvl = 69,
             .ball = POKEBALL_COUNT,
-#line 28646
+#line 28696
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28647
+#line 28697
                 MOVE_THUNDER,
                 MOVE_CHARGE_BEAM,
                 MOVE_WEATHER_BALL,
@@ -71188,23 +71306,23 @@
             },
             },
             {
-#line 28652
+#line 28702
             .species = SPECIES_SUICUNE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28652
+#line 28702
             .heldItem = ITEM_LEFTOVERS,
-#line 28655
+#line 28705
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28654
+#line 28704
             .ability = ABILITY_INNER_FOCUS,
-#line 28653
+#line 28703
             .lvl = 69,
             .ball = POKEBALL_COUNT,
-#line 28656
+#line 28706
             .nature = NATURE_BOLD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28657
+#line 28707
                 MOVE_SCALD,
                 MOVE_CALM_MIND,
                 MOVE_SUBSTITUTE,
@@ -71212,23 +71330,23 @@
             },
             },
             {
-#line 28662
+#line 28712
             .species = SPECIES_DREDNAW,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28662
+#line 28712
             .heldItem = ITEM_SITRUS_BERRY,
-#line 28665
+#line 28715
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28664
+#line 28714
             .ability = ABILITY_SWIFT_SWIM,
-#line 28663
+#line 28713
             .lvl = 69,
             .ball = POKEBALL_COUNT,
-#line 28666
+#line 28716
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28667
+#line 28717
                 MOVE_WAVE_CRASH,
                 MOVE_HEAD_SMASH,
                 MOVE_SWORDS_DANCE,
@@ -71236,23 +71354,23 @@
             },
             },
             {
-#line 28672
+#line 28722
             .species = SPECIES_DRAGALGE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28672
+#line 28722
             .heldItem = ITEM_DRAGALGITE,
-#line 28675
+#line 28725
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28674
+#line 28724
             .ability = ABILITY_ADAPTABILITY,
-#line 28673
+#line 28723
             .lvl = 69,
             .ball = POKEBALL_COUNT,
-#line 28676
+#line 28726
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28677
+#line 28727
                 MOVE_SLUDGE_WAVE,
                 MOVE_DRAGON_PULSE,
                 MOVE_THUNDER,
@@ -71261,22 +71379,22 @@
             },
         },
     },
-#line 28682
+#line 28732
     [DIFFICULTY_NORMAL][TRAINER_WALLACE_1] =
     {
-#line 28683
+#line 28733
         .trainerName = _("Wallace"),
-#line 28684
+#line 28734
         .trainerClass = TRAINER_CLASS_LEADER,
-#line 28685
+#line 28735
         .trainerPic = TRAINER_PIC_CHAMPION_WALLACE,
-#line 28686
+#line 28736
         .gender = TRAINER_GENDER_MALE,
-#line 28687
+#line 28737
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 28688
+#line 28738
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28689
+#line 28739
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -71284,23 +71402,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28691
+#line 28741
             .species = SPECIES_BARRASKEWDA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28691
+#line 28741
             .heldItem = ITEM_FOCUS_SASH,
-#line 28694
+#line 28744
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28693
+#line 28743
             .ability = ABILITY_SWIFT_SWIM,
-#line 28692
+#line 28742
             .lvl = 92,
             .ball = POKEBALL_COUNT,
-#line 28695
+#line 28745
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28696
+#line 28746
                 MOVE_LIQUIDATION,
                 MOVE_DRILL_RUN,
                 MOVE_POISON_JAB,
@@ -71308,23 +71426,23 @@
             },
             },
             {
-#line 28701
+#line 28751
             .species = SPECIES_URSHIFU_RAPID_STRIKE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28701
+#line 28751
             .heldItem = ITEM_WHITE_HERB,
-#line 28704
+#line 28754
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28703
+#line 28753
             .ability = ABILITY_UNSEEN_FIST,
-#line 28702
+#line 28752
             .lvl = 92,
             .ball = POKEBALL_COUNT,
-#line 28705
+#line 28755
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28706
+#line 28756
                 MOVE_SURGING_STRIKES,
                 MOVE_CLOSE_COMBAT,
                 MOVE_POISON_JAB,
@@ -71332,44 +71450,44 @@
             },
             },
             {
-#line 28711
+#line 28761
             .species = SPECIES_DRACOVISH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28711
+#line 28761
             .heldItem = ITEM_CHOICE_SCARF,
-#line 28714
+#line 28764
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28713
+#line 28763
             .ability = ABILITY_STRONG_JAW,
-#line 28712
+#line 28762
             .lvl = 92,
             .ball = POKEBALL_COUNT,
-#line 28715
+#line 28765
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28716
+#line 28766
                 MOVE_FISHIOUS_REND,
             },
             },
             {
-#line 28718
+#line 28768
             .species = SPECIES_MILOTIC,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28718
+#line 28768
             .heldItem = ITEM_FLAME_ORB,
-#line 28721
+#line 28771
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28720
+#line 28770
             .ability = ABILITY_MARVEL_SCALE,
-#line 28719
+#line 28769
             .lvl = 92,
             .ball = POKEBALL_COUNT,
-#line 28722
+#line 28772
             .nature = NATURE_BOLD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28723
+#line 28773
                 MOVE_SCALD,
                 MOVE_ICE_BEAM,
                 MOVE_RECOVER,
@@ -71377,23 +71495,23 @@
             },
             },
             {
-#line 28728
+#line 28778
             .species = SPECIES_CRAWDAUNT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28728
+#line 28778
             .heldItem = ITEM_WATER_GEM,
-#line 28731
+#line 28781
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28730
+#line 28780
             .ability = ABILITY_ADAPTABILITY,
-#line 28729
+#line 28779
             .lvl = 92,
             .ball = POKEBALL_COUNT,
-#line 28732
+#line 28782
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28733
+#line 28783
                 MOVE_DRAGON_DANCE,
                 MOVE_CRABHAMMER,
                 MOVE_CRUNCH,
@@ -71401,23 +71519,23 @@
             },
             },
             {
-#line 28738
+#line 28788
             .species = SPECIES_TATSUGIRI_STRETCHY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28738
+#line 28788
             .heldItem = ITEM_TATSUGIRINITE,
-#line 28741
+#line 28791
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28740
+#line 28790
             .ability = ABILITY_STORM_DRAIN,
-#line 28739
+#line 28789
             .lvl = 92,
             .ball = POKEBALL_COUNT,
-#line 28742
+#line 28792
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28743
+#line 28793
                 MOVE_HYDRO_PUMP,
                 MOVE_ICE_BEAM,
                 MOVE_NASTY_PLOT,
@@ -71426,24 +71544,24 @@
             },
         },
     },
-#line 28748
+#line 28798
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_1] =
     {
-#line 28749
+#line 28799
         .trainerName = _("Grunt"),
-#line 28750
+#line 28800
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 28751
+#line 28801
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 28752
+#line 28802
         .gender = TRAINER_GENDER_MALE,
-#line 28753
+#line 28803
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28754
+#line 28804
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28755
+#line 28805
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 28756
+#line 28806
         .startingStatus = { .electricTerrain = TRUE, },
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -71451,23 +71569,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28758
+#line 28808
             .species = SPECIES_PORYGON_Z,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28758
+#line 28808
             .heldItem = ITEM_FOCUS_BAND,
-#line 28761
+#line 28811
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28760
+#line 28810
             .ability = ABILITY_SURGE_SURFER,
-#line 28759
+#line 28809
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28762
+#line 28812
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28763
+#line 28813
                 MOVE_DISCHARGE,
                 MOVE_TRI_ATTACK,
                 MOVE_ICE_BEAM,
@@ -71475,23 +71593,23 @@
             },
             },
             {
-#line 28768
+#line 28818
             .species = SPECIES_LANTURN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28768
+#line 28818
             .heldItem = ITEM_LEFTOVERS,
-#line 28771
+#line 28821
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28770
+#line 28820
             .ability = ABILITY_SURGE_SURFER,
-#line 28769
+#line 28819
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28772
+#line 28822
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28773
+#line 28823
                 MOVE_DISCHARGE,
                 MOVE_MUDDY_WATER,
                 MOVE_ICE_BEAM,
@@ -71499,23 +71617,23 @@
             },
             },
             {
-#line 28778
+#line 28828
             .species = SPECIES_RAICHU_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28778
+#line 28828
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 28781
+#line 28831
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28780
+#line 28830
             .ability = ABILITY_SURGE_SURFER,
-#line 28779
+#line 28829
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28782
+#line 28832
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28783
+#line 28833
                 MOVE_DISCHARGE,
                 MOVE_PSYCHIC,
                 MOVE_FOCUS_BLAST,
@@ -71524,24 +71642,24 @@
             },
         },
     },
-#line 28788
+#line 28838
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_2] =
     {
-#line 28789
+#line 28839
         .trainerName = _("Grunt"),
-#line 28790
+#line 28840
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 28791
+#line 28841
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 28792
+#line 28842
         .gender = TRAINER_GENDER_FEMALE,
-#line 28793
+#line 28843
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28794
+#line 28844
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28795
+#line 28845
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 28796
+#line 28846
         .startingStatus = { .electricTerrain = TRUE, },
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -71549,23 +71667,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28798
+#line 28848
             .species = SPECIES_ELECTIVIRE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28798
+#line 28848
             .heldItem = ITEM_SHUCA_BERRY,
-#line 28801
+#line 28851
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28800
+#line 28850
             .ability = ABILITY_MOTOR_DRIVE,
-#line 28799
+#line 28849
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28802
+#line 28852
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28803
+#line 28853
                 MOVE_VOLT_TACKLE,
                 MOVE_FIRE_PUNCH,
                 MOVE_ICE_PUNCH,
@@ -71573,23 +71691,23 @@
             },
             },
             {
-#line 28808
+#line 28858
             .species = SPECIES_PINCURCHIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28808
+#line 28858
             .heldItem = ITEM_QUICK_CLAW,
-#line 28811
+#line 28861
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28810
+#line 28860
             .ability = ABILITY_LIGHTNING_ROD,
-#line 28809
+#line 28859
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28812
+#line 28862
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28813
+#line 28863
                 MOVE_RISING_VOLTAGE,
                 MOVE_MUDDY_WATER,
                 MOVE_PAIN_SPLIT,
@@ -71597,23 +71715,23 @@
             },
             },
             {
-#line 28818
+#line 28868
             .species = SPECIES_KILOWATTREL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28818
+#line 28868
             .heldItem = ITEM_FOCUS_BAND,
-#line 28821
+#line 28871
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28820
+#line 28870
             .ability = ABILITY_VOLT_ABSORB,
-#line 28819
+#line 28869
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28822
+#line 28872
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28823
+#line 28873
                 MOVE_RISING_VOLTAGE,
                 MOVE_HURRICANE,
                 MOVE_ENDEAVOR,
@@ -71622,24 +71740,24 @@
             },
         },
     },
-#line 28828
+#line 28878
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_3] =
     {
-#line 28829
+#line 28879
         .trainerName = _("Grunt"),
-#line 28830
+#line 28880
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 28831
+#line 28881
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 28832
+#line 28882
         .gender = TRAINER_GENDER_MALE,
-#line 28833
+#line 28883
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 28834
+#line 28884
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28835
+#line 28885
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 28836
+#line 28886
         .startingStatus = { .electricTerrain = TRUE, },
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -71647,23 +71765,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28838
+#line 28888
             .species = SPECIES_VIKAVOLT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28838
+#line 28888
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 28841
+#line 28891
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28840
+#line 28890
             .ability = ABILITY_LEVITATE,
-#line 28839
+#line 28889
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28842
+#line 28892
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28843
+#line 28893
                 MOVE_RISING_VOLTAGE,
                 MOVE_STICKY_WEB,
                 MOVE_ENERGY_BALL,
@@ -71671,23 +71789,23 @@
             },
             },
             {
-#line 28848
+#line 28898
             .species = SPECIES_DRAMPA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28848
+#line 28898
             .heldItem = ITEM_LIFE_ORB,
-#line 28851
+#line 28901
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28850
+#line 28900
             .ability = ABILITY_SURGE_SURFER,
-#line 28849
+#line 28899
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28852
+#line 28902
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28853
+#line 28903
                 MOVE_DRAGON_PULSE,
                 MOVE_BOOMBURST,
                 MOVE_THUNDERBOLT,
@@ -71695,23 +71813,23 @@
             },
             },
             {
-#line 28858
+#line 28908
             .species = SPECIES_AMPHAROS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28858
+#line 28908
             .heldItem = ITEM_SHUCA_BERRY,
-#line 28861
+#line 28911
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28860
+#line 28910
             .ability = ABILITY_STATIC,
-#line 28859
+#line 28909
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28862
+#line 28912
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28863
+#line 28913
                 MOVE_RISING_VOLTAGE,
                 MOVE_FOCUS_BLAST,
                 MOVE_POWER_GEM,
@@ -71719,23 +71837,23 @@
             },
             },
             {
-#line 28868
+#line 28918
             .species = SPECIES_RAMPARDOS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28868
+#line 28918
             .heldItem = ITEM_FOCUS_BAND,
-#line 28871
+#line 28921
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28870
+#line 28920
             .ability = ABILITY_ROCK_HEAD,
-#line 28869
+#line 28919
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28872
+#line 28922
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28873
+#line 28923
                 MOVE_HEAD_SMASH,
                 MOVE_SUBMISSION,
                 MOVE_SUPERCELL_SLAM,
@@ -71743,23 +71861,23 @@
             },
             },
             {
-#line 28878
+#line 28928
             .species = SPECIES_GOTHITELLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28878
+#line 28928
             .heldItem = ITEM_LEFTOVERS,
-#line 28881
+#line 28931
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28880
+#line 28930
             .ability = ABILITY_SHADOW_TAG,
-#line 28879
+#line 28929
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 28882
+#line 28932
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28883
+#line 28933
                 MOVE_CALM_MIND,
                 MOVE_THUNDERBOLT,
                 MOVE_PSYSHOCK,
@@ -71768,22 +71886,22 @@
             },
         },
     },
-#line 28888
+#line 28938
     [DIFFICULTY_NORMAL][TRAINER_ANGELO] =
     {
-#line 28889
+#line 28939
         .trainerName = _("ANGELO"),
-#line 28890
+#line 28940
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
-#line 28891
+#line 28941
         .trainerPic = TRAINER_PIC_BUG_MANIAC,
-#line 28892
+#line 28942
         .gender = TRAINER_GENDER_MALE,
-#line 28893
+#line 28943
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_SUSPICIOUS,
-#line 28894
+#line 28944
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28895
+#line 28945
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -71791,23 +71909,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28897
+#line 28947
             .species = SPECIES_CHARJABUG,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28897
+#line 28947
             .heldItem = ITEM_EVIOLITE,
-#line 28900
+#line 28950
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28899
+#line 28949
             .ability = ABILITY_BATTERY,
-#line 28898
+#line 28948
             .lvl = 35,
             .ball = POKEBALL_COUNT,
-#line 28901
+#line 28951
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28902
+#line 28952
                 MOVE_X_SCISSOR,
                 MOVE_SUPERCELL_SLAM,
                 MOVE_STICKY_WEB,
@@ -71815,23 +71933,23 @@
             },
             },
             {
-#line 28907
+#line 28957
             .species = SPECIES_GALVANTULA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28907
+#line 28957
             .heldItem = ITEM_LIFE_ORB,
-#line 28910
+#line 28960
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28909
+#line 28959
             .ability = ABILITY_COMPOUND_EYES,
-#line 28908
+#line 28958
             .lvl = 35,
             .ball = POKEBALL_COUNT,
-#line 28911
+#line 28961
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28912
+#line 28962
                 MOVE_THUNDER,
                 MOVE_ENERGY_BALL,
                 MOVE_BUG_BUZZ,
@@ -71839,23 +71957,23 @@
             },
             },
             {
-#line 28917
+#line 28967
             .species = SPECIES_ILLUMISE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28917
+#line 28967
             .heldItem = ITEM_FOCUS_SASH,
-#line 28920
+#line 28970
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28919
+#line 28969
             .ability = ABILITY_TINTED_LENS,
-#line 28918
+#line 28968
             .lvl = 35,
             .ball = POKEBALL_COUNT,
-#line 28921
+#line 28971
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28922
+#line 28972
                 MOVE_THUNDERBOLT,
                 MOVE_GIGA_DRAIN,
                 MOVE_BUG_BUZZ,
@@ -71863,23 +71981,23 @@
             },
             },
             {
-#line 28927
+#line 28977
             .species = SPECIES_VOLBEAT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28927
+#line 28977
             .heldItem = ITEM_FOCUS_SASH,
-#line 28930
+#line 28980
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28929
+#line 28979
             .ability = ABILITY_TINTED_LENS,
-#line 28928
+#line 28978
             .lvl = 35,
             .ball = POKEBALL_COUNT,
-#line 28931
+#line 28981
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28932
+#line 28982
                 MOVE_THUNDER_PUNCH,
                 MOVE_ICE_PUNCH,
                 MOVE_LEECH_LIFE,
@@ -71888,22 +72006,22 @@
             },
         },
     },
-#line 28937
+#line 28987
     [DIFFICULTY_NORMAL][TRAINER_DARIUS] =
     {
-#line 28938
+#line 28988
         .trainerName = _("DARIUS"),
-#line 28939
+#line 28989
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
-#line 28940
+#line 28990
         .trainerPic = TRAINER_PIC_BIRD_KEEPER,
-#line 28941
+#line 28991
         .gender = TRAINER_GENDER_MALE,
-#line 28942
+#line 28992
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-#line 28943
+#line 28993
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 28944
+#line 28994
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -71911,23 +72029,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 28946
+#line 28996
             .species = SPECIES_KILOWATTREL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28946
+#line 28996
             .heldItem = ITEM_FOCUS_SASH,
-#line 28949
+#line 28999
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28948
+#line 28998
             .ability = ABILITY_COMPETITIVE,
-#line 28947
+#line 28997
             .lvl = 59,
             .ball = POKEBALL_COUNT,
-#line 28950
+#line 29000
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28951
+#line 29001
                 MOVE_BOLT_BEAK,
                 MOVE_HURRICANE,
                 MOVE_VOLT_SWITCH,
@@ -71935,23 +72053,23 @@
             },
             },
             {
-#line 28956
+#line 29006
             .species = SPECIES_EMPOLEON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28956
+#line 29006
             .heldItem = ITEM_RED_CARD,
-#line 28959
+#line 29009
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28958
+#line 29008
             .ability = ABILITY_COMPETITIVE,
-#line 28957
+#line 29007
             .lvl = 59,
             .ball = POKEBALL_COUNT,
-#line 28960
+#line 29010
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28961
+#line 29011
                 MOVE_HYDRO_PUMP,
                 MOVE_FLASH_CANNON,
                 MOVE_ICE_BEAM,
@@ -71959,23 +72077,23 @@
             },
             },
             {
-#line 28966
+#line 29016
             .species = SPECIES_TOUCANNON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28966
+#line 29016
             .heldItem = ITEM_KINGS_ROCK,
-#line 28969
+#line 29019
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28968
+#line 29018
             .ability = ABILITY_SKILL_LINK,
-#line 28967
+#line 29017
             .lvl = 59,
             .ball = POKEBALL_COUNT,
-#line 28970
+#line 29020
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28971
+#line 29021
                 MOVE_ROCK_BLAST,
                 MOVE_BULLET_SEED,
                 MOVE_FURY_ATTACK,
@@ -71983,23 +72101,23 @@
             },
             },
             {
-#line 28976
+#line 29026
             .species = SPECIES_HONCHKROW,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28976
+#line 29026
             .heldItem = ITEM_SALAC_BERRY,
-#line 28979
+#line 29029
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28978
+#line 29028
             .ability = ABILITY_MOXIE,
-#line 28977
+#line 29027
             .lvl = 59,
             .ball = POKEBALL_COUNT,
-#line 28980
+#line 29030
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28981
+#line 29031
                 MOVE_SUCKER_PUNCH,
                 MOVE_SKY_ATTACK,
                 MOVE_SUBSTITUTE,
@@ -72007,23 +72125,23 @@
             },
             },
             {
-#line 28986
+#line 29036
             .species = SPECIES_GYARADOS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 28986
+#line 29036
             .heldItem = ITEM_WACAN_BERRY,
-#line 28989
+#line 29039
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 28988
+#line 29038
             .ability = ABILITY_MOXIE,
-#line 28987
+#line 29037
             .lvl = 59,
             .ball = POKEBALL_COUNT,
-#line 28990
+#line 29040
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 28991
+#line 29041
                 MOVE_WATERFALL,
                 MOVE_EARTHQUAKE,
                 MOVE_SKY_ATTACK,
@@ -72032,24 +72150,24 @@
             },
         },
     },
-#line 28996
+#line 29046
     [DIFFICULTY_NORMAL][TRAINER_STEVEN] =
     {
-#line 28997
+#line 29047
         .trainerName = _("Chrispy"),
-#line 28998
+#line 29048
         .trainerClass = TRAINER_CLASS_RIVAL,
-#line 28999
+#line 29049
         .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
-#line 29000
+#line 29050
         .gender = TRAINER_GENDER_MALE,
-#line 29001
+#line 29051
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 29002
+#line 29052
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29003
+#line 29053
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 29004
+#line 29054
         .mugshotColor = MUGSHOT_COLOR_GREEN,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72057,23 +72175,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29006
+#line 29056
             .species = SPECIES_GENESECT_DOUSE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29006
+#line 29056
             .heldItem = ITEM_DOUSE_DRIVE,
-#line 29009
+#line 29059
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29008
+#line 29058
             .ability = ABILITY_DOWNLOAD,
-#line 29007
+#line 29057
             .lvl = 100,
             .ball = POKEBALL_COUNT,
-#line 29010
+#line 29060
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29011
+#line 29061
                 MOVE_BUG_BUZZ,
                 MOVE_TECHNO_BLAST,
                 MOVE_FLASH_CANNON,
@@ -72081,23 +72199,23 @@
             },
             },
             {
-#line 29016
+#line 29066
             .species = SPECIES_REGICE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29016
+#line 29066
             .heldItem = ITEM_LIFE_ORB,
-#line 29019
+#line 29069
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29018
+#line 29068
             .ability = ABILITY_CLEAR_BODY,
-#line 29017
+#line 29067
             .lvl = 100,
             .ball = POKEBALL_COUNT,
-#line 29020
+#line 29070
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29021
+#line 29071
                 MOVE_THUNDER,
                 MOVE_ICE_BEAM,
                 MOVE_EARTH_POWER,
@@ -72105,23 +72223,23 @@
             },
             },
             {
-#line 29026
+#line 29076
             .species = SPECIES_KABUTOPS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29026
+#line 29076
             .heldItem = ITEM_RINDO_BERRY,
-#line 29029
+#line 29079
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29028
+#line 29078
             .ability = ABILITY_SWIFT_SWIM,
-#line 29027
+#line 29077
             .lvl = 100,
             .ball = POKEBALL_COUNT,
-#line 29030
+#line 29080
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29031
+#line 29081
                 MOVE_WAVE_CRASH,
                 MOVE_STONE_EDGE,
                 MOVE_LEECH_LIFE,
@@ -72129,23 +72247,23 @@
             },
             },
             {
-#line 29036
+#line 29086
             .species = SPECIES_ESCAVALIER,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29036
+#line 29086
             .heldItem = ITEM_ASSAULT_VEST,
-#line 29039
+#line 29089
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29038
+#line 29088
             .ability = ABILITY_SHARPNESS,
-#line 29037
+#line 29087
             .lvl = 100,
             .ball = POKEBALL_COUNT,
-#line 29040
+#line 29090
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29041
+#line 29091
                 MOVE_X_SCISSOR,
                 MOVE_AQUA_CUTTER,
                 MOVE_SACRED_SWORD,
@@ -72153,23 +72271,23 @@
             },
             },
             {
-#line 29046
+#line 29096
             .species = SPECIES_SIGILYPH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29046
+#line 29096
             .heldItem = ITEM_LIFE_ORB,
-#line 29049
+#line 29099
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29048
+#line 29098
             .ability = ABILITY_MAGIC_GUARD,
-#line 29047
+#line 29097
             .lvl = 100,
             .ball = POKEBALL_COUNT,
-#line 29050
+#line 29100
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29051
+#line 29101
                 MOVE_HURRICANE,
                 MOVE_PSYSHOCK,
                 MOVE_WEATHER_BALL,
@@ -72177,23 +72295,23 @@
             },
             },
             {
-#line 29056
+#line 29106
             .species = SPECIES_YANMEGA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29056
+#line 29106
             .heldItem = ITEM_FOCUS_SASH,
-#line 29059
+#line 29109
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29058
+#line 29108
             .ability = ABILITY_TINTED_LENS,
-#line 29057
+#line 29107
             .lvl = 100,
             .ball = POKEBALL_COUNT,
-#line 29060
+#line 29110
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29061
+#line 29111
                 MOVE_HURRICANE,
                 MOVE_BUG_BUZZ,
                 MOVE_QUIVER_DANCE,
@@ -72202,22 +72320,22 @@
             },
         },
     },
-#line 29066
+#line 29116
     [DIFFICULTY_NORMAL][TRAINER_ANABEL] =
     {
-#line 29067
+#line 29117
         .trainerName = _("ANABEL"),
-#line 29068
+#line 29118
         .trainerClass = TRAINER_CLASS_SALON_MAIDEN,
-#line 29069
+#line 29119
         .trainerPic = TRAINER_PIC_SALON_MAIDEN_ANABEL,
-#line 29070
+#line 29120
         .gender = TRAINER_GENDER_FEMALE,
-#line 29071
+#line 29121
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 29072
+#line 29122
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29073
+#line 29123
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72225,36 +72343,36 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29075
+#line 29125
             .species = SPECIES_BELDUM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29077
+#line 29127
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 29076
+#line 29126
             .lvl = 5,
             .ball = POKEBALL_COUNT,
-#line 29078
+#line 29128
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 29080
+#line 29130
     [DIFFICULTY_NORMAL][TRAINER_TUCKER] =
     {
-#line 29081
+#line 29131
         .trainerName = _("TUCKER"),
-#line 29082
+#line 29132
         .trainerClass = TRAINER_CLASS_DOME_ACE,
-#line 29083
+#line 29133
         .trainerPic = TRAINER_PIC_DOME_ACE_TUCKER,
-#line 29084
+#line 29134
         .gender = TRAINER_GENDER_MALE,
-#line 29085
+#line 29135
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 29086
+#line 29136
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29087
+#line 29137
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72262,36 +72380,36 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29089
+#line 29139
             .species = SPECIES_BELDUM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29091
+#line 29141
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 29090
+#line 29140
             .lvl = 5,
             .ball = POKEBALL_COUNT,
-#line 29092
+#line 29142
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 29094
+#line 29144
     [DIFFICULTY_NORMAL][TRAINER_SPENSER] =
     {
-#line 29095
+#line 29145
         .trainerName = _("SPENSER"),
-#line 29096
+#line 29146
         .trainerClass = TRAINER_CLASS_PALACE_MAVEN,
-#line 29097
+#line 29147
         .trainerPic = TRAINER_PIC_PALACE_MAVEN_SPENSER,
-#line 29098
+#line 29148
         .gender = TRAINER_GENDER_MALE,
-#line 29099
+#line 29149
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 29100
+#line 29150
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29101
+#line 29151
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72299,36 +72417,36 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29103
+#line 29153
             .species = SPECIES_BELDUM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29105
+#line 29155
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 29104
+#line 29154
             .lvl = 5,
             .ball = POKEBALL_COUNT,
-#line 29106
+#line 29156
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 29108
+#line 29158
     [DIFFICULTY_NORMAL][TRAINER_GRETA] =
     {
-#line 29109
+#line 29159
         .trainerName = _("GRETA"),
-#line 29110
+#line 29160
         .trainerClass = TRAINER_CLASS_ARENA_TYCOON,
-#line 29111
+#line 29161
         .trainerPic = TRAINER_PIC_ARENA_TYCOON_GRETA,
-#line 29112
+#line 29162
         .gender = TRAINER_GENDER_FEMALE,
-#line 29113
+#line 29163
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 29114
+#line 29164
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29115
+#line 29165
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72336,36 +72454,36 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29117
+#line 29167
             .species = SPECIES_BELDUM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29119
+#line 29169
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 29118
+#line 29168
             .lvl = 5,
             .ball = POKEBALL_COUNT,
-#line 29120
+#line 29170
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 29122
+#line 29172
     [DIFFICULTY_NORMAL][TRAINER_NOLAND] =
     {
-#line 29123
+#line 29173
         .trainerName = _("NOLAND"),
-#line 29124
+#line 29174
         .trainerClass = TRAINER_CLASS_FACTORY_HEAD,
-#line 29125
+#line 29175
         .trainerPic = TRAINER_PIC_FACTORY_HEAD_NOLAND,
-#line 29126
+#line 29176
         .gender = TRAINER_GENDER_MALE,
-#line 29127
+#line 29177
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 29128
+#line 29178
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29129
+#line 29179
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72373,36 +72491,36 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29131
+#line 29181
             .species = SPECIES_BELDUM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29133
+#line 29183
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 29132
+#line 29182
             .lvl = 5,
             .ball = POKEBALL_COUNT,
-#line 29134
+#line 29184
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 29136
+#line 29186
     [DIFFICULTY_NORMAL][TRAINER_LUCY] =
     {
-#line 29137
+#line 29187
         .trainerName = _("LUCY"),
-#line 29138
+#line 29188
         .trainerClass = TRAINER_CLASS_PIKE_QUEEN,
-#line 29139
+#line 29189
         .trainerPic = TRAINER_PIC_PIKE_QUEEN_LUCY,
-#line 29140
+#line 29190
         .gender = TRAINER_GENDER_FEMALE,
-#line 29141
+#line 29191
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 29142
+#line 29192
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29143
+#line 29193
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72410,36 +72528,36 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29145
+#line 29195
             .species = SPECIES_BELDUM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29147
+#line 29197
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 29146
+#line 29196
             .lvl = 5,
             .ball = POKEBALL_COUNT,
-#line 29148
+#line 29198
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 29150
+#line 29200
     [DIFFICULTY_NORMAL][TRAINER_BRANDON] =
     {
-#line 29151
+#line 29201
         .trainerName = _("BRANDON"),
-#line 29152
+#line 29202
         .trainerClass = TRAINER_CLASS_PYRAMID_KING,
-#line 29153
+#line 29203
         .trainerPic = TRAINER_PIC_PYRAMID_KING_BRANDON,
-#line 29154
+#line 29204
         .gender = TRAINER_GENDER_MALE,
-#line 29155
+#line 29205
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 29156
+#line 29206
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29157
+#line 29207
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72447,36 +72565,36 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29159
+#line 29209
             .species = SPECIES_BELDUM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29161
+#line 29211
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 29160
+#line 29210
             .lvl = 5,
             .ball = POKEBALL_COUNT,
-#line 29162
+#line 29212
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 29164
+#line 29214
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_7] =
     {
-#line 29165
+#line 29215
         .trainerName = _("Grunt"),
-#line 29166
+#line 29216
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29167
+#line 29217
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29168
+#line 29218
         .gender = TRAINER_GENDER_MALE,
-#line 29169
+#line 29219
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29170
+#line 29220
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29171
+#line 29221
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72484,23 +72602,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29173
+#line 29223
             .species = SPECIES_AERODACTYL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29173
+#line 29223
             .heldItem = ITEM_FOCUS_SASH,
-#line 29176
+#line 29226
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29175
+#line 29225
             .ability = ABILITY_UNNERVE,
-#line 29174
+#line 29224
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29177
+#line 29227
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29178
+#line 29228
                 MOVE_TAILWIND,
                 MOVE_STEALTH_ROCK,
                 MOVE_ROCK_SLIDE,
@@ -72508,23 +72626,23 @@
             },
             },
             {
-#line 29183
+#line 29233
             .species = SPECIES_URSALUNA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29183
+#line 29233
             .heldItem = ITEM_LEFTOVERS,
-#line 29186
+#line 29236
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29185
+#line 29235
             .ability = ABILITY_UNNERVE,
-#line 29184
+#line 29234
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29187
+#line 29237
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29188
+#line 29238
                 MOVE_HIGH_HORSEPOWER,
                 MOVE_DOUBLE_EDGE,
                 MOVE_PLAY_ROUGH,
@@ -72532,23 +72650,23 @@
             },
             },
             {
-#line 29193
+#line 29243
             .species = SPECIES_HOUNDOOM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29193
+#line 29243
             .heldItem = ITEM_LIFE_ORB,
-#line 29196
+#line 29246
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29195
+#line 29245
             .ability = ABILITY_UNNERVE,
-#line 29194
+#line 29244
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29197
+#line 29247
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29198
+#line 29248
                 MOVE_DARK_PULSE,
                 MOVE_FLAMETHROWER,
                 MOVE_NASTY_PLOT,
@@ -72557,22 +72675,22 @@
             },
         },
     },
-#line 29203
+#line 29253
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_8] =
     {
-#line 29204
+#line 29254
         .trainerName = _("Grunt"),
-#line 29205
+#line 29255
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29206
+#line 29256
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 29207
+#line 29257
         .gender = TRAINER_GENDER_FEMALE,
-#line 29208
+#line 29258
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29209
+#line 29259
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29210
+#line 29260
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72580,23 +72698,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29212
+#line 29262
             .species = SPECIES_FROSLASS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29212
+#line 29262
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29215
+#line 29265
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29214
+#line 29264
             .ability = ABILITY_CURSED_BODY,
-#line 29213
+#line 29263
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29216
+#line 29266
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29217
+#line 29267
                 MOVE_CONFUSE_RAY,
                 MOVE_SHADOW_BALL,
                 MOVE_FREEZE_DRY,
@@ -72604,23 +72722,23 @@
             },
             },
             {
-#line 29222
+#line 29272
             .species = SPECIES_PARASECT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29222
+#line 29272
             .heldItem = ITEM_QUICK_CLAW,
-#line 29225
+#line 29275
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29224
+#line 29274
             .ability = ABILITY_EFFECT_SPORE,
-#line 29223
+#line 29273
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29226
+#line 29276
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29227
+#line 29277
                 MOVE_SPORE,
                 MOVE_X_SCISSOR,
                 MOVE_SEED_BOMB,
@@ -72628,23 +72746,23 @@
             },
             },
             {
-#line 29232
+#line 29282
             .species = SPECIES_BRELOOM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29232
+#line 29282
             .heldItem = ITEM_FOCUS_BAND,
-#line 29235
+#line 29285
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29234
+#line 29284
             .ability = ABILITY_TECHNICIAN,
-#line 29233
+#line 29283
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29236
+#line 29286
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29237
+#line 29287
                 MOVE_SPORE,
                 MOVE_ARM_THRUST,
                 MOVE_BULLET_SEED,
@@ -72653,22 +72771,22 @@
             },
         },
     },
-#line 29242
+#line 29292
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_9] =
     {
-#line 29243
+#line 29293
         .trainerName = _("Grunt"),
-#line 29244
+#line 29294
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29245
+#line 29295
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29246
+#line 29296
         .gender = TRAINER_GENDER_MALE,
-#line 29247
+#line 29297
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29248
+#line 29298
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29249
+#line 29299
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72676,23 +72794,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29251
+#line 29301
             .species = SPECIES_WIGGLYTUFF,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29251
+#line 29301
             .heldItem = ITEM_FOCUS_BAND,
-#line 29254
+#line 29304
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29253
+#line 29303
             .ability = ABILITY_COMPETITIVE,
-#line 29252
+#line 29302
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29255
+#line 29305
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29256
+#line 29306
                 MOVE_STEALTH_ROCK,
                 MOVE_MISTY_EXPLOSION,
                 MOVE_FLAMETHROWER,
@@ -72700,23 +72818,23 @@
             },
             },
             {
-#line 29261
+#line 29311
             .species = SPECIES_BRAVIARY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29261
+#line 29311
             .heldItem = ITEM_EJECT_PACK,
-#line 29264
+#line 29314
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29263
+#line 29313
             .ability = ABILITY_DEFIANT,
-#line 29262
+#line 29312
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29265
+#line 29315
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29266
+#line 29316
                 MOVE_TAILWIND,
                 MOVE_CLOSE_COMBAT,
                 MOVE_U_TURN,
@@ -72724,23 +72842,23 @@
             },
             },
             {
-#line 29271
+#line 29321
             .species = SPECIES_WHISCASH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29271
+#line 29321
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29274
+#line 29324
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29273
+#line 29323
             .ability = ABILITY_OBLIVIOUS,
-#line 29272
+#line 29322
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29275
+#line 29325
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29276
+#line 29326
                 MOVE_DRAGON_DANCE,
                 MOVE_WAVE_CRASH,
                 MOVE_EARTHQUAKE,
@@ -72748,23 +72866,23 @@
             },
             },
             {
-#line 29281
+#line 29331
             .species = SPECIES_METAGROSS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29281
+#line 29331
             .heldItem = ITEM_KINGS_ROCK,
-#line 29284
+#line 29334
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29283
+#line 29333
             .ability = ABILITY_SKILL_LINK,
-#line 29282
+#line 29332
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29285
+#line 29335
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29286
+#line 29336
                 MOVE_SHIFT_GEAR,
                 MOVE_COMET_PUNCH,
                 MOVE_BARRAGE,
@@ -72772,23 +72890,23 @@
             },
             },
             {
-#line 29291
+#line 29341
             .species = SPECIES_LOKIX,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29291
+#line 29341
             .heldItem = ITEM_DARK_GEM,
-#line 29294
+#line 29344
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29293
+#line 29343
             .ability = ABILITY_TINTED_LENS,
-#line 29292
+#line 29342
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29295
+#line 29345
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29296
+#line 29346
                 MOVE_PURSUIT,
                 MOVE_X_SCISSOR,
                 MOVE_KNOCK_OFF,
@@ -72797,22 +72915,22 @@
             },
         },
     },
-#line 29301
+#line 29351
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_10] =
     {
-#line 29302
+#line 29352
         .trainerName = _("Grunt"),
-#line 29303
+#line 29353
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29304
+#line 29354
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 29305
+#line 29355
         .gender = TRAINER_GENDER_FEMALE,
-#line 29306
+#line 29356
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29307
+#line 29357
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29308
+#line 29358
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72820,23 +72938,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29310
+#line 29360
             .species = SPECIES_DONPHAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29310
+#line 29360
             .heldItem = ITEM_QUICK_CLAW,
-#line 29313
+#line 29363
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29312
+#line 29362
             .ability = ABILITY_STURDY,
-#line 29311
+#line 29361
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29314
+#line 29364
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29315
+#line 29365
                 MOVE_STEALTH_ROCK,
                 MOVE_HEADLONG_RUSH,
                 MOVE_STONE_EDGE,
@@ -72844,23 +72962,23 @@
             },
             },
             {
-#line 29320
+#line 29370
             .species = SPECIES_DRAGAPULT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29320
+#line 29370
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29323
+#line 29373
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29322
+#line 29372
             .ability = ABILITY_INFILTRATOR,
-#line 29321
+#line 29371
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29324
+#line 29374
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29325
+#line 29375
                 MOVE_DRAGON_DARTS,
                 MOVE_SPIRIT_SHACKLE,
                 MOVE_FIRE_BLAST,
@@ -72868,23 +72986,23 @@
             },
             },
             {
-#line 29330
+#line 29380
             .species = SPECIES_SIGILYPH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29330
+#line 29380
             .heldItem = ITEM_FOCUS_BAND,
-#line 29333
+#line 29383
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29332
+#line 29382
             .ability = ABILITY_MAGIC_GUARD,
-#line 29331
+#line 29381
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29334
+#line 29384
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29335
+#line 29385
                 MOVE_LUMINA_CRASH,
                 MOVE_AIR_SLASH,
                 MOVE_HEAT_WAVE,
@@ -72892,23 +73010,23 @@
             },
             },
             {
-#line 29340
+#line 29390
             .species = SPECIES_VENOMOTH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29340
+#line 29390
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29343
+#line 29393
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29342
+#line 29392
             .ability = ABILITY_TINTED_LENS,
-#line 29341
+#line 29391
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29344
+#line 29394
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29345
+#line 29395
                 MOVE_QUIVER_DANCE,
                 MOVE_BUG_BUZZ,
                 MOVE_SLUDGE_BOMB,
@@ -72916,23 +73034,23 @@
             },
             },
             {
-#line 29350
+#line 29400
             .species = SPECIES_OBSTAGOON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29350
+#line 29400
             .heldItem = ITEM_FLAME_ORB,
-#line 29353
+#line 29403
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29352
+#line 29402
             .ability = ABILITY_GUTS,
-#line 29351
+#line 29401
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29354
+#line 29404
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29355
+#line 29405
                 MOVE_PURSUIT,
                 MOVE_FACADE,
                 MOVE_CROSS_CHOP,
@@ -72941,22 +73059,22 @@
             },
         },
     },
-#line 29360
+#line 29410
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_11] =
     {
-#line 29361
+#line 29411
         .trainerName = _("Grunt"),
-#line 29362
+#line 29412
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29363
+#line 29413
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29364
+#line 29414
         .gender = TRAINER_GENDER_MALE,
-#line 29365
+#line 29415
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29366
+#line 29416
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29367
+#line 29417
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -72964,23 +73082,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29369
+#line 29419
             .species = SPECIES_CAMERUPT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29369
+#line 29419
             .heldItem = ITEM_QUICK_CLAW,
-#line 29372
+#line 29422
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29371
+#line 29421
             .ability = ABILITY_SOLID_ROCK,
-#line 29370
+#line 29420
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29373
+#line 29423
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29374
+#line 29424
                 MOVE_HIGH_HORSEPOWER,
                 MOVE_ROCK_SLIDE,
                 MOVE_STEALTH_ROCK,
@@ -72988,23 +73106,23 @@
             },
             },
             {
-#line 29379
+#line 29429
             .species = SPECIES_MAGCARGO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29379
+#line 29429
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29382
+#line 29432
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29381
+#line 29431
             .ability = ABILITY_STURDY,
-#line 29380
+#line 29430
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29383
+#line 29433
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29384
+#line 29434
                 MOVE_EARTH_POWER,
                 MOVE_FIRE_BLAST,
                 MOVE_POWER_GEM,
@@ -73012,23 +73130,23 @@
             },
             },
             {
-#line 29389
+#line 29439
             .species = SPECIES_ARCANINE_HISUI,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29389
+#line 29439
             .heldItem = ITEM_FOCUS_BAND,
-#line 29392
+#line 29442
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29391
+#line 29441
             .ability = ABILITY_ROCK_HEAD,
-#line 29390
+#line 29440
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29393
+#line 29443
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29394
+#line 29444
                 MOVE_HEAD_SMASH,
                 MOVE_FLARE_BLITZ,
                 MOVE_WILD_CHARGE,
@@ -73037,22 +73155,22 @@
             },
         },
     },
-#line 29399
+#line 29449
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_12] =
     {
-#line 29400
+#line 29450
         .trainerName = _("Grunt"),
-#line 29401
+#line 29451
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29402
+#line 29452
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 29403
+#line 29453
         .gender = TRAINER_GENDER_FEMALE,
-#line 29404
+#line 29454
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29405
+#line 29455
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29406
+#line 29456
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -73060,23 +73178,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29408
+#line 29458
             .species = SPECIES_CRADILY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29408
+#line 29458
             .heldItem = ITEM_LEFTOVERS,
-#line 29411
+#line 29461
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29410
+#line 29460
             .ability = ABILITY_STORM_DRAIN,
-#line 29409
+#line 29459
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29412
+#line 29462
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29413
+#line 29463
                 MOVE_STEALTH_ROCK,
                 MOVE_GIGA_DRAIN,
                 MOVE_ANCIENTPOWER,
@@ -73084,23 +73202,23 @@
             },
             },
             {
-#line 29418
+#line 29468
             .species = SPECIES_LUMINEON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29418
+#line 29468
             .heldItem = ITEM_WACAN_BERRY,
-#line 29421
+#line 29471
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29420
+#line 29470
             .ability = ABILITY_STORM_DRAIN,
-#line 29419
+#line 29469
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29422
+#line 29472
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29423
+#line 29473
                 MOVE_HYDRO_PUMP,
                 MOVE_HURRICANE,
                 MOVE_ICE_BEAM,
@@ -73108,23 +73226,23 @@
             },
             },
             {
-#line 29428
+#line 29478
             .species = SPECIES_TATSUGIRI_DROOPY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29428
+#line 29478
             .heldItem = ITEM_ROSELI_BERRY,
-#line 29431
+#line 29481
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29430
+#line 29480
             .ability = ABILITY_STORM_DRAIN,
-#line 29429
+#line 29479
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29432
+#line 29482
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29433
+#line 29483
                 MOVE_HYDRO_PUMP,
                 MOVE_DRAGON_PULSE,
                 MOVE_ICE_BEAM,
@@ -73132,23 +73250,23 @@
             },
             },
             {
-#line 29438
+#line 29488
             .species = SPECIES_GASTRODON_EAST,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29438
+#line 29488
             .heldItem = ITEM_RINDO_BERRY,
-#line 29441
+#line 29491
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29440
+#line 29490
             .ability = ABILITY_STORM_DRAIN,
-#line 29439
+#line 29489
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29442
+#line 29492
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29443
+#line 29493
                 MOVE_HYDRO_PUMP,
                 MOVE_EARTH_POWER,
                 MOVE_ICE_BEAM,
@@ -73157,24 +73275,24 @@
             },
         },
     },
-#line 29448
+#line 29498
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_13] =
     {
-#line 29449
+#line 29499
         .trainerName = _("Grunt"),
-#line 29450
+#line 29500
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29451
+#line 29501
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29452
+#line 29502
         .gender = TRAINER_GENDER_MALE,
-#line 29453
+#line 29503
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29454
+#line 29504
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29455
+#line 29505
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 29456
+#line 29506
         .startingStatus = { .mistyTerrain = TRUE, },
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -73182,23 +73300,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29458
+#line 29508
             .species = SPECIES_CLEFABLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29458
+#line 29508
             .heldItem = ITEM_FOCUS_BAND,
-#line 29461
+#line 29511
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29460
+#line 29510
             .ability = ABILITY_MAGIC_GUARD,
-#line 29459
+#line 29509
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29462
+#line 29512
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29463
+#line 29513
                 MOVE_STEALTH_ROCK,
                 MOVE_MISTY_EXPLOSION,
                 MOVE_FLAMETHROWER,
@@ -73206,23 +73324,23 @@
             },
             },
             {
-#line 29468
+#line 29518
             .species = SPECIES_GRAFAIAI,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29468
+#line 29518
             .heldItem = ITEM_MISTY_SEED,
-#line 29471
+#line 29521
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29470
+#line 29520
             .ability = ABILITY_UNBURDEN,
-#line 29469
+#line 29519
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29472
+#line 29522
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29473
+#line 29523
                 MOVE_GUNK_SHOT,
                 MOVE_SUPER_FANG,
                 MOVE_LOW_KICK,
@@ -73230,44 +73348,44 @@
             },
             },
             {
-#line 29478
+#line 29528
             .species = SPECIES_HATTERENE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29478
+#line 29528
             .heldItem = ITEM_CHOICE_SPECS,
-#line 29481
+#line 29531
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29480
+#line 29530
             .ability = ABILITY_MAGIC_BOUNCE,
-#line 29479
+#line 29529
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29482
+#line 29532
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29483
+#line 29533
                 MOVE_MISTY_EXPLOSION,
             },
             },
             {
-#line 29485
+#line 29535
             .species = SPECIES_WHIMSICOTT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29485
+#line 29535
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29488
+#line 29538
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29487
+#line 29537
             .ability = ABILITY_PRANKSTER,
-#line 29486
+#line 29536
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29489
+#line 29539
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29490
+#line 29540
                 MOVE_ENERGY_BALL,
                 MOVE_NATURE_POWER,
                 MOVE_SUBSTITUTE,
@@ -73275,46 +73393,46 @@
             },
             },
             {
-#line 29495
+#line 29545
             .species = SPECIES_GARDEVOIR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29495
+#line 29545
             .heldItem = ITEM_CHOICE_SCARF,
-#line 29498
+#line 29548
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29497
+#line 29547
             .ability = ABILITY_TRACE,
-#line 29496
+#line 29546
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29499
+#line 29549
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29500
+#line 29550
                 MOVE_MISTY_EXPLOSION,
             },
             },
         },
     },
-#line 29502
+#line 29552
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_14] =
     {
-#line 29503
+#line 29553
         .trainerName = _("Grunt"),
-#line 29504
+#line 29554
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29505
+#line 29555
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 29506
+#line 29556
         .gender = TRAINER_GENDER_FEMALE,
-#line 29507
+#line 29557
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29508
+#line 29558
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29509
+#line 29559
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 29510
+#line 29560
         .startingStatus = { .psychicTerrain = TRUE, },
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -73322,23 +73440,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29512
+#line 29562
             .species = SPECIES_GIGALITH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29512
+#line 29562
             .heldItem = ITEM_CUSTAP_BERRY,
-#line 29515
+#line 29565
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29514
+#line 29564
             .ability = ABILITY_STURDY,
-#line 29513
+#line 29563
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29516
+#line 29566
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29517
+#line 29567
                 MOVE_STEALTH_ROCK,
                 MOVE_EXPLOSION,
                 MOVE_STONE_EDGE,
@@ -73346,23 +73464,23 @@
             },
             },
             {
-#line 29522
+#line 29572
             .species = SPECIES_RAPIDASH_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29522
+#line 29572
             .heldItem = ITEM_FOCUS_BAND,
-#line 29525
+#line 29575
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29524
+#line 29574
             .ability = ABILITY_MAGIC_GUARD,
-#line 29523
+#line 29573
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29526
+#line 29576
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29527
+#line 29577
                 MOVE_PSYCHO_CUT,
                 MOVE_PLAY_ROUGH,
                 MOVE_SWORDS_DANCE,
@@ -73370,23 +73488,23 @@
             },
             },
             {
-#line 29532
+#line 29582
             .species = SPECIES_ORBEETLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29532
+#line 29582
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29535
+#line 29585
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29534
+#line 29584
             .ability = ABILITY_TINTED_LENS,
-#line 29533
+#line 29583
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29536
+#line 29586
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29537
+#line 29587
                 MOVE_EXPANDING_FORCE,
                 MOVE_BUG_BUZZ,
                 MOVE_QUIVER_DANCE,
@@ -73394,23 +73512,23 @@
             },
             },
             {
-#line 29542
+#line 29592
             .species = SPECIES_MALAMAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29542
+#line 29592
             .heldItem = ITEM_LEFTOVERS,
-#line 29545
+#line 29595
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29544
+#line 29594
             .ability = ABILITY_CONTRARY,
-#line 29543
+#line 29593
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29546
+#line 29596
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29547
+#line 29597
                 MOVE_PSYCHO_BOOST,
                 MOVE_SUPERPOWER,
                 MOVE_KNOCK_OFF,
@@ -73418,23 +73536,23 @@
             },
             },
             {
-#line 29552
+#line 29602
             .species = SPECIES_SLOWBRO_GALAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29552
+#line 29602
             .heldItem = ITEM_QUICK_CLAW,
-#line 29555
+#line 29605
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29554
+#line 29604
             .ability = ABILITY_QUICK_DRAW,
-#line 29553
+#line 29603
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29556
+#line 29606
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29557
+#line 29607
                 MOVE_EXPANDING_FORCE,
                 MOVE_SLUDGE_BOMB,
                 MOVE_SLACK_OFF,
@@ -73443,24 +73561,24 @@
             },
         },
     },
-#line 29562
+#line 29612
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_15] =
     {
-#line 29563
+#line 29613
         .trainerName = _("Grunt"),
-#line 29564
+#line 29614
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29565
+#line 29615
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29566
+#line 29616
         .gender = TRAINER_GENDER_MALE,
-#line 29567
+#line 29617
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29568
+#line 29618
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29569
+#line 29619
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 29570
+#line 29620
         .startingStatus = { .grassyTerrain = TRUE, },
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -73468,23 +73586,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29572
+#line 29622
             .species = SPECIES_TORTERRA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29572
+#line 29622
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29575
+#line 29625
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29574
+#line 29624
             .ability = ABILITY_THICK_FAT,
-#line 29573
+#line 29623
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29576
+#line 29626
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29577
+#line 29627
                 MOVE_STEALTH_ROCK,
                 MOVE_GRASSY_GLIDE,
                 MOVE_STONE_EDGE,
@@ -73492,23 +73610,23 @@
             },
             },
             {
-#line 29582
+#line 29632
             .species = SPECIES_DHELMISE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29582
+#line 29632
             .heldItem = ITEM_FOCUS_BAND,
-#line 29585
+#line 29635
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29584
+#line 29634
             .ability = ABILITY_STEELWORKER,
-#line 29583
+#line 29633
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29586
+#line 29636
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29587
+#line 29637
                 MOVE_SPIRIT_SHACKLE,
                 MOVE_GRASSY_GLIDE,
                 MOVE_ANCHOR_SHOT,
@@ -73516,23 +73634,23 @@
             },
             },
             {
-#line 29592
+#line 29642
             .species = SPECIES_LUXRAY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29592
+#line 29642
             .heldItem = ITEM_FLAME_ORB,
-#line 29595
+#line 29645
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29594
+#line 29644
             .ability = ABILITY_GUTS,
-#line 29593
+#line 29643
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29596
+#line 29646
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29597
+#line 29647
                 MOVE_VOLT_TACKLE,
                 MOVE_FACADE,
                 MOVE_ICE_FANG,
@@ -73540,23 +73658,23 @@
             },
             },
             {
-#line 29602
+#line 29652
             .species = SPECIES_SCEPTILE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29602
+#line 29652
             .heldItem = ITEM_GRASSY_SEED,
-#line 29605
+#line 29655
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29604
+#line 29654
             .ability = ABILITY_UNBURDEN,
-#line 29603
+#line 29653
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29606
+#line 29656
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29607
+#line 29657
                 MOVE_SWORDS_DANCE,
                 MOVE_LEAF_BLADE,
                 MOVE_DRAIN_PUNCH,
@@ -73564,23 +73682,23 @@
             },
             },
             {
-#line 29612
+#line 29662
             .species = SPECIES_MUK_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29612
+#line 29662
             .heldItem = ITEM_BLACK_SLUDGE,
-#line 29615
+#line 29665
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29614
+#line 29664
             .ability = ABILITY_POISON_TOUCH,
-#line 29613
+#line 29663
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29616
+#line 29666
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29617
+#line 29667
                 MOVE_CURSE,
                 MOVE_GUNK_SHOT,
                 MOVE_KNOCK_OFF,
@@ -73589,24 +73707,24 @@
             },
         },
     },
-#line 29622
+#line 29672
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_16] =
     {
-#line 29623
+#line 29673
         .trainerName = _("Grunt"),
-#line 29624
+#line 29674
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29625
+#line 29675
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 29626
+#line 29676
         .gender = TRAINER_GENDER_FEMALE,
-#line 29627
+#line 29677
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29628
+#line 29678
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29629
+#line 29679
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 29630
+#line 29680
         .startingStatus = { .electricTerrain = TRUE, },
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -73614,45 +73732,45 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29632
+#line 29682
             .species = SPECIES_SLURPUFF,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29632
+#line 29682
             .heldItem = ITEM_ELECTRIC_SEED,
-#line 29635
+#line 29685
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29634
+#line 29684
             .ability = ABILITY_UNBURDEN,
-#line 29633
+#line 29683
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29636
+#line 29686
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29637
+#line 29687
                 MOVE_STICKY_WEB,
                 MOVE_MISTY_EXPLOSION,
             },
             },
             {
-#line 29640
+#line 29690
             .species = SPECIES_TOXTRICITY_LOW_KEY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29640
+#line 29690
             .heldItem = ITEM_FOCUS_BAND,
-#line 29643
+#line 29693
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29642
+#line 29692
             .ability = ABILITY_TECHNICIAN,
-#line 29641
+#line 29691
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29644
+#line 29694
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29645
+#line 29695
                 MOVE_RISING_VOLTAGE,
                 MOVE_SLUDGE_BOMB,
                 MOVE_SNARL,
@@ -73660,23 +73778,23 @@
             },
             },
             {
-#line 29650
+#line 29700
             .species = SPECIES_GHOLDENGO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29650
+#line 29700
             .heldItem = ITEM_LIFE_ORB,
-#line 29653
+#line 29703
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29652
+#line 29702
             .ability = ABILITY_SURGE_SURFER,
-#line 29651
+#line 29701
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29654
+#line 29704
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29655
+#line 29705
                 MOVE_SHADOW_BALL,
                 MOVE_FLASH_CANNON,
                 MOVE_THUNDERBOLT,
@@ -73684,23 +73802,23 @@
             },
             },
             {
-#line 29660
+#line 29710
             .species = SPECIES_HAXORUS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29660
+#line 29710
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29663
+#line 29713
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29662
+#line 29712
             .ability = ABILITY_MOLD_BREAKER,
-#line 29661
+#line 29711
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29664
+#line 29714
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29665
+#line 29715
                 MOVE_SWORDS_DANCE,
                 MOVE_DUAL_CHOP,
                 MOVE_THUNDERPUNCH,
@@ -73708,23 +73826,23 @@
             },
             },
             {
-#line 29670
+#line 29720
             .species = SPECIES_ROTOM_FROST,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29670
+#line 29720
             .heldItem = ITEM_WISE_GLASSES,
-#line 29673
+#line 29723
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29672
+#line 29722
             .ability = ABILITY_LEVITATE,
-#line 29671
+#line 29721
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29674
+#line 29724
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29675
+#line 29725
                 MOVE_ICE_BEAM,
                 MOVE_RISING_VOLTAGE,
                 MOVE_NASTY_PLOT,
@@ -73733,24 +73851,24 @@
             },
         },
     },
-#line 29680
+#line 29730
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_17] =
     {
-#line 29681
+#line 29731
         .trainerName = _("Grunt"),
-#line 29682
+#line 29732
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29683
+#line 29733
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 29684
+#line 29734
         .gender = TRAINER_GENDER_FEMALE,
-#line 29685
+#line 29735
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29686
+#line 29736
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29687
+#line 29737
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 29688
+#line 29738
         .startingStatus = { .wonderRoom = TRUE, },
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -73758,23 +73876,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29690
+#line 29740
             .species = SPECIES_RELICANTH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29690
+#line 29740
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29693
+#line 29743
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29692
+#line 29742
             .ability = ABILITY_SOLID_ROCK,
-#line 29691
+#line 29741
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29694
+#line 29744
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29695
+#line 29745
                 MOVE_STEALTH_ROCK,
                 MOVE_WAVE_CRASH,
                 MOVE_HEAD_SMASH,
@@ -73782,135 +73900,15 @@
             },
             },
             {
-#line 29700
+#line 29750
             .species = SPECIES_MISMAGIUS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29700
-            .heldItem = ITEM_FOCUS_BAND,
-#line 29703
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29702
-            .ability = ABILITY_LEVITATE,
-#line 29701
-            .lvl = 86,
-            .ball = POKEBALL_COUNT,
-#line 29704
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 29705
-                MOVE_CALM_MIND,
-                MOVE_DAZZLING_GLEAM,
-                MOVE_SHADOW_BALL,
-                MOVE_RECOVER,
-            },
-            },
-            {
-#line 29710
-            .species = SPECIES_KECLEON,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29710
-            .heldItem = ITEM_QUICK_CLAW,
-#line 29713
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29712
-            .ability = ABILITY_PROTEAN,
-#line 29711
-            .lvl = 86,
-            .ball = POKEBALL_COUNT,
-#line 29714
-            .nature = NATURE_ADAMANT,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 29715
-                MOVE_POWER_WHIP,
-                MOVE_IRON_TAIL,
-                MOVE_SHADOW_CLAW,
-                MOVE_POWER_UP_PUNCH,
-            },
-            },
-            {
-#line 29720
-            .species = SPECIES_TAUROS_PALDEA_COMBAT,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29720
-            .heldItem = ITEM_ROSELI_BERRY,
-#line 29723
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29722
-            .ability = ABILITY_INTIMIDATE,
-#line 29721
-            .lvl = 86,
-            .ball = POKEBALL_COUNT,
-#line 29724
-            .nature = NATURE_JOLLY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 29725
-                MOVE_BULK_UP,
-                MOVE_RAGING_BULL,
-                MOVE_ROCK_SLIDE,
-                MOVE_THROAT_CHOP,
-            },
-            },
-            {
-#line 29730
-            .species = SPECIES_HYPNO,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29730
-            .heldItem = ITEM_LEFTOVERS,
-#line 29733
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29732
-            .ability = ABILITY_INNER_FOCUS,
-#line 29731
-            .lvl = 86,
-            .ball = POKEBALL_COUNT,
-#line 29734
-            .nature = NATURE_TIMID,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            .moves = {
-#line 29735
-                MOVE_CALM_MIND,
-                MOVE_PSYSHOCK,
-                MOVE_SHADOW_BALL,
-                MOVE_FOCUS_BLAST,
-            },
-            },
-        },
-    },
-#line 29740
-    [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_18] =
-    {
-#line 29741
-        .trainerName = _("Grunt"),
-#line 29742
-        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29743
-        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29744
-        .gender = TRAINER_GENDER_MALE,
-#line 29745
-        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29746
-        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29747
-        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 29748
-        .startingStatus = { .magicRoom = TRUE, },
-#line 0
-        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
-        .partySize = 5,
-        .party = (const struct TrainerMon[])
-        {
-            {
 #line 29750
-            .species = SPECIES_GLIMMORA,
-            .gender = TRAINER_MON_RANDOM_GENDER,
+            .heldItem = ITEM_FOCUS_BAND,
 #line 29753
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 29752
-            .ability = ABILITY_TOXIC_DEBRIS,
+            .ability = ABILITY_LEVITATE,
 #line 29751
             .lvl = 86,
             .ball = POKEBALL_COUNT,
@@ -73919,64 +73917,70 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 29755
-                MOVE_CONFUSE_RAY,
-                MOVE_SLUDGE_BOMB,
-                MOVE_POWER_GEM,
-                MOVE_EARTH_POWER,
+                MOVE_CALM_MIND,
+                MOVE_DAZZLING_GLEAM,
+                MOVE_SHADOW_BALL,
+                MOVE_RECOVER,
             },
             },
             {
 #line 29760
-            .species = SPECIES_SPIRITOMB,
+            .species = SPECIES_KECLEON,
             .gender = TRAINER_MON_RANDOM_GENDER,
+#line 29760
+            .heldItem = ITEM_QUICK_CLAW,
 #line 29763
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 29762
-            .ability = ABILITY_SHADOW_TAG,
+            .ability = ABILITY_PROTEAN,
 #line 29761
             .lvl = 86,
             .ball = POKEBALL_COUNT,
 #line 29764
-            .nature = NATURE_MODEST,
+            .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 29765
-                MOVE_CONFUSE_RAY,
-                MOVE_SHADOW_BALL,
-                MOVE_DARK_PULSE,
-                MOVE_SILVER_WIND,
+                MOVE_POWER_WHIP,
+                MOVE_IRON_TAIL,
+                MOVE_SHADOW_CLAW,
+                MOVE_POWER_UP_PUNCH,
             },
             },
             {
 #line 29770
-            .species = SPECIES_TOGEKISS,
+            .species = SPECIES_TAUROS_PALDEA_COMBAT,
             .gender = TRAINER_MON_RANDOM_GENDER,
+#line 29770
+            .heldItem = ITEM_ROSELI_BERRY,
 #line 29773
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 29772
-            .ability = ABILITY_SERENE_GRACE,
+            .ability = ABILITY_INTIMIDATE,
 #line 29771
             .lvl = 86,
             .ball = POKEBALL_COUNT,
 #line 29774
-            .nature = NATURE_TIMID,
+            .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 29775
-                MOVE_HURRICANE,
-                MOVE_MOONBLAST,
-                MOVE_ANCIENTPOWER,
-                MOVE_HEAT_WAVE,
+                MOVE_BULK_UP,
+                MOVE_RAGING_BULL,
+                MOVE_ROCK_SLIDE,
+                MOVE_THROAT_CHOP,
             },
             },
             {
 #line 29780
-            .species = SPECIES_EMPOLEON,
+            .species = SPECIES_HYPNO,
             .gender = TRAINER_MON_RANDOM_GENDER,
+#line 29780
+            .heldItem = ITEM_LEFTOVERS,
 #line 29783
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 29782
-            .ability = ABILITY_COMPETITIVE,
+            .ability = ABILITY_INNER_FOCUS,
 #line 29781
             .lvl = 86,
             .ball = POKEBALL_COUNT,
@@ -73985,6 +73989,120 @@
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 29785
+                MOVE_CALM_MIND,
+                MOVE_PSYSHOCK,
+                MOVE_SHADOW_BALL,
+                MOVE_FOCUS_BLAST,
+            },
+            },
+        },
+    },
+#line 29790
+    [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_18] =
+    {
+#line 29791
+        .trainerName = _("Grunt"),
+#line 29792
+        .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
+#line 29793
+        .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
+#line 29794
+        .gender = TRAINER_GENDER_MALE,
+#line 29795
+        .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
+#line 29796
+        .battleType = TRAINER_BATTLE_TYPE_SINGLES,
+#line 29797
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
+#line 29798
+        .startingStatus = { .magicRoom = TRUE, },
+#line 0
+        .multiTeamSize = MULTI_TEAM_SIZE_FULL,
+        .partySize = 5,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 29800
+            .species = SPECIES_GLIMMORA,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 29803
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 29802
+            .ability = ABILITY_TOXIC_DEBRIS,
+#line 29801
+            .lvl = 86,
+            .ball = POKEBALL_COUNT,
+#line 29804
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 29805
+                MOVE_CONFUSE_RAY,
+                MOVE_SLUDGE_BOMB,
+                MOVE_POWER_GEM,
+                MOVE_EARTH_POWER,
+            },
+            },
+            {
+#line 29810
+            .species = SPECIES_SPIRITOMB,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 29813
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 29812
+            .ability = ABILITY_SHADOW_TAG,
+#line 29811
+            .lvl = 86,
+            .ball = POKEBALL_COUNT,
+#line 29814
+            .nature = NATURE_MODEST,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 29815
+                MOVE_CONFUSE_RAY,
+                MOVE_SHADOW_BALL,
+                MOVE_DARK_PULSE,
+                MOVE_SILVER_WIND,
+            },
+            },
+            {
+#line 29820
+            .species = SPECIES_TOGEKISS,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 29823
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 29822
+            .ability = ABILITY_SERENE_GRACE,
+#line 29821
+            .lvl = 86,
+            .ball = POKEBALL_COUNT,
+#line 29824
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 29825
+                MOVE_HURRICANE,
+                MOVE_MOONBLAST,
+                MOVE_ANCIENTPOWER,
+                MOVE_HEAT_WAVE,
+            },
+            },
+            {
+#line 29830
+            .species = SPECIES_EMPOLEON,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 29833
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 29832
+            .ability = ABILITY_COMPETITIVE,
+#line 29831
+            .lvl = 86,
+            .ball = POKEBALL_COUNT,
+#line 29834
+            .nature = NATURE_TIMID,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 29835
                 MOVE_SUPERSONIC,
                 MOVE_SCALD,
                 MOVE_ICE_BEAM,
@@ -73992,21 +74110,21 @@
             },
             },
             {
-#line 29790
+#line 29840
             .species = SPECIES_CRYOGONAL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29793
+#line 29843
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29792
+#line 29842
             .ability = ABILITY_FILTER,
-#line 29791
+#line 29841
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29794
+#line 29844
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29795
+#line 29845
                 MOVE_CONFUSE_RAY,
                 MOVE_ICE_BEAM,
                 MOVE_EARTH_POWER,
@@ -74015,24 +74133,24 @@
             },
         },
     },
-#line 29800
+#line 29850
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_19] =
     {
-#line 29801
+#line 29851
         .trainerName = _("Grunt"),
-#line 29802
+#line 29852
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29803
+#line 29853
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 29804
+#line 29854
         .gender = TRAINER_GENDER_FEMALE,
-#line 29805
+#line 29855
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29806
+#line 29856
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29807
+#line 29857
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
-#line 29808
+#line 29858
         .startingStatus = { .trickRoom = TRUE, },
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74040,23 +74158,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29810
+#line 29860
             .species = SPECIES_RHYPERIOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29810
+#line 29860
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29813
+#line 29863
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 29812
+#line 29862
             .ability = ABILITY_SOLID_ROCK,
-#line 29811
+#line 29861
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29814
+#line 29864
             .nature = NATURE_BRAVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29815
+#line 29865
                 MOVE_STEALTH_ROCK,
                 MOVE_EARTHQUAKE,
                 MOVE_FIRE_PUNCH,
@@ -74064,23 +74182,23 @@
             },
             },
             {
-#line 29820
+#line 29870
             .species = SPECIES_ESCAVALIER,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29820
+#line 29870
             .heldItem = ITEM_SCOPE_LENS,
-#line 29823
+#line 29873
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 29822
+#line 29872
             .ability = ABILITY_SHARPNESS,
-#line 29821
+#line 29871
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29824
+#line 29874
             .nature = NATURE_BRAVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29825
+#line 29875
                 MOVE_AQUA_CUTTER,
                 MOVE_X_SCISSOR,
                 MOVE_IRON_HEAD,
@@ -74088,23 +74206,23 @@
             },
             },
             {
-#line 29830
+#line 29880
             .species = SPECIES_MAROWAK_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29830
+#line 29880
             .heldItem = ITEM_THICK_CLUB,
-#line 29833
+#line 29883
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 29832
+#line 29882
             .ability = ABILITY_ROCK_HEAD,
-#line 29831
+#line 29881
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29834
+#line 29884
             .nature = NATURE_BRAVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29835
+#line 29885
                 MOVE_SHADOW_BONE,
                 MOVE_FLARE_BLITZ,
                 MOVE_SWORDS_DANCE,
@@ -74112,23 +74230,23 @@
             },
             },
             {
-#line 29840
+#line 29890
             .species = SPECIES_HATTERENE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29840
+#line 29890
             .heldItem = ITEM_LEFTOVERS,
-#line 29843
+#line 29893
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 29842
+#line 29892
             .ability = ABILITY_MAGIC_BOUNCE,
-#line 29841
+#line 29891
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29844
+#line 29894
             .nature = NATURE_QUIET,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29845
+#line 29895
                 MOVE_CALM_MIND,
                 MOVE_MOONBLAST,
                 MOVE_STORED_POWER,
@@ -74136,23 +74254,23 @@
             },
             },
             {
-#line 29850
+#line 29900
             .species = SPECIES_CURSOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29850
+#line 29900
             .heldItem = ITEM_FOCUS_BAND,
-#line 29853
+#line 29903
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 0, 31, 31),
-#line 29852
+#line 29902
             .ability = ABILITY_CURSED_BODY,
-#line 29851
+#line 29901
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29854
+#line 29904
             .nature = NATURE_QUIET,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29855
+#line 29905
                 MOVE_SHADOW_BALL,
                 MOVE_DESTINY_BOND,
                 MOVE_ICE_BEAM,
@@ -74161,22 +74279,22 @@
             },
         },
     },
-#line 29860
+#line 29910
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_20] =
     {
-#line 29861
+#line 29911
         .trainerName = _("Brother"),
-#line 29862
+#line 29912
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29863
+#line 29913
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29864
+#line 29914
         .gender = TRAINER_GENDER_MALE,
-#line 29865
+#line 29915
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29866
+#line 29916
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29867
+#line 29917
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74184,23 +74302,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29869
+#line 29919
             .species = SPECIES_RUNERIGUS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29869
+#line 29919
             .heldItem = ITEM_CUSTAP_BERRY,
-#line 29872
+#line 29922
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29871
+#line 29921
             .ability = ABILITY_WANDERING_SPIRIT,
-#line 29870
+#line 29920
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29873
+#line 29923
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29874
+#line 29924
                 MOVE_SPIRIT_SHACKLE,
                 MOVE_STEALTH_ROCK,
                 MOVE_EARTHQUAKE,
@@ -74208,23 +74326,23 @@
             },
             },
             {
-#line 29879
+#line 29929
             .species = SPECIES_MACHAMP,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29879
+#line 29929
             .heldItem = ITEM_QUICK_CLAW,
-#line 29882
+#line 29932
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29881
+#line 29931
             .ability = ABILITY_NO_GUARD,
-#line 29880
+#line 29930
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29883
+#line 29933
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29884
+#line 29934
                 MOVE_DYNAMIC_PUNCH,
                 MOVE_STONE_EDGE,
                 MOVE_ICE_PUNCH,
@@ -74232,23 +74350,23 @@
             },
             },
             {
-#line 29889
+#line 29939
             .species = SPECIES_STARMIE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29889
+#line 29939
             .heldItem = ITEM_WISE_GLASSES,
-#line 29892
+#line 29942
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29891
+#line 29941
             .ability = ABILITY_ANALYTIC,
-#line 29890
+#line 29940
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29893
+#line 29943
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29894
+#line 29944
                 MOVE_HYDRO_PUMP,
                 MOVE_ICE_BEAM,
                 MOVE_THUNDERBOLT,
@@ -74257,22 +74375,22 @@
             },
         },
     },
-#line 29899
+#line 29949
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_21] =
     {
-#line 29900
+#line 29950
         .trainerName = _("Brother"),
-#line 29901
+#line 29951
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29902
+#line 29952
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29903
+#line 29953
         .gender = TRAINER_GENDER_MALE,
-#line 29904
+#line 29954
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29905
+#line 29955
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29906
+#line 29956
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74280,23 +74398,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29908
+#line 29958
             .species = SPECIES_FROSMOTH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29908
+#line 29958
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 29911
+#line 29961
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29910
+#line 29960
             .ability = ABILITY_ICE_SCALES,
-#line 29909
+#line 29959
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29912
+#line 29962
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29913
+#line 29963
                 MOVE_TAILWIND,
                 MOVE_HURRICANE,
                 MOVE_ICE_BEAM,
@@ -74304,23 +74422,23 @@
             },
             },
             {
-#line 29918
+#line 29968
             .species = SPECIES_SUDOWOODO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29918
+#line 29968
             .heldItem = ITEM_QUICK_CLAW,
-#line 29921
+#line 29971
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29920
+#line 29970
             .ability = ABILITY_ROCK_HEAD,
-#line 29919
+#line 29969
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29922
+#line 29972
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29923
+#line 29973
                 MOVE_HEAD_SMASH,
                 MOVE_SUBMISSION,
                 MOVE_WOOD_HAMMER,
@@ -74328,23 +74446,23 @@
             },
             },
             {
-#line 29928
+#line 29978
             .species = SPECIES_GOTHITELLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29928
+#line 29978
             .heldItem = ITEM_WISE_GLASSES,
-#line 29931
+#line 29981
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29930
+#line 29980
             .ability = ABILITY_SHADOW_TAG,
-#line 29929
+#line 29979
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29932
+#line 29982
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29933
+#line 29983
                 MOVE_PSYSHOCK,
                 MOVE_NASTY_PLOT,
                 MOVE_THUNDERBOLT,
@@ -74353,22 +74471,22 @@
             },
         },
     },
-#line 29938
+#line 29988
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_22] =
     {
-#line 29939
+#line 29989
         .trainerName = _("Brother"),
-#line 29940
+#line 29990
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29941
+#line 29991
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29942
+#line 29992
         .gender = TRAINER_GENDER_MALE,
-#line 29943
+#line 29993
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29944
+#line 29994
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29945
+#line 29995
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74376,23 +74494,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29947
+#line 29997
             .species = SPECIES_SKARMORY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29947
+#line 29997
             .heldItem = ITEM_COVERT_CLOAK,
-#line 29950
+#line 30000
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29949
+#line 29999
             .ability = ABILITY_STURDY,
-#line 29948
+#line 29998
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29951
+#line 30001
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29952
+#line 30002
                 MOVE_SPIKES,
                 MOVE_DRILL_RUN,
                 MOVE_DRILL_PECK,
@@ -74400,23 +74518,23 @@
             },
             },
             {
-#line 29957
+#line 30007
             .species = SPECIES_DUSCLOPS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29957
+#line 30007
             .heldItem = ITEM_EVIOLITE,
-#line 29960
+#line 30010
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29959
+#line 30009
             .ability = ABILITY_SHADOW_TAG,
-#line 29958
+#line 30008
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29961
+#line 30011
             .nature = NATURE_BOLD,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29962
+#line 30012
                 MOVE_CONFUSE_RAY,
                 MOVE_PAIN_SPLIT,
                 MOVE_NIGHT_SHADE,
@@ -74424,23 +74542,23 @@
             },
             },
             {
-#line 29967
+#line 30017
             .species = SPECIES_MR_MIME,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29967
+#line 30017
             .heldItem = ITEM_FOCUS_BAND,
-#line 29970
+#line 30020
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29969
+#line 30019
             .ability = ABILITY_TECHNICIAN,
-#line 29968
+#line 30018
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29971
+#line 30021
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29972
+#line 30022
                 MOVE_CONFUSION,
                 MOVE_NASTY_PLOT,
                 MOVE_MAGICAL_LEAF,
@@ -74449,22 +74567,22 @@
             },
         },
     },
-#line 29977
+#line 30027
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_23] =
     {
-#line 29978
+#line 30028
         .trainerName = _("Brother"),
-#line 29979
+#line 30029
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 29980
+#line 30030
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_M,
-#line 29981
+#line 30031
         .gender = TRAINER_GENDER_MALE,
-#line 29982
+#line 30032
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 29983
+#line 30033
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 29984
+#line 30034
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74472,23 +74590,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 29986
+#line 30036
             .species = SPECIES_ARIADOS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29986
+#line 30036
             .heldItem = ITEM_QUICK_CLAW,
-#line 29989
+#line 30039
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29988
+#line 30038
             .ability = ABILITY_SNIPER,
-#line 29987
+#line 30037
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 29990
+#line 30040
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 29991
+#line 30041
                 MOVE_STICKY_WEB,
                 MOVE_CROSS_POISON,
                 MOVE_MEGAHORN,
@@ -74496,23 +74614,23 @@
             },
             },
             {
-#line 29996
+#line 30046
             .species = SPECIES_TREVENANT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 29996
+#line 30046
             .heldItem = ITEM_SITRUS_BERRY,
-#line 29999
+#line 30049
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 29998
+#line 30048
             .ability = ABILITY_SHADOW_TAG,
-#line 29997
+#line 30047
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30000
+#line 30050
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30001
+#line 30051
                 MOVE_CONFUSE_RAY,
                 MOVE_SHADOW_CLAW,
                 MOVE_WOOD_HAMMER,
@@ -74520,23 +74638,23 @@
             },
             },
             {
-#line 30006
+#line 30056
             .species = SPECIES_HONCHKROW,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30006
+#line 30056
             .heldItem = ITEM_DARK_GEM,
-#line 30009
+#line 30059
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30008
+#line 30058
             .ability = ABILITY_SUPER_LUCK,
-#line 30007
+#line 30057
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30010
+#line 30060
             .nature = NATURE_NAUGHTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30011
+#line 30061
                 MOVE_HURRICANE,
                 MOVE_HEAT_WAVE,
                 MOVE_ESPER_WING,
@@ -74545,22 +74663,22 @@
             },
         },
     },
-#line 30016
+#line 30066
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_24] =
     {
-#line 30017
+#line 30067
         .trainerName = _("Sister"),
-#line 30018
+#line 30068
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 30019
+#line 30069
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 30020
+#line 30070
         .gender = TRAINER_GENDER_FEMALE,
-#line 30021
+#line 30071
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 30022
+#line 30072
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30023
+#line 30073
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74568,23 +74686,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30025
+#line 30075
             .species = SPECIES_PELIPPER,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30025
+#line 30075
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 30028
+#line 30078
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30027
+#line 30077
             .ability = ABILITY_DRIZZLE,
-#line 30026
+#line 30076
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30029
+#line 30079
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30030
+#line 30080
                 MOVE_SCALD,
                 MOVE_ICE_BEAM,
                 MOVE_HURRICANE,
@@ -74592,23 +74710,23 @@
             },
             },
             {
-#line 30035
+#line 30085
             .species = SPECIES_POLIWRATH,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30035
+#line 30085
             .heldItem = ITEM_ASSAULT_VEST,
-#line 30038
+#line 30088
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30037
+#line 30087
             .ability = ABILITY_SWIFT_SWIM,
-#line 30036
+#line 30086
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30039
+#line 30089
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30040
+#line 30090
                 MOVE_DRAIN_PUNCH,
                 MOVE_ICE_PUNCH,
                 MOVE_JET_PUNCH,
@@ -74616,23 +74734,23 @@
             },
             },
             {
-#line 30045
+#line 30095
             .species = SPECIES_SHIINOTIC,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30045
+#line 30095
             .heldItem = ITEM_QUICK_CLAW,
-#line 30048
+#line 30098
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30047
+#line 30097
             .ability = ABILITY_RAIN_DISH,
-#line 30046
+#line 30096
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30049
+#line 30099
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30050
+#line 30100
                 MOVE_WEATHER_BALL,
                 MOVE_SPORE,
                 MOVE_GIGA_DRAIN,
@@ -74641,22 +74759,22 @@
             },
         },
     },
-#line 30055
+#line 30105
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_25] =
     {
-#line 30056
+#line 30106
         .trainerName = _("Sister"),
-#line 30057
+#line 30107
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 30058
+#line 30108
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 30059
+#line 30109
         .gender = TRAINER_GENDER_FEMALE,
-#line 30060
+#line 30110
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 30061
+#line 30111
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30062
+#line 30112
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74664,23 +74782,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30064
+#line 30114
             .species = SPECIES_TORKOAL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30064
+#line 30114
             .heldItem = ITEM_QUICK_CLAW,
-#line 30067
+#line 30117
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30066
+#line 30116
             .ability = ABILITY_DROUGHT,
-#line 30065
+#line 30115
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30068
+#line 30118
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30069
+#line 30119
                 MOVE_STEALTH_ROCK,
                 MOVE_EXPLOSION,
                 MOVE_FLARE_BLITZ,
@@ -74688,23 +74806,23 @@
             },
             },
             {
-#line 30074
+#line 30124
             .species = SPECIES_SCOVILLAIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30074
+#line 30124
             .heldItem = ITEM_FOCUS_BAND,
-#line 30077
+#line 30127
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30076
+#line 30126
             .ability = ABILITY_CHLOROPHYLL,
-#line 30075
+#line 30125
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30078
+#line 30128
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30079
+#line 30129
                 MOVE_SOLAR_BLADE,
                 MOVE_EARTHQUAKE,
                 MOVE_FLARE_BLITZ,
@@ -74712,23 +74830,23 @@
             },
             },
             {
-#line 30084
+#line 30134
             .species = SPECIES_GOURGEIST_AVERAGE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30084
+#line 30134
             .heldItem = ITEM_SITRUS_BERRY,
-#line 30087
+#line 30137
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30086
+#line 30136
             .ability = ABILITY_HARVEST,
-#line 30085
+#line 30135
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30088
+#line 30138
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30089
+#line 30139
                 MOVE_SPIRIT_SHACKLE,
                 MOVE_FIRE_LASH,
                 MOVE_POWER_WHIP,
@@ -74737,22 +74855,22 @@
             },
         },
     },
-#line 30094
+#line 30144
     [DIFFICULTY_NORMAL][TRAINER_HIDEOUT_GRUNT_26] =
     {
-#line 30095
+#line 30145
         .trainerName = _("Sister"),
-#line 30096
+#line 30146
         .trainerClass = TRAINER_CLASS_TEAM_ROCKET,
-#line 30097
+#line 30147
         .trainerPic = TRAINER_PIC_ROCKET_GRUNT_F,
-#line 30098
+#line 30148
         .gender = TRAINER_GENDER_FEMALE,
-#line 30099
+#line 30149
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_DANGEROUS,
-#line 30100
+#line 30150
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30101
+#line 30151
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74760,23 +74878,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30103
+#line 30153
             .species = SPECIES_ABOMASNOW,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30103
+#line 30153
             .heldItem = ITEM_QUICK_CLAW,
-#line 30106
+#line 30156
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30105
+#line 30155
             .ability = ABILITY_SNOW_WARNING,
-#line 30104
+#line 30154
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30107
+#line 30157
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30108
+#line 30158
                 MOVE_WOOD_HAMMER,
                 MOVE_ICE_HAMMER,
                 MOVE_EARTHQUAKE,
@@ -74784,23 +74902,23 @@
             },
             },
             {
-#line 30113
+#line 30163
             .species = SPECIES_SANDSLASH_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30113
+#line 30163
             .heldItem = ITEM_FOCUS_BAND,
-#line 30116
+#line 30166
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30115
+#line 30165
             .ability = ABILITY_SLUSH_RUSH,
-#line 30114
+#line 30164
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30117
+#line 30167
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30118
+#line 30168
                 MOVE_ICICLE_CRASH,
                 MOVE_IRON_HEAD,
                 MOVE_DRILL_RUN,
@@ -74808,23 +74926,23 @@
             },
             },
             {
-#line 30123
+#line 30173
             .species = SPECIES_BEARTIC,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30123
+#line 30173
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 30126
+#line 30176
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30125
+#line 30175
             .ability = ABILITY_SNOW_CLOAK,
-#line 30124
+#line 30174
             .lvl = 86,
             .ball = POKEBALL_COUNT,
-#line 30127
+#line 30177
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30128
+#line 30178
                 MOVE_ICICLE_CRASH,
                 MOVE_EARTHQUAKE,
                 MOVE_LIQUIDATION,
@@ -74833,22 +74951,22 @@
             },
         },
     },
-#line 30133
+#line 30183
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_1] =
     {
-#line 30134
+#line 30184
         .trainerName = _("Grunt"),
-#line 30135
+#line 30185
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30136
+#line 30186
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-#line 30137
+#line 30187
         .gender = TRAINER_GENDER_FEMALE,
-#line 30138
+#line 30188
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30139
+#line 30189
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30140
+#line 30190
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74856,23 +74974,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30142
+#line 30192
             .species = SPECIES_TORKOAL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30142
+#line 30192
             .heldItem = ITEM_QUICK_CLAW,
-#line 30145
+#line 30195
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30144
+#line 30194
             .ability = ABILITY_WHITE_SMOKE,
-#line 30143
+#line 30193
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30146
+#line 30196
             .nature = NATURE_QUIET,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30147
+#line 30197
                 MOVE_ERUPTION,
                 MOVE_EXPLOSION,
                 MOVE_HEAT_WAVE,
@@ -74880,23 +74998,23 @@
             },
             },
             {
-#line 30152
+#line 30202
             .species = SPECIES_CLAYDOL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30152
+#line 30202
             .heldItem = ITEM_WEAKNESS_POLICY,
-#line 30155
+#line 30205
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30154
+#line 30204
             .ability = ABILITY_LEVITATE,
-#line 30153
+#line 30203
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30156
+#line 30206
             .nature = NATURE_NAIVE,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30157
+#line 30207
                 MOVE_LUMINA_CRASH,
                 MOVE_EXPLOSION,
                 MOVE_EARTH_POWER,
@@ -74904,23 +75022,23 @@
             },
             },
             {
-#line 30162
+#line 30212
             .species = SPECIES_SKUNTANK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30162
+#line 30212
             .heldItem = ITEM_FOCUS_BAND,
-#line 30165
+#line 30215
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30164
+#line 30214
             .ability = ABILITY_AFTERMATH,
-#line 30163
+#line 30213
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30166
+#line 30216
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30167
+#line 30217
                 MOVE_GUNK_SHOT,
                 MOVE_EXPLOSION,
                 MOVE_CRUNCH,
@@ -74929,22 +75047,22 @@
             },
         },
     },
-#line 30172
+#line 30222
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_2] =
     {
-#line 30173
+#line 30223
         .trainerName = _("Grunt"),
-#line 30174
+#line 30224
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30175
+#line 30225
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-#line 30176
+#line 30226
         .gender = TRAINER_GENDER_MALE,
-#line 30177
+#line 30227
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30178
+#line 30228
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30179
+#line 30229
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -74952,23 +75070,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30181
+#line 30231
             .species = SPECIES_GENGAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30181
+#line 30231
             .heldItem = ITEM_FOCUS_SASH,
-#line 30184
+#line 30234
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30183
+#line 30233
             .ability = ABILITY_CURSED_BODY,
-#line 30182
+#line 30232
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30185
+#line 30235
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30186
+#line 30236
                 MOVE_SHADOW_BALL,
                 MOVE_SLUDGE_BOMB,
                 MOVE_THUNDERBOLT,
@@ -74976,23 +75094,23 @@
             },
             },
             {
-#line 30191
+#line 30241
             .species = SPECIES_CERULEDGE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30191
+#line 30241
             .heldItem = ITEM_SCOPE_LENS,
-#line 30194
+#line 30244
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30193
+#line 30243
             .ability = ABILITY_SHARPNESS,
-#line 30192
+#line 30242
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30195
+#line 30245
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30196
+#line 30246
                 MOVE_SHADOW_CLAW,
                 MOVE_BITTER_BLADE,
                 MOVE_PSYCHO_CUT,
@@ -75000,23 +75118,23 @@
             },
             },
             {
-#line 30201
+#line 30251
             .species = SPECIES_DUSKNOIR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30201
+#line 30251
             .heldItem = ITEM_PUNCHING_GLOVE,
-#line 30204
+#line 30254
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30203
+#line 30253
             .ability = ABILITY_IRON_FIST,
-#line 30202
+#line 30252
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30205
+#line 30255
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30206
+#line 30256
                 MOVE_SHADOW_PUNCH,
                 MOVE_DRAIN_PUNCH,
                 MOVE_ICE_PUNCH,
@@ -75025,22 +75143,22 @@
             },
         },
     },
-#line 30211
+#line 30261
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_5] =
     {
-#line 30212
+#line 30262
         .trainerName = _("Grunt"),
-#line 30213
+#line 30263
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30214
+#line 30264
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-#line 30215
+#line 30265
         .gender = TRAINER_GENDER_FEMALE,
-#line 30216
+#line 30266
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30217
+#line 30267
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30218
+#line 30268
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75048,23 +75166,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30220
+#line 30270
             .species = SPECIES_CAMERUPT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30220
+#line 30270
             .heldItem = ITEM_QUICK_CLAW,
-#line 30223
+#line 30273
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30222
+#line 30272
             .ability = ABILITY_SOLID_ROCK,
-#line 30221
+#line 30271
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30224
+#line 30274
             .nature = NATURE_QUIET,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30225
+#line 30275
                 MOVE_STEALTH_ROCK,
                 MOVE_EXPLOSION,
                 MOVE_HEAT_WAVE,
@@ -75072,23 +75190,23 @@
             },
             },
             {
-#line 30230
+#line 30280
             .species = SPECIES_GOLEM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30230
+#line 30280
             .heldItem = ITEM_CUSTAP_BERRY,
-#line 30233
+#line 30283
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30232
+#line 30282
             .ability = ABILITY_STURDY,
-#line 30231
+#line 30281
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30234
+#line 30284
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30235
+#line 30285
                 MOVE_STONE_EDGE,
                 MOVE_EXPLOSION,
                 MOVE_EARTHQUAKE,
@@ -75096,23 +75214,23 @@
             },
             },
             {
-#line 30240
+#line 30290
             .species = SPECIES_TURTONATOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30240
+#line 30290
             .heldItem = ITEM_WHITE_HERB,
-#line 30243
+#line 30293
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30242
+#line 30292
             .ability = ABILITY_SHELL_ARMOR,
-#line 30241
+#line 30291
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30244
+#line 30294
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30245
+#line 30295
                 MOVE_SHELL_SMASH,
                 MOVE_DRAGON_PULSE,
                 MOVE_FLAMETHROWER,
@@ -75120,23 +75238,23 @@
             },
             },
             {
-#line 30250
+#line 30300
             .species = SPECIES_KLEAVOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30250
+#line 30300
             .heldItem = ITEM_SCOPE_LENS,
-#line 30253
+#line 30303
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30252
+#line 30302
             .ability = ABILITY_SHARPNESS,
-#line 30251
+#line 30301
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30254
+#line 30304
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30255
+#line 30305
                 MOVE_STONE_AXE,
                 MOVE_X_SCISSOR,
                 MOVE_AQUA_CUTTER,
@@ -75145,22 +75263,22 @@
             },
         },
     },
-#line 30260
+#line 30310
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_6] =
     {
-#line 30261
+#line 30311
         .trainerName = _("Grunt"),
-#line 30262
+#line 30312
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30263
+#line 30313
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-#line 30264
+#line 30314
         .gender = TRAINER_GENDER_MALE,
-#line 30265
+#line 30315
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30266
+#line 30316
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30267
+#line 30317
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75168,23 +75286,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30269
+#line 30319
             .species = SPECIES_ARCANINE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30269
+#line 30319
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 30272
+#line 30322
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30271
+#line 30321
             .ability = ABILITY_INTIMIDATE,
-#line 30270
+#line 30320
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30273
+#line 30323
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30274
+#line 30324
                 MOVE_FLARE_BLITZ,
                 MOVE_WILD_CHARGE,
                 MOVE_PLAY_ROUGH,
@@ -75192,23 +75310,23 @@
             },
             },
             {
-#line 30279
+#line 30329
             .species = SPECIES_GRIMMSNARL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30279
+#line 30329
             .heldItem = ITEM_RED_CARD,
-#line 30282
+#line 30332
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30281
+#line 30331
             .ability = ABILITY_PICKPOCKET,
-#line 30280
+#line 30330
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30283
+#line 30333
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30284
+#line 30334
                 MOVE_FALSE_SURRENDER,
                 MOVE_SPIRIT_BREAK,
                 MOVE_DRAIN_PUNCH,
@@ -75216,23 +75334,23 @@
             },
             },
             {
-#line 30289
+#line 30339
             .species = SPECIES_ARMALDO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30289
+#line 30339
             .heldItem = ITEM_SCOPE_LENS,
-#line 30292
+#line 30342
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30291
+#line 30341
             .ability = ABILITY_SHARPNESS,
-#line 30290
+#line 30340
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30293
+#line 30343
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30294
+#line 30344
                 MOVE_X_SCISSOR,
                 MOVE_STONE_EDGE,
                 MOVE_AQUA_CUTTER,
@@ -75240,23 +75358,23 @@
             },
             },
             {
-#line 30299
+#line 30349
             .species = SPECIES_FALINKS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30299
+#line 30349
             .heldItem = ITEM_WEAKNESS_POLICY,
-#line 30302
+#line 30352
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30301
+#line 30351
             .ability = ABILITY_DEFIANT,
-#line 30300
+#line 30350
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30303
+#line 30353
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30304
+#line 30354
                 MOVE_NO_RETREAT,
                 MOVE_DRAIN_PUNCH,
                 MOVE_POWER_TRIP,
@@ -75264,23 +75382,23 @@
             },
             },
             {
-#line 30309
+#line 30359
             .species = SPECIES_WEEZING,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30309
+#line 30359
             .heldItem = ITEM_FOCUS_BAND,
-#line 30312
+#line 30362
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30311
+#line 30361
             .ability = ABILITY_LEVITATE,
-#line 30310
+#line 30360
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30313
+#line 30363
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30314
+#line 30364
                 MOVE_SLUDGE_BOMB,
                 MOVE_DARK_PULSE,
                 MOVE_MISTY_EXPLOSION,
@@ -75289,22 +75407,22 @@
             },
         },
     },
-#line 30319
+#line 30369
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_3] =
     {
-#line 30320
+#line 30370
         .trainerName = _("Grunt"),
-#line 30321
+#line 30371
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30322
+#line 30372
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-#line 30323
+#line 30373
         .gender = TRAINER_GENDER_MALE,
-#line 30324
+#line 30374
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30325
+#line 30375
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30326
+#line 30376
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75312,23 +75430,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30328
+#line 30378
             .species = SPECIES_TORKOAL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30328
+#line 30378
             .heldItem = ITEM_QUICK_CLAW,
-#line 30331
+#line 30381
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30330
+#line 30380
             .ability = ABILITY_DROUGHT,
-#line 30329
+#line 30379
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30332
+#line 30382
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30333
+#line 30383
                 MOVE_FLARE_BLITZ,
                 MOVE_STONE_EDGE,
                 MOVE_HIGH_HORSEPOWER,
@@ -75336,23 +75454,23 @@
             },
             },
             {
-#line 30338
+#line 30388
             .species = SPECIES_VICTREEBEL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30338
+#line 30388
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 30341
+#line 30391
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30340
+#line 30390
             .ability = ABILITY_CHLOROPHYLL,
-#line 30339
+#line 30389
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30342
+#line 30392
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30343
+#line 30393
                 MOVE_SOLAR_BLADE,
                 MOVE_GUNK_SHOT,
                 MOVE_WEATHER_BALL,
@@ -75360,23 +75478,23 @@
             },
             },
             {
-#line 30348
+#line 30398
             .species = SPECIES_INCINEROAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30348
+#line 30398
             .heldItem = ITEM_ASSAULT_VEST,
-#line 30351
+#line 30401
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30350
+#line 30400
             .ability = ABILITY_INTIMIDATE,
-#line 30349
+#line 30399
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30352
+#line 30402
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30353
+#line 30403
                 MOVE_FLARE_BLITZ,
                 MOVE_DARKEST_LARIAT,
                 MOVE_FAKE_OUT,
@@ -75385,22 +75503,22 @@
             },
         },
     },
-#line 30358
+#line 30408
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_4] =
     {
-#line 30359
+#line 30409
         .trainerName = _("Grunt"),
-#line 30360
+#line 30410
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30361
+#line 30411
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-#line 30362
+#line 30412
         .gender = TRAINER_GENDER_MALE,
-#line 30363
+#line 30413
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30364
+#line 30414
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30365
+#line 30415
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75408,23 +75526,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30367
+#line 30417
             .species = SPECIES_CHERRIM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30367
+#line 30417
             .heldItem = ITEM_FOCUS_SASH,
-#line 30370
+#line 30420
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30369
+#line 30419
             .ability = ABILITY_FLOWER_GIFT,
-#line 30368
+#line 30418
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30371
+#line 30421
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30372
+#line 30422
                 MOVE_WEATHER_BALL,
                 MOVE_SOLAR_BLADE,
                 MOVE_POLLEN_PUFF,
@@ -75432,23 +75550,23 @@
             },
             },
             {
-#line 30377
+#line 30427
             .species = SPECIES_STONJOURNER,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30377
+#line 30427
             .heldItem = ITEM_ASSAULT_VEST,
-#line 30380
+#line 30430
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30379
+#line 30429
             .ability = ABILITY_POWER_SPOT,
-#line 30378
+#line 30428
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30381
+#line 30431
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30382
+#line 30432
                 MOVE_STONE_EDGE,
                 MOVE_HIGH_HORSEPOWER,
                 MOVE_HEAT_CRASH,
@@ -75457,22 +75575,22 @@
             },
         },
     },
-#line 30387
+#line 30437
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_7] =
     {
-#line 30388
+#line 30438
         .trainerName = _("Grunt"),
-#line 30389
+#line 30439
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30390
+#line 30440
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-#line 30391
+#line 30441
         .gender = TRAINER_GENDER_MALE,
-#line 30392
+#line 30442
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30393
+#line 30443
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30394
+#line 30444
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75480,23 +75598,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30396
+#line 30446
             .species = SPECIES_CRUSTLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30396
+#line 30446
             .heldItem = ITEM_RED_CARD,
-#line 30399
+#line 30449
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30398
+#line 30448
             .ability = ABILITY_STURDY,
-#line 30397
+#line 30447
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30400
+#line 30450
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30401
+#line 30451
                 MOVE_STONE_EDGE,
                 MOVE_EARTHQUAKE,
                 MOVE_X_SCISSOR,
@@ -75504,23 +75622,23 @@
             },
             },
             {
-#line 30406
+#line 30456
             .species = SPECIES_ZOROARK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30406
+#line 30456
             .heldItem = ITEM_FOCUS_BAND,
-#line 30409
+#line 30459
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30408
+#line 30458
             .ability = ABILITY_ILLUSION,
-#line 30407
+#line 30457
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30410
+#line 30460
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30411
+#line 30461
                 MOVE_FLAMETHROWER,
                 MOVE_NIGHT_DAZE,
                 MOVE_NASTY_PLOT,
@@ -75528,23 +75646,23 @@
             },
             },
             {
-#line 30416
+#line 30466
             .species = SPECIES_BEWEAR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30416
+#line 30466
             .heldItem = ITEM_ASSAULT_VEST,
-#line 30419
+#line 30469
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30418
+#line 30468
             .ability = ABILITY_FLUFFY,
-#line 30417
+#line 30467
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30420
+#line 30470
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30421
+#line 30471
                 MOVE_DRAIN_PUNCH,
                 MOVE_BODY_SLAM,
                 MOVE_DARKEST_LARIAT,
@@ -75552,23 +75670,23 @@
             },
             },
             {
-#line 30426
+#line 30476
             .species = SPECIES_GARGANACL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30426
+#line 30476
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 30429
+#line 30479
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30428
+#line 30478
             .ability = ABILITY_PURIFYING_SALT,
-#line 30427
+#line 30477
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30430
+#line 30480
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30431
+#line 30481
                 MOVE_STONE_EDGE,
                 MOVE_RECOVER,
                 MOVE_CURSE,
@@ -75576,21 +75694,21 @@
             },
             },
             {
-#line 30436
+#line 30486
             .species = SPECIES_DELPHOX,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30439
+#line 30489
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30438
+#line 30488
             .ability = ABILITY_MAGICIAN,
-#line 30437
+#line 30487
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30440
+#line 30490
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30441
+#line 30491
                 MOVE_FLAMETHROWER,
                 MOVE_PSYSHOCK,
                 MOVE_SCORCHING_SANDS,
@@ -75599,22 +75717,22 @@
             },
         },
     },
-#line 30446
+#line 30496
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_8] =
     {
-#line 30447
+#line 30497
         .trainerName = _("Grunt"),
-#line 30448
+#line 30498
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30449
+#line 30499
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-#line 30450
+#line 30500
         .gender = TRAINER_GENDER_MALE,
-#line 30451
+#line 30501
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30452
+#line 30502
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30453
+#line 30503
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75622,23 +75740,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30455
+#line 30505
             .species = SPECIES_STEELIX,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30455
+#line 30505
             .heldItem = ITEM_CUSTAP_BERRY,
-#line 30458
+#line 30508
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30457
+#line 30507
             .ability = ABILITY_STURDY,
-#line 30456
+#line 30506
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30459
+#line 30509
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30460
+#line 30510
                 MOVE_IRON_TAIL,
                 MOVE_EARTHQUAKE,
                 MOVE_EXPLOSION,
@@ -75646,23 +75764,23 @@
             },
             },
             {
-#line 30465
+#line 30515
             .species = SPECIES_MISMAGIUS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30465
+#line 30515
             .heldItem = ITEM_LIFE_ORB,
-#line 30468
+#line 30518
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30467
+#line 30517
             .ability = ABILITY_LEVITATE,
-#line 30466
+#line 30516
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30469
+#line 30519
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30470
+#line 30520
                 MOVE_SHADOW_BALL,
                 MOVE_DAZZLING_GLEAM,
                 MOVE_NASTY_PLOT,
@@ -75670,23 +75788,23 @@
             },
             },
             {
-#line 30475
+#line 30525
             .species = SPECIES_ABSOL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30475
+#line 30525
             .heldItem = ITEM_SCOPE_LENS,
-#line 30478
+#line 30528
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30477
+#line 30527
             .ability = ABILITY_SUPER_LUCK,
-#line 30476
+#line 30526
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30479
+#line 30529
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30480
+#line 30530
                 MOVE_NIGHT_SLASH,
                 MOVE_PSYCHO_CUT,
                 MOVE_X_SCISSOR,
@@ -75694,23 +75812,23 @@
             },
             },
             {
-#line 30485
+#line 30535
             .species = SPECIES_HEATMOR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30485
+#line 30535
             .heldItem = ITEM_SALAC_BERRY,
-#line 30488
+#line 30538
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30487
+#line 30537
             .ability = ABILITY_GLUTTONY,
-#line 30486
+#line 30536
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30489
+#line 30539
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30490
+#line 30540
                 MOVE_HEAT_WAVE,
                 MOVE_GIGA_DRAIN,
                 MOVE_FOCUS_BLAST,
@@ -75718,23 +75836,23 @@
             },
             },
             {
-#line 30495
+#line 30545
             .species = SPECIES_RHYDON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30495
+#line 30545
             .heldItem = ITEM_QUICK_CLAW,
-#line 30498
+#line 30548
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30497
+#line 30547
             .ability = ABILITY_ROCK_HEAD,
-#line 30496
+#line 30546
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30499
+#line 30549
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30500
+#line 30550
                 MOVE_MEGAHORN,
                 MOVE_EARTHQUAKE,
                 MOVE_ROCK_SLIDE,
@@ -75743,22 +75861,22 @@
             },
         },
     },
-#line 30505
+#line 30555
     [DIFFICULTY_NORMAL][TRAINER_EMILY] =
     {
-#line 30506
+#line 30556
         .trainerName = _("Emily"),
-#line 30507
+#line 30557
         .trainerClass = TRAINER_CLASS_QUIZZER,
-#line 30508
+#line 30558
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-#line 30509
+#line 30559
         .gender = TRAINER_GENDER_FEMALE,
-#line 30510
+#line 30560
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-#line 30511
+#line 30561
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30512
+#line 30562
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75766,62 +75884,62 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30514
+#line 30564
             .species = SPECIES_SKITTY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30516
+#line 30566
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-#line 30515
+#line 30565
             .lvl = 31,
             .ball = POKEBALL_COUNT,
-#line 30517
+#line 30567
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 30519
+#line 30569
             .species = SPECIES_MIGHTYENA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30521
+#line 30571
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-#line 30520
+#line 30570
             .lvl = 31,
             .ball = POKEBALL_COUNT,
-#line 30522
+#line 30572
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 30524
+#line 30574
             .species = SPECIES_ZIGZAGOON,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30526
+#line 30576
             .iv = TRAINER_PARTY_IVS(1, 1, 1, 1, 1, 1),
-#line 30525
+#line 30575
             .lvl = 31,
             .ball = POKEBALL_COUNT,
-#line 30527
+#line 30577
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 30529
+#line 30579
     [DIFFICULTY_NORMAL][TRAINER_EMMA] =
     {
-#line 30530
+#line 30580
         .trainerName = _("Emma"),
-#line 30531
+#line 30581
         .trainerClass = TRAINER_CLASS_QUIZZER,
-#line 30532
+#line 30582
         .trainerPic = TRAINER_PIC_COOLTRAINER_F,
-#line 30533
+#line 30583
         .gender = TRAINER_GENDER_FEMALE,
-#line 30534
+#line 30584
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-#line 30535
+#line 30585
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30536
+#line 30586
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75829,62 +75947,62 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30538
+#line 30588
             .species = SPECIES_SKITTY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30540
+#line 30590
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-#line 30539
+#line 30589
             .lvl = 33,
             .ball = POKEBALL_COUNT,
-#line 30541
+#line 30591
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 30543
+#line 30593
             .species = SPECIES_MIGHTYENA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30545
+#line 30595
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-#line 30544
+#line 30594
             .lvl = 33,
             .ball = POKEBALL_COUNT,
-#line 30546
+#line 30596
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 30548
+#line 30598
             .species = SPECIES_LINOONE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30550
+#line 30600
             .iv = TRAINER_PARTY_IVS(2, 2, 2, 2, 2, 2),
-#line 30549
+#line 30599
             .lvl = 33,
             .ball = POKEBALL_COUNT,
-#line 30551
+#line 30601
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 30553
+#line 30603
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_11] =
     {
-#line 30554
+#line 30604
         .trainerName = _("Grunt"),
-#line 30555
+#line 30605
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30556
+#line 30606
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-#line 30557
+#line 30607
         .gender = TRAINER_GENDER_MALE,
-#line 30558
+#line 30608
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30559
+#line 30609
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30560
+#line 30610
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75892,23 +76010,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30562
+#line 30612
             .species = SPECIES_CAMERUPT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30562
+#line 30612
             .heldItem = ITEM_QUICK_CLAW,
-#line 30565
+#line 30615
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30564
+#line 30614
             .ability = ABILITY_SOLID_ROCK,
-#line 30563
+#line 30613
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30566
+#line 30616
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30567
+#line 30617
                 MOVE_HEAT_WAVE,
                 MOVE_EARTHQUAKE,
                 MOVE_EXPLOSION,
@@ -75916,23 +76034,23 @@
             },
             },
             {
-#line 30572
+#line 30622
             .species = SPECIES_CLAYDOL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30572
+#line 30622
             .heldItem = ITEM_QUICK_CLAW,
-#line 30575
+#line 30625
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30574
+#line 30624
             .ability = ABILITY_LEVITATE,
-#line 30573
+#line 30623
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30576
+#line 30626
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30577
+#line 30627
                 MOVE_LUMINA_CRASH,
                 MOVE_EARTHQUAKE,
                 MOVE_EXPLOSION,
@@ -75940,23 +76058,23 @@
             },
             },
             {
-#line 30582
+#line 30632
             .species = SPECIES_GOLEM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30582
+#line 30632
             .heldItem = ITEM_QUICK_CLAW,
-#line 30585
+#line 30635
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30584
+#line 30634
             .ability = ABILITY_STURDY,
-#line 30583
+#line 30633
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30586
+#line 30636
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30587
+#line 30637
                 MOVE_ROCK_SLIDE,
                 MOVE_EARTHQUAKE,
                 MOVE_EXPLOSION,
@@ -75965,22 +76083,22 @@
             },
         },
     },
-#line 30592
+#line 30642
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_12] =
     {
-#line 30593
+#line 30643
         .trainerName = _("Grunt"),
-#line 30594
+#line 30644
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30595
+#line 30645
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-#line 30596
+#line 30646
         .gender = TRAINER_GENDER_MALE,
-#line 30597
+#line 30647
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30598
+#line 30648
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30599
+#line 30649
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -75988,23 +76106,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30601
+#line 30651
             .species = SPECIES_DRIFBLIM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30601
+#line 30651
             .heldItem = ITEM_FLAME_ORB,
-#line 30604
+#line 30654
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30603
+#line 30653
             .ability = ABILITY_FLARE_BOOST,
-#line 30602
+#line 30652
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30605
+#line 30655
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30606
+#line 30656
                 MOVE_HEAT_WAVE,
                 MOVE_OMINOUS_WIND,
                 MOVE_AIR_SLASH,
@@ -76012,23 +76130,23 @@
             },
             },
             {
-#line 30611
+#line 30661
             .species = SPECIES_BEHEEYEM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30611
+#line 30661
             .heldItem = ITEM_LIFE_ORB,
-#line 30614
+#line 30664
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30613
+#line 30663
             .ability = ABILITY_TELEPATHY,
-#line 30612
+#line 30662
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30615
+#line 30665
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30616
+#line 30666
                 MOVE_PSYSHOCK,
                 MOVE_THUNDERBOLT,
                 MOVE_ALLY_SWITCH,
@@ -76036,23 +76154,23 @@
             },
             },
             {
-#line 30621
+#line 30671
             .species = SPECIES_ROTOM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30621
+#line 30671
             .heldItem = ITEM_FOCUS_SASH,
-#line 30624
+#line 30674
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30623
+#line 30673
             .ability = ABILITY_LEVITATE,
-#line 30622
+#line 30672
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30625
+#line 30675
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30626
+#line 30676
                 MOVE_SHADOW_BALL,
                 MOVE_THUNDERBOLT,
                 MOVE_NASTY_PLOT,
@@ -76061,22 +76179,22 @@
             },
         },
     },
-#line 30631
+#line 30681
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_13] =
     {
-#line 30632
+#line 30682
         .trainerName = _("Grunt"),
-#line 30633
+#line 30683
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30634
+#line 30684
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_F,
-#line 30635
+#line 30685
         .gender = TRAINER_GENDER_MALE,
-#line 30636
+#line 30686
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30637
+#line 30687
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30638
+#line 30688
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76084,23 +76202,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30640
+#line 30690
             .species = SPECIES_DRAPION,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30640
+#line 30690
             .heldItem = ITEM_AIR_BALLOON,
-#line 30643
+#line 30693
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30642
+#line 30692
             .ability = ABILITY_SNIPER,
-#line 30641
+#line 30691
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30644
+#line 30694
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30645
+#line 30695
                 MOVE_CROSS_POISON,
                 MOVE_NIGHT_SLASH,
                 MOVE_TOXIC_SPIKES,
@@ -76108,23 +76226,23 @@
             },
             },
             {
-#line 30650
+#line 30700
             .species = SPECIES_SOLROCK,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30650
+#line 30700
             .heldItem = ITEM_BRIGHTPOWDER,
-#line 30653
+#line 30703
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30652
+#line 30702
             .ability = ABILITY_LEVITATE,
-#line 30651
+#line 30701
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30654
+#line 30704
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30655
+#line 30705
                 MOVE_STONE_EDGE,
                 MOVE_EXPLOSION,
                 MOVE_ZEN_HEADBUTT,
@@ -76132,23 +76250,23 @@
             },
             },
             {
-#line 30660
+#line 30710
             .species = SPECIES_SCOVILLAIN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30660
+#line 30710
             .heldItem = ITEM_FOCUS_BAND,
-#line 30663
+#line 30713
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30662
+#line 30712
             .ability = ABILITY_MOODY,
-#line 30661
+#line 30711
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30664
+#line 30714
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30665
+#line 30715
                 MOVE_PROTECT,
                 MOVE_FLAMETHROWER,
                 MOVE_ENERGY_BALL,
@@ -76156,23 +76274,23 @@
             },
             },
             {
-#line 30670
+#line 30720
             .species = SPECIES_RUNERIGUS,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30670
+#line 30720
             .heldItem = ITEM_ASSAULT_VEST,
-#line 30673
+#line 30723
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30672
+#line 30722
             .ability = ABILITY_WANDERING_SPIRIT,
-#line 30671
+#line 30721
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30674
+#line 30724
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30675
+#line 30725
                 MOVE_SPIRIT_SHACKLE,
                 MOVE_EARTHQUAKE,
                 MOVE_BODY_PRESS,
@@ -76180,23 +76298,23 @@
             },
             },
             {
-#line 30680
+#line 30730
             .species = SPECIES_SCRAFTY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30680
+#line 30730
             .heldItem = ITEM_ROSELI_BERRY,
-#line 30683
+#line 30733
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30682
+#line 30732
             .ability = ABILITY_MOXIE,
-#line 30681
+#line 30731
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30684
+#line 30734
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30685
+#line 30735
                 MOVE_DRAIN_PUNCH,
                 MOVE_CRUNCH,
                 MOVE_POISON_JAB,
@@ -76205,22 +76323,22 @@
             },
         },
     },
-#line 30690
+#line 30740
     [DIFFICULTY_NORMAL][TRAINER_MAUVILLE_GRUNT_14] =
     {
-#line 30691
+#line 30741
         .trainerName = _("Grunt"),
-#line 30692
+#line 30742
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
-#line 30693
+#line 30743
         .trainerPic = TRAINER_PIC_MAGMA_GRUNT_M,
-#line 30694
+#line 30744
         .gender = TRAINER_GENDER_MALE,
-#line 30695
+#line 30745
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30696
+#line 30746
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30697
+#line 30747
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76228,23 +76346,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30699
+#line 30749
             .species = SPECIES_NINETALES,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30699
+#line 30749
             .heldItem = ITEM_LIFE_ORB,
-#line 30702
+#line 30752
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30701
+#line 30751
             .ability = ABILITY_DROUGHT,
-#line 30700
+#line 30750
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30703
+#line 30753
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30704
+#line 30754
                 MOVE_FLAMETHROWER,
                 MOVE_SOLARBEAM,
                 MOVE_EXTRASENSORY,
@@ -76252,23 +76370,23 @@
             },
             },
             {
-#line 30709
+#line 30759
             .species = SPECIES_TANGELA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30709
+#line 30759
             .heldItem = ITEM_EVIOLITE,
-#line 30712
+#line 30762
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30711
+#line 30761
             .ability = ABILITY_CHLOROPHYLL,
-#line 30710
+#line 30760
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30713
+#line 30763
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30714
+#line 30764
                 MOVE_WEATHER_BALL,
                 MOVE_SOLARBEAM,
                 MOVE_ANCIENTPOWER,
@@ -76276,23 +76394,23 @@
             },
             },
             {
-#line 30719
+#line 30769
             .species = SPECIES_ALTARIA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30719
+#line 30769
             .heldItem = ITEM_YACHE_BERRY,
-#line 30722
+#line 30772
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30721
+#line 30771
             .ability = ABILITY_NATURAL_CURE,
-#line 30720
+#line 30770
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30723
+#line 30773
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30724
+#line 30774
                 MOVE_TEMPER_FLARE,
                 MOVE_DRAGON_DANCE,
                 MOVE_DRAGON_CLAW,
@@ -76300,23 +76418,23 @@
             },
             },
             {
-#line 30729
+#line 30779
             .species = SPECIES_LUNATONE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30729
+#line 30779
             .heldItem = ITEM_FOCUS_BAND,
-#line 30732
+#line 30782
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30731
+#line 30781
             .ability = ABILITY_LEVITATE,
-#line 30730
+#line 30780
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30733
+#line 30783
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30734
+#line 30784
                 MOVE_ANCIENTPOWER,
                 MOVE_SOLARBEAM,
                 MOVE_PSYCHIC,
@@ -76324,23 +76442,23 @@
             },
             },
             {
-#line 30739
+#line 30789
             .species = SPECIES_HONCHKROW,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30739
+#line 30789
             .heldItem = ITEM_SCOPE_LENS,
-#line 30742
+#line 30792
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30741
+#line 30791
             .ability = ABILITY_SUPER_LUCK,
-#line 30740
+#line 30790
             .lvl = 54,
             .ball = POKEBALL_COUNT,
-#line 30743
+#line 30793
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30744
+#line 30794
                 MOVE_DARK_PULSE,
                 MOVE_ESPER_WING,
                 MOVE_HEAT_WAVE,
@@ -76349,22 +76467,22 @@
             },
         },
     },
-#line 30749
+#line 30799
     [DIFFICULTY_NORMAL][TRAINER_AQUA_PYRE_1] =
     {
-#line 30750
+#line 30800
         .trainerName = _("Grunt"),
-#line 30751
+#line 30801
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-#line 30752
+#line 30802
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_M,
-#line 30753
+#line 30803
         .gender = TRAINER_GENDER_MALE,
-#line 30754
+#line 30804
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-#line 30755
+#line 30805
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30756
+#line 30806
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76372,23 +76490,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30758
+#line 30808
             .species = SPECIES_LIEPARD,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30758
+#line 30808
             .heldItem = ITEM_FOCUS_SASH,
-#line 30761
+#line 30811
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30760
+#line 30810
             .ability = ABILITY_PRANKSTER,
-#line 30759
+#line 30809
             .lvl = 65,
             .ball = POKEBALL_COUNT,
-#line 30762
+#line 30812
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30763
+#line 30813
                 MOVE_ASSIST,
                 MOVE_PLAY_ROUGH,
                 MOVE_THUNDER_WAVE,
@@ -76396,23 +76514,23 @@
             },
             },
             {
-#line 30768
+#line 30818
             .species = SPECIES_HUNTAIL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30768
+#line 30818
             .heldItem = ITEM_WHITE_HERB,
-#line 30771
+#line 30821
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30770
+#line 30820
             .ability = ABILITY_WATER_VEIL,
-#line 30769
+#line 30819
             .lvl = 65,
             .ball = POKEBALL_COUNT,
-#line 30772
+#line 30822
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30773
+#line 30823
                 MOVE_WAVE_CRASH,
                 MOVE_ICE_FANG,
                 MOVE_CRUNCH,
@@ -76420,23 +76538,23 @@
             },
             },
             {
-#line 30778
+#line 30828
             .species = SPECIES_TOEDSCRUEL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30778
+#line 30828
             .heldItem = ITEM_YACHE_BERRY,
-#line 30781
+#line 30831
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30780
+#line 30830
             .ability = ABILITY_MYCELIUM_MIGHT,
-#line 30779
+#line 30829
             .lvl = 65,
             .ball = POKEBALL_COUNT,
-#line 30782
+#line 30832
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30783
+#line 30833
                 MOVE_SPORE,
                 MOVE_EARTH_POWER,
                 MOVE_ENERGY_BALL,
@@ -76444,23 +76562,23 @@
             },
             },
             {
-#line 30788
+#line 30838
             .species = SPECIES_CRAWDAUNT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30788
+#line 30838
             .heldItem = ITEM_LIFE_ORB,
-#line 30791
+#line 30841
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30790
+#line 30840
             .ability = ABILITY_ADAPTABILITY,
-#line 30789
+#line 30839
             .lvl = 65,
             .ball = POKEBALL_COUNT,
-#line 30792
+#line 30842
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30793
+#line 30843
                 MOVE_CRABHAMMER,
                 MOVE_KNOCK_OFF,
                 MOVE_ICE_HAMMER,
@@ -76469,22 +76587,22 @@
             },
         },
     },
-#line 30798
+#line 30848
     [DIFFICULTY_NORMAL][TRAINER_AQUA_PYRE_2] =
     {
-#line 30799
+#line 30849
         .trainerName = _("Grunt"),
-#line 30800
+#line 30850
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
-#line 30801
+#line 30851
         .trainerPic = TRAINER_PIC_AQUA_GRUNT_F,
-#line 30802
+#line 30852
         .gender = TRAINER_GENDER_MALE,
-#line 30803
+#line 30853
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-#line 30804
+#line 30854
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30805
+#line 30855
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76492,23 +76610,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30807
+#line 30857
             .species = SPECIES_ALOMOMOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30807
+#line 30857
             .heldItem = ITEM_LEFTOVERS,
-#line 30810
+#line 30860
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30809
+#line 30859
             .ability = ABILITY_REGENERATOR,
-#line 30808
+#line 30858
             .lvl = 65,
             .ball = POKEBALL_COUNT,
-#line 30811
+#line 30861
             .nature = NATURE_CAREFUL,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30812
+#line 30862
                 MOVE_FLIP_TURN,
                 MOVE_TOXIC,
                 MOVE_KNOCK_OFF,
@@ -76516,23 +76634,23 @@
             },
             },
             {
-#line 30817
+#line 30867
             .species = SPECIES_MUK_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30817
+#line 30867
             .heldItem = ITEM_QUICK_CLAW,
-#line 30820
+#line 30870
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30819
+#line 30869
             .ability = ABILITY_POISON_TOUCH,
-#line 30818
+#line 30868
             .lvl = 65,
             .ball = POKEBALL_COUNT,
-#line 30821
+#line 30871
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30822
+#line 30872
                 MOVE_GUNK_SHOT,
                 MOVE_KNOCK_OFF,
                 MOVE_ICE_PUNCH,
@@ -76540,23 +76658,23 @@
             },
             },
             {
-#line 30827
+#line 30877
             .species = SPECIES_CRABOMINABLE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30827
+#line 30877
             .heldItem = ITEM_ASSAULT_VEST,
-#line 30830
+#line 30880
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30829
+#line 30879
             .ability = ABILITY_IRON_FIST,
-#line 30828
+#line 30878
             .lvl = 65,
             .ball = POKEBALL_COUNT,
-#line 30831
+#line 30881
             .nature = NATURE_ADAMANT,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30832
+#line 30882
                 MOVE_ICE_HAMMER,
                 MOVE_THUNDER_PUNCH,
                 MOVE_DRAIN_PUNCH,
@@ -76564,23 +76682,23 @@
             },
             },
             {
-#line 30837
+#line 30887
             .species = SPECIES_WUGTRIO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30837
+#line 30887
             .heldItem = ITEM_LIFE_ORB,
-#line 30840
+#line 30890
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30839
+#line 30889
             .ability = ABILITY_GOOEY,
-#line 30838
+#line 30888
             .lvl = 65,
             .ball = POKEBALL_COUNT,
-#line 30841
+#line 30891
             .nature = NATURE_JOLLY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30842
+#line 30892
                 MOVE_TRIPLE_DIVE,
                 MOVE_TRIPLE_AXEL,
                 MOVE_THROAT_CHOP,
@@ -76589,20 +76707,20 @@
             },
         },
     },
-#line 30847
+#line 30897
     [DIFFICULTY_NORMAL][TRAINER_MARIELA] =
     {
-#line 30848
+#line 30898
         .trainerName = _("MARIELA"),
-#line 30849
+#line 30899
         .trainerClass = TRAINER_CLASS_QUIZZER,
-#line 30850
+#line 30900
         .trainerPic = TRAINER_PIC_LASS,
-#line 30851
+#line 30901
         .gender = TRAINER_GENDER_FEMALE,
-#line 30852
+#line 30902
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_FEMALE,
-#line 30853
+#line 30903
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76610,34 +76728,34 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30855
+#line 30905
             .species = SPECIES_CHIMECHO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30857
+#line 30907
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 30856
+#line 30906
             .lvl = 41,
             .ball = POKEBALL_COUNT,
-#line 30858
+#line 30908
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 30860
+#line 30910
     [DIFFICULTY_NORMAL][TRAINER_ALVARO] =
     {
-#line 30861
+#line 30911
         .trainerName = _("ALVARO"),
-#line 30862
+#line 30912
         .trainerClass = TRAINER_CLASS_QUIZZER,
-#line 30863
+#line 30913
         .trainerPic = TRAINER_PIC_COOLTRAINER_M,
-#line 30864
+#line 30914
         .gender = TRAINER_GENDER_MALE,
-#line 30865
+#line 30915
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_COOL,
-#line 30866
+#line 30916
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76645,47 +76763,47 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30868
+#line 30918
             .species = SPECIES_BANETTE,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30870
+#line 30920
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 30869
+#line 30919
             .lvl = 41,
             .ball = POKEBALL_COUNT,
-#line 30871
+#line 30921
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
             {
-#line 30873
+#line 30923
             .species = SPECIES_KADABRA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30875
+#line 30925
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 30874
+#line 30924
             .lvl = 41,
             .ball = POKEBALL_COUNT,
-#line 30876
+#line 30926
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 30878
+#line 30928
     [DIFFICULTY_NORMAL][TRAINER_EVERETT] =
     {
-#line 30879
+#line 30929
         .trainerName = _("EVERETT"),
-#line 30880
+#line 30930
         .trainerClass = TRAINER_CLASS_QUIZZER,
-#line 30881
+#line 30931
         .trainerPic = TRAINER_PIC_SCHOOL_KID_M,
-#line 30882
+#line 30932
         .gender = TRAINER_GENDER_MALE,
-#line 30883
+#line 30933
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 30884
+#line 30934
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76693,34 +76811,34 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30886
+#line 30936
             .species = SPECIES_WOBBUFFET,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30888
+#line 30938
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 30887
+#line 30937
             .lvl = 41,
             .ball = POKEBALL_COUNT,
-#line 30889
+#line 30939
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 30891
+#line 30941
     [DIFFICULTY_NORMAL][TRAINER_RED] =
     {
-#line 30892
+#line 30942
         .trainerName = _("RED"),
-#line 30893
+#line 30943
         .trainerClass = TRAINER_CLASS_RIVAL,
-#line 30894
+#line 30944
         .trainerPic = TRAINER_PIC_RED,
-#line 30895
+#line 30945
         .gender = TRAINER_GENDER_MALE,
-#line 30896
+#line 30946
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 30897
+#line 30947
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76728,34 +76846,34 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30899
+#line 30949
             .species = SPECIES_CHARMANDER,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30901
+#line 30951
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 30900
+#line 30950
             .lvl = 5,
             .ball = POKEBALL_COUNT,
-#line 30902
+#line 30952
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 30904
+#line 30954
     [DIFFICULTY_NORMAL][TRAINER_LEAF] =
     {
-#line 30905
+#line 30955
         .trainerName = _("LEAF"),
-#line 30906
+#line 30956
         .trainerClass = TRAINER_CLASS_RIVAL,
-#line 30907
+#line 30957
         .trainerPic = TRAINER_PIC_LEAF,
-#line 30908
+#line 30958
         .gender = TRAINER_GENDER_FEMALE,
-#line 30909
+#line 30959
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MALE,
-#line 30910
+#line 30960
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76763,36 +76881,36 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30912
+#line 30962
             .species = SPECIES_BULBASAUR,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30914
+#line 30964
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
-#line 30913
+#line 30963
             .lvl = 5,
             .ball = POKEBALL_COUNT,
-#line 30915
+#line 30965
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },
         },
     },
-#line 30917
+#line 30967
     [DIFFICULTY_NORMAL][TRAINER_MAXIE_DOUBLE] =
     {
-#line 30918
+#line 30968
         .trainerName = _("Maxie"),
-#line 30919
+#line 30969
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
-#line 30920
+#line 30970
         .trainerPic = TRAINER_PIC_MAGMA_LEADER_MAXIE,
-#line 30921
+#line 30971
         .gender = TRAINER_GENDER_MALE,
-#line 30922
+#line 30972
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_MAGMA,
-#line 30923
+#line 30973
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30924
+#line 30974
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76800,23 +76918,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30926
+#line 30976
             .species = SPECIES_CLAYDOL,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30926
+#line 30976
             .heldItem = ITEM_LIGHT_CLAY,
-#line 30929
+#line 30979
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30928
+#line 30978
             .ability = ABILITY_LEVITATE,
-#line 30927
+#line 30977
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 30930
+#line 30980
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30931
+#line 30981
                 MOVE_EARTH_POWER,
                 MOVE_SOLARBEAM,
                 MOVE_WEATHER_BALL,
@@ -76824,23 +76942,23 @@
             },
             },
             {
-#line 30936
+#line 30986
             .species = SPECIES_CELEBI,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30936
+#line 30986
             .heldItem = ITEM_LEFTOVERS,
-#line 30939
+#line 30989
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30938
+#line 30988
             .ability = ABILITY_NATURAL_CURE,
-#line 30937
+#line 30987
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 30940
+#line 30990
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30941
+#line 30991
                 MOVE_PSYCHIC,
                 MOVE_WEATHER_BALL,
                 MOVE_SOLARBEAM,
@@ -76848,23 +76966,23 @@
             },
             },
             {
-#line 30946
+#line 30996
             .species = SPECIES_RESHIRAM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30946
+#line 30996
             .heldItem = ITEM_LIFE_ORB,
-#line 30949
+#line 30999
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30948
+#line 30998
             .ability = ABILITY_TURBOBLAZE,
-#line 30947
+#line 30997
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 30950
+#line 31000
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30951
+#line 31001
                 MOVE_DRAGON_PULSE,
                 MOVE_WEATHER_BALL,
                 MOVE_SOLARBEAM,
@@ -76872,23 +76990,23 @@
             },
             },
             {
-#line 30956
+#line 31006
             .species = SPECIES_SHIFTRY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30956
+#line 31006
             .heldItem = ITEM_TANGA_BERRY,
-#line 30959
+#line 31009
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30958
+#line 31008
             .ability = ABILITY_CHLOROPHYLL,
-#line 30957
+#line 31007
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 30960
+#line 31010
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30961
+#line 31011
                 MOVE_WEATHER_BALL,
                 MOVE_DARK_PULSE,
                 MOVE_SOLARBEAM,
@@ -76896,23 +77014,23 @@
             },
             },
             {
-#line 30966
+#line 31016
             .species = SPECIES_VOLCARONA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30966
+#line 31016
             .heldItem = ITEM_CHARTI_BERRY,
-#line 30969
+#line 31019
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30968
+#line 31018
             .ability = ABILITY_SWARM,
-#line 30967
+#line 31017
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 30970
+#line 31020
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30971
+#line 31021
                 MOVE_WEATHER_BALL,
                 MOVE_HURRICANE,
                 MOVE_SOLARBEAM,
@@ -76920,23 +77038,23 @@
             },
             },
             {
-#line 30976
+#line 31026
             .species = SPECIES_DELPHOX,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30976
+#line 31026
             .heldItem = ITEM_DELPHOXITE,
-#line 30979
+#line 31029
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30978
+#line 31028
             .ability = ABILITY_MAGIC_GUARD,
-#line 30977
+#line 31027
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 30980
+#line 31030
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 30981
+#line 31031
                 MOVE_WEATHER_BALL,
                 MOVE_PSYSHOCK,
                 MOVE_SOLARBEAM,
@@ -76945,22 +77063,22 @@
             },
         },
     },
-#line 30986
+#line 31036
     [DIFFICULTY_NORMAL][TRAINER_ARCHIE_DOUBLE] =
     {
-#line 30987
+#line 31037
         .trainerName = _("Archie"),
-#line 30988
+#line 31038
         .trainerClass = TRAINER_CLASS_AQUA_LEADER,
-#line 30989
+#line 31039
         .trainerPic = TRAINER_PIC_AQUA_LEADER_ARCHIE,
-#line 30990
+#line 31040
         .gender = TRAINER_GENDER_MALE,
-#line 30991
+#line 31041
         .encounterMusic = TRAINER_ENCOUNTER_MUSIC_AQUA,
-#line 30992
+#line 31042
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
-#line 30993
+#line 31043
         .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_OMNISCIENT | AI_FLAG_WILL_SUICIDE | AI_FLAG_SMART_MON_CHOICES | AI_FLAG_TRY_TO_2HKO,
 #line 0
         .multiTeamSize = MULTI_TEAM_SIZE_FULL,
@@ -76968,23 +77086,23 @@
         .party = (const struct TrainerMon[])
         {
             {
-#line 30995
+#line 31045
             .species = SPECIES_BRONZONG,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 30995
+#line 31045
             .heldItem = ITEM_LIGHT_CLAY,
-#line 30998
+#line 31048
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 30997
+#line 31047
             .ability = ABILITY_LEVITATE,
-#line 30996
+#line 31046
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 30999
+#line 31049
             .nature = NATURE_MODEST,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 31000
+#line 31050
                 MOVE_THUNDER,
                 MOVE_LUMINA_CRASH,
                 MOVE_WEATHER_BALL,
@@ -76992,23 +77110,23 @@
             },
             },
             {
-#line 31005
+#line 31055
             .species = SPECIES_MANAPHY,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 31005
+#line 31055
             .heldItem = ITEM_LEFTOVERS,
-#line 31008
+#line 31058
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 31007
+#line 31057
             .ability = ABILITY_HYDRATION,
-#line 31006
+#line 31056
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 31009
+#line 31059
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 31010
+#line 31060
                 MOVE_WEATHER_BALL,
                 MOVE_ICE_BEAM,
                 MOVE_TAIL_GLOW,
@@ -77016,23 +77134,23 @@
             },
             },
             {
-#line 31015
+#line 31065
             .species = SPECIES_ZEKROM,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 31015
+#line 31065
             .heldItem = ITEM_LIFE_ORB,
-#line 31018
+#line 31068
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 31017
+#line 31067
             .ability = ABILITY_TERAVOLT,
-#line 31016
+#line 31066
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 31019
+#line 31069
             .nature = NATURE_HASTY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 31020
+#line 31070
                 MOVE_BOLT_STRIKE,
                 MOVE_DRAGON_RUSH,
                 MOVE_WEATHER_BALL,
@@ -77040,23 +77158,23 @@
             },
             },
             {
-#line 31025
+#line 31075
             .species = SPECIES_LUDICOLO,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 31025
+#line 31075
             .heldItem = ITEM_TANGA_BERRY,
-#line 31028
+#line 31078
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 31027
+#line 31077
             .ability = ABILITY_SWIFT_SWIM,
-#line 31026
+#line 31076
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 31029
+#line 31079
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 31030
+#line 31080
                 MOVE_WEATHER_BALL,
                 MOVE_ICE_BEAM,
                 MOVE_SOLARBEAM,
@@ -77064,23 +77182,23 @@
             },
             },
             {
-#line 31035
+#line 31085
             .species = SPECIES_VIKAVOLT,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 31035
+#line 31085
             .heldItem = ITEM_CHARTI_BERRY,
-#line 31038
+#line 31088
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 31037
+#line 31087
             .ability = ABILITY_LEVITATE,
-#line 31036
+#line 31086
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 31039
+#line 31089
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 31040
+#line 31090
                 MOVE_WEATHER_BALL,
                 MOVE_THUNDER,
                 MOVE_SOLARBEAM,
@@ -77088,23 +77206,23 @@
             },
             },
             {
-#line 31045
+#line 31095
             .species = SPECIES_GRENINJA,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 31045
+#line 31095
             .heldItem = ITEM_GRENINJITE,
-#line 31048
+#line 31098
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 31047
+#line 31097
             .ability = ABILITY_PROTEAN,
-#line 31046
+#line 31096
             .lvl = 87,
             .ball = POKEBALL_COUNT,
-#line 31049
+#line 31099
             .nature = NATURE_TIMID,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
-#line 31050
+#line 31100
                 MOVE_WEATHER_BALL,
                 MOVE_DARK_PULSE,
                 MOVE_ICE_BEAM,
