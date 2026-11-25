@@ -43121,7 +43121,7 @@
 #line 17310
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 17309
-            .lvl = 9,
+            .lvl = 5,
             .ball = POKEBALL_COUNT,
 #line 17311
             .nature = NATURE_HARDY,
@@ -43494,7 +43494,7 @@
 #line 17462
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 17461
-            .lvl = 9,
+            .lvl = 5,
             .ball = POKEBALL_COUNT,
 #line 17463
             .nature = NATURE_HARDY,
@@ -43867,7 +43867,7 @@
 #line 17614
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 17613
-            .lvl = 9,
+            .lvl = 5,
             .ball = POKEBALL_COUNT,
 #line 17615
             .nature = NATURE_HARDY,
@@ -44240,7 +44240,7 @@
 #line 17766
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 17765
-            .lvl = 9,
+            .lvl = 5,
             .ball = POKEBALL_COUNT,
 #line 17767
             .nature = NATURE_HARDY,
@@ -44613,7 +44613,7 @@
 #line 17918
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 17917
-            .lvl = 9,
+            .lvl = 5,
             .ball = POKEBALL_COUNT,
 #line 17919
             .nature = NATURE_HARDY,
@@ -44986,7 +44986,7 @@
 #line 18070
             .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
 #line 18069
-            .lvl = 9,
+            .lvl = 5,
             .ball = POKEBALL_COUNT,
 #line 18071
             .nature = NATURE_HARDY,
