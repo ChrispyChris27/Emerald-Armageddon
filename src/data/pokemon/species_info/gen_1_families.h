@@ -5276,7 +5276,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .growthRate = GROWTH_FAST,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FAIRY),
     #if P_UPDATED_ABILITIES >= GEN_4
-        .abilities = { ABILITY_UNAWARE, ABILITY_MAGIC_GUARD, ABILITY_CUTE_CHARM },
+        .abilities = { ABILITY_UNAWARE, ABILITY_MAGIC_GUARD, ABILITY_FRIEND_GUARD },
     #else
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_NONE, ABILITY_UNAWARE },
     #endif

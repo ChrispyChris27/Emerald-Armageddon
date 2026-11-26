@@ -5973,7 +5973,7 @@ Nature: Timid
 
 Clefable @ Leftovers
 Level: 76
-Ability: Cute Charm
+Ability: Friend Guard
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 Nature: Timid
 - Blizzard
@@ -8024,7 +8024,7 @@ Pic: Bug Maniac
 Gender: Male
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices 
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try to 2Hko
 
 Smeargle @ Berry Juice
 Level: 11
@@ -8042,7 +8042,7 @@ Pic: Bug Maniac
 Gender: Male
 Music: Suspicious
 Battle Type: Singles
-AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices 
+AI: Check Bad Move / Try To Faint / Check Viability / Omniscient / Will Suicide / Smart Mon Choices / Try to 2Hko
 
 Smeargle @ Berry Juice
 Level: 9
